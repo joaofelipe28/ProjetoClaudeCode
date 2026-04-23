@@ -10,11 +10,15 @@ Every time a Claude Code session ends, any changes are automatically committed a
 
 The hook runs:
 ```bash
+export PATH="$HOME/.local/bin:$PATH" && \
 cd /Users/joaofelipescheidt/ProjetoClaudeCode && \
 git add -A && \
-git diff --cached --quiet || git commit -m "Auto-update: $(date '+%Y-%m-%d %H:%M:%S')" && \
-git push origin main
+git diff --cached --quiet || \
+  (git commit -m "Auto-update: $(date '+%Y-%m-%d %H:%M:%S')" && \
+   GIT_CONFIG_NOSYSTEM=1 git push origin main)
 ```
+
+> Note: `GIT_CONFIG_NOSYSTEM=1` is required to bypass a macOS system git config that interferes with DNS resolution in the Claude Code sandbox.
 
 ### GitHub CLI
 
@@ -35,5 +39,5 @@ git status && git log --oneline -5
 If you need to push manually:
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
-git add -A && git commit -m "mensagem" && git push origin main
+git add -A && git commit -m "mensagem" && GIT_CONFIG_NOSYSTEM=1 git push origin main
 ```

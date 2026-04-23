@@ -8,7 +8,18 @@
       "Bash(export PATH=\"$HOME/.local/bin:$PATH\")",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git config *)",
+      "Bash(nslookup github.com)",
+      "Bash(host github.com)",
+      "Bash(ping -c 1 github.com)",
+      "Bash(GIT_CURL_VERBOSE=1 git push origin main)",
+      "Bash(env)",
+      "Bash(gh auth *)",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' -X GET https://api.github.com/repos/joaofelipe28/ProjetoClaudeCode -H 'Authorization: token __TRACKED_VAR__')",
+      "Bash(scutil --proxy)",
+      "Bash(dig +short github.com)",
+      "Bash(GIT_CONFIG_NOSYSTEM=1 git push origin main)"
     ]
   }
 }
