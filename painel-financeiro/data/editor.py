@@ -158,22 +158,23 @@ def save_parcelas_pessoais(xlsx_path: str, df: pd.DataFrame):
 # Data rows: 5-10, Input cols: 1-5
 
 TOMADORES_DATA_START = 5
-TOMADORES_DATA_END = 10
 TOMADORES_INPUT_COLS = [1, 2, 3, 4, 5]
 
 
 def save_tomadores(xlsx_path: str, df: pd.DataFrame):
     """
     df columns: Nome, Tipo, Retém, Tipo receita, Obs
+    Supports any number of rows — clears from row 5 to current max before rewriting.
     """
     wb = _open_wb(xlsx_path)
     ws = wb["Tomadores"]
-    _clear_range(ws, TOMADORES_DATA_START, TOMADORES_DATA_END, TOMADORES_INPUT_COLS)
+
+    # Clear from data start to current sheet max (handles growing/shrinking)
+    current_max = max(ws.max_row, TOMADORES_DATA_START + len(df) + 1)
+    _clear_range(ws, TOMADORES_DATA_START, current_max, TOMADORES_INPUT_COLS)
 
     col_map = {"Nome": 1, "Tipo": 2, "Retém": 3, "Tipo receita": 4, "Obs": 5}
     for i, (_, row) in enumerate(df.iterrows()):
-        if i >= (TOMADORES_DATA_END - TOMADORES_DATA_START + 1):
-            break
         r = TOMADORES_DATA_START + i
         for col_name, col_num in col_map.items():
             val = row.get(col_name, None)

@@ -242,17 +242,20 @@ def render(data: PainelData):
         except Exception:
             tom_df = pd.DataFrame(columns=["Nome", "Tipo", "Retém", "Tipo receita", "Obs"])
 
+        st.caption("Adicione quantos tomadores precisar. Sem limite de linhas.")
         edited = st.data_editor(
             tom_df,
             use_container_width=True,
-            hide_index=False,
-            num_rows="fixed",
+            hide_index=True,
+            num_rows="dynamic",
             column_config={
+                "Nome": st.column_config.TextColumn("Nome", width="large"),
                 "Tipo": st.column_config.SelectboxColumn("Tipo", options=["PF", "PJ", ""]),
                 "Retém": st.column_config.SelectboxColumn("Retém ISS?", options=["Sim", "Não", ""]),
                 "Tipo receita": st.column_config.SelectboxColumn(
                     "Tipo Receita", options=["Plantão", "Consultório", "Salário", "Outros", ""]
                 ),
+                "Obs": st.column_config.TextColumn("Obs"),
             },
             key="editor_tomadores",
         )

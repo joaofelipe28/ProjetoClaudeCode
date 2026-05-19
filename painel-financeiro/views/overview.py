@@ -4,6 +4,7 @@ import plotly.express as px
 import pandas as pd
 
 from config import COLORS, EXPENSE_COLORS
+from data.investments_editor import load_investments, load_inv_historico
 
 
 def _fmt_brl(v):
@@ -17,11 +18,33 @@ def render(data):
 
     kpis = data.kpis
     reserva_alvo = kpis.get("reserva_alvo", 24858.9)
-    reserva_atual = 0.0  # from investments sheet — kept at 0 per spreadsheet
+
+    # Load investment data for overview integration
+    xlsx_path = st.session_state.get("xlsx_path_current", "")
+    patrimonio_investido = 0.0
+    try:
+        hist_df = load_inv_historico(xlsx_path)
+        if not hist_df.empty and "Saldo Final (R$)" in hist_df.columns:
+            saldos = pd.to_numeric(hist_df["Saldo Final (R$)"], errors="coerce").dropna()
+            if not saldos.empty:
+                patrimonio_investido = float(saldos.iloc[-1])
+        if patrimonio_investido == 0.0:
+            inv_df = load_investments(xlsx_path)
+            if not inv_df.empty and "Saldo Atual" in inv_df.columns:
+                patrimonio_investido = float(pd.to_numeric(inv_df["Saldo Atual"], errors="coerce").fillna(0).sum())
+    except Exception:
+        pass
+
+    reserva_atual = patrimonio_investido
     progresso = min(reserva_atual / reserva_alvo, 1.0) if reserva_alvo else 0.0
 
-    # KPI cards
-    col1, col2, col3, col4, col5, col6 = st.columns(6)
+    # KPI cards — 7 cols when investments tracked, 6 otherwise
+    if patrimonio_investido > 0:
+        col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+    else:
+        col1, col2, col3, col4, col5, col6 = st.columns(6)
+        col7 = None
+
     with col1:
         st.metric("Saldo Atual", _fmt_brl(kpis.get("saldo_inicial", 0)))
     with col2:
@@ -30,13 +53,15 @@ def render(data):
         st.metric("Fixo Mensal", _fmt_brl(kpis.get("fixo_mensal", 0)))
     with col4:
         runway = kpis.get("runway", 0)
-        color_runway = "inverse" if runway < 1 else "normal"
         st.metric("Runway (meses)", f"{runway:.2f}")
     with col5:
         st.metric("Reserva-alvo", _fmt_brl(reserva_alvo))
         st.progress(progresso)
     with col6:
         st.metric("Saldo Projetado Dez/26", _fmt_brl(kpis.get("saldo_dez", 0)))
+    if col7:
+        with col7:
+            st.metric("Patrimônio Investido", _fmt_brl(patrimonio_investido))
 
     st.divider()
 
