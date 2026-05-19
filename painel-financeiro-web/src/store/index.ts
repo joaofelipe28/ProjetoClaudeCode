@@ -5,6 +5,7 @@ import type {
   AppConfig, TaxConfig, Tomador, MonthlyIncomeRecord, GastoFixo,
   GastoPontual, Parcelamento, InvestimentoPosition, InvestimentoHistorico,
   IncomeStatus, FixoStatus, ParcelamentoStatus, MonthlyDebitRecord, DebitStatus, DebitType,
+  FixoCategoria,
 } from '@/types'
 
 // ── Seed Data ─────────────────────────────────────────────────────────────────
@@ -64,6 +65,58 @@ const SEED_PARCELAMENTOS: Omit<Parcelamento, 'id'>[] = [
   { descricao: 'Cartão Itaú (Sônia)', tipo: 'Pessoal', categoria: 'Família', valorParcela: 4750, totalParcelas: 7, mesInicio: '2026-05', status: 'Ativo' },
   { descricao: 'Cartão Mari', tipo: 'Pessoal', categoria: 'Família', valorParcela: 7000, totalParcelas: 1, mesInicio: '2026-06', status: 'Ativo' },
 ]
+
+// Predefined IDs for May 2026 pontuais so we can pre-seed payment status
+const MP = {
+  pai:          'seed-mai26-p01',
+  rita:         'seed-mai26-p02',
+  c6:           'seed-mai26-p03',
+  nubank:       'seed-mai26-p04',
+  churras:      'seed-mai26-p05',
+  condAtras:    'seed-mai26-p06',
+  contador:     'seed-mai26-p07',
+  mercadoPago:  'seed-mai26-p08',
+  santander:    'seed-mai26-p09',
+  nubankJoao:   'seed-mai26-p10',
+  dental:       'seed-mai26-p11',
+  semParar:     'seed-mai26-p12',
+  rafa:         'seed-mai26-p13',
+}
+
+function mk(id: string, descricao: string, categoria: FixoCategoria, valor: number, status: GastoPontual['status']): GastoPontual {
+  return { id, mesAno: '2026-05', descricao, categoria, valor, status }
+}
+
+const SEED_PONTUAIS: GastoPontual[] = [
+  mk(MP.pai,         'Pai',                    'Família',       3500,   'Previsto'),
+  mk(MP.rita,        'Rita',                   'Família',       5751,   'Previsto'),
+  mk(MP.c6,          'Cartão C6',              'Cartão',        1550,   'Confirmado'),
+  mk(MP.nubank,      'Cartão Nubank',          'Cartão',        1992,   'Confirmado'),
+  mk(MP.churras,     'Homenageados (Churras)', 'Lazer',          900,   'Confirmado'),
+  mk(MP.condAtras,   'Condomínio atrasado',    'Moradia',       3450,   'Confirmado'),
+  mk(MP.contador,    'Contador (extra)',        'PJ operacional',2000,   'Confirmado'),
+  mk(MP.mercadoPago, 'Mercado Pago',           'Dívidas',        257,   'Confirmado'),
+  mk(MP.santander,   'Santander CNPJ',         'Dívidas',        230,   'Confirmado'),
+  mk(MP.nubankJoao,  'Nubank João',            'Dívidas',       115.72, 'Confirmado'),
+  mk(MP.dental,      'DentalUni',              'Dívidas',         10,   'Confirmado'),
+  mk(MP.semParar,    'Sem Parar',              'Dívidas',        278,   'Confirmado'),
+  mk(MP.rafa,        'Rafa',                   'Família',       1600,   'Confirmado'),
+]
+
+// Pre-mark the 11 Confirmado pontuais as Pago in monthlyDebits
+const PAID_MAI_IDS = [
+  MP.c6, MP.nubank, MP.churras, MP.condAtras, MP.contador,
+  MP.mercadoPago, MP.santander, MP.nubankJoao, MP.dental, MP.semParar, MP.rafa,
+]
+const SEED_MONTHLY_DEBITS: MonthlyDebitRecord[] = PAID_MAI_IDS.map((refId, i) => ({
+  id: `seed-mdb-mai26-${i + 1}`,
+  referenceId: refId,
+  type: 'Pontual' as DebitType,
+  mesAno: '2026-05',
+  status: 'Pago' as DebitStatus,
+  valorPago: SEED_PONTUAIS.find(p => p.id === refId)!.valor,
+  dataPagamento: '2026-05-01',
+}))
 
 function withId<T>(items: Omit<T, 'id'>[]): T[] {
   return items.map(item => ({ ...item, id: crypto.randomUUID() }) as T)
@@ -141,9 +194,9 @@ function getDefaultState() {
     config: DEFAULT_CONFIG,
     tomadores: withId<Tomador>(SEED_TOMADORES),
     incomeRecords: [] as MonthlyIncomeRecord[],
-    monthlyDebits: [] as MonthlyDebitRecord[],
+    monthlyDebits: [...SEED_MONTHLY_DEBITS] as MonthlyDebitRecord[],
     fixos: withId<GastoFixo>(SEED_FIXOS),
-    pontuais: [] as GastoPontual[],
+    pontuais: [...SEED_PONTUAIS] as GastoPontual[],
     parcelamentos: withId<Parcelamento>(SEED_PARCELAMENTOS),
     investimentos: [] as InvestimentoPosition[],
     investimentoHistorico: [] as InvestimentoHistorico[],
@@ -277,8 +330,8 @@ export const useStore = create<AppStore>()(
       deleteHistorico: (id) => set(s => { s.investimentoHistorico = s.investimentoHistorico.filter(h => h.id !== id) }),
 
       exportData: () => {
-        const { config, tomadores, incomeRecords, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico } = get()
-        return JSON.stringify({ config, tomadores, incomeRecords, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico }, null, 2)
+        const { config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico } = get()
+        return JSON.stringify({ config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico }, null, 2)
       },
       importData: (json) => set(s => {
         try {
@@ -291,7 +344,7 @@ export const useStore = create<AppStore>()(
       resetToDefaults: () => set(() => getDefaultState()),
     })),
     {
-      name: 'painel-financeiro-v1',
+      name: 'painel-financeiro-v2',
       storage: createJSONStorage(() => localStorage),
     }
   )

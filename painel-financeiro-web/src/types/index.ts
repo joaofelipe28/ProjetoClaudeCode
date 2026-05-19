@@ -81,6 +81,8 @@ export type FixoCategoria =
   | 'Pet'
   | 'Lazer'
   | 'Alimentação'
+  | 'Cartão'
+  | 'Dívidas'
   | 'Outros'
 
 export type FixoStatus = 'Ativo' | 'Pausado' | 'Cancelado'
