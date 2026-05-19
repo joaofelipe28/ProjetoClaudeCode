@@ -54,7 +54,7 @@ export interface MonthlyIncomeRecord {
 // ── Monthly Debit Records ─────────────────────────────────────────────────────
 
 export type DebitStatus = 'Pago' | 'Pendente' | 'Agendado'
-export type DebitType = 'Fixo' | 'Parcelamento' | 'Pontual' | 'DARF'
+export type DebitType = 'Fixo' | 'Parcelamento' | 'Pontual' | 'DARF' | 'Aporte'
 
 export interface MonthlyDebitRecord {
   id: string
@@ -127,6 +127,17 @@ export interface Parcelamento {
   obs?: string
 }
 
+// ── Aportes de Investimento ───────────────────────────────────────────────────
+
+export interface AporteInvestimento {
+  id: string
+  mesAno: string
+  investimentoId: string
+  valor: number
+  status: 'Confirmado' | 'Previsto' | 'Cancelado'
+  obs?: string
+}
+
 // ── Investimentos ─────────────────────────────────────────────────────────────
 
 export type InvestimentoTipo =
@@ -182,6 +193,7 @@ export interface MonthSummary {
   darf: number        // DARF a pagar este mês (calculado sobre receita do mês anterior)
   darfApurado: number // Apuração do mês atual (vence no mês seguinte, informacional)
   pontuais: number
+  aportes: number
   totalDespesas: number
   saldoMes: number
   saldoAcumulado: number

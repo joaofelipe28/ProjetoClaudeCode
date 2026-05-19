@@ -36,6 +36,7 @@ export function Anual() {
   const totalDespesas = months.reduce((s, m) => s + m.totalDespesas, 0)
   const totalDarf = months.reduce((s, m) => s + m.darf, 0)
   const totalParcelas = months.reduce((s, m) => s + m.parcelasTotal, 0)
+  const totalAportes = months.reduce((s, m) => s + m.aportes, 0)
 
   const cashflowData = months.map(m => ({
     name: m.label,
@@ -67,6 +68,7 @@ export function Anual() {
         <KpiCard title="Despesas Total" value={brl(totalDespesas)} color="red" icon="📤" />
         <KpiCard title="DARF Total" value={brl(totalDarf)} color="purple" icon="🏛️" />
         <KpiCard title="Parcelas Total" value={brl(totalParcelas)} color="orange" icon="💳" />
+        <KpiCard title="Aportes Total" value={brl(totalAportes)} color="teal" icon="💰" />
       </div>
 
       {/* Full table */}
@@ -78,7 +80,7 @@ export function Anual() {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-bdr">
-                {['Mês', 'Receita', 'Fixos', 'Parc. PJ', 'Parc. Pessoal', 'DARF', 'Pontuais', 'Total Desp.', 'Saldo Mês', 'Saldo Acum.', 'Status'].map(h => (
+                {['Mês', 'Receita', 'Fixos', 'Parc. PJ', 'Parc. Pessoal', 'DARF', 'Pontuais', 'Aportes', 'Total Desp.', 'Saldo Mês', 'Saldo Acum.', 'Status'].map(h => (
                   <th key={h} className="px-3 py-2.5 text-left text-xs text-gray-400 font-medium whitespace-nowrap">{h}</th>
                 ))}
               </tr>
@@ -98,6 +100,7 @@ export function Anual() {
                     <td className="px-3 py-2.5 text-parcela">{brl(pessoalParcelas)}</td>
                     <td className="px-3 py-2.5 text-darf">{brl(m.darf)}</td>
                     <td className="px-3 py-2.5 text-pontual">{m.pontuais > 0 ? brl(m.pontuais) : '—'}</td>
+                    <td className="px-3 py-2.5 text-saldo">{m.aportes > 0 ? brl(m.aportes) : '—'}</td>
                     <td className="px-3 py-2.5 text-gray-400">{brl(m.totalDespesas)}</td>
                     <td className={`px-3 py-2.5 font-medium ${m.saldoMes >= 0 ? 'text-receita' : 'text-despesa'}`}>{brl(m.saldoMes)}</td>
                     <td className={`px-3 py-2.5 font-medium ${m.saldoAcumulado >= 0 ? 'text-gray-200' : 'text-despesa'}`}>{brl(m.saldoAcumulado)}</td>

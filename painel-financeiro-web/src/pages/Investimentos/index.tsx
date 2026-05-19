@@ -40,7 +40,7 @@ function CustomTooltip({ active, payload, label }: { active?: boolean; payload?:
 }
 
 export function Investimentos() {
-  const { investimentos, addInvestimento, updateInvestimento, deleteInvestimento } = useStore()
+  const { investimentos, addInvestimento, updateInvestimento, deleteInvestimento, aportes } = useStore()
   const [showForm, setShowForm] = useState(false)
   const [editId, setEditId] = useState<string | null>(null)
   const [form, setForm] = useState<Omit<InvestimentoPosition, 'id'>>(EMPTY_FORM)
@@ -57,6 +57,9 @@ export function Investimentos() {
   const taxaMedia = investimentos.length > 0
     ? investimentos.reduce((s, i) => s + i.taxaAnual * i.saldoAtual, 0) / Math.max(1, totalSaldo)
     : 0
+  const totalAportado = aportes
+    .filter(a => a.status !== 'Cancelado')
+    .reduce((s, a) => s + a.valor, 0)
 
   // Allocation donut
   const allocMap: Record<string, number> = {}
@@ -112,6 +115,7 @@ export function Investimentos() {
         <KpiCard title="Patrimônio Atual" value={brl(totalSaldo)} color="teal" icon="💰" />
         <KpiCard title="Rendimento" value={brl(rendimento)} subtitle={totalInvestido > 0 ? `+${pctNum(rendimento / totalInvestido * 100)}` : '—'} color="green" icon="📈" />
         <KpiCard title="Taxa Média" value={`${taxaMedia.toFixed(1)}% a.a.`} color="purple" icon="%" />
+        <KpiCard title="Aportado (app)" value={brl(totalAportado)} color="teal" icon="💰" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
@@ -133,11 +137,17 @@ export function Investimentos() {
             <div className="divide-y divide-bdr/50">
               {investimentos.map(inv => {
                 const proj = projectPosition(inv, 60)
+                const invAportado = aportes
+                  .filter(a => a.investimentoId === inv.id && a.status !== 'Cancelado')
+                  .reduce((s, a) => s + a.valor, 0)
                 return (
                   <div key={inv.id} className="px-4 py-3 hover:bg-white/5 flex items-center justify-between gap-4">
                     <div className="min-w-0">
                       <div className="font-medium text-gray-200 text-sm">{inv.nome}</div>
                       <div className="text-xs text-gray-500 mt-0.5">{inv.tipo} · {inv.instituicao} · {inv.liquidez}</div>
+                      {invAportado > 0 && (
+                        <div className="text-xs text-saldo mt-0.5">Aportado: {brl(invAportado)}</div>
+                      )}
                     </div>
                     <div className="flex items-center gap-6 shrink-0">
                       <div className="text-right">
@@ -312,6 +322,50 @@ export function Investimentos() {
               </table>
               {investimentos.length > 1 && <div className="text-xs text-gray-500 mt-2">* Taxa média ponderada pelo saldo</div>}
             </div>
+          </div>
+        )}
+      </div>
+
+      {/* Aportes por Posição */}
+      <div className="bg-surface border border-bdr rounded-xl overflow-hidden">
+        <div className="px-4 py-3 border-b border-bdr">
+          <h2 className="text-sm font-semibold text-gray-200">Aportes por Posição</h2>
+        </div>
+        {aportes.filter(a => a.status !== 'Cancelado').length === 0 ? (
+          <div className="px-4 py-8 text-center text-sm text-gray-500">
+            Registre aportes na aba Mensal
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-bdr">
+                  {['Mês', 'Posição', 'Valor', 'Status'].map(h => (
+                    <th key={h} className="px-3 py-2.5 text-left text-xs text-gray-400 font-medium">{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {[...aportes]
+                  .filter(a => a.status !== 'Cancelado')
+                  .sort((a, b) => b.mesAno.localeCompare(a.mesAno))
+                  .map(a => {
+                    const inv = investimentos.find(i => i.id === a.investimentoId)
+                    return (
+                      <tr key={a.id} className="border-b border-bdr/50 hover:bg-white/5">
+                        <td className="px-3 py-2.5 text-gray-300">{a.mesAno}</td>
+                        <td className="px-3 py-2.5 text-gray-200">{inv?.nome ?? '—'}</td>
+                        <td className="px-3 py-2.5 text-saldo font-medium">{brl(a.valor)}</td>
+                        <td className="px-3 py-2.5">
+                          <span className={`text-xs px-2 py-0.5 rounded-full ${
+                            a.status === 'Confirmado' ? 'bg-receita/20 text-receita' : 'bg-alerta/20 text-alerta'
+                          }`}>{a.status}</span>
+                        </td>
+                      </tr>
+                    )
+                  })}
+              </tbody>
+            </table>
           </div>
         )}
       </div>

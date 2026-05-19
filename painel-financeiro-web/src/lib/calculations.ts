@@ -1,6 +1,6 @@
 import type {
   AppConfig, Tomador, MonthlyIncomeRecord, GastoFixo,
-  GastoPontual, Parcelamento, DarfCalculation, MonthSummary,
+  GastoPontual, Parcelamento, DarfCalculation, MonthSummary, AporteInvestimento,
 } from '@/types'
 import { diffMonths, mesLabel, monthRange, addMonths } from './formatters'
 
@@ -61,6 +61,7 @@ export function computeMonthSummary(
   parcelamentos: Parcelamento[],
   config: AppConfig,
   saldoAnterior: number,
+  aportes: AporteInvestimento[] = [],
 ): MonthSummary {
   const tomMap = Object.fromEntries(tomadores.map(t => [t.id, t]))
 
@@ -102,7 +103,12 @@ export function computeMonthSummary(
     .filter(p => p.mesAno === mesAno && p.status !== 'Cancelado')
     .reduce((sum, p) => sum + p.valor, 0)
 
-  const totalDespesas = darf + fixos_ + parcelasTotal + pontuais_
+  // Aportes
+  const aportes_ = aportes
+    .filter(a => a.mesAno === mesAno && a.status !== 'Cancelado')
+    .reduce((sum, a) => sum + a.valor, 0)
+
+  const totalDespesas = darf + fixos_ + parcelasTotal + pontuais_ + aportes_
   const saldoMes = receitaRealizada - totalDespesas
   const saldoAcumulado = saldoAnterior + saldoMes
   const pctComprometido = receitaRealizada > 0 ? totalDespesas / receitaRealizada : 0
@@ -121,6 +127,7 @@ export function computeMonthSummary(
     darf,
     darfApurado,
     pontuais: pontuais_,
+    aportes: aportes_,
     totalDespesas,
     saldoMes,
     saldoAcumulado,
@@ -136,12 +143,13 @@ export function computeAllMonths(
   pontuais: GastoPontual[],
   parcelamentos: Parcelamento[],
   config: AppConfig,
+  aportes: AporteInvestimento[] = [],
 ): MonthSummary[] {
   const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 7))
   const results: MonthSummary[] = []
   let saldoAnterior = config.saldoInicial
   for (const mes of meses) {
-    const summary = computeMonthSummary(mes, incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, saldoAnterior)
+    const summary = computeMonthSummary(mes, incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, saldoAnterior, aportes)
     results.push(summary)
     saldoAnterior = summary.saldoAcumulado
   }

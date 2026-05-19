@@ -5,7 +5,7 @@ import type {
   AppConfig, TaxConfig, Tomador, MonthlyIncomeRecord, GastoFixo,
   GastoPontual, Parcelamento, InvestimentoPosition, InvestimentoHistorico,
   IncomeStatus, FixoStatus, ParcelamentoStatus, MonthlyDebitRecord, DebitStatus, DebitType,
-  FixoCategoria,
+  FixoCategoria, AporteInvestimento,
 } from '@/types'
 
 // ── Seed Data ─────────────────────────────────────────────────────────────────
@@ -135,6 +135,7 @@ interface AppStore {
   parcelamentos: Parcelamento[]
   investimentos: InvestimentoPosition[]
   investimentoHistorico: InvestimentoHistorico[]
+  aportes: AporteInvestimento[]
 
   // Config actions
   updateConfig: (updates: Partial<AppConfig>) => void
@@ -176,6 +177,11 @@ interface AppStore {
   updateHistorico: (id: string, updates: Partial<InvestimentoHistorico>) => void
   deleteHistorico: (id: string) => void
 
+  // Aportes actions
+  addAporte: (a: Omit<AporteInvestimento, 'id'>) => void
+  updateAporte: (id: string, updates: Partial<AporteInvestimento>) => void
+  deleteAporte: (id: string) => void
+
   // Monthly debits actions
   upsertDebitRecord: (ref: { referenceId: string; type: DebitType; mesAno: string; status: DebitStatus; valorPago: number; dataPagamento?: string }) => void
   toggleDebitPago: (referenceId: string, type: DebitType, mesAno: string, valorEsperado: number) => void
@@ -200,6 +206,7 @@ function getDefaultState() {
     parcelamentos: withId<Parcelamento>(SEED_PARCELAMENTOS),
     investimentos: [] as InvestimentoPosition[],
     investimentoHistorico: [] as InvestimentoHistorico[],
+    aportes: [] as AporteInvestimento[],
   }
 }
 
@@ -329,9 +336,16 @@ export const useStore = create<AppStore>()(
       }),
       deleteHistorico: (id) => set(s => { s.investimentoHistorico = s.investimentoHistorico.filter(h => h.id !== id) }),
 
+      addAporte: (a) => set(s => { s.aportes.push({ ...a, id: crypto.randomUUID() }) }),
+      updateAporte: (id, updates) => set(s => {
+        const idx = s.aportes.findIndex(a => a.id === id)
+        if (idx !== -1) Object.assign(s.aportes[idx], updates)
+      }),
+      deleteAporte: (id) => set(s => { s.aportes = s.aportes.filter(a => a.id !== id) }),
+
       exportData: () => {
-        const { config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico } = get()
-        return JSON.stringify({ config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico }, null, 2)
+        const { config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes } = get()
+        return JSON.stringify({ config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes }, null, 2)
       },
       importData: (json) => set(s => {
         try {
@@ -360,12 +374,12 @@ export const useStore = create<AppStore>()(
         setItem: (key: string, value: string) => localStorage.setItem(key, value),
         removeItem: (key: string) => localStorage.removeItem(key),
       })),
-      version: 2,
+      version: 3,
       // REGRA FUTURA: nunca mude o `name` acima. Para adicionar dados novos,
       // incremente `version` e escreva uma migração que só ADICIONA itens
       // ausentes por ID — nunca sobrescreva dados do usuário.
       migrate: (persistedState: unknown, fromVersion: number) => {
-        const s = (persistedState ?? {}) as ReturnType<typeof getDefaultState>
+        const s = (persistedState ?? {}) as ReturnType<typeof getDefaultState> & { aportes?: AporteInvestimento[] }
 
         // v0/v1 → v2: adiciona pontuais e debits do seed de Mai/26
         if (fromVersion < 2) {
@@ -378,6 +392,11 @@ export const useStore = create<AppStore>()(
           const existingDIds = new Set((s.monthlyDebits ?? []).map(d => d.id))
           const newD = defaults.monthlyDebits.filter(d => !existingDIds.has(d.id))
           if (newD.length) s.monthlyDebits = [...(s.monthlyDebits ?? []), ...newD]
+        }
+
+        // v2 → v3: adiciona aportes
+        if (fromVersion < 3) {
+          if (!s.aportes) s.aportes = []
         }
 
         return s

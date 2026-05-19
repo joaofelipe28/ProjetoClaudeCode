@@ -7,7 +7,7 @@ import { Select } from '@/components/ui/Select'
 import { Modal } from '@/components/ui/Modal'
 import { brl, mesLabel, monthRange, addMonths } from '@/lib/formatters'
 import { getParcelamentoValue } from '@/lib/calculations'
-import type { IncomeStatus, GastoPontual, FixoCategoria, DebitType } from '@/types'
+import type { IncomeStatus, GastoPontual, FixoCategoria, DebitType, AporteInvestimento } from '@/types'
 
 const STATUS_OPTIONS = [
   { value: 'Previsto', label: 'Previsto' },
@@ -27,6 +27,7 @@ const TYPE_COLOR: Record<DebitType, string> = {
   Parcelamento: 'bg-parcela/20 text-parcela',
   Pontual: 'bg-pontual/20 text-pontual',
   DARF: 'bg-darf/20 text-darf',
+  Aporte: 'bg-saldo/20 text-saldo',
 }
 
 function CheckCircle({ checked }: { checked: boolean }) {
@@ -47,9 +48,10 @@ function CheckCircle({ checked }: { checked: boolean }) {
 
 export function Mensal() {
   const {
-    config, tomadores, parcelamentos, pontuais, fixos,
+    config, tomadores, parcelamentos, pontuais, fixos, investimentos, aportes,
     upsertIncomeRecord, initMonthFromTomadores, setMesAtual,
     addPontual, deletePontual,
+    addAporte, deleteAporte,
     toggleDebitPago, getDebitRecord,
   } = useStore()
 
@@ -58,6 +60,10 @@ export function Mensal() {
   const [showAddPontual, setShowAddPontual] = useState(false)
   const [newPontual, setNewPontual] = useState<Partial<GastoPontual>>({
     mesAno: selectedMes, categoria: 'Outros', status: 'Confirmado',
+  })
+  const [showAddAporte, setShowAddAporte] = useState(false)
+  const [newAporte, setNewAporte] = useState<Partial<AporteInvestimento>>({
+    mesAno: selectedMes, status: 'Confirmado', valor: 0,
   })
 
   const { summary, darf, monthRecords } = useMonthlyCalculations(selectedMes)
@@ -71,6 +77,8 @@ export function Mensal() {
   const activeParcelamentos = parcelamentos.filter(p => getParcelamentoValue(p, selectedMes) > 0)
   const monthPontuais = pontuais.filter(p => p.mesAno === selectedMes && p.status !== 'Cancelado')
   const activeFixos = fixos.filter(f => f.status === 'Ativo')
+  const monthAportes = aportes.filter(a => a.mesAno === selectedMes && a.status !== 'Cancelado')
+  const invMap = Object.fromEntries(investimentos.map(i => [i.id, i]))
 
   // ── DARF timing: computeMonthSummary já retorna timing correto ────────────
   // summary.darf  = DARF a pagar este mês (calculado sobre receita do mês anterior)
@@ -98,6 +106,7 @@ export function Mensal() {
     ...activeParcelamentos.map(p => ({ id: p.id, valor: getParcelamentoValue(p, selectedMes), type: 'Parcelamento' as DebitType })),
     ...monthPontuais.map(p => ({ id: p.id, valor: p.valor, type: 'Pontual' as DebitType })),
     ...(prevDarfValor > 0 ? [{ id: prevDarfKey, valor: prevDarfValor, type: 'DARF' as DebitType }] : []),
+    ...monthAportes.map(a => ({ id: a.id, valor: a.valor, type: 'Aporte' as DebitType })),
   ]
   const totalPago = allDebitItems.filter(d => isDebitPago(d.id)).reduce((s, d) => s + d.valor, 0)
   const totalPendente = allDebitItems.filter(d => !isDebitPago(d.id)).reduce((s, d) => s + d.valor, 0)
@@ -142,6 +151,18 @@ export function Mensal() {
     })
     setNewPontual({ mesAno: selectedMes, categoria: 'Outros', status: 'Confirmado' })
     setShowAddPontual(false)
+  }
+
+  function handleAddAporte() {
+    if (!newAporte.investimentoId || !newAporte.valor) return
+    addAporte({
+      mesAno: selectedMes,
+      investimentoId: newAporte.investimentoId!,
+      valor: newAporte.valor!,
+      status: 'Confirmado',
+    })
+    setNewAporte({ mesAno: selectedMes, status: 'Confirmado', valor: 0 })
+    setShowAddAporte(false)
   }
 
   return (
@@ -469,6 +490,59 @@ export function Mensal() {
             )}
           </div>
 
+          {/* Aportes */}
+          <div>
+            <div className="px-4 py-2 bg-saldo/5 flex items-center justify-between">
+              <span className="text-xs font-semibold text-saldo uppercase tracking-wide">Aportes de Investimento</span>
+              <button
+                onClick={() => setShowAddAporte(true)}
+                className="text-xs bg-saldo/20 text-saldo px-2 py-1 rounded-lg hover:bg-saldo/30 transition-colors"
+              >
+                + Novo aporte
+              </button>
+            </div>
+            {monthAportes.length === 0 ? (
+              <div className="px-4 py-4 text-center text-sm text-gray-500">
+                {investimentos.length === 0
+                  ? 'Cadastre uma posição em Investimentos primeiro'
+                  : <button onClick={() => setShowAddAporte(true)} className="text-saldo hover:underline">Registrar aporte deste mês</button>
+                }
+              </div>
+            ) : (
+              monthAportes.map(a => {
+                const inv = invMap[a.investimentoId]
+                const pago = isDebitPago(a.id)
+                return (
+                  <div
+                    key={a.id}
+                    className="flex items-center gap-4 px-4 py-3 hover:bg-white/5 transition-colors"
+                  >
+                    <div onClick={() => handleToggle(a.id, 'Aporte', a.valor)} className="cursor-pointer">
+                      <CheckCircle checked={pago} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className={`text-sm font-medium ${pago ? 'line-through text-gray-500' : 'text-gray-200'}`}>
+                        {inv?.nome ?? 'Investimento removido'}
+                      </div>
+                      <div className="text-xs text-gray-500">{a.mesAno}</div>
+                    </div>
+                    <div className={`text-sm font-medium ${pago ? 'text-gray-500 line-through' : 'text-saldo'}`}>
+                      {brl(a.valor)}
+                    </div>
+                    <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Aporte']}`}>Aporte</span>
+                    <button
+                      onClick={() => deleteAporte(a.id)}
+                      className="text-gray-600 hover:text-despesa text-xs ml-1"
+                      title="Remover"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                )
+              })
+            )}
+          </div>
+
           {/* Summary footer */}
           <div className="px-4 py-3 bg-surfaceAlt flex items-center justify-between">
             <div className="text-sm">
@@ -482,6 +556,43 @@ export function Mensal() {
           </div>
         </div>
       </div>
+
+      {/* Add aporte modal */}
+      <Modal open={showAddAporte} onClose={() => setShowAddAporte(false)} title="Registrar Aporte de Investimento">
+        <div className="space-y-4">
+          {investimentos.length === 0 ? (
+            <p className="text-sm text-gray-400 text-center py-4">Cadastre uma posição em Investimentos primeiro</p>
+          ) : (
+            <>
+              <div>
+                <label className="block text-xs text-gray-400 mb-1">Posição (Investimento)</label>
+                <Select
+                  value={newAporte.investimentoId ?? ''}
+                  onChange={v => setNewAporte(a => ({ ...a, investimentoId: v }))}
+                  options={[{ value: '', label: 'Selecione...' }, ...investimentos.map(i => ({ value: i.id, label: i.nome }))]}
+                  className="w-full"
+                />
+              </div>
+              <div>
+                <label className="block text-xs text-gray-400 mb-1">Valor do aporte</label>
+                <CurrencyInput
+                  value={newAporte.valor ?? 0}
+                  onChange={v => setNewAporte(a => ({ ...a, valor: v }))}
+                  className="w-full"
+                />
+              </div>
+              <div className="flex gap-3 pt-2">
+                <button onClick={() => setShowAddAporte(false)} className="flex-1 px-4 py-2 rounded-lg border border-bdr text-gray-400 text-sm hover:text-gray-200 transition-colors">
+                  Cancelar
+                </button>
+                <button onClick={handleAddAporte} className="flex-1 px-4 py-2 rounded-lg bg-saldo text-gray-900 font-medium text-sm hover:bg-saldo/90 transition-colors">
+                  Registrar
+                </button>
+              </div>
+            </>
+          )}
+        </div>
+      </Modal>
 
       {/* Add pontual modal */}
       <Modal open={showAddPontual} onClose={() => setShowAddPontual(false)} title="Adicionar Conta / Gasto Pontual">
