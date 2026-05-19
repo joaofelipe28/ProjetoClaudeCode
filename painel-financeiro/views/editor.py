@@ -10,8 +10,8 @@ from data.editor import (
 from config import MONTHS, MONTH_LABELS
 
 
-def _save_btn(label: str = "💾 Salvar"):
-    return st.button(label, type="primary", use_container_width=True)
+def _save_btn(key: str, label: str = "💾 Salvar"):
+    return st.button(label, key=key, type="primary", use_container_width=True)
 
 
 def _flush(xlsx_path: str):
@@ -93,7 +93,7 @@ def render(data: PainelData):
             inputs["csll"] = st.number_input("CSLL", value=float(cfg.get("csll", 0) or 0), step=0.0001, format="%.4f")
             inputs["iss"] = st.number_input("ISS Maringá", value=float(cfg.get("iss", 0) or 0), step=0.0001, format="%.4f")
 
-        if _save_btn():
+        if _save_btn("save_config"):
             try:
                 save_config(xlsx_path, inputs)
                 _flush(xlsx_path)
@@ -131,7 +131,7 @@ def render(data: PainelData):
             key="editor_fixos",
         )
 
-        if _save_btn():
+        if _save_btn("save_fixos"):
             try:
                 save_fixos(xlsx_path, edited)
                 _flush(xlsx_path)
@@ -172,7 +172,7 @@ def render(data: PainelData):
             key="editor_pj_parcelas",
         )
 
-        if _save_btn():
+        if _save_btn("save_pj_parcelas"):
             try:
                 save_pj_parcelas(xlsx_path, edited)
                 _flush(xlsx_path)
@@ -212,7 +212,7 @@ def render(data: PainelData):
             key="editor_parcelas_pessoais",
         )
 
-        if _save_btn():
+        if _save_btn("save_parcelas_pessoais"):
             try:
                 save_parcelas_pessoais(xlsx_path, edited)
                 _flush(xlsx_path)
@@ -257,7 +257,7 @@ def render(data: PainelData):
             key="editor_tomadores",
         )
 
-        if _save_btn():
+        if _save_btn("save_tomadores"):
             try:
                 save_tomadores(xlsx_path, edited)
                 _flush(xlsx_path)
@@ -291,7 +291,7 @@ def render(data: PainelData):
                 key="editor_faturamento",
             )
 
-            if _save_btn():
+            if _save_btn("save_faturamento"):
                 try:
                     save_faturamento(xlsx_path, edited)
                     _flush(xlsx_path)
@@ -340,7 +340,7 @@ def render(data: PainelData):
 
         st.caption(f"Máximo 16 itens por mês. Atualmente: {len(edited)} linha(s).")
 
-        if _save_btn():
+        if _save_btn("save_pontuais"):
             try:
                 save_pontuais_mes(xlsx_path, month_key, edited)
                 _flush(xlsx_path)
