@@ -12,6 +12,12 @@
       "runtimeExecutable": "uvicorn",
       "runtimeArgs": ["app.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"],
       "port": 8000
+    },
+    {
+      "name": "Painel Financeiro",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "painel-financeiro-web", "--", "--port", "5174"],
+      "port": 5174
     }
   ]
 }
