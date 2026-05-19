@@ -344,8 +344,44 @@ export const useStore = create<AppStore>()(
       resetToDefaults: () => set(() => getDefaultState()),
     })),
     {
-      name: 'painel-financeiro-v2',
-      storage: createJSONStorage(() => localStorage),
+      name: 'painel-financeiro',
+      // Storage customizado: se 'painel-financeiro' não existir, lê das chaves
+      // legadas para migrar dados sem perda. Escreve sempre na chave canônica.
+      storage: createJSONStorage(() => ({
+        getItem: (key: string) => {
+          const current = localStorage.getItem(key)
+          if (current) return current
+          for (const legacy of ['painel-financeiro-v2', 'painel-financeiro-v1']) {
+            const old = localStorage.getItem(legacy)
+            if (old) return old
+          }
+          return null
+        },
+        setItem: (key: string, value: string) => localStorage.setItem(key, value),
+        removeItem: (key: string) => localStorage.removeItem(key),
+      })),
+      version: 2,
+      // REGRA FUTURA: nunca mude o `name` acima. Para adicionar dados novos,
+      // incremente `version` e escreva uma migração que só ADICIONA itens
+      // ausentes por ID — nunca sobrescreva dados do usuário.
+      migrate: (persistedState: unknown, fromVersion: number) => {
+        const s = (persistedState ?? {}) as ReturnType<typeof getDefaultState>
+
+        // v0/v1 → v2: adiciona pontuais e debits do seed de Mai/26
+        if (fromVersion < 2) {
+          const defaults = getDefaultState()
+
+          const existingPIds = new Set((s.pontuais ?? []).map(p => p.id))
+          const newP = defaults.pontuais.filter(p => !existingPIds.has(p.id))
+          if (newP.length) s.pontuais = [...(s.pontuais ?? []), ...newP]
+
+          const existingDIds = new Set((s.monthlyDebits ?? []).map(d => d.id))
+          const newD = defaults.monthlyDebits.filter(d => !existingDIds.has(d.id))
+          if (newD.length) s.monthlyDebits = [...(s.monthlyDebits ?? []), ...newD]
+        }
+
+        return s
+      },
     }
   )
 )
