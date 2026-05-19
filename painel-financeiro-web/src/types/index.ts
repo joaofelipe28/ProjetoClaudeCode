@@ -179,7 +179,8 @@ export interface MonthSummary {
   receitaRealizada: number
   fixos: number
   parcelasTotal: number
-  darf: number
+  darf: number        // DARF a pagar este mês (calculado sobre receita do mês anterior)
+  darfApurado: number // Apuração do mês atual (vence no mês seguinte, informacional)
   pontuais: number
   totalDespesas: number
   saldoMes: number

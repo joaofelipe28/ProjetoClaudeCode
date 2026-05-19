@@ -12,7 +12,7 @@ export function useMonthlyCalculations(mesAno: string) {
 
   const summary = computeMonthSummary(mesAno, incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, saldoAnterior)
 
-  // DARF breakdown
+  // DARF breakdown para exibição da apuração do mês atual
   const monthRecords = incomeRecords.filter(r => r.mesAno === mesAno)
   const tomMap = Object.fromEntries(tomadores.map(t => [t.id, t]))
   const faturamentoPJ = monthRecords
@@ -27,7 +27,9 @@ export function useMonthlyCalculations(mesAno: string) {
     if (t.retemIrpj) ret += r.valorRealizado * (taxConfig.pis + taxConfig.cofins + taxConfig.irpj + taxConfig.csll)
     return sum + ret
   }, 0)
+  // darf = breakdown do mês atual (apuração, para exibir os detalhes no card)
   const darf = computeDarf(faturamentoPJ, retencoesFonte, config, mesAno)
+  // summary.darf já contém o DARF a pagar este mês (mês anterior) com timing correto
 
   const fixosTotal = computeFixosTotal(fixos)
 

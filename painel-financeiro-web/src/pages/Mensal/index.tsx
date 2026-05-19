@@ -8,7 +8,6 @@ import { Modal } from '@/components/ui/Modal'
 import { brl, mesLabel, monthRange, addMonths } from '@/lib/formatters'
 import { getParcelamentoValue } from '@/lib/calculations'
 import type { IncomeStatus, GastoPontual, FixoCategoria, DebitType } from '@/types'
-import { computeDarf, computeRetencoes } from '@/lib/calculations'
 
 const STATUS_OPTIONS = [
   { value: 'Previsto', label: 'Previsto' },
@@ -48,7 +47,7 @@ function CheckCircle({ checked }: { checked: boolean }) {
 
 export function Mensal() {
   const {
-    config, tomadores, parcelamentos, pontuais, fixos, incomeRecords,
+    config, tomadores, parcelamentos, pontuais, fixos,
     upsertIncomeRecord, initMonthFromTomadores, setMesAtual,
     addPontual, deletePontual,
     toggleDebitPago, getDebitRecord,
@@ -73,21 +72,13 @@ export function Mensal() {
   const monthPontuais = pontuais.filter(p => p.mesAno === selectedMes && p.status !== 'Cancelado')
   const activeFixos = fixos.filter(f => f.status === 'Ativo')
 
-  // ── DARF timing: DARF do mês M é pago em M+1 ──────────────────────────────
-  // "Apuração" = impostos sobre receitas do mês atual (referência, vence no mês seguinte)
-  // "A pagar"  = DARF calculado sobre receitas do mês anterior (vence este mês)
+  // ── DARF timing: computeMonthSummary já retorna timing correto ────────────
+  // summary.darf  = DARF a pagar este mês (calculado sobre receita do mês anterior)
+  // darf (hook)   = DarfCalculation do mês atual (breakdown para exibição da apuração)
   const prevMes = addMonths(selectedMes, -1)
   const nextMes = addMonths(selectedMes, 1)
-  const prevMonthRecords = incomeRecords.filter(r => r.mesAno === prevMes)
-  const prevFatPJ = prevMonthRecords
-    .filter(r => tomMap[r.tomadorId]?.tipo === 'PJ')
-    .reduce((s, r) => s + r.valorRealizado, 0)
-  const prevRetencoes = prevMonthRecords.reduce((s, r) => {
-    const t = tomMap[r.tomadorId]
-    return s + (t ? computeRetencoes(t, r.valorRealizado, config) : 0)
-  }, 0)
-  const prevDarf = computeDarf(prevFatPJ, prevRetencoes, config, prevMes)
   const prevDarfKey = `darf-${prevMes}`
+  const prevDarfValor = summary.darf  // já calculado corretamente no core
 
   // Debit payment helpers
   function isDebitPago(referenceId: string) {
@@ -106,7 +97,7 @@ export function Mensal() {
     ...activeFixos.map(f => ({ id: f.id, valor: f.valor, type: 'Fixo' as DebitType })),
     ...activeParcelamentos.map(p => ({ id: p.id, valor: getParcelamentoValue(p, selectedMes), type: 'Parcelamento' as DebitType })),
     ...monthPontuais.map(p => ({ id: p.id, valor: p.valor, type: 'Pontual' as DebitType })),
-    ...(prevDarf.darfAPagar > 0 ? [{ id: prevDarfKey, valor: prevDarf.darfAPagar, type: 'DARF' as DebitType }] : []),
+    ...(prevDarfValor > 0 ? [{ id: prevDarfKey, valor: prevDarfValor, type: 'DARF' as DebitType }] : []),
   ]
   const totalPago = allDebitItems.filter(d => isDebitPago(d.id)).reduce((s, d) => s + d.valor, 0)
   const totalPendente = allDebitItems.filter(d => !isDebitPago(d.id)).reduce((s, d) => s + d.valor, 0)
@@ -304,15 +295,15 @@ export function Mensal() {
                 </div>
                 <div className="text-xs text-gray-500 mt-0.5">ref. {mesLabel(prevMes)}</div>
               </div>
-              {prevDarf.darfAPagar > 0 ? (
+              {prevDarfValor > 0 ? (
                 <button
-                  onClick={() => handleToggle(prevDarfKey, 'DARF', prevDarf.darfAPagar)}
+                  onClick={() => handleToggle(prevDarfKey, 'DARF', prevDarfValor)}
                   className="flex items-center gap-2"
                 >
                   <CheckCircle checked={prevDarfPago} />
                   <div className="text-right">
                     <div className={`text-sm font-bold ${prevDarfPago ? 'line-through text-gray-500' : 'text-darf'}`}>
-                      {brl(prevDarf.darfAPagar)}
+                      {brl(prevDarfValor)}
                     </div>
                     <div className={`text-xs ${prevDarfPago ? 'text-receita' : 'text-gray-500'}`}>
                       {prevDarfPago ? 'Pago ✓' : 'Clique para marcar pago'}
@@ -411,13 +402,13 @@ export function Mensal() {
           )}
 
           {/* DARF no checklist (refere-se ao mês anterior — vence este mês) */}
-          {prevDarf.darfAPagar > 0 && (
+          {prevDarfValor > 0 && (
             <div>
               <div className="px-4 py-2 bg-darf/5">
                 <span className="text-xs font-semibold text-darf uppercase tracking-wide">Impostos</span>
               </div>
               <div
-                onClick={() => handleToggle(prevDarfKey, 'DARF', prevDarf.darfAPagar)}
+                onClick={() => handleToggle(prevDarfKey, 'DARF', prevDarfValor)}
                 className="flex items-center gap-4 px-4 py-3 hover:bg-white/5 cursor-pointer transition-colors"
               >
                 <CheckCircle checked={prevDarfPago} />
@@ -428,7 +419,7 @@ export function Mensal() {
                   <div className="text-xs text-gray-500">Vence em {mesLabel(selectedMes)} · PIS + COFINS + IRPJ + CSLL + ISS</div>
                 </div>
                 <div className={`text-sm font-medium ${prevDarfPago ? 'text-gray-500 line-through' : 'text-darf'}`}>
-                  {brl(prevDarf.darfAPagar)}
+                  {brl(prevDarfValor)}
                 </div>
                 <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['DARF']}`}>DARF</span>
               </div>

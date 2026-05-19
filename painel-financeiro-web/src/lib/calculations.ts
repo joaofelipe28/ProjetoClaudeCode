@@ -69,7 +69,7 @@ export function computeMonthSummary(
   const receitaPrevista = tomadores.filter(t => t.ativo).reduce((sum, t) => sum + t.valorPrevisto, 0)
   const receitaRealizada = monthRecords.reduce((sum, r) => sum + r.valorRealizado, 0)
 
-  // PJ faturamento (only PJ tomadores)
+  // Apuração do mês atual (informacional — vence no mês seguinte)
   const faturamentoPJ = monthRecords
     .filter(r => tomMap[r.tomadorId]?.tipo === 'PJ')
     .reduce((sum, r) => sum + r.valorRealizado, 0)
@@ -77,7 +77,19 @@ export function computeMonthSummary(
     const t = tomMap[r.tomadorId]
     return sum + (t ? computeRetencoes(t, r.valorRealizado, config) : 0)
   }, 0)
-  const darf = computeDarf(faturamentoPJ, retencoesFonte, config, mesAno).darfAPagar
+  const darfApurado = computeDarf(faturamentoPJ, retencoesFonte, config, mesAno).darfAPagar
+
+  // DARF a pagar este mês = apuração do mês anterior (timing real)
+  const prevMesAno = addMonths(mesAno, -1)
+  const prevRecords = incomeRecords.filter(r => r.mesAno === prevMesAno)
+  const prevFatPJ = prevRecords
+    .filter(r => tomMap[r.tomadorId]?.tipo === 'PJ')
+    .reduce((sum, r) => sum + r.valorRealizado, 0)
+  const prevRetencoes = prevRecords.reduce((sum, r) => {
+    const t = tomMap[r.tomadorId]
+    return sum + (t ? computeRetencoes(t, r.valorRealizado, config) : 0)
+  }, 0)
+  const darf = computeDarf(prevFatPJ, prevRetencoes, config, prevMesAno).darfAPagar
 
   // Fixos
   const fixos_ = fixos.filter(f => f.status === 'Ativo').reduce((sum, f) => sum + f.valor, 0)
@@ -107,6 +119,7 @@ export function computeMonthSummary(
     fixos: fixos_,
     parcelasTotal,
     darf,
+    darfApurado,
     pontuais: pontuais_,
     totalDespesas,
     saldoMes,
