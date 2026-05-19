@@ -3,6 +3,8 @@ import plotly.graph_objects as go
 import pandas as pd
 
 from config import COLORS, MONTHS, MONTH_LABELS
+from data.editor import save_month_revenues, save_pontuais_mes
+from data.reconciler import ALL_CATEGORIES
 
 
 def _fmt_brl(v):
@@ -28,17 +30,18 @@ def render(data, selected_month_key: str):
         st.warning(f"Dados de {selected_month_key} não encontrados.")
         return
 
+    xlsx_path = st.session_state.get("xlsx_path_current", "")
+
     st.header(f"Detalhes: {month.label}")
 
-    # Derive summary values from parsed data
     rev_df = month.revenues
     total_receita = 0.0
     saldo_anterior = 0.0
 
     if not rev_df.empty and "Previsto" in rev_df.columns:
         rev_num = pd.to_numeric(rev_df["Previsto"], errors="coerce").fillna(0)
+        rev_df = rev_df.copy()
         rev_df["Previsto"] = rev_num
-        # Saldo anterior is the first row
         saldo_anterior = float(rev_num.iloc[0]) if len(rev_num) > 0 else 0.0
         total_receita = float(rev_num.iloc[1:].sum())
 
@@ -83,19 +86,41 @@ def render(data, selected_month_key: str):
     col_left, col_right = st.columns([3, 2])
 
     with col_left:
-        # Receitas table
+        # ── Receitas — editable ───────────────────────────────────────────────
         st.subheader("Receitas")
         if not rev_df.empty:
-            # Skip saldo anterior row for display in revenues table (row 0)
-            rev_display = rev_df.iloc[1:].copy() if len(rev_df) > 1 else rev_df.copy()
-            if "Previsto" in rev_display.columns:
-                rev_display["Previsto"] = rev_display["Previsto"].apply(_fmt_brl)
-            if "Realizado" in rev_display.columns:
-                rev_display["Realizado"] = pd.to_numeric(rev_display["Realizado"], errors="coerce").fillna(0).apply(_fmt_brl)
+            rev_edit = rev_df.iloc[1:].copy() if len(rev_df) > 1 else rev_df.copy()
 
-            cols_show = [c for c in ["Descrição", "Tipo", "Previsto", "Realizado", "Status"] if c in rev_display.columns]
-            styled = rev_display[cols_show].style.applymap(_status_color, subset=["Status"]) if "Status" in rev_display.columns else rev_display[cols_show].style
-            st.dataframe(styled, use_container_width=True, hide_index=True)
+            for col in ["Realizado", "Status"]:
+                if col not in rev_edit.columns:
+                    rev_edit[col] = "" if col == "Status" else 0.0
+
+            rev_edit["Realizado"] = pd.to_numeric(rev_edit["Realizado"], errors="coerce").fillna(0.0)
+
+            edited_rev = st.data_editor(
+                rev_edit[["Descrição", "Previsto", "Realizado", "Status"]],
+                use_container_width=True,
+                hide_index=True,
+                num_rows="fixed",
+                column_config={
+                    "Descrição": st.column_config.TextColumn("Descrição", disabled=True),
+                    "Previsto": st.column_config.NumberColumn("Previsto (R$)", format="R$ %.2f", disabled=True),
+                    "Realizado": st.column_config.NumberColumn("Realizado (R$)", format="R$ %.2f"),
+                    "Status": st.column_config.SelectboxColumn(
+                        "Status", options=["Pago", "Previsto", "Cancelado", "Pendente"]
+                    ),
+                },
+                key=f"rev_editor_{selected_month_key}",
+            )
+
+            if xlsx_path and st.button("💾 Confirmar Receitas", key=f"save_rev_{selected_month_key}", type="primary"):
+                try:
+                    save_month_revenues(xlsx_path, selected_month_key, edited_rev)
+                    st.cache_data.clear()
+                    st.success("Receitas salvas!")
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"Erro ao salvar: {e}")
 
         # Parcelas PJ
         if not month.pj_parcelas.empty:
@@ -115,14 +140,42 @@ def render(data, selected_month_key: str):
             cols_show = [c for c in ["Descrição", "Competência", "Vencimento", "Valor", "Status"] if c in darf_disp.columns]
             st.dataframe(darf_disp[cols_show], use_container_width=True, hide_index=True)
 
-        # Pontuais
-        if not month.pontuais.empty:
-            st.subheader("Gastos Pontuais")
-            pont_disp = month.pontuais.copy()
-            if "Valor" in pont_disp.columns:
-                pont_disp["Valor"] = pd.to_numeric(pont_disp["Valor"], errors="coerce").fillna(0).apply(_fmt_brl)
-            cols_show = [c for c in ["Descrição", "Categoria", "Valor", "Status"] if c in pont_disp.columns]
-            st.dataframe(pont_disp[cols_show], use_container_width=True, hide_index=True)
+        # ── Pontuais — editable ───────────────────────────────────────────────
+        st.subheader("Gastos Pontuais")
+
+        pont_df = month.pontuais.copy() if not month.pontuais.empty else pd.DataFrame(
+            columns=["Descrição", "Categoria", "Valor", "Status"]
+        )
+        for col in ["Descrição", "Categoria", "Status"]:
+            if col not in pont_df.columns:
+                pont_df[col] = ""
+        if "Valor" not in pont_df.columns:
+            pont_df["Valor"] = 0.0
+        pont_df["Valor"] = pd.to_numeric(pont_df["Valor"], errors="coerce").fillna(0.0)
+
+        edited_pont = st.data_editor(
+            pont_df[["Descrição", "Categoria", "Valor", "Status"]],
+            use_container_width=True,
+            hide_index=True,
+            num_rows="dynamic",
+            column_config={
+                "Valor": st.column_config.NumberColumn("Valor (R$)", format="R$ %.2f"),
+                "Categoria": st.column_config.SelectboxColumn("Categoria", options=ALL_CATEGORIES),
+                "Status": st.column_config.SelectboxColumn(
+                    "Status", options=["Confirmado", "Previsto", "Cancelado", ""]
+                ),
+            },
+            key=f"pont_editor_{selected_month_key}",
+        )
+
+        if xlsx_path and st.button("💾 Confirmar Pontuais", key=f"save_pont_{selected_month_key}", type="primary"):
+            try:
+                save_pontuais_mes(xlsx_path, selected_month_key, edited_pont)
+                st.cache_data.clear()
+                st.success("Gastos pontuais salvos!")
+                st.rerun()
+            except Exception as e:
+                st.error(f"Erro ao salvar: {e}")
 
     with col_right:
         # Waterfall chart
@@ -143,11 +196,6 @@ def render(data, selected_month_key: str):
         labels = ["Receita"] + [x[0] for x in expense_items] + ["Saldo Final"]
         measures = ["absolute"] + ["relative"] * len(expense_items) + ["total"]
         values = [total_receita] + [x[1] for x in expense_items] + [saldo_mes]
-        colors_wf = (
-            [COLORS["receita"]] +
-            [x[2] for x in expense_items] +
-            [COLORS["saldo"] if saldo_mes >= 0 else COLORS["fixos"]]
-        )
 
         fig_wf = go.Figure(go.Waterfall(
             orientation="v",

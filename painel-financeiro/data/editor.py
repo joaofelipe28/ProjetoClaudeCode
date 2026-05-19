@@ -227,6 +227,50 @@ PONTUAIS_DATA_END = 83
 PONTUAIS_INPUT_COLS = [1, 2, 3, 6]
 
 
+def save_month_revenues(xlsx_path: str, month_key: str, df: pd.DataFrame):
+    """
+    Updates Realizado (col 5) and Status (col 6) for revenues in a month sheet.
+    df must have columns: Descrição, Realizado, Status.
+    Matches rows by scanning col 1 for description substring, then writes cols 5 and 6.
+    """
+    import difflib
+
+    wb = _open_wb(xlsx_path)
+    if month_key not in wb.sheetnames:
+        return
+    ws = wb[month_key]
+
+    for _, row in df.iterrows():
+        desc_target = str(row.get("Descrição", "")).strip().lower()
+        if not desc_target:
+            continue
+
+        best_row = -1
+        best_score = 0.0
+        for r in range(1, 80):
+            cell_val = ws.cell(row=r, column=1).value
+            if not cell_val:
+                continue
+            score = difflib.SequenceMatcher(None, str(cell_val).lower(), desc_target).ratio()
+            if score > best_score:
+                best_score = score
+                best_row = r
+
+        if best_row == -1 or best_score < 0.5:
+            continue
+
+        realizado = row.get("Realizado", None)
+        status = row.get("Status", None)
+
+        if realizado is not None:
+            val = None if (pd.isna(realizado) if realizado is not None else False) else realizado
+            ws.cell(row=best_row, column=5).value = val
+        if status is not None:
+            ws.cell(row=best_row, column=6).value = None if (pd.isna(status) if status is not None else False) else status
+
+    _save_wb(wb, xlsx_path)
+
+
 def save_pontuais_mes(xlsx_path: str, month_key: str, df: pd.DataFrame):
     """
     df columns: Descrição, Categoria, Valor, Status
