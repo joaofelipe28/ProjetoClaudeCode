@@ -4,7 +4,7 @@ import { immer } from 'zustand/middleware/immer'
 import type {
   AppConfig, TaxConfig, Tomador, MonthlyIncomeRecord, GastoFixo,
   GastoPontual, Parcelamento, InvestimentoPosition, InvestimentoHistorico,
-  IncomeStatus, FixoStatus, ParcelamentoStatus,
+  IncomeStatus, FixoStatus, ParcelamentoStatus, MonthlyDebitRecord, DebitStatus, DebitType,
 } from '@/types'
 
 // ── Seed Data ─────────────────────────────────────────────────────────────────
@@ -76,6 +76,7 @@ interface AppStore {
   config: AppConfig
   tomadores: Tomador[]
   incomeRecords: MonthlyIncomeRecord[]
+  monthlyDebits: MonthlyDebitRecord[]
   fixos: GastoFixo[]
   pontuais: GastoPontual[]
   parcelamentos: Parcelamento[]
@@ -122,6 +123,11 @@ interface AppStore {
   updateHistorico: (id: string, updates: Partial<InvestimentoHistorico>) => void
   deleteHistorico: (id: string) => void
 
+  // Monthly debits actions
+  upsertDebitRecord: (ref: { referenceId: string; type: DebitType; mesAno: string; status: DebitStatus; valorPago: number; dataPagamento?: string }) => void
+  toggleDebitPago: (referenceId: string, type: DebitType, mesAno: string, valorEsperado: number) => void
+  getDebitRecord: (referenceId: string, mesAno: string) => MonthlyDebitRecord | undefined
+
   // Utility
   exportData: () => string
   importData: (json: string) => void
@@ -135,6 +141,7 @@ function getDefaultState() {
     config: DEFAULT_CONFIG,
     tomadores: withId<Tomador>(SEED_TOMADORES),
     incomeRecords: [] as MonthlyIncomeRecord[],
+    monthlyDebits: [] as MonthlyDebitRecord[],
     fixos: withId<GastoFixo>(SEED_FIXOS),
     pontuais: [] as GastoPontual[],
     parcelamentos: withId<Parcelamento>(SEED_PARCELAMENTOS),
@@ -220,6 +227,40 @@ export const useStore = create<AppStore>()(
         const p = s.parcelamentos.find(p => p.id === id)
         if (p) p.status = status
       }),
+
+      upsertDebitRecord: (ref) => set(s => {
+        const idx = s.monthlyDebits.findIndex(
+          d => d.referenceId === ref.referenceId && d.mesAno === ref.mesAno
+        )
+        if (idx !== -1) {
+          Object.assign(s.monthlyDebits[idx], ref)
+        } else {
+          s.monthlyDebits.push({ ...ref, id: crypto.randomUUID() })
+        }
+      }),
+      toggleDebitPago: (referenceId, type, mesAno, valorEsperado) => set(s => {
+        const idx = s.monthlyDebits.findIndex(
+          d => d.referenceId === referenceId && d.mesAno === mesAno
+        )
+        if (idx !== -1) {
+          const current = s.monthlyDebits[idx].status
+          s.monthlyDebits[idx].status = current === 'Pago' ? 'Pendente' : 'Pago'
+          if (s.monthlyDebits[idx].status === 'Pago') {
+            s.monthlyDebits[idx].dataPagamento = new Date().toISOString().slice(0, 10)
+          }
+        } else {
+          s.monthlyDebits.push({
+            id: crypto.randomUUID(),
+            referenceId, type, mesAno,
+            status: 'Pago',
+            valorPago: valorEsperado,
+            dataPagamento: new Date().toISOString().slice(0, 10),
+          })
+        }
+      }),
+      getDebitRecord: (referenceId, mesAno) => {
+        return get().monthlyDebits.find(d => d.referenceId === referenceId && d.mesAno === mesAno)
+      },
 
       addInvestimento: (inv) => set(s => { s.investimentos.push({ ...inv, id: crypto.randomUUID() }) }),
       updateInvestimento: (id, updates) => set(s => {

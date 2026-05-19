@@ -51,6 +51,21 @@ export interface MonthlyIncomeRecord {
   obs?: string
 }
 
+// ── Monthly Debit Records ─────────────────────────────────────────────────────
+
+export type DebitStatus = 'Pago' | 'Pendente' | 'Agendado'
+export type DebitType = 'Fixo' | 'Parcelamento' | 'Pontual' | 'DARF'
+
+export interface MonthlyDebitRecord {
+  id: string
+  referenceId: string   // fixoId, parcelamentoId, pontualId, or 'darf'
+  type: DebitType
+  mesAno: string
+  status: DebitStatus
+  valorPago: number
+  dataPagamento?: string
+}
+
 // ── Gastos Fixos ──────────────────────────────────────────────────────────────
 
 export type FixoCategoria =
