@@ -3,7 +3,7 @@ import os
 
 from config import XLSX_PATH, MONTHS, MONTH_LABELS
 from data.loader import load
-from views import overview, monthly_detail, revenue, cashflow, extrato
+from views import overview, monthly_detail, revenue, cashflow, extrato, editor
 
 st.set_page_config(
     page_title="Painel Financeiro — João Felipe",
@@ -62,12 +62,13 @@ except Exception as e:
 st.session_state["xlsx_path_current"] = xlsx_path
 
 # Tabs
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "📊 Visão Geral",
     "📅 Mês a Mês",
     "💼 Receitas PJ",
     "💰 Fluxo de Caixa",
     "📋 Extrato",
+    "✏️ Editar",
 ])
 
 with tab1:
@@ -84,3 +85,6 @@ with tab4:
 
 with tab5:
     extrato.render(data, selected_month_key)
+
+with tab6:
+    editor.render(data)
