@@ -1,6 +1,6 @@
 import type {
   AppConfig, Tomador, MonthlyIncomeRecord, GastoFixo,
-  GastoPontual, Parcelamento, DarfCalculation, MonthSummary, AporteInvestimento,
+  GastoPontual, Parcelamento, DarfCalculation, MonthSummary, AporteInvestimento, ReceitaPontual,
 } from '@/types'
 import { diffMonths, mesLabel, monthRange, addMonths } from './formatters'
 
@@ -62,13 +62,16 @@ export function computeMonthSummary(
   config: AppConfig,
   saldoAnterior: number,
   aportes: AporteInvestimento[] = [],
+  receitasPontuais: ReceitaPontual[] = [],
 ): MonthSummary {
   const tomMap = Object.fromEntries(tomadores.map(t => [t.id, t]))
 
   // Receitas
   const monthRecords = incomeRecords.filter(r => r.mesAno === mesAno)
   const receitaPrevista = tomadores.filter(t => t.ativo).reduce((sum, t) => sum + t.valorPrevisto, 0)
+  const receitasPontuaisMes = receitasPontuais.filter(r => r.mesAno === mesAno && r.status !== 'Cancelado')
   const receitaRealizada = monthRecords.reduce((sum, r) => sum + r.valorRealizado, 0)
+    + receitasPontuaisMes.reduce((sum, r) => sum + r.valor, 0)
 
   // Apuração do mês atual (informacional — vence no mês seguinte)
   const faturamentoPJ = monthRecords
@@ -144,12 +147,13 @@ export function computeAllMonths(
   parcelamentos: Parcelamento[],
   config: AppConfig,
   aportes: AporteInvestimento[] = [],
+  receitasPontuais: ReceitaPontual[] = [],
 ): MonthSummary[] {
   const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 7))
   const results: MonthSummary[] = []
   let saldoAnterior = config.saldoInicial
   for (const mes of meses) {
-    const summary = computeMonthSummary(mes, incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, saldoAnterior, aportes)
+    const summary = computeMonthSummary(mes, incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, saldoAnterior, aportes, receitasPontuais)
     results.push(summary)
     saldoAnterior = summary.saldoAcumulado
   }

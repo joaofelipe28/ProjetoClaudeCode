@@ -7,7 +7,7 @@ import { Select } from '@/components/ui/Select'
 import { Modal } from '@/components/ui/Modal'
 import { brl, mesLabel, monthRange, addMonths } from '@/lib/formatters'
 import { getParcelamentoValue } from '@/lib/calculations'
-import type { IncomeStatus, GastoPontual, FixoCategoria, DebitType, AporteInvestimento } from '@/types'
+import type { IncomeStatus, GastoPontual, FixoCategoria, DebitType, AporteInvestimento, ReceitaPontual } from '@/types'
 
 const STATUS_OPTIONS = [
   { value: 'Previsto', label: 'Previsto' },
@@ -48,10 +48,11 @@ function CheckCircle({ checked }: { checked: boolean }) {
 
 export function Mensal() {
   const {
-    config, tomadores, parcelamentos, pontuais, fixos, investimentos, aportes,
+    config, tomadores, parcelamentos, pontuais, fixos, investimentos, aportes, receitasPontuais,
     upsertIncomeRecord, initMonthFromTomadores, setMesAtual,
     addPontual, deletePontual,
     addAporte, deleteAporte,
+    addReceitaPontual, updateReceitaPontual, deleteReceitaPontual,
     toggleDebitPago, getDebitRecord,
   } = useStore()
 
@@ -63,6 +64,10 @@ export function Mensal() {
   })
   const [showAddAporte, setShowAddAporte] = useState(false)
   const [newAporte, setNewAporte] = useState<Partial<AporteInvestimento>>({
+    mesAno: selectedMes, status: 'Confirmado', valor: 0,
+  })
+  const [showAddReceitaExtra, setShowAddReceitaExtra] = useState(false)
+  const [newReceitaExtra, setNewReceitaExtra] = useState<Partial<ReceitaPontual>>({
     mesAno: selectedMes, status: 'Confirmado', valor: 0,
   })
 
@@ -78,6 +83,7 @@ export function Mensal() {
   const monthPontuais = pontuais.filter(p => p.mesAno === selectedMes && p.status !== 'Cancelado')
   const activeFixos = fixos.filter(f => f.status === 'Ativo')
   const monthAportes = aportes.filter(a => a.mesAno === selectedMes && a.status !== 'Cancelado')
+  const monthReceitasExtras = receitasPontuais.filter(r => r.mesAno === selectedMes && r.status !== 'Cancelado')
   const invMap = Object.fromEntries(investimentos.map(i => [i.id, i]))
 
   // ── DARF timing: computeMonthSummary já retorna timing correto ────────────
@@ -170,6 +176,18 @@ export function Mensal() {
     setShowAddPontual(false)
   }
 
+  function handleAddReceitaExtra() {
+    if (!newReceitaExtra.descricao || !newReceitaExtra.valor) return
+    addReceitaPontual({
+      mesAno: selectedMes,
+      descricao: newReceitaExtra.descricao!,
+      valor: newReceitaExtra.valor!,
+      status: 'Confirmado',
+    })
+    setNewReceitaExtra({ mesAno: selectedMes, status: 'Confirmado', valor: 0 })
+    setShowAddReceitaExtra(false)
+  }
+
   function handleAddAporte() {
     if (!newAporte.investimentoId || !newAporte.valor) return
     addAporte({
@@ -223,7 +241,12 @@ export function Mensal() {
         <div className="bg-surface border border-bdr rounded-xl overflow-hidden">
           <div className="px-4 py-3 border-b border-bdr flex items-center justify-between">
             <h2 className="text-sm font-semibold text-gray-200">📥 Receitas — {mesLabel(selectedMes)}</h2>
-            <span className="text-xs text-gray-500">Clique no valor para editar</span>
+            <button
+              onClick={() => setShowAddReceitaExtra(true)}
+              className="text-xs bg-receita/20 text-receita px-3 py-1.5 rounded-lg hover:bg-receita/30 transition-colors"
+            >
+              + Receita extra
+            </button>
           </div>
           <table className="w-full text-sm">
             <thead>
@@ -261,6 +284,37 @@ export function Mensal() {
                   </tr>
                 )
               })}
+              {monthReceitasExtras.map(r => (
+                <tr key={r.id} className="border-b border-bdr/50 hover:bg-white/5">
+                  <td className="px-4 py-2.5" colSpan={2}>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs bg-receita/20 text-receita px-1.5 py-0.5 rounded">Extra</span>
+                      <input
+                        type="text"
+                        value={r.descricao}
+                        onChange={e => updateReceitaPontual(r.id, { descricao: e.target.value })}
+                        className="text-sm text-gray-200 bg-transparent border-none outline-none flex-1 min-w-0"
+                      />
+                    </div>
+                  </td>
+                  <td className="px-4 py-2.5">
+                    <CurrencyInput value={r.valor} onChange={v => updateReceitaPontual(r.id, { valor: v })} className="w-28" />
+                  </td>
+                  <td className="px-4 py-2.5 flex items-center gap-2">
+                    <Select
+                      value={r.status}
+                      onChange={v => updateReceitaPontual(r.id, { status: v as ReceitaPontual['status'] })}
+                      options={[
+                        { value: 'Confirmado', label: 'Pago' },
+                        { value: 'Previsto', label: 'Previsto' },
+                        { value: 'Cancelado', label: 'Cancelado' },
+                      ]}
+                      className="w-28"
+                    />
+                    <button onClick={() => deleteReceitaPontual(r.id)} className="text-gray-600 hover:text-despesa text-xs">✕</button>
+                  </td>
+                </tr>
+              ))}
               <tr className="bg-surfaceAlt">
                 <td className="px-4 py-2.5 font-semibold text-gray-200 text-sm" colSpan={2}>Total Realizado</td>
                 <td className="px-4 py-2.5 font-semibold text-receita text-sm">{brl(summary.receitaRealizada)}</td>
@@ -611,6 +665,39 @@ export function Mensal() {
               </div>
             </>
           )}
+        </div>
+      </Modal>
+
+      {/* Add receita extra modal */}
+      <Modal open={showAddReceitaExtra} onClose={() => setShowAddReceitaExtra(false)} title="Adicionar Receita Extra">
+        <div className="space-y-4">
+          <div>
+            <label className="block text-xs text-gray-400 mb-1">Descrição</label>
+            <input
+              type="text"
+              className="w-full bg-surfaceAlt border border-bdr rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-saldo/50"
+              value={newReceitaExtra.descricao ?? ''}
+              onChange={e => setNewReceitaExtra(r => ({ ...r, descricao: e.target.value }))}
+              placeholder="Ex: Direito de imagem, plantão avulso, reembolso..."
+              autoFocus
+            />
+          </div>
+          <div>
+            <label className="block text-xs text-gray-400 mb-1">Valor</label>
+            <CurrencyInput
+              value={newReceitaExtra.valor ?? 0}
+              onChange={v => setNewReceitaExtra(r => ({ ...r, valor: v }))}
+              className="w-full"
+            />
+          </div>
+          <div className="flex gap-3 pt-2">
+            <button onClick={() => setShowAddReceitaExtra(false)} className="flex-1 px-4 py-2 rounded-lg border border-bdr text-gray-400 text-sm hover:text-gray-200 transition-colors">
+              Cancelar
+            </button>
+            <button onClick={handleAddReceitaExtra} className="flex-1 px-4 py-2 rounded-lg bg-receita text-gray-900 font-medium text-sm hover:bg-receita/90 transition-colors">
+              Adicionar
+            </button>
+          </div>
         </div>
       </Modal>
 

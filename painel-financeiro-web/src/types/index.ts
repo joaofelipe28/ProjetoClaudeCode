@@ -181,6 +181,16 @@ export interface InvestimentoHistorico {
   obs?: string
 }
 
+// ── Receitas Pontuais ─────────────────────────────────────────────────────────
+
+export interface ReceitaPontual {
+  id: string
+  mesAno: string
+  descricao: string
+  valor: number
+  status: PontualStatus
+}
+
 // ── Computed types ────────────────────────────────────────────────────────────
 
 export interface MonthSummary {

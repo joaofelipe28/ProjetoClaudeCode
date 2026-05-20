@@ -5,7 +5,7 @@ import type {
   AppConfig, TaxConfig, Tomador, MonthlyIncomeRecord, GastoFixo,
   GastoPontual, Parcelamento, InvestimentoPosition, InvestimentoHistorico,
   IncomeStatus, FixoStatus, ParcelamentoStatus, MonthlyDebitRecord, DebitStatus, DebitType,
-  FixoCategoria, AporteInvestimento,
+  FixoCategoria, AporteInvestimento, ReceitaPontual,
 } from '@/types'
 
 // ── Seed Data ─────────────────────────────────────────────────────────────────
@@ -136,6 +136,7 @@ interface AppStore {
   investimentos: InvestimentoPosition[]
   investimentoHistorico: InvestimentoHistorico[]
   aportes: AporteInvestimento[]
+  receitasPontuais: ReceitaPontual[]
 
   // Config actions
   updateConfig: (updates: Partial<AppConfig>) => void
@@ -182,6 +183,11 @@ interface AppStore {
   updateAporte: (id: string, updates: Partial<AporteInvestimento>) => void
   deleteAporte: (id: string) => void
 
+  // Receitas pontuais actions
+  addReceitaPontual: (r: Omit<ReceitaPontual, 'id'>) => void
+  updateReceitaPontual: (id: string, updates: Partial<ReceitaPontual>) => void
+  deleteReceitaPontual: (id: string) => void
+
   // Monthly debits actions
   upsertDebitRecord: (ref: { referenceId: string; type: DebitType; mesAno: string; status: DebitStatus; valorPago: number; dataPagamento?: string }) => void
   toggleDebitPago: (referenceId: string, type: DebitType, mesAno: string, valorEsperado: number) => void
@@ -207,6 +213,7 @@ function getDefaultState() {
     investimentos: [] as InvestimentoPosition[],
     investimentoHistorico: [] as InvestimentoHistorico[],
     aportes: [] as AporteInvestimento[],
+    receitasPontuais: [] as ReceitaPontual[],
   }
 }
 
@@ -343,9 +350,16 @@ export const useStore = create<AppStore>()(
       }),
       deleteAporte: (id) => set(s => { s.aportes = s.aportes.filter(a => a.id !== id) }),
 
+      addReceitaPontual: (r) => set(s => { s.receitasPontuais.push({ ...r, id: crypto.randomUUID() }) }),
+      updateReceitaPontual: (id, updates) => set(s => {
+        const idx = s.receitasPontuais.findIndex(r => r.id === id)
+        if (idx !== -1) Object.assign(s.receitasPontuais[idx], updates)
+      }),
+      deleteReceitaPontual: (id) => set(s => { s.receitasPontuais = s.receitasPontuais.filter(r => r.id !== id) }),
+
       exportData: () => {
-        const { config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes } = get()
-        return JSON.stringify({ config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes }, null, 2)
+        const { config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes, receitasPontuais } = get()
+        return JSON.stringify({ config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes, receitasPontuais }, null, 2)
       },
       importData: (json) => set(s => {
         try {
@@ -374,7 +388,7 @@ export const useStore = create<AppStore>()(
         setItem: (key: string, value: string) => localStorage.setItem(key, value),
         removeItem: (key: string) => localStorage.removeItem(key),
       })),
-      version: 3,
+      version: 4,
       // REGRA FUTURA: nunca mude o `name` acima. Para adicionar dados novos,
       // incremente `version` e escreva uma migração que só ADICIONA itens
       // ausentes por ID — nunca sobrescreva dados do usuário.
@@ -397,6 +411,11 @@ export const useStore = create<AppStore>()(
         // v2 → v3: adiciona aportes
         if (fromVersion < 3) {
           if (!s.aportes) s.aportes = []
+        }
+
+        // v3 → v4: adiciona receitas pontuais
+        if (fromVersion < 4) {
+          if (!(s as any).receitasPontuais) (s as any).receitasPontuais = []
         }
 
         return s
