@@ -373,21 +373,55 @@ export const useStore = create<AppStore>()(
     })),
     {
       name: 'painel-financeiro',
-      // Storage customizado: se 'painel-financeiro' não existir, lê das chaves
-      // legadas para migrar dados sem perda. Escreve sempre na chave canônica.
-      storage: createJSONStorage(() => ({
-        getItem: (key: string) => {
-          const current = localStorage.getItem(key)
-          if (current) return current
-          for (const legacy of ['painel-financeiro-v2', 'painel-financeiro-v1']) {
-            const old = localStorage.getItem(legacy)
-            if (old) return old
-          }
-          return null
-        },
-        setItem: (key: string, value: string) => localStorage.setItem(key, value),
-        removeItem: (key: string) => localStorage.removeItem(key),
-      })),
+      // Storage cross-browser: salva em arquivo JSON no disco via Vite plugin (/api/data).
+      // Fallback para localStorage se a API não estiver disponível.
+      // Na primeira carga, migra dados do localStorage automaticamente para o arquivo.
+      storage: createJSONStorage(() => {
+        const API = '/api/data'
+
+        async function readMap(): Promise<Record<string, string>> {
+          try {
+            const r = await fetch(API)
+            if (!r.ok) throw new Error()
+            return await r.json() as Record<string, string>
+          } catch { return {} }
+        }
+
+        async function writeMap(map: Record<string, string>): Promise<void> {
+          await fetch(API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(map),
+          })
+        }
+
+        return {
+          getItem: async (key: string): Promise<string | null> => {
+            const map = await readMap()
+            if (map[key] != null) return map[key]
+            // Migração one-time: lê localStorage (Chrome) e salva no arquivo
+            for (const src of [key, 'painel-financeiro-v2', 'painel-financeiro-v1']) {
+              const legacy = localStorage.getItem(src)
+              if (legacy) {
+                try { await writeMap({ ...map, [key]: legacy }) } catch { /* retry next load */ }
+                return legacy
+              }
+            }
+            return null
+          },
+          setItem: async (key: string, value: string): Promise<void> => {
+            try { await writeMap({ ...(await readMap()), [key]: value }) }
+            catch { localStorage.setItem(key, value) }
+          },
+          removeItem: async (key: string): Promise<void> => {
+            try {
+              const m = await readMap()
+              const { [key]: _r, ...rest } = m
+              await writeMap(rest)
+            } catch { localStorage.removeItem(key) }
+          },
+        }
+      }),
       version: 4,
       // REGRA FUTURA: nunca mude o `name` acima. Para adicionar dados novos,
       // incremente `version` e escreva uma migração que só ADICIONA itens

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Dados financeiros pessoais (persistência cross-browser)
+painel-financeiro-data.json
