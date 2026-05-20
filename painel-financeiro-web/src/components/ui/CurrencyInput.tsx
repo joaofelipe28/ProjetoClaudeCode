@@ -13,8 +13,10 @@ export function CurrencyInput({ value, onChange, className = '', placeholder = '
   useEffect(() => {
     if (value > 0) {
       setDisplay(value.toFixed(2).replace('.', ','))
+    } else {
+      setDisplay('')
     }
-  }, [])
+  }, [value])
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const raw = e.target.value.replace(/[^0-9,]/g, '').replace(',', '.')
