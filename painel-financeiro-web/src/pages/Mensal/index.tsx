@@ -116,11 +116,28 @@ export function Mensal() {
   const receitaJaPaga = monthRecords
     .filter(r => r.status === 'Pago')
     .reduce((s, r) => s + r.valorRealizado, 0)
-  const receitaPrevistaPendente = tomadores.filter(t => t.ativo).reduce((s, t) => {
+  const receitaFaltaReceber = tomadores.filter(t => t.ativo).reduce((s, t) => {
     const rec = monthRecords.find(r => r.tomadorId === t.id)
     if (rec?.status === 'Pago' || rec?.status === 'Cancelado') return s
-    return s + t.valorPrevisto
+    const valor = rec && rec.valorRealizado > 0 ? rec.valorRealizado : (rec?.valorPrevisto ?? t.valorPrevisto)
+    return s + valor
   }, 0)
+  const receitaPrevistoTotal = tomadores.filter(t => t.ativo).reduce((s, t) => {
+    const rec = monthRecords.find(r => r.tomadorId === t.id)
+    return s + (rec?.valorPrevisto ?? t.valorPrevisto)
+  }, 0)
+
+  function handlePrevisoChange(tomadorId: string, valor: number) {
+    const existing = monthRecords.find(r => r.tomadorId === tomadorId)
+    upsertIncomeRecord({
+      id: existing?.id,
+      tomadorId,
+      mesAno: selectedMes,
+      valorPrevisto: valor,
+      valorRealizado: existing?.valorRealizado ?? 0,
+      status: (existing?.status ?? 'Previsto') as IncomeStatus,
+    })
+  }
 
   function handleValorChange(tomadorId: string, valor: number) {
     const existing = monthRecords.find(r => r.tomadorId === tomadorId)
@@ -128,7 +145,7 @@ export function Mensal() {
       id: existing?.id,
       tomadorId,
       mesAno: selectedMes,
-      valorPrevisto: tomMap[tomadorId]?.valorPrevisto ?? 0,
+      valorPrevisto: existing?.valorPrevisto ?? tomMap[tomadorId]?.valorPrevisto ?? 0,
       valorRealizado: valor,
       status: (existing?.status ?? 'Previsto') as IncomeStatus,
     })
