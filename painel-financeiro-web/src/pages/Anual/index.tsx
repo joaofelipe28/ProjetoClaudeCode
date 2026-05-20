@@ -2,7 +2,7 @@ import { useAnnualProjection } from '@/hooks/useMonthlyCalculations'
 import { useStore } from '@/store'
 import { KpiCard } from '@/components/ui/KpiCard'
 import { StatusBadge } from '@/components/ui/StatusBadge'
-import { brl, pctNum } from '@/lib/formatters'
+import { brl, pctNum, mesLabel } from '@/lib/formatters'
 import { computeFixosTotal, getParcelamentoSaldoRestante } from '@/lib/calculations'
 import {
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Legend,
@@ -59,8 +59,8 @@ export function Anual() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-xl font-bold text-gray-100">Projeção Anual 2026</h1>
-        <p className="text-sm text-gray-400 mt-1">Mai–Dez 2026</p>
+        <h1 className="text-xl font-bold text-gray-100">Projeção Anual</h1>
+        <p className="text-sm text-gray-400 mt-1">{months.length > 0 ? `${mesLabel(months[0].mesAno)} – ${mesLabel(months[months.length - 1].mesAno)}` : ''}</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
