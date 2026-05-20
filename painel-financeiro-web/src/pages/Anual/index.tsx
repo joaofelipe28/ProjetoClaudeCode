@@ -3,7 +3,7 @@ import { useStore } from '@/store'
 import { KpiCard } from '@/components/ui/KpiCard'
 import { StatusBadge } from '@/components/ui/StatusBadge'
 import { brl, pctNum, mesLabel } from '@/lib/formatters'
-import { computeFixosTotal, getParcelamentoSaldoRestante } from '@/lib/calculations'
+import { computeFixosTotal, getParcelamentoSaldoRestante, getParcelamentoValue } from '@/lib/calculations'
 import {
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Legend,
   AreaChart, Area, Cell,
@@ -27,7 +27,7 @@ function CustomTooltip({ active, payload, label }: { active?: boolean; payload?:
 
 export function Anual() {
   const months = useAnnualProjection()
-  const { fixos, parcelamentos, config } = useStore()
+  const { fixos, parcelamentos, pontuais, config } = useStore()
 
   const fixosTotal = computeFixosTotal(fixos)
   const reservaAlvo = fixosTotal * config.reservaMesesAlvo
@@ -37,6 +37,46 @@ export function Anual() {
   const totalDarf = months.reduce((s, m) => s + m.darf, 0)
   const totalParcelas = months.reduce((s, m) => s + m.parcelasTotal, 0)
   const totalAportes = months.reduce((s, m) => s + m.aportes, 0)
+
+  // ── Composição detalhada de despesas ──────────────────────────────────────
+  const numMeses = months.length
+
+  const itensFixos = fixos
+    .filter(f => f.status === 'Ativo')
+    .map(f => ({ descricao: f.descricao, categoria: f.categoria, tipo: 'Fixo' as const, mensal: f.valor, total: f.valor * numMeses }))
+    .sort((a, b) => b.total - a.total)
+
+  const itensParcelamentos = parcelamentos
+    .filter(p => p.status === 'Ativo')
+    .map(p => {
+      const total = months.reduce((s, m) => s + getParcelamentoValue(p, m.mesAno), 0)
+      return { descricao: p.descricao, categoria: p.categoria ?? p.tipo, tipo: p.tipo === 'PJ' ? 'Parc. PJ' as const : 'Parc. Pessoal' as const, mensal: p.valorParcela, total }
+    })
+    .filter(p => p.total > 0)
+    .sort((a, b) => b.total - a.total)
+
+  const totalDarfPeriodo = months.reduce((s, m) => s + m.darf, 0)
+
+  const itensPontuais = Object.entries(
+    pontuais
+      .filter(p => months.some(m => m.mesAno === p.mesAno) && p.status !== 'Cancelado')
+      .reduce((acc, p) => { acc[p.categoria] = (acc[p.categoria] || 0) + p.valor; return acc }, {} as Record<string, number>)
+  )
+    .map(([cat, total]) => ({ descricao: cat, categoria: cat, tipo: 'Pontual' as const, mensal: null, total }))
+    .sort((a, b) => b.total - a.total)
+
+  const grandTotal = itensFixos.reduce((s, i) => s + i.total, 0)
+    + itensParcelamentos.reduce((s, i) => s + i.total, 0)
+    + totalDarfPeriodo
+    + itensPontuais.reduce((s, i) => s + i.total, 0)
+
+  const TIPO_STYLE: Record<string, string> = {
+    'Fixo': 'bg-despesa/20 text-despesa',
+    'Parc. PJ': 'bg-blue-500/20 text-blue-400',
+    'Parc. Pessoal': 'bg-parcela/20 text-parcela',
+    'DARF': 'bg-darf/20 text-darf',
+    'Pontual': 'bg-pontual/20 text-pontual',
+  }
 
   const cashflowData = months.map(m => ({
     name: m.label,
@@ -108,6 +148,98 @@ export function Anual() {
                   </tr>
                 )
               })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* ── Composição de Despesas ──────────────────────────────────────── */}
+      <div className="bg-surface border border-bdr rounded-xl overflow-hidden">
+        <div className="px-4 py-3 border-b border-bdr flex items-center justify-between">
+          <h2 className="text-sm font-semibold text-gray-200">📊 Composição de Despesas — {mesLabel(months[0]?.mesAno ?? '')} a {mesLabel(months[months.length - 1]?.mesAno ?? '')}</h2>
+          <span className="text-xs text-gray-500">Total: <span className="text-gray-300 font-semibold">{brl(grandTotal)}</span></span>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-bdr">
+                {['Descrição', 'Tipo', 'Categoria', 'Mensal', `Total (${numMeses} meses)`, '% do Total'].map(h => (
+                  <th key={h} className="px-3 py-2.5 text-left text-xs text-gray-400 font-medium whitespace-nowrap">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {/* Fixos */}
+              {itensFixos.map((item, i) => (
+                <tr key={`fixo-${i}`} className="border-b border-bdr/40 hover:bg-white/5">
+                  <td className="px-3 py-2 text-gray-200 text-sm">{item.descricao}</td>
+                  <td className="px-3 py-2"><span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIPO_STYLE['Fixo']}`}>Fixo</span></td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">{item.categoria}</td>
+                  <td className="px-3 py-2 text-gray-300">{brl(item.mensal)}</td>
+                  <td className="px-3 py-2 font-medium text-despesa">{brl(item.total)}</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">{((item.total / grandTotal) * 100).toFixed(1)}%</td>
+                </tr>
+              ))}
+
+              {/* Subtotal Fixos */}
+              <tr className="bg-despesa/5 border-b border-bdr">
+                <td className="px-3 py-1.5 text-xs font-semibold text-despesa" colSpan={3}>Subtotal Fixos</td>
+                <td />
+                <td className="px-3 py-1.5 text-xs font-semibold text-despesa">{brl(itensFixos.reduce((s, i) => s + i.total, 0))}</td>
+                <td className="px-3 py-1.5 text-xs text-despesa">{((itensFixos.reduce((s, i) => s + i.total, 0) / grandTotal) * 100).toFixed(1)}%</td>
+              </tr>
+
+              {/* Parcelamentos */}
+              {itensParcelamentos.map((item, i) => (
+                <tr key={`parc-${i}`} className="border-b border-bdr/40 hover:bg-white/5">
+                  <td className="px-3 py-2 text-gray-200 text-sm">{item.descricao}</td>
+                  <td className="px-3 py-2"><span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIPO_STYLE[item.tipo]}`}>{item.tipo}</span></td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">{item.categoria}</td>
+                  <td className="px-3 py-2 text-gray-300">{brl(item.mensal)}</td>
+                  <td className="px-3 py-2 font-medium text-parcela">{brl(item.total)}</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">{((item.total / grandTotal) * 100).toFixed(1)}%</td>
+                </tr>
+              ))}
+              {itensParcelamentos.length > 0 && (
+                <tr className="bg-parcela/5 border-b border-bdr">
+                  <td className="px-3 py-1.5 text-xs font-semibold text-parcela" colSpan={3}>Subtotal Parcelamentos</td>
+                  <td />
+                  <td className="px-3 py-1.5 text-xs font-semibold text-parcela">{brl(itensParcelamentos.reduce((s, i) => s + i.total, 0))}</td>
+                  <td className="px-3 py-1.5 text-xs text-parcela">{((itensParcelamentos.reduce((s, i) => s + i.total, 0) / grandTotal) * 100).toFixed(1)}%</td>
+                </tr>
+              )}
+
+              {/* DARF */}
+              {totalDarfPeriodo > 0 && (
+                <tr className="border-b border-bdr/40 hover:bg-white/5">
+                  <td className="px-3 py-2 text-gray-200 text-sm">DARF (Lucro Presumido)</td>
+                  <td className="px-3 py-2"><span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIPO_STYLE['DARF']}`}>DARF</span></td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">Imposto</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">variável</td>
+                  <td className="px-3 py-2 font-medium text-darf">{brl(totalDarfPeriodo)}</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">{((totalDarfPeriodo / grandTotal) * 100).toFixed(1)}%</td>
+                </tr>
+              )}
+
+              {/* Pontuais por categoria */}
+              {itensPontuais.map((item, i) => (
+                <tr key={`pont-${i}`} className="border-b border-bdr/40 hover:bg-white/5">
+                  <td className="px-3 py-2 text-gray-200 text-sm">{item.descricao}</td>
+                  <td className="px-3 py-2"><span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIPO_STYLE['Pontual']}`}>Pontual</span></td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">{item.categoria}</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">—</td>
+                  <td className="px-3 py-2 font-medium text-pontual">{brl(item.total)}</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">{((item.total / grandTotal) * 100).toFixed(1)}%</td>
+                </tr>
+              ))}
+
+              {/* Grand total */}
+              <tr className="bg-surfaceAlt">
+                <td className="px-3 py-3 font-bold text-gray-100 text-sm" colSpan={3}>TOTAL GERAL</td>
+                <td />
+                <td className="px-3 py-3 font-bold text-gray-100 text-sm">{brl(grandTotal)}</td>
+                <td className="px-3 py-3 text-xs text-gray-400">100%</td>
+              </tr>
             </tbody>
           </table>
         </div>
