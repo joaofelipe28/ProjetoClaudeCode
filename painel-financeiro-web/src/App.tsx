@@ -25,7 +25,7 @@ export default function App() {
           <div className="flex items-center justify-between h-14">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-lg bg-saldo/20 flex items-center justify-center text-saldo font-bold text-sm">JF</div>
-              <span className="font-semibold text-gray-100 text-sm hidden sm:block">Painel Financeiro</span>
+              <span className="font-semibold text-gray-100 text-sm hidden sm:block">Painel Financeiro Pessoal</span>
             </div>
             <nav className="flex items-center gap-1">
               {tabs.map(tab => (
