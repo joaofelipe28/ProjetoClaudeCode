@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 interface CurrencyInputProps {
   value: number
@@ -9,17 +9,19 @@ interface CurrencyInputProps {
 
 export function CurrencyInput({ value, onChange, className = '', placeholder = 'R$ 0,00' }: CurrencyInputProps) {
   const [display, setDisplay] = useState('')
+  const internalChange = useRef(false)
 
   useEffect(() => {
-    if (value > 0) {
-      setDisplay(value.toFixed(2).replace('.', ','))
-    } else {
-      setDisplay('')
+    if (internalChange.current) {
+      internalChange.current = false
+      return
     }
+    setDisplay(value > 0 ? value.toFixed(2).replace('.', ',') : '')
   }, [value])
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const raw = e.target.value.replace(/[^0-9,]/g, '').replace(',', '.')
+    internalChange.current = true
     setDisplay(e.target.value.replace(/[^0-9,]/g, ''))
     const num = parseFloat(raw)
     if (!isNaN(num)) onChange(num)
