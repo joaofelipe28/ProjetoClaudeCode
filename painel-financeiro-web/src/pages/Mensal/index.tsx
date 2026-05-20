@@ -237,13 +237,16 @@ export function Mensal() {
               {tomadores.filter(t => t.ativo).map(t => {
                 const rec = monthRecords.find(r => r.tomadorId === t.id)
                 const realizado = rec?.valorRealizado ?? 0
+                const previsto = rec?.valorPrevisto ?? t.valorPrevisto
                 return (
                   <tr key={t.id} className="border-b border-bdr/50 hover:bg-white/5">
                     <td className="px-4 py-2.5">
                       <div className="font-medium text-gray-200 text-sm">{t.nome}</div>
                       <div className="text-xs text-gray-500">{t.tipo}</div>
                     </td>
-                    <td className="px-4 py-2.5 text-gray-400 text-sm">{brl(t.valorPrevisto)}</td>
+                    <td className="px-4 py-2.5">
+                      <CurrencyInput value={previsto} onChange={v => handlePrevisoChange(t.id, v)} className="w-28" />
+                    </td>
                     <td className="px-4 py-2.5">
                       <CurrencyInput value={realizado} onChange={v => handleValorChange(t.id, v)} className="w-28" />
                     </td>
@@ -272,19 +275,19 @@ export function Mensal() {
               <span className="font-semibold text-receita">{brl(receitaJaPaga)}</span>
             </div>
             <div className="flex items-center justify-between text-xs">
-              <span className="text-gray-400">A receber (previsto)</span>
-              <span className="text-gray-300">{brl(receitaPrevistaPendente)}</span>
+              <span className="text-gray-400">Falta receber</span>
+              <span className="text-gray-300">{brl(receitaFaltaReceber)}</span>
             </div>
-            {summary.receitaPrevista > 0 && (
+            {receitaPrevistoTotal > 0 && (
               <div className="space-y-1">
                 <div className="w-full bg-bdr rounded-full h-1.5">
                   <div
                     className="bg-receita h-1.5 rounded-full transition-all duration-500"
-                    style={{ width: `${Math.min(100, (receitaJaPaga / summary.receitaPrevista) * 100)}%` }}
+                    style={{ width: `${Math.min(100, (receitaJaPaga / receitaPrevistoTotal) * 100)}%` }}
                   />
                 </div>
                 <div className="text-right text-xs text-gray-500">
-                  {((receitaJaPaga / summary.receitaPrevista) * 100).toFixed(0)}% de {brl(summary.receitaPrevista)}
+                  {((receitaJaPaga / receitaPrevistoTotal) * 100).toFixed(0)}% de {brl(receitaPrevistoTotal)}
                 </div>
               </div>
             )}
