@@ -56,7 +56,7 @@ export function Mensal() {
     toggleDebitPago, getDebitRecord,
   } = useStore()
 
-  const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 7))
+  const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 12))
   const [selectedMes, setSelectedMes] = useState(config.mesAtual)
   const [showAddPontual, setShowAddPontual] = useState(false)
   const [newPontual, setNewPontual] = useState<Partial<GastoPontual>>({

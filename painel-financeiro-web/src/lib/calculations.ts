@@ -149,7 +149,7 @@ export function computeAllMonths(
   aportes: AporteInvestimento[] = [],
   receitasPontuais: ReceitaPontual[] = [],
 ): MonthSummary[] {
-  const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 7))
+  const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 12))
   const results: MonthSummary[] = []
   let saldoAnterior = config.saldoInicial
   for (const mes of meses) {
