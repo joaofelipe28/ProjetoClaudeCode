@@ -113,19 +113,30 @@ export function Mensal() {
   const totalPendente = allDebitItems.filter(d => !isDebitPago(d.id)).reduce((s, d) => s + d.valor, 0)
   const countPago = allDebitItems.filter(d => isDebitPago(d.id)).length
 
+  // "Já recebido" = tomadores marcados Pago + extras marcadas Confirmado (= "Pago" nas extras)
   const receitaJaPaga = monthRecords
     .filter(r => r.status === 'Pago')
     .reduce((s, r) => s + r.valorRealizado, 0)
+    + monthReceitasExtras
+      .filter(r => r.status === 'Confirmado')
+      .reduce((s, r) => s + r.valor, 0)
+
+  // "Falta receber" = tomadores não-Pago + extras Previsto (não Confirmado e não Cancelado)
   const receitaFaltaReceber = tomadores.filter(t => t.ativo).reduce((s, t) => {
     const rec = monthRecords.find(r => r.tomadorId === t.id)
     if (rec?.status === 'Pago' || rec?.status === 'Cancelado') return s
     const valor = rec && rec.valorRealizado > 0 ? rec.valorRealizado : (rec?.valorPrevisto ?? t.valorPrevisto)
     return s + valor
   }, 0)
+    + monthReceitasExtras
+      .filter(r => r.status === 'Previsto')
+      .reduce((s, r) => s + r.valor, 0)
+
   const receitaPrevistoTotal = tomadores.filter(t => t.ativo).reduce((s, t) => {
     const rec = monthRecords.find(r => r.tomadorId === t.id)
     return s + (rec?.valorPrevisto ?? t.valorPrevisto)
   }, 0)
+    + monthReceitasExtras.reduce((s, r) => s + r.valor, 0)
 
   function handlePrevisoChange(tomadorId: string, valor: number) {
     const existing = monthRecords.find(r => r.tomadorId === tomadorId)
