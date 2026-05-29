@@ -11,7 +11,7 @@ export function Select({ value, onChange, options, className = '', placeholder }
     <select
       value={value}
       onChange={e => onChange(e.target.value)}
-      className={`bg-surfaceAlt border border-bdr rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-saldo/50 transition-colors ${className}`}
+      className={`bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-700 focus:outline-none focus:border-saldo/60 transition-colors ${className}`}
     >
       {placeholder && <option value="">{placeholder}</option>}
       {options.map(opt => (

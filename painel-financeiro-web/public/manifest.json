@@ -4,8 +4,8 @@
   "description": "Controle financeiro pessoal — receitas, despesas, DARF e investimentos",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f1520",
-  "theme_color": "#0f1520",
+  "background_color": "#f1f5f9",
+  "theme_color": "#f1f5f9",
   "icons": [
     {
       "src": "/icon-192.svg",

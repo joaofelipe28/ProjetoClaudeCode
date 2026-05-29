@@ -23,11 +23,11 @@ const CATEGORIA_OPTIONS: FixoCategoria[] = [
 ]
 
 const TYPE_COLOR: Record<DebitType, string> = {
-  Fixo: 'bg-despesa/20 text-despesa',
-  Parcelamento: 'bg-parcela/20 text-parcela',
-  Pontual: 'bg-pontual/20 text-pontual',
-  DARF: 'bg-darf/20 text-darf',
-  Aporte: 'bg-saldo/20 text-saldo',
+  Fixo: 'bg-despesa/15 text-despesa',
+  Parcelamento: 'bg-parcela/15 text-parcela',
+  Pontual: 'bg-pontual/15 text-pontual',
+  DARF: 'bg-darf/15 text-darf',
+  Aporte: 'bg-saldo/15 text-saldo',
 }
 
 function CheckCircle({ checked }: { checked: boolean }) {
@@ -35,11 +35,11 @@ function CheckCircle({ checked }: { checked: boolean }) {
     <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all flex-shrink-0 ${
       checked
         ? 'bg-receita border-receita'
-        : 'border-gray-600 hover:border-saldo'
+        : 'border-gray-300 hover:border-saldo'
     }`}>
       {checked && (
-        <svg viewBox="0 0 12 10" className="w-3.5 h-3.5 fill-gray-900">
-          <path d="M1 5l3.5 3.5L11 1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <svg viewBox="0 0 12 10" className="w-3.5 h-3.5">
+          <path d="M1 5l3.5 3.5L11 1" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       )}
     </div>
@@ -86,15 +86,11 @@ export function Mensal() {
   const monthReceitasExtras = receitasPontuais.filter(r => r.mesAno === selectedMes && r.status !== 'Cancelado')
   const invMap = Object.fromEntries(investimentos.map(i => [i.id, i]))
 
-  // ── DARF timing: computeMonthSummary já retorna timing correto ────────────
-  // summary.darf  = DARF a pagar este mês (calculado sobre receita do mês anterior)
-  // darf (hook)   = DarfCalculation do mês atual (breakdown para exibição da apuração)
   const prevMes = addMonths(selectedMes, -1)
   const nextMes = addMonths(selectedMes, 1)
   const prevDarfKey = `darf-${prevMes}`
-  const prevDarfValor = summary.darf  // já calculado corretamente no core
+  const prevDarfValor = summary.darf
 
-  // Debit payment helpers
   function isDebitPago(referenceId: string) {
     const rec = getDebitRecord(referenceId, selectedMes)
     return rec?.status === 'Pago'
@@ -106,7 +102,6 @@ export function Mensal() {
 
   const prevDarfPago = isDebitPago(prevDarfKey)
 
-  // Totals paid vs pending for debits (DARF = mês anterior, pago este mês)
   const allDebitItems = [
     ...activeFixos.map(f => ({ id: f.id, valor: f.valor, type: 'Fixo' as DebitType })),
     ...activeParcelamentos.map(p => ({ id: p.id, valor: getParcelamentoValue(p, selectedMes), type: 'Parcelamento' as DebitType })),
@@ -118,7 +113,6 @@ export function Mensal() {
   const totalPendente = allDebitItems.filter(d => !isDebitPago(d.id)).reduce((s, d) => s + d.valor, 0)
   const countPago = allDebitItems.filter(d => isDebitPago(d.id)).length
 
-  // ── Receita parcial já recebida ────────────────────────────────────────────
   const receitaJaPaga = monthRecords
     .filter(r => r.status === 'Pago')
     .reduce((s, r) => s + r.valorRealizado, 0)
@@ -203,8 +197,8 @@ export function Mensal() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-xl font-bold text-gray-100">Lançamento Mensal</h1>
-        <p className="text-sm text-gray-400 mt-1">Registre receitas e marque contas pagas</p>
+        <h1 className="text-xl font-bold text-gray-800">Lançamento Mensal</h1>
+        <p className="text-sm text-gray-500 mt-1">Registre receitas e marque contas pagas</p>
       </div>
 
       {/* Month selector */}
@@ -214,7 +208,9 @@ export function Mensal() {
             key={m}
             onClick={() => setSelectedMes(m)}
             className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-              m === selectedMes ? 'bg-saldo text-gray-900' : 'bg-surfaceAlt text-gray-400 hover:text-gray-200 border border-bdr'
+              m === selectedMes
+                ? 'bg-saldo text-white shadow-sm'
+                : 'bg-white text-gray-600 hover:text-gray-800 border border-gray-200 hover:border-gray-300'
             }`}
           >
             {mesLabel(m)}
@@ -238,21 +234,21 @@ export function Mensal() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* ── Receitas ─────────────────────────────────────────────────────── */}
-        <div className="bg-surface border border-bdr rounded-xl overflow-hidden">
-          <div className="px-4 py-3 border-b border-bdr flex items-center justify-between">
-            <h2 className="text-sm font-semibold text-gray-200">📥 Receitas — {mesLabel(selectedMes)}</h2>
+        <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+          <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+            <h2 className="text-sm font-semibold text-gray-700">📥 Receitas — {mesLabel(selectedMes)}</h2>
             <button
               onClick={() => setShowAddReceitaExtra(true)}
-              className="text-xs bg-receita/20 text-receita px-3 py-1.5 rounded-lg hover:bg-receita/30 transition-colors"
+              className="text-xs bg-receita/15 text-receita px-3 py-1.5 rounded-lg hover:bg-receita/25 transition-colors font-medium"
             >
               + Receita extra
             </button>
           </div>
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-bdr">
+              <tr className="border-b border-gray-200 bg-gray-50">
                 {['Tomador', 'Previsto', 'Realizado', 'Status'].map(h => (
-                  <th key={h} className="px-4 py-2.5 text-left text-xs text-gray-400 font-medium">{h}</th>
+                  <th key={h} className="px-4 py-2.5 text-left text-xs text-gray-500 font-semibold">{h}</th>
                 ))}
               </tr>
             </thead>
@@ -262,10 +258,10 @@ export function Mensal() {
                 const realizado = rec?.valorRealizado ?? 0
                 const previsto = rec?.valorPrevisto ?? t.valorPrevisto
                 return (
-                  <tr key={t.id} className="border-b border-bdr/50 hover:bg-white/5">
+                  <tr key={t.id} className="border-b border-gray-100 hover:bg-slate-50">
                     <td className="px-4 py-2.5">
-                      <div className="font-medium text-gray-200 text-sm">{t.nome}</div>
-                      <div className="text-xs text-gray-500">{t.tipo}</div>
+                      <div className="font-medium text-gray-800 text-sm">{t.nome}</div>
+                      <div className="text-xs text-gray-400">{t.tipo}</div>
                     </td>
                     <td className="px-4 py-2.5">
                       <CurrencyInput value={previsto} onChange={v => handlePrevisoChange(t.id, v)} className="w-28" />
@@ -285,15 +281,15 @@ export function Mensal() {
                 )
               })}
               {monthReceitasExtras.map(r => (
-                <tr key={r.id} className="border-b border-bdr/50 hover:bg-white/5">
+                <tr key={r.id} className="border-b border-gray-100 hover:bg-slate-50">
                   <td className="px-4 py-2.5" colSpan={2}>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs bg-receita/20 text-receita px-1.5 py-0.5 rounded">Extra</span>
+                      <span className="text-xs bg-receita/15 text-receita px-1.5 py-0.5 rounded font-medium">Extra</span>
                       <input
                         type="text"
                         value={r.descricao}
                         onChange={e => updateReceitaPontual(r.id, { descricao: e.target.value })}
-                        className="text-sm text-gray-200 bg-transparent border-none outline-none flex-1 min-w-0"
+                        className="text-sm text-gray-700 bg-transparent border-none outline-none flex-1 min-w-0"
                       />
                     </div>
                   </td>
@@ -311,36 +307,36 @@ export function Mensal() {
                       ]}
                       className="w-28"
                     />
-                    <button onClick={() => deleteReceitaPontual(r.id)} className="text-gray-600 hover:text-despesa text-xs">✕</button>
+                    <button onClick={() => deleteReceitaPontual(r.id)} className="text-gray-400 hover:text-despesa text-xs">✕</button>
                   </td>
                 </tr>
               ))}
-              <tr className="bg-surfaceAlt">
-                <td className="px-4 py-2.5 font-semibold text-gray-200 text-sm" colSpan={2}>Total Realizado</td>
+              <tr className="bg-gray-50">
+                <td className="px-4 py-2.5 font-semibold text-gray-700 text-sm" colSpan={2}>Total Realizado</td>
                 <td className="px-4 py-2.5 font-semibold text-receita text-sm">{brl(summary.receitaRealizada)}</td>
                 <td />
               </tr>
             </tbody>
           </table>
           {/* Saldo parcial já recebido */}
-          <div className="px-4 py-3 border-t border-bdr bg-surfaceAlt/50 space-y-2">
+          <div className="px-4 py-3 border-t border-gray-200 bg-gray-50 space-y-2">
             <div className="flex items-center justify-between text-xs">
-              <span className="text-gray-400">Já recebido (Pago)</span>
+              <span className="text-gray-500">Já recebido (Pago)</span>
               <span className="font-semibold text-receita">{brl(receitaJaPaga)}</span>
             </div>
             <div className="flex items-center justify-between text-xs">
-              <span className="text-gray-400">Falta receber</span>
-              <span className="text-gray-300">{brl(receitaFaltaReceber)}</span>
+              <span className="text-gray-500">Falta receber</span>
+              <span className="text-gray-700 font-medium">{brl(receitaFaltaReceber)}</span>
             </div>
             {receitaPrevistoTotal > 0 && (
               <div className="space-y-1">
-                <div className="w-full bg-bdr rounded-full h-1.5">
+                <div className="w-full bg-gray-200 rounded-full h-1.5">
                   <div
                     className="bg-receita h-1.5 rounded-full transition-all duration-500"
                     style={{ width: `${Math.min(100, (receitaJaPaga / receitaPrevistoTotal) * 100)}%` }}
                   />
                 </div>
-                <div className="text-right text-xs text-gray-500">
+                <div className="text-right text-xs text-gray-400">
                   {((receitaJaPaga / receitaPrevistoTotal) * 100).toFixed(0)}% de {brl(receitaPrevistoTotal)}
                 </div>
               </div>
@@ -349,12 +345,12 @@ export function Mensal() {
         </div>
 
         {/* ── DARF ──────────────────────────────────────────────────────────── */}
-        <div className="bg-surface border border-bdr rounded-xl overflow-hidden">
-          <div className="px-4 py-3 border-b border-bdr">
-            <h2 className="text-sm font-semibold text-gray-200">🏛️ DARF — {mesLabel(selectedMes)}</h2>
+        <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+          <div className="px-4 py-3 border-b border-gray-200">
+            <h2 className="text-sm font-semibold text-gray-700">🏛️ DARF — {mesLabel(selectedMes)}</h2>
           </div>
 
-          {/* Seção 1: Apuração do mês atual (referência – vence no próximo mês) */}
+          {/* Seção 1: Apuração do mês atual */}
           <div className="px-4 pt-3 pb-1">
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs font-semibold text-darf/80 uppercase tracking-wide">
@@ -365,23 +361,23 @@ export function Mensal() {
               </span>
             </div>
             <div className="space-y-1.5 text-sm">
-              <div className="flex justify-between"><span className="text-gray-400">Faturamento PJ</span><span className="text-gray-300">{brl(darf.faturamentoBruto)}</span></div>
-              <div className="flex justify-between text-xs"><span className="text-gray-500">PIS (0.65%)</span><span className="text-gray-400">{brl(darf.pis)}</span></div>
-              <div className="flex justify-between text-xs"><span className="text-gray-500">COFINS (3%)</span><span className="text-gray-400">{brl(darf.cofins)}</span></div>
-              <div className="flex justify-between text-xs"><span className="text-gray-500">IRPJ (4.8%)</span><span className="text-gray-400">{brl(darf.irpj)}</span></div>
-              <div className="flex justify-between text-xs"><span className="text-gray-500">CSLL (2.88%)</span><span className="text-gray-400">{brl(darf.csll)}</span></div>
-              <div className="flex justify-between text-xs"><span className="text-gray-500">ISS (2%)</span><span className="text-gray-400">{brl(darf.iss)}</span></div>
+              <div className="flex justify-between"><span className="text-gray-500">Faturamento PJ</span><span className="text-gray-700">{brl(darf.faturamentoBruto)}</span></div>
+              <div className="flex justify-between text-xs"><span className="text-gray-400">PIS (0.65%)</span><span className="text-gray-600">{brl(darf.pis)}</span></div>
+              <div className="flex justify-between text-xs"><span className="text-gray-400">COFINS (3%)</span><span className="text-gray-600">{brl(darf.cofins)}</span></div>
+              <div className="flex justify-between text-xs"><span className="text-gray-400">IRPJ (4.8%)</span><span className="text-gray-600">{brl(darf.irpj)}</span></div>
+              <div className="flex justify-between text-xs"><span className="text-gray-400">CSLL (2.88%)</span><span className="text-gray-600">{brl(darf.csll)}</span></div>
+              <div className="flex justify-between text-xs"><span className="text-gray-400">ISS (2%)</span><span className="text-gray-600">{brl(darf.iss)}</span></div>
               {darf.retencoes > 0 && (
-                <div className="flex justify-between text-xs"><span className="text-gray-500">Retenções fonte</span><span className="text-darf">-{brl(darf.retencoes)}</span></div>
+                <div className="flex justify-between text-xs"><span className="text-gray-400">Retenções fonte</span><span className="text-darf">-{brl(darf.retencoes)}</span></div>
               )}
-              <div className="border-t border-bdr/60 pt-1.5 flex justify-between font-semibold">
-                <span className="text-gray-300 text-sm">Total apurado</span>
-                <span className="text-darf/80 text-sm">{brl(darf.darfAPagar)}</span>
+              <div className="border-t border-gray-200 pt-1.5 flex justify-between font-semibold">
+                <span className="text-gray-600 text-sm">Total apurado</span>
+                <span className="text-darf text-sm">{brl(darf.darfAPagar)}</span>
               </div>
             </div>
           </div>
 
-          {/* Seção 2: DARF a pagar este mês (calculado sobre receitas do mês anterior) */}
+          {/* Seção 2: DARF a pagar este mês */}
           <div className="mx-4 mt-3 mb-3 rounded-lg border border-darf/30 bg-darf/5 p-3">
             <div className="flex items-center justify-between">
               <div>
@@ -397,7 +393,7 @@ export function Mensal() {
                 >
                   <CheckCircle checked={prevDarfPago} />
                   <div className="text-right">
-                    <div className={`text-sm font-bold ${prevDarfPago ? 'line-through text-gray-500' : 'text-darf'}`}>
+                    <div className={`text-sm font-bold ${prevDarfPago ? 'line-through text-gray-400' : 'text-darf'}`}>
                       {brl(prevDarfValor)}
                     </div>
                     <div className={`text-xs ${prevDarfPago ? 'text-receita' : 'text-gray-500'}`}>
@@ -406,7 +402,7 @@ export function Mensal() {
                   </div>
                 </button>
               ) : (
-                <span className="text-xs text-gray-500 italic">Nenhum DARF a pagar</span>
+                <span className="text-xs text-gray-400 italic">Nenhum DARF a pagar</span>
               )}
             </div>
           </div>
@@ -414,29 +410,29 @@ export function Mensal() {
       </div>
 
       {/* ── Contas do Mês (Checklist de Débitos) ─────────────────────────── */}
-      <div className="bg-surface border border-bdr rounded-xl overflow-hidden">
-        <div className="px-4 py-3 border-b border-bdr flex items-center justify-between">
+      <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+        <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
           <div>
-            <h2 className="text-sm font-semibold text-gray-200">📋 Contas do Mês — {mesLabel(selectedMes)}</h2>
-            <p className="text-xs text-gray-500 mt-0.5">Clique no círculo para marcar como pago</p>
+            <h2 className="text-sm font-semibold text-gray-700">📋 Contas do Mês — {mesLabel(selectedMes)}</h2>
+            <p className="text-xs text-gray-400 mt-0.5">Clique no círculo para marcar como pago</p>
           </div>
           <div className="flex items-center gap-4 text-xs">
             <span className="text-receita font-medium">✓ {brl(totalPago)} pago</span>
-            <span className="text-gray-400">{brl(totalPendente)} pendente</span>
+            <span className="text-gray-500">{brl(totalPendente)} pendente</span>
             <button
               onClick={() => setShowAddPontual(true)}
-              className="bg-saldo/20 text-saldo px-3 py-1.5 rounded-lg hover:bg-saldo/30 transition-colors"
+              className="bg-saldo/15 text-saldo px-3 py-1.5 rounded-lg hover:bg-saldo/25 transition-colors font-medium"
             >
               + Adicionar conta
             </button>
           </div>
         </div>
 
-        <div className="divide-y divide-bdr/40">
+        <div className="divide-y divide-gray-100">
           {/* Fixos */}
           {activeFixos.length > 0 && (
             <div>
-              <div className="px-4 py-2 bg-despesa/5">
+              <div className="px-4 py-2 bg-red-50">
                 <span className="text-xs font-semibold text-despesa uppercase tracking-wide">Gastos Fixos</span>
               </div>
               {activeFixos.map(f => {
@@ -445,16 +441,16 @@ export function Mensal() {
                   <div
                     key={f.id}
                     onClick={() => handleToggle(f.id, 'Fixo', f.valor)}
-                    className="flex items-center gap-4 px-4 py-3 hover:bg-white/5 cursor-pointer transition-colors group"
+                    className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 cursor-pointer transition-colors group"
                   >
                     <CheckCircle checked={pago} />
                     <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-medium transition-colors ${pago ? 'line-through text-gray-500' : 'text-gray-200'}`}>
+                      <div className={`text-sm font-medium transition-colors ${pago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                         {f.descricao}
                       </div>
-                      <div className="text-xs text-gray-500">{f.categoria}</div>
+                      <div className="text-xs text-gray-400">{f.categoria}</div>
                     </div>
-                    <div className={`text-sm font-medium ${pago ? 'text-gray-500 line-through' : 'text-despesa'}`}>
+                    <div className={`text-sm font-medium ${pago ? 'text-gray-400 line-through' : 'text-despesa'}`}>
                       {brl(f.valor)}
                     </div>
                     <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Fixo']}`}>Fixo</span>
@@ -467,7 +463,7 @@ export function Mensal() {
           {/* Parcelamentos */}
           {activeParcelamentos.length > 0 && (
             <div>
-              <div className="px-4 py-2 bg-parcela/5">
+              <div className="px-4 py-2 bg-orange-50">
                 <span className="text-xs font-semibold text-parcela uppercase tracking-wide">Parcelamentos</span>
               </div>
               {activeParcelamentos.map(p => {
@@ -477,16 +473,16 @@ export function Mensal() {
                   <div
                     key={p.id}
                     onClick={() => handleToggle(p.id, 'Parcelamento', valor)}
-                    className="flex items-center gap-4 px-4 py-3 hover:bg-white/5 cursor-pointer transition-colors"
+                    className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 cursor-pointer transition-colors"
                   >
                     <CheckCircle checked={pago} />
                     <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-medium transition-colors ${pago ? 'line-through text-gray-500' : 'text-gray-200'}`}>
+                      <div className={`text-sm font-medium transition-colors ${pago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                         {p.descricao}
                       </div>
-                      <div className="text-xs text-gray-500">{p.tipo}</div>
+                      <div className="text-xs text-gray-400">{p.tipo}</div>
                     </div>
-                    <div className={`text-sm font-medium ${pago ? 'text-gray-500 line-through' : p.tipo === 'PJ' ? 'text-pjParcela' : 'text-parcela'}`}>
+                    <div className={`text-sm font-medium ${pago ? 'text-gray-400 line-through' : p.tipo === 'PJ' ? 'text-pjParcela' : 'text-parcela'}`}>
                       {brl(valor)}
                     </div>
                     <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Parcelamento']}`}>Parcela</span>
@@ -496,24 +492,24 @@ export function Mensal() {
             </div>
           )}
 
-          {/* DARF no checklist (refere-se ao mês anterior — vence este mês) */}
+          {/* DARF no checklist */}
           {prevDarfValor > 0 && (
             <div>
-              <div className="px-4 py-2 bg-darf/5">
+              <div className="px-4 py-2 bg-purple-50">
                 <span className="text-xs font-semibold text-darf uppercase tracking-wide">Impostos</span>
               </div>
               <div
                 onClick={() => handleToggle(prevDarfKey, 'DARF', prevDarfValor)}
-                className="flex items-center gap-4 px-4 py-3 hover:bg-white/5 cursor-pointer transition-colors"
+                className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 cursor-pointer transition-colors"
               >
                 <CheckCircle checked={prevDarfPago} />
                 <div className="flex-1">
-                  <div className={`text-sm font-medium ${prevDarfPago ? 'line-through text-gray-500' : 'text-gray-200'}`}>
+                  <div className={`text-sm font-medium ${prevDarfPago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                     DARF — ref. {mesLabel(prevMes)}
                   </div>
-                  <div className="text-xs text-gray-500">Vence em {mesLabel(selectedMes)} · PIS + COFINS + IRPJ + CSLL + ISS</div>
+                  <div className="text-xs text-gray-400">Vence em {mesLabel(selectedMes)} · PIS + COFINS + IRPJ + CSLL + ISS</div>
                 </div>
-                <div className={`text-sm font-medium ${prevDarfPago ? 'text-gray-500 line-through' : 'text-darf'}`}>
+                <div className={`text-sm font-medium ${prevDarfPago ? 'text-gray-400 line-through' : 'text-darf'}`}>
                   {brl(prevDarfValor)}
                 </div>
                 <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['DARF']}`}>DARF</span>
@@ -523,11 +519,11 @@ export function Mensal() {
 
           {/* Pontuais */}
           <div>
-            <div className="px-4 py-2 bg-pontual/5 flex items-center justify-between">
+            <div className="px-4 py-2 bg-amber-50 flex items-center justify-between">
               <span className="text-xs font-semibold text-pontual uppercase tracking-wide">Gastos Pontuais</span>
             </div>
             {monthPontuais.length === 0 ? (
-              <div className="px-4 py-4 text-center text-sm text-gray-500">
+              <div className="px-4 py-4 text-center text-sm text-gray-400">
                 Nenhum gasto pontual — <button onClick={() => setShowAddPontual(true)} className="text-saldo hover:underline">adicionar</button>
               </div>
             ) : (
@@ -536,24 +532,24 @@ export function Mensal() {
                 return (
                   <div
                     key={p.id}
-                    className="flex items-center gap-4 px-4 py-3 hover:bg-white/5 transition-colors"
+                    className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 transition-colors"
                   >
                     <div onClick={() => handleToggle(p.id, 'Pontual', p.valor)} className="cursor-pointer">
                       <CheckCircle checked={pago} />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-medium ${pago ? 'line-through text-gray-500' : 'text-gray-200'}`}>
+                      <div className={`text-sm font-medium ${pago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                         {p.descricao}
                       </div>
-                      <div className="text-xs text-gray-500">{p.categoria}</div>
+                      <div className="text-xs text-gray-400">{p.categoria}</div>
                     </div>
-                    <div className={`text-sm font-medium ${pago ? 'text-gray-500 line-through' : 'text-pontual'}`}>
+                    <div className={`text-sm font-medium ${pago ? 'text-gray-400 line-through' : 'text-pontual'}`}>
                       {brl(p.valor)}
                     </div>
                     <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Pontual']}`}>Pontual</span>
                     <button
                       onClick={() => deletePontual(p.id)}
-                      className="text-gray-600 hover:text-despesa text-xs ml-1"
+                      className="text-gray-300 hover:text-despesa text-xs ml-1"
                       title="Remover"
                     >
                       ✕
@@ -566,17 +562,17 @@ export function Mensal() {
 
           {/* Aportes */}
           <div>
-            <div className="px-4 py-2 bg-saldo/5 flex items-center justify-between">
+            <div className="px-4 py-2 bg-cyan-50 flex items-center justify-between">
               <span className="text-xs font-semibold text-saldo uppercase tracking-wide">Aportes de Investimento</span>
               <button
                 onClick={() => setShowAddAporte(true)}
-                className="text-xs bg-saldo/20 text-saldo px-2 py-1 rounded-lg hover:bg-saldo/30 transition-colors"
+                className="text-xs bg-saldo/15 text-saldo px-2 py-1 rounded-lg hover:bg-saldo/25 transition-colors"
               >
                 + Novo aporte
               </button>
             </div>
             {monthAportes.length === 0 ? (
-              <div className="px-4 py-4 text-center text-sm text-gray-500">
+              <div className="px-4 py-4 text-center text-sm text-gray-400">
                 {investimentos.length === 0
                   ? 'Cadastre uma posição em Investimentos primeiro'
                   : <button onClick={() => setShowAddAporte(true)} className="text-saldo hover:underline">Registrar aporte deste mês</button>
@@ -589,24 +585,24 @@ export function Mensal() {
                 return (
                   <div
                     key={a.id}
-                    className="flex items-center gap-4 px-4 py-3 hover:bg-white/5 transition-colors"
+                    className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 transition-colors"
                   >
                     <div onClick={() => handleToggle(a.id, 'Aporte', a.valor)} className="cursor-pointer">
                       <CheckCircle checked={pago} />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-medium ${pago ? 'line-through text-gray-500' : 'text-gray-200'}`}>
+                      <div className={`text-sm font-medium ${pago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                         {inv?.nome ?? 'Investimento removido'}
                       </div>
-                      <div className="text-xs text-gray-500">{a.mesAno}</div>
+                      <div className="text-xs text-gray-400">{a.mesAno}</div>
                     </div>
-                    <div className={`text-sm font-medium ${pago ? 'text-gray-500 line-through' : 'text-saldo'}`}>
+                    <div className={`text-sm font-medium ${pago ? 'text-gray-400 line-through' : 'text-saldo'}`}>
                       {brl(a.valor)}
                     </div>
                     <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Aporte']}`}>Aporte</span>
                     <button
                       onClick={() => deleteAporte(a.id)}
-                      className="text-gray-600 hover:text-despesa text-xs ml-1"
+                      className="text-gray-300 hover:text-despesa text-xs ml-1"
                       title="Remover"
                     >
                       ✕
@@ -618,10 +614,10 @@ export function Mensal() {
           </div>
 
           {/* Summary footer */}
-          <div className="px-4 py-3 bg-surfaceAlt flex items-center justify-between">
+          <div className="px-4 py-3 bg-gray-50 flex items-center justify-between">
             <div className="text-sm">
-              <span className="text-gray-400">Total despesas: </span>
-              <span className="font-semibold text-gray-200">{brl(summary.totalDespesas)}</span>
+              <span className="text-gray-500">Total despesas: </span>
+              <span className="font-semibold text-gray-800">{brl(summary.totalDespesas)}</span>
             </div>
             <div className="flex gap-4 text-sm">
               <span className="text-receita font-medium">✓ {brl(totalPago)} pago</span>
@@ -635,11 +631,11 @@ export function Mensal() {
       <Modal open={showAddAporte} onClose={() => setShowAddAporte(false)} title="Registrar Aporte de Investimento">
         <div className="space-y-4">
           {investimentos.length === 0 ? (
-            <p className="text-sm text-gray-400 text-center py-4">Cadastre uma posição em Investimentos primeiro</p>
+            <p className="text-sm text-gray-500 text-center py-4">Cadastre uma posição em Investimentos primeiro</p>
           ) : (
             <>
               <div>
-                <label className="block text-xs text-gray-400 mb-1">Posição (Investimento)</label>
+                <label className="block text-xs text-gray-600 mb-1 font-medium">Posição (Investimento)</label>
                 <Select
                   value={newAporte.investimentoId ?? ''}
                   onChange={v => setNewAporte(a => ({ ...a, investimentoId: v }))}
@@ -648,7 +644,7 @@ export function Mensal() {
                 />
               </div>
               <div>
-                <label className="block text-xs text-gray-400 mb-1">Valor do aporte</label>
+                <label className="block text-xs text-gray-600 mb-1 font-medium">Valor do aporte</label>
                 <CurrencyInput
                   value={newAporte.valor ?? 0}
                   onChange={v => setNewAporte(a => ({ ...a, valor: v }))}
@@ -656,10 +652,10 @@ export function Mensal() {
                 />
               </div>
               <div className="flex gap-3 pt-2">
-                <button onClick={() => setShowAddAporte(false)} className="flex-1 px-4 py-2 rounded-lg border border-bdr text-gray-400 text-sm hover:text-gray-200 transition-colors">
+                <button onClick={() => setShowAddAporte(false)} className="flex-1 px-4 py-2 rounded-lg border border-gray-200 text-gray-600 text-sm hover:bg-gray-50 transition-colors">
                   Cancelar
                 </button>
-                <button onClick={handleAddAporte} className="flex-1 px-4 py-2 rounded-lg bg-saldo text-gray-900 font-medium text-sm hover:bg-saldo/90 transition-colors">
+                <button onClick={handleAddAporte} className="flex-1 px-4 py-2 rounded-lg bg-saldo text-white font-medium text-sm hover:bg-saldo/90 transition-colors">
                   Registrar
                 </button>
               </div>
@@ -672,10 +668,10 @@ export function Mensal() {
       <Modal open={showAddReceitaExtra} onClose={() => setShowAddReceitaExtra(false)} title="Adicionar Receita Extra">
         <div className="space-y-4">
           <div>
-            <label className="block text-xs text-gray-400 mb-1">Descrição</label>
+            <label className="block text-xs text-gray-600 mb-1 font-medium">Descrição</label>
             <input
               type="text"
-              className="w-full bg-surfaceAlt border border-bdr rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-saldo/50"
+              className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:border-saldo/60 focus:ring-1 focus:ring-saldo/20"
               value={newReceitaExtra.descricao ?? ''}
               onChange={e => setNewReceitaExtra(r => ({ ...r, descricao: e.target.value }))}
               placeholder="Ex: Direito de imagem, plantão avulso, reembolso..."
@@ -683,7 +679,7 @@ export function Mensal() {
             />
           </div>
           <div>
-            <label className="block text-xs text-gray-400 mb-1">Valor</label>
+            <label className="block text-xs text-gray-600 mb-1 font-medium">Valor</label>
             <CurrencyInput
               value={newReceitaExtra.valor ?? 0}
               onChange={v => setNewReceitaExtra(r => ({ ...r, valor: v }))}
@@ -691,10 +687,10 @@ export function Mensal() {
             />
           </div>
           <div className="flex gap-3 pt-2">
-            <button onClick={() => setShowAddReceitaExtra(false)} className="flex-1 px-4 py-2 rounded-lg border border-bdr text-gray-400 text-sm hover:text-gray-200 transition-colors">
+            <button onClick={() => setShowAddReceitaExtra(false)} className="flex-1 px-4 py-2 rounded-lg border border-gray-200 text-gray-600 text-sm hover:bg-gray-50 transition-colors">
               Cancelar
             </button>
-            <button onClick={handleAddReceitaExtra} className="flex-1 px-4 py-2 rounded-lg bg-receita text-gray-900 font-medium text-sm hover:bg-receita/90 transition-colors">
+            <button onClick={handleAddReceitaExtra} className="flex-1 px-4 py-2 rounded-lg bg-receita text-white font-medium text-sm hover:bg-receita/90 transition-colors">
               Adicionar
             </button>
           </div>
@@ -705,10 +701,10 @@ export function Mensal() {
       <Modal open={showAddPontual} onClose={() => setShowAddPontual(false)} title="Adicionar Conta / Gasto Pontual">
         <div className="space-y-4">
           <div>
-            <label className="block text-xs text-gray-400 mb-1">Descrição</label>
+            <label className="block text-xs text-gray-600 mb-1 font-medium">Descrição</label>
             <input
               type="text"
-              className="w-full bg-surfaceAlt border border-bdr rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-saldo/50"
+              className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:border-saldo/60 focus:ring-1 focus:ring-saldo/20"
               value={newPontual.descricao ?? ''}
               onChange={e => setNewPontual(p => ({ ...p, descricao: e.target.value }))}
               placeholder="Ex: Consulta médica, IPVA, presente..."
@@ -716,7 +712,7 @@ export function Mensal() {
             />
           </div>
           <div>
-            <label className="block text-xs text-gray-400 mb-1">Categoria</label>
+            <label className="block text-xs text-gray-600 mb-1 font-medium">Categoria</label>
             <Select
               value={newPontual.categoria ?? 'Outros'}
               onChange={v => setNewPontual(p => ({ ...p, categoria: v as FixoCategoria }))}
@@ -725,7 +721,7 @@ export function Mensal() {
             />
           </div>
           <div>
-            <label className="block text-xs text-gray-400 mb-1">Valor</label>
+            <label className="block text-xs text-gray-600 mb-1 font-medium">Valor</label>
             <CurrencyInput
               value={newPontual.valor ?? 0}
               onChange={v => setNewPontual(p => ({ ...p, valor: v }))}
@@ -733,10 +729,10 @@ export function Mensal() {
             />
           </div>
           <div className="flex gap-3 pt-2">
-            <button onClick={() => setShowAddPontual(false)} className="flex-1 px-4 py-2 rounded-lg border border-bdr text-gray-400 text-sm hover:text-gray-200 transition-colors">
+            <button onClick={() => setShowAddPontual(false)} className="flex-1 px-4 py-2 rounded-lg border border-gray-200 text-gray-600 text-sm hover:bg-gray-50 transition-colors">
               Cancelar
             </button>
-            <button onClick={handleAddPontual} className="flex-1 px-4 py-2 rounded-lg bg-saldo text-gray-900 font-medium text-sm hover:bg-saldo/90 transition-colors">
+            <button onClick={handleAddPontual} className="flex-1 px-4 py-2 rounded-lg bg-saldo text-white font-medium text-sm hover:bg-saldo/90 transition-colors">
               Adicionar
             </button>
           </div>

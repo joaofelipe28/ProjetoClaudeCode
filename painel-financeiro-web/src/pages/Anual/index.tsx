@@ -12,13 +12,13 @@ import {
 function CustomTooltip({ active, payload, label }: { active?: boolean; payload?: Array<{ name: string; value: number; color: string }>; label?: string }) {
   if (!active || !payload?.length) return null
   return (
-    <div className="bg-surface border border-bdr rounded-lg p-3 text-sm shadow-xl">
-      <div className="font-medium text-gray-200 mb-2">{label}</div>
+    <div className="bg-white border border-gray-200 rounded-lg p-3 text-sm shadow-xl">
+      <div className="font-medium text-gray-800 mb-2">{label}</div>
       {payload.map((p, i) => (
         <div key={i} className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full" style={{ background: p.color }} />
-          <span className="text-gray-400">{p.name}:</span>
-          <span className="text-gray-200 font-medium">{brl(p.value)}</span>
+          <span className="text-gray-500">{p.name}:</span>
+          <span className="text-gray-800 font-medium">{brl(p.value)}</span>
         </div>
       ))}
     </div>
@@ -71,11 +71,11 @@ export function Anual() {
     + itensPontuais.reduce((s, i) => s + i.total, 0)
 
   const TIPO_STYLE: Record<string, string> = {
-    'Fixo': 'bg-despesa/20 text-despesa',
-    'Parc. PJ': 'bg-blue-500/20 text-blue-400',
-    'Parc. Pessoal': 'bg-parcela/20 text-parcela',
-    'DARF': 'bg-darf/20 text-darf',
-    'Pontual': 'bg-pontual/20 text-pontual',
+    'Fixo': 'bg-despesa/15 text-despesa',
+    'Parc. PJ': 'bg-blue-500/15 text-blue-600',
+    'Parc. Pessoal': 'bg-parcela/15 text-parcela',
+    'DARF': 'bg-darf/15 text-darf',
+    'Pontual': 'bg-pontual/15 text-pontual',
   }
 
   const cashflowData = months.map(m => ({
@@ -89,7 +89,6 @@ export function Anual() {
     'Reserva Alvo': reservaAlvo,
   }))
 
-  // Debt paydown per month
   const debtData = months.map(m => {
     const pjDebt = parcelamentos.filter(p => p.tipo === 'PJ').reduce((s, p) => s + getParcelamentoSaldoRestante(p, m.mesAno), 0)
     const pessoalDebt = parcelamentos.filter(p => p.tipo === 'Pessoal').reduce((s, p) => s + getParcelamentoSaldoRestante(p, m.mesAno), 0)
@@ -99,8 +98,8 @@ export function Anual() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-xl font-bold text-gray-100">Projeção Anual</h1>
-        <p className="text-sm text-gray-400 mt-1">{months.length > 0 ? `${mesLabel(months[0].mesAno)} – ${mesLabel(months[months.length - 1].mesAno)}` : ''}</p>
+        <h1 className="text-xl font-bold text-gray-800">Projeção Anual</h1>
+        <p className="text-sm text-gray-500 mt-1">{months.length > 0 ? `${mesLabel(months[0].mesAno)} – ${mesLabel(months[months.length - 1].mesAno)}` : ''}</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -112,16 +111,16 @@ export function Anual() {
       </div>
 
       {/* Full table */}
-      <div className="bg-surface border border-bdr rounded-xl overflow-hidden">
-        <div className="px-4 py-3 border-b border-bdr">
-          <h2 className="text-sm font-semibold text-gray-200">Tabela Anual Completa</h2>
+      <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+        <div className="px-4 py-3 border-b border-gray-200">
+          <h2 className="text-sm font-semibold text-gray-700">Tabela Anual Completa</h2>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-bdr">
+              <tr className="border-b border-gray-200 bg-gray-50">
                 {['Mês', 'Receita', 'Fixos', 'Parc. PJ', 'Parc. Pessoal', 'DARF', 'Pontuais', 'Aportes', 'Total Desp.', 'Saldo Mês', 'Saldo Acum.', 'Status'].map(h => (
-                  <th key={h} className="px-3 py-2.5 text-left text-xs text-gray-400 font-medium whitespace-nowrap">{h}</th>
+                  <th key={h} className="px-3 py-2.5 text-left text-xs text-gray-500 font-semibold whitespace-nowrap">{h}</th>
                 ))}
               </tr>
             </thead>
@@ -132,8 +131,8 @@ export function Anual() {
                 }, 0)
                 const pessoalParcelas = m.parcelasTotal - pjParcelas
                 return (
-                  <tr key={m.mesAno} className={`border-b border-bdr/50 hover:bg-white/5 ${i % 2 === 0 ? '' : 'bg-white/[0.02]'}`}>
-                    <td className="px-3 py-2.5 font-medium text-gray-200">{m.label}</td>
+                  <tr key={m.mesAno} className={`border-b border-gray-100 hover:bg-slate-50 ${i % 2 === 0 ? '' : 'bg-gray-50/50'}`}>
+                    <td className="px-3 py-2.5 font-medium text-gray-800">{m.label}</td>
                     <td className="px-3 py-2.5 text-receita">{brl(m.receitaRealizada || m.receitaPrevista)}</td>
                     <td className="px-3 py-2.5 text-despesa">{brl(m.fixos)}</td>
                     <td className="px-3 py-2.5 text-pjParcela">{brl(pjParcelas)}</td>
@@ -141,9 +140,9 @@ export function Anual() {
                     <td className="px-3 py-2.5 text-darf">{brl(m.darf)}</td>
                     <td className="px-3 py-2.5 text-pontual">{m.pontuais > 0 ? brl(m.pontuais) : '—'}</td>
                     <td className="px-3 py-2.5 text-saldo">{m.aportes > 0 ? brl(m.aportes) : '—'}</td>
-                    <td className="px-3 py-2.5 text-gray-400">{brl(m.totalDespesas)}</td>
+                    <td className="px-3 py-2.5 text-gray-600">{brl(m.totalDespesas)}</td>
                     <td className={`px-3 py-2.5 font-medium ${m.saldoMes >= 0 ? 'text-receita' : 'text-despesa'}`}>{brl(m.saldoMes)}</td>
-                    <td className={`px-3 py-2.5 font-medium ${m.saldoAcumulado >= 0 ? 'text-gray-200' : 'text-despesa'}`}>{brl(m.saldoAcumulado)}</td>
+                    <td className={`px-3 py-2.5 font-medium ${m.saldoAcumulado >= 0 ? 'text-gray-700' : 'text-despesa'}`}>{brl(m.saldoAcumulado)}</td>
                     <td className="px-3 py-2.5"><StatusBadge status={m.status} /></td>
                   </tr>
                 )
@@ -154,35 +153,35 @@ export function Anual() {
       </div>
 
       {/* ── Composição de Despesas ──────────────────────────────────────── */}
-      <div className="bg-surface border border-bdr rounded-xl overflow-hidden">
-        <div className="px-4 py-3 border-b border-bdr flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-gray-200">📊 Composição de Despesas — {mesLabel(months[0]?.mesAno ?? '')} a {mesLabel(months[months.length - 1]?.mesAno ?? '')}</h2>
-          <span className="text-xs text-gray-500">Total: <span className="text-gray-300 font-semibold">{brl(grandTotal)}</span></span>
+      <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+        <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+          <h2 className="text-sm font-semibold text-gray-700">📊 Composição de Despesas — {mesLabel(months[0]?.mesAno ?? '')} a {mesLabel(months[months.length - 1]?.mesAno ?? '')}</h2>
+          <span className="text-xs text-gray-500">Total: <span className="text-gray-700 font-semibold">{brl(grandTotal)}</span></span>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-bdr">
+              <tr className="border-b border-gray-200 bg-gray-50">
                 {['Descrição', 'Tipo', 'Categoria', 'Mensal', `Total (${numMeses} meses)`, '% do Total'].map(h => (
-                  <th key={h} className="px-3 py-2.5 text-left text-xs text-gray-400 font-medium whitespace-nowrap">{h}</th>
+                  <th key={h} className="px-3 py-2.5 text-left text-xs text-gray-500 font-semibold whitespace-nowrap">{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
               {/* Fixos */}
               {itensFixos.map((item, i) => (
-                <tr key={`fixo-${i}`} className="border-b border-bdr/40 hover:bg-white/5">
-                  <td className="px-3 py-2 text-gray-200 text-sm">{item.descricao}</td>
+                <tr key={`fixo-${i}`} className="border-b border-gray-100 hover:bg-slate-50">
+                  <td className="px-3 py-2 text-gray-800 text-sm">{item.descricao}</td>
                   <td className="px-3 py-2"><span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIPO_STYLE['Fixo']}`}>Fixo</span></td>
-                  <td className="px-3 py-2 text-gray-400 text-xs">{item.categoria}</td>
-                  <td className="px-3 py-2 text-gray-300">{brl(item.mensal)}</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">{item.categoria}</td>
+                  <td className="px-3 py-2 text-gray-600">{brl(item.mensal)}</td>
                   <td className="px-3 py-2 font-medium text-despesa">{brl(item.total)}</td>
-                  <td className="px-3 py-2 text-gray-500 text-xs">{((item.total / grandTotal) * 100).toFixed(1)}%</td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">{((item.total / grandTotal) * 100).toFixed(1)}%</td>
                 </tr>
               ))}
 
               {/* Subtotal Fixos */}
-              <tr className="bg-despesa/5 border-b border-bdr">
+              <tr className="bg-red-50 border-b border-gray-200">
                 <td className="px-3 py-1.5 text-xs font-semibold text-despesa" colSpan={3}>Subtotal Fixos</td>
                 <td />
                 <td className="px-3 py-1.5 text-xs font-semibold text-despesa">{brl(itensFixos.reduce((s, i) => s + i.total, 0))}</td>
@@ -191,17 +190,17 @@ export function Anual() {
 
               {/* Parcelamentos */}
               {itensParcelamentos.map((item, i) => (
-                <tr key={`parc-${i}`} className="border-b border-bdr/40 hover:bg-white/5">
-                  <td className="px-3 py-2 text-gray-200 text-sm">{item.descricao}</td>
+                <tr key={`parc-${i}`} className="border-b border-gray-100 hover:bg-slate-50">
+                  <td className="px-3 py-2 text-gray-800 text-sm">{item.descricao}</td>
                   <td className="px-3 py-2"><span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIPO_STYLE[item.tipo]}`}>{item.tipo}</span></td>
-                  <td className="px-3 py-2 text-gray-400 text-xs">{item.categoria}</td>
-                  <td className="px-3 py-2 text-gray-300">{brl(item.mensal)}</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">{item.categoria}</td>
+                  <td className="px-3 py-2 text-gray-600">{brl(item.mensal)}</td>
                   <td className="px-3 py-2 font-medium text-parcela">{brl(item.total)}</td>
-                  <td className="px-3 py-2 text-gray-500 text-xs">{((item.total / grandTotal) * 100).toFixed(1)}%</td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">{((item.total / grandTotal) * 100).toFixed(1)}%</td>
                 </tr>
               ))}
               {itensParcelamentos.length > 0 && (
-                <tr className="bg-parcela/5 border-b border-bdr">
+                <tr className="bg-orange-50 border-b border-gray-200">
                   <td className="px-3 py-1.5 text-xs font-semibold text-parcela" colSpan={3}>Subtotal Parcelamentos</td>
                   <td />
                   <td className="px-3 py-1.5 text-xs font-semibold text-parcela">{brl(itensParcelamentos.reduce((s, i) => s + i.total, 0))}</td>
@@ -211,34 +210,34 @@ export function Anual() {
 
               {/* DARF */}
               {totalDarfPeriodo > 0 && (
-                <tr className="border-b border-bdr/40 hover:bg-white/5">
-                  <td className="px-3 py-2 text-gray-200 text-sm">DARF (Lucro Presumido)</td>
+                <tr className="border-b border-gray-100 hover:bg-slate-50">
+                  <td className="px-3 py-2 text-gray-800 text-sm">DARF (Lucro Presumido)</td>
                   <td className="px-3 py-2"><span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIPO_STYLE['DARF']}`}>DARF</span></td>
-                  <td className="px-3 py-2 text-gray-400 text-xs">Imposto</td>
-                  <td className="px-3 py-2 text-gray-500 text-xs">variável</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">Imposto</td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">variável</td>
                   <td className="px-3 py-2 font-medium text-darf">{brl(totalDarfPeriodo)}</td>
-                  <td className="px-3 py-2 text-gray-500 text-xs">{((totalDarfPeriodo / grandTotal) * 100).toFixed(1)}%</td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">{((totalDarfPeriodo / grandTotal) * 100).toFixed(1)}%</td>
                 </tr>
               )}
 
               {/* Pontuais por categoria */}
               {itensPontuais.map((item, i) => (
-                <tr key={`pont-${i}`} className="border-b border-bdr/40 hover:bg-white/5">
-                  <td className="px-3 py-2 text-gray-200 text-sm">{item.descricao}</td>
+                <tr key={`pont-${i}`} className="border-b border-gray-100 hover:bg-slate-50">
+                  <td className="px-3 py-2 text-gray-800 text-sm">{item.descricao}</td>
                   <td className="px-3 py-2"><span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIPO_STYLE['Pontual']}`}>Pontual</span></td>
-                  <td className="px-3 py-2 text-gray-400 text-xs">{item.categoria}</td>
-                  <td className="px-3 py-2 text-gray-500 text-xs">—</td>
+                  <td className="px-3 py-2 text-gray-500 text-xs">{item.categoria}</td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">—</td>
                   <td className="px-3 py-2 font-medium text-pontual">{brl(item.total)}</td>
-                  <td className="px-3 py-2 text-gray-500 text-xs">{((item.total / grandTotal) * 100).toFixed(1)}%</td>
+                  <td className="px-3 py-2 text-gray-400 text-xs">{((item.total / grandTotal) * 100).toFixed(1)}%</td>
                 </tr>
               ))}
 
               {/* Grand total */}
-              <tr className="bg-surfaceAlt">
-                <td className="px-3 py-3 font-bold text-gray-100 text-sm" colSpan={3}>TOTAL GERAL</td>
+              <tr className="bg-gray-100">
+                <td className="px-3 py-3 font-bold text-gray-800 text-sm" colSpan={3}>TOTAL GERAL</td>
                 <td />
-                <td className="px-3 py-3 font-bold text-gray-100 text-sm">{brl(grandTotal)}</td>
-                <td className="px-3 py-3 text-xs text-gray-400">100%</td>
+                <td className="px-3 py-3 font-bold text-gray-800 text-sm">{brl(grandTotal)}</td>
+                <td className="px-3 py-3 text-xs text-gray-500">100%</td>
               </tr>
             </tbody>
           </table>
@@ -247,20 +246,17 @@ export function Anual() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Cashflow bar */}
-        <div className="bg-surface border border-bdr rounded-xl p-4">
-          <h2 className="text-sm font-semibold text-gray-200 mb-4">Saldo Mensal</h2>
+        <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+          <h2 className="text-sm font-semibold text-gray-700 mb-4">Saldo Mensal</h2>
           <ResponsiveContainer width="100%" height={200}>
             <BarChart data={cashflowData}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#2d3748" />
-              <XAxis dataKey="name" tick={{ fill: '#9ca3af', fontSize: 11 }} axisLine={false} tickLine={false} />
-              <YAxis tick={{ fill: '#9ca3af', fontSize: 10 }} axisLine={false} tickLine={false} tickFormatter={v => `${(v / 1000).toFixed(0)}k`} />
+              <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+              <XAxis dataKey="name" tick={{ fill: '#64748b', fontSize: 11 }} axisLine={false} tickLine={false} />
+              <YAxis tick={{ fill: '#64748b', fontSize: 10 }} axisLine={false} tickLine={false} tickFormatter={v => `${(v / 1000).toFixed(0)}k`} />
               <Tooltip content={<CustomTooltip />} />
-              <Bar dataKey="Saldo Mensal" radius={[4, 4, 0, 0]}
-                fill="#2ecc71"
-                label={false}
-              >
+              <Bar dataKey="Saldo Mensal" radius={[4, 4, 0, 0]} fill="#16a34a" label={false}>
                 {cashflowData.map((entry, i) => (
-                  <Cell key={i} fill={entry['Saldo Mensal'] >= 0 ? '#2ecc71' : '#e74c3c'} />
+                  <Cell key={i} fill={entry['Saldo Mensal'] >= 0 ? '#16a34a' : '#dc2626'} />
                 ))}
               </Bar>
             </BarChart>
@@ -268,51 +264,51 @@ export function Anual() {
         </div>
 
         {/* Accumulated + reserve target */}
-        <div className="bg-surface border border-bdr rounded-xl p-4">
-          <h2 className="text-sm font-semibold text-gray-200 mb-4">Saldo Acumulado vs Reserva</h2>
+        <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+          <h2 className="text-sm font-semibold text-gray-700 mb-4">Saldo Acumulado vs Reserva</h2>
           <ResponsiveContainer width="100%" height={200}>
             <AreaChart data={accData}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#2d3748" />
-              <XAxis dataKey="name" tick={{ fill: '#9ca3af', fontSize: 11 }} axisLine={false} tickLine={false} />
-              <YAxis tick={{ fill: '#9ca3af', fontSize: 10 }} axisLine={false} tickLine={false} tickFormatter={v => `${(v / 1000).toFixed(0)}k`} />
+              <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+              <XAxis dataKey="name" tick={{ fill: '#64748b', fontSize: 11 }} axisLine={false} tickLine={false} />
+              <YAxis tick={{ fill: '#64748b', fontSize: 10 }} axisLine={false} tickLine={false} tickFormatter={v => `${(v / 1000).toFixed(0)}k`} />
               <Tooltip content={<CustomTooltip />} />
-              <Area type="monotone" dataKey="Saldo Acumulado" stroke="#1abc9c" fill="#1abc9c20" strokeWidth={2} />
-              <Area type="monotone" dataKey="Reserva Alvo" stroke="#f1c40f" fill="none" strokeWidth={1.5} strokeDasharray="5 5" />
+              <Area type="monotone" dataKey="Saldo Acumulado" stroke="#0891b2" fill="#0891b220" strokeWidth={2} />
+              <Area type="monotone" dataKey="Reserva Alvo" stroke="#ca8a04" fill="none" strokeWidth={1.5} strokeDasharray="5 5" />
             </AreaChart>
           </ResponsiveContainer>
         </div>
 
         {/* Debt paydown */}
         {parcelamentos.length > 0 && (
-          <div className="bg-surface border border-bdr rounded-xl p-4">
-            <h2 className="text-sm font-semibold text-gray-200 mb-4">Quitação de Dívidas</h2>
+          <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+            <h2 className="text-sm font-semibold text-gray-700 mb-4">Quitação de Dívidas</h2>
             <ResponsiveContainer width="100%" height={200}>
               <AreaChart data={debtData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#2d3748" />
-                <XAxis dataKey="name" tick={{ fill: '#9ca3af', fontSize: 11 }} axisLine={false} tickLine={false} />
-                <YAxis tick={{ fill: '#9ca3af', fontSize: 10 }} axisLine={false} tickLine={false} tickFormatter={v => `${(v / 1000).toFixed(0)}k`} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                <XAxis dataKey="name" tick={{ fill: '#64748b', fontSize: 11 }} axisLine={false} tickLine={false} />
+                <YAxis tick={{ fill: '#64748b', fontSize: 10 }} axisLine={false} tickLine={false} tickFormatter={v => `${(v / 1000).toFixed(0)}k`} />
                 <Tooltip content={<CustomTooltip />} />
-                <Legend wrapperStyle={{ fontSize: 11, color: '#9ca3af' }} />
-                <Area type="monotone" dataKey="Dívida PJ" stroke="#3498db" fill="#3498db20" strokeWidth={2} />
-                <Area type="monotone" dataKey="Dívida Pessoal" stroke="#e67e22" fill="#e67e2220" strokeWidth={2} />
+                <Legend wrapperStyle={{ fontSize: 11, color: '#64748b' }} />
+                <Area type="monotone" dataKey="Dívida PJ" stroke="#2563eb" fill="#2563eb20" strokeWidth={2} />
+                <Area type="monotone" dataKey="Dívida Pessoal" stroke="#ea580c" fill="#ea580c20" strokeWidth={2} />
               </AreaChart>
             </ResponsiveContainer>
           </div>
         )}
 
         {/* % comprometido */}
-        <div className="bg-surface border border-bdr rounded-xl p-4">
-          <h2 className="text-sm font-semibold text-gray-200 mb-4">% Renda Comprometida</h2>
+        <div className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+          <h2 className="text-sm font-semibold text-gray-700 mb-4">% Renda Comprometida</h2>
           <div className="space-y-3">
             {months.map(m => (
               <div key={m.mesAno}>
                 <div className="flex justify-between text-xs mb-1">
-                  <span className="text-gray-400">{m.label}</span>
+                  <span className="text-gray-500">{m.label}</span>
                   <span className={m.pctComprometido > 0.9 ? 'text-despesa' : m.pctComprometido > 0.75 ? 'text-alerta' : 'text-receita'}>
                     {pctNum(m.pctComprometido * 100)}
                   </span>
                 </div>
-                <div className="h-2 bg-surfaceAlt rounded-full overflow-hidden">
+                <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
                   <div
                     className={`h-full rounded-full ${m.pctComprometido > 0.9 ? 'bg-despesa' : m.pctComprometido > 0.75 ? 'bg-alerta' : 'bg-receita'}`}
                     style={{ width: `${Math.min(100, m.pctComprometido * 100)}%` }}
