@@ -19,7 +19,9 @@
       "Bash(curl -s -o /dev/null -w '%{http_code}' -X GET https://api.github.com/repos/joaofelipe28/ProjetoClaudeCode -H 'Authorization: token __TRACKED_VAR__')",
       "Bash(scutil --proxy)",
       "Bash(dig +short github.com)",
-      "Bash(GIT_CONFIG_NOSYSTEM=1 git push origin main)"
+      "Bash(GIT_CONFIG_NOSYSTEM=1 git push origin main)",
+      "Bash(npm install *)",
+      "Bash(ls ~/.npm-global/node_modules/context-mode/ 2>&1 | head -20)"
     ]
   }
 }
