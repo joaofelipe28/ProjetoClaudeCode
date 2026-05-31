@@ -1,6 +1,7 @@
 import type {
   AppConfig, Tomador, MonthlyIncomeRecord, GastoFixo,
   GastoPontual, Parcelamento, DarfCalculation, MonthSummary, AporteInvestimento, ReceitaPontual,
+  MonthlyDebitRecord,
 } from '@/types'
 import { diffMonths, mesLabel, monthRange, addMonths } from './formatters'
 
@@ -63,6 +64,7 @@ export function computeMonthSummary(
   saldoAnterior: number,
   aportes: AporteInvestimento[] = [],
   receitasPontuais: ReceitaPontual[] = [],
+  skippedIds: Set<string> = new Set(),
 ): MonthSummary {
   const tomMap = Object.fromEntries(tomadores.map(t => [t.id, t]))
 
@@ -85,6 +87,7 @@ export function computeMonthSummary(
 
   // DARF a pagar este mês = apuração do mês anterior (timing real)
   const prevMesAno = addMonths(mesAno, -1)
+  const prevDarfKey = `darf-${prevMesAno}`
   const prevRecords = incomeRecords.filter(r => r.mesAno === prevMesAno)
   const prevFatPJ = prevRecords
     .filter(r => tomMap[r.tomadorId]?.tipo === 'PJ')
@@ -93,22 +96,27 @@ export function computeMonthSummary(
     const t = tomMap[r.tomadorId]
     return sum + (t ? computeRetencoes(t, r.valorRealizado, config) : 0)
   }, 0)
-  const darf = computeDarf(prevFatPJ, prevRetencoes, config, prevMesAno).darfAPagar
+  const darfBruto = computeDarf(prevFatPJ, prevRetencoes, config, prevMesAno).darfAPagar
+  const darf = skippedIds.has(prevDarfKey) ? 0 : darfBruto
 
-  // Fixos
-  const fixos_ = fixos.filter(f => f.status === 'Ativo').reduce((sum, f) => sum + f.valor, 0)
+  // Fixos (excluindo os pulados)
+  const fixos_ = fixos
+    .filter(f => f.status === 'Ativo' && !skippedIds.has(f.id))
+    .reduce((sum, f) => sum + f.valor, 0)
 
-  // Parcelamentos
-  const parcelasTotal = parcelamentos.reduce((sum, p) => sum + getParcelamentoValue(p, mesAno), 0)
+  // Parcelamentos (excluindo os pulados)
+  const parcelasTotal = parcelamentos
+    .filter(p => !skippedIds.has(p.id))
+    .reduce((sum, p) => sum + getParcelamentoValue(p, mesAno), 0)
 
-  // Pontuais
+  // Pontuais (excluindo os pulados)
   const pontuais_ = pontuais
-    .filter(p => p.mesAno === mesAno && p.status !== 'Cancelado')
+    .filter(p => p.mesAno === mesAno && p.status !== 'Cancelado' && !skippedIds.has(p.id))
     .reduce((sum, p) => sum + p.valor, 0)
 
-  // Aportes
+  // Aportes (excluindo os pulados)
   const aportes_ = aportes
-    .filter(a => a.mesAno === mesAno && a.status !== 'Cancelado')
+    .filter(a => a.mesAno === mesAno && a.status !== 'Cancelado' && !skippedIds.has(a.id))
     .reduce((sum, a) => sum + a.valor, 0)
 
   const totalDespesas = darf + fixos_ + parcelasTotal + pontuais_ + aportes_
@@ -148,12 +156,16 @@ export function computeAllMonths(
   config: AppConfig,
   aportes: AporteInvestimento[] = [],
   receitasPontuais: ReceitaPontual[] = [],
+  monthlyDebits: MonthlyDebitRecord[] = [],
 ): MonthSummary[] {
   const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 12))
   const results: MonthSummary[] = []
   let saldoAnterior = config.saldoInicial
   for (const mes of meses) {
-    const summary = computeMonthSummary(mes, incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, saldoAnterior, aportes, receitasPontuais)
+    const skippedIds = new Set(
+      monthlyDebits.filter(d => d.mesAno === mes && d.status === 'Pulado').map(d => d.referenceId)
+    )
+    const summary = computeMonthSummary(mes, incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, saldoAnterior, aportes, receitasPontuais, skippedIds)
     results.push(summary)
     saldoAnterior = summary.saldoAcumulado
   }

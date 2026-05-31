@@ -3,14 +3,21 @@ import { computeMonthSummary, computeDarf, computeFixosTotal } from '@/lib/calcu
 import { computeAllMonths } from '@/lib/calculations'
 
 export function useMonthlyCalculations(mesAno: string) {
-  const { config, tomadores, incomeRecords, fixos, pontuais, parcelamentos, aportes, receitasPontuais } = useStore()
+  const { config, tomadores, incomeRecords, fixos, pontuais, parcelamentos, aportes, receitasPontuais, monthlyDebits } = useStore()
+
+  // IDs pulados para este mês
+  const skippedIds = new Set(
+    monthlyDebits
+      .filter(d => d.mesAno === mesAno && d.status === 'Pulado')
+      .map(d => d.referenceId)
+  )
 
   // Saldo anterior = sum of all previous months
-  const allMonths = computeAllMonths(incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, aportes, receitasPontuais)
+  const allMonths = computeAllMonths(incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, aportes, receitasPontuais, monthlyDebits)
   const idx = allMonths.findIndex(m => m.mesAno === mesAno)
   const saldoAnterior = idx > 0 ? allMonths[idx - 1].saldoAcumulado : config.saldoInicial
 
-  const summary = computeMonthSummary(mesAno, incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, saldoAnterior, aportes, receitasPontuais)
+  const summary = computeMonthSummary(mesAno, incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, saldoAnterior, aportes, receitasPontuais, skippedIds)
 
   // DARF breakdown para exibição da apuração do mês atual
   const monthRecords = incomeRecords.filter(r => r.mesAno === mesAno)
@@ -37,6 +44,6 @@ export function useMonthlyCalculations(mesAno: string) {
 }
 
 export function useAnnualProjection() {
-  const { config, tomadores, incomeRecords, fixos, pontuais, parcelamentos, aportes, receitasPontuais } = useStore()
-  return computeAllMonths(incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, aportes, receitasPontuais)
+  const { config, tomadores, incomeRecords, fixos, pontuais, parcelamentos, aportes, receitasPontuais, monthlyDebits } = useStore()
+  return computeAllMonths(incomeRecords, tomadores, fixos, pontuais, parcelamentos, config, aportes, receitasPontuais, monthlyDebits)
 }

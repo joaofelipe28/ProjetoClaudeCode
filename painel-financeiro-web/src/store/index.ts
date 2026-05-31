@@ -191,6 +191,8 @@ interface AppStore {
   // Monthly debits actions
   upsertDebitRecord: (ref: { referenceId: string; type: DebitType; mesAno: string; status: DebitStatus; valorPago: number; dataPagamento?: string }) => void
   toggleDebitPago: (referenceId: string, type: DebitType, mesAno: string, valorEsperado: number) => void
+  skipDebit: (referenceId: string, type: DebitType, mesAno: string, valor: number) => void
+  unskipDebit: (referenceId: string, mesAno: string) => void
   getDebitRecord: (referenceId: string, mesAno: string) => MonthlyDebitRecord | undefined
 
   // Utility
@@ -324,6 +326,18 @@ export const useStore = create<AppStore>()(
             dataPagamento: new Date().toISOString().slice(0, 10),
           })
         }
+      }),
+      skipDebit: (referenceId, type, mesAno, valor) => set(s => {
+        const idx = s.monthlyDebits.findIndex(d => d.referenceId === referenceId && d.mesAno === mesAno)
+        if (idx !== -1) {
+          s.monthlyDebits[idx].status = 'Pulado'
+          s.monthlyDebits[idx].valorPago = valor
+        } else {
+          s.monthlyDebits.push({ id: crypto.randomUUID(), referenceId, type, mesAno, status: 'Pulado', valorPago: valor })
+        }
+      }),
+      unskipDebit: (referenceId, mesAno) => set(s => {
+        s.monthlyDebits = s.monthlyDebits.filter(d => !(d.referenceId === referenceId && d.mesAno === mesAno && d.status === 'Pulado'))
       }),
       getDebitRecord: (referenceId, mesAno) => {
         return get().monthlyDebits.find(d => d.referenceId === referenceId && d.mesAno === mesAno)

@@ -53,7 +53,7 @@ export interface MonthlyIncomeRecord {
 
 // ── Monthly Debit Records ─────────────────────────────────────────────────────
 
-export type DebitStatus = 'Pago' | 'Pendente' | 'Agendado'
+export type DebitStatus = 'Pago' | 'Pendente' | 'Agendado' | 'Pulado'
 export type DebitType = 'Fixo' | 'Parcelamento' | 'Pontual' | 'DARF' | 'Aporte'
 
 export interface MonthlyDebitRecord {

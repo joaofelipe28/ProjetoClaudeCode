@@ -53,7 +53,7 @@ export function Mensal() {
     addPontual, deletePontual,
     addAporte, deleteAporte,
     addReceitaPontual, updateReceitaPontual, deleteReceitaPontual,
-    toggleDebitPago, getDebitRecord,
+    toggleDebitPago, skipDebit, unskipDebit, getDebitRecord,
   } = useStore()
 
   const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 12))
@@ -96,8 +96,23 @@ export function Mensal() {
     return rec?.status === 'Pago'
   }
 
+  function isDebitPulado(referenceId: string) {
+    const rec = getDebitRecord(referenceId, selectedMes)
+    return rec?.status === 'Pulado'
+  }
+
   function handleToggle(referenceId: string, type: DebitType, valor: number) {
+    if (isDebitPulado(referenceId)) return // itens pulados não podem ser marcados diretamente
     toggleDebitPago(referenceId, type, selectedMes, valor)
+  }
+
+  function handleSkip(referenceId: string, type: DebitType, valor: number) {
+    if (isDebitPago(referenceId)) return // já pago, não pode pular
+    if (isDebitPulado(referenceId)) {
+      unskipDebit(referenceId, selectedMes) // desfaz o pulo
+    } else {
+      skipDebit(referenceId, type, selectedMes, valor) // pula para Pendentes
+    }
   }
 
   const prevDarfPago = isDebitPago(prevDarfKey)
@@ -109,9 +124,12 @@ export function Mensal() {
     ...(prevDarfValor > 0 ? [{ id: prevDarfKey, valor: prevDarfValor, type: 'DARF' as DebitType }] : []),
     ...monthAportes.map(a => ({ id: a.id, valor: a.valor, type: 'Aporte' as DebitType })),
   ]
+  // Pulados ficam de fora do totalPendente (foram para Pendentes)
   const totalPago = allDebitItems.filter(d => isDebitPago(d.id)).reduce((s, d) => s + d.valor, 0)
-  const totalPendente = allDebitItems.filter(d => !isDebitPago(d.id)).reduce((s, d) => s + d.valor, 0)
+  const totalPendente = allDebitItems.filter(d => !isDebitPago(d.id) && !isDebitPulado(d.id)).reduce((s, d) => s + d.valor, 0)
+  const totalPulado = allDebitItems.filter(d => isDebitPulado(d.id)).reduce((s, d) => s + d.valor, 0)
   const countPago = allDebitItems.filter(d => isDebitPago(d.id)).length
+  const countPulado = allDebitItems.filter(d => isDebitPulado(d.id)).length
 
   // "Já recebido" = tomadores marcados Pago + extras marcadas Confirmado (= "Pago" nas extras)
   const receitaJaPaga = monthRecords
@@ -425,16 +443,19 @@ export function Mensal() {
         <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
           <div>
             <h2 className="text-sm font-semibold text-gray-700">📋 Contas do Mês — {mesLabel(selectedMes)}</h2>
-            <p className="text-xs text-gray-400 mt-0.5">Clique no círculo para marcar como pago</p>
+            <p className="text-xs text-gray-400 mt-0.5">✓ marcar pago · × pular para Pendentes</p>
           </div>
-          <div className="flex items-center gap-4 text-xs">
+          <div className="flex items-center gap-3 text-xs flex-wrap justify-end">
             <span className="text-receita font-medium">✓ {brl(totalPago)} pago</span>
+            {totalPulado > 0 && (
+              <span className="text-gray-400 line-through">{brl(totalPulado)} pulado</span>
+            )}
             <span className="text-gray-500">{brl(totalPendente)} pendente</span>
             <button
               onClick={() => setShowAddPontual(true)}
               className="bg-saldo/15 text-saldo px-3 py-1.5 rounded-lg hover:bg-saldo/25 transition-colors font-medium"
             >
-              + Adicionar conta
+              + Adicionar
             </button>
           </div>
         </div>
@@ -448,23 +469,39 @@ export function Mensal() {
               </div>
               {activeFixos.map(f => {
                 const pago = isDebitPago(f.id)
+                const pulado = isDebitPulado(f.id)
                 return (
                   <div
                     key={f.id}
-                    onClick={() => handleToggle(f.id, 'Fixo', f.valor)}
-                    className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 cursor-pointer transition-colors group"
+                    className={`flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition-colors ${pulado ? 'opacity-50' : ''}`}
                   >
-                    <CheckCircle checked={pago} />
+                    <div onClick={() => !pulado && handleToggle(f.id, 'Fixo', f.valor)} className={pulado ? 'cursor-default' : 'cursor-pointer'}>
+                      <CheckCircle checked={pago} />
+                    </div>
                     <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-medium transition-colors ${pago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
+                      <div className={`text-sm font-medium transition-colors ${pago || pulado ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                         {f.descricao}
                       </div>
                       <div className="text-xs text-gray-400">{f.categoria}</div>
                     </div>
-                    <div className={`text-sm font-medium ${pago ? 'text-gray-400 line-through' : 'text-despesa'}`}>
+                    <div className={`text-sm font-medium ${pago || pulado ? 'text-gray-400 line-through' : 'text-despesa'}`}>
                       {brl(f.valor)}
                     </div>
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Fixo']}`}>Fixo</span>
+                    {pulado
+                      ? <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-400">→ Pendentes</span>
+                      : <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Fixo']}`}>Fixo</span>
+                    }
+                    {!pago && (
+                      <button
+                        onClick={e => { e.stopPropagation(); handleSkip(f.id, 'Fixo', f.valor) }}
+                        title={pulado ? 'Desfazer pulo' : 'Pular este mês → Pendentes'}
+                        className={`text-xs w-5 h-5 flex items-center justify-center rounded-full transition-colors ${
+                          pulado ? 'bg-gray-200 text-gray-500 hover:bg-gray-300' : 'text-gray-300 hover:bg-red-50 hover:text-despesa'
+                        }`}
+                      >
+                        {pulado ? '↩' : '×'}
+                      </button>
+                    )}
                   </div>
                 )
               })}
@@ -480,23 +517,39 @@ export function Mensal() {
               {activeParcelamentos.map(p => {
                 const valor = getParcelamentoValue(p, selectedMes)
                 const pago = isDebitPago(p.id)
+                const pulado = isDebitPulado(p.id)
                 return (
                   <div
                     key={p.id}
-                    onClick={() => handleToggle(p.id, 'Parcelamento', valor)}
-                    className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 cursor-pointer transition-colors"
+                    className={`flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition-colors ${pulado ? 'opacity-50' : ''}`}
                   >
-                    <CheckCircle checked={pago} />
+                    <div onClick={() => !pulado && handleToggle(p.id, 'Parcelamento', valor)} className={pulado ? 'cursor-default' : 'cursor-pointer'}>
+                      <CheckCircle checked={pago} />
+                    </div>
                     <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-medium transition-colors ${pago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
+                      <div className={`text-sm font-medium transition-colors ${pago || pulado ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                         {p.descricao}
                       </div>
                       <div className="text-xs text-gray-400">{p.tipo}</div>
                     </div>
-                    <div className={`text-sm font-medium ${pago ? 'text-gray-400 line-through' : p.tipo === 'PJ' ? 'text-pjParcela' : 'text-parcela'}`}>
+                    <div className={`text-sm font-medium ${pago || pulado ? 'text-gray-400 line-through' : p.tipo === 'PJ' ? 'text-pjParcela' : 'text-parcela'}`}>
                       {brl(valor)}
                     </div>
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Parcelamento']}`}>Parcela</span>
+                    {pulado
+                      ? <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-400">→ Pendentes</span>
+                      : <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Parcelamento']}`}>Parcela</span>
+                    }
+                    {!pago && (
+                      <button
+                        onClick={() => handleSkip(p.id, 'Parcelamento', valor)}
+                        title={pulado ? 'Desfazer pulo' : 'Pular este mês → Pendentes'}
+                        className={`text-xs w-5 h-5 flex items-center justify-center rounded-full transition-colors ${
+                          pulado ? 'bg-gray-200 text-gray-500 hover:bg-gray-300' : 'text-gray-300 hover:bg-red-50 hover:text-despesa'
+                        }`}
+                      >
+                        {pulado ? '↩' : '×'}
+                      </button>
+                    )}
                   </div>
                 )
               })}
@@ -509,22 +562,40 @@ export function Mensal() {
               <div className="px-4 py-2 bg-purple-50">
                 <span className="text-xs font-semibold text-darf uppercase tracking-wide">Impostos</span>
               </div>
-              <div
-                onClick={() => handleToggle(prevDarfKey, 'DARF', prevDarfValor)}
-                className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 cursor-pointer transition-colors"
-              >
-                <CheckCircle checked={prevDarfPago} />
-                <div className="flex-1">
-                  <div className={`text-sm font-medium ${prevDarfPago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
-                    DARF — ref. {mesLabel(prevMes)}
+              {(() => {
+                const pulado = isDebitPulado(prevDarfKey)
+                return (
+                  <div className={`flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition-colors ${pulado ? 'opacity-50' : ''}`}>
+                    <div onClick={() => !pulado && handleToggle(prevDarfKey, 'DARF', prevDarfValor)} className={pulado ? 'cursor-default' : 'cursor-pointer'}>
+                      <CheckCircle checked={prevDarfPago} />
+                    </div>
+                    <div className="flex-1">
+                      <div className={`text-sm font-medium ${prevDarfPago || pulado ? 'line-through text-gray-400' : 'text-gray-800'}`}>
+                        DARF — ref. {mesLabel(prevMes)}
+                      </div>
+                      <div className="text-xs text-gray-400">Vence em {mesLabel(selectedMes)} · PIS + COFINS + IRPJ + CSLL + ISS</div>
+                    </div>
+                    <div className={`text-sm font-medium ${prevDarfPago || pulado ? 'text-gray-400 line-through' : 'text-darf'}`}>
+                      {brl(prevDarfValor)}
+                    </div>
+                    {pulado
+                      ? <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-400">→ Pendentes</span>
+                      : <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['DARF']}`}>DARF</span>
+                    }
+                    {!prevDarfPago && (
+                      <button
+                        onClick={() => handleSkip(prevDarfKey, 'DARF', prevDarfValor)}
+                        title={pulado ? 'Desfazer pulo' : 'Pular este mês → Pendentes'}
+                        className={`text-xs w-5 h-5 flex items-center justify-center rounded-full transition-colors ${
+                          pulado ? 'bg-gray-200 text-gray-500 hover:bg-gray-300' : 'text-gray-300 hover:bg-red-50 hover:text-despesa'
+                        }`}
+                      >
+                        {pulado ? '↩' : '×'}
+                      </button>
+                    )}
                   </div>
-                  <div className="text-xs text-gray-400">Vence em {mesLabel(selectedMes)} · PIS + COFINS + IRPJ + CSLL + ISS</div>
-                </div>
-                <div className={`text-sm font-medium ${prevDarfPago ? 'text-gray-400 line-through' : 'text-darf'}`}>
-                  {brl(prevDarfValor)}
-                </div>
-                <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['DARF']}`}>DARF</span>
-              </div>
+                )
+              })()}
             </div>
           )}
 
@@ -540,31 +611,33 @@ export function Mensal() {
             ) : (
               monthPontuais.map(p => {
                 const pago = isDebitPago(p.id)
+                const pulado = isDebitPulado(p.id)
                 return (
-                  <div
-                    key={p.id}
-                    className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 transition-colors"
-                  >
-                    <div onClick={() => handleToggle(p.id, 'Pontual', p.valor)} className="cursor-pointer">
+                  <div key={p.id} className={`flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition-colors ${pulado ? 'opacity-50' : ''}`}>
+                    <div onClick={() => !pulado && handleToggle(p.id, 'Pontual', p.valor)} className={pulado ? 'cursor-default' : 'cursor-pointer'}>
                       <CheckCircle checked={pago} />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-medium ${pago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
+                      <div className={`text-sm font-medium ${pago || pulado ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                         {p.descricao}
                       </div>
                       <div className="text-xs text-gray-400">{p.categoria}</div>
                     </div>
-                    <div className={`text-sm font-medium ${pago ? 'text-gray-400 line-through' : 'text-pontual'}`}>
+                    <div className={`text-sm font-medium ${pago || pulado ? 'text-gray-400 line-through' : 'text-pontual'}`}>
                       {brl(p.valor)}
                     </div>
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Pontual']}`}>Pontual</span>
-                    <button
-                      onClick={() => deletePontual(p.id)}
-                      className="text-gray-300 hover:text-despesa text-xs ml-1"
-                      title="Remover"
-                    >
-                      ✕
-                    </button>
+                    {pulado
+                      ? <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-400">→ Pendentes</span>
+                      : <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Pontual']}`}>Pontual</span>
+                    }
+                    {!pago && (
+                      <button onClick={() => handleSkip(p.id, 'Pontual', p.valor)}
+                        title={pulado ? 'Desfazer pulo' : 'Pular → Pendentes'}
+                        className={`text-xs w-5 h-5 flex items-center justify-center rounded-full transition-colors ${
+                          pulado ? 'bg-gray-200 text-gray-500 hover:bg-gray-300' : 'text-gray-300 hover:bg-red-50 hover:text-despesa'
+                        }`}>{pulado ? '↩' : '×'}</button>
+                    )}
+                    <button onClick={() => deletePontual(p.id)} className="text-gray-300 hover:text-despesa text-xs" title="Remover">🗑</button>
                   </div>
                 )
               })
@@ -593,27 +666,35 @@ export function Mensal() {
               monthAportes.map(a => {
                 const inv = invMap[a.investimentoId]
                 const pago = isDebitPago(a.id)
+                const pulado = isDebitPulado(a.id)
                 return (
-                  <div
-                    key={a.id}
-                    className="flex items-center gap-4 px-4 py-3 hover:bg-slate-50 transition-colors"
-                  >
-                    <div onClick={() => handleToggle(a.id, 'Aporte', a.valor)} className="cursor-pointer">
+                  <div key={a.id} className={`flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition-colors ${pulado ? 'opacity-50' : ''}`}>
+                    <div onClick={() => !pulado && handleToggle(a.id, 'Aporte', a.valor)} className={pulado ? 'cursor-default' : 'cursor-pointer'}>
                       <CheckCircle checked={pago} />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-medium ${pago ? 'line-through text-gray-400' : 'text-gray-800'}`}>
+                      <div className={`text-sm font-medium ${pago || pulado ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                         {inv?.nome ?? 'Investimento removido'}
                       </div>
                       <div className="text-xs text-gray-400">{a.mesAno}</div>
                     </div>
-                    <div className={`text-sm font-medium ${pago ? 'text-gray-400 line-through' : 'text-saldo'}`}>
+                    <div className={`text-sm font-medium ${pago || pulado ? 'text-gray-400 line-through' : 'text-saldo'}`}>
                       {brl(a.valor)}
                     </div>
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Aporte']}`}>Aporte</span>
+                    {pulado
+                      ? <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-400">→ Pendentes</span>
+                      : <span className={`text-xs px-2 py-0.5 rounded-full ${TYPE_COLOR['Aporte']}`}>Aporte</span>
+                    }
+                    {!pago && (
+                      <button onClick={() => handleSkip(a.id, 'Aporte', a.valor)}
+                        title={pulado ? 'Desfazer pulo' : 'Pular → Pendentes'}
+                        className={`text-xs w-5 h-5 flex items-center justify-center rounded-full transition-colors ${
+                          pulado ? 'bg-gray-200 text-gray-500 hover:bg-gray-300' : 'text-gray-300 hover:bg-red-50 hover:text-despesa'
+                        }`}>{pulado ? '↩' : '×'}</button>
+                    )}
                     <button
                       onClick={() => deleteAporte(a.id)}
-                      className="text-gray-300 hover:text-despesa text-xs ml-1"
+                      className="text-gray-300 hover:text-despesa text-xs"
                       title="Remover"
                     >
                       ✕
