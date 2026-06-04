@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/joaofelipescheidt/ProjetoClaudeCode/painel-financeiro-web && npm run dev > /tmp/painel-dev.log 2>&1 &",
+            "async": true,
+            "statusMessage": "Iniciando servidor de desenvolvimento..."
+          }
+        ]
+      }
+    ]
+  }
+}
