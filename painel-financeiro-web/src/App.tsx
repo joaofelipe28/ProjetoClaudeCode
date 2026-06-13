@@ -5,6 +5,7 @@ import { Anual } from '@/pages/Anual'
 import { Investimentos } from '@/pages/Investimentos'
 import { Gerenciar } from '@/pages/Gerenciar'
 import { Pendentes } from '@/pages/Pendentes'
+import { SaveIndicator } from '@/components/ui/SaveIndicator'
 import { useStore } from '@/store'
 
 type Tab = 'dashboard' | 'mensal' | 'pendentes' | 'anual' | 'investimentos' | 'gerenciar'
@@ -31,6 +32,7 @@ export default function App() {
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-lg bg-saldo/15 flex items-center justify-center text-saldo font-bold text-sm">JF</div>
               <span className="font-semibold text-gray-800 text-sm hidden sm:block">Painel Financeiro Pessoal</span>
+              <SaveIndicator />
             </div>
             <nav className="flex items-center gap-1">
               {tabs.map(tab => (

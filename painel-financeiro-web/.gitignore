@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Dados financeiros pessoais (persistência cross-browser)
+# Dados financeiros pessoais (persistência em arquivo)
 painel-financeiro-data.json
+backups/

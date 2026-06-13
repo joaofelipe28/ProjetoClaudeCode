@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import { immer } from 'zustand/middleware/immer'
+import { saveStatus } from '@/lib/saveStatus'
 import type {
   AppConfig, TaxConfig, Tomador, MonthlyIncomeRecord, GastoFixo,
   GastoPontual, Parcelamento, InvestimentoPosition, InvestimentoHistorico,
@@ -387,21 +388,72 @@ export const useStore = create<AppStore>()(
     })),
     {
       name: 'painel-financeiro',
-      // Storage customizado: se 'painel-financeiro' não existir, lê das chaves
-      // legadas para migrar dados sem perda. Escreve sempre na chave canônica.
-      storage: createJSONStorage(() => ({
-        getItem: (key: string) => {
-          const current = localStorage.getItem(key)
-          if (current) return current
-          for (const legacy of ['painel-financeiro-v2', 'painel-financeiro-v1']) {
-            const old = localStorage.getItem(legacy)
-            if (old) return old
-          }
-          return null
-        },
-        setItem: (key: string, value: string) => localStorage.setItem(key, value),
-        removeItem: (key: string) => localStorage.removeItem(key),
-      })),
+      // ── Storage à prova de perda ──────────────────────────────────────────
+      // Primário: arquivo no disco via /api/data (independe de porta/navegador,
+      // sobrevive a limpeza de cache, gera backups datados automáticos).
+      // Espelho: localStorage (redundância — se a API cair, ainda há cópia local).
+      // Leitura: arquivo → localStorage atual → chaves legadas (migração automática).
+      storage: createJSONStorage(() => {
+        const API = '/api/data'
+
+        async function readFile(): Promise<Record<string, string>> {
+          try {
+            const r = await fetch(API)
+            if (!r.ok) throw new Error('read failed')
+            return await r.json()
+          } catch { return {} }
+        }
+
+        async function writeFile(map: Record<string, string>) {
+          await fetch(API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(map),
+          })
+        }
+
+        return {
+          getItem: async (key: string): Promise<string | null> => {
+            // 1) tenta o arquivo (fonte da verdade)
+            const map = await readFile()
+            if (map[key] != null) {
+              // mantém o espelho local em dia
+              try { localStorage.setItem(key, map[key]) } catch { /* ignore */ }
+              return map[key]
+            }
+            // 2) arquivo vazio → migra do localStorage (qualquer chave conhecida)
+            for (const src of [key, 'painel-financeiro-v2', 'painel-financeiro-v1']) {
+              const legacy = localStorage.getItem(src)
+              if (legacy) {
+                try { await writeFile({ ...map, [key]: legacy }) } catch { /* ignore */ }
+                return legacy
+              }
+            }
+            return null
+          },
+          setItem: async (key: string, value: string) => {
+            saveStatus.set('saving')
+            // espelho local primeiro (sempre instantâneo e seguro)
+            try { localStorage.setItem(key, value) } catch { /* ignore */ }
+            // arquivo (primário) — se a API cair, o espelho local cobre
+            try {
+              await writeFile({ ...(await readFile()), [key]: value })
+              saveStatus.set('saved')
+            } catch {
+              // localStorage já guardou; sinaliza que o arquivo falhou
+              saveStatus.set('error')
+            }
+          },
+          removeItem: async (key: string) => {
+            try { localStorage.removeItem(key) } catch { /* ignore */ }
+            try {
+              const map = await readFile()
+              delete map[key]
+              await writeFile(map)
+            } catch { /* ignore */ }
+          },
+        }
+      }),
       version: 4,
       // REGRA FUTURA: nunca mude o `name` acima. Para adicionar dados novos,
       // incremente `version` e escreva uma migração que só ADICIONA itens
