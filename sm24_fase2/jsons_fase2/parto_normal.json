@@ -1,0 +1,182 @@
+{
+  "slug": "parto_normal",
+  "titulo": "Parto Normal",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Assistência ao Parto Normal no PS",
+  "chapter_bar": "PARTO NORMAL — FASES E ASSISTÊNCIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DECISÃO DE INTERNAÇÃO",
+      "title": "PARTO — TRABALHO DE PARTO ATIVO?",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Gestante com contracoes - avaliar colo,\ndilatacao, BCF, sangramento", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 26, "text": "TP ativo (dilatacao\n>=4-5cm, colo >80%):\nINTERNAR", "color": "green", "font_size": 5.6},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "Dilatacao <4cm,\nsem evolucao em 2h:\nNAO internar", "color": "teal", "font_size": 5.6},
+        {"id": "d", "x": 0.25, "y": 0.15, "w": 145, "h": 18, "text": "Acompanhar 1a-2a-3a fases", "color": "orange", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INTERNAÇÃO x NÃO INTERNAÇÃO",
+      "section_color": "navy",
+      "headers": ["Internar (TP ativo)", "Não internar"],
+      "header_colors": ["green", "teal"],
+      "col_widths": [0.50, 0.50],
+      "rows": [
+        ["Contrações regulares e de intensidade suficiente", "Dilatação < 4 cm"],
+        ["Esvaecimento do colo > 80%", "Sem mudança de contrações/dilatação em 2h"],
+        ["Dilatação >= 4-5 cm ou em evolução", "Membranas íntegras"],
+        ["Trabalho de parto ativo", "Cardiotocografia tranquilizadora"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAME FÍSICO NA ADMISSÃO",
+      "section_color": "navy",
+      "titulo": "AVALIAR",
+      "items": [
+        "Sangramento vaginal — descartar placenta prévia, DPP, rotura de seio marginal, rotura de vasa prévia (NÃO fazer toque antes de excluir placenta prévia)",
+        "Dilatação cervical e esvaecimento",
+        "Estática fetal: ponto de referência nas espinhas ciáticas (plano 0 de DeLee)",
+        "Sinais vitais maternos + FC fetal; manobra de Leopold (posição fetal)",
+        "Laboratório: tipagem materna, triagem para HIV, hepatite B e sífilis"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONTRAINDICAÇÕES AO PARTO NORMAL",
+      "section_color": "red",
+      "titulo": "ATENÇÃO",
+      "items": [
+        "Placenta prévia (contraindicação absoluta)",
+        "Apresentação pélvica (contraindicação RELATIVA)",
+        "Rotura uterina prévia",
+        "Sangramento vaginal sem causa esclarecida = não tocar até excluir placenta prévia (USG)",
+        "Cardiotocografia não tranquilizadora -> reavaliar via de parto"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "FASES DO TRABALHO DE PARTO",
+      "section_color": "orange",
+      "headers": ["Fase", "Definição", "Assistência"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.16, 0.40, 0.44],
+      "rows": [
+        ["1a fase", "Início do TP até dilatação total (fase ativa = dilatação acelerada)", "Toque a cada 2-3h; FC fetal a cada 30 min; não fazer esforço expulsivo antes da dilatação total; amniotomia opcional na fase ativa (evitar se HIV/hepatite)"],
+        ["2a fase", "Dilatação total até o nascimento (30 min-1h)", "FC fetal a cada 15 min/após contração; massagem perineal com compressas quentes; NÃO fazer episiotomia de rotina"],
+        ["3a fase (dequitação)", "Nascimento até saída da placenta (até 30 min)", "Manejo ATIVO (uterotônico + tração controlada + clampeamento) reduz HPP; examinar placenta/membranas"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MANEJO ATIVO x FISIOLÓGICO DO 3º PERÍODO",
+      "section_color": "purple",
+      "titulo": "DEQUITAÇÃO",
+      "items": [
+        "Manejo ATIVO (recomendado): uterotônico de rotina (ocitocina 10 UI IM), clampeamento e tração controlada do cordão -> reduz hemorragia pós-parto",
+        "Manejo fisiológico: sem uterotônico de rotina, clampeamento após cessar a pulsação, expulsão por esforço materno",
+        "Clampeamento OPORTUNO do cordão (1-3 min) beneficia o RN",
+        "SEMPRE examinar a placenta e as membranas (integridade — retenção causa HPP)",
+        "Episiotomia: NÃO de rotina (apenas seletiva)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CUIDADOS COM A MULHER APÓS O PARTO",
+      "titulo": "PÓS-PARTO IMEDIATO",
+      "items": [
+        "Avaliar condição clínica geral e sinais vitais",
+        "Avaliar a perda sanguínea (vigiar hemorragia pós-parto)",
+        "Garantir micção bem-sucedida",
+        "Dieta livre e livre atividade materna; controle de dor",
+        "Avaliar a regressão (involução) uterina e o contato pele a pele/amamentação"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Gestante ___ semanas, em trabalho de parto ___ (latente/ativo); dilatação ___ cm; BCF ___.",
+        "Sangramento: ___ (placenta prévia excluída?); apresentação ___; CTG ___.",
+        "Sorologias (HIV/HBV/sífilis): ___; intercorrências: ___.",
+        "Solicito transferência para maternidade (parto iminente/intercorrência) — informar dilatação e BCF."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Gestante a termo com contrações regulares, colo esvaecido > 80% e dilatação de 5 cm em evolução. Conduta?",
+      "alternativas": [
+        "Não internar e reavaliar em casa",
+        "Internar — trabalho de parto ativo",
+        "Cesárea de urgência",
+        "Indução com ocitocina",
+        "Alta com analgésico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Gestante com sangramento vaginal na admissão. Qual conduta é correta ANTES do toque vaginal?",
+      "alternativas": [
+        "Realizar o toque imediatamente",
+        "Excluir placenta prévia (USG) antes de tocar",
+        "Iniciar ocitocina",
+        "Romper as membranas",
+        "Administrar misoprostol"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre a episiotomia no parto normal, é correto:",
+      "alternativas": [
+        "Deve ser feita de rotina em todas as primíparas",
+        "NÃO deve ser realizada de rotina (apenas seletiva)",
+        "É obrigatória na 2a fase",
+        "Substitui a massagem perineal",
+        "Reduz a hemorragia pós-parto"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual a vantagem do manejo ATIVO do terceiro período do parto?",
+      "alternativas": [
+        "Acelera a dilatação",
+        "Reduz a hemorragia pós-parto (uterotônico + tração controlada + clampeamento)",
+        "Evita a episiotomia",
+        "Reduz a dor das contrações",
+        "Aumenta o peso do recém-nascido"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é uma contraindicação ABSOLUTA ao parto normal?",
+      "alternativas": [
+        "Apresentação pélvica",
+        "Placenta prévia",
+        "Diabetes gestacional controlada",
+        "Idade materna avançada",
+        "Cesárea prévia única"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Contrações regulares + colo esvaecido > 80% + dilatação >= 4-5 cm em evolução caracterizam trabalho de parto ativo, indicando internação. Dilatação < 4 cm sem evolução em 2h não interna."},
+    {"resposta": "B", "comentario": "Diante de sangramento vaginal, deve-se excluir placenta prévia (por USG) ANTES do toque vaginal, pois o toque pode desencadear hemorragia maciça na placenta prévia."},
+    {"resposta": "B", "comentario": "A episiotomia NÃO deve ser de rotina; seu uso é seletivo. Massagem perineal com compressas quentes é preferida para proteção do períneo na 2a fase."},
+    {"resposta": "B", "comentario": "O manejo ativo do 3o período (uterotônico de rotina, tração controlada do cordão e clampeamento) reduz a incidência de hemorragia pós-parto, principal causa de morte materna evitável."},
+    {"resposta": "B", "comentario": "A placenta prévia é contraindicação absoluta ao parto normal. A apresentação pélvica é contraindicação relativa; cesárea prévia única e DG controlada não contraindicam por si só."}
+  ]
+}

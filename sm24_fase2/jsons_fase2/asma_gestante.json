@@ -1,0 +1,167 @@
+{
+  "slug": "asma_gestante",
+  "titulo": "Crise de Asma na Gestante",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Asma na gestação no PS",
+  "chapter_bar": "ASMA NA GESTANTE — TRATAR COMO NÃO GESTANTE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CRISE NA GESTANTE",
+      "title": "ASMA — HIPÓXIA MATERNA = HIPÓXIA FETAL",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Crise de asma na gestante\nO2 para SatO2 >=95% + classificar gravidade", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Salbutamol + ipratropio (NBZ a cada 20 min, 3x)\n+ CORTICOIDE sistemico precoce", "color": "orange", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Melhora:\nalta + corticoide VO\n5-7 dias", "color": "green", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "Grave/refrataria:\nMgSO4 2g IV\n+ internar", "color": "red", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PRINCÍPIOS",
+      "section_color": "teal",
+      "titulo": "FUNDAMENTOS",
+      "items": [
+        "HIPÓXIA MATERNA = HIPÓXIA FETAL — não subtratar por medo da medicação",
+        "Tratar a crise COMO em não gestante",
+        "As medicações habituais da asma são SEGURAS na gestação",
+        "Objetivo: SatO2 >= 95%"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DA CRISE",
+      "section_color": "navy",
+      "headers": ["Gravidade", "Fala / FR", "SatO2"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.48, 0.30],
+      "rows": [
+        ["Leve", "Frases completas; FR < 25", ">= 95%"],
+        ["Moderada", "Frases curtas, musculatura acessória; FR 25-30", "90-94%"],
+        ["Grave", "Palavras isoladas; FR > 30; pico de fluxo < 50%", "< 90%"],
+        ["Iminência de parada", "Silêncio auscultatório, rebaixamento, bradipneia, hipercapnia", "—"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO MEDICAMENTOSO",
+      "section_color": "orange",
+      "titulo": "BRONCODILATADOR + CORTICOIDE",
+      "items": [
+        "O2 suplementar (máscara com reservatório 10-15 L/min) para manter SatO2 >= 95%",
+        "Salbutamol NBZ 2,5-5 mg, repetir a cada 20 min (3 doses na 1a hora) ou contínuo se grave",
+        "Associar Ipratrópio 0,5 mg NBZ a cada 20 min (3 doses)",
+        "CORTICOIDE sistêmico PRECOCE: Prednisona VO 40-60 mg OU Hidrocortisona 100 mg IV 6/6h OU Metilprednisolona 60-125 mg IV (seguro na gestação)",
+        "Crise grave/refratária: Sulfato de magnésio 2 g IV em 20 min",
+        "Adrenalina IM 0,3-0,5 mg (1:1000) se broncoespasmo grave/anafilaxia"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O QUE EVITAR / RED FLAGS",
+      "section_color": "red",
+      "titulo": "CUIDADOS",
+      "items": [
+        "EVITAR: sedativos, AINEs (se asma sensível), restrição excessiva de O2, ATRASAR o corticoide",
+        "Iminência de parada respiratória (silêncio auscultatório, rebaixamento, bradipneia, hipercapnia) = via aérea/IOT",
+        "Avaliação FETAL: BCF se > 20 semanas; cardiotocografia se viável e crise grave",
+        "Gasometria arterial se grave; RX de tórax se suspeita de complicação (NÃO contraindicado)",
+        "Não retardar a corticoterapia — reduz recaída e internação"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: falha após 1-2h de tratamento, SatO2 < 95% persistente, pico de fluxo < 60%, asma grave prévia, necessidade de O2 contínuo",
+        "ALTA: assintomática/sintomas leves, SatO2 >= 95% em ar ambiente, pico de fluxo > 70%",
+        "Prescrever na alta: corticoide VO 5-7 dias + broncodilatador de resgate + ajuste da manutenção",
+        "Orientar retorno imediato se piora; reforçar adesão à manutenção (segura na gestação)",
+        "Complicações: hipóxia fetal, parto prematuro, baixo peso ao nascer"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Gestante ___ semanas em crise de asma ___ (leve/moderada/grave); SatO2 ___; FR ___; pico de fluxo ___.",
+        "Tratamento: salbutamol+ipratrópio NBZ, corticoide ___, MgSO4 se grave.",
+        "Resposta: ___; BCF/CTG: ___.",
+        "Solicito vaga (UTI se iminência de parada) + acompanhamento obstétrico."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Gestante de 28 semanas em crise de asma moderada. Sobre o tratamento, é correto:",
+      "alternativas": [
+        "Reduzir as doses por medo de teratogenicidade",
+        "Tratar como em não gestante: O2 (SatO2>=95%), salbutamol + ipratrópio e corticoide sistêmico precoce (seguros na gestação)",
+        "Evitar corticoide na gestação",
+        "Usar apenas oxigênio",
+        "Iniciar antibiótico empírico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que a hipóxia materna deve ser corrigida agressivamente na asma da gestante?",
+      "alternativas": [
+        "Porque não tem relação com o feto",
+        "Porque hipóxia materna = hipóxia fetal (risco fetal direto)",
+        "Porque a gestante tolera melhor a hipóxia",
+        "Porque o oxigênio é teratogênico",
+        "Porque a SatO2 ideal é 85%"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual a meta de saturação de oxigênio na crise de asma da gestante?",
+      "alternativas": [
+        "SatO2 >= 85%",
+        "SatO2 >= 95%",
+        "SatO2 >= 88%",
+        "SatO2 >= 90%",
+        "Não há meta definida"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Na crise grave/refratária de asma na gestante, qual medicação endovenosa pode ser usada?",
+      "alternativas": [
+        "Sedativo benzodiazepínico",
+        "Sulfato de magnésio 2 g IV em 20 minutos",
+        "AINE endovenoso",
+        "Furosemida",
+        "Anti-histamínico"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual conduta deve ser EVITADA na crise de asma da gestante?",
+      "alternativas": [
+        "Corticoide sistêmico precoce",
+        "Atrasar o corticoide e usar sedativos",
+        "Oxigênio suplementar",
+        "Salbutamol nebulizado",
+        "Avaliação fetal"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A crise de asma na gestante é tratada COMO em não gestante: O2 para SatO2 >= 95%, salbutamol + ipratrópio e corticoide sistêmico precoce — todos seguros na gestação. Subtratar por receio de teratogenicidade é erro grave."},
+    {"resposta": "B", "comentario": "Hipóxia materna se traduz em hipóxia fetal; por isso a oxigenação e o controle da crise devem ser agressivos, com meta de SatO2 >= 95%."},
+    {"resposta": "B", "comentario": "A meta é SatO2 >= 95% na gestante, mais rigorosa que no adulto não gestante, pela vulnerabilidade fetal à hipóxia."},
+    {"resposta": "B", "comentario": "Na crise grave/refratária pode-se usar sulfato de magnésio 2 g IV em 20 min (efeito broncodilatador adjuvante). Sedativos são contraindicados na crise asmática."},
+    {"resposta": "B", "comentario": "Deve-se evitar atrasar o corticoide e usar sedativos; também se evitam AINEs (se asma sensível) e a restrição excessiva de oxigênio. Corticoide, O2 e broncodilatador são pilares."}
+  ]
+}

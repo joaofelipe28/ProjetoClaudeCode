@@ -1,0 +1,183 @@
+{
+  "slug": "sindrome_hellp",
+  "titulo": "Síndrome HELLP",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Síndrome HELLP no PS",
+  "chapter_bar": "SÍNDROME HELLP — EMERGÊNCIA OBSTÉTRICA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — RECONHECER E RESOLVER",
+      "title": "HELLP — MgSO4, SUPORTE E PARTO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Gestante/puerpera + dor epigastrica/HD\nHemolise + enzimas altas + plaquetopenia", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "MgSO4 + controle de PA + hemoderivados\n(pode ocorrer SEM HAS/proteinuria!)", "color": "orange", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.3, "w": 205, "h": 22, "text": "RESOLUCAO DA GESTACAO = tratamento definitivo\n(independe da idade gestacional se grave)", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Pos-parto: risco alto nas 1as 48h", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CRITÉRIOS",
+      "section_color": "teal",
+      "titulo": "HEMÓLISE + ENZIMAS + PLAQUETOPENIA",
+      "items": [
+        "Forma GRAVE da doença hipertensiva da gestação, associada à pré-eclâmpsia",
+        "H (Hemólise): DHL >= 600 U/L, bilirrubina indireta elevada, esquistócitos no sangue periférico",
+        "EL (enzimas hepáticas): TGO/TGP >= 2x o normal",
+        "LP (low platelets): plaquetas < 100.000/mm3",
+        "ATENÇÃO: pode ocorrer SEM hipertensão ou proteinúria"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO E COMPLICAÇÕES",
+      "section_color": "purple",
+      "titulo": "QUANDO SUSPEITAR",
+      "items": [
+        "Dor epigástrica ou em hipocôndrio direito (distensão da cápsula hepática)",
+        "Náuseas, vômitos, mal-estar geral; cefaleia, escotomas",
+        "Pode evoluir para: DPP, eclâmpsia, insuficiência hepática, CIVD",
+        "A dor epigástrica em gestante hipertensa é HELLP até prova em contrário",
+        "Complicações graves: AVC, RUPTURA HEPÁTICA, CIVD, insuficiência renal aguda, óbito"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES IMEDIATOS (sem atrasar o tratamento)",
+      "section_color": "navy",
+      "titulo": "SOLICITAR",
+      "items": [
+        "Hemograma + PLAQUETAS SERIADAS; TGO/TGP; DHL; bilirrubinas",
+        "Creatinina/ureia; coagulograma (TP, TTPa, FIBRINOGÊNIO) — avaliar CIVD",
+        "EAS / proteinúria",
+        "TIPAGEM sanguínea e prova cruzada (reserva de hemocomponentes)",
+        "Avaliação da vitalidade fetal"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO IMEDIATO",
+      "section_color": "orange",
+      "titulo": "MgSO4 + PA + HEMODERIVADOS",
+      "items": [
+        "Sulfato de magnésio (OBRIGATÓRIO): ataque 4-6 g IV em 20 min + manutenção 1-2 g/h; manter 24h pós-parto",
+        "  Monitorar: FR >= 12, reflexo patelar presente, diurese >= 25 mL/h. Antídoto: gluconato de cálcio 10% 10 mL IV",
+        "Controle da PA (meta PAS 140-150 / PAD 90-100): hidralazina, labetalol ou nifedipina (sem queda abrupta)",
+        "Plaquetas: transfundir se < 20.000 (mesmo sem sangramento) OU < 50.000 com sangramento/cirurgia",
+        "PFC / crioprecipitado se CIVD; concentrado de hemácias se anemia sintomática",
+        "Corticoide (se < 34 sem e estável): maturação pulmonar fetal"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONDUTA OBSTÉTRICA",
+      "section_color": "red",
+      "titulo": "RESOLUÇÃO = TRATAMENTO DEFINITIVO",
+      "items": [
+        "Interrupção IMEDIATA (independe da idade gestacional) se: HELLP completo, instabilidade materna, sofrimento fetal, CIVD/DPP/insuficiência hepática ou renal",
+        "Situação excepcional (< 34 sem e estável): corticoide + estabilização curta (máx 24-48h) + monitorização intensiva",
+        "Via de parto conforme condições obstétricas — NÃO pela HELLP isoladamente",
+        "Contraindicado: conduta expectante prolongada / atrasar o parto na HELLP grave",
+        "Evitar diuréticos (exceto EAP) e metildopa na emergência"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PÓS-PARTO",
+      "titulo": "VIGIAR",
+      "items": [
+        "Risco elevado nas primeiras 48h",
+        "Manter sulfato de magnésio por 24h + monitorização intensiva",
+        "As plaquetas costumam PIORAR antes de melhorar (nadir 24-48h)",
+        "Vigiar CIVD, ruptura hepática, IRA",
+        "Reavaliar função hepática/renal e hemograma seriados"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Gestante/puérpera, ___ semanas, com síndrome HELLP (DHL ___, TGO/TGP ___, plaquetas ___).",
+        "Dor epigástrica/HD: sim/não; PA ___; sinais de CIVD/DPP: ___.",
+        "Condutas: MgSO4, anti-hipertensivo ___, hemoderivados ___, corticoide se aplicável.",
+        "Solicito maternidade de alto risco/UTI — resolução da gestação é o tratamento definitivo."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Gestante hipertensa de 30 semanas com dor epigástrica, DHL 700, TGO 120, plaquetas 80.000. Diagnóstico e tratamento definitivo?",
+      "alternativas": [
+        "Gastrite — inibidor de bomba e alta",
+        "Síndrome HELLP — estabilizar (MgSO4, PA, hemoderivados) e RESOLVER a gestação",
+        "Colelitíase — observação",
+        "Hepatite viral — antiviral",
+        "Pré-eclâmpsia leve — alta com anti-hipertensivo"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quais são os critérios laboratoriais da síndrome HELLP?",
+      "alternativas": [
+        "Leucocitose, PCR alta e febre",
+        "Hemólise (DHL alto, BI elevada, esquistócitos) + enzimas hepáticas >= 2x + plaquetas < 100.000",
+        "Hipoglicemia e acidose",
+        "Proteinúria isolada",
+        "Anemia ferropriva e plaquetose"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre a relação da HELLP com a hipertensão, é correto:",
+      "alternativas": [
+        "Sempre cursa com PA muito elevada",
+        "Pode ocorrer SEM hipertensão ou proteinúria",
+        "Exclui o diagnóstico se a PA for normal",
+        "Só ocorre no puerpério",
+        "Nunca evolui com plaquetopenia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual o limiar de transfusão de plaquetas na HELLP SEM sangramento?",
+      "alternativas": [
+        "< 100.000",
+        "< 20.000 (mesmo sem sangramento)",
+        "< 50.000 sempre",
+        "Nunca transfundir",
+        "< 80.000"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre as plaquetas no pós-parto da HELLP, é correto:",
+      "alternativas": [
+        "Normalizam imediatamente após o parto",
+        "Costumam PIORAR antes de melhorar (nadir nas primeiras 24-48h)",
+        "Não precisam ser monitoradas",
+        "Sempre exigem esplenectomia",
+        "Aumentam progressivamente desde o início"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Hemólise (DHL alto) + enzimas hepáticas elevadas + plaquetopenia em gestante hipertensa com dor epigástrica = síndrome HELLP. Estabiliza-se (MgSO4, controle da PA, hemoderivados) e o tratamento definitivo é a resolução da gestação."},
+    {"resposta": "B", "comentario": "Critérios: H (hemólise — DHL >= 600, BI elevada, esquistócitos), EL (TGO/TGP >= 2x), LP (plaquetas < 100.000/mm3). É forma grave da doença hipertensiva da gestação."},
+    {"resposta": "B", "comentario": "A HELLP pode ocorrer SEM hipertensão ou proteinúria — por isso a dor epigástrica em gestante deve sempre levantar a suspeita, mesmo com PA normal."},
+    {"resposta": "B", "comentario": "Transfunde-se plaquetas se < 20.000 mesmo sem sangramento, ou < 50.000 se houver sangramento ativo ou necessidade de cirurgia/cesárea."},
+    {"resposta": "B", "comentario": "No pós-parto da HELLP, as plaquetas costumam piorar antes de melhorar (nadir 24-48h), exigindo monitorização intensiva e manutenção do MgSO4 por 24h."}
+  ]
+}

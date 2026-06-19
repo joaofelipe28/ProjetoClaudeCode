@@ -1,0 +1,185 @@
+{
+  "slug": "doenca_inflamatoria_pelvica",
+  "titulo": "Doença Inflamatória Pélvica (DIP)",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "DIP no PS",
+  "chapter_bar": "DOENÇA INFLAMATÓRIA PÉLVICA (DIP)",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "DIP — TRATAR CEDO, COBRIR GONO + CLAMÍDIA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Mulher jovem + dor pelvica + dor a mobilizacao\ndo colo/anexos (excluir gravidez - beta-hCG)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Tratar empiricamente (baixo limiar) + USTV se duvida", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Leve/moderada:\nambulatorial\n(ceftri+doxi+metro)", "color": "green", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 26, "text": "Grave/abscesso/\ngestante/falha:\ninternar (EV)", "color": "red", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E AGENTES",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Processo inflamatório da pelve por ascensão de micro-organismos do colo/vagina para endométrio, tubas, peritônio e anexos",
+        "Geralmente POLIMICROBIANA",
+        "Agentes primários: Neisseria gonorrhoeae e Chlamydia trachomatis",
+        "Outros: anaeróbios, gram-negativos, Mycoplasma, Gardnerella, etc.",
+        "Fatores de risco: jovem, múltiplos parceiros, sexo desprotegido, IST prévia/atual, DIU recente"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — CLÍNICA E EXAME",
+      "section_color": "purple",
+      "titulo": "BAIXO LIMIAR DIAGNÓSTICO",
+      "items": [
+        "Dor pélvica bilateral (de leve desconforto a intensa), pior durante/após a menstruação",
+        "Disúria, dispareunia, febre, alteração do ciclo; pode ser oligo/assintomática",
+        "Exame especular: secreção purulenta/muco turvo no colo, friabilidade do colo",
+        "Toque: DOR À MOBILIZAÇÃO DO COLO, dor anexial, massas/endurecimento",
+        "Tratar empiricamente diante de dor pélvica + dor à mobilização do colo/anexos (após excluir gravidez)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES E CRITÉRIOS DE IMAGEM",
+      "section_color": "navy",
+      "titulo": "INVESTIGAÇÃO",
+      "items": [
+        "Hemograma, urina 1 + urocultura, VHS/PCR, bacterioscopia (vaginose), BETA-HCG (excluir gravidez/ectópica)",
+        "USTV: espessamento de parede tubária > 5 mm, líquido tubário, sinal da 'roda dentada', complexo/abscesso tubo-ovariano",
+        "Critérios de imagem específicos (sem necessidade de mais nada): abscesso tubo-ovariano ao USG/RM",
+        "Outros critérios definitivos: biópsia endometrial com endometrite; laparoscopia com sinais de salpingite",
+        "Rastrear clamídia, gonococo e HIV em toda DIP"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL",
+      "section_color": "navy",
+      "titulo": "EXCLUIR",
+      "items": [
+        "Gravidez ectópica (sempre dosar beta-hCG)",
+        "Apendicite aguda",
+        "Cisto ovariano roto ou torcido",
+        "ITU / litíase urinária",
+        "Endometriose"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO — AMBULATORIAL x HOSPITALAR",
+      "section_color": "orange",
+      "headers": ["Cenário", "Esquema"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Ambulatorial (leve/moderada)", "Ceftriaxona 500mg IM dose única + Doxiciclina 100mg VO 12/12h por 14 dias + Metronidazol 500mg VO 12/12h por 14 dias"],
+        ["Hospitalar / EV (grave, abscesso, gestante, falha)", "Ceftriaxona EV + Doxiciclina + Metronidazol OU Clindamicina + Gentamicina EV"],
+        ["Abscesso tubo-ovariano", "Internação + ATB EV (associar metronidazol/clindamicina); drenagem se grande/refratário"],
+        ["Parceiro(s)", "TRATAR sempre: Ceftriaxona 1g (cobrir gono/clamídia), independentemente de sintomas"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO E SEGUIMENTO",
+      "section_color": "red",
+      "titulo": "INTERNAR / REAVALIAR",
+      "items": [
+        "Internar: abscesso tubo-ovariano, gestação, sepse/quadro grave, intolerância/falha da via oral, dúvida diagnóstica (ex.: abdome agudo cirúrgico)",
+        "Abscesso tubo-ovariano: regime hospitalar com ATB EV; drenagem (inclusive via vaginal se fundo de saco) se necessário",
+        "Seguimento ambulatorial: REAVALIAR em 72h — hospitalizar se não houver melhora",
+        "Sem melhora: avaliar cirurgia (abscessos em outros locais; Fitz-Hugh-Curtis = peri-hepatite) ou resistência ao esquema",
+        "Rastrear HIV e demais ISTs; orientar uso de preservativo"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Mulher ___ anos com DIP (dor pélvica + dor à mobilização do colo/anexos); beta-hCG negativo.",
+        "USTV: ___ (abscesso tubo-ovariano?); PCR/VHS ___; gravidade ___.",
+        "Conduta: ATB ambulatorial (ceftri+doxi+metro) OU internação/EV; parceiro tratado.",
+        "Solicito internação/avaliação ginecológica se abscesso/gravidez/falha terapêutica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Mulher de 24 anos, dor pélvica, dor à mobilização do colo e secreção purulenta, beta-hCG negativo, sem abscesso. Conduta?",
+      "alternativas": [
+        "Aguardar cultura antes de qualquer tratamento",
+        "Tratar empiricamente (ceftriaxona + doxiciclina + metronidazol) e tratar o parceiro",
+        "Apenas analgésico e alta",
+        "Histerectomia",
+        "Antiviral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quais são os agentes etiológicos primários da DIP?",
+      "alternativas": [
+        "E. coli e Klebsiella",
+        "Neisseria gonorrhoeae e Chlamydia trachomatis",
+        "Candida e Gardnerella",
+        "Staphylococcus aureus",
+        "Trichomonas vaginalis"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual exame é obrigatório antes de tratar uma suspeita de DIP?",
+      "alternativas": [
+        "Tomografia de abdome",
+        "Beta-hCG (excluir gravidez/ectópica)",
+        "Ressonância de pelve",
+        "Colonoscopia",
+        "Eletrocardiograma"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual achado ao USG transvaginal indica DIP sem necessidade de critérios adicionais?",
+      "alternativas": [
+        "Útero de tamanho normal",
+        "Abscesso tubo-ovariano / complexo tubo-ovariano",
+        "Endométrio fino",
+        "Cisto folicular simples",
+        "Ausência de líquido livre"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre o manejo do parceiro na DIP, é correto:",
+      "alternativas": [
+        "Não é necessário tratar o parceiro",
+        "O parceiro deve ser tratado (ex.: ceftriaxona) mesmo que assintomático",
+        "Tratar apenas se sintomático",
+        "Tratar somente após cultura positiva da paciente",
+        "Tratar apenas com antifúngico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A DIP tem baixo limiar de tratamento: diante de dor pélvica + dor à mobilização do colo/anexos (beta-hCG negativo), trata-se empiricamente com ceftriaxona + doxiciclina + metronidazol, sem aguardar culturas, e trata-se o parceiro."},
+    {"resposta": "B", "comentario": "Os agentes primários são Neisseria gonorrhoeae e Chlamydia trachomatis, embora a DIP seja frequentemente polimicrobiana (incluindo anaeróbios e gram-negativos)."},
+    {"resposta": "B", "comentario": "O beta-hCG é obrigatório para excluir gravidez (especialmente ectópica) antes de tratar/conduzir uma suspeita de DIP, pois muda completamente o manejo."},
+    {"resposta": "B", "comentario": "A presença de abscesso/complexo tubo-ovariano ao USG transvaginal (ou RM) é critério específico de DIP, dispensando achados adicionais e indicando internação com ATB EV."},
+    {"resposta": "B", "comentario": "O(s) parceiro(s) deve(m) ser tratado(s) sempre (ex.: ceftriaxona para gono/clamídia), mesmo assintomáticos, para evitar reinfecção; também se rastreia HIV e outras ISTs."}
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "slug": "hemorragia_pos_parto",
+  "titulo": "Hemorragia Pós-Parto (HPP)",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Hemorragia Pós-Parto no PS",
+  "chapter_bar": "HEMORRAGIA PÓS-PARTO — OS 4 Ts",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — RECONHECER E AGIR",
+      "title": "HPP — RESSUSCITAR + IDENTIFICAR A CAUSA (4 Ts)",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Sangramento >1000 mL (ou >500 + risco)\nou sinais de hipovolemia ate 24h pos-parto", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "2 acessos + cristaloide + ac. tranexamico +\nuterotonico + identificar os 4 Ts", "color": "orange", "font_size": 5.2},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Atonia (T tonus):\nmassagem + uterotonicos\n+ balao", "color": "red", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "Trauma/Tecido/Trombina:\nrevisao do canal /\ncuretagem / corrigir coag.", "color": "teal", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E DIAGNÓSTICO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Perda > 1.000 mL independentemente da via de parto",
+        "OU parto vaginal com fatores de risco e perda > 500 mL",
+        "OU sinais/sintomas de hipovolemia em até 24h após o parto (HPP primária)",
+        "Principal causa de morte materna evitável — reconhecimento e ação precoces salvam vidas"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS — OS 4 Ts",
+      "section_color": "navy",
+      "headers": ["T", "Causa", "Frequência / pista"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.34, 0.48],
+      "rows": [
+        ["TÔNUS", "Atonia uterina", "CAUSA MAIS COMUM (~70%); útero amolecido"],
+        ["TRAUMA", "Laceração de trajeto, rotura uterina, inversão", "Útero contraído mas sangra; revisar canal"],
+        ["TECIDO", "Retenção placentária / restos / acretismo", "Placenta incompleta; útero não contrai bem"],
+        ["TROMBINA", "Coagulopatia (CIVD, anticoagulante)", "Sangramento difuso, sem coágulos"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "FATORES DE RISCO",
+      "section_color": "purple",
+      "titulo": "ANTECIPAR",
+      "items": [
+        "Placenta prévia / inserção baixa; acretismo placentário; DPP",
+        "Pré-eclâmpsia com sinais de gravidade",
+        "Hematócrito < 30%; plaquetas < 100.000; coagulopatias; uso de anticoagulante",
+        "Sangramento ativo na admissão",
+        "Sobredistensão uterina (gemelar, polidrâmnio), trabalho de parto prolongado"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PREVENÇÃO (manejo ativo do 3o período)",
+      "section_color": "teal",
+      "titulo": "PROFILAXIA NO NASCIMENTO",
+      "items": [
+        "Ocitocina 10 UI IM imediatamente após o nascimento (opção: misoprostol 600-800 mcg via retal)",
+        "Manejo ativo do terceiro período do trabalho de parto",
+        "Clampeamento oportuno do cordão (1-3 min)",
+        "Tração controlada do cordão umbilical",
+        "A profilaxia com uterotônico reduz drasticamente a incidência de HPP"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CONDUTA NA HPP INSTALADA",
+      "section_color": "orange",
+      "titulo": "RESSUSCITAR + ESTANCAR",
+      "items": [
+        "Monitorização; 2 acessos calibrosos; cristaloide e avaliar HEMOTRANSFUSÃO (protocolo de transfusão maciça se grave)",
+        "Exames: tipagem, hemograma, coagulograma, eletrólitos; graves: + lactato/gasometria",
+        "ÁCIDO TRANEXÂMICO 1 g EV em 100 mL SF em 10 min (precoce, < 3h)",
+        "Revisão do canal de parto (trauma) e avaliação de restos (tecido)",
+        "Atonia: massagem uterina + compressão (manobra de Hamilton, bimanual) + uterotônicos",
+        "Uterotônicos: ocitocina, ergometrina (evitar se HAS), misoprostol; carbetocina conforme disponibilidade"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ATONIA REFRATÁRIA — MEDIDAS MECÂNICAS/CIRÚRGICAS",
+      "section_color": "red",
+      "titulo": "ESCALONAR",
+      "items": [
+        "Balão de tamponamento intrauterino: falha das terapias para atonia; medida TEMPORÁRIA e para transporte ao centro de referência",
+        "  Contraindicações: gestação, infecção genital interna, anomalia que distorce a cavidade, rotura uterina, sangramento arterial que exige cirurgia/embolização",
+        "Outras: dispositivo de controle hemorrágico por vácuo, traje antichoque (TAN) para compressão externa",
+        "Cirúrgico/intervencionista: suturas compressivas (B-Lynch), ligadura/embolização de artérias uterinas, histerectomia (último recurso)",
+        "Acionar centro de referência precocemente na HPP grave/refratária"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST NO PS",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Reconhecer pelos critérios (>1000 mL; >500 mL com risco; sinais de hipovolemia)",
+        "Ressuscitar (acessos, cristaloide, transfusão) + ácido tranexâmico precoce",
+        "Identificar a causa pelos 4 Ts (tônus, trauma, tecido, trombina)",
+        "Atonia: massagem + uterotônicos + balão se refratário",
+        "Acionar transporte ao centro de referência (com balão/TAN) se refratário"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Puérpera com HPP (perda estimada ___ mL; via de parto ___); causa provável (4 Ts): ___.",
+        "Estabilidade: ___; Hb ___; coagulograma ___; ácido tranexâmico feito: sim/não.",
+        "Condutas: uterotônicos ___, massagem/manobras, balão de tamponamento/TAN.",
+        "Solicito transferência ao centro de referência (cirurgia/embolização) + reserva de hemocomponentes."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Puérpera com sangramento volumoso e útero amolecido (não contraído) após parto vaginal. Qual a causa mais provável e a conduta inicial?",
+      "alternativas": [
+        "Laceração de trajeto — sutura imediata",
+        "Atonia uterina — massagem uterina + uterotônicos (ocitocina) ± balão se refratário",
+        "Coagulopatia — apenas plasma",
+        "Retenção placentária — histerectomia imediata",
+        "Inversão uterina — observação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quais são os '4 Ts' das causas de hemorragia pós-parto?",
+      "alternativas": [
+        "Tônus, Trauma, Tecido e Trombina",
+        "Trombo, Tumor, Trauma e Toxina",
+        "Tireoide, Trombo, Tecido e Tônus",
+        "Tempo, Trauma, Tônus e Trombina",
+        "Tônus, Tempo, Tumor e Tecido"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual medicação antifibrinolítica deve ser administrada precocemente na HPP?",
+      "alternativas": [
+        "Ácido tranexâmico 1 g EV",
+        "Heparina",
+        "Vitamina K",
+        "Ácido acetilsalicílico",
+        "Protamina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual a medida de PREVENÇÃO da HPP no manejo ativo do 3o período do parto?",
+      "alternativas": [
+        "Tração vigorosa imediata do cordão sem uterotônico",
+        "Ocitocina 10 UI IM logo após o nascimento + tração controlada do cordão",
+        "Massagem uterina apenas se sangrar",
+        "Clampeamento imediato sem ocitocina",
+        "Misoprostol intravenoso"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual o papel do balão de tamponamento intrauterino na HPP por atonia?",
+      "alternativas": [
+        "Tratamento definitivo e curativo",
+        "Medida temporária na falha das terapias, útil também para transporte ao centro de referência",
+        "Primeira linha antes dos uterotônicos",
+        "Contraindicado em qualquer atonia",
+        "Substitui a reposição volêmica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Útero amolecido/não contraído com sangramento é atonia uterina (T de Tônus), a causa mais comum de HPP. Conduta: massagem uterina + uterotônicos (ocitocina em 1a linha), escalonando para balão/medidas cirúrgicas se refratário."},
+    {"resposta": "A", "comentario": "Os 4 Ts: Tônus (atonia, ~70%), Trauma (lacerações/rotura/inversão), Tecido (retenção placentária/restos/acretismo) e Trombina (coagulopatia). Orientam a busca sistemática da causa."},
+    {"resposta": "A", "comentario": "O ácido tranexâmico 1 g EV deve ser administrado precocemente (idealmente < 3h) na HPP, reduzindo a mortalidade por sangramento (antifibrinolítico)."},
+    {"resposta": "B", "comentario": "O manejo ativo do 3o período inclui ocitocina 10 UI IM logo após o nascimento, clampeamento oportuno (1-3 min) e tração controlada do cordão — reduz a incidência de HPP."},
+    {"resposta": "B", "comentario": "O balão de tamponamento intrauterino é medida temporária na atonia refratária às terapias iniciais, também usada para estabilizar e transportar a paciente ao centro de referência. Não é tratamento definitivo."}
+  ]
+}

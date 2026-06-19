@@ -1,0 +1,182 @@
+{
+  "slug": "sangramento_primeiro_trimestre",
+  "titulo": "Sangramento no 1º Trimestre da Gestação",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Sangramento do 1º trimestre no PS",
+  "chapter_bar": "SANGRAMENTO NO 1º TRIMESTRE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — EXCLUIR ECTÓPICA",
+      "title": "1o TRIMESTRE — beta-hCG + USG TRANSVAGINAL",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Sangramento vaginal ate 12 sem\nbeta-hCG + USG transvaginal + tipagem/Rh", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Instavel ou dor intensa/unilateral?", "color": "red", "font_size": 6.0},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "SIM: suspeitar\nECTOPICA -> suporte\n+ obstetra urgente", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "NAO: classificar\naborto/ameaca\n-> conduta", "color": "teal", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CAUSAS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Sangramento vaginal até a 12a semana, com ou sem dor abdominal",
+        "Etiologias variam de benignas a potencialmente fatais (gravidez ectópica)",
+        "Gestacionais: ameaça de aborto, aborto (em evolução/incompleto/completo), ectópica, gestação anembrionária, doença trofoblástica",
+        "Não gestacionais: infecção vaginal/cervical, trauma, pólipos, sangramento de implantação"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS",
+      "section_color": "red",
+      "titulo": "SUSPEITAR DE ECTÓPICA / GRAVIDADE",
+      "items": [
+        "Dor abdominal intensa ou UNILATERAL",
+        "Sangramento vaginal volumoso",
+        "Sinais de instabilidade hemodinâmica",
+        "Síncope ou lipotimia",
+        "História prévia de gravidez ectópica",
+        "Ectópica rota é emergência — suporte + obstetra/cirurgia imediatos"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "ESSENCIAIS",
+      "items": [
+        "Anamnese: idade gestacional (DUM/US), início/quantidade/aspecto, coágulos/restos, dor, antecedente obstétrico, tipagem",
+        "Exame: estado geral, sinais vitais, abdome; especular (sangramento, colo aberto/fechado); sinais de choque",
+        "Beta-hCG QUANTITATIVO + USG TRANSVAGINAL (chave para topografar a gestação)",
+        "Tipagem sanguínea e fator Rh; Hb/Ht se sangramento importante",
+        "Variáveis: coagulograma, beta-hCG seriado, USG abdominal, exames infecciosos se suspeita"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO — COLO E USG",
+      "section_color": "navy",
+      "headers": ["Quadro", "Colo / achado", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.36, 0.38],
+      "rows": [
+        ["Ameaça de aborto", "Colo FECHADO, embrião/BCF presente", "Conduta expectante; orientações de alarme"],
+        ["Aborto em evolução/inevitável", "Colo ABERTO, sangramento", "Avaliação obstétrica (esvaziamento)"],
+        ["Aborto incompleto", "Colo aberto, restos à USG", "Esvaziamento (AMIU/curetagem) ou misoprostol"],
+        ["Gravidez ectópica", "hCG sem saco gestacional intrauterino compatível; massa anexial", "Encaminhamento IMEDIATO (metotrexato x cirurgia)"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS",
+      "section_color": "orange",
+      "titulo": "POR CENÁRIO",
+      "items": [
+        "Ameaça de aborto: conduta expectante + repouso relativo + orientações",
+        "Aborto incompleto/em evolução: avaliação obstétrica para esvaziamento",
+        "Gravidez ectópica: encaminhamento imediato (suporte se instável)",
+        "Instabilidade: 2 acessos, SF 0,9% EV, suporte e transferência URGENTE",
+        "IMUNOGLOBULINA ANTI-D para gestante Rh NEGATIVO (conforme indicação)",
+        "Analgesia com dipirona/paracetamol; EVITAR AINEs"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: sangramento volumoso/persistente, dor importante, suspeita/confirmação de ectópica, instabilidade, queda de Hb, necessidade de procedimento",
+        "ALTA: sangramento leve/cessado, estável, sem sinais de gravidade, USG sem alto risco, retorno garantido",
+        "Casa: analgésico se necessário, repouso relativo, evitar relações (se indicado), seguimento obstétrico",
+        "Não esquecer a imunoglobulina anti-D na Rh negativo",
+        "Retorno IMEDIATO: aumento do sangramento, dor intensa, tontura/desmaio, febre"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Gestante ___ semanas com sangramento de 1o trimestre; dor ___; estabilidade ___.",
+        "Beta-hCG ___; USG transvaginal: ___ (tópica/ectópica/restos); tipagem Rh ___.",
+        "Condutas: analgesia, acesso/SF, anti-D se Rh negativo; suspeita de ectópica: ___.",
+        "Solicito serviço com obstetrícia (ectópica/instabilidade = urgente)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Gestante de 7 semanas com dor pélvica unilateral intensa, sangramento e lipotimia; beta-hCG positivo sem saco gestacional intrauterino à USG. Hipótese e conduta?",
+      "alternativas": [
+        "Ameaça de aborto — repouso e alta",
+        "Gravidez ectópica — suporte hemodinâmico e encaminhamento obstétrico/cirúrgico imediato",
+        "Aborto completo — alta",
+        "Infecção urinária — antibiótico oral",
+        "Pólipo cervical — observação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quais são os dois exames essenciais na avaliação do sangramento de 1o trimestre?",
+      "alternativas": [
+        "Hemograma e PCR",
+        "Beta-hCG quantitativo e ultrassonografia transvaginal",
+        "TSH e glicemia",
+        "Coagulograma e D-dímero",
+        "Radiografia de abdome e urina 1"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Gestante de 8 semanas, sangramento leve, colo FECHADO, embrião com BCF à USG. Diagnóstico e conduta?",
+      "alternativas": [
+        "Aborto incompleto — curetagem",
+        "Ameaça de aborto — conduta expectante e orientações",
+        "Gravidez ectópica — metotrexato",
+        "Aborto retido — esvaziamento",
+        "Doença trofoblástica — quimioterapia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual medida não deve ser esquecida em gestante Rh NEGATIVO com sangramento no 1o trimestre?",
+      "alternativas": [
+        "Transfusão de plaquetas",
+        "Imunoglobulina anti-D (conforme indicação)",
+        "Antibiótico profilático",
+        "Corticoide",
+        "Sulfato de magnésio"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual classe de analgésico deve ser EVITADA no sangramento de 1o trimestre?",
+      "alternativas": [
+        "Dipirona",
+        "AINEs",
+        "Paracetamol",
+        "Escopolamina",
+        "Nenhum precisa ser evitado"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor unilateral intensa + lipotimia + beta-hCG positivo SEM saco gestacional intrauterino compatível = gravidez ectópica (possivelmente rota). É emergência: suporte hemodinâmico e encaminhamento obstétrico/cirúrgico imediato."},
+    {"resposta": "B", "comentario": "Os exames essenciais são o beta-hCG quantitativo e a USG transvaginal, que juntos topografam a gestação (tópica x ectópica) e avaliam viabilidade/restos, definindo a conduta."},
+    {"resposta": "B", "comentario": "Sangramento leve com colo fechado e embrião com BCF presente caracteriza ameaça de aborto: conduta expectante, repouso relativo e orientações de alarme, com seguimento pré-natal."},
+    {"resposta": "B", "comentario": "Em gestante Rh negativo com sangramento, deve-se administrar imunoglobulina anti-D (conforme indicação) para prevenir a aloimunização Rh."},
+    {"resposta": "B", "comentario": "Os AINEs devem ser evitados; prefere-se dipirona ou paracetamol para analgesia no sangramento de 1o trimestre."}
+  ]
+}

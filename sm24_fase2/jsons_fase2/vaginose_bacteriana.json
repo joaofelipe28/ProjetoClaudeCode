@@ -1,0 +1,182 @@
+{
+  "slug": "vaginose_bacteriana",
+  "titulo": "Vaginose Bacteriana",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Corrimento vaginal / Vaginose no PS",
+  "chapter_bar": "VAGINOSE BACTERIANA — CRITÉRIOS DE AMSEL",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CORRIMENTO COM ODOR",
+      "title": "VAGINOSE — DISBIOSE, NÃO IST CLÁSSICA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Corrimento fino, acinzentado, com odor de peixe\n(sem prurido/dor importantes)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Criterios de AMSEL (>=3 de 4) / Gram (padrao-ouro)", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.3, "w": 205, "h": 22, "text": "Tratar se SINTOMATICA:\nmetronidazol VO/gel ou clindamicina", "color": "orange", "font_size": 5.6},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Sem microscopia -> tratamento empirico (MS)", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Disbiose vaginal: substituição dos Lactobacillus pela flora anaeróbia (Gardnerella vaginalis e outras)",
+        "Causa MAIS COMUM de corrimento vaginal (prevalência ~23-29%)",
+        "Associada a práticas sexuais (novo/múltiplos parceiros); preservativo é fator PROTETOR",
+        "Aumenta o risco de adquirir ISTs (HIV, gonorreia, clamídia, tricomoníase, HPV)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MANIFESTAÇÕES CLÍNICAS",
+      "section_color": "purple",
+      "titulo": "SINTOMA CARDINAL",
+      "items": [
+        "Corrimento FLUIDO, em maior quantidade, acinzentado/leitoso, que reveste as paredes vaginais",
+        "ODOR de peixe (que piora após relação/menstruação)",
+        "SEM prurido, ardência ou inflamação importantes (diferente de candidíase/tricomoníase)",
+        "A ausência de mau odor torna a vaginose pouco provável (RV negativa 0,07)",
+        "Quantidades normais de lactobacilos tornam o diagnóstico improvável"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO — CRITÉRIOS DE AMSEL (>= 3 de 4)",
+      "section_color": "navy",
+      "headers": ["Critério", "Achado"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Corrimento característico", "Homogêneo, fino, leitoso, revestindo as paredes vaginais"],
+        ["Clue cells", "Células-guia à microscopia (epitélio com bactérias aderidas)"],
+        ["pH vaginal", "> 4,5"],
+        ["Whiff test (teste das aminas)", "Odor de peixe ao adicionar KOH 10%"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PADRÃO-OURO E ABORDAGEM SINDRÔMICA",
+      "section_color": "navy",
+      "titulo": "DIAGNÓSTICO",
+      "items": [
+        "Padrão-ouro: coloração de GRAM da secreção vaginal (proporção lactobacilos x patógenos)",
+        "Sem microscopia/pH/KOH disponíveis: o MS recomenda tratamento EMPÍRICO para as 3 causas comuns (vaginose, candidíase, tricomoníase)",
+        "NÃO há indicação de rastrear vaginose em assintomáticas",
+        "Oferecer testagem para HIV e outras ISTs a toda mulher com diagnóstico de vaginose"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO (apenas SINTOMÁTICAS)",
+      "section_color": "orange",
+      "titulo": "ESQUEMAS",
+      "items": [
+        "Metronidazol 500 mg VO 12/12h por 7 dias (1a linha)",
+        "OU Metronidazol gel vaginal 0,75% 1x/dia por 5 dias",
+        "OU Clindamicina creme vaginal 2% 1x/dia por 7 dias (alternativa)",
+        "NÃO é necessário abster-se de álcool com metronidazol (sem reação dissulfiram-símile real - CDC)",
+        "Gestante sintomática: tratar (metronidazol VO é seguro). Assintomática: tratar só se histórico de parto pré-termo/complicações (PCDT-MS)",
+        "Usar preservativo durante o tratamento; NÃO fazer ducha vaginal (risco de recorrência)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ORIENTAÇÕES E PARCEIRO",
+      "section_color": "teal",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Tratamento indicado SOMENTE para sintomáticas (e gestantes de risco conforme MS)",
+        "NÃO se trata o parceiro de rotina (vaginose não é IST clássica), embora práticas sexuais influenciem a recorrência",
+        "Evitar duchas intravaginais; preservativo protege",
+        "Testar para HIV/ISTs",
+        "Recorrência é comum — reavaliar adesão e fatores de risco"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ORIENTAÇÃO / SEGUIMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO",
+      "items": [
+        "Mulher com corrimento fino acinzentado e odor de peixe; Amsel ___/4 (pH > 4,5, clue cells, whiff +).",
+        "Diferenciais excluídos: candidíase (prurido, grumoso), tricomoníase (amarelo-esverdeado, colo em framboesa).",
+        "Conduta: metronidazol VO 7 dias (ou gel); testagem para ISTs/HIV oferecida.",
+        "Orientar preservativo e evitar duchas; tratar apenas se sintomática."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Mulher com corrimento fino acinzentado, odor de peixe, pH 5,0, clue cells e whiff test positivo. Diagnóstico e tratamento?",
+      "alternativas": [
+        "Candidíase — fluconazol",
+        "Vaginose bacteriana — metronidazol VO 500 mg 12/12h por 7 dias",
+        "Tricomoníase — apenas creme vaginal",
+        "Gonorreia — ceftriaxona",
+        "Vaginose — não tratar mesmo sintomática"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quantos critérios de Amsel são necessários para o diagnóstico clínico de vaginose bacteriana?",
+      "alternativas": [
+        "1 de 4",
+        "Pelo menos 3 de 4",
+        "Todos os 4 obrigatoriamente",
+        "2 de 5",
+        "Nenhum; o diagnóstico é apenas laboratorial"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o exame padrão-ouro para o diagnóstico de vaginose bacteriana?",
+      "alternativas": [
+        "Cultura de secreção",
+        "Coloração de Gram da secreção vaginal",
+        "PCR para Gardnerella",
+        "Citologia oncótica",
+        "USG transvaginal"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre o rastreamento e o tratamento da vaginose bacteriana, é correto:",
+      "alternativas": [
+        "Rastrear e tratar todas as mulheres assintomáticas",
+        "Tratar somente as sintomáticas (e gestantes de risco conforme MS); não há indicação de rastreio em assintomáticas",
+        "Tratar sempre o parceiro masculino",
+        "Tratar apenas com antifúngico",
+        "Nunca tratar gestantes"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual orientação reduz a recorrência da vaginose bacteriana?",
+      "alternativas": [
+        "Realizar duchas vaginais frequentes",
+        "Evitar duchas intravaginais e usar preservativo",
+        "Suspender o metronidazol no 3o dia",
+        "Abster-se de álcool obrigatoriamente",
+        "Tratar o parceiro de rotina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Corrimento fino acinzentado com odor de peixe + pH > 4,5 + clue cells + whiff positivo preenche os critérios de Amsel para vaginose bacteriana. Trata-se a sintomática com metronidazol VO 500 mg 12/12h por 7 dias."},
+    {"resposta": "B", "comentario": "O diagnóstico clínico de vaginose pelos critérios de Amsel exige pelo menos 3 de 4: corrimento característico, clue cells, pH > 4,5 e whiff test (teste das aminas) positivo."},
+    {"resposta": "B", "comentario": "O padrão-ouro é a coloração de Gram da secreção vaginal, que avalia a proporção entre lactobacilos e bactérias patogênicas (escore de Nugent)."},
+    {"resposta": "B", "comentario": "Trata-se apenas a vaginose sintomática (e gestantes de risco conforme o MS); não há indicação de rastreio/tratamento em assintomáticas. Não se trata o parceiro de rotina."},
+    {"resposta": "B", "comentario": "Evitar duchas intravaginais e usar preservativo reduzem a recorrência da vaginose. A abstenção de álcool com metronidazol não tem embasamento (CDC); o parceiro não é tratado de rotina."}
+  ]
+}

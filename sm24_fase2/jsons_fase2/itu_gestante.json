@@ -1,0 +1,180 @@
+{
+  "slug": "itu_gestante",
+  "titulo": "Infecção Urinária na Gestante",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "ITU na gestação no PS",
+  "chapter_bar": "ITU NA GESTANTE — DA BACTERIÚRIA À PIELO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CLASSIFICAR E TRATAR",
+      "title": "ITU NA GESTAÇÃO — DA BACTERIÚRIA À PIELO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "ITU na gestante: EAS + urocultura\n(rastrear bacteriuria no 1o tri)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 26, "text": "Bacteriuria assint./\ncistite: ATB VO\nambulatorial 7 dias", "color": "green", "font_size": 5.6},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "PIELONEFRITE:\ninternar + ATB EV\n(ceftriaxona)", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Urocultura de controle 7-14 dias apos", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E RASTREAMENTO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Infecção bacteriana do trato urinário na gestação: bacteriúria assintomática, cistite aguda ou pielonefrite",
+        "Rastreamento: UROCULTURA de rotina no 1o trimestre (ou na 1a consulta pré-natal)",
+        "Positivo: >= 100.000 UFC/mL (MESMO SEM SINTOMAS)",
+        "Na gestante, a bacteriúria assintomática DEVE ser tratada (risco de pielonefrite e parto prematuro)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO CLÍNICA",
+      "section_color": "navy",
+      "headers": ["Forma", "Quadro"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Bacteriúria assintomática", "Sem sintomas urinários + urocultura positiva (>= 100.000 UFC/mL)"],
+        ["Cistite aguda", "Disúria, polaciúria, urgência miccional; SEM febre ou dor lombar"],
+        ["Pielonefrite aguda (grave)", "Febre >= 38, dor lombar, náuseas/vômitos, sinais sistêmicos; considerar obstrução"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "EXAMES",
+      "items": [
+        "EAS (urina tipo 1): leucocitúria, nitrito positivo",
+        "UROCULTURA + antibiograma (antes do antibiótico sempre que possível)",
+        "Imagem (USG/RM) em exceção: suspeita de obstrução/cálculo/complicação",
+        "Na pielonefrite: hemograma, função renal, e considerar lactato/hemoculturas se sinais de sepse"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — BACTERIÚRIA E CISTITE",
+      "section_color": "orange",
+      "titulo": "AMBULATORIAL, 7 DIAS, VO",
+      "items": [
+        "Bacteriúria assintomática: TRATAR SEMPRE (7 dias)",
+        "Nitrofurantoína 100 mg VO 6/6h ou 12/12h — EVITAR após 36 semanas (risco de hemólise neonatal)",
+        "Cefalexina 500 mg VO 6/6h",
+        "Amoxicilina + Clavulanato 500/125 mg VO 8/8h",
+        "Cistite aguda: mesmo esquema; ajustar conforme antibiograma",
+        "Controle de cura: urocultura 7-14 dias após o tratamento"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — PIELONEFRITE (INTERNAÇÃO)",
+      "section_color": "red",
+      "titulo": "ATB ENDOVENOSO",
+      "items": [
+        "Internação hospitalar OBRIGATÓRIA + hidratação venosa",
+        "Ceftriaxona 1 g IV 1x/dia OU Ampicilina + Gentamicina",
+        "Após melhora clínica (48-72h): completar 10-14 dias com ATB VO",
+        "Se obstrução por cálculo / compressão ureteral extrínseca: contatar UROLOGISTA para derivação urinária",
+        "Vigiar sepse e trabalho de parto prematuro"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ANTIBIÓTICOS CONTRAINDICADOS / RECORRÊNCIA",
+      "section_color": "red",
+      "titulo": "ATENÇÃO",
+      "items": [
+        "CONTRAINDICADOS na gestação: QUINOLONAS (ciprofloxacino), TETRACICLINAS",
+        "Sulfametoxazol-trimetoprim: evitar principalmente no 1o e 3o trimestres",
+        "Nitrofurantoína: evitar após 36 semanas (e próximo ao termo)",
+        "Recorrência: considerar profilaxia (ex.: nitrofurantoína 100 mg à noite)",
+        "Se não tratada: trabalho de parto prematuro, baixo peso, sepse materna, pielonefrite"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Gestante ___ semanas com ITU: ___ (bacteriúria/cistite/pielonefrite). Febre/dor lombar: ___.",
+        "EAS/urocultura: ___; função renal: ___; sinais de sepse: ___.",
+        "Conduta: ATB VO (cefalexina/nitrofurantoína) ou EV (ceftriaxona) + internação se pielonefrite.",
+        "Solicito serviço com obstetrícia/UTI se sepse; avaliar urologia se obstrução."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Gestante de 12 semanas, assintomática, urocultura de rastreio com 100.000 UFC/mL de E. coli. Conduta?",
+      "alternativas": [
+        "Não tratar, pois é assintomática",
+        "Tratar com antibiótico por 7 dias (bacteriúria assintomática na gestante deve ser tratada)",
+        "Repetir a urocultura em 3 meses",
+        "Tratar apenas se surgirem sintomas",
+        "Iniciar ciprofloxacino"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual antibiótico é CONTRAINDICADO no tratamento de ITU na gestante?",
+      "alternativas": [
+        "Cefalexina",
+        "Ciprofloxacino (quinolona)",
+        "Amoxicilina-clavulanato",
+        "Nitrofurantoína (antes de 36 semanas)",
+        "Fosfomicina"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Gestante com febre, dor lombar e náuseas. Diagnóstico e conduta?",
+      "alternativas": [
+        "Cistite — tratamento ambulatorial oral",
+        "Pielonefrite aguda — internação e antibiótico endovenoso (ceftriaxona)",
+        "Bacteriúria assintomática — não tratar",
+        "ITU baixa — nitrofurantoína e alta",
+        "Apenas hidratação"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Por que se deve evitar nitrofurantoína próximo ao termo (após 36 semanas)?",
+      "alternativas": [
+        "Por ineficácia contra E. coli",
+        "Pelo risco de hemólise neonatal",
+        "Por causar malformação cardíaca",
+        "Por ser teratogênica no 1o trimestre",
+        "Por reduzir a contração uterina"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Após tratar ITU na gestante, qual a conduta de controle?",
+      "alternativas": [
+        "Nenhuma; alta definitiva",
+        "Urocultura de controle 7-14 dias após o tratamento",
+        "Repetir antibiótico por mais 30 dias",
+        "Tomografia de vias urinárias",
+        "Cistoscopia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na gestante, a bacteriúria assintomática (>= 100.000 UFC/mL) DEVE ser tratada (7 dias), pois reduz o risco de pielonefrite e de parto prematuro — diferente da mulher não gestante."},
+    {"resposta": "B", "comentario": "Quinolonas (ciprofloxacino) e tetraciclinas são contraindicadas na gestação; SMX-TMP deve ser evitado no 1o e 3o trimestres; nitrofurantoína é evitada após 36 semanas. Cefalexina e amoxi-clav são seguras."},
+    {"resposta": "B", "comentario": "Febre + dor lombar + náuseas/vômitos = pielonefrite aguda na gestante: internação obrigatória com antibiótico EV (ceftriaxona), hidratação e vigilância de sepse/parto prematuro."},
+    {"resposta": "B", "comentario": "A nitrofurantoína é evitada próximo ao termo (após 36 semanas) pelo risco de hemólise neonatal (anemia hemolítica no RN, especialmente com deficiência de G6PD)."},
+    {"resposta": "B", "comentario": "Após o tratamento da ITU na gestante, faz-se urocultura de controle 7-14 dias depois para confirmar a cura; recorrências podem indicar profilaxia."}
+  ]
+}

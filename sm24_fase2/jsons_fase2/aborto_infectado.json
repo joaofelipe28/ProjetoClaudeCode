@@ -1,0 +1,181 @@
+{
+  "slug": "aborto_infectado",
+  "titulo": "Aborto Infectado",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Aborto Infectado no PS",
+  "chapter_bar": "ABORTO INFECTADO — ATB + ESVAZIAMENTO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — EMERGÊNCIA OBSTÉTRICA",
+      "title": "ABORTO INFECTADO — SEPSE + ESVAZIAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Abortamento + febre + sangramento fetido\n+ utero doloroso (= ate prova em contrario)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Protocolo SEPSE (1a hora): acessos + cultura +\nATB amplo + volume", "color": "orange", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.3, "w": 205, "h": 22, "text": "ESVAZIAMENTO UTERINO (AMIU/curetagem)\napos iniciar ATB", "color": "red", "font_size": 5.6},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Choque/disfuncao -> UTI", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Infecção uterina associada a aborto (espontâneo ou provocado), geralmente POLIMICROBIANA",
+        "Alto risco de sepse e choque séptico",
+        "Germes: gram-negativos (E. coli), anaeróbios (Bacteroides, Clostridium), Streptococcus, Staphylococcus",
+        "ABORTAMENTO + FEBRE = aborto infectado até prova em contrário"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO",
+      "section_color": "purple",
+      "titulo": "QUANDO SUSPEITAR",
+      "items": [
+        "Febre >= 38 C; dor abdominal/pélvica",
+        "Sangramento vaginal FÉTIDO; útero doloroso à palpação",
+        "Taquicardia, hipotensão; calafrios, mal-estar",
+        "Sinais de sepse / choque séptico",
+        "Investigar manipulação/aborto provocado (risco de Clostridium e perfuração)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ABORDAGEM INICIAL — PRIMEIRA HORA (PROTOCOLO SEPSE)",
+      "section_color": "orange",
+      "titulo": "NÃO ATRASAR O ANTIBIÓTICO",
+      "items": [
+        "ABCDE; O2 se SatO2 < 94%; monitorização; 2 acessos calibrosos; SVD (diurese); elevar MMII se choque",
+        "Exames (sem atrasar ATB): hemograma, beta-hCG, LACTATO, creatinina/ureia, TGO/TGP, coagulograma, gasometria se grave",
+        "HEMOCULTURAS (2 pares) + tipagem e prova cruzada; USG pélvico se disponível",
+        "Volume: cristaloide 30 mL/kg se hipotensão ou lactato >= 4",
+        "Vasopressor: noradrenalina se PAM < 65 após volume"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIOTICOTERAPIA + CONTROLE DO FOCO",
+      "section_color": "red",
+      "titulo": "ATB EM ATÉ 1h + ESVAZIAR",
+      "items": [
+        "ESQUEMA PADRÃO: Clindamicina 900 mg IV 8/8h + Gentamicina 5-7 mg/kg IV 1x/dia (cobre anaeróbios, Gram + e Gram -)",
+        "Alternativas (sepse grave/choque): Ampicilina + Gentamicina + Metronidazol; Pipe-tazo; Meropenem (grave/resistência)",
+        "ESVAZIAMENTO UTERINO (essencial) APÓS iniciar o ATB: AMIU ou curetagem",
+        "Não retardar o esvaziamento na instabilidade materna",
+        "ANTIBIÓTICO ISOLADO NÃO RESOLVE — o foco (conteúdo uterino) precisa ser removido",
+        "Duração do ATB: IV até afebril 24-48h e estável; completar 7-10 dias (IV + VO)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INTERNAÇÃO EM UTI E COMPLICAÇÕES",
+      "section_color": "red",
+      "titulo": "GRAVIDADE",
+      "items": [
+        "UTI se: choque séptico, necessidade de vasopressor, disfunção orgânica, rebaixamento de consciência",
+        "Complicações: choque séptico, CIVD, insuficiência renal aguda, perfuração uterina, óbito materno",
+        "Aborto por Clostridium: gangrena/miosite uterina — pode exigir histerectomia",
+        "Avaliação cirúrgica precoce se perfuração/abscesso/falha de controle do foco",
+        "Mensagem-chave: ATB precoce + esvaziamento uterino salvam vidas"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST NO PS",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Reconhecer abortamento + febre como aborto infectado",
+        "Pacote de sepse na 1a hora (acessos, culturas, lactato, ATB amplo, volume)",
+        "ATB empírico (clinda + genta) em até 1h",
+        "Esvaziamento uterino após iniciar ATB (não adiar na instabilidade)",
+        "UTI se disfunção orgânica/choque; imunoglobulina anti-D se Rh negativo"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Aborto infectado (___ semanas); febre ___, sangramento fétido, útero doloroso; lactato ___.",
+        "Pacote de sepse iniciado: acessos, hemoculturas, ATB (clinda+genta) às ___, volume ___.",
+        "Esvaziamento uterino: realizado/pendente; vasopressor: sim/não.",
+        "Solicito vaga (UTI se choque) e equipe obstétrica para esvaziamento/controle do foco."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com aborto incompleto, febre 38,5, secreção vaginal fétida e útero doloroso. Além do antibiótico, qual medida é ESSENCIAL?",
+      "alternativas": [
+        "Apenas antibiótico endovenoso",
+        "Esvaziamento uterino (AMIU/curetagem) após iniciar o antibiótico",
+        "Antitérmico e alta",
+        "Observação por 48h sem intervenção",
+        "Histerectomia de rotina"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o esquema antibiótico empírico padrão no aborto infectado?",
+      "alternativas": [
+        "Amoxicilina oral isolada",
+        "Clindamicina + Gentamicina (cobertura para anaeróbios, Gram + e Gram -)",
+        "Azitromicina dose única",
+        "Cefalexina oral",
+        "Apenas metronidazol"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que o antibiótico isolado não resolve o aborto infectado?",
+      "alternativas": [
+        "Porque os germes são sempre resistentes",
+        "Porque o foco infeccioso (conteúdo uterino retido) precisa ser removido (esvaziamento)",
+        "Porque o antibiótico não penetra no útero",
+        "Porque a febre é viral",
+        "Porque não há foco infeccioso"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual conduta da primeira hora NÃO deve ser atrasada no aborto infectado com sepse?",
+      "alternativas": [
+        "Aguardar o resultado das hemoculturas para iniciar o antibiótico",
+        "Iniciar antibiótico de amplo espectro em até 1 hora (após coletar culturas, sem atrasar)",
+        "Realizar tomografia antes de tudo",
+        "Transfundir plaquetas",
+        "Iniciar corticoide"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual complicação grave está associada ao aborto infectado por Clostridium?",
+      "alternativas": [
+        "Cefaleia tensional",
+        "Sepse/choque com possível necessidade de histerectomia (miosite/gangrena uterina) e CIVD",
+        "Anemia ferropriva leve",
+        "Hipotireoidismo",
+        "Rinite alérgica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O aborto infectado exige antibiótico amplo precoce E esvaziamento uterino (AMIU/curetagem) após iniciar o ATB — o controle do foco (conteúdo uterino) é essencial; antibiótico isolado não resolve."},
+    {"resposta": "B", "comentario": "O esquema padrão é Clindamicina 900 mg IV 8/8h + Gentamicina 5-7 mg/kg/dia, com excelente cobertura para anaeróbios, Gram-positivos e Gram-negativos. Pipe-tazo/meropenem nas formas graves."},
+    {"resposta": "B", "comentario": "O antibiótico isolado não resolve porque o foco (restos ovulares/conteúdo uterino infectado) precisa ser removido. O esvaziamento uterino é parte indissociável do tratamento."},
+    {"resposta": "B", "comentario": "No pacote de sepse, o antibiótico de amplo espectro deve ser iniciado em até 1 hora (após coletar culturas, sem atrasar). Não se aguarda o resultado das culturas para iniciar."},
+    {"resposta": "B", "comentario": "O aborto por Clostridium pode causar miosite/gangrena uterina, sepse/choque grave e CIVD, podendo exigir histerectomia — quadro de altíssima mortalidade."}
+  ]
+}

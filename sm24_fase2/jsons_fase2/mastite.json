@@ -1,0 +1,181 @@
+{
+  "slug": "mastite",
+  "titulo": "Mastite Puerperal",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Mastite no PS",
+  "chapter_bar": "MASTITE — ESVAZIAR A MAMA + ATB",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "MASTITE — MANTER A AMAMENTAÇÃO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Dor/eritema mamario + febre no puerperio\n(estase + fissura; S. aureus)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "ESVAZIAR a mama + ATB VO + analgesia", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Melhora em 24-48h:\nmanter VO 10-14 dias", "color": "green", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 26, "text": "Flutuacao/falha:\nUSG -> ABSCESSO\n(drenar) +/- ATB EV", "color": "red", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Inflamação da mama, geralmente infecciosa, comum no puerpério",
+        "Associada à ESTASE do leite e a FISSURAS mamilares",
+        "Agente mais comum: Staphylococcus aureus",
+        "O esvaziamento da mama é parte fundamental do tratamento"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO E SINAIS DE GRAVIDADE",
+      "section_color": "purple",
+      "titulo": "RECONHECER",
+      "items": [
+        "Dor mamária localizada, endurecimento e calor local, eritema EM PLACA",
+        "Febre >= 38-38,5 C, mal-estar, calafrios, redução da drenagem do leite",
+        "Sinais de gravidade: falha terapêutica em 48-72h, FLUTUAÇÃO (suspeita de abscesso), sepse",
+        "Diagnóstico é CLÍNICO; USG de mama se suspeita de abscesso ou ausência de resposta",
+        "Cultura do leite em casos recorrentes ou graves"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CONDUTA GERAL (TODAS AS PACIENTES)",
+      "section_color": "orange",
+      "titulo": "AMAMENTAÇÃO + MEDIDAS",
+      "items": [
+        "MANTER o aleitamento materno — contraindicação absoluta é rara",
+        "Iniciar a mamada pela mama afetada e ESVAZIAR completamente; ordenha manual/bomba se dor intensa",
+        "Compressas MORNAS antes da mamada e FRIAS após",
+        "Analgesia: paracetamol ou dipirona; hidratação adequada",
+        "Corrigir a PEGA (fissura é porta de entrada)"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIOTICOTERAPIA",
+      "section_color": "navy",
+      "headers": ["Cenário", "Esquema (10-14 dias)"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Não complicada (VO, ambulatorial)", "Cefalexina 500mg 6/6h OU Dicloxacilina 500mg 6/6h OU Amoxi-clav 875/125mg 12/12h"],
+        ["Alergia à penicilina", "Clindamicina 300mg 6/6h"],
+        ["Suspeita de MRSA / falha", "Clindamicina OU SMX-TMP (evitar se RN < 2 meses ou prematuro)"],
+        ["Internação (EV)", "Oxacilina ou Cefazolina; associar Clindamicina se grave"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ABSCESSO MAMÁRIO E INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "RED FLAGS",
+      "items": [
+        "Suspeitar de abscesso se: área flutuante, dor localizada persistente, febre apesar de antibiótico",
+        "Conduta: DRENAGEM (punção guiada por USG ou cirúrgica — contatar GO/cirurgia) + ATB EV se grave + manter esvaziamento",
+        "INTERNAR se: sinais de sepse, dor incapacitante, falha do tratamento VO, imunossuprimida",
+        "Melhora clínica esperada em 24-48h; ausência de melhora -> reavaliar o diagnóstico (incl. carcinoma inflamatório)",
+        "Complicações: abscesso, desmame precoce, sepse puerperal"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST / ALTA",
+      "titulo": "ORIENTAR",
+      "items": [
+        "Manter amamentação e esvaziamento completo da mama afetada",
+        "Antibiótico VO por 10-14 dias + analgesia + compressas",
+        "Corrigir a pega; cuidar das fissuras mamilares",
+        "Retorno em 48-72h ou antes se piora/flutuação/febre persistente",
+        "Mensagem-chave: mastite NÃO é motivo para suspender a amamentação"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Puérpera lactante com mastite ___ (não complicada/abscesso); mama ___; febre ___.",
+        "USG de mama: ___ (flutuação/abscesso?); resposta ao ATB VO: ___.",
+        "Conduta: esvaziamento + ATB (___), analgesia; drenagem se abscesso.",
+        "Solicito avaliação de GO/cirurgia para drenagem / internação se sepse ou falha."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Puérpera lactante com mastite. Sobre a amamentação, qual a orientação correta?",
+      "alternativas": [
+        "Suspender a amamentação até o fim do antibiótico",
+        "Manter a amamentação e esvaziar completamente a mama (iniciando pela afetada)",
+        "Suspender apenas na mama afetada e secar o leite",
+        "Trocar por fórmula definitivamente",
+        "Amamentar somente após a febre cessar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o agente etiológico mais comum da mastite puerperal?",
+      "alternativas": [
+        "Escherichia coli",
+        "Staphylococcus aureus",
+        "Streptococcus agalactiae",
+        "Candida albicans",
+        "Pseudomonas aeruginosa"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado sugere abscesso mamário (e não apenas mastite)?",
+      "alternativas": [
+        "Eritema difuso sem flutuação",
+        "Área flutuante e febre persistente apesar do antibiótico",
+        "Dor leve que melhora com a mamada",
+        "Ausência de febre",
+        "Boa drenagem do leite"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual antibiótico oral é adequado para mastite não complicada?",
+      "alternativas": [
+        "Ciprofloxacino",
+        "Cefalexina (ou dicloxacilina / amoxicilina-clavulanato)",
+        "Nitrofurantoína",
+        "Metronidazol isolado",
+        "Azitromicina dose única"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual a conduta no abscesso mamário?",
+      "alternativas": [
+        "Apenas antibiótico oral",
+        "Drenagem (punção guiada por USG ou cirúrgica) + antibiótico + manter esvaziamento",
+        "Suspender a amamentação e observar",
+        "Compressas mornas isoladas",
+        "Mastectomia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A amamentação deve ser MANTIDA na mastite (contraindicação absoluta é rara); inicia-se pela mama afetada e esvazia-se completamente, pois a estase do leite perpetua a infecção. Esvaziar é parte do tratamento."},
+    {"resposta": "B", "comentario": "O Staphylococcus aureus é o agente mais comum da mastite puerperal, tendo as fissuras mamilares como porta de entrada."},
+    {"resposta": "B", "comentario": "Área flutuante e febre persistente apesar do antibiótico sugerem abscesso mamário, confirmado por USG, que requer drenagem além do antibiótico."},
+    {"resposta": "B", "comentario": "Mastite não complicada trata-se com cefalexina, dicloxacilina ou amoxicilina-clavulanato VO por 10-14 dias (clindamicina se alergia/MRSA). Quinolona e nitrofurantoína não são indicadas."},
+    {"resposta": "B", "comentario": "O abscesso mamário requer drenagem (punção guiada por USG ou cirúrgica), associada a antibiótico e à manutenção do esvaziamento da mama; ATB EV se quadro grave."}
+  ]
+}

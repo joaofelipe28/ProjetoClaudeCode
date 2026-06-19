@@ -1,0 +1,194 @@
+{
+  "slug": "diabetes_gestacional",
+  "titulo": "Diabetes Gestacional",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Diabetes Gestacional",
+  "chapter_bar": "DIABETES GESTACIONAL — DIAGNÓSTICO E METAS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — RASTREAMENTO",
+      "title": "DG — GLICEMIA NA 1a CONSULTA, TOTG 24-28 SEM",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "1a consulta: glicemia de jejum", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.22, "y": 0.55, "w": 135, "h": 24, "text": ">=126:\nDM manifesto\nna gestacao", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.55, "w": 135, "h": 24, "text": "92-125:\nDIABETES\nGESTACIONAL", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.78, "y": 0.55, "w": 135, "h": 24, "text": "<92: repetir\nTOTG 75g\n24-28 sem", "color": "teal", "font_size": 5.8},
+        {"id": "e", "x": 0.5, "y": 0.15, "w": 200, "h": 18, "text": "Tratar: dieta/exercicio -> insulina se nao atingir metas", "color": "green", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E IMPACTO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Hiperglicemia diagnosticada pela 1a vez na gestação que NÃO preenche critérios de DM prévio",
+        "DM manifesto na gestação: critérios de DM fora da gestação (jejum >= 126, HbA1c >= 6,5%, casual >= 200 com sintomas)",
+        "Fisiopatologia: resistência insulínica por hormônios placentários + falha da célula beta",
+        "Impacto materno: pré-eclâmpsia, polidrâmnio, mais cesárea | fetal: MACROSSOMIA, distócia de ombro, hipoglicemia neonatal, hiperbilirrubinemia"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO — GLICEMIA DE JEJUM E TOTG 75g",
+      "section_color": "navy",
+      "headers": ["Exame", "Valor", "Interpretação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.24, 0.46],
+      "rows": [
+        ["Jejum (1a consulta)", ">= 126 mg/dL", "DM manifesto na gestação"],
+        ["Jejum (1a consulta)", "92-125 mg/dL", "Diabetes gestacional"],
+        ["Jejum (1a consulta)", "< 92 mg/dL", "Repetir com TOTG 75g entre 24-28 sem"],
+        ["TOTG 75g (24-28 sem)", "Jejum >=92 / 1h >=180 / 2h >=153", "1 valor alterado = DG (IADPSG/ADA)"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "METAS GLICÊMICAS (SBD/ADA)",
+      "section_color": "navy",
+      "titulo": "CONTROLE",
+      "items": [
+        "Jejum < 95 mg/dL",
+        "1h pós-prandial < 140 mg/dL (OU 2h pós-prandial < 120 mg/dL)",
+        "Monitorização: 4-7 medidas/dia (jejum + pós-prandiais)",
+        "Avaliação fetal: USG para biometria (atenção à circunferência abdominal) e líquido amniótico",
+        "Controle do ganho ponderal conforme IMC pré-gestacional"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — NÃO FARMACOLÓGICO (1a LINHA)",
+      "section_color": "orange",
+      "titulo": "DIETA + EXERCÍCIO",
+      "items": [
+        "Plano alimentar individualizado: 35-45% de carboidratos (baixo índice glicêmico)",
+        "Fracionamento: 3 refeições + 2-3 lanches; evitar cetose (não restringir CHO em excesso)",
+        "Proteína ~1,1 g/kg/dia; controle do ganho ponderal conforme IMC",
+        "Atividade física: 150 min/semana de intensidade moderada",
+        "Caminhada pós-prandial melhora o pico glicêmico"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO FARMACOLÓGICO",
+      "section_color": "orange",
+      "titulo": "SE 1-2 SEMANAS DE DIETA NÃO ATINGEM METAS",
+      "items": [
+        "INSULINA = padrão-ouro (NÃO atravessa a placenta): NPH + regular ou análogos (detemir, lispro, aspart — seguros)",
+        "Dose inicial 0,7-1,0 UI/kg/dia (aumenta progressivamente no 3o trimestre)",
+        "Hiperglicemia isolada de jejum -> NPH noturna; picos pós-prandiais -> ultrarrápida pré-refeição; basal-bolus se necessário",
+        "Metformina: atravessa a placenta; menos ganho de peso e hipoglicemia; ~30-40% precisam de insulina complementar",
+        "  Aceita (SBD/Febrasgo) se recusa à insulina ou casos selecionados"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONDUTA OBSTÉTRICA E PÓS-PARTO",
+      "section_color": "purple",
+      "titulo": "RESOLUÇÃO E SEGUIMENTO",
+      "items": [
+        "USG seriada a cada 3-4 semanas se controle inadequado; perfil biofísico a partir de 32-34 sem se uso de insulina",
+        "Indução: controle adequado sem complicações -> 39-40 sem; macrossomia/controle ruim -> considerar 38-39 sem",
+        "Cesárea eletiva se peso fetal estimado >= 4.500 g (risco de distócia de ombro)",
+        "PÓS-PARTO: suspender insulina imediatamente (na maioria); reavaliar com TOTG 75g em 6-12 semanas",
+        "Risco futuro: 30-70% evoluem para DM2 em 10-20 anos -> controle de peso, atividade física, rastreio a cada 1-3 anos"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Glicemia de jejum na 1a consulta; TOTG 75g entre 24-28 sem se jejum < 92",
+        "1 valor alterado no TOTG já fecha o diagnóstico de DG",
+        "Dieta + exercício 1a linha; insulina se não atingir metas em 1-2 semanas",
+        "Vigiar macrossomia (circunferência abdominal) e polidrâmnio",
+        "Reclassificar no pós-parto (TOTG 6-12 sem) — DG é fator de risco para DM2"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA O PRÉ-NATAL DE ALTO RISCO",
+      "items": [
+        "Gestante ___ semanas com diabetes gestacional (jejum ___ / TOTG ___).",
+        "Controle: glicemias ___; em uso de dieta/exercício ± insulina ___ UI/kg/dia.",
+        "Avaliação fetal: biometria/CA ___; líquido amniótico ___.",
+        "Encaminho ao pré-natal de alto risco; reclassificar com TOTG 6-12 semanas pós-parto."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Gestante na 1a consulta com glicemia de jejum de 105 mg/dL. Qual o diagnóstico?",
+      "alternativas": [
+        "Normal — repetir no 3o trimestre",
+        "Diabetes gestacional (jejum 92-125 mg/dL na gestação)",
+        "DM manifesto na gestação",
+        "Hipoglicemia",
+        "Intolerância à lactose"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "No TOTG 75g entre 24-28 semanas, quantos valores alterados são necessários para diagnosticar diabetes gestacional?",
+      "alternativas": [
+        "Dois valores alterados",
+        "Um único valor alterado (jejum >=92, 1h >=180 ou 2h >=153)",
+        "Três valores alterados",
+        "Nenhum; o diagnóstico é só pela HbA1c",
+        "Apenas a glicemia casual"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o tratamento farmacológico padrão-ouro do diabetes gestacional?",
+      "alternativas": [
+        "Metformina",
+        "Insulina (não atravessa a placenta)",
+        "Glibenclamida",
+        "Inibidor de SGLT2",
+        "Análogo de GLP-1"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual a principal complicação fetal do diabetes gestacional mal controlado?",
+      "alternativas": [
+        "Restrição de crescimento",
+        "Macrossomia (com risco de distócia de ombro e hipoglicemia neonatal)",
+        "Anencefalia",
+        "Oligodramnia grave",
+        "Cardiopatia cianótica"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual a conduta no pós-parto da paciente com diabetes gestacional?",
+      "alternativas": [
+        "Manter insulina indefinidamente",
+        "Em geral suspender a insulina e reavaliar com TOTG 75g em 6-12 semanas (risco de DM2)",
+        "Iniciar metformina para todas",
+        "Nenhum seguimento é necessário",
+        "Rastrear com HbA1c apenas após 5 anos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Glicemia de jejum entre 92 e 125 mg/dL na gestação diagnostica diabetes gestacional. >= 126 seria DM manifesto; < 92 indica repetir com TOTG 75g entre 24-28 semanas."},
+    {"resposta": "B", "comentario": "Pelos critérios IADPSG/ADA, basta UM valor alterado no TOTG 75g (jejum >=92, 1h >=180 ou 2h >=153) para diagnosticar DG — diferente do antigo critério que exigia dois valores."},
+    {"resposta": "B", "comentario": "A insulina é o padrão-ouro do tratamento farmacológico da DG por não atravessar a placenta. A metformina é opção em casos selecionados, mas atravessa a placenta e ~30-40% precisam de insulina complementar."},
+    {"resposta": "B", "comentario": "A macrossomia (por hiperinsulinismo fetal) é a complicação fetal central, predispondo a distócia de ombro, tocotraumatismo e hipoglicemia neonatal."},
+    {"resposta": "B", "comentario": "No pós-parto, suspende-se a insulina na maioria e reavalia-se a glicemia com TOTG 75g em 6-12 semanas, pois a DG é fator de risco para DM2 (30-70% em 10-20 anos)."}
+  ]
+}

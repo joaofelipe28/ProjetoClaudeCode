@@ -1,0 +1,196 @@
+{
+  "slug": "sangramento_uterino_anormal",
+  "titulo": "Sangramento Uterino Anormal (SUA)",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "SUA no PS",
+  "chapter_bar": "SANGRAMENTO UTERINO ANORMAL — PALM-COEIN",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "SUA — EXCLUIR GESTAÇÃO, ESTABILIZAR, CLASSIFICAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "SUA (nao gravida) - SEMPRE excluir gestacao (beta-hCG)\n+ avaliar estabilidade", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 26, "text": "AGUDO/instavel:\nvolume + hormonio\n+/- cirurgia", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "Cronico/estavel:\nclassificar PALM-COEIN\n-> tto dirigido", "color": "teal", "font_size": 5.6},
+        {"id": "d", "x": 0.5, "y": 0.15, "w": 200, "h": 18, "text": "Farmacologico = 1a linha; cirurgia se falha/estrutural", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Sangramento agudo ou crônico do corpo uterino, anormal na regularidade, volume, frequência ou duração, em mulher NÃO grávida",
+        "SEMPRE excluir gestação (beta-hCG) — é o primeiro passo",
+        "Classificação etiológica: PALM-COEIN",
+        "PALM (estruturais): Pólipo, Adenomiose, Leiomioma, Malignidade | COEIN (não estruturais): Coagulopatia, Ovulatória, Endometrial, Iatrogênica, Não classificada"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ANAMNESE E RED FLAGS",
+      "section_color": "purple",
+      "titulo": "AVALIAÇÃO",
+      "items": [
+        "Menarca e DUM; início das alterações; ritmo, frequência, volume e duração",
+        "História sexual/reprodutiva; contracepção; último Papanicolau; medicações de uso contínuo",
+        "História familiar: neoplasia, endocrinopatia, coagulopatia (suspeitar de coagulopatia em SUA desde a menarca)",
+        "RED FLAGS: instabilidade hemodinâmica, sangramento volumoso, anemia sintomática",
+        "Suspeita de malignidade (pós-menopausa, fatores de risco) -> investigar endométrio"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "INVESTIGAÇÃO",
+      "section_color": "navy",
+      "titulo": "EXAMES",
+      "items": [
+        "Exame especular: descartar lesões vaginais/cervicais como fonte do sangramento",
+        "BETA-HCG (excluir gestação); hemograma + coagulograma (avaliar anemia/coagulopatia)",
+        "Endócrino conforme suspeita: TSH, FSH, LH, prolactina, androgênios",
+        "USG transvaginal (estrutura, espessamento endometrial, miomas/pólipos)",
+        "Histeroscopia: avalia lesões intracavitárias não esclarecidas ao USG + permite biópsia"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "SUA AGUDO — ESTABILIZAR E ESTANCAR",
+      "section_color": "red",
+      "titulo": "SANGRAMENTO ACENTUADO",
+      "items": [
+        "Restabelecer equilíbrio hemodinâmico: reposição volêmica + considerar hemotransfusão; abordagem cirúrgica se necessário",
+        "Estrogênio EV (não disponível no Brasil) — alternativas hormonais orais:",
+        "Etinilestradiol 35 mcg + Noretisterona 1 mg: 1 cp 3x/dia por 1 semana, depois 1 cp/dia por mais 3 semanas",
+        "Medroxiprogesterona 20 mg 3x/dia por 1 semana, depois 1x/dia por 3 semanas",
+        "Ácido tranexâmico 1 g 8/8h por 5 dias (se contraindicação ao estrogênio)"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO POR ETIOLOGIA (crônico)",
+      "section_color": "orange",
+      "headers": ["Causa", "Tratamento"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Não estrutural (hormonal)", "1a linha: combinado estro-progestativo; progestagênio isolado; SIU de levonorgestrel (atrofia endometrial)"],
+        ["Não estrutural (não hormonal)", "Ácido tranexâmico 1g 3-4x/dia por 3-4 dias (reduz ~50%); AINE (ác. mefenâmico) reduz 25-50% e a dismenorreia"],
+        ["Pólipo", "Polipectomia histeroscópica"],
+        ["Mioma (submucoso é o mais associado)", "Farmacológico; cirurgia se sem resposta"],
+        ["Adenomiose", "Frequentemente histerectomia (sangramento + dismenorreia)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRATAMENTO CIRÚRGICO",
+      "section_color": "red",
+      "titulo": "QUANDO",
+      "items": [
+        "Indicado na FALHA do tratamento clínico ou em causa estrutural específica",
+        "Ablação endometrial: menos invasiva que histerectomia; para pacientes SEM lesão estrutural e sem desejo reprodutivo",
+        "Histerectomia: tratamento de exceção (definitivo)",
+        "Antifibrinolítico contraindicado se história de tromboembolismo ou insuficiência renal",
+        "AINE evitado em paciente com doença ulcerosa péptica"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST NO PS",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Excluir gestação (beta-hCG) SEMPRE",
+        "Avaliar estabilidade hemodinâmica e anemia (hemograma)",
+        "Especular para descartar fonte vaginal/cervical",
+        "Agudo: estabilizar + hormônio/ácido tranexâmico; crônico: classificar PALM-COEIN",
+        "Pós-menopausa ou suspeita de malignidade -> investigar endométrio (USG/biópsia/histeroscopia)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Mulher ___ anos, NÃO grávida (beta-hCG negativo), com SUA ___ (agudo/crônico); volume ___; Hb ___.",
+        "USG transvaginal: ___ (mioma/pólipo/espessamento); classificação PALM-COEIN: ___.",
+        "Conduta: estabilização + hormonal/ác. tranexâmico; encaminhamento para histeroscopia/cirurgia se indicado.",
+        "Solicito avaliação ginecológica (estrutural/falha clínica) / internação se instabilidade ou anemia grave."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Mulher de 35 anos com sangramento uterino aumentado. Qual o PRIMEIRO passo na avaliação?",
+      "alternativas": [
+        "Histerectomia",
+        "Excluir gestação com beta-hCG",
+        "Iniciar ácido tranexâmico sem investigação",
+        "Solicitar ressonância de pelve",
+        "Ablação endometrial"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "O que significa a classificação PALM-COEIN do sangramento uterino anormal?",
+      "alternativas": [
+        "Estágios de uma neoplasia",
+        "Causas estruturais (PALM: pólipo, adenomiose, leiomioma, malignidade) e não estruturais (COEIN)",
+        "Graus de dilatação cervical",
+        "Critérios de transfusão",
+        "Fases do ciclo menstrual"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual medicação não hormonal reduz o volume do sangramento menstrual (até ~50%)?",
+      "alternativas": [
+        "Ácido tranexâmico",
+        "Omeprazol",
+        "Metformina",
+        "Furosemida",
+        "Levotiroxina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual tipo de mioma está mais associado ao sangramento uterino anormal?",
+      "alternativas": [
+        "Subseroso",
+        "Submucoso",
+        "Intramural pequeno",
+        "Pediculado seroso",
+        "Calcificado"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é a primeira linha de tratamento do SUA de causa não estrutural?",
+      "alternativas": [
+        "Histerectomia",
+        "Tratamento farmacológico (hormonal e/ou antifibrinolítico/AINE)",
+        "Ablação endometrial imediata",
+        "Embolização uterina",
+        "Apenas observação"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O primeiro passo na avaliação do SUA é SEMPRE excluir gestação com beta-hCG, pois muda completamente a abordagem (sangramento da gestação tem outro manejo)."},
+    {"resposta": "B", "comentario": "PALM-COEIN classifica as causas: PALM = estruturais (Pólipo, Adenomiose, Leiomioma, Malignidade) e COEIN = não estruturais (Coagulopatia, Ovulatória, Endometrial, Iatrogênica, Não classificada)."},
+    {"resposta": "A", "comentario": "O ácido tranexâmico (antifibrinolítico) reduz o volume do sangramento menstrual em até ~50%. Contraindicado se história de tromboembolismo ou insuficiência renal."},
+    {"resposta": "B", "comentario": "Os miomas submucosos são os mais associados ao sangramento uterino anormal, por distorcerem a cavidade endometrial. Subserosos costumam causar sintomas compressivos, não sangramento."},
+    {"resposta": "B", "comentario": "A primeira linha do SUA não estrutural é o tratamento farmacológico (hormonal — combinado, progestagênio, SIU-LNG — e/ou não hormonal — ácido tranexâmico/AINE). A cirurgia fica para falha ou causa estrutural."}
+  ]
+}

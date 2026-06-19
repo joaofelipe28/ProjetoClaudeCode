@@ -1,0 +1,180 @@
+{
+  "slug": "sepse_puerperal",
+  "titulo": "Sepse Puerperal",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Sepse Puerperal no PS",
+  "chapter_bar": "SEPSE PUERPERAL — FOCO + ATB PRECOCE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — FEBRE NO PUERPÉRIO",
+      "title": "SEPSE PUERPERAL — PACOTE DE 1 HORA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Puerpera (ate 42 dias) + febre/sinais de infeccao\n(= sepse ate prova em contrario)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "1a hora: acessos + culturas + LACTATO +\nATB amplo + volume", "color": "orange", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Identificar FOCO\n(endometrite,\nferida, ITU, mama)", "color": "teal", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "CONTROLE DO FOCO\n(curetagem/drenagem)\n+ UTI se choque", "color": "red", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Infecção do trato genital ou sistêmica no puerpério (até 42 dias pós-parto) com disfunção orgânica",
+        "Choque séptico: hipotensão persistente apesar de volume + necessidade de vasopressor (PAM >= 65) + lactato > 2",
+        "Focos: ENDOMETRITE puerperal (mais comum), infecção de ferida (cesárea/episiotomia), ITU, mastite/abscesso, retenção de restos, ICS",
+        "FEBRE NO PUERPÉRIO = sepse até que se prove o contrário"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE ALERTA",
+      "section_color": "red",
+      "titulo": "RECONHECER A SEPSE",
+      "items": [
+        "Febre >= 38 C ou hipotermia < 36 C",
+        "Taquicardia > 100 bpm; taquipneia > 22 irpm; hipotensão",
+        "Oligúria; alteração do nível de consciência",
+        "Dor abdominal intensa / secreção (loquiação) fétida",
+        "Lactato elevado"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ABORDAGEM INICIAL — PRIMEIRA HORA",
+      "section_color": "orange",
+      "titulo": "PACOTE DE SEPSE",
+      "items": [
+        "ABCDE; O2 se SatO2 < 94%; monitorização; 2 acessos calibrosos; SVD (diurese)",
+        "Coletar (sem atrasar ATB): hemograma, LACTATO, creatinina/ureia, TGO/TGP/BT, coagulograma, gasometria se grave",
+        "Hemoculturas (2 pares) + urocultura + cultura de secreções (loquiação/ferida)",
+        "Reposição volêmica: cristaloide 30 mL/kg se hipotensão ou lactato >= 4",
+        "Metas: PAM >= 65, diurese >= 0,5 mL/kg/h, lactato em queda; noradrenalina se hipotensão refratária"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIOTICOTERAPIA + CONTROLE DO FOCO",
+      "section_color": "red",
+      "titulo": "ATB EM ATÉ 1h",
+      "items": [
+        "ESQUEMA PADRÃO (endometrite/sepse ginecológica): Clindamicina 900 mg IV 8/8h + Gentamicina 5-7 mg/kg IV 1x/dia",
+        "Alternativas (grave/choque): Piperacilina-tazobactam; Cefepime + Metronidazol; Meropenem (grave/multirresistente)",
+        "CONTROLE DO FOCO (essencial): curetagem se restos ovulares; drenagem de abscesso; revisão de ferida operatória; retirada de corpo estranho",
+        "Avaliação cirúrgica precoce",
+        "Ajustar ATB conforme culturas/antibiograma"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INTERNAÇÃO E COMPLICAÇÕES",
+      "section_color": "red",
+      "titulo": "UTI / GRAVIDADE",
+      "items": [
+        "UTI OBRIGATÓRIA se: choque séptico, necessidade de vasopressor, disfunção orgânica múltipla, rebaixamento de consciência",
+        "Complicações: choque séptico, CIVD, insuficiência renal aguda, insuficiência respiratória, óbito materno",
+        "Não retardar o controle do foco (curetagem/drenagem) na instabilidade",
+        "Endometrite é o foco mais comum — avaliar restos ovulares retidos",
+        "Mensagem-chave: febre no puerpério = sepse até prova em contrário; ATB precoce + controle do foco salvam"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST NO PS",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Reconhecer febre/sinais de infecção no puerpério como sepse",
+        "Pacote de sepse na 1a hora (acessos, culturas, lactato, ATB amplo, volume)",
+        "ATB empírico (clinda + genta) em até 1h",
+        "Identificar e CONTROLAR o foco (endometrite/ferida/ITU/mama/restos)",
+        "UTI se disfunção orgânica/choque; reavaliar e ajustar pela cultura"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Puérpera (___ dias pós-parto, via ___) com sepse; foco provável: ___ (endometrite/ferida/ITU/mama/restos).",
+        "Sinais: febre ___, FC ___, PA ___, lactato ___; disfunção orgânica: ___.",
+        "Pacote de sepse iniciado: ATB (clinda+genta) às ___, volume ___, vasopressor ___.",
+        "Controle do foco: curetagem/drenagem ___. Solicito vaga (UTI se choque) + equipe obstétrica/cirúrgica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Puérpera de 5 dias pós-cesárea com febre 38,8, taquicardia, lóquios fétidos e dor uterina. Conduta inicial?",
+      "alternativas": [
+        "Antitérmico e alta",
+        "Pacote de sepse na 1a hora (culturas, lactato, antibiótico amplo, volume) e identificar/controlar o foco",
+        "Apenas observação por 24h",
+        "Antibiótico oral domiciliar",
+        "Aguardar culturas para iniciar antibiótico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o foco infeccioso MAIS comum na sepse puerperal?",
+      "alternativas": [
+        "Infecção urinária",
+        "Endometrite puerperal",
+        "Mastite",
+        "Pneumonia",
+        "Infecção de cateter"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual o esquema antibiótico empírico padrão na endometrite/sepse puerperal?",
+      "alternativas": [
+        "Amoxicilina oral",
+        "Clindamicina + Gentamicina endovenosas",
+        "Azitromicina dose única",
+        "Cefalexina oral",
+        "Nitrofurantoína"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Além do antibiótico, qual medida é essencial na sepse puerperal por retenção de restos ovulares?",
+      "alternativas": [
+        "Apenas antitérmico",
+        "Controle do foco (curetagem/esvaziamento uterino)",
+        "Restrição hídrica",
+        "Corticoide",
+        "Observação prolongada"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é a mensagem-chave sobre febre no puerpério?",
+      "alternativas": [
+        "Febre no puerpério é sempre fisiológica",
+        "Febre no puerpério é sepse até que se prove o contrário",
+        "Febre no puerpério dispensa investigação",
+        "Só investigar após 42 dias",
+        "É sempre infecção urinária"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Febre + taquicardia + lóquios fétidos + dor uterina no puerpério = sepse puerperal (provável endometrite). Aplica-se o pacote de sepse na 1a hora e identifica-se/controla-se o foco. Antibiótico não deve aguardar culturas."},
+    {"resposta": "B", "comentario": "A endometrite puerperal é o foco mais comum da sepse puerperal, especialmente após cesárea, manifestando-se com febre, dor uterina e lóquios fétidos."},
+    {"resposta": "B", "comentario": "O esquema padrão para endometrite/sepse puerperal é Clindamicina + Gentamicina EV (cobertura ampla para anaeróbios, Gram + e Gram -); pipe-tazo/meropenem nas formas graves."},
+    {"resposta": "B", "comentario": "O controle do foco é essencial: na retenção de restos ovulares, faz-se curetagem/esvaziamento uterino, pois o antibiótico isolado não controla a infecção mantida pelo conteúdo retido."},
+    {"resposta": "B", "comentario": "A mensagem-chave é: febre no puerpério é sepse até que se prove o contrário — exige investigação ativa do foco e antibioticoterapia precoce."}
+  ]
+}

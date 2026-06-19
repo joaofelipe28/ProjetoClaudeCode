@@ -1,0 +1,196 @@
+{
+  "slug": "pre_eclampsia_eclampsia",
+  "titulo": "Pré-eclâmpsia e Eclâmpsia",
+  "especialidade": "GINECO/OBSTETRÍCIA",
+  "chapter_subject": "Pré-eclâmpsia/Eclâmpsia no PS",
+  "chapter_bar": "PRÉ-ECLÂMPSIA E ECLÂMPSIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — EMERGÊNCIA OBSTÉTRICA",
+      "title": "PRÉ-ECLÂMPSIA — MgSO4 + CONTROLE DA PA",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "PA >=140x90 apos 20 sem + proteinuria/disfuncao de orgao\nDLE + 2 acessos + exames", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Sinais de gravidade? (PA>=160x110, cefaleia,\nescotomas, dor epigastrica, plaq<100mil)", "color": "orange", "font_size": 5.2},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "SIM/eclampsia:\nMgSO4 + anti-HAS\n+ resolver gestacao", "color": "red", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "Leve/estavel:\nmonitorar + avaliar\nvitalidade fetal", "color": "teal", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÕES",
+      "section_color": "teal",
+      "titulo": "DIAGNÓSTICO",
+      "items": [
+        "Pré-eclâmpsia: PA >= 140x90 após 20 semanas + proteinúria >= 300 mg/24h",
+        "  OU, sem proteinúria: plaquetas < 100.000, creatinina >= 1,1, TGO/TGP >= 2x, EAP, sintomas neuro/visuais",
+        "Eclâmpsia: convulsão tônico-clônica em gestante/puérpera sem outra causa neurológica",
+        "O PARTO é o único tratamento DEFINITIVO"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PRÉ-ECLÂMPSIA COM SINAIS DE GRAVIDADE",
+      "section_color": "red",
+      "titulo": "QUALQUER UM = GRAVE",
+      "items": [
+        "PA >= 160 x 110 mmHg",
+        "Cefaleia intensa refratária; escotomas / visão turva (iminência de eclâmpsia)",
+        "Dor epigástrica / em hipocôndrio direito (sofrimento hepático)",
+        "Plaquetas < 100.000; oligúria (< 500 mL/24h)",
+        "Edema agudo de pulmão; disfunção hepática ou renal"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "ABORDAGEM INICIAL E EXAMES",
+      "section_color": "navy",
+      "titulo": "ABCDE OBSTÉTRICO",
+      "items": [
+        "DECÚBITO LATERAL ESQUERDO (evita compressão da cava pelo útero); proteger via aérea",
+        "O2 8-10 L/min se SatO2 < 94%; 2 acessos calibrosos; monitorização; SVD (controle de diurese)",
+        "Avaliar consciência e sinais de iminência de eclâmpsia",
+        "Exames (sem atrasar o tratamento): hemograma, plaquetas, TGO/TGP, creatinina/ureia, DHL (HELLP), proteinúria",
+        "Avaliação fetal: BCF, cardiotocografia se possível"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CONTROLE DA CRISE HIPERTENSIVA",
+      "section_color": "orange",
+      "titulo": "META PAS 140-150 / PAD 90-100 (NÃO reduzir abruptamente)",
+      "items": [
+        "Hidralazina IV: 5 mg IV lento, repetir a cada 20 min (máx 20 mg)",
+        "Labetalol IV: 20 mg IV, depois 40-80 mg a cada 10 min (máx 300 mg)",
+        "Nifedipina VO: 10 mg VO, repetir após 20 min se necessário",
+        "NÃO reduzir a PA de forma abrupta (risco de hipoperfusão placentária)",
+        "Contraindicados: IECA/BRA, diuréticos (exceto EAP), metildopa NA EMERGÊNCIA"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PREVENÇÃO E TRATAMENTO DE CONVULSÃO",
+      "section_color": "red",
+      "titulo": "SULFATO DE MAGNÉSIO — PADRÃO-OURO",
+      "items": [
+        "Ataque: 4-6 g IV em 20 min",
+        "Manutenção: 1-2 g/h IV contínuo; manter por 24h após o parto ou a última convulsão",
+        "Monitorar toxicidade — SUSPENDER se: FR < 12 irpm, ausência de reflexo patelar, diurese < 25 mL/h",
+        "Antídoto: GLUCONATO DE CÁLCIO 10% 10 mL IV lento",
+        "NÃO usar benzodiazepínico como 1a linha (só se convulsão refratária ao magnésio)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ECLÂMPSIA — CONDUTA IMEDIATA",
+      "section_color": "red",
+      "titulo": "CONVULSÃO NA GESTANTE",
+      "items": [
+        "Proteger via aérea + decúbito lateral esquerdo + oxigênio",
+        "Sulfato de magnésio IMEDIATAMENTE (ataque + manutenção)",
+        "Controlar a PA (hidralazina/labetalol/nifedipina)",
+        "Avaliar a vitalidade fetal",
+        "RESOLVER a gestação após estabilização materna"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CONDUTA OBSTÉTRICA (RESOLUÇÃO)",
+      "section_color": "navy",
+      "titulo": "QUANDO INTERROMPER A GESTAÇÃO",
+      "items": [
+        "SEMPRE: eclâmpsia, pré-eclâmpsia grave, HELLP, sofrimento fetal, deterioração materna",
+        "Se < 34 semanas e ESTÁVEL: corticoide para maturação pulmonar fetal + avaliação caso a caso",
+        "O parto é o único tratamento definitivo (estabilizar a mãe primeiro)",
+        "Via de parto conforme condições obstétricas",
+        "Complicações: AVC, EAP, HELLP, DPP, insuficiência renal/hepática"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Gestante/puérpera, ___ semanas, com pré-eclâmpsia ___ (com/sem gravidade) / eclâmpsia. PA ___.",
+        "Sinais de gravidade: cefaleia/escotomas/dor epigástrica/plaq<100mil/oligúria. DHL/TGO/creatinina: ___.",
+        "Condutas: MgSO4 (ataque+manutenção), anti-hipertensivo ___, DLE, vitalidade fetal ___.",
+        "Solicito transferência para maternidade de alto risco (resolução da gestação = tratamento definitivo)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Gestante de 32 semanas com PA 170x115, cefaleia intensa e escotomas. Qual a medida para PREVENIR convulsão?",
+      "alternativas": [
+        "Diazepam endovenoso",
+        "Sulfato de magnésio (ataque 4-6 g IV + manutenção 1-2 g/h)",
+        "Fenitoína",
+        "Manitol",
+        "Apenas controlar a pressão arterial"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Durante o uso de sulfato de magnésio, a paciente apresenta FR 10 irpm e ausência de reflexo patelar. Conduta?",
+      "alternativas": [
+        "Aumentar a dose do magnésio",
+        "Suspender o magnésio e administrar gluconato de cálcio 10% IV (antídoto)",
+        "Administrar diazepam",
+        "Manter a dose e observar",
+        "Iniciar hidralazina"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual a meta de pressão arterial no tratamento da crise hipertensiva da pré-eclâmpsia grave?",
+      "alternativas": [
+        "PAS < 110",
+        "PAS 140-150 / PAD 90-100, sem redução abrupta",
+        "Normalizar rapidamente para 120x80",
+        "PAS > 160",
+        "PAD < 60"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é o tratamento DEFINITIVO da pré-eclâmpsia/eclâmpsia?",
+      "alternativas": [
+        "Sulfato de magnésio por tempo indeterminado",
+        "Resolução da gestação (parto)",
+        "Anti-hipertensivo oral contínuo",
+        "Repouso no leito",
+        "Diurético"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual anti-hipertensivo é CONTRAINDICADO na gestante com pré-eclâmpsia?",
+      "alternativas": [
+        "Hidralazina",
+        "IECA / BRA",
+        "Labetalol",
+        "Nifedipina",
+        "Metildopa (no seguimento ambulatorial)"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O sulfato de magnésio é o padrão-ouro para prevenir e tratar a convulsão eclâmptica (ataque 4-6 g IV + manutenção 1-2 g/h), superior aos anticonvulsivantes clássicos. Benzodiazepínico/fenitoína não são 1a linha."},
+    {"resposta": "B", "comentario": "FR < 12 e ausência de reflexo patelar são sinais de toxicidade do magnésio: suspende-se a infusão e administra-se o antídoto, gluconato de cálcio 10% 10 mL IV lento."},
+    {"resposta": "B", "comentario": "A meta é PAS 140-150 / PAD 90-100, evitando a redução abrupta da PA, que compromete a perfusão placentária. Usa-se hidralazina, labetalol ou nifedipina."},
+    {"resposta": "B", "comentario": "O único tratamento definitivo é a resolução da gestação (parto). MgSO4 e anti-hipertensivos estabilizam a mãe, mas a doença só regride após o parto."},
+    {"resposta": "B", "comentario": "IECA/BRA são contraindicados na gestação (fetotoxicidade). Hidralazina, labetalol e nifedipina são as drogas de escolha; metildopa serve para o controle ambulatorial, não para a emergência."}
+  ]
+}
