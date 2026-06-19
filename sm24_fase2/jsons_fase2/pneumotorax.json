@@ -1,0 +1,197 @@
+{
+  "slug": "pneumotorax",
+  "titulo": "Pneumotórax",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Pneumotórax no PS",
+  "chapter_bar": "PNEUMOTÓRAX — SIMPLES, ABERTO, HIPERTENSIVO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ESTÁVEL x HIPERTENSIVO",
+      "title": "PNEUMOTÓRAX — HIPERTENSIVO É CLÍNICO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Dor toracica + dispneia + MV abolido + hipertimpanismo", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Instavel? desvio de traqueia / choque\n= HIPERTENSIVO (nao esperar RX)", "color": "red", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "SIM: descompressao\ncom Jelco 14G\n-> dreno imediato", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "NAO: RX/USG\ndrenar conforme\ntipo/tamanho", "color": "teal", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CLASSIFICAÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Presença de ar entre o pulmão e a parede torácica",
+        "SIMPLES: espontâneo primário, espontâneo secundário, traumático, iatrogênico",
+        "ABERTO: comunicação direta entre o ar ambiente e a cavidade pleural ('ferida soprante')",
+        "HIPERTENSIVO: ar sob pressão -> desvio mediastinal -> choque -> PCR (emergência)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR E EXAME FÍSICO",
+      "section_color": "purple",
+      "titulo": "PISTAS",
+      "items": [
+        "Dor torácica súbita ventilatório-dependente + dispneia; trauma/procedimento recente (CVC, toracocentese, VM)",
+        "Doença pulmonar prévia (DPOC, asma, fibrose, TB) ou episódios prévios; tabagismo",
+        "Inspeção: assimetria, redução da expansibilidade unilateral; ferida soprante (aberto)",
+        "Percussão: HIPERTIMPANISMO; Ausculta: MV reduzido/abolido ipsilateral",
+        "Enfisema subcutâneo pode estar presente"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — PNEUMOTÓRAX HIPERTENSIVO",
+      "section_color": "red",
+      "titulo": "DIAGNÓSTICO CLÍNICO — NÃO ESPERAR RX",
+      "items": [
+        "Instabilidade hemodinâmica, hipotensão, taquicardia persistente",
+        "Hipoxemia refratária, rebaixamento; DESVIO DE TRAQUEIA, turgência jugular",
+        "PCR tipicamente em AESP",
+        "Conduta IMEDIATA: descompressão com Jelco 14G no 2o EIC linha hemiclavicular OU 4o/5o EIC linha axilar anterior",
+        "Medida TEMPORÁRIA -> drenagem torácica IMEDIATA após. NÃO transferir apenas com o Jelco"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONDUTA POR TIPO",
+      "section_color": "navy",
+      "headers": ["Tipo", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Espontâneo primário", "Pequeno/pouco sintomático: O2 + observação. Grande/sintomático: drenagem + cirurgião torácico (pleurodese)"],
+        ["Espontâneo secundário", "Mais grave: limiar BAIXO para drenagem + internação + avaliação precoce"],
+        ["Traumático", "Visível no RX ou paciente intubado -> DRENAR. Pequeno só na TC: conservador + internar (observar 24-48h)"],
+        ["Iatrogênico", "Drenar se intubado/sintomático/grande no RX; conservador se pequeno e assintomático (observação hospitalar)"],
+        ["Aberto", "Curativo OCLUSIVO de 3 PONTAS (válvula) -> drenagem + fechamento cirúrgico"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PRESCRIÇÃO BÁSICA E EXAMES",
+      "section_color": "orange",
+      "titulo": "PACIENTE ESTÁVEL",
+      "items": [
+        "Oxigênio suplementar (manter SatO2 > 94%) — acelera a reabsorção do ar",
+        "Analgesia: Dipirona 1g EV 6/6h (ou paracetamol/AINE); opioide se dor intensa (tramadol/morfina)",
+        "Repouso relativo + monitorização contínua",
+        "Exames (se estável): RX de tórax PA; USG à beira-leito (POCUS); TC de tórax = padrão-ouro",
+        "Drenagem em selo d'água conforme o tipo/tamanho"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "section_color": "red",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: secundário, traumático, iatrogênico moderado/grande, sintomático, em VM, necessidade de dreno, observação pós-trauma 24-48h",
+        "ALTA: assintomático, RX sem piora em 24-48h, SEM dreno, orientações de alarme e seguimento ambulatorial definido",
+        "Orientações: evitar esforço físico; NÃO voar nem mergulhar por 2-4 semanas",
+        "Retornar imediatamente se: dor torácica, falta de ar, tosse intensa",
+        "Sempre estabilizar (drenar se necessário) ANTES de transferir"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Reconhecer pneumotórax hipertensivo pela CLÍNICA (não esperar RX) e descomprimir",
+        "Após descompressão por agulha, drenar sempre",
+        "Pneumotórax aberto: curativo de 3 pontas antes do dreno",
+        "Definir tipo (espontâneo/traumático/iatrogênico) para decidir drenar x observar",
+        "Não transferir paciente apenas com Jelco / sem estabilizar"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Pneumotórax ___ (espontâneo/traumático/secundário/hipertensivo) à ___ (direita/esquerda).",
+        "Padrão respiratório: ___; SatO2 ___ (ar ambiente/O2 ___); estabilidade hemodinâmica: ___.",
+        "Drenado: sim/não; descompressão por agulha realizada: sim/não.",
+        "Necessita avaliação de cirurgia torácica para tratamento definitivo/seguimento."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente politraumatizado com dispneia grave, hipotensão, MV abolido à direita, hipertimpanismo e desvio de traqueia. Conduta imediata?",
+      "alternativas": [
+        "Solicitar radiografia de tórax antes de qualquer medida",
+        "Descompressão imediata com agulha (Jelco 14G) seguida de drenagem torácica",
+        "Apenas oxigênio e observação",
+        "Intubar e aguardar a tomografia",
+        "Curativo de 3 pontas"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a conduta imediata no pneumotórax ABERTO?",
+      "alternativas": [
+        "Selar a ferida completamente nos 4 lados",
+        "Curativo oclusivo de 3 pontas (permite saída do ar e impede a entrada)",
+        "Apenas observação",
+        "Toracotomia imediata",
+        "Não intervir até a radiografia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Pneumotórax traumático visível na radiografia ou paciente intubado. Conduta?",
+      "alternativas": [
+        "Observação domiciliar",
+        "Drenagem torácica",
+        "Apenas oxigênio",
+        "Curativo de 3 pontas",
+        "Alta com analgésico"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre o diagnóstico do pneumotórax hipertensivo, é correto:",
+      "alternativas": [
+        "Depende da radiografia para confirmação",
+        "É clínico — não se deve aguardar a radiografia para descomprimir",
+        "Exige tomografia de urgência",
+        "Só ocorre em trauma penetrante",
+        "Cursa com hipertensão arterial"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual orientação de alta é correta após pneumotórax?",
+      "alternativas": [
+        "Pode voar e mergulhar imediatamente",
+        "Evitar esforço físico e não voar/mergulhar por 2-4 semanas, retornando se dor/dispneia",
+        "Retomar atividades de mergulho no dia seguinte",
+        "Não há restrições",
+        "Repouso absoluto por 6 meses"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O quadro é de pneumotórax hipertensivo — diagnóstico clínico. A conduta imediata é a descompressão por agulha (Jelco 14G, 2o EIC hemiclavicular ou 5o EIC axilar anterior), medida temporária, seguida de drenagem torácica. Não se aguarda RX."},
+    {"resposta": "B", "comentario": "No pneumotórax aberto, aplica-se curativo oclusivo de 3 pontas, que funciona como válvula (deixa o ar sair na expiração e impede a entrada na inspiração), seguido de drenagem e fechamento cirúrgico definitivo."},
+    {"resposta": "B", "comentario": "Pneumotórax traumático visível no RX ou em paciente intubado deve ser DRENADO. Apenas pneumotórax pequeno visto só na TC pode ser conduzido conservadoramente, com internação e observação."},
+    {"resposta": "B", "comentario": "O pneumotórax hipertensivo é diagnóstico CLÍNICO (dispneia, MV abolido, hipertimpanismo, choque, desvio de traqueia); não se deve aguardar a radiografia — a descompressão é imediata."},
+    {"resposta": "B", "comentario": "Após pneumotórax, orienta-se evitar esforço físico e NÃO voar nem mergulhar por 2-4 semanas (variação de pressão pode reexpandir/agravar), retornando ao PS se dor torácica ou dispneia."}
+  ]
+}

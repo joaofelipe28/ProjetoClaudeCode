@@ -1,0 +1,182 @@
+{
+  "slug": "trauma_face",
+  "titulo": "Trauma de Face",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Trauma de Face no PS",
+  "chapter_bar": "TRAUMA DE FACE — VIA AÉREA E HEMORRAGIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — PRIORIDADES",
+      "title": "FACE — VIA AÉREA PRIMEIRO, DEPOIS HEMORRAGIA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "ABCDE - desobstruir VA (dentes/corpo estranho)\npresumir lesao de coluna cervical", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Via aerea ameacada? -> via aerea definitiva", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 22, "text": "Controlar\nhemorragia\n(tamponamento)", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "TC face/cranio +\nencaminhar buco/\nORL/oftalmo", "color": "teal", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CARACTERÍSTICAS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Mecanismos principais: violência interpessoal e queda (acidentes de trânsito hoje menos comuns); homens 20-30 anos",
+        "Frequente associação com: obstrução de via aérea, hemorragia severa, lesão intracraniana e de COLUNA CERVICAL",
+        "TODA vítima de trauma de face de grande impacto = presumir lesão de coluna cervical até excluir por imagem",
+        "Viscerocrânio: osso nasal, maxila, mandíbula, zigomático — o teto da cavidade nasal é assoalho da fossa anterior do crânio"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "AVALIAÇÃO INICIAL — PRIORIDADES (ABCDE)",
+      "section_color": "red",
+      "titulo": "VIA AÉREA E HEMORRAGIA",
+      "items": [
+        "PRIORIDADE: desobstruir a via aérea (corpos estranhos, ex.: dentes) e garantir permeabilidade (avaliar via aérea definitiva)",
+        "Fratura de terço médio/mandíbula -> risco de obstrução de via aérea (queda da língua sem suporte ósseo)",
+        "Após a ventilação, controlar a hemorragia",
+        "Trauma ocular associado: avaliar acuidade visual, mobilidade ocular e reação pupilar; encaminhar oftalmo",
+        "Líquor pelo nariz/ouvido (rinorreia/otorreia) + sinal de Battle = suspeitar de fratura de base de crânio"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRAUMA NASAL E FRATURA DE BASE",
+      "section_color": "purple",
+      "titulo": "CUIDADO COM O TAMPONAMENTO",
+      "items": [
+        "Osso nasal é o que mais fratura na face; epistaxe frequente (área de Kiesselbach, septo anterior)",
+        "ANTES do tamponamento nasal: descartar fratura da lâmina crivosa do etmoide / comunicação com a base do crânio",
+        "Se houver LÍQUOR misturado ao sangue: NÃO tentar parar o sangramento; decúbito lateral para drenar + investigar",
+        "Sem líquor: tamponamento anterior com gaze (pode embeber em fenilefrina/lidocaína); não manter > 24h sem reavaliar",
+        "Persistência -> tamponamento posterior com Foley + encaminhar especialista (referência)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "FRATURAS DE TERÇO MÉDIO — LE FORT",
+      "section_color": "navy",
+      "headers": ["Classificação", "Características"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["Le Fort I", "Impacto horizontal; separa a maxila das estruturas nasais/zigomáticas (disjunção do palato)"],
+        ["Le Fort II", "Forças mais altas; separa a maxila e o complexo nasal da órbita (piramidal)"],
+        ["Le Fort III", "Disjunção craniofacial: separa naso-órbito-etmoidal, zigomas e maxila do crânio"],
+        ["Outras", "Complexo naso-órbito-etmoidal, zigomático-maxilar, arco zigomático; mandíbula (degraus, má oclusão, parestesia do lábio inferior)"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO DA DOR E MEDIDAS",
+      "section_color": "orange",
+      "titulo": "ANALGESIA ESCALONADA",
+      "items": [
+        "Dor leve: Dipirona 1g EV 6/6h ou Paracetamol 1g VO 6/6h",
+        "Dor moderada: Dipirona 1g EV 6/6h + Tramadol 50mg EV 8/8h",
+        "Dor intensa: Dipirona + Tramadol 100mg EV 8/8h; se refratária, Morfina 2-4mg EV lenta (reavaliar em 30-60 min)",
+        "EVITAR AINEs se: sangramento ativo, politrauma ou TCE associado",
+        "Adjuvantes: compressas frias, cabeceira a 30 graus, antiemético (Ondansetrona 4mg EV se náusea)",
+        "Mandíbula: dieta líquida/pastosa, higiene com clorexidina 0,12% 3x/dia, analgésico + anti-inflamatório + ATB (amoxicilina); encaminhar buco"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA E ENCAMINHAMENTO",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "ABCDE com proteção cervical; via aérea e hemorragia antes da face em si",
+        "Avaliar trauma ocular (acuidade/mobilidade/pupila) e sinais de fratura de base",
+        "TC de face/crânio para diagnóstico definitivo e planejamento; RX panorâmica auxilia na mandíbula",
+        "Analgesia adequada associada à investigação de lesões associadas (TC face/crânio)",
+        "Encaminhar a buco-maxilo-facial / ORL / oftalmo conforme a lesão"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO (SAMU)",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Trauma de face ___ (tipo/Le Fort/nasal/mandíbula) por ___ (mecanismo).",
+        "Via aérea: ___ (pérvia/definitiva); hemorragia controlada: ___ (tamponamento?); líquor: sim/não.",
+        "Trauma ocular associado: ___; sinais de fratura de base: ___; TC face/crânio: ___.",
+        "Solicito transferência para buco-maxilo-facial / ORL e condutas específicas."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com trauma facial grave, sangue e dentes na cavidade oral e estridor. Qual a prioridade?",
+      "alternativas": [
+        "Tomografia de face imediata",
+        "Desobstruir e garantir a via aérea (avaliar via aérea definitiva), com proteção cervical",
+        "Tamponamento nasal antes de tudo",
+        "Sutura das lacerações",
+        "Encaminhamento ambulatorial ao buco"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Antes de realizar tamponamento nasal em trauma de face, o que deve ser descartado?",
+      "alternativas": [
+        "Fratura de fêmur",
+        "Fratura da lâmina crivosa do etmoide / comunicação com a base do crânio (presença de líquor)",
+        "Pneumotórax",
+        "Fratura de costela",
+        "Lesão esplênica"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Toda vítima de trauma de face de grande impacto deve ser considerada como portadora de:",
+      "alternativas": [
+        "Fratura de pelve",
+        "Lesão de coluna cervical até prova radiológica em contrário",
+        "Pneumotórax hipertensivo",
+        "Lesão hepática",
+        "Trauma raquimedular torácico"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "A fratura de terço médio da face com disjunção craniofacial completa (separação do complexo naso-órbito-etmoidal, zigomas e maxila do crânio) é classificada como:",
+      "alternativas": [
+        "Le Fort I",
+        "Le Fort III",
+        "Fratura de mandíbula",
+        "Fratura de arco zigomático isolada",
+        "Le Fort 0"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando se deve EVITAR AINE no manejo da dor do trauma de face?",
+      "alternativas": [
+        "Em qualquer dor leve",
+        "Em suspeita de sangramento ativo, politrauma ou TCE associado",
+        "Em pacientes jovens",
+        "Quando há apenas edema",
+        "Nunca há contraindicação"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No trauma de face, a prioridade é a via aérea: desobstruir (remover dentes/corpos estranhos, sangue) e garantir permeabilidade (avaliar via aérea definitiva), sempre com proteção da coluna cervical. Imagem e sutura vêm depois."},
+    {"resposta": "B", "comentario": "Antes do tamponamento nasal, deve-se descartar fratura da lâmina crivosa do etmoide/comunicação com a base do crânio (risco de passagem intracraniana). Havendo líquor com o sangue, não se tenta conter o sangramento."},
+    {"resposta": "B", "comentario": "Toda vítima de trauma de face de grande impacto deve ser tratada como tendo lesão de coluna cervical até que exames radiológicos a excluam — daí a imobilização cervical de rotina."},
+    {"resposta": "B", "comentario": "A Le Fort III é a disjunção craniofacial completa, separando o complexo naso-órbito-etmoidal, os zigomas e a maxila do crânio. Le Fort I é horizontal (palato); Le Fort II é piramidal."},
+    {"resposta": "B", "comentario": "Evita-se AINE quando há suspeita de sangramento ativo, politrauma ou TCE associado (risco hemorrágico). Nesses casos prefere-se dipirona/paracetamol e opioides conforme a intensidade."}
+  ]
+}

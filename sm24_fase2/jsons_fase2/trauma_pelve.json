@@ -1,0 +1,181 @@
+{
+  "slug": "trauma_pelve",
+  "titulo": "Trauma de Pelve",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Trauma Pélvico no PS",
+  "chapter_bar": "TRAUMA DE PELVE — FIXAR E ESTANCAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — SUSPEITA À CONDUTA",
+      "title": "PELVE — FIXAR CEDO, FAST DECIDE",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "ABCDE - suspeita de fratura de pelve no C\nFIXAR a pelve (cinta no trocanter)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 24, "text": "ESTAVEL:\nTC + tratar/\ntransferir", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 22, "text": "INSTAVEL: FAST", "color": "red", "font_size": 6.2},
+        {"id": "d", "x": 0.6, "y": 0.15, "w": 200, "h": 24, "text": "FAST+ -> laparotomia + fixacao/tamponamento\nFAST- -> tamponamento + fixacao + arteriografia", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Trauma contuso de ALTA energia, associado a múltiplas lesões e ALTA mortalidade",
+        "A pelve sangra muito — pode coletar TODA a volemia (sangramento oculto)",
+        "Manejo inicial = ABCDE; na etapa C: fixação da pelve + reanimação volêmica + hipotensão permissiva + PTM, REBOA se disponível",
+        "Sangramento: 90% VENOSO (fraturas ósseas/plexo) e 10% arterial (pudenda interna, glútea superior, sacral lateral, ilíaca interna)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR E COMO EXAMINAR",
+      "section_color": "purple",
+      "titulo": "AVALIAÇÃO (UMA VEZ SÓ!)",
+      "items": [
+        "Suspeitar: crepitação, dor à mobilização, deformidades, hematomas, membro encurtado/rodado",
+        "Inspeção: deformidade, rotação, encurtamento; Palpação: sínfise púbica, mobilização AP e súpero-inferior",
+        "Se UMA única alteração ou dor -> FIXAR a pelve",
+        "NÃO mobilizar de novo! (re-mobilizar desfaz o coágulo e PIORA o sangramento)",
+        "Sempre buscar lesões associadas (abdome, urogenital, perineal)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "IMOBILIZAÇÃO — FIXAÇÃO TEMPORÁRIA",
+      "section_color": "orange",
+      "titulo": "FECHAR A PELVE (TAMPONAR O SANGRAMENTO)",
+      "items": [
+        "Objetivo: reduzir o volume pélvico e estancar momentaneamente o sangramento (efeito tamponamento)",
+        "Dispositivo: lençol, faixa, cinta ou dispositivo próprio (cinta pélvica)",
+        "Posicionar ao nível do TROCANTER MAIOR (não na crista ilíaca)",
+        "Comprimir bem; deixar o ABDOME LIVRE (para eventual laparotomia)",
+        "Reanimação volêmica balanceada + protocolo de transfusão maciça + hipotensão permissiva"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESTÁVEL x INSTÁVEL",
+      "section_color": "navy",
+      "headers": ["Situação", "Conduta"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["Estável", "TC computadorizada; tratar e transferir conforme necessidade"],
+        ["Instável + FAST positivo", "Trauma pélvico E abdominal: laparotomia supraumbilical + tamponamento extraperitoneal + fixação externa + arteriografia/embolização se necessário"],
+        ["Instável + FAST negativo", "Trauma pélvico: tamponamento extraperitoneal + fixação externa + arteriografia/embolização se necessário"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TIPOS DE FRATURA (anel pélvico)",
+      "section_color": "navy",
+      "headers": ["Tipo", "Mecanismo", "Sangramento"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["A - Lateral (compressão)", "Colisões automobilísticas; rotação medial do anel", "Sangra MENOS, lesiona mais estruturas"],
+        ["B - Anteroposterior (livro aberto)", "Atropelamento, trauma importante", "Sangramento IMPORTANTE"],
+        ["C - Cisalhamento vertical", "Queda/trauma unilateral; rotura ligamentar complexa", "GRANDE sangramento"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INTERVENÇÕES DEFINITIVAS",
+      "section_color": "red",
+      "titulo": "FIXAÇÃO EXTERNA / TEP / ARTERIOGRAFIA",
+      "items": [
+        "Fixação externa: reduz o volume pélvico, diminui o sangramento e evita lesões adicionais",
+        "Tamponamento extraperitoneal (TEP): controle do sangramento venoso (a maioria)",
+        "Alguns protocolos iniciam pela fixação externa isolada e reavaliam a indicação de TEP",
+        "Arteriografia + embolização: nova piora clínica OU não melhora com alto risco de sangramento (10% arterial)",
+        "Trauma pelviperineal complexo (fratura + comunicação com meio externo cutâneo/urogenital/anorretal): manejo ABCDE + multidisciplinar"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Trauma pélvico de alta energia (mecanismo ___); tipo provável ___ (lateral/livro aberto/vertical).",
+        "Pelve FIXADA (cinta no trocanter): sim/não; estabilidade: ___; FAST: positivo/negativo.",
+        "Reanimação + transfusão maciça ___; tamponamento/fixação externa/arteriografia: ___.",
+        "Solicito centro com cirurgia/ortopedia/radiologia intervencionista (estabilizar antes de transferir)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Vítima de atropelamento, instável, com dor e instabilidade à palpação da pelve. Qual a primeira medida específica na etapa C?",
+      "alternativas": [
+        "Mobilizar repetidamente a pelve para caracterizar a fratura",
+        "Fixar a pelve com cinta ao nível do trocanter maior (reduz volume e sangramento)",
+        "Solicitar tomografia antes de qualquer medida",
+        "Aguardar a arteriografia",
+        "Aplicar a cinta na crista ilíaca"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a principal origem do sangramento na fratura de pelve?",
+      "alternativas": [
+        "Arterial (90%)",
+        "Venoso e ósseo (cerca de 90%)",
+        "Apenas artéria ilíaca externa",
+        "Lesão de víscera oca",
+        "Sangramento digestivo"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que NÃO se deve mobilizar repetidamente a pelve após identificar instabilidade?",
+      "alternativas": [
+        "Por dor apenas",
+        "Porque a re-mobilização desfaz o coágulo e piora o sangramento",
+        "Porque atrasa a tomografia",
+        "Porque não altera a conduta",
+        "Porque mascara fraturas de fêmur"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente com trauma de pelve instável e FAST negativo. Conduta?",
+      "alternativas": [
+        "Laparotomia exploradora de imediato",
+        "Tamponamento extraperitoneal + fixação externa + arteriografia/embolização se necessário",
+        "Apenas observação",
+        "Alta com analgésico",
+        "Somente tomografia"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual fratura de pelve cursa com maior sangramento?",
+      "alternativas": [
+        "Compressão lateral (tipo A)",
+        "Anteroposterior 'livro aberto' (tipo B) e cisalhamento vertical (tipo C)",
+        "Fraturas de cóccix isoladas",
+        "Fraturas sem desvio",
+        "Nenhuma sangra de forma significativa"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Diante de instabilidade/dor pélvica no paciente instável, a primeira medida é fixar a pelve com cinta ao nível do trocanter maior, reduzindo o volume pélvico e tamponando o sangramento. Não se mobiliza repetidamente."},
+    {"resposta": "B", "comentario": "Cerca de 90% do sangramento da fratura de pelve é venoso/ósseo (fraturas e plexo venoso); apenas ~10% é arterial — o que justifica priorizar fixação/tamponamento, reservando a arteriografia/embolização para casos selecionados."},
+    {"resposta": "B", "comentario": "Re-mobilizar a pelve instável desfaz o coágulo formado e agrava o sangramento. Após uma avaliação que identifique alteração/dor, fixa-se e NÃO se mobiliza novamente."},
+    {"resposta": "B", "comentario": "Trauma pélvico instável com FAST negativo (sangramento pélvico, não abdominal): tamponamento extraperitoneal + fixação externa + arteriografia/embolização se necessário. FAST positivo associaria laparotomia."},
+    {"resposta": "B", "comentario": "As fraturas anteroposteriores ('livro aberto', tipo B) e por cisalhamento vertical (tipo C) cursam com maior sangramento; a compressão lateral (tipo A) sangra menos, porém lesiona mais estruturas internas."}
+  ]
+}

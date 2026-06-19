@@ -1,0 +1,208 @@
+{
+  "slug": "atendimento_inicial_trauma",
+  "titulo": "Atendimento Inicial ao Trauma (ABCDE)",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Atendimento inicial ao politraumatizado",
+  "chapter_bar": "ATENDIMENTO INICIAL AO TRAUMA — ABCDE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — AVALIAÇÃO PRIMÁRIA (ATLS)",
+      "title": "TRAUMA — SEQUÊNCIA ABCDE",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.92, "w": 200, "h": 16, "text": "A - Via aerea + protecao da coluna cervical", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.5, "y": 0.72, "w": 200, "h": 16, "text": "B - Respiracao e ventilacao", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.52, "w": 200, "h": 16, "text": "C - Circulacao e controle de hemorragia", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.5, "y": 0.32, "w": 200, "h": 16, "text": "D - Disability (neurologico - Glasgow/pupilas)", "color": "orange", "font_size": 6.0},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 200, "h": 16, "text": "E - Exposicao + controle de temperatura", "color": "purple", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PRINCÍPIO (ATLS 11a ed.)",
+      "section_color": "teal",
+      "titulo": "AVALIAÇÃO PRIMÁRIA",
+      "items": [
+        "Padronização universal do atendimento inicial à vítima de trauma",
+        "Sequência ABCDE: identificar e tratar o que mata PRIMEIRO, na ordem",
+        "Tratar cada problema ameaçador à vida ASSIM que identificado, antes de seguir",
+        "Reavaliar continuamente (a deterioração obriga a recomeçar pelo A)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "A — VIA AÉREA E COLUNA CERVICAL",
+      "section_color": "navy",
+      "titulo": "PROTEGER VIA AÉREA + COLUNA",
+      "items": [
+        "Ofertar O2 15 L/min em máscara não reinalante; conversar com o paciente (responde = via aérea pérvia)",
+        "Sinais de via aérea ameaçada: trauma de face grave, hemorragia oral/nasal incontrolável, hipóxia, TCE com Glasgow < 8",
+        "Via aérea DEFINITIVA: IOT (preferencial); cricotireoidostomia cirúrgica se IOT inviável",
+        "Manter COLAR CERVICAL e head-block (estabilização) até excluir lesão de coluna",
+        "Aspirar secreções/sangue; atenção a corpos estranhos e fraturas de face"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "B — RESPIRAÇÃO (perigos que matam no B)",
+      "section_color": "red",
+      "titulo": "DIAGNÓSTICO CLÍNICO -> CONDUTA IMEDIATA",
+      "items": [
+        "Exame: ausculta, percussão e palpação torácica + SatO2",
+        "Pneumotórax HIPERTENSIVO: descompressão imediata (não esperar RX)",
+        "Pneumotórax ABERTO: curativo de 3 pontas",
+        "Hemotórax MACIÇO: drenagem + reposição/toracotomia",
+        "Tamponamento cardíaco e hérnia diafragmática traumática também se identificam no B"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "C — CIRCULAÇÃO E CONTROLE DE HEMORRAGIA",
+      "section_color": "orange",
+      "titulo": "FOCOS E REPOSIÇÃO",
+      "items": [
+        "Avaliar focos de sangramento: TÓRAX, ABDOME, PELVE, ossos longos e 'chão' (externo)",
+        "Sinais: FC, PA, perfusão periférica, nível de consciência, diurese",
+        "2 acessos venosos periféricos CALIBROSOS",
+        "Ringer Lactato AQUECIDO (~39 C) 1000 mL; reavaliar resposta",
+        "Indicar hemotransfusão precoce conforme classe de choque (controle de dano); ácido tranexâmico se indicado",
+        "Comprimir hemorragias externas; estabilizar pelve (cinta) se suspeita de fratura instável"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "D — NEUROLÓGICO e E — EXPOSIÇÃO",
+      "section_color": "purple",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "D — DISABILITY",
+        "items": [
+          "Escala de Coma de Glasgow",
+          "Reatividade e simetria pupilar",
+          "Déficits neurológicos focais",
+          "Excluir confundidores: hipoglicemia (HGT!), álcool/drogas, doença neurológica de base"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "E — EXPOSIÇÃO",
+        "items": [
+          "Despir o paciente totalmente para avaliação",
+          "Rolamento em bloco (avaliar dorso/coluna)",
+          "Controle de temperatura: aquecimento ativo e passivo",
+          "Fluidos aquecidos + manta térmica (evitar a tríade letal)"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONCEITO — TRÍADE LETAL E REAVALIAÇÃO",
+      "section_color": "red",
+      "titulo": "NÃO DEIXAR ESFRIAR",
+      "items": [
+        "Tríade letal: HIPOTERMIA + ACIDOSE + COAGULOPATIA (alimenta-se e fecha o ciclo da morte)",
+        "Por isso: fluidos aquecidos, controle precoce do sangramento e ressuscitação balanceada (hemocomponentes)",
+        "Após o ABCDE primário, fazer adjuntos (FAST, RX, sondas) e avaliação secundária (head-to-toe)",
+        "Qualquer deterioração -> REINICIAR pelo A",
+        "Hipotensão no trauma é HEMORRÁGICA até prova em contrário"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DA AVALIAÇÃO PRIMÁRIA",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "A: via aérea pérvia/definitiva + colar cervical",
+        "B: excluir pneumotórax hipertensivo/aberto, hemotórax maciço, tamponamento",
+        "C: 2 acessos calibrosos, controlar hemorragia, RL aquecido, transfusão conforme choque",
+        "D: Glasgow, pupilas, HGT",
+        "E: exposição + aquecimento; depois adjuntos (FAST/RX/sondas) e secundária"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Politraumatizado por ___ (mecanismo). A: ___ (pérvia/IOT). B: ___ . C: PA/FC ___, classe de choque ___.",
+        "D: Glasgow ___, pupilas ___. E: lesões identificadas ___; aquecido.",
+        "Condutas: acessos, RL aquecido ___ mL, transfusão ___, descompressão/dreno ___, cinta pélvica ___.",
+        "Solicito transferência para centro de trauma (cirurgia/UTI) — estabilizar antes de transferir."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "No atendimento ABCDE, paciente com TCE e Glasgow 7. Qual a conduta na etapa A?",
+      "alternativas": [
+        "Aguardar a tomografia antes de qualquer medida",
+        "Via aérea definitiva (intubação orotraqueal) com proteção da coluna cervical",
+        "Apenas oxigênio em cateter nasal",
+        "Iniciar a avaliação pela circulação",
+        "Administrar manitol antes de proteger a via aérea"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quais diagnósticos ameaçadores à vida devem ser identificados e tratados ainda na etapa B (respiração)?",
+      "alternativas": [
+        "Fratura de fêmur isolada",
+        "Pneumotórax hipertensivo, pneumotórax aberto, hemotórax maciço e tamponamento cardíaco",
+        "Lesão de extremidade",
+        "Hipoglicemia",
+        "Laceração de couro cabeludo"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual a conduta inicial de reposição volêmica na etapa C do ATLS?",
+      "alternativas": [
+        "Soro glicosado a 5% em grande volume",
+        "Ringer lactato aquecido (~39 C) com 2 acessos calibrosos e transfusão conforme a classe de choque",
+        "Restrição hídrica absoluta",
+        "Apenas coloides",
+        "Aguardar tipagem sanguínea antes de qualquer acesso"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual conjunto compõe a 'tríade letal' do trauma?",
+      "alternativas": [
+        "Febre, leucocitose e taquicardia",
+        "Hipotermia, acidose e coagulopatia",
+        "Hipertensão, bradicardia e apneia",
+        "Hiperglicemia, hipernatremia e desidratação",
+        "Dor, edema e equimose"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Na etapa D, qual confundidor deve ser SEMPRE descartado por uma medida simples à beira-leito?",
+      "alternativas": [
+        "Hipertensão intracraniana por TC",
+        "Hipoglicemia (HGT capilar)",
+        "Hipotireoidismo por TSH",
+        "Anemia por hemograma",
+        "Hipocalcemia por cálcio iônico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Glasgow <= 8 indica via aérea definitiva: IOT com proteção da coluna cervical (estabilização em linha). O 'A' do ATLS prioriza a via aérea antes de prosseguir; não se aguarda a TC para protegê-la."},
+    {"resposta": "B", "comentario": "No 'B', identificam-se e tratam-se imediatamente: pneumotórax hipertensivo (descompressão), pneumotórax aberto (curativo 3 pontas), hemotórax maciço (drenagem/toracotomia) e tamponamento cardíaco."},
+    {"resposta": "B", "comentario": "A reposição inicial é Ringer lactato AQUECIDO por 2 acessos calibrosos, indicando hemotransfusão precoce conforme a classe de choque (estratégia de controle de dano, ressuscitação balanceada)."},
+    {"resposta": "B", "comentario": "A tríade letal do trauma é hipotermia + acidose + coagulopatia, que se retroalimentam. Preveni-la (fluidos aquecidos, controle do sangramento, hemocomponentes) é central no controle de dano."},
+    {"resposta": "B", "comentario": "Na etapa D, a hipoglicemia deve ser descartada com o HGT capilar — é causa tratável e frequente de rebaixamento que confunde o quadro neurológico do trauma."}
+  ]
+}

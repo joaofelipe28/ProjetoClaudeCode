@@ -1,0 +1,198 @@
+{
+  "slug": "fast_trauma",
+  "titulo": "Trauma — Medidas Auxiliares e FAST",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Adjuntos da avaliação primária e FAST",
+  "chapter_bar": "TRAUMA — MEDIDAS AUXILIARES E FAST",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ADJUNTOS DA AVALIAÇÃO PRIMÁRIA",
+      "title": "FAST DEFINE CONDUTA NO INSTÁVEL",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Apos ABCDE: monitor + sondas + labs + RX (torax/pelve)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Politrauma contuso INSTAVEL\n+ exame abdominal nao confiavel -> FAST", "color": "orange", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "FAST + (liquido):\nlaparotomia /\ncontrole de dano", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "FAST - / estavel:\nTC corpo inteiro\n(se estavel)", "color": "teal", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "MONITORIZAÇÃO E SONDAS",
+      "section_color": "teal",
+      "titulo": "ADJUNTOS BÁSICOS",
+      "items": [
+        "Monitorização: SatO2, PA, FC, cardioscopia; CAPNOGRAFIA = padrão-ouro para confirmar IOT",
+        "Sondagem VESICAL: controle de diurese no trauma grave. Contra: URETRORRAGIA (chamar especialista/uretrocistografia)",
+        "  Hematúria e alteração prostática NÃO contraindicam; fratura de pelve e lesão perineal = contraindicação RELATIVA",
+        "Sondagem GÁSTRICA: todo paciente que vai ser intubado (alivia distensão, reduz broncoaspiração e resposta vagal)",
+        "  Suspeita de fratura de BASE DE CRÂNIO contraindica a via NASOgástrica (preferir orogástrica)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES LABORATORIAIS E IMAGEM",
+      "section_color": "navy",
+      "titulo": "O QUE PEDIR",
+      "items": [
+        "SEMPRE: tipagem sanguínea e Rh, gasometria arterial, beta-hCG em mulheres em idade fértil",
+        "CONSIDERAR: hemograma, coagulograma, plaquetas, provas de função orgânica",
+        "RX: NUNCA atrasar transferência/tratamento; RX de TÓRAX e de PELVE fazem parte da avaliação primária",
+        "RX de cervical em casos selecionados; demais radiografias sob demanda",
+        "TC de corpo inteiro: apenas no ESTÁVEL (reduz mortalidade/erro em trauma grave — alta energia, queda de altura, atropelamento)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "FAST / E-FAST — INDICAÇÃO",
+      "section_color": "purple",
+      "titulo": "FOCUSED ASSESSMENT WITH SONOGRAPHY FOR TRAUMA",
+      "items": [
+        "Rápido, barato, à beira-leito, portátil; complementa o exame físico (detecta ~200 mL de líquido em 1 min)",
+        "INDICAÇÃO: politraumatizado com trauma CONTUSO, exame abdominal não confiável e INSTABILIDADE hemodinâmica",
+        "FAST positivo no instável = DEFINE CONDUTA (laparotomia/controle de dano)",
+        "Mais sensível que o RX e mais rápido que a TC",
+        "50% dos traumas graves não têm exame físico abdominal confiável"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "JANELAS DO FAST",
+      "section_color": "navy",
+      "headers": ["Janela", "Localização", "Avalia"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Hepatorrenal (Morrison)", "Linha axilar média, 12a costela à direita", "Líquido livre (a + sensível)"],
+        ["Esplenorrenal", "Linha axilar posterior, 10a costela à esquerda", "Líquido livre"],
+        ["Suprapúbica", "1-2 cm acima do púbis", "Líquido livre pélvico"],
+        ["Pericárdica (subxifoide)", "Subxifoide", "Derrame pericárdico/tamponamento"],
+        ["Pulmonares (E-FAST)", "Ápices e bases bilaterais", "Pneumotórax e hemotórax"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "E-FAST PULMONAR — ACHADOS",
+      "section_color": "navy",
+      "titulo": "PNEUMOTÓRAX E HEMOTÓRAX",
+      "items": [
+        "Lung sliding presente (sinal da PRAIA) = pleuras deslizando = normal",
+        "Ausência de lung sliding (sinal do CÓDIGO DE BARRAS) = sugestivo de pneumotórax (não confirma isoladamente)",
+        "LUNG POINT = ponto de parada abrupta do sliding = PATOGNOMÔNICO de pneumotórax",
+        "Hemotórax: líquido (anecóico/preto) acima do diafragma",
+        "Linhas A (horizontais) = normal; linhas B (verticais) acompanham o lung sliding"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "LIMITAÇÕES DO FAST (falsos-negativos)",
+      "section_color": "red",
+      "titulo": "ONDE O FAST FALHA",
+      "items": [
+        "Retroperitônio, vísceras ocas e lesões de aorta",
+        "Laceração pericárdica, derrame pleural",
+        "Enfisema de subcutâneo, obesidade, mau posicionamento",
+        "FAST negativo NÃO exclui lesão — no estável, complementar com TC",
+        "No instável com FAST negativo persistente, buscar outras fontes (pelve, tórax, externo)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DOS ADJUNTOS",
+      "titulo": "APÓS O ABCDE",
+      "items": [
+        "Monitorização completa + capnografia se intubado",
+        "Sonda vesical (checar uretrorragia) e gástrica (orogástrica se suspeita de fratura de base de crânio)",
+        "Tipagem/Rh, gasometria, beta-hCG; RX de tórax e pelve",
+        "FAST no instável com trauma contuso (define laparotomia); TC de corpo inteiro só no estável",
+        "Nunca atrasar a transferência para fazer exames"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Politrauma por ___; FAST: positivo/negativo (janela ___); E-FAST: pneumo/hemotórax?",
+        "RX tórax/pelve: ___; sondas (vesical/gástrica): ___; tipagem solicitada.",
+        "Estabilidade hemodinâmica: ___; conduta definida pelo FAST: ___ (laparotomia/observação/TC).",
+        "Solicito transferência a centro de trauma; estabilizar antes de transferir."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Politraumatizado por trauma contuso, instável, com exame abdominal não confiável. Qual exame define a conduta à beira-leito?",
+      "alternativas": [
+        "Tomografia de corpo inteiro imediata",
+        "FAST (positivo indica laparotomia/controle de dano)",
+        "Ressonância de abdome",
+        "Lavado peritoneal de rotina",
+        "Aguardar estabilização para qualquer imagem"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é uma contraindicação à sondagem vesical no trauma?",
+      "alternativas": [
+        "Hematúria microscópica",
+        "Uretrorragia (sangue no meato uretral)",
+        "Alteração prostática",
+        "Diurese reduzida",
+        "Dor abdominal"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado ultrassonográfico é patognomônico de pneumotórax?",
+      "alternativas": [
+        "Lung sliding presente",
+        "Lung point (ponto de parada abrupta do deslizamento pleural)",
+        "Linhas B abundantes",
+        "Sinal da praia",
+        "Líquido na janela de Morrison"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Quais radiografias fazem parte da avaliação primária do trauma?",
+      "alternativas": [
+        "Crânio e coluna lombar",
+        "Tórax e pelve",
+        "Mãos e pés",
+        "Seios da face",
+        "Abdome agudo em 3 incidências"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando a sonda gástrica deve ser passada por via OROgástrica em vez de nasogástrica?",
+      "alternativas": [
+        "Sempre que houver hematúria",
+        "Na suspeita de fratura de base de crânio",
+        "Em fratura de fêmur",
+        "Em pneumotórax",
+        "Nunca há diferença"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No trauma contuso instável com exame abdominal não confiável, o FAST é o exame que define a conduta à beira-leito: se positivo (líquido livre), indica laparotomia/controle de dano. A TC fica para o estável."},
+    {"resposta": "B", "comentario": "A uretrorragia (sangue no meato) contraindica a sondagem vesical às cegas (risco de falso trajeto em lesão uretral) — chamar especialista/uretrocistografia. Hematúria e alteração prostática não contraindicam; fratura de pelve é contraindicação relativa."},
+    {"resposta": "B", "comentario": "O lung point (transição abrupta entre área com e sem deslizamento pleural) é patognomônico de pneumotórax. A ausência isolada de lung sliding é sugestiva, mas não confirma (ocorre em IOT seletiva, fibrose, etc.)."},
+    {"resposta": "B", "comentario": "As radiografias de TÓRAX e de PELVE integram a avaliação primária do trauma (detectam lesões torácicas e fraturas pélvicas com sangramento). Demais radiografias são feitas sob demanda."},
+    {"resposta": "B", "comentario": "Na suspeita de fratura de base de crânio, evita-se a via nasogástrica (risco de passagem intracraniana) e prefere-se a sonda OROgástrica."}
+  ]
+}

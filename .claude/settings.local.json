@@ -47,7 +47,9 @@
       "Bash(sips -s format png apostila_angina_ludwig.pdf --out /tmp/ang_chk.png)",
       "Bash(cd /Users/joaofelipescheidt/ProjetoClaudeCode/sm24_fase2)",
       "Bash(sips -s format png apostila_disturbios_acido_base.pdf --out /tmp/ab_chk.png)",
-      "Bash(sips -s format png apostila_disturbios_calcio.pdf --out /tmp/ca_chk.png)"
+      "Bash(sips -s format png apostila_disturbios_calcio.pdf --out /tmp/ca_chk.png)",
+      "Bash(sips -s format png apostila_atendimento_inicial_trauma.pdf --out /tmp/abcde_chk.png)",
+      "Bash(sips -s format png apostila_trauma_cervical.pdf --out /tmp/cerv_chk.png)"
     ]
   }
 }

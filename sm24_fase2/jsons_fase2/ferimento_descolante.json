@@ -1,0 +1,167 @@
+{
+  "slug": "ferimento_descolante",
+  "titulo": "Ferimento Descolante (Degloving)",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Ferimento descolante no PS",
+  "chapter_bar": "FERIMENTO DESCOLANTE — CISALHAMENTO DA PELE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "DESCOLANTE — ATLS, DEPOIS A LESÃO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Trauma de alta energia + descolamento da pele\n(avaliar viabilidade/vascularizacao)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 24, "text": "INSTAVEL:\ndesbridamento +\ncurativo temporario", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 24, "text": "ESTAVEL:\ntratar conforme\nextensao/perda", "color": "teal", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.15, "w": 200, "h": 18, "text": "Fechamento primario = alto risco de falha", "color": "orange", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Trauma de ALTA energia -> cisalhamento da pele -> descolamento dos planos profundos",
+        "Compromete a vascularização arterial e/ou venosa do retalho cutâneo (risco de necrose)",
+        "Fechamento PRIMÁRIO tem ALTO risco de falha (a pele descolada frequentemente não é viável)",
+        "Localização mais comum: MEMBROS INFERIORES (~90%)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "APRESENTAÇÃO",
+      "section_color": "purple",
+      "titulo": "RECONHECER",
+      "items": [
+        "Extensão e perda cutânea VARIÁVEIS",
+        "Tipicamente POUCO sangramento (engana sobre a gravidade)",
+        "Pode ser ISOLADO ou ASSOCIADO a outras lesões (fraturas, trauma de alta energia)",
+        "Descolante OCULTO (lesão de Morel-Lavallée): coleção entre o subcutâneo e a fáscia, sem ferida aberta",
+        "Avaliar a viabilidade do retalho (cor, sangramento de bordas, temperatura)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — POR CENÁRIO",
+      "section_color": "orange",
+      "titulo": "CONDUTA",
+      "items": [
+        "Sempre 1o o ATLS (descolante é de alta energia e pode haver lesões associadas)",
+        "Paciente INSTÁVEL: desbridamento + curativo temporário (controle de dano); fechamento primário nem sempre é a melhor opção",
+        "Morel-Lavallée PEQUENO: conservador — esvaziamento por punção + curativos compressivos",
+        "EXTENSO ou com perda tecidual: cirurgia — desbridamento, drenagem/aspiração, enxertia, retalho, escleroterapia",
+        "Profilaxia antitetânica; analgesia; antibiótico conforme contaminação"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS / CUIDADOS",
+      "section_color": "red",
+      "titulo": "ATENÇÃO",
+      "items": [
+        "Não subestimar pelo pouco sangramento — a área desvascularizada pode evoluir para necrose extensa",
+        "Avaliar e tratar lesões associadas (fraturas, neurovasculares) — alta energia",
+        "Síndrome compartimental e infecção são complicações a vigiar",
+        "Fechamento primário sob tensão de retalho não viável = falha e necrose",
+        "Encaminhar à cirurgia plástica/ortopedia/cirurgia conforme extensão e estruturas envolvidas"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PASSOS",
+      "items": [
+        "ATLS + buscar lesões associadas; controlar hemorragia",
+        "Avaliar extensão, perda cutânea e viabilidade do retalho",
+        "Instável: desbridamento + curativo temporário (damage control)",
+        "Morel-Lavallée pequeno: punção + compressivo; extenso/perda: cirurgia (desbridamento/enxerto/retalho)",
+        "Antitetânica, analgesia, antibiótico se contaminado; encaminhar especialista"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Ferimento descolante por ___ (alta energia), localização ___ (MMII?), extensão/perda ___.",
+        "Viabilidade do retalho: ___; lesões associadas (fraturas/neurovasculares): ___.",
+        "Conduta: desbridamento + curativo temporário / punção (Morel-Lavallée) / enxerto-retalho.",
+        "Antitetânica feita. Solicito avaliação de cirurgia plástica/ortopedia (estabilizar antes)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Sobre o fechamento primário no ferimento descolante extenso, é correto:",
+      "alternativas": [
+        "É sempre a melhor opção",
+        "Tem ALTO risco de falha, pois a pele descolada frequentemente não é viável",
+        "Elimina a necessidade de desbridamento",
+        "Está indicado mesmo em retalho inviável",
+        "Não há risco de necrose"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a localização mais comum do ferimento descolante?",
+      "alternativas": [
+        "Membros superiores",
+        "Membros inferiores (~90%)",
+        "Couro cabeludo",
+        "Tórax",
+        "Abdome"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "A lesão de Morel-Lavallée corresponde a:",
+      "alternativas": [
+        "Fratura exposta",
+        "Descolante OCULTO (coleção entre subcutâneo e fáscia, sem ferida aberta)",
+        "Queimadura de 3o grau",
+        "Hematoma intracraniano",
+        "Lesão de víscera oca"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Lesão de Morel-Lavallée pequena. Qual a conduta conservadora?",
+      "alternativas": [
+        "Desbridamento cirúrgico amplo imediato",
+        "Esvaziamento por punção e curativos compressivos",
+        "Apenas observação sem intervenção",
+        "Enxertia imediata",
+        "Amputação"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Por que o ferimento descolante pode ser subestimado no atendimento inicial?",
+      "alternativas": [
+        "Porque sempre sangra muito",
+        "Porque costuma sangrar pouco, mascarando a gravidade e o risco de necrose da área desvascularizada",
+        "Porque não se associa a outras lesões",
+        "Porque nunca evolui com necrose",
+        "Porque é sempre superficial"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No descolante extenso, o fechamento primário tem alto risco de falha porque a pele descolada perdeu a vascularização e frequentemente não é viável, evoluindo para necrose. Avalia-se a viabilidade e prefere-se desbridamento/enxerto/retalho."},
+    {"resposta": "B", "comentario": "Os membros inferiores são a localização mais comum (~90%) do ferimento descolante, geralmente por mecanismos de alta energia com cisalhamento (ex.: atropelamento)."},
+    {"resposta": "B", "comentario": "A lesão de Morel-Lavallée é o descolante OCULTO: uma coleção (linfa/sangue) entre o tecido subcutâneo e a fáscia muscular, sem solução de continuidade da pele."},
+    {"resposta": "B", "comentario": "Morel-Lavallée pequeno pode ser tratado conservadoramente com esvaziamento por punção e curativos compressivos; coleções extensas ou com perda tecidual exigem abordagem cirúrgica."},
+    {"resposta": "B", "comentario": "O descolante costuma sangrar pouco, o que mascara a gravidade; a área desvascularizada pode evoluir para necrose extensa, e há lesões associadas (alta energia) — por isso não deve ser subestimado."}
+  ]
+}

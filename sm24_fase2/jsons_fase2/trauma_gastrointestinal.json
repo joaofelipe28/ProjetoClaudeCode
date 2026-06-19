@@ -1,0 +1,182 @@
+{
+  "slug": "trauma_gastrointestinal",
+  "titulo": "Trauma do Trato Gastrointestinal",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Trauma do TGI no PS",
+  "chapter_bar": "TRAUMA DO TRATO GASTROINTESTINAL",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — VÍSCERA OCA",
+      "title": "TRAUMA DE TGI — VÍSCERA OCA É CIRÚRGICO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Suspeita de lesao de viscera oca\n(pneumoperitonio, sangue retal, cinto de seguranca)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 24, "text": "Penetrante / lesao\nconfirmada ->\nLAPAROTOMIA", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 24, "text": "Estavel, duvida ->\nTC c/ contraste\n(+ EDA se esofago)", "color": "teal", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Instavel -> damage control + revisao em 48-72h", "color": "orange", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E SUSPEITA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Lesão de víscera oca por trauma; mais comum no PENETRANTE (contuso protege esôfago/estômago/duodeno)",
+        "Lesão de víscera oca / TGI é SEMPRE cirúrgica no trauma penetrante",
+        "Suspeita: pneumoperitônio, sangue na sonda gástrica/toque retal, achados na TC",
+        "Esôfago/estômago/duodeno: trauma raro; delgado/cólon/reto: associados a mecanismos específicos"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — DELGADO, CÓLON E RETO",
+      "section_color": "purple",
+      "titulo": "PISTAS DE LESÃO",
+      "items": [
+        "SINAL DO CINTO DE SEGURANÇA + fratura de Chance (vertebral)",
+        "Líquido livre SEM lesão de víscera parenquimatosa; pneumoperitônio",
+        "Mecanismo: queda de tanque/guidão de bicicleta sobre o tronco",
+        "Hematoma de mesentério, alterações de parede da alça na TC",
+        "TOQUE RETAL com sangue (lesão de reto)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESÔFAGO, ESTÔMAGO E DUODENO",
+      "section_color": "navy",
+      "headers": ["Órgão", "Conduta cirúrgica"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.22, 0.78],
+      "rows": [
+        ["Esôfago", "Rafia primária + reforço (fundoplicatura) + drenagem; gastro/jejunostomia. Casos graves: esofagectomia"],
+        ["Estômago", "Lesão < 3 cm: rafia em 2 planos. Maiores: gastrectomia subtotal. Drenagem ampla se reconstrução"],
+        ["Duodeno", "Rafia em 2 planos + drenagem ampla; derivação para desvio do trânsito se necessário. GDP é exceção (destruições)"],
+        ["Achado intraoperatório", "Inspeção completa (parede anterior E posterior); na dúvida, 'teste do borracheiro'; lavagem e busca ativa de outras lesões"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DELGADO, CÓLON E RETO",
+      "section_color": "navy",
+      "headers": ["Órgão", "Compensado", "Damage control / grave"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.18, 0.42, 0.40],
+      "rows": [
+        ["Delgado", "Enterectomia + enteroanastomose", "Sepultamento e revisão em 48-72h"],
+        ["Cólon", "Pequena: rafia | Grande: colectomia segmentar + anastomose", "Damage control; colostomia em casos muito graves"],
+        ["Reto intraperitoneal", "Pequena: rafia 2 planos | Maior: rafia + drenagem + colostomia em alça + lavagem distal", "Semelhante ao cólon"],
+        ["Reto extraperitoneal", "Acesso fácil: como intraperitoneal", "Difícil acesso: drenar + ostomia + lavagem (4 Ds)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONCEITO — 4 Ds DO TRAUMA DE RETO",
+      "section_color": "orange",
+      "titulo": "RETO EXTRAPERITONEAL",
+      "items": [
+        "Desbridamento",
+        "Derivar (colostomia)",
+        "Drenagem",
+        "Distal (lavagem do coto distal)",
+        "Reto intraperitoneal -> manejo semelhante ao cólon; extraperitoneal de difícil acesso -> 4 Ds"
+      ],
+      "accent": "orange",
+      "bg": "orange_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PASSOS",
+      "items": [
+        "ABCDE; identificar sinais de lesão de víscera oca (pneumoperitônio, sangue na SNG/toque, cinto de segurança)",
+        "Penetrante com lesão de TGI = laparotomia (acionar cirurgia geral)",
+        "Estável com dúvida = TC com contraste (EDA pode preceder em suspeita de lesão esofágica)",
+        "Instável = controle de dano (damage control) com revisão em 48-72h",
+        "Sempre buscar lesões associadas; inspeção da parede anterior e posterior na cirurgia"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Trauma de TGI ___ (penetrante/contuso); órgão suspeito: ___ (esôfago/estômago/duodeno/delgado/cólon/reto).",
+        "Pistas: pneumoperitônio / sangue retal / cinto de segurança / TC ___. Estabilidade: ___.",
+        "Conduta: laparotomia / damage control / TC. Lesões associadas: ___.",
+        "Solicito centro com cirurgia geral 24h / UTI / banco de sangue."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Ferimento penetrante abdominal com pneumoperitônio e sinais de lesão de víscera oca. Conduta?",
+      "alternativas": [
+        "Tratamento não operatório com observação",
+        "Laparotomia (lesão de víscera oca por trauma penetrante é cirúrgica)",
+        "Apenas antibiótico",
+        "Endoscopia ambulatorial",
+        "Alta com dieta zero"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado sugere lesão de víscera oca no trauma abdominal contuso?",
+      "alternativas": [
+        "Fratura de fêmur isolada",
+        "Sinal do cinto de segurança, fratura de Chance, pneumoperitônio e toque retal com sangue",
+        "Cefaleia",
+        "Hematúria isolada microscópica",
+        "Escoriação superficial"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é a conduta para uma lesão gástrica menor que 3 cm em paciente compensado?",
+      "alternativas": [
+        "Gastrectomia total",
+        "Rafia em 2 planos",
+        "Apenas drenagem",
+        "Colostomia",
+        "Observação sem cirurgia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Os '4 Ds' do trauma de reto extraperitoneal incluem:",
+      "alternativas": [
+        "Diálise, diurético, dieta, drenagem",
+        "Desbridamento, derivar (colostomia), drenagem e lavagem distal",
+        "Drenagem, dipirona, dieta, deambulação",
+        "Descompressão, diálise, drogas, dieta",
+        "Não há conduta padronizada"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "No paciente INSTÁVEL com lesão complexa de delgado/cólon, qual a estratégia cirúrgica?",
+      "alternativas": [
+        "Anastomose primária imediata sempre",
+        "Damage control (sepultamento) com revisão em 48-72h",
+        "Apenas rafia simples e fechamento definitivo",
+        "Observação clínica",
+        "Colonoscopia de urgência"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Lesão de víscera oca por trauma penetrante é SEMPRE cirúrgica: indica-se laparotomia. Pneumoperitônio confirma a indicação. O tratamento não operatório aplica-se a lesões de vísceras parenquimatosas selecionadas."},
+    {"resposta": "B", "comentario": "Sinal do cinto de segurança, fratura de Chance, pneumoperitônio, líquido livre sem lesão parenquimatosa e toque retal com sangue sugerem lesão de víscera oca no trauma contuso."},
+    {"resposta": "B", "comentario": "Lesão gástrica < 3 cm em paciente compensado pode ser tratada com rafia em 2 planos; lesões maiores exigem gastrectomia subtotal, com drenagem ampla se houver reconstrução."},
+    {"resposta": "B", "comentario": "Os 4 Ds do trauma de reto (extraperitoneal) são: Desbridamento, Derivar (colostomia), Drenagem e lavagem Distal do coto — usados quando o acesso direto é difícil."},
+    {"resposta": "B", "comentario": "No paciente instável com lesão complexa, aplica-se controle de dano (damage control): sepultamento/abordagem abreviada e revisão em 48-72h após estabilização, evitando anastomoses definitivas no choque."}
+  ]
+}

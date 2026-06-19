@@ -1,0 +1,181 @@
+{
+  "slug": "trauma_vascular_extremidades",
+  "titulo": "Trauma Vascular de Extremidades",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Trauma Vascular de Membros no PS",
+  "chapter_bar": "TRAUMA VASCULAR DE EXTREMIDADES",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — PULSO E TRAJETO",
+      "title": "TRAUMA VASCULAR — ABCDE, ALINHAR, AVALIAR PULSO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "ATLS - alinhar e imobilizar o membro\navaliar perfusao, motricidade, PULSOS", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 26, "text": "CONTUSO sem pulso:\nfixar fratura ->\nse persiste, arteriografia", "color": "orange", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "PENETRANTE sem pulso:\nexploracao cirurgica\n(revascularizacao)", "color": "red", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Isquemia > 6h -> considerar FASCIOTOMIA", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CONCEITOS BÁSICOS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Modalidade: PENETRANTE (facada, arma de fogo, empalamento) x CONTUSO (fraturas, esmagamento, estiramento)",
+        "Pode ou não estar associado a fraturas ósseas",
+        "Pacientes em geral JOVENS, sem circulação colateral (toleram mal a isquemia)",
+        "1o passo SEMPRE: atendimento ao traumatizado pelo ATLS"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "AVALIAÇÃO E CONFUNDIDORES",
+      "section_color": "purple",
+      "titulo": "APÓS ALINHAR E IMOBILIZAR",
+      "items": [
+        "Após o ATLS, o membro deve estar ALINHADO e IMOBILIZADO",
+        "Avaliação completa de PERFUSÃO e MOTRICIDADE + palpação de pulsos (comparar com o contralateral)",
+        "Confundidores do exame: déficit neurológico secundário a fratura, à isquemia ou à lesão de nervo",
+        "Ausência de pulso pode ser por lesão vascular OU vasoespasmo",
+        "O exame físico NÃO topografa a lesão exata no trauma contuso"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONDUTA — CONTUSO x PENETRANTE",
+      "section_color": "navy",
+      "headers": ["Cenário", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.32, 0.68],
+      "rows": [
+        ["Contuso SEM pulso", "1a etapa: fixação da fratura (ortopedia). Se PERSISTE sem pulso -> ARTERIOGRAFIA diagnóstica (não dá para topografar pelo exame)"],
+        ["Contuso COM pulso", "Avaliar perfusão/motricidade; atenção à luxação de joelho (alto risco de lesão de poplítea)"],
+        ["Penetrante SEM pulso", "Exploração CIRÚRGICA de revascularização (controle vascular + exploração do local presumido)"],
+        ["Penetrante COM pulso", "Se trajeto compatível com feixe vascular -> imagem não invasiva (lesão parcial). Se não compatível -> não prosseguir investigação"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — ISQUEMIA E LUXAÇÃO DE JOELHO",
+      "section_color": "red",
+      "titulo": "NÃO SUBESTIMAR",
+      "items": [
+        "Luxação/instabilidade de JOELHO: alto risco de lesão INTIMAL da artéria POPLÍTEA -> trombose e isquemia",
+        "  -> SEMPRE imagem (AngioTC/arteriografia) MESMO com todos os pulsos presentes na avaliação inicial",
+        "Isquemia de membro > 6h -> considerar FASCIOTOMIA (prevenir síndrome compartimental)",
+        "Penetrante sem pulso = exploração cirúrgica (não atrasar com exames)",
+        "Sinais 'duros' de lesão vascular (sangramento pulsátil, hematoma expansivo, isquemia franca) -> cirurgia"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ENXERTO NO TRAUMA VASCULAR",
+      "section_color": "orange",
+      "titulo": "PRINCÍPIOS DA REVASCULARIZAÇÃO",
+      "items": [
+        "Sempre PRESUMIR lesão concomitante do sistema venoso profundo",
+        "Enxerto com veia SAFENA CONTRALATERAL (evita insuficiência venosa/congestão no membro traumatizado)",
+        "Veia INVERTIDA (válvulas); preferir o MENOR enxerto possível",
+        "Anastomose término-terminal com diâmetros semelhantes (economiza tempo)",
+        "Atenção a lesão de nervo concomitante; reavaliar perfusão após revascularizar"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PASSOS",
+      "items": [
+        "ATLS; controlar hemorragia externa (compressão; torniquete se exsanguinante)",
+        "Alinhar e imobilizar o membro; avaliar perfusão, motricidade e pulsos comparados",
+        "Contuso sem pulso: fixar fratura e reavaliar; se persiste -> arteriografia",
+        "Penetrante sem pulso: cirurgia; luxação de joelho: imagem mesmo com pulso",
+        "Isquemia > 6h -> fasciotomia; acionar cirurgia vascular e transferir se necessário"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Trauma vascular de extremidade ___ (contuso/penetrante), membro ___; fratura associada: ___.",
+        "Pulsos distais: presentes/ausentes; perfusão/motricidade: ___; tempo de isquemia: ___ h.",
+        "Conduta: fixação + arteriografia / exploração cirúrgica / fasciotomia.",
+        "Solicito cirurgia vascular + hemodinâmica/centro cirúrgico (tempo de isquemia é crítico)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Trauma penetrante (arma de fogo) em coxa, ausência de pulso pedioso e tibial posterior. Conduta?",
+      "alternativas": [
+        "Apenas observação e elevação do membro",
+        "Exploração cirúrgica de revascularização (controle vascular e exploração do trajeto)",
+        "Arteriografia eletiva ambulatorial",
+        "Imobilização e alta",
+        "Aguardar retorno espontâneo do pulso"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com luxação de joelho, mas com todos os pulsos distais presentes. Conduta correta?",
+      "alternativas": [
+        "Alta, pois os pulsos estão presentes",
+        "Realizar imagem vascular (AngioTC/arteriografia) pelo alto risco de lesão da artéria poplítea",
+        "Apenas imobilizar",
+        "Fasciotomia imediata",
+        "Repetir exame em 30 dias"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "No trauma vascular CONTUSO sem pulso, qual é a primeira etapa antes da investigação vascular?",
+      "alternativas": [
+        "Arteriografia imediata",
+        "Fixação da fratura (ortopedia) e reavaliação do pulso",
+        "Exploração cirúrgica imediata",
+        "Fasciotomia",
+        "Enxerto de safena"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "A partir de quanto tempo de isquemia de membro deve-se considerar fasciotomia para prevenir síndrome compartimental?",
+      "alternativas": [
+        "1 hora",
+        "Mais de 6 horas",
+        "24 horas",
+        "48 horas",
+        "Nunca é indicada"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre o enxerto na revascularização de trauma vascular de extremidade, é correto:",
+      "alternativas": [
+        "Usar a veia safena ipsilateral ao trauma",
+        "Usar veia safena CONTRALATERAL invertida (evita insuficiência venosa no membro traumatizado)",
+        "Sempre material protético",
+        "Anastomose látero-lateral ampla",
+        "Nunca presumir lesão venosa associada"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Trauma penetrante sem pulso = lesão vascular presumida com trajeto topografável -> exploração cirúrgica de revascularização, sem atrasar com exames. O trauma penetrante permite presumir a localização da lesão."},
+    {"resposta": "B", "comentario": "A luxação de joelho tem alto risco de lesão intimal da artéria poplítea (trombose/isquemia tardias); por isso indica-se imagem vascular MESMO com pulsos presentes na avaliação inicial."},
+    {"resposta": "B", "comentario": "No contuso sem pulso, a 1a etapa é a fixação da fratura (o desalinhamento pode causar a ausência de pulso); se o pulso persistir ausente após a fixação, faz-se arteriografia (o exame não topografa a lesão)."},
+    {"resposta": "B", "comentario": "Isquemia de membro > 6h aumenta muito o risco de síndrome compartimental de reperfusão; nesses casos considera-se fasciotomia para descomprimir e preservar o membro."},
+    {"resposta": "B", "comentario": "Prefere-se a veia safena CONTRALATERAL invertida: usar a safena ipsilateral pioraria a drenagem venosa do membro traumatizado (que frequentemente tem lesão venosa profunda associada), causando congestão."}
+  ]
+}

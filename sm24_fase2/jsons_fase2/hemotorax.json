@@ -1,0 +1,197 @@
+{
+  "slug": "hemotorax",
+  "titulo": "Hemotórax",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Hemotórax no PS",
+  "chapter_bar": "HEMOTÓRAX — DRENAR E QUANTIFICAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — SIMPLES x MACIÇO",
+      "title": "HEMOTÓRAX — DRENO É DIAGNÓSTICO E TRATAMENTO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Trauma toracico + MV abolido + MACICEZ a percussao", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "DRENAGEM TORACICA + quantificar debito", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Simples:\nselo d'agua +\nmonitorar debito", "color": "green", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 26, "text": "MACICO (>1500mL):\ntransfusao +\nTORACOTOMIA", "color": "red", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CLASSIFICAÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Presença de SANGUE entre o pulmão e a parede torácica",
+        "SIMPLES x MACIÇO (emergência cirúrgica)",
+        "Causas: trauma contuso/penetrante; iatrogênico (toracocentese, dreno, CVC); espontâneo (raro)",
+        "Origem do sangramento: laceração pulmonar, artéria intercostal, artéria mamária interna, vasos intratorácicos"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR E EXAME FÍSICO",
+      "section_color": "purple",
+      "titulo": "PISTAS",
+      "items": [
+        "Trauma recente (mecanismo de alta energia, arma branca/fogo) ou procedimento recente",
+        "Dor torácica, dispneia progressiva; anticoagulante/discrasia",
+        "Geral: palidez, sudorese, taquicardia, hipotensão, taquipneia (sinais de choque)",
+        "Percussão: MACICEZ/submacicez (diferencia do pneumotórax, que é hipertimpânico)",
+        "Ausculta: MV reduzido/abolido ipsilateral; pode coexistir com pneumotórax"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — HEMOTÓRAX MACIÇO",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA CIRÚRGICA",
+      "items": [
+        "Definição: > 1.500 mL de sangue na cavidade pleural",
+        "OU após drenagem: débito inicial > 1.500 mL, ou sangramento > 200 mL/h por 2-4h",
+        "Choque hemorrágico: hipotensão, taquicardia, palidez intensa, rebaixamento, dispneia grave",
+        "Conduta: drenagem imediata + reposição volêmica + protocolo de transfusão maciça + TORACOTOMIA de urgência",
+        "Drenagem NÃO é o tratamento definitivo no maciço — serve para diagnóstico, alívio e quantificação"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO E PRESCRIÇÃO",
+      "section_color": "orange",
+      "titulo": "DRENAR + SUPORTE",
+      "items": [
+        "Hemotórax SIMPLES: drenagem torácica em selo d'água (resolve a maioria) + O2 + analgesia + monitorização",
+        "  Avaliação SERIADA do débito do dreno (decide cirurgia)",
+        "O2 suplementar (SatO2 > 94%); 2 acessos venosos calibrosos",
+        "Cristaloides aquecidos com critério + hemocomponentes conforme necessidade",
+        "Analgesia (opioide se necessário); profilaxia de TEV só APÓS controle do sangramento",
+        "Antibioticoprofilaxia: avaliar caso a caso no trauma penetrante"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES",
+      "section_color": "navy",
+      "titulo": "ESTÁVEL x INSTÁVEL",
+      "items": [
+        "INSTÁVEL: NÃO atrasar o tratamento para exames",
+        "RX de tórax: velamento do seio costofrênico, opacidade homogênea",
+        "USG (eFAST): rápido e útil no trauma (líquido acima do diafragma)",
+        "TC de tórax: apenas se estável (planejamento cirúrgico)",
+        "Tipagem/prova cruzada precoce; gasometria/lactato"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ERROS COMUNS A EVITAR",
+      "section_color": "red",
+      "titulo": "NÃO FAZER",
+      "items": [
+        "Subestimar hemotórax no trauma contuso",
+        "Não quantificar o débito do dreno (perde o critério de toracotomia)",
+        "Atrasar a drenagem torácica",
+        "Manter paciente instável sem acionar o centro cirúrgico",
+        "Aguardar TC em paciente em choque"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO E ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: todo hemotórax drenado, trauma torácico moderado/grave, risco de ressangramento, observação pós-trauma",
+        "ALTA: assintomático, estável, DRENO RETIRADO, RX de controle satisfatório, sem sangramento ativo",
+        "Orientações: evitar esforços; retornar se dispneia, dor torácica, tontura/síncope",
+        "Seguimento ambulatorial definido",
+        "Estabilizar ao máximo antes de transferir"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Hemotórax ___ (simples/maciço) pós-trauma ___ (contuso/penetrante) à ___.",
+        "Volume drenado inicial ___ mL; débito atual ___ mL/h; estado hemodinâmico ___.",
+        "Reposição volêmica/transfusional realizada: ___; RX/FAST: ___.",
+        "Ex.: hemotórax pós-trauma penetrante, drenado 1.600 mL com sangramento persistente, instável -> toracotomia em terciário."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Vítima de trauma torácico penetrante, drenagem com débito inicial de 1.600 mL e sangramento persistente, instável. Qual a conduta?",
+      "alternativas": [
+        "Manter apenas o dreno e observar",
+        "Reposição volêmica/transfusão + toracotomia de urgência (hemotórax maciço)",
+        "Retirar o dreno",
+        "Aguardar a tomografia",
+        "Alta com analgésico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado ao exame físico ajuda a diferenciar hemotórax de pneumotórax?",
+      "alternativas": [
+        "Hipertimpanismo à percussão",
+        "Macicez à percussão (no hemotórax) versus hipertimpanismo (no pneumotórax)",
+        "Murmúrio vesicular aumentado",
+        "Sopro tubário",
+        "Estertores crepitantes bilaterais"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Como se define hemotórax maciço?",
+      "alternativas": [
+        "> 500 mL de sangue na cavidade pleural",
+        "> 1.500 mL na cavidade, ou débito inicial > 1.500 mL, ou > 200 mL/h por 2-4h",
+        "Qualquer hemotórax drenado",
+        "Apenas se houver pneumotórax associado",
+        "> 100 mL de sangue"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a drenagem torácica no hemotórax maciço, é correto:",
+      "alternativas": [
+        "É o tratamento definitivo isoladamente",
+        "Serve para diagnóstico, alívio ventilatório e quantificação; sangramento persistente indica toracotomia",
+        "Está contraindicada",
+        "Deve ser adiada até a TC",
+        "Substitui a reposição volêmica"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é um erro comum a evitar no manejo do hemotórax?",
+      "alternativas": [
+        "Quantificar o débito do dreno",
+        "Não quantificar o débito do dreno (perde o critério de toracotomia)",
+        "Drenar precocemente",
+        "Acionar o centro cirúrgico no instável",
+        "Reservar a TC para o estável"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Débito inicial > 1.500 mL com sangramento persistente em paciente instável caracteriza hemotórax maciço: reposição volêmica/transfusão maciça + toracotomia de urgência. O dreno isolado não resolve o sangramento ativo."},
+    {"resposta": "B", "comentario": "À percussão, o hemotórax é MACIÇO (submacicez) pelo líquido, enquanto o pneumotórax é HIPERTIMPÂNICO pelo ar. Ambos reduzem o murmúrio vesicular ipsilateral e podem coexistir."},
+    {"resposta": "B", "comentario": "Hemotórax maciço = > 1.500 mL na cavidade, OU débito inicial de drenagem > 1.500 mL, OU sangramento contínuo > 200 mL/h por 2-4h — critérios que indicam toracotomia."},
+    {"resposta": "B", "comentario": "A drenagem no hemotórax maciço é diagnóstica, alivia a ventilação e quantifica o sangramento, mas não é definitiva: sangramento persistente é indicação de toracotomia. A reposição volêmica corre em paralelo."},
+    {"resposta": "B", "comentario": "Não quantificar o débito do dreno é erro comum: perde-se o critério objetivo de toracotomia (>1.500 mL inicial ou >200 mL/h). Drenar cedo, acionar o cirúrgico no instável e reservar TC ao estável são condutas corretas."}
+  ]
+}

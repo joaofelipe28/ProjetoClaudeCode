@@ -1,0 +1,184 @@
+{
+  "slug": "tce_adulto",
+  "titulo": "Trauma Cranioencefálico (TCE) no Adulto",
+  "especialidade": "NEUROLOGIA",
+  "chapter_subject": "TCE no adulto no PS",
+  "chapter_bar": "TCE NO ADULTO — GLASGOW, TC E METAS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — GRAVIDADE PELO GLASGOW",
+      "title": "TCE — ABCDE, GLASGOW E TC",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "ABCDE + Glasgow + pupilas (proteger coluna cervical)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.22, "y": 0.5, "w": 135, "h": 24, "text": "LEVE 13-15:\nTC por criterios\n(obs 6-24h)", "color": "green", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 24, "text": "MODERADO 9-12:\nTC urgente\n+ internar", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.78, "y": 0.5, "w": 140, "h": 26, "text": "GRAVE 3-8:\nIOT + TC urgente +\nNEUROCIRURGIA/UTI", "color": "red", "font_size": 5.6},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 205, "h": 18, "text": "Metas: PAS>90, SatO2>94, normoglicemia, normotermia", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CLASSIFICAÇÃO E ABORDAGEM (ATLS)",
+      "section_color": "teal",
+      "titulo": "GLASGOW DEFINE A GRAVIDADE",
+      "items": [
+        "TCE LEVE: Glasgow 13-15 | MODERADO: 9-12 | GRAVE: 3-8",
+        "ABCDE com proteção cervical: colar rígido em TODO TCE até excluir lesão",
+        "IOT se: Glasgow <= 8, apneia, hipoxemia refratária, perda de reflexos de proteção",
+        "HIPOTENSÃO no TCE = sangramento em OUTRO local (pesquisar tórax/abdome/pelve/ossos)",
+        "Reavaliar Glasgow a cada 15-30 min; documentar SEMPRE o Glasgow inicial"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "EXAME FÍSICO — SINAIS DE FRATURA DE BASE / HERNIAÇÃO",
+      "section_color": "red",
+      "titulo": "RED FLAGS NEUROLÓGICOS",
+      "items": [
+        "Fratura de base de crânio: sinal do guaxinim (periorbitário bilateral), sinal de Battle (retroauricular), hemotímpano, otorreia/rinorreia liquórica",
+        "Hipertensão intracraniana: tríade de Cushing (HAS + bradicardia + respiração irregular — TARDIO), cefaleia progressiva, vômitos em jato, rebaixamento",
+        "Herniação UNCAL: anisocoria (pupila dilatada IPSILATERAL) + hemiparesia contralateral",
+        "Herniação central: pupilas médio-fixas, decorticação/descerebração",
+        "Deterioração aguda = queda >= 2 pontos no Glasgow -> repetir TC e acionar neurocirurgia"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INDICAÇÕES DE TC DE CRÂNIO (TCE LEVE)",
+      "section_color": "navy",
+      "headers": ["Critérios clínicos", "Critérios de risco"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.50, 0.50],
+      "rows": [
+        ["Perda de consciência > 5 min; amnésia > 30 min", "Idade >= 65 anos"],
+        ["Confusão persistente; >= 2 vômitos", "Uso de ANTICOAGULANTE/antiagregante; coagulopatia"],
+        ["Cefaleia intensa progressiva; crise convulsiva", "Mecanismo de alto impacto (queda > 1 m, alta velocidade)"],
+        ["Déficit focal; sinais de fratura de base", "Atropelamento, ejeção de veículo"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — MEDIDAS GERAIS E METAS",
+      "section_color": "orange",
+      "titulo": "SUPORTE + NEUROPROTEÇÃO",
+      "items": [
+        "Via aérea pérvia + proteção cervical; O2 para SatO2 > 94%; 2 acessos; monitorização contínua",
+        "Cabeceira a 30 graus (se PA estável); normotermia (antitérmico se Tax > 37,5)",
+        "METAS: PAS > 90 mmHg (evitar hipotensão!), SatO2 > 94%, glicemia 80-180, PaCO2 35-40 (se IOT)",
+        "Reposição: SF 0,9% ou Ringer (EVITAR soluções hipotônicas/glicosadas)",
+        "Analgesia: Dipirona 1g EV 6/6h; Tramadol se dor moderada (evitar sedação que mascare o exame)",
+        "HIC/herniação: medidas (cabeceira, sedação/analgesia, salina hipertônica/manitol) + neurocirurgia urgente"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PROFILAXIA DE CONVULSÃO E ANTICOAGULAÇÃO",
+      "section_color": "purple",
+      "titulo": "ATENÇÃO",
+      "items": [
+        "Profilaxia de convulsão (Fenitoína 15-20 mg/kg EV ataque) se: hematoma intracraniano, fratura com afundamento, LAD, Glasgow < 10",
+        "Uso de anticoagulante/antiagregante = INTERNAR (mesmo com TC normal) e considerar reversão",
+        "Náusea/vômito: Ondansetrona 4-8 mg EV 8/8h",
+        "TCE moderado/grave: SEMPRE TC urgente; grave -> contato imediato com neurocirurgia",
+        "Repetir TC se: piora do Glasgow, novo déficit, cefaleia progressiva, vômitos, convulsão"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: Glasgow <= 12, qualquer lesão na TC, fratura de crânio, deterioração, déficit focal, convulsão, anticoagulante, sinais de fratura de base, vômitos/cefaleia persistentes",
+        "UTI + neurocirurgia: Glasgow <= 8, lesão neurocirúrgica (epidural/subdural/contusão com efeito de massa), HIC/herniação, instabilidade, politrauma",
+        "ALTA (TODOS): Glasgow 15, exame neuro normal, TC normal, obs >= 6h sem piora, sem anticoagulante, acompanhante responsável",
+        "Alta: observação domiciliar 24-48h, repouso 48h, evitar álcool/dirigir 24h",
+        "Retorno IMEDIATO: sonolência, confusão, >= 2 vômitos, cefaleia intensa, déficit, convulsão, saída de sangue/líquido por nariz/ouvido"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "TCE ___ (leve/moderado/grave). Mecanismo: ___. Glasgow na cena ___ / atual ___ (O_ V_ M_). Pupilas: ___.",
+        "Sinais de fratura de base / afundamento / déficit focal: ___. PA ___, SatO2 ___.",
+        "TC de crânio (se feito): ___ (epidural/subdural/contusão/HSA, desvio de linha média).",
+        "Medidas: estabilização/IOT/reposição. Antecedentes: anticoagulante/etilismo. Solicito neurocirurgia urgente / UTI / TC."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com TCE, Glasgow 7. Além de TC urgente e neurocirurgia, qual a conduta imediata da via aérea?",
+      "alternativas": [
+        "Cateter nasal de O2 e observação",
+        "Intubação orotraqueal (Glasgow <= 8) com proteção cervical",
+        "Apenas máscara não reinalante",
+        "Aguardar a TC para decidir",
+        "Ventilação não invasiva"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com TCE e hipotensão arterial. Qual a interpretação correta?",
+      "alternativas": [
+        "A hipotensão é explicada apenas pelo TCE",
+        "A hipotensão indica sangramento em outro local — pesquisar tórax, abdome, pelve e ossos longos",
+        "É esperada e não requer investigação",
+        "Indica morte encefálica",
+        "Deve ser tratada apenas com vasopressor"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado sugere fratura de base de crânio?",
+      "alternativas": [
+        "Cefaleia leve",
+        "Sinal do guaxinim, sinal de Battle, hemotímpano ou otorreia/rinorreia liquórica",
+        "Febre isolada",
+        "Hipertensão controlada",
+        "Náusea leve"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual conjunto de metas fisiológicas reduz a lesão cerebral secundária no TCE grave?",
+      "alternativas": [
+        "PAS < 90, SatO2 < 90, hipotermia",
+        "PAS > 90 mmHg, SatO2 > 94%, normoglicemia, PaCO2 35-40 mmHg e normotermia",
+        "Hiperventilação de rotina",
+        "Glicemia > 250 mg/dL",
+        "Hipotensão permissiva agressiva"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Paciente com TCE leve (Glasgow 15) em uso de varfarina, TC inicial normal. Conduta?",
+      "alternativas": [
+        "Alta imediata sem observação",
+        "Internar para observação (mesmo com TC normal), pelo risco de sangramento tardio sob anticoagulação",
+        "Repetir TC apenas em 30 dias",
+        "Suspender a varfarina e dar alta",
+        "Apenas analgésico e alta"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Glasgow <= 8 indica via aérea definitiva: IOT com proteção da coluna cervical, para proteger a via aérea e controlar a ventilação (PaCO2-alvo), evitando hipóxia/hipercapnia que agravam a lesão secundária."},
+    {"resposta": "B", "comentario": "O TCE isolado raramente causa hipotensão (exceto fase terminal). Hipotensão no trauma é hemorrágica até prova em contrário — pesquisar tórax, abdome, pelve e ossos longos. Manter PAS > 90 (hipotensão piora o TCE)."},
+    {"resposta": "B", "comentario": "Sinal do guaxinim (equimose periorbitária bilateral), sinal de Battle (retroauricular), hemotímpano e fístula liquórica (otorreia/rinorreia) sugerem fratura de base de crânio."},
+    {"resposta": "B", "comentario": "As metas no TCE grave são PAS > 90, SatO2 > 94%, normoglicemia (80-180), PaCO2 35-40 e normotermia — evitam a lesão cerebral secundária. Hiperventilação de rotina e hipotensão são deletérias."},
+    {"resposta": "B", "comentario": "TCE leve em uso de anticoagulante exige internação para observação mesmo com TC inicial normal, pelo risco de hemorragia intracraniana tardia; considera-se ainda reversão da anticoagulação conforme o caso."}
+  ]
+}

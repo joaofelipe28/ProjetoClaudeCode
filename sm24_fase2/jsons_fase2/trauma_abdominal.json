@@ -1,0 +1,185 @@
+{
+  "slug": "trauma_abdominal",
+  "titulo": "Trauma Abdominal",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Trauma Abdominal no PS",
+  "chapter_bar": "TRAUMA ABDOMINAL — CONTUSO x PENETRANTE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ESTABILIDADE DECIDE",
+      "title": "TRAUMA ABDOMINAL — É CIRÚRGICO?",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "ABCDE - avaliacao na etapa C (foco de sangramento)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 205, "h": 24, "text": "Indicacao cirurgica imediata? peritonite, instabilidade,\nevisceracao, FAF transfixante", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 145, "h": 24, "text": "SIM:\nLAPAROTOMIA\n(cirurgia geral)", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 150, "h": 26, "text": "NAO + estavel:\nTC c/ contraste\n(instavel -> FAST)", "color": "teal", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Causa PREVENÍVEL de morte; avaliar na etapa C do ABCDE (controle de sangramento)",
+        "Mecanismo: PENETRANTE (arma branca/fogo) ou CONTUSO",
+        "Diagnosticar e tratar precocemente o sangramento intra-abdominal",
+        "FAST e TC são complementares; a ESTABILIDADE hemodinâmica define a via de investigação"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — INDICAÇÃO CIRÚRGICA IMEDIATA (LAPAROTOMIA)",
+      "section_color": "red",
+      "titulo": "ABDOME CIRÚRGICO",
+      "items": [
+        "Peritonite clara e persistente",
+        "INSTABILIDADE hemodinâmica com fonte abdominal",
+        "Hematêmese / sangue retal (lesão de víscera oca)",
+        "Evisceração ou empalamento; ferimento por arma de fogo TRANSFIXANTE",
+        "Pneumoperitônio ou hérnia diafragmática traumática",
+        "Lesão de víscera oca por arma de fogo = SEMPRE cirúrgica"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PENETRANTE — CONDUTA POR REGIÃO",
+      "section_color": "navy",
+      "headers": ["Cenário", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Indicação cirúrgica presente", "Laparotomia (cirurgia geral)"],
+        ["FAB abdome anterior, sem indicação", "Exploração LOCAL do ferimento (estéril); se atinge peritônio -> laparotomia; se não -> sutura + observação"],
+        ["FAB/FAF flancos e dorso", "TC com triplo contraste (musculatura espessa dificulta avaliar trajeto)"],
+        ["FAF sem indicação cirúrgica", "TC de abdome total com contraste (avaliar trajeto; possível tratamento não operatório)"],
+        ["Transição toracoabdominal", "Laparoscopia/videotoracoscopia diagnóstica (excluir lesão diafragmática)"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONTUSO — ESTÁVEL x INSTÁVEL",
+      "section_color": "navy",
+      "headers": ["Situação", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Indicação cirúrgica (peritonite/instabilidade)", "Laparotomia"],
+        ["Estável (exclusivo ou politrauma)", "TC com contraste + exame físico; tratar conforme achados"],
+        ["Politrauma INSTÁVEL", "FAST: positivo -> laparotomia; negativo -> provável causa não abdominal da instabilidade"],
+        ["Sinais de alta energia", "Cinto de segurança, fratura de fêmur/pelve, hematúria, TGO/TGP>130, Ht<30% -> TC"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRATAMENTO NÃO OPERATÓRIO (TNO)",
+      "section_color": "orange",
+      "titulo": "QUANDO É POSSÍVEL",
+      "items": [
+        "Menor morbimortalidade em casos selecionados; evita laparotomias não terapêuticas",
+        "Vísceras PARENQUIMATOSAS candidatas: fígado, baço, pâncreas, rim/adrenal, bexiga extraperitoneal",
+        "Requisitos: centro com UTI e cirurgião 24h, TC, banco de sangue, lab, endoscopia, (idealmente) radiologia intervencionista",
+        "Monitorização + exame físico + controle laboratorial SERIADOS",
+        "Ausência de outras indicações cirúrgicas e de lesões associadas (ex.: TCE) que impeçam observação",
+        "TC é RUIM para avaliar diafragma e vísceras ocas — manter alta suspeição"
+      ],
+      "accent": "orange",
+      "bg": "orange_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PASSOS",
+      "items": [
+        "ABCDE; na etapa C, identificar o abdome como fonte de sangramento",
+        "Instável + FAST positivo = laparotomia (não atrasar com TC)",
+        "Estável = TC com contraste para caracterizar lesões e considerar TNO",
+        "Penetrante: aplicar critérios de indicação cirúrgica; FAB anterior pode ter exploração local",
+        "Não introduzir objetos às cegas no ferimento; acionar cirurgia geral"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Trauma abdominal ___ (contuso/penetrante - FAB/FAF) por ___. Estabilidade: ___.",
+        "FAST: positivo/negativo; TC: ___; indicação cirúrgica: peritonite/instabilidade/evisceração/transfixante?",
+        "Conduta: laparotomia / TNO com monitorização seriada.",
+        "Solicito transferência a centro com cirurgia geral 24h / UTI / banco de sangue (estabilizar antes)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Politraumatizado instável, FAST positivo para líquido livre abdominal. Conduta?",
+      "alternativas": [
+        "Tomografia de abdome antes de qualquer medida",
+        "Laparotomia exploradora (controle do sangramento)",
+        "Tratamento não operatório com observação",
+        "Alta com analgésico",
+        "Apenas exploração local do ferimento"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado indica laparotomia imediata no trauma abdominal?",
+      "alternativas": [
+        "Dor leve à palpação",
+        "Peritonite clara, instabilidade hemodinâmica, evisceração ou FAF transfixante",
+        "Hematúria microscópica isolada",
+        "Escoriação na parede",
+        "FAST negativo"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Em paciente ESTÁVEL com trauma abdominal contuso, qual o exame de escolha?",
+      "alternativas": [
+        "FAST isolado",
+        "Tomografia de abdome com contraste",
+        "Radiografia simples",
+        "Laparotomia",
+        "Ressonância magnética"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Quais órgãos são candidatos ao tratamento não operatório no trauma abdominal estável?",
+      "alternativas": [
+        "Vísceras ocas (intestino, cólon)",
+        "Vísceras parenquimatosas (fígado, baço, rim) em centro com suporte adequado",
+        "Diafragma",
+        "Esôfago",
+        "Nenhum"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre a TC no trauma abdominal, qual limitação é importante?",
+      "alternativas": [
+        "Não avalia o fígado",
+        "É ruim para avaliar diafragma e vísceras ocas diretamente",
+        "Não detecta líquido livre",
+        "Não avalia o baço",
+        "Não serve para planejamento cirúrgico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No politraumatizado INSTÁVEL com FAST positivo, indica-se laparotomia exploradora imediata para controle do sangramento — não se atrasa para fazer TC. A TC fica para o paciente estável."},
+    {"resposta": "B", "comentario": "Peritonite clara e persistente, instabilidade hemodinâmica de fonte abdominal, evisceração/empalamento e FAF transfixante são indicações de laparotomia imediata."},
+    {"resposta": "B", "comentario": "No trauma abdominal contuso em paciente ESTÁVEL, a TC com contraste é o exame de escolha, caracterizando as lesões e permitindo considerar tratamento não operatório."},
+    {"resposta": "B", "comentario": "O TNO aplica-se a lesões de vísceras PARENQUIMATOSAS (fígado, baço, pâncreas, rim/adrenal) em paciente estável, com centro de referência (UTI, cirurgião 24h, TC, banco de sangue) e monitorização seriada."},
+    {"resposta": "B", "comentario": "A TC é limitada para avaliar diretamente o diafragma e as vísceras ocas — daí a necessidade de alta suspeição clínica e, na transição toracoabdominal, de laparoscopia/videotoracoscopia diagnóstica."}
+  ]
+}

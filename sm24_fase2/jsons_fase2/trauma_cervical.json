@@ -1,0 +1,181 @@
+{
+  "slug": "trauma_cervical",
+  "titulo": "Trauma Cervical",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Trauma Cervical no PS",
+  "chapter_bar": "TRAUMA CERVICAL — HARD x SOFT SIGNS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — SINAIS DECIDEM",
+      "title": "CERVICAL PENETRANTE — HARD SIGNS = CIRURGIA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "ABCDE (via aerea + sangramento)\ntrauma cervical contuso x penetrante", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "HARD SIGNS presentes?", "color": "red", "font_size": 6.2},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "SIM: CIRURGIA\n(centro cirurgico,\nnao explorar fora)", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "SOFT SIGNS:\nAngioTC triagem\n-> dirige conduta", "color": "teal", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ZONAS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "5-10% de todos os traumas; alta morbimortalidade (estruturas nobres em pequeno espaço)",
+        "5 sistemas em risco: vascular, respiratório, digestivo, neurológico/ósseo, endócrino",
+        "Penetrante (FAB x FAF, importa o trajeto) x Contuso (raro causar lesão grave; coluna cervical é o mais comum)",
+        "ZONAS: Zona 1 (fúrcula esternal -> cricoide); Zona 2 (cricoide -> ângulo da mandíbula); Zona 3 (ângulo da mandíbula -> base do crânio)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "HARD SIGNS x SOFT SIGNS",
+      "section_color": "navy",
+      "headers": ["HARD SIGNS (-> cirurgia)", "SOFT SIGNS (-> AngioTC)"],
+      "header_colors": ["red", "teal"],
+      "col_widths": [0.50, 0.50],
+      "rows": [
+        ["Hemorragia incontrolável", "Hemorragia pequena"],
+        ["Hematoma em expansão ou pulsátil", "Hematoma não expansivo/não pulsátil"],
+        ["Hemoptise/hematêmese maciça", "Hemoptise/hematêmese pequena"],
+        ["Choque; déficit neuro de isquemia cerebral; ausência de pulso", "Hipotensão responsiva a volume; enfisema subcutâneo"],
+        ["Insuficiência respiratória; ferida 'soprante'", "Disfonia; disfagia"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — VIA AÉREA E SANGRAMENTO",
+      "section_color": "red",
+      "titulo": "ATENÇÃO REDOBRADA",
+      "items": [
+        "1o sempre ABCDE/ATLS — atenção redobrada à VIA AÉREA e ao controle de sangramento",
+        "Ferida soprante / insuficiência respiratória / hematoma expansivo comprimindo via aérea = via aérea ameaçada (IOT precoce/cirúrgica)",
+        "Hard signs = lesão vascular/aerodigestiva grave -> exploração CIRÚRGICA",
+        "Sangramento profuso: passar sonda de FOLEY pelo ferimento e insuflar o balão (compressão/tamponamento local)",
+        "NUNCA explorar o ferimento cervical fora do centro cirúrgico"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MANEJO POR ZONA (penetrante, sem hard signs)",
+      "section_color": "navy",
+      "headers": ["Zona", "Abordagem preferencial"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["Zona 1 (base do pescoço)", "Arteriografia / endovascular / endoscópico (difícil exposição; pode exigir esternotomia/toracotomia)"],
+        ["Zona 2 (média)", "Cirúrgico (melhor exposição) — ou AngioTC guiando, conforme protocolo"],
+        ["Zona 3 (alta)", "Arteriografia (difícil exposição; pode exigir luxação da mandíbula)"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "ESTRATÉGIA ATUAL (no-zone / seletiva)",
+      "section_color": "navy",
+      "titulo": "DA CIRURGIA UNIVERSAL À SELETIVA",
+      "items": [
+        "Antigamente: operava-se todo mundo (alta taxa de cervicotomias brancas) ou arteriografia para todos",
+        "Atualmente: HARD signs -> cirurgia; SOFT signs -> AngioTC como triagem",
+        "A AngioTC guia as indicações de endoscopia, broncoscopia, arteriografia e cirurgia",
+        "Manejo cirúrgico: cervicotomia ampla acompanhando o ECM (com extensões por zona)",
+        "Contuso: foco na coluna cervical (imobilização) e na exclusão de lesão vascular (BCVI) por imagem quando indicado"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PASSOS",
+      "items": [
+        "ABCDE com proteção cervical; priorizar via aérea e controle de hemorragia",
+        "Classificar: contuso x penetrante; identificar a zona; hard x soft signs",
+        "Hard signs -> centro cirúrgico (não explorar fora); Foley no ferimento se sangramento profuso",
+        "Soft signs / estável -> AngioTC para direcionar a investigação",
+        "Acionar cirurgia (vascular/cabeça-pescoço) e transferir para centro adequado"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Trauma cervical ___ (contuso/penetrante - FAB/FAF), ZONA ___. Hard signs: ___; soft signs: ___.",
+        "Via aérea: ___ (pérvia/IOT/cirúrgica); sangramento controlado: ___ (Foley?).",
+        "AngioTC (se feito): ___. Conduta: cirurgia / arteriografia / observação.",
+        "Solicito centro com cirurgia vascular/cabeça-pescoço e hemodinâmica (estabilizar antes)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Trauma cervical penetrante com hematoma cervical em expansão e hemorragia incontrolável. Conduta?",
+      "alternativas": [
+        "AngioTC e observação",
+        "Exploração cirúrgica em centro cirúrgico (hard sign), com controle de via aérea",
+        "Apenas curativo compressivo e alta",
+        "Endoscopia ambulatorial",
+        "Explorar o ferimento no leito da emergência"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado é um 'soft sign' no trauma cervical (indica AngioTC, não cirurgia imediata)?",
+      "alternativas": [
+        "Hematoma pulsátil em expansão",
+        "Disfonia ou enfisema subcutâneo sem instabilidade",
+        "Choque",
+        "Ferida soprante",
+        "Ausência de pulso"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre a abordagem atual do trauma cervical penetrante, é correto:",
+      "alternativas": [
+        "Operar todos os casos",
+        "Hard signs vão para cirurgia; soft signs realizam AngioTC como triagem",
+        "Arteriografia para todos",
+        "Sempre observação domiciliar",
+        "Nunca operar"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Diante de sangramento cervical profuso por ferida penetrante, qual medida de controle temporário pode ser usada?",
+      "alternativas": [
+        "Torniquete cervical",
+        "Passar sonda de Foley pelo ferimento e insuflar o balão (compressão local)",
+        "Cauterização às cegas",
+        "Aguardar a cirurgia sem medidas",
+        "Aplicar gelo"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "A Zona 2 cervical (cricoide ao ângulo da mandíbula) tem como abordagem clássica preferencial:",
+      "alternativas": [
+        "Arteriografia sempre",
+        "Acesso cirúrgico (boa exposição) ou AngioTC guiando conforme protocolo",
+        "Observação sem exames",
+        "Esternotomia de rotina",
+        "Luxação da mandíbula de rotina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Hematoma em expansão + hemorragia incontrolável são HARD SIGNS de lesão vascular/aerodigestiva grave -> exploração cirúrgica em centro cirúrgico, com controle prioritário da via aérea. Nunca explorar fora do CC."},
+    {"resposta": "B", "comentario": "Soft signs (disfonia, disfagia, enfisema subcutâneo, hemorragia pequena, hipotensão responsiva) não exigem cirurgia imediata: realiza-se AngioTC para triar e direcionar (endoscopia/broncoscopia/arteriografia/cirurgia)."},
+    {"resposta": "B", "comentario": "A abordagem atual é seletiva: hard signs -> cirurgia; soft signs -> AngioTC de triagem (que guia outras investigações). Abandonou-se a cirurgia/arteriografia universal pela alta taxa de exames/cirurgias negativas."},
+    {"resposta": "B", "comentario": "No sangramento cervical profuso, pode-se passar uma sonda de Foley pelo trajeto do ferimento e insuflar o balão, promovendo compressão/tamponamento local temporário até o controle cirúrgico definitivo."},
+    {"resposta": "B", "comentario": "A Zona 2 tem boa exposição cirúrgica, sendo a abordagem cirúrgica clássica; protocolos atuais também aceitam AngioTC para guiar a conduta. Zonas 1 e 3 (difícil exposição) favorecem arteriografia/endovascular."}
+  ]
+}
