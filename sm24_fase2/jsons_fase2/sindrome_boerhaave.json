@@ -1,0 +1,196 @@
+{
+  "slug": "sindrome_boerhaave",
+  "titulo": "Síndrome de Boerhaave",
+  "especialidade": "GASTROENTEROLOGIA",
+  "chapter_subject": "Perfuração esofágica espontânea no PS",
+  "chapter_bar": "SÍNDROME DE BOERHAAVE — RUPTURA ESOFÁGICA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DOR TORÁCICA APÓS VÔMITO",
+      "title": "BOERHAAVE — PENSAR PARA DIAGNOSTICAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Vomito forcado + dor toracica lancinante\n+ enfisema subcutaneo (triade de Mackler)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Excluir SCA/dissecao (ECG/tropo/PA MMSS)\nTC de torax", "color": "orange", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.3, "w": 205, "h": 22, "text": "Confirmou: ressuscitar + ATB amplo +\ndieta zero + UTI/cirurgia", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.08, "w": 200, "h": 16, "text": "Transferencia a servico terciario IMEDIATA", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Perfuração TRANSMURAL ESPONTÂNEA do esôfago",
+        "Mecanismo: aumento súbito da pressão intraesofágica + pressão intratorácica negativa",
+        "Causas: VÔMITOS FORÇADOS (mais comum), tosse vigorosa, levantamento de peso, convulsão, parto, Valsalva intensa",
+        "Fatores de risco: abuso de álcool, patologia esofágica prévia (estenose, acalasia), hérnia hiatal, DRGE mal tratada",
+        "Alta morbimortalidade — diagnóstico precoce é crítico"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR",
+      "section_color": "purple",
+      "titulo": "QUADRO CLÍNICO",
+      "items": [
+        "TRÍADE DE MACKLER (clássica, mas rara): vômitos + dor torácica + enfisema subcutâneo",
+        "Dor torácica súbita e intensa/lancinante (pode irradiar para dorso/ombros, ± dor epigástrica)",
+        "História de vômitos/êmese precedendo a dor",
+        "Enfisema subcutâneo (crepitação à palpação cervical/torácica)",
+        "Estertores, diminuição do murmúrio (derrame pleural); sinais de peritonite se perfuração intra-abdominal"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E DIFERENCIAL",
+      "section_color": "navy",
+      "titulo": "EXAMES",
+      "items": [
+        "Em esforço agudo + fatores de risco + dor torácica atípica para SCA, lancinante: pesquisar ativamente",
+        "ECG + troponina para excluir IAM; avaliar simetria de PA em MMSS (excluir dissecção de aorta)",
+        "RX de tórax (pneumomediastino, derrame, hidropneumotórax) ou TC de tórax (melhor)",
+        "EDA se TC com achados duvidosos (cautela)",
+        "Rastreio infeccioso e culturas"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS — PRIMEIRA HORA",
+      "section_color": "red",
+      "titulo": "RESSUSCITAÇÃO + ATB + JEJUM",
+      "items": [
+        "Ressuscitação volêmica agressiva: 2 acessos calibrosos, Ringer/SF, bolus 20-30 mL/kg",
+        "Noradrenalina em BIC se PAM < 65 após volume; monitorização hemodinâmica",
+        "DIETA ZERO absoluta (nutrição por jejunostomia/NPT só após 24-48h, estável)",
+        "ATB amplo espectro IMEDIATO: Piperacilina-tazobactam 4,5g IV 6/6h OU Meropenem 1g IV 8/8h",
+        "  (ou Ampi-sulbactam 3g 6/6h); alergia a betalactâmico: Clindamicina + Ciprofloxacino",
+        "Considerar antifúngico (Fluconazol) se hospitalização/ATB amplo prévios à perfuração"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MEDIDAS DE SUPORTE",
+      "section_color": "orange",
+      "titulo": "PRESCRIÇÃO COMPLEMENTAR",
+      "items": [
+        "Analgesia: opioide (Morfina 2-10mg IV titulada); EVITAR AINE (risco de sangramento)",
+        "Antiemético: Ondansetrona 4-8mg IV 8/8h; EVITAR metoclopramida (aumenta pressão intraesofágica)",
+        "IBP: Omeprazol/Pantoprazol 40mg IV 12/12h + ataque 80mg EV",
+        "O2 suplementar; IOT se insuficiência respiratória ou dor refratária extrema",
+        "SNG: CAUTELA (risco de piorar a laceração) — só guiada por EDA, após discutir com cirurgia/gastro"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — POR QUE É EMERGÊNCIA",
+      "section_color": "red",
+      "titulo": "INTERNAR TODOS EM UTI",
+      "items": [
+        "Mediastinite e sepse evoluem rapidamente -> alta mortalidade",
+        "Internar TODOS os casos confirmados ou de alta suspeita",
+        "Solicitar VAGA DE UTI para todos pela alta morbimortalidade",
+        "Encaminhamento a serviço terciário (cirurgia torácica) IMEDIATO",
+        "O tratamento definitivo (cirúrgico/endoscópico) depende do tempo e da extensão — não atrasar a transferência"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST NO PS",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Pensar em Boerhaave em dor torácica lancinante pós-vômito (não rotular como SCA/gastrite)",
+        "Excluir IAM e dissecção de aorta em paralelo",
+        "Dieta zero + ATB amplo precoce + ressuscitação volêmica",
+        "Evitar metoclopramida e SNG às cegas",
+        "Acionar cirurgia torácica + vaga de UTI + transferência imediata"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Suspeita/confirmação de Síndrome de Boerhaave: dor torácica lancinante pós-vômito + enfisema subcutâneo.",
+        "TC de tórax: pneumomediastino/derrame/perfuração em ___. IAM e dissecção excluídos.",
+        "Condutas: dieta zero, ATB amplo (___) às ___, ressuscitação volêmica, ± noradrenalina, IBP.",
+        "Solicito VAGA DE UTI e transferência IMEDIATA para serviço com cirurgia torácica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Homem etilista, após episódio de vômitos forçados, evolui com dor torácica lancinante e crepitação à palpação cervical. Qual a hipótese e a tríade clássica?",
+      "alternativas": [
+        "Pericardite — atrito pericárdico",
+        "Síndrome de Boerhaave — tríade de Mackler (vômitos + dor torácica + enfisema subcutâneo)",
+        "Infarto agudo do miocárdio — supra de ST",
+        "Pneumonia — febre e tosse",
+        "Refluxo simples — pirose"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o exame de imagem de escolha para confirmar a perfuração esofágica na suspeita de Boerhaave?",
+      "alternativas": [
+        "Radiografia de abdome",
+        "Tomografia de tórax",
+        "Ultrassonografia",
+        "Cintilografia",
+        "Ressonância de crânio"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre o tratamento inicial da síndrome de Boerhaave, é correto:",
+      "alternativas": [
+        "Iniciar dieta oral precoce",
+        "Dieta zero, ressuscitação volêmica e antibiótico de amplo espectro imediato, com internação em UTI",
+        "Apenas analgesia e alta",
+        "Antibiótico oral",
+        "Aguardar 24h para iniciar antibiótico"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual antiemético deve ser EVITADO na síndrome de Boerhaave?",
+      "alternativas": [
+        "Ondansetrona",
+        "Metoclopramida (pode aumentar a pressão intraesofágica)",
+        "Dimenidrinato",
+        "Bromoprida em dose baixa",
+        "Nenhum antiemético é contraindicado"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual cuidado deve ser tomado quanto à sonda nasogástrica na Boerhaave?",
+      "alternativas": [
+        "Passar de rotina às cegas",
+        "Cautela: risco de piorar a laceração; se necessária, sob visualização guiada por endoscopia",
+        "Está sempre contraindicada em qualquer situação",
+        "Passar apenas pela narina esquerda",
+        "Usar a maior sonda disponível"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor torácica lancinante pós-vômito forçado com enfisema subcutâneo em etilista sugere síndrome de Boerhaave (perfuração esofágica espontânea); a tríade de Mackler (vômitos + dor torácica + enfisema) é clássica, embora rara."},
+    {"resposta": "B", "comentario": "A TC de tórax é o exame de escolha para confirmar a perfuração (pneumomediastino, derrame, extravasamento). A radiografia pode sugerir, mas a TC define; a EDA fica para achados duvidosos, com cautela."},
+    {"resposta": "B", "comentario": "O manejo inicial é dieta zero, ressuscitação volêmica e antibiótico de amplo espectro IMEDIATO, com internação em UTI e transferência a serviço com cirurgia torácica — a mediastinite/sepse evolui rapidamente."},
+    {"resposta": "B", "comentario": "A metoclopramida deve ser evitada por aumentar a pressão intraesofágica (risco de piorar a perfuração). Prefere-se ondansetrona para o controle de náuseas/vômitos."},
+    {"resposta": "B", "comentario": "A SNG deve ser usada com cautela na Boerhaave (risco de agravar a laceração); se indispensável, colocar sob visualização guiada por endoscopia, após discussão com cirurgia/gastroenterologia."}
+  ]
+}

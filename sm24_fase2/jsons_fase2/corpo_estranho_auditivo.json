@@ -1,0 +1,181 @@
+{
+  "slug": "corpo_estranho_auditivo",
+  "titulo": "Corpo Estranho no Conduto Auditivo",
+  "especialidade": "OTORRINOLARINGO",
+  "chapter_subject": "Remoção de CE auditivo no PS",
+  "chapter_bar": "CORPO ESTRANHO NO CONDUTO AUDITIVO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — REMOVER OU ENCAMINHAR?",
+      "title": "CE AUDITIVO — OTOSCOPIA DECIDE",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "CE no conduto - OTOSCOPIA\n(natureza, localizacao, integridade da MT)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Alguma CONTRAINDICACAO presente?", "color": "red", "font_size": 6.2},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "SIM: encaminhar\nao especialista\n(ORL)", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "NAO: remover\n(irrigacao / pinca)\notoscopia ao fim", "color": "green", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO INICIAL",
+      "section_color": "teal",
+      "titulo": "OTOSCOPIA SEMPRE",
+      "items": [
+        "Realizar otoscopia: identificar a natureza e a localização do corpo estranho",
+        "Verificar a integridade da membrana timpânica e sinais de infecção secundária",
+        "A técnica de remoção depende das características do corpo estranho",
+        "Em crianças, examinar também outros orifícios (suspeita de CE em narina, etc.)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONTRAINDICAÇÕES — ENCAMINHAR AO ESPECIALISTA",
+      "section_color": "red",
+      "titulo": "NÃO TENTAR NO PS SE",
+      "items": [
+        "Ausência de otoscópio na unidade ou de materiais adequados para a remoção",
+        "Perfuração da MT ou impossibilidade de visualizar a MT; histórico de cirurgia otológica; otorragia",
+        "Objetos PONTIAGUDOS ou de natureza corrosiva; presença de LARVAS no meato",
+        "Otite associada ao quadro",
+        "BATERIAS: NÃO retirar por irrigação (risco de liberar conteúdo cáustico) — remoção urgente especializada"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "REMOÇÃO POR IRRIGAÇÃO — MATERIAIS",
+      "section_color": "orange",
+      "titulo": "PREPARO",
+      "items": [
+        "Campo/toalha + otoscópio + cuba rim + luva de procedimento",
+        "Seringa de 20 ou 60 mL",
+        "Scalp calibroso (> 19) cortado com ~2 cm (parte da cânula, sem agulha)",
+        "Água aquecida em temperatura MORNA (evitar reflexo vestibular por água fria/quente)",
+        "Não usar irrigação para baterias e objetos vegetais que incham"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "REMOÇÃO POR IRRIGAÇÃO — TÉCNICA",
+      "section_color": "orange",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "1. Explicar o procedimento e sanar dúvidas; 2. Identificar o CE com o otoscópio",
+        "3. Aspirar o soro morno com a seringa e conectar ao scalp cortado",
+        "4. Posicionar campo no ombro, abaixando o ouvido a ser tratado",
+        "5. Introduzir o scalp com a concavidade para frente — evitar jato laminar direto sobre a MT",
+        "6. Instilar água de forma contínua e firme; repetir até a saída do CE",
+        "7. Se não sair: pinça fina OU encaminhar ao especialista; 8. Otoscopia ao final"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO INTERROMPER / CUIDADOS",
+      "section_color": "purple",
+      "titulo": "SEGURANÇA",
+      "items": [
+        "Interromper se: dor, desistência do paciente, ou insucesso após várias tentativas",
+        "Objetos impactados no meato ou muito próximos da MT: mais seguros com otomicroscopia/videotoscopia (especialista)",
+        "Insetos vivos: instilar lidocaína/óleo mineral para imobilizar ANTES de remover (reduz movimento e dor)",
+        "Após qualquer tentativa, reexaminar a MT (excluir trauma/perfuração iatrogênica)",
+        "Documentar a otoscopia final"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST",
+      "titulo": "ANTES E DEPOIS",
+      "items": [
+        "Otoscopia inicial: natureza/localização do CE, MT íntegra, sem infecção",
+        "Excluídas contraindicações (perfuração, bateria, corrosivo, pontiagudo, larvas, otite, otorragia)",
+        "Irrigação com água morna e técnica correta (sem jato sobre a MT)",
+        "Otoscopia final documentada após a remoção",
+        "Encaminhar ao ORL se falha, CE impactado/próximo à MT, bateria ou contraindicação"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ORL",
+      "items": [
+        "Corpo estranho em conduto auditivo ___ (orelha D/E), natureza: ___ (inseto/semente/bateria/objeto).",
+        "Otoscopia: localização ___; MT íntegra: sim/não; infecção: sim/não; otorragia: sim/não.",
+        "Tentativa de remoção no PS: irrigação/pinça — resultado: ___.",
+        "Encaminho ao ORL por: contraindicação / falha / CE impactado-próximo à MT / bateria."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Criança com bateria (pilha botão) no conduto auditivo. Qual a conduta correta?",
+      "alternativas": [
+        "Remover por irrigação abundante",
+        "NÃO irrigar; encaminhar para remoção urgente por especialista (risco de lesão cáustica)",
+        "Aguardar a bateria sair sozinha",
+        "Instilar água oxigenada",
+        "Cauterizar o conduto"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é uma contraindicação à remoção de corpo estranho auditivo por irrigação no PS?",
+      "alternativas": [
+        "Objeto inerte e arredondado",
+        "Perfuração da membrana timpânica (ou objeto corrosivo/pontiagudo, larvas, otorragia)",
+        "Boa visualização da membrana timpânica",
+        "Paciente colaborativo",
+        "Disponibilidade de otoscópio"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que se deve usar água em temperatura morna na irrigação do conduto auditivo?",
+      "alternativas": [
+        "Para dissolver o corpo estranho",
+        "Para evitar estímulo vestibular (vertigem/náusea) causado por água fria ou muito quente",
+        "Para esterilizar o conduto",
+        "Para anestesiar a membrana timpânica",
+        "Para acelerar a cauterização"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Diante de um inseto vivo no conduto auditivo, qual medida facilita a remoção?",
+      "alternativas": [
+        "Irrigar imediatamente com força",
+        "Instilar lidocaína/óleo mineral para imobilizar o inseto antes da remoção",
+        "Introduzir uma pinça pontiaguda às cegas",
+        "Aspirar com sucção de alta pressão sem visualização",
+        "Cauterizar o inseto"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Após a tentativa de remoção do corpo estranho, qual passo é indispensável?",
+      "alternativas": [
+        "Liberar imediatamente sem reexame",
+        "Realizar nova otoscopia para avaliar a integridade da membrana timpânica e o sucesso da remoção",
+        "Prescrever antibiótico sistêmico de rotina",
+        "Tamponar o conduto",
+        "Aplicar calor local"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Baterias (pilhas botão) NÃO devem ser removidas por irrigação (a umidade libera conteúdo cáustico e gera necrose); exigem remoção urgente por especialista. É uma contraindicação explícita à irrigação."},
+    {"resposta": "B", "comentario": "Contraindicam a irrigação no PS: perfuração/impossibilidade de ver a MT, objetos corrosivos/pontiagudos, larvas, otite associada, otorragia, cirurgia otológica prévia e falta de material/otoscópio."},
+    {"resposta": "B", "comentario": "A água deve estar morna (próxima à temperatura corporal) para evitar a estimulação vestibular (prova calórica) que água fria ou quente provoca, causando vertigem, náuseas e desconforto."},
+    {"resposta": "B", "comentario": "Insetos vivos devem ser imobilizados/mortos antes da remoção, instilando lidocaína ou óleo mineral, o que reduz o movimento, a dor e o risco de lesão durante a retirada."},
+    {"resposta": "B", "comentario": "Após qualquer tentativa de remoção, repete-se a otoscopia para confirmar a retirada e avaliar a integridade da membrana timpânica, excluindo trauma/perfuração iatrogênica."}
+  ]
+}

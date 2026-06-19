@@ -1,0 +1,196 @@
+{
+  "slug": "drge",
+  "titulo": "Doença do Refluxo Gastroesofágico (DRGE)",
+  "especialidade": "GASTROENTEROLOGIA",
+  "chapter_subject": "DRGE no PS",
+  "chapter_bar": "DRGE — DIAGNÓSTICO, ALARME E TRATAMENTO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — PIROSE NO PS",
+      "title": "DRGE — EXCLUIR O GRAVE, TRATAR O TÍPICO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Pirose + regurgitacao\n(excluir dor toracica cardiaca primeiro!)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Sinais de ALARME ou idade >45-50?", "color": "red", "font_size": 6.0},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "SIM: EDA\n(disfagia, perda peso,\nanemia, sangramento)", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "NAO: tipico ->\ntratar IBP +\nmudanca de habitos", "color": "green", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Exposição anormal do esôfago ao ácido gástrico, gerando sintomas e/ou lesão da mucosa",
+        "Prevalente (12-20% da população urbana brasileira); tratamento tipicamente AMBULATORIAL",
+        "Mecanismos: relaxamentos transitórios do EEI, hipotonia do EEI, hérnia hiatal",
+        "Aumento da pressão intra-abdominal e atraso do esvaziamento gástrico pioram o refluxo"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR",
+      "section_color": "purple",
+      "titulo": "SINTOMAS TÍPICOS E ATÍPICOS",
+      "items": [
+        "Típicos: PIROSE (queimação retroesternal) e REGURGITAÇÃO, ligadas à alimentação e ao decúbito",
+        "Atípicos: tosse crônica, rouquidão, pigarro, amigdalites de repetição, globus faríngeo",
+        "Asmáticos de difícil controle apesar de medicação correta",
+        "Melhora momentânea com antiácidos; piora com refeições copiosas/ácidas (café, molho de tomate)",
+        "No PS, a DRGE é causa frequente de dor torácica — excluir causa cardíaca primeiro"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — QUANDO SOLICITAR EDA",
+      "section_color": "red",
+      "titulo": "SINAIS DE ALARME",
+      "items": [
+        "Disfagia, sangramento (hematêmese/melena), perda de peso, anemia",
+        "História familiar de câncer gástrico/esofágico em parente de 1o grau",
+        "Idade > 45-50 anos; sintomas refratários ao tratamento",
+        "Suspeita de complicação (estenose péptica); presença isolada de sintomas atípicos",
+        "DRGE isolada NÃO se relaciona ao H. pylori — não pesquisar de rotina (só se dispepsia/epigastralgia)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "QUANDO E COMO",
+      "items": [
+        "Diagnóstico CLÍNICO é efetivo (porém pouco específico): sintomas típicos sem alarme -> tratar sem exames",
+        "EDA não confirma DRGE por si; esofagite grau B em diante + sintomas confirmam de forma indireta",
+        "pHmetria: confirma em casos refratários ou pré-cirúrgicos — suspender IBP até 1 semana antes",
+        "Manometria: pré-operatória, para programar a abordagem cirúrgica",
+        "Os IBP melhoraram tanto o tratamento que a cirurgia tornou-se cada vez mais incomum"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO FARMACOLÓGICO",
+      "section_color": "orange",
+      "titulo": "IBP E ALTERNATIVAS",
+      "items": [
+        "IBP (não têm início de ação imediato): Omeprazol 20mg/dia (máx 40mg 2x), Pantoprazol 40mg/dia, Esomeprazol 40mg/dia",
+        "  Lansoprazol 30mg/dia, Rabeprazol 20mg/dia, Dexlansoprazol 60mg/dia (sem superioridade entre eles)",
+        "PCAB: Vonoprazana 20mg/dia (dispensa jejum; opção em refratários)",
+        "Antagonista H2 (2a linha/adjuvante noturno): Ranitidina 150mg 2x ou 300mg à noite",
+        "PROCINÉTICOS NÃO são recomendados na DRGE (apenas em síndromes funcionais pós-prandiais)",
+        "No PS: se excluídas complicações, não há necessidade de iniciar IBP no pronto-atendimento"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "MUDANÇAS DE ESTILO DE VIDA (alta)",
+      "titulo": "ORIENTAR",
+      "items": [
+        "Evitar alimentos-gatilho: álcool, café, chocolate, gordurosos, apimentados, tomate",
+        "Elevar a cabeceira da cama",
+        "Perda de peso em obesos",
+        "Evitar decúbito lateral direito; não deitar logo após refeições",
+        "Manter IBP/medicação conforme prescrição e seguimento ambulatorial"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO (apenas complicações)",
+      "section_color": "red",
+      "titulo": "INTERNAR SE",
+      "items": [
+        "Sangramento digestivo alto por esofagite grave",
+        "Perfuração esofágica",
+        "Estenose esofágica com disfagia grave / impossibilidade de alimentação",
+        "Desidratação grave por vômitos incoercíveis",
+        "Sem complicações + sem critério de internação = ALTA com seguimento"
+      ],
+      "accent": "red"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA O AMBULATÓRIO",
+      "items": [
+        "Paciente com sintomas de DRGE (típicos/atípicos) há ___; causa cardíaca de dor torácica excluída.",
+        "Sinais de alarme: sim/não (disfagia/perda de peso/anemia/sangramento). Idade > 45-50: sim/não.",
+        "Conduta: IBP + mudanças de estilo de vida; EDA indicada por ___.",
+        "Encaminho à gastroenterologia para seguimento / pHmetria se refratário."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente de 35 anos, pirose e regurgitação típicas, sem sinais de alarme. Qual a conduta inicial?",
+      "alternativas": [
+        "Endoscopia digestiva alta obrigatória",
+        "Iniciar IBP e mudanças de estilo de vida (diagnóstico clínico, sem necessidade de exames)",
+        "pHmetria imediata",
+        "Pesquisa de H. pylori de rotina",
+        "Procinético como primeira linha"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado indica a realização de endoscopia digestiva alta no paciente com sintomas de refluxo?",
+      "alternativas": [
+        "Pirose ocasional",
+        "Disfagia, perda de peso, anemia ou sangramento (sinais de alarme)",
+        "Melhora com antiácido",
+        "Sintomas há 2 semanas em jovem",
+        "Regurgitação após café"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre o uso de procinéticos na DRGE, é correto:",
+      "alternativas": [
+        "São primeira linha de tratamento",
+        "Não há recomendação para uso na DRGE (apenas em síndromes funcionais pós-prandiais)",
+        "Substituem o IBP",
+        "Curam a esofagite",
+        "São obrigatórios em todos os pacientes"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Antes de realizar pHmetria para confirmar DRGE em paciente sem diagnóstico, qual cuidado é necessário?",
+      "alternativas": [
+        "Iniciar IBP na véspera",
+        "Suspender o IBP até 1 semana antes (evitar falso-negativo)",
+        "Fazer em jejum de 30 minutos apenas",
+        "Administrar procinético",
+        "Realizar durante uso de antiácido"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual orientação de estilo de vida é adequada na DRGE?",
+      "alternativas": [
+        "Deitar logo após as refeições",
+        "Elevar a cabeceira da cama, perder peso e evitar alimentos-gatilho",
+        "Aumentar o consumo de café",
+        "Dormir em decúbito lateral direito",
+        "Fazer refeições copiosas à noite"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Em paciente jovem com sintomas típicos e sem sinais de alarme, o diagnóstico é clínico: inicia-se IBP e mudanças de estilo de vida, sem necessidade de EDA ou pesquisa de H. pylori (que não se relaciona à DRGE isolada)."},
+    {"resposta": "B", "comentario": "Sinais de alarme (disfagia, perda de peso, anemia, sangramento, HF de câncer, idade >45-50, refratariedade) indicam EDA para excluir complicações e neoplasia."},
+    {"resposta": "B", "comentario": "Procinéticos não são recomendados na DRGE; seu uso restringe-se a síndromes funcionais (desconforto pós-prandial). O pilar é o IBP associado a mudanças de estilo de vida."},
+    {"resposta": "B", "comentario": "Para a pHmetria diagnóstica (paciente sem diagnóstico), suspende-se o IBP até 1 semana antes, evitando resultado falso-negativo pela supressão ácida."},
+    {"resposta": "B", "comentario": "Medidas eficazes: elevar a cabeceira, perder peso em obesos, evitar alimentos-gatilho (álcool, café, gordura, tomate) e não deitar após refeições — reduzem a exposição ácida."}
+  ]
+}

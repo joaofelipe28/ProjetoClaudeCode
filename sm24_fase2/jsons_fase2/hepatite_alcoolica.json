@@ -1,0 +1,196 @@
+{
+  "slug": "hepatite_alcoolica",
+  "titulo": "Hepatite Alcoólica Aguda",
+  "especialidade": "GASTROENTEROLOGIA",
+  "chapter_subject": "Hepatite Alcoólica no PS",
+  "chapter_bar": "HEPATITE ALCOÓLICA AGUDA — MADDREY",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — GRAVIDADE PELO MADDREY",
+      "title": "HEPATITE ALCOÓLICA — CALCULAR MADDREY SEMPRE",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Icterícia subita + etilismo + AST/ALT >1,5\nSuporte + tiamina + calcular MADDREY", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 24, "text": "DF < 32:\nleve-moderada\nsuporte + abstinencia", "color": "green", "font_size": 6.0},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "DF >= 32: grave\nPREDNISOLONA 40mg\n(se sem contraindicacao)", "color": "red", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.15, "w": 150, "h": 18, "text": "Tratar infeccao/sangramento antes", "color": "orange", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Síndrome inflamatória hepática aguda associada a consumo excessivo e recente de álcool",
+        "Icterícia de início súbito + AST desproporcional à ALT (AST/ALT > 1,5, em geral < 300 U/L)",
+        "Graus variáveis de insuficiência hepática",
+        "Contexto: etilismo crônico pesado, ingestão recente (até 8 semanas), desnutrição"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR",
+      "section_color": "purple",
+      "titulo": "ANAMNESE E EXAME",
+      "items": [
+        "Quantidade/padrão e duração do etilismo; data da última ingestão; episódios prévios",
+        "Icterícia, hepatomegalia DOLOROSA, febre",
+        "Sinais de descompensação: ascite, encefalopatia hepática, hipertensão portal",
+        "Evitar medicamentos hepatotóxicos; investigar uso concomitante de drogas",
+        "AST/ALT > 1,5 com transaminases geralmente < 300 é a assinatura laboratorial"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "GRAVIDADE — DISCRIMINANTE DE MADDREY (DF)",
+      "section_color": "navy",
+      "titulo": "CÁLCULO OBRIGATÓRIO",
+      "items": [
+        "DF = 4,6 x (TP do paciente - TP controle) + bilirrubina total (mg/dL)",
+        "DF < 32: hepatite alcoólica leve a moderada",
+        "DF >= 32: hepatite alcoólica GRAVE (alta mortalidade em 28 dias)",
+        "Critério fundamental para considerar corticoide",
+        "O Maddrey é OBRIGATÓRIO em todo paciente com suspeita de hepatite alcoólica aguda"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES",
+      "section_color": "navy",
+      "titulo": "SOLICITAR",
+      "items": [
+        "AST, ALT, bilirrubina total e frações, INR/TP, albumina",
+        "Creatinina, ureia, hemograma, eletrólitos",
+        "Ultrassonografia abdominal com Doppler",
+        "HBsAg e Anti-HCV (excluir hepatites virais)",
+        "Rastrear infecção (frequente e contraindica corticoide se não controlada)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS",
+      "section_color": "orange",
+      "titulo": "SUPORTE + VITAMINOTERAPIA",
+      "items": [
+        "Suspensão IMEDIATA do álcool; suporte clínico e hemodinâmico; correção hidroeletrolítica",
+        "SF 0,9% 500-1000 mL conforme volemia",
+        "TIAMINA 100mg IV 1x/dia ANTES da glicose (prevenir Wernicke)",
+        "Complexo B 1 ampola IV/dia + Ácido fólico 5mg VO/dia",
+        "Omeprazol 40mg IV/dia; Lactulose 20-30mL 8/8h se encefalopatia",
+        "Dipirona 1g IV 6/6h se dor/febre. EVITAR AINE e PARACETAMOL; suporte nutricional precoce"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CORTICOIDE — INDICAÇÃO E CONTRAINDICAÇÕES",
+      "section_color": "red",
+      "titulo": "PREDNISOLONA NA FORMA GRAVE",
+      "items": [
+        "Indicação: hepatite alcoólica GRAVE (Maddrey >= 32) sem contraindicações",
+        "Esquema: Prednisolona 40mg VO 1x/dia por 28 dias",
+        "Contraindicações ABSOLUTAS: infecção ativa não controlada, sangramento digestivo ativo",
+        "  insuficiência renal grave, sepse, pancreatite aguda",
+        "Tratar precocemente infecções antes/junto; reavaliar resposta (escore de Lille ~dia 7)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: Maddrey >= 32, bilirrubina > 3, INR > 1,5, encefalopatia, insuficiência renal, infecção associada",
+        "ALTA: clinicamente estável, sem encefalopatia, função renal preservada, sem infecção ativa",
+        "ALTA: seguimento ambulatorial garantido (hepatologia)",
+        "Casa: tiamina 100mg VO/dia, ácido fólico 5mg/dia, lactulose se necessário",
+        "Abstinência alcoólica absoluta + dieta hipercalórica/hiperproteica; retorno se confusão/vômitos/sangramento"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Hepatite alcoólica aguda; Maddrey = ___ (>=32 grave). Bilirrubina ___; INR ___.",
+        "Critérios de gravidade: encefalopatia / insuficiência renal / sangramento / instabilidade.",
+        "Condutas: suporte, vitaminoterapia (tiamina/complexo B/folato), avaliação para corticoide.",
+        "Solicito transferência para hospital com suporte em hepatologia e/ou UTI."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente etilista com icterícia súbita, AST 180 / ALT 90, bilirrubina 12, Maddrey 40, sem infecção/sangramento. Qual a conduta específica?",
+      "alternativas": [
+        "Apenas suporte, sem corticoide",
+        "Prednisolona 40 mg/dia por 28 dias (hepatite alcoólica grave sem contraindicações)",
+        "Paracetamol para a febre",
+        "Antibiótico profilático de rotina",
+        "Transplante hepático imediato no PS"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual relação laboratorial é característica da hepatite alcoólica aguda?",
+      "alternativas": [
+        "ALT muito maior que AST",
+        "AST/ALT > 1,5 (AST desproporcionalmente elevada), em geral < 300 U/L",
+        "Transaminases acima de 2000",
+        "Bilirrubina normal",
+        "INR sempre normal"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual vitamina deve ser administrada ANTES da glicose no etilista, para prevenir encefalopatia de Wernicke?",
+      "alternativas": [
+        "Ácido fólico",
+        "Tiamina (B1)",
+        "Vitamina C",
+        "Vitamina D",
+        "Cianocobalamina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é uma contraindicação ABSOLUTA ao uso de corticoide na hepatite alcoólica grave?",
+      "alternativas": [
+        "Ascite controlada",
+        "Infecção ativa não controlada (ou sangramento digestivo ativo/sepse/IR grave/pancreatite)",
+        "Icterícia",
+        "Hepatomegalia",
+        "AST elevada"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual analgésico/antitérmico deve ser EVITADO na hepatite alcoólica aguda?",
+      "alternativas": [
+        "Dipirona",
+        "Paracetamol (e AINEs)",
+        "Tiamina",
+        "Lactulose",
+        "Omeprazol"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Maddrey >= 32 define hepatite alcoólica grave; na ausência de contraindicações (infecção/sangramento/sepse/IR/pancreatite), indica-se prednisolona 40mg/dia por 28 dias, com reavaliação da resposta (escore de Lille)."},
+    {"resposta": "B", "comentario": "A assinatura é AST/ALT > 1,5 (AST desproporcionalmente maior), com transaminases tipicamente abaixo de 300 U/L — diferente das hepatites virais/isquêmicas, que cursam com níveis muito mais altos."},
+    {"resposta": "B", "comentario": "A tiamina (B1) deve ser dada antes da glicose no etilista para prevenir a encefalopatia de Wernicke, pois a infusão de glicose sem tiamina pode precipitá-la."},
+    {"resposta": "B", "comentario": "Infecção ativa não controlada é contraindicação absoluta ao corticoide (assim como sangramento digestivo ativo, sepse, insuficiência renal grave e pancreatite aguda), pelo risco de agravar essas condições."},
+    {"resposta": "B", "comentario": "Evita-se paracetamol (hepatotóxico, sobretudo no etilista/desnutrido) e AINEs (nefro/gastrolesivos no hepatopata). A dipirona é a opção preferida para dor/febre nesse contexto."}
+  ]
+}

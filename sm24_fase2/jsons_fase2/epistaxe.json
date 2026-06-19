@@ -1,0 +1,194 @@
+{
+  "slug": "epistaxe",
+  "titulo": "Epistaxe",
+  "especialidade": "OTORRINOLARINGO",
+  "chapter_subject": "Epistaxe no PS",
+  "chapter_bar": "EPISTAXE — ANTERIOR x POSTERIOR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — MANEJO ESCALONADO",
+      "title": "EPISTAXE — DA COMPRESSÃO AO TAMPONAMENTO",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Sangramento nasal - sentar, inclinar para frente\ncompressao digital 10-15 min", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 205, "h": 20, "text": "Vasoconstritor topico + anestesico + cauterizar ponto", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 145, "h": 24, "text": "Falha anterior:\ntamponamento\n'dedo de luva'", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 150, "h": 26, "text": "POSTERIOR (Foley):\nemergencia -> internar\n+ ORL", "color": "red", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CLASSIFICAÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Sangramento de origem nasal, muito frequente no PS; gravidade variável",
+        "ANTERIOR: plexo de Kiesselbach; visualização direta, geralmente unilateral e leve (maioria)",
+        "POSTERIOR: artéria esfenopalatina; sangramento intenso, bilateral, sangue na orofaringe — potencialmente grave",
+        "Exige abordagem sistematizada e escalonada"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "AVALIAÇÃO INICIAL",
+      "section_color": "purple",
+      "titulo": "ANTES DE TUDO",
+      "items": [
+        "Avaliar estabilidade hemodinâmica e estimar o volume do sangramento",
+        "Verificar uso de anticoagulantes/antiagregantes",
+        "Identificar sinais de epistaxe POSTERIOR (sangue na orofaringe, bilateral, não cessa com compressão anterior)",
+        "Investigar comorbidades (HAS, hepatopatia/coagulopatia)",
+        "Controlar a PA elevada (a HAS perpetua o sangramento)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO PASSO A PASSO",
+      "section_color": "orange",
+      "titulo": "DA COMPRESSÃO À CAUTERIZAÇÃO",
+      "items": [
+        "1. Sentar, tronco inclinado para frente; compressão digital da parte mole do nariz por 10-15 min; compressa fria no dorso",
+        "2. Vasoconstritor tópico: Oximetazolina 2 jatos OU adrenalina 1:10.000 (1mL de 1:1.000 + 9mL SF) em algodão por 10 min",
+        "   (evitar em HAS grave não controlada)",
+        "3. Anestésico tópico: Lidocaína 2% em algodão (facilita cauterização/tamponamento)",
+        "4. Cauterização com nitrato de prata no ponto sangrante por 5-10s",
+        "   NÃO cauterizar AMBOS os lados do septo simultaneamente (risco de perfuração septal)"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TAMPONAMENTO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "ANTERIOR ('dedo de luva')",
+        "items": [
+          "Indicado: falha das medidas anteriores / sangramento anterior persistente",
+          "Cortar dedo de luva estéril; preencher com gaze (cilindro)",
+          "Lubrificar com lidocaína gel; introduzir no assoalho da fossa nasal",
+          "Ajustar até preencher a fossa; fixar externamente",
+          "Permanência: 24-48h"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "POSTERIOR (sonda Foley)",
+        "items": [
+          "EMERGÊNCIA: suspeita de epistaxe posterior -> internação + ORL",
+          "Foley nº 12-14, introduzir até ver na orofaringe",
+          "Insuflar o balão com 7-10 mL de SF; tracionar até acomodar na coana",
+          "Associar tamponamento anterior; fixar externamente",
+          "Monitorizar dor, saturação e risco de aspiração + analgesia"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ANTIBIÓTICO E INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "QUANDO",
+      "items": [
+        "Profilaxia ATB se tamponamento > 24h: Amoxi-clav 875/125mg VO 12/12h por 5-7 dias (alergia: Clindamicina 300mg 6/6h)",
+        "INTERNAR: epistaxe posterior, instabilidade hemodinâmica, necessidade de sonda Foley",
+        "INTERNAR: uso de anticoagulante com sangramento ativo (avaliar reversão)",
+        "Cuidado com o tamponamento posterior: risco de hipoventilação/aspiração (reflexo nasovagal)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA E ORIENTAÇÕES",
+      "titulo": "ALTA SE",
+      "items": [
+        "Sangramento controlado, sem sinais de epistaxe posterior",
+        "Orientações fornecidas + retorno programado para retirada do tampão",
+        "Não assoar o nariz por 48h; evitar esforço físico",
+        "Hidratar a mucosa nasal com SF 0,9%",
+        "Retornar se novo sangramento"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Epistaxe ( ) anterior ( ) posterior; estimativa de volume ___; anticoagulante: sim/não.",
+        "Condutas: vasoconstritor + cauterização / tamponamento anterior / tamponamento posterior com Foley.",
+        "Estabilidade hemodinâmica: ___; PA controlada: sim/não.",
+        "Motivo da transferência: falha terapêutica / epistaxe posterior / avaliação cirúrgica (ORL)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a primeira medida no manejo da epistaxe anterior no PS?",
+      "alternativas": [
+        "Tamponamento posterior com sonda Foley",
+        "Sentar o paciente inclinado para frente e fazer compressão digital da parte mole do nariz por 10-15 minutos",
+        "Cauterizar ambos os lados do septo",
+        "Inclinar a cabeça para trás",
+        "Iniciar antibiótico endovenoso"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado sugere epistaxe POSTERIOR?",
+      "alternativas": [
+        "Sangramento unilateral leve visível na narina",
+        "Sangramento intenso, bilateral, com sangue escorrendo pela orofaringe e que não cessa com compressão anterior",
+        "Sangramento que cessa com compressão digital",
+        "Ponto sangrante no plexo de Kiesselbach",
+        "Epistaxe após assoar o nariz, leve"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que não se deve cauterizar ambos os lados do septo nasal simultaneamente?",
+      "alternativas": [
+        "Por dor excessiva",
+        "Pelo risco de perfuração septal",
+        "Porque é ineficaz",
+        "Porque consome muito nitrato de prata",
+        "Porque causa anosmia permanente"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Após tamponamento nasal por mais de 24h, qual conduta é recomendada?",
+      "alternativas": [
+        "Nenhuma medida adicional",
+        "Profilaxia antibiótica (amoxicilina-clavulanato)",
+        "Corticoide oral",
+        "Anticoagulação",
+        "Retirar o tampão em 6 horas"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual cuidado é essencial após o tamponamento posterior com sonda Foley?",
+      "alternativas": [
+        "Liberar o paciente imediatamente",
+        "Internação com monitorização de dor, saturação e risco de aspiração",
+        "Suspender analgesia",
+        "Assoar o nariz com força",
+        "Aplicar calor local"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A primeira medida na epistaxe anterior é posicionar o paciente sentado e inclinado para frente (evita deglutir sangue/aspiração) e comprimir a parte mole do nariz por 10-15 minutos — resolve a maioria dos casos."},
+    {"resposta": "B", "comentario": "Sangramento intenso, bilateral, com sangue na orofaringe e refratário à compressão anterior sugere epistaxe posterior (artéria esfenopalatina) — potencialmente grave, exige tamponamento posterior, internação e ORL."},
+    {"resposta": "B", "comentario": "A cauterização bilateral simultânea do septo deve ser evitada pelo risco de perfuração septal (isquemia da mucosa de ambos os lados no mesmo ponto)."},
+    {"resposta": "B", "comentario": "Tamponamento nasal por > 24h indica profilaxia antibiótica (amoxicilina-clavulanato; clindamicina se alergia) para reduzir o risco de sinusite/síndrome do choque tóxico associado ao tampão."},
+    {"resposta": "B", "comentario": "O tamponamento posterior com Foley exige internação com monitorização de dor, saturação e risco de aspiração/hipoventilação (reflexo nasovagal), além de analgesia adequada."}
+  ]
+}

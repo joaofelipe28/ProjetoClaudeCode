@@ -39,7 +39,12 @@
       "Bash(python3 -c \"import os; b=os.path.getsize\\('apostila_anemia.pdf'\\); print\\(f'base64 ~{int\\(b*1.34\\)} chars \\(~{int\\(b*1.34/4/1000\\)}k tokens\\) por arquivo; x15 = ~{int\\(b*1.34*15/4/1000000\\):.0f}M tokens'\\)\")",
       "Bash(python3 sm24_gerador/build_apostila.py jsons_fase2/angina_ludwig.json --outdir outputs)",
       "Bash(sips -s format png apostila_endocardite_infecciosa.pdf --out /tmp/endo_chk.png)",
-      "Bash(sips -s format png apostila_oclusao_arterial_aguda.pdf --out /tmp/oaa_chk.png)"
+      "Bash(sips -s format png apostila_oclusao_arterial_aguda.pdf --out /tmp/oaa_chk.png)",
+      "Bash(sips -s format png apostila_faringoamigdalite_aguda.pdf --out /tmp/far_chk.png)",
+      "Bash(sips -s format png apostila_celulite_facial.pdf --out /tmp/cel_chk.png)",
+      "Bash(sips -s format png apostila_drge.pdf --out /tmp/drge_chk.png)",
+      "Bash(sips -s format png apostila_faringoamigdalite_aguda.pdf --out /tmp/far2_chk.png)",
+      "Bash(sips -s format png apostila_angina_ludwig.pdf --out /tmp/ang_chk.png)"
     ]
   }
 }

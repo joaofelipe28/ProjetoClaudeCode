@@ -1,0 +1,194 @@
+{
+  "slug": "otite_media_aguda",
+  "titulo": "Otite Média Aguda (OMA)",
+  "especialidade": "OTORRINOLARINGO",
+  "chapter_subject": "OMA no PS",
+  "chapter_bar": "OTITE MÉDIA AGUDA — ATB x OBSERVAÇÃO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ATB IMEDIATO x OBSERVAÇÃO",
+      "title": "OMA — ANALGESIA SEMPRE, ATB SELETIVO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "OMA de certeza: efusao + abaulamento mod/grave da MT\n(ou otorreia recente) - ANALGESIA SEMPRE", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 26, "text": "ATB IMEDIATO:\n<6m, <2a bilateral,\ngrave, comorbidade", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "OBSERVAR 48-72h:\n>2a nao grave OU\n6m-2a unilat. leve", "color": "green", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "1a linha: Amoxicilina 40-50 mg/kg/dia", "color": "teal", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO DE CERTEZA",
+      "section_color": "teal",
+      "titulo": "CRITÉRIOS OBRIGATÓRIOS",
+      "items": [
+        "Início agudo (< 48h) + EFUSÃO na orelha média + sinais/sintomas inflamatórios",
+        "Efusão evidenciada por UM: abaulamento moderado/grave da MT (sinal mais específico)",
+        "  OU otorreia recente (não atribuível a otite externa)",
+        "  OU abaulamento leve + otalgia recente (<48h) OU abaulamento leve + hiperemia importante",
+        "ATENÇÃO: hiperemia ISOLADA da MT (ex.: criança chorando) NÃO é critério suficiente",
+        "Patógenos: S. pneumoniae, H. influenzae (não tipável), M. catarrhalis"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESTRATIFICAÇÃO DE RISCO",
+      "section_color": "navy",
+      "headers": ["Risco", "Perfil"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Baixo", "Criança > 2 anos, unilateral, sem sinais de gravidade"],
+        ["Intermediário", "6 meses-2 anos, unilateral, sem gravidade"],
+        ["Alto", "< 6 meses, bilateral, sinais de gravidade, comorbidades"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "1) CONTROLE DA DOR (TODOS OS CASOS)",
+      "section_color": "orange",
+      "titulo": "ANALGESIA OBRIGATÓRIA",
+      "items": [
+        "Paracetamol 15 mg/kg/dose VO 6/6h",
+        "OU Ibuprofeno 10 mg/kg/dose VO 6/6h",
+        "OU Dipirona 15 mg/kg/dose VO 6/6h",
+        "CONTRAINDICADO: gotas otológicas analgésicas se suspeita/confirmação de perfuração da MT (ototoxicidade)",
+        "A analgesia é o pilar mesmo nos casos em observação sem antibiótico"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "2) ANTIBIÓTICO IMEDIATO x OBSERVAÇÃO",
+      "section_color": "navy",
+      "headers": ["ATB imediato se", "Observar 48-72h se"],
+      "header_colors": ["red", "green"],
+      "col_widths": [0.50, 0.50],
+      "rows": [
+        ["Toda criança < 6 meses", "6 meses-2 anos: OMA unilateral não grave, dx incerto"],
+        ["6m-2a com OMA bilateral de certeza", "> 2 anos: OMA não grave (uni ou bilateral)"],
+        ["Qualquer idade com OMA grave (otalgia severa, febre >= 39, otorreia)", "Condição: família confiável + reavaliação garantida em 48-72h"],
+        ["Comorbidades (imunodef., anomalias craniofaciais)", "Iniciar ATB se piora ou sem melhora em 48-72h"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "3) ANTIBIOTICOTERAPIA",
+      "section_color": "orange",
+      "titulo": "ESQUEMAS E DURAÇÃO",
+      "items": [
+        "1a linha: Amoxicilina 40-50 mg/kg/dia (até 80-90 mg/kg/dia em alta resistência) VO",
+        "Falha em 48-72h, uso de amoxicilina nos últimos 30 dias, ou conjuntivite purulenta (H. influenzae):",
+        "  Amoxicilina + Clavulanato",
+        "Alergia não anafilática: cefalosporina; anafilática: macrolídeo/clindamicina",
+        "Duração: < 2 anos ou quadro grave = 10 dias | > 2 anos leve/moderado = 7 dias"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — OMA COMPLICADA",
+      "section_color": "red",
+      "titulo": "AVALIAR IMAGEM / ORL / INTERNAÇÃO",
+      "items": [
+        "Edema/hiperemia/flutuação RETROAURICULAR e dor à mastoide -> MASTOIDITE",
+        "Paralisia facial",
+        "Rigidez de nuca, sinais meníngeos, rebaixamento -> complicação intracraniana",
+        "TC de ossos temporais se: suspeita de mastoidite, paralisia facial, sinais intracranianos",
+        "Timpanocentese (especializada): falha de múltiplos esquemas, complicação supurativa, imunossupressão grave"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE ALTA E ENCAMINHAMENTO",
+      "titulo": "ANTES DE LIBERAR",
+      "items": [
+        "Dor controlada/tolerável (< 4/10); afebril ou febre controlada; criança ativa, sem toxemia",
+        "Otoscopia documentada; sem sinais de complicação (mastoidite, paralisia facial)",
+        "Receita e dosagens explicadas; orientação de reavaliação em 48-72h se observação",
+        "Retorno IMEDIATO: piora da dor, febre alta persistente, otorreia, edema/vermelhidão retroauricular, rigidez de nuca",
+        "ORL se: OMA recorrente (>= 3 episódios/6 meses ou >= 4/ano) ou efusão persistente >= 3 meses"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE TRANSFERÊNCIA (OMA complicada)",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos, ___ kg, OMA ___ (uni/bilateral) há ___; otalgia ___/10; febre ___; otorreia: sim/não.",
+        "Complicação suspeita: mastoidite / paralisia facial / meningite. Retroauricular: edema/flutuação.",
+        "Conduta: analgesia, ATB ___. Solicito avaliação ORL/neurocirurgia / UTI pediátrica / TC.",
+        "Manter analgesia e acesso venoso pérvio no transporte; acompanhante obrigatório."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Lactente de 10 meses com OMA bilateral de certeza, febre 38,5, sem comorbidades. Qual a conduta?",
+      "alternativas": [
+        "Observação por 48-72h sem antibiótico",
+        "Antibioticoterapia imediata (amoxicilina) + analgesia",
+        "Apenas gotas otológicas analgésicas",
+        "Corticoide oral",
+        "Antiviral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o sinal otoscópico mais específico de OMA?",
+      "alternativas": [
+        "Hiperemia isolada da membrana timpânica",
+        "Abaulamento moderado a severo da membrana timpânica",
+        "Cerume abundante",
+        "Membrana timpânica translúcida",
+        "Reflexo luminoso presente"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Em qual situação é aceitável a observação vigilante (48-72h) sem antibiótico na OMA?",
+      "alternativas": [
+        "Criança < 6 meses",
+        "Criança > 2 anos com OMA não grave e família confiável com reavaliação garantida",
+        "OMA grave com otorreia",
+        "Imunossuprimido",
+        "OMA bilateral em lactente de 1 ano"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual achado sugere mastoidite, complicação da OMA?",
+      "alternativas": [
+        "Hiperemia da orofaringe",
+        "Edema/hiperemia retroauricular com dor à palpação da mastoide",
+        "Coriza",
+        "Tosse seca",
+        "Conjuntivite"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o antibiótico de primeira linha na OMA não complicada?",
+      "alternativas": [
+        "Azitromicina",
+        "Amoxicilina",
+        "Ciprofloxacino",
+        "Ceftriaxona endovenosa",
+        "Clindamicina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Crianças 6 meses-2 anos com OMA BILATERAL de certeza têm indicação de antibiótico imediato (amoxicilina), sempre com analgesia. A observação reserva-se a quadros unilaterais não graves > 2 anos (ou 6m-2a unilateral leve)."},
+    {"resposta": "B", "comentario": "O abaulamento moderado a severo da membrana timpânica é o sinal otoscópico mais específico de OMA. A hiperemia isolada (especialmente em criança chorando) NÃO é critério suficiente."},
+    {"resposta": "B", "comentario": "A observação vigilante (48-72h) é aceitável em crianças > 2 anos com OMA não grave (ou 6m-2a unilateral não grave com dx incerto), DESDE QUE a família seja confiável e haja reavaliação garantida."},
+    {"resposta": "B", "comentario": "Edema, hiperemia e flutuação retroauricular com dor à palpação da mastoide sugerem mastoidite — complicação da OMA que requer avaliação de imagem (TC), ORL e frequentemente internação."},
+    {"resposta": "B", "comentario": "A amoxicilina é o antibiótico de primeira linha na OMA. Amoxicilina-clavulanato fica para falha em 48-72h, uso recente de amoxicilina ou conjuntivite purulenta associada (H. influenzae)."}
+  ]
+}

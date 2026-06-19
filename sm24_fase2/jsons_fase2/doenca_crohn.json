@@ -1,0 +1,209 @@
+{
+  "slug": "doenca_crohn",
+  "titulo": "Doença de Crohn — Agudização",
+  "especialidade": "GASTROENTEROLOGIA",
+  "chapter_subject": "Crohn em agudização no PS",
+  "chapter_bar": "DOENÇA DE CROHN — EMERGÊNCIA E AGUDIZAÇÃO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — AGUDIZAÇÃO",
+      "title": "CROHN — GRAVIDADE GUIA A INTERNAÇÃO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Agudizacao: diarreia, dor abdominal, febre\nProcurar gatilho (suspensao tto, ATB, AINE, infeccao)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 24, "text": "Leve: tto\nambulatorial\notimizar manutencao", "color": "green", "font_size": 6.0},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "Moderada/grave:\ninternar + CORTICOIDE\nEV + excluir infeccao", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.15, "w": 150, "h": 18, "text": "Falha 3-5d -> biologico/cirurgia", "color": "orange", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Doença inflamatória intestinal crônica, imunomediada, com inflamação TRANSMURAL",
+        "Pode acometer qualquer segmento da boca ao ânus (descontínua, 'salteada')",
+        "Cursa com agudizações e complicações inflamatórias, estenosantes e fistulizantes",
+        "Gatilhos de agudização: suspensão/uso irregular da manutenção, infecção (C. difficile, CMV), AINE, progressão"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE GRAVIDADE (SBG)",
+      "section_color": "navy",
+      "headers": ["Gravidade", "Critérios clínicos", "Laboratório/complicações"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.18, 0.44, 0.38],
+      "rows": [
+        ["Leve", "<= 4 evacuações/dia, sem febre/dor intensa", "Sem anemia significativa"],
+        ["Moderada", "> 4 evacuações/dia, dor abdominal, febre baixa", "Perda de peso < 10%, anemia leve"],
+        ["Grave", ">= 6 evacuações/dia com sangue, febre > 38, FC > 90", "Hb < 10, PCR/VHS altos, abscesso/megacólon/perfuração"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — MEGACÓLON TÓXICO",
+      "section_color": "red",
+      "titulo": "COMPLICAÇÃO POTENCIALMENTE FATAL",
+      "items": [
+        "Diâmetro colônico >= 6 cm no RX simples + febre, taquicardia, leucocitose + toxemia",
+        "Distensão abdominal e parada de eliminação de gases",
+        "Outras emergências: abscesso intra-abdominal, perfuração, hemorragia maciça, sepse",
+        "Suspender via oral; corticoide EV; ATB amplo espectro; correção hidroeletrolítica; monitorização intensiva",
+        "Cirurgia de emergência: perfuração, hemorragia maciça, choque séptico ou sem melhora em 48-72h"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "NO PS",
+      "items": [
+        "Checklist: sinais de gravidade sistêmica, dor/defesa, sepse, distensão, parada de eliminação de gases",
+        "Suspender alimentação oral em casos moderados/graves",
+        "Hemograma, PCR, VHS, função renal, eletrólitos, ALBUMINA",
+        "Coprocultura + toxina para C. difficile (excluir infecção que mimetiza/precipita)",
+        "TC de abdome com contraste (abscesso, perfuração, estenose); RX de abdome se suspeita de megacólon"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO DA AGUDIZAÇÃO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "CORTICOIDE (base, mod/grave)",
+        "items": [
+          "Hidrocortisona 100mg EV 6-8/8h, OU",
+          "Metilprednisolona 60mg EV 1x/dia",
+          "Avaliar resposta em 72-96h",
+          "Contra (relativas): infecção ativa não tratada,",
+          "  perfuração, megacólon sem controle",
+          "Profilaxia de TEV (HBPM); evitar AINE/opioide/antidiarreico"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "ATB (quando indicado)",
+        "items": [
+          "Indicações: abscesso intra-abdominal, sepse, doença perianal ativa",
+          "Ciprofloxacino 400mg EV 12/12h",
+          "  + Metronidazol 500mg EV 8/8h",
+          "ATB NÃO é tratamento da inflamação per se",
+          "Drenagem do abscesso conforme avaliação cirúrgica"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "FALHA AO CORTICOIDE",
+      "section_color": "purple",
+      "titulo": "REFRATARIEDADE (3-5 DIAS)",
+      "items": [
+        "Ausência de resposta após 3-5 dias de corticoide EV = falha terapêutica",
+        "Reavaliar diagnóstico e EXCLUIR infecção (C. difficile, CMV)",
+        "Terapia de resgate: biológico (anti-TNF) conforme protocolo especializado",
+        "Avaliar complicações mecânicas (estenose/fístula)",
+        "Solicitar avaliação CIRÚRGICA precoce"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: doença moderada/grave, necessidade de corticoide EV, complicação inflamatória, megacólon, falha ambulatorial",
+        "ALTA: resolução da dor e diarreia, sem sinais de complicação",
+        "ALTA: terapia de manutenção definida + seguimento com gastroenterologia garantido",
+        "Orientar adesão à manutenção e evitar AINE",
+        "Retorno se: febre, dor intensa, sangramento, distensão, parada de eliminação de gases"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Doença de Crohn em agudização (gravidade SBG: ___). Evacuações/dia: ___; febre: sim/não; PCR: ___.",
+        "Complicações: abscesso / megacólon / perfuração / fístula. TC de abdome: ___.",
+        "Condutas: corticoide EV ___; ATB ___; profilaxia de TEV.",
+        "Motivo da transferência: falha terapêutica / megacólon tóxico / avaliação cirúrgica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com Crohn, 8 evacuações/dia com sangue, febre 38,5, FC 100, Hb 9, PCR elevada. Qual a conduta inicial?",
+      "alternativas": [
+        "Alta com corticoide oral e retorno em 30 dias",
+        "Internação + corticoide endovenoso + exclusão de infecção (C. difficile/CMV)",
+        "Antidiarreico e observação",
+        "Apenas hidratação oral",
+        "Antibiótico oral isolado"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o critério radiológico de megacólon tóxico?",
+      "alternativas": [
+        "Diâmetro colônico >= 6 cm em RX simples com toxemia",
+        "Espessamento de parede < 3 mm",
+        "Pneumoperitônio isolado",
+        "Diâmetro colônico de 3 cm",
+        "Presença de fezes no cólon"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Após 3-5 dias de corticoide EV sem melhora, o que caracteriza e qual a conduta?",
+      "alternativas": [
+        "Cura — dar alta",
+        "Refratariedade ao corticoide — excluir infecção, considerar biológico de resgate e avaliação cirúrgica",
+        "Indicação de antidiarreico",
+        "Aumentar a dieta oral",
+        "Reduzir a dose do corticoide pela metade"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual exame deve ser solicitado para excluir infecção que precipita/mimetiza a agudização da DII?",
+      "alternativas": [
+        "Amilase",
+        "Coprocultura e toxina para Clostridioides difficile",
+        "Lipase",
+        "TSH",
+        "Ácido úrico"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual classe de medicamento deve ser EVITADA por poder precipitar/agravar a agudização da doença de Crohn?",
+      "alternativas": [
+        "Inibidores de bomba de prótons",
+        "Anti-inflamatórios não esteroidais (AINEs)",
+        "Antieméticos",
+        "Corticoides",
+        "Reposição de ferro"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Crohn grave (Truelove-equivalente SBG) é emergência clínica: interna-se para corticoide EV (hidrocortisona/metilprednisolona), sempre excluindo infecção associada (C. difficile/CMV) que pode precipitar e contraindica intensificar imunossupressão sem tratar."},
+    {"resposta": "A", "comentario": "Megacólon tóxico = dilatação colônica >= 6 cm em RX simples associada a febre, taquicardia, leucocitose e toxemia. É emergência com risco de perfuração, exigindo conduta intensiva e avaliação cirúrgica."},
+    {"resposta": "B", "comentario": "Ausência de melhora após 3-5 dias de corticoide EV define refratariedade: reavaliar diagnóstico, excluir infecção, indicar terapia de resgate (anti-TNF) e acionar avaliação cirúrgica precoce."},
+    {"resposta": "B", "comentario": "Coprocultura e toxina para C. difficile (e pesquisa de CMV em refratários) excluem infecções que mimetizam ou precipitam a agudização da DII — fundamental antes de intensificar a imunossupressão."},
+    {"resposta": "B", "comentario": "Os AINEs devem ser evitados na DII: precipitam e agravam agudizações. Também se evita opioides e antidiarreicos (risco de megacólon) na fase aguda grave."}
+  ]
+}

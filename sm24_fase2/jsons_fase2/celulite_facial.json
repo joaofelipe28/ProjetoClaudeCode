@@ -1,0 +1,208 @@
+{
+  "slug": "celulite_facial",
+  "titulo": "Celulite de Face — Pré-septal e Pós-septal",
+  "especialidade": "OTORRINOLARINGO",
+  "chapter_subject": "Celulite periorbitária/orbitária no PS",
+  "chapter_bar": "CELULITE DE FACE — PRÉ x PÓS-SEPTAL",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — A DISTINÇÃO QUE SALVA O OLHO",
+      "title": "CELULITE FACIAL — PRÉ x PÓS-SEPTAL",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Edema/eritema periorbitario + febre", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 205, "h": 24, "text": "Dor a movimentacao ocular? Proptose?\nBaixa de visao? -> TC orbitas c/ contraste", "color": "orange", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "NAO: PRE-septal\nATB VO\nambulatorial leve", "color": "green", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 26, "text": "SIM: POS-septal\n(orbitaria) = ATB EV\n+ internar (emergencia)", "color": "red", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Infecção bacteriana dos tecidos moles periorbitários/orbitários",
+        "PRÉ-SEPTAL: limitada aos tecidos ANTERIORES ao septo orbitário (mais benigna)",
+        "PÓS-SEPTAL (orbitária): POSTERIOR ao septo — risco de complicações oftalmológicas e intracranianas",
+        "A distinção é fundamental: a pós-septal é EMERGÊNCIA infecciosa",
+        "Etiologia: sinusite (sobretudo etmoidal), trauma/picada, infecção odontogênica, conjuntivite. Agentes: S. aureus, S. pyogenes, S. pneumoniae, H. influenzae (não vacinados)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIFERENCIAÇÃO CLÍNICA — PRÉ x PÓS-SEPTAL",
+      "section_color": "navy",
+      "headers": ["Característica", "Pré-septal", "Pós-septal (orbitária)"],
+      "header_colors": ["gray", "green", "red"],
+      "col_widths": [0.26, 0.34, 0.40],
+      "rows": [
+        ["Dor ocular", "Ausente ou leve", "Presente e intensa"],
+        ["Movimentação ocular", "Preservada", "Dor e limitação (oftalmoplegia)"],
+        ["Proptose", "Não", "Sim"],
+        ["Acuidade visual", "Normal", "Pode estar reduzida"],
+        ["Sinais sistêmicos / risco SNC", "Leves / baixo", "Febre alta, toxemia / alto"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — CELULITE ORBITÁRIA",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA INFECCIOSA",
+      "items": [
+        "Dor à movimentação ocular, oftalmoplegia, proptose, queda de acuidade visual",
+        "Cefaleia intensa, vômitos, rebaixamento, sinais meníngeos -> extensão intracraniana",
+        "Suspeita de trombose de seio cavernoso ou abscesso (subperiosteal/cerebral)",
+        "TC de crânio e órbitas COM CONTRASTE é o exame-chave",
+        "Punção lombar NÃO é rotina — considerar (após TC) se sinais meníngeos/RNC/convulsão/extensão intracraniana, com infecto/neuro"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "NO PS",
+      "items": [
+        "Checklist: febre/toxemia, dor e mobilidade ocular, proptose e acuidade visual, sinais neurológicos, sinusite recente",
+        "Hemograma, PCR; hemoculturas antes do antibiótico (se possível)",
+        "TC de crânio e órbitas com contraste (exame-chave): pré-septal = edema anterior ao septo;",
+        "  pós-septal = infiltração da gordura orbital, proptose, possível abscesso subperiosteal",
+        "Avaliação oftalmológica (acuidade visual seriada na orbitária)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "PRÉ-SEPTAL (sem gravidade)",
+        "items": [
+          "Amoxicilina + Clavulanato 875/125mg VO 12/12h por 7-10 dias",
+          "Alergia: Cefalexina 500mg VO 6/6h OU Clindamicina 300mg VO 6-8/8h",
+          "Reavaliação em 48h; internar se toxemia, imunossupressão ou falha",
+          "Vigiar surgimento de sinais pós-septais (dor à mov. ocular, proptose)"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "PÓS-SEPTAL (orbitária) — EV + internar",
+        "items": [
+          "Ceftriaxona 2g EV 1x/dia + Oxacilina 2g EV 4-6/6h",
+          "Suspeita de MRSA: Vancomicina 15-20 mg/kg EV 8-12/12h",
+          "Sinusite grave/abscesso: adicionar Metronidazol 500mg EV 8/8h (anaeróbios)",
+          "EV por 10-14 dias, transição para VO após melhora sustentada",
+          "Avaliação ORL + oftalmologia"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INDICAÇÃO CIRÚRGICA E INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "DRENAGEM / INTERNAR",
+      "items": [
+        "Cirurgia (drenagem) se: abscesso subperiosteal/orbital, perda visual progressiva, sem melhora em 48-72h de ATB EV, complicação intracraniana",
+        "INTERNAR: TODOS os casos pós-septais",
+        "INTERNAR: pré-septal com toxemia, imunossuprimidos, falha ambulatorial",
+        "Alta (pré-septal): afebril 24-48h, redução do edema/dor, sem sinais oculares/neurológicos, plano ATB VO definido"
+      ],
+      "accent": "red"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Diferenciar pré x pós-septal (dor à mov. ocular, proptose, acuidade visual)",
+        "TC de órbitas com contraste se qualquer sinal pós-septal",
+        "Pós-septal = ATB EV + internação + ORL/oftalmo imediatos",
+        "Buscar e tratar a sinusite/foco causal",
+        "Acuidade visual seriada na celulite orbitária"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Celulite ( ) pré-septal ( ) pós-septal (orbitária). Febre ___; dor ocular: sim/não; proptose: sim/não.",
+        "TC de órbitas: ___ (gordura orbital/abscesso subperiosteal). Acuidade visual: ___.",
+        "ATB EV iniciado: ___; avaliação oftalmológica: sim/não.",
+        "Motivo da transferência: celulite orbitária / abscesso / avaliação cirúrgica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com edema periorbitário, dor intensa à movimentação ocular, proptose e queda de acuidade visual, febril. Diagnóstico e conduta?",
+      "alternativas": [
+        "Celulite pré-septal — antibiótico oral ambulatorial",
+        "Celulite pós-septal (orbitária) — emergência: TC de órbitas, antibiótico EV e internação",
+        "Conjuntivite alérgica — colírio anti-histamínico",
+        "Hordéolo — compressas quentes",
+        "Blefarite — higiene palpebral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o exame-chave para diferenciar celulite pré-septal de pós-septal?",
+      "alternativas": [
+        "Radiografia de face",
+        "Tomografia de crânio e órbitas com contraste",
+        "Ultrassonografia ocular",
+        "Hemograma",
+        "Fundoscopia isolada"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é a principal causa de celulite orbitária?",
+      "alternativas": [
+        "Conjuntivite viral",
+        "Sinusite bacteriana (especialmente etmoidal)",
+        "Catarata",
+        "Glaucoma",
+        "Pterígio"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual achado clínico está presente na celulite pós-septal, mas NÃO na pré-septal?",
+      "alternativas": [
+        "Edema palpebral",
+        "Proptose com dor/limitação à movimentação ocular",
+        "Eritema cutâneo",
+        "Febre baixa",
+        "Lacrimejamento"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando indicar drenagem cirúrgica na celulite orbitária?",
+      "alternativas": [
+        "Sempre, antes do antibiótico",
+        "Abscesso subperiosteal/orbital, perda visual progressiva ou ausência de melhora após 48-72h de ATB EV",
+        "Apenas em crianças",
+        "Nunca",
+        "Somente se houver febre"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor à movimentação ocular + proptose + queda de acuidade visual define celulite pós-septal (orbitária) — emergência infecciosa: TC de órbitas com contraste, antibiótico EV e internação imediata, com ORL/oftalmo."},
+    {"resposta": "B", "comentario": "A TC de crânio e órbitas com contraste é o exame-chave: a pré-septal mostra edema anterior ao septo; a pós-septal mostra infiltração da gordura orbital, proptose e eventual abscesso subperiosteal."},
+    {"resposta": "B", "comentario": "A sinusite bacteriana, sobretudo etmoidal, é a principal causa de celulite orbitária pela proximidade anatômica e disseminação através da lâmina papirácea."},
+    {"resposta": "B", "comentario": "Proptose com dor/limitação à movimentação ocular (e possível baixa de visão) caracteriza o acometimento pós-septal; a pré-septal mantém movimentação preservada, sem proptose e com visão normal."},
+    {"resposta": "B", "comentario": "Indica-se drenagem cirúrgica na celulite orbitária diante de abscesso subperiosteal/orbital, perda visual progressiva, falha após 48-72h de ATB EV ou complicações intracranianas."}
+  ]
+}

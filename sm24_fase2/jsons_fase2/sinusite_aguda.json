@@ -1,0 +1,180 @@
+{
+  "slug": "sinusite_aguda",
+  "titulo": "Rinossinusite Aguda",
+  "especialidade": "OTORRINOLARINGO",
+  "chapter_subject": "Rinossinusite Aguda no PS",
+  "chapter_bar": "RINOSSINUSITE AGUDA — VIRAL x BACTERIANA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — VIRAL x BACTERIANA",
+      "title": "RINOSSINUSITE — O TEMPO E O PADRÃO DECIDEM",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Obstrucao nasal + secrecao + dor facial\nExcluir sinais de ALERTA (orbita/SNC)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 24, "text": "<10 dias, melhora:\nVIRAL ->\nsintomatico", "color": "green", "font_size": 6.0},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "BACTERIANA (>=10d/\ngrave/double sickening)\n-> Amoxi-clav", "color": "orange", "font_size": 5.6},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Sinais de alerta -> TC + ORL/internacao", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CLASSIFICAÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Inflamação da mucosa nasal e dos seios paranasais: obstrução nasal, secreção, dor facial, cefaleia",
+        "Viral (resfriado comum) | Bacteriana aguda | Crônica (> 12 semanas)",
+        "Patógenos bacterianos: S. pneumoniae, H. influenzae, M. catarrhalis",
+        "Fatores predisponentes: rinite, desvio de septo, adenoides, exposição a mofo/cigarro"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "VIRAL x BACTERIANA — CRITÉRIOS",
+      "section_color": "navy",
+      "headers": ["Viral", "Bacteriana (um dos 3 critérios)"],
+      "header_colors": ["teal", "orange"],
+      "col_widths": [0.46, 0.54],
+      "rows": [
+        ["Sintomas < 10 dias", "Sintomas persistem >= 10 dias SEM melhora"],
+        ["Secreção clara/mucopurulenta", "Sintomas graves desde o início: febre >= 39 + secreção purulenta por >= 3 dias"],
+        ["Melhora progressiva após 5-7 dias", "Piora após melhora inicial ('double sickening', 5-7 dias)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — COMPLICAÇÕES ORBITÁRIAS/INTRACRANIANAS",
+      "section_color": "red",
+      "titulo": "AVALIAÇÃO IMEDIATA + IMAGEM",
+      "items": [
+        "Edema ou eritema PERIORBITÁRIO (celulite orbitária)",
+        "Proptose ocular ou alteração da movimentação ocular; diplopia ou alterações visuais",
+        "Edema frontal (Sinal de Pott / osteomielite frontal — 'Pott's puffy tumor')",
+        "Sintomas neurológicos: cefaleia intensa, vômitos, rebaixamento, sinais meníngeos",
+        "Esses sinais exigem TC de seios da face/órbitas e avaliação ORL/neurocirurgia"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "VIRAL x BACTERIANA",
+      "items": [
+        "VIRAL: sintomático — analgésico/antitérmico, lavagem nasal com SF 0,9% 4-6x/dia, hidratação",
+        "BACTERIANA (1a linha): Amoxicilina +/- Clavulanato",
+        "  Pediatria: amoxi-clav 80-90 mg/kg/dia VO 12/12h por 10-14 dias",
+        "  Adultos: amoxi-clav 875/125 mg VO 12/12h por 10-14 dias",
+        "Falha/casos graves: amoxi-clav (se ainda não usado) ou Ceftriaxona 50-100 mg/kg/dia IM/EV por 3-5 dias",
+        "Lavagem nasal com SF 0,9% como adjuvante em todos"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "QUANDO PEDIR EXAMES",
+      "section_color": "navy",
+      "titulo": "TC E LABORATÓRIO",
+      "items": [
+        "TC de seios da face: suspeita de complicação orbitária/intracraniana",
+        "  febre alta persistente com toxemia; sintomas graves refratários; sintomas neurológicos",
+        "  sinusite crônica/recorrente (> 4 episódios/ano) para planejamento cirúrgico",
+        "Hemograma: se suspeita de complicação bacteriana/sepse",
+        "PCR e VHS: se toxemia/febre persistente. Não necessários em casos não complicados"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE ALTA",
+      "titulo": "ANTES DE LIBERAR",
+      "items": [
+        "Melhora clínica documentada; sinais vitais estáveis",
+        "Sem sinais de complicação (face, olhos, neurológico); ausculta pulmonar sem piora",
+        "Receita explicada (importância de completar o antibiótico); técnica de lavagem nasal demonstrada",
+        "Retorno se: febre após 3 dias de ATB, piora, inchaço/vermelhidão em rosto/olhos, cefaleia intensa, vômito, alteração visual",
+        "Orientar fatores de risco (cessar tabagismo, controle ambiental); seguimento se recorrente"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE TRANSFERÊNCIA (complicada)",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Rinossinusite há ___; secreção ___; dor facial em ___; febre ___.",
+        "Sinais de complicação: edema periorbitário / proptose / alteração visual / sinais neurológicos.",
+        "Conduta: ATB ___, analgesia, lavagem nasal. TC de seios: ___.",
+        "Solicito TC de urgência / avaliação ORL-neurocirurgia / UTI conforme complicação."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com obstrução nasal e secreção purulenta há 4 dias, em melhora progressiva. Conduta?",
+      "alternativas": [
+        "Antibiótico imediato",
+        "Tratamento sintomático (provável rinossinusite viral)",
+        "Tomografia de seios da face",
+        "Ceftriaxona endovenosa",
+        "Corticoide oral por 10 dias"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual critério sugere rinossinusite BACTERIANA aguda?",
+      "alternativas": [
+        "Sintomas há 3 dias melhorando",
+        "Sintomas persistentes >= 10 dias sem melhora, ou febre >=39 com secreção purulenta >= 3 dias, ou 'double sickening'",
+        "Secreção clara",
+        "Espirros isolados",
+        "Sintomas há 5 dias com melhora"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado indica complicação grave da sinusite e necessidade de TC urgente?",
+      "alternativas": [
+        "Espirros",
+        "Edema periorbitário, proptose ou alteração visual",
+        "Coriza clara",
+        "Dor maxilar leve",
+        "Cefaleia leve isolada"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é o antibiótico de primeira linha na rinossinusite bacteriana aguda?",
+      "alternativas": [
+        "Azitromicina",
+        "Amoxicilina (± clavulanato)",
+        "Ciprofloxacino",
+        "Clindamicina",
+        "Vancomicina"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "O edema frontal com abaulamento (Sinal de Pott / 'Pott's puffy tumor') indica:",
+      "alternativas": [
+        "Rinite alérgica",
+        "Osteomielite do osso frontal — complicação grave que exige imagem e avaliação especializada",
+        "Conjuntivite",
+        "Resfriado comum",
+        "Otite externa"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Sintomas há < 10 dias com melhora progressiva caracterizam rinossinusite viral; o tratamento é sintomático (lavagem nasal, analgesia). Antibiótico só se preencher critérios de etiologia bacteriana."},
+    {"resposta": "B", "comentario": "Suspeita-se de bacteriana se um dos três: sintomas >= 10 dias sem melhora; quadro grave inicial (febre >=39 + secreção purulenta >= 3 dias); ou piora após melhora inicial ('double sickening')."},
+    {"resposta": "B", "comentario": "Edema periorbitário, proptose, alteração da motilidade/acuidade visual e sinais neurológicos indicam complicação orbitária/intracraniana, exigindo TC de seios/órbitas e avaliação ORL/neurocirurgia urgentes."},
+    {"resposta": "B", "comentario": "A amoxicilina (com ou sem clavulanato) é a primeira linha na rinossinusite bacteriana aguda; ceftriaxona fica para falha/casos graves. Macrolídeos e quinolonas não são primeira escolha."},
+    {"resposta": "B", "comentario": "O edema frontal flutuante (Sinal de Pott / 'Pott's puffy tumor') traduz osteomielite do osso frontal por sinusite frontal complicada — emergência que requer imagem e manejo especializado."}
+  ]
+}

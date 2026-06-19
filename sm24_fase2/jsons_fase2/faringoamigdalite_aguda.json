@@ -1,0 +1,196 @@
+{
+  "slug": "faringoamigdalite_aguda",
+  "titulo": "Faringoamigdalite Aguda",
+  "especialidade": "OTORRINOLARINGO",
+  "chapter_subject": "Faringoamigdalite Aguda no PS",
+  "chapter_bar": "FARINGOAMIGDALITE AGUDA — VIRAL x EBHGA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CENTOR/McISAAC",
+      "title": "FARINGITE — ESCORE GUIA O ANTIBIÓTICO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Dor de garganta + febre - calcular CENTOR/McISAAC", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.22, "y": 0.5, "w": 135, "h": 24, "text": "0-1 pt: viral\nso sintomatico\n(nao testar)", "color": "green", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 24, "text": "2-3 pt: testar\n(strep test/cultura)", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.78, "y": 0.5, "w": 135, "h": 24, "text": ">=4 pt: alta prob.\ntratar (ou testar\nantes)", "color": "red", "font_size": 6.0},
+        {"id": "e", "x": 0.64, "y": 0.13, "w": 170, "h": 18, "text": "EBHGA -> Amoxicilina 10 dias (prevenir FR)", "color": "teal", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Inflamação da faringe e/ou amígdalas palatinas: dor de garganta, febre, odinofagia, mal-estar",
+        "VIRAL (70-80%): mais comum, sobretudo < 3 anos (rinovírus, adenovírus, influenza, EBV) — autolimitada",
+        "BACTERIANA (15-30%): EBHGA (S. pyogenes), pico 5-15 anos, rara < 3 anos",
+        "Tratar EBHGA é mandatório para prevenir febre reumática (sequela imunomediada com dano cardíaco)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIFERENCIAÇÃO CLÍNICA",
+      "section_color": "navy",
+      "headers": ["Viral", "Bacteriana (EBHGA)"],
+      "header_colors": ["teal", "red"],
+      "col_widths": [0.50, 0.50],
+      "rows": [
+        ["Tosse, coriza, rinite", "Início súbito de dor intensa"],
+        ["Conjuntivite, rouquidão", "Febre alta (> 38,5 C)"],
+        ["Diarreia, exantema viral", "Ausência de tosse/coriza"],
+        ["Úlceras/vesículas na orofaringe", "Exsudato purulento + petéquias palatinas"],
+        ["Início gradual, febre baixa", "Adenomegalia cervical anterior dolorosa; exantema escarlatiniforme"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESCORE DE CENTOR/McISAAC (> 3 anos)",
+      "section_color": "navy",
+      "headers": ["Critério (+1 cada)", "Pontuação total", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.40, 0.22, 0.38],
+      "rows": [
+        ["Febre > 38 C", "0 - 1", "Baixa (<10%): não testar/tratar"],
+        ["Ausência de tosse", "2 - 3", "Intermediária: testar (rápido/cultura)"],
+        ["Linfonodo cervical ant. doloroso", ">= 4", "Alta (>50%): tratar ou testar antes"],
+        ["Edema/exsudato amigdaliano", "Idade 3-14: +1", "15-44: 0 | >=45: -1"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO LABORATORIAL",
+      "section_color": "navy",
+      "titulo": "QUANDO E QUAL",
+      "items": [
+        "Teste rápido (TRDA): escolha na urgência (minutos); especificidade > 95% (positivo confirma)",
+        "Sensibilidade limitada (85-95%): TRDA negativo com alta suspeita (criança/adolescente) -> cultura",
+        "Cultura de orofaringe: padrão-ouro (24-48h); indicada se TRDA negativo + alta suspeita",
+        "Hemograma: não de rotina; só se toxemia, suspeita de abscesso ou diferencial (mononucleose)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — EBHGA (1a linha)",
+      "section_color": "orange",
+      "titulo": "ANTIBIÓTICO (PREVENIR FEBRE REUMÁTICA)",
+      "items": [
+        "Amoxicilina 50 mg/kg/dia VO (1-2 tomadas), por 10 dias (máx 1 g/dia) — preferida",
+        "OU Penicilina G Benzatina IM dose única: < 27kg = 600.000 UI | >= 27kg = 1.200.000 UI",
+        "Alergia NÃO anafilática: Cefalexina 50 mg/kg/dia VO 6/6h por 10 dias",
+        "Alergia anafilática: Claritromicina (superior à azitro na erradicação) OU Azitromicina 12 mg/kg/dia 5 dias OU Clindamicina",
+        "Viral: APENAS sintomático (analgésico/antitérmico, hidratação, dieta fria) — ATB é ineficaz/contraindicado",
+        "Retorno à escola após 24h de antibiótico (se bacteriana)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "COMPLICAÇÕES DA EBHGA",
+      "section_color": "red",
+      "titulo": "POR QUE TRATAR CORRETAMENTE",
+      "items": [
+        "Supurativas (por contiguidade): abscesso peritonsilar, otite média, sinusite, linfadenite cervical",
+        "Não supurativas (imunomediadas): Febre Reumática Aguda (PREVENÍVEL com ATB correto) — cardite/valvopatia",
+        "Glomerulonefrite difusa aguda pós-estreptocócica (GNDA) — NÃO é prevenida pelo tratamento",
+        "RED FLAGS: trismo, abaulamento peritonsilar, desvio de úvula, sialorreia, estridor, dispneia",
+        "Tonsilectomia: >= 7 episódios/ano, ou > 5/ano por 2 anos, ou > 3/ano por 3 anos"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE ALTA",
+      "titulo": "ANTES DE LIBERAR",
+      "items": [
+        "Dor de garganta controlada/tolerável; tolera líquidos (sem disfagia absoluta)",
+        "Sem sinais de complicação (abscesso, celulite) nem dificuldade respiratória/estridor",
+        "Receita explicada; reforçar completar 10 dias de ATB (ou dose única IM) na EBHGA",
+        "Orientações de retorno: febre > 3 dias, dificuldade para respirar, sialorreia, piora da dor, trismo",
+        "Retorno escolar após 24h de ATB (se bacteriana)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE TRANSFERÊNCIA (complicação)",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Faringoamigdalite há ___, febre ___ C; Centor ___ pontos; oroscopia: ___ (exsudato/abaulamento/desvio de úvula).",
+        "Complicação: abscesso peritonsilar / epiglotite / celulite cervical / desidratação.",
+        "Via aérea: pérvia/ameaçada; sialorreia/estridor: sim/não.",
+        "Conduta: hidratação, analgesia, ATB ___. Solicito avaliação ORL urgente / drenagem / ATB EV."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Criança de 8 anos com início súbito de dor de garganta, febre 39, exsudato amigdaliano, adenomegalia cervical dolorosa e SEM tosse. Centor alto. Conduta?",
+      "alternativas": [
+        "Apenas sintomático, pois toda faringite é viral",
+        "Amoxicilina por 10 dias (ou penicilina benzatina IM) para tratar EBHGA e prevenir febre reumática",
+        "Azitromicina por 3 dias como primeira linha",
+        "Corticoide isolado",
+        "Antiviral oral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o principal objetivo do tratamento antibiótico da faringite estreptocócica?",
+      "alternativas": [
+        "Encurtar o resfriado",
+        "Prevenir a febre reumática aguda (e complicações supurativas)",
+        "Prevenir a glomerulonefrite pós-estreptocócica",
+        "Tratar a tosse",
+        "Reduzir a coriza"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente com escore de Centor/McIsaac de 0-1 ponto. Qual a conduta recomendada?",
+      "alternativas": [
+        "Antibiótico empírico imediato",
+        "Não testar nem tratar com antibiótico; manejo sintomático",
+        "Penicilina benzatina IM",
+        "Cultura obrigatória",
+        "Internação"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre o teste rápido para EBHGA, é correto:",
+      "alternativas": [
+        "Tem baixa especificidade",
+        "Tem alta especificidade (>95%); se negativo com alta suspeita clínica, confirmar com cultura",
+        "Substitui a clínica em todos os casos",
+        "É positivo em faringites virais",
+        "Não tem valor diagnóstico"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual achado sugere etiologia VIRAL da faringite?",
+      "alternativas": [
+        "Exsudato purulento e petéquias palatinas",
+        "Tosse, coriza, conjuntivite e início gradual",
+        "Adenomegalia cervical anterior dolorosa",
+        "Exantema escarlatiniforme",
+        "Ausência de tosse com febre alta"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Quadro de alta probabilidade de EBHGA (Centor alto): trata-se com amoxicilina 10 dias (ou penicilina benzatina IM), cujo objetivo principal é prevenir a febre reumática. Macrolídeo fica para alérgicos anafiláticos."},
+    {"resposta": "B", "comentario": "O objetivo primário do ATB na faringite estreptocócica é prevenir a febre reumática aguda (e complicações supurativas). A GNDA pós-estreptocócica NÃO é prevenida pelo tratamento da faringite."},
+    {"resposta": "B", "comentario": "Centor/McIsaac 0-1 indica baixa probabilidade de EBHGA (<10%): não se testa nem se trata com antibiótico; o manejo é sintomático. Testar fica para 2-3 pontos; tratar/testar para >=4."},
+    {"resposta": "B", "comentario": "O teste rápido tem alta especificidade (>95%) — positivo confirma. Como a sensibilidade é menor, um resultado negativo com alta suspeita clínica (criança/adolescente) deve ser confirmado por cultura."},
+    {"resposta": "B", "comentario": "Tosse, coriza, conjuntivite, rouquidão e início gradual apontam etiologia viral. Exsudato, petéquias palatinas, adenomegalia dolorosa, exantema escarlatiniforme e ausência de tosse sugerem EBHGA."}
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "slug": "retocolite_ulcerativa",
+  "titulo": "Retocolite Ulcerativa — Agudização",
+  "especialidade": "GASTROENTEROLOGIA",
+  "chapter_subject": "RCU em agudização no PS",
+  "chapter_bar": "RETOCOLITE ULCERATIVA — AGUDIZAÇÃO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — AGUDIZAÇÃO",
+      "title": "RCU — TRUELOVE & WITTS DECIDE",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Diarreia com sangue + dor abdominal\nClassificar TRUELOVE & WITTS + excluir infeccao", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 24, "text": "Leve: tto\nambulatorial\n(mesalazina)", "color": "green", "font_size": 6.0},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "Mod/grave: internar\nCORTICOIDE EV +\nprofilaxia TEV", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.15, "w": 150, "h": 18, "text": "Falha 3-5d -> resgate/colectomia", "color": "orange", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Doença inflamatória intestinal crônica, imunomediada, com inflamação CONTÍNUA da MUCOSA do cólon",
+        "Inicia no reto e estende-se proximalmente de forma variável",
+        "Agudizações moderadas/graves = emergências clínicas (megacólon, hemorragia, colectomia)",
+        "Gatilhos: suspensão/uso irregular da manutenção, infecção (C. difficile, CMV), AINE, falha prévia"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRUELOVE & WITTS — GRAVIDADE",
+      "section_color": "navy",
+      "headers": ["Critério", "Leve", "Grave"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.30, 0.32, 0.38],
+      "rows": [
+        ["Evacuações/dia", "< 4", "> 6 com sangue"],
+        ["Sangramento retal", "Ausente/leve", "Importante"],
+        ["Febre", "Ausente", "> 37,8 C"],
+        ["Frequência cardíaca", "< 90 bpm", "> 90 bpm"],
+        ["Hemoglobina", "> 11,5 g/dL", "< 10,5 g/dL"],
+        ["VHS / PCR", "Normal", "Elevado"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — RCU GRAVE E MEGACÓLON",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA CLÍNICA",
+      "items": [
+        "RCU grave (Truelove & Witts) é emergência — internar para tratamento intensivo",
+        "Megacólon tóxico: dilatação colônica >= 6 cm em RX + febre, taquicardia, leucocitose, toxemia",
+        "Megacólon é causa frequente de COLECTOMIA de urgência na RCU",
+        "Conduta no megacólon: jejum, corticoide EV, ATB amplo espectro, monitorização intensiva, cirurgia precoce",
+        "Colectomia de urgência: perfuração, hemorragia maciça, choque séptico, sem resposta em 48-72h"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "NO PS",
+      "items": [
+        "Checklist: instabilidade hemodinâmica, quantificar evacuações/sangramento, dor/distensão",
+        "Suspender dieta oral em casos moderados/graves; EXCLUIR infecção associada",
+        "Hemograma, PCR, VHS, função renal, eletrólitos, albumina",
+        "Coprocultura + toxina para C. difficile; pesquisa de CMV se refratariedade",
+        "RX de abdome se suspeita de megacólon; TC se dúvida diagnóstica/complicações"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO DA AGUDIZAÇÃO (mod/grave)",
+      "section_color": "orange",
+      "titulo": "CORTICOIDE EV + MEDIDAS",
+      "items": [
+        "1a linha: Hidrocortisona 100mg EV 6/6h OU Metilprednisolona 60mg EV 1x/dia",
+        "Avaliar resposta em 72-96h (menos evacuações, menos sangramento, melhora inflamatória)",
+        "Hidratação venosa + correção eletrolítica",
+        "PROFILAXIA de TEV com HBPM (risco trombótico aumentado na DII em atividade)",
+        "Suspender antidiarreicos; EVITAR opioides e AINEs (risco de megacólon)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REFRATARIEDADE AO CORTICOIDE",
+      "section_color": "purple",
+      "titulo": "FALHA EM 3-5 DIAS",
+      "items": [
+        "Ausência de melhora após 3-5 dias de corticoide EV = refratariedade",
+        "Reavaliar diagnóstico e EXCLUIR infecção (C. difficile, CMV)",
+        "Terapia de resgate: anti-TNF infliximabe (preferencial intra-hospitalar)",
+        "  Alternativas: tofacitinibe (atenção ao risco trombótico), vedolizumabe (uso mais tardio)",
+        "Avaliação CIRÚRGICA precoce (colectomia) — decisão compartilhada com especialista"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: RCU moderada/grave (Truelove), necessidade de corticoide EV, complicações, refratariedade",
+        "ALTA: evacuações < 4/dia e sem sangue significativo, dor controlada, via oral tolerada",
+        "ALTA: plano de manutenção definido + seguimento gastroenterológico garantido",
+        "Reforçar adesão à manutenção (mesalazina/biológico) e evitar AINE",
+        "Retorno se: aumento das evacuações/sangramento, febre, distensão, dor intensa"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "RCU em atividade (Truelove: ___). Evacuações/dia: ___; sangramento: leve/moderado/intenso; Hb ___; PCR ___.",
+        "Condutas: corticoide EV ___; profilaxia de TEV; exclusão de infecção.",
+        "Complicações: megacólon / perfuração / hemorragia. Imagem: ___.",
+        "Motivo da transferência: refratariedade ao corticoide / megacólon tóxico / avaliação cirúrgica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com RCU, > 6 evacuações/dia com sangue, febre 38, FC 100, Hb 9,5, PCR alta. Classificação e conduta?",
+      "alternativas": [
+        "Leve — tratamento ambulatorial com mesalazina",
+        "Grave (Truelove & Witts) — internação e corticoide endovenoso, com profilaxia de TEV e exclusão de infecção",
+        "Apenas antidiarreico",
+        "Alta com analgésico opioide",
+        "Observação domiciliar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que se indica profilaxia de tromboembolismo venoso (HBPM) na RCU grave internada?",
+      "alternativas": [
+        "Porque a HBPM trata a inflamação intestinal",
+        "Porque a DII em atividade aumenta o risco trombótico",
+        "Porque substitui o corticoide",
+        "Porque reduz o número de evacuações",
+        "Porque previne megacólon"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual a principal complicação que leva à colectomia de urgência na RCU?",
+      "alternativas": [
+        "Síndrome do intestino irritável",
+        "Megacólon tóxico",
+        "Constipação",
+        "Refluxo gastroesofágico",
+        "Hemorroidas"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Após 3-5 dias de corticoide EV sem resposta na RCU grave, qual a terapia de resgate preferencial intra-hospitalar?",
+      "alternativas": [
+        "Mesalazina oral",
+        "Infliximabe (anti-TNF), após excluir infecção, com avaliação cirúrgica",
+        "Loperamida",
+        "Aumentar a dieta",
+        "Antibiótico oral isolado"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quais medicamentos devem ser EVITADOS na RCU em atividade grave?",
+      "alternativas": [
+        "Corticoides",
+        "Antidiarreicos e opioides (risco de megacólon) e AINEs",
+        "Inibidores de bomba de prótons",
+        "Reposição de eletrólitos",
+        "Heparina de baixo peso molecular"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Os parâmetros (>6 evacuações com sangue, febre, FC>90, Hb<10,5, PCR alta) configuram RCU grave por Truelove & Witts — emergência: internação, corticoide EV, profilaxia de TEV e exclusão de infecção (C. difficile/CMV)."},
+    {"resposta": "B", "comentario": "A DII em atividade é estado pró-trombótico; por isso indica-se profilaxia de TEV com HBPM no paciente internado, mesmo havendo sangramento intestinal (o risco trombótico supera o de sangramento na maioria)."},
+    {"resposta": "B", "comentario": "O megacólon tóxico é a principal complicação que leva à colectomia de urgência na RCU: dilatação >= 6 cm com toxemia, alto risco de perfuração."},
+    {"resposta": "B", "comentario": "Na RCU grave corticorrefratária (3-5 dias), a terapia de resgate intra-hospitalar preferencial é o infliximabe (anti-TNF), após excluir infecção, sempre com avaliação cirúrgica em paralelo."},
+    {"resposta": "B", "comentario": "Evitam-se antidiarreicos e opioides (precipitam megacólon tóxico) e AINEs (agravam a atividade) na RCU grave. Corticoide, eletrólitos e HBPM fazem parte do tratamento."}
+  ]
+}
