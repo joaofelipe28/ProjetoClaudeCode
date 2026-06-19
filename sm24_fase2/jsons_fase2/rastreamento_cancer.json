@@ -1,0 +1,202 @@
+{
+  "slug": "rastreamento_cancer",
+  "titulo": "Rastreamento de Câncer",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Rastreamento oncológico (colo, próstata, cólon, pulmão, pele)",
+  "chapter_bar": "RASTREAMENTO DE CÂNCER — RESUMO PRÁTICO",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "CONCEITO — RASTREIO x DIAGNÓSTICO PRECOCE",
+      "section_color": "teal",
+      "titulo": "PRINCÍPIOS",
+      "items": [
+        "Rastreamento = aplicar teste a população ASSINTOMÁTICA para detectar a doença em fase pré-clínica",
+        "Diagnóstico precoce = valorizar sinais/sintomas iniciais (não é rastreio)",
+        "Equilíbrio benefício x dano: sobrediagnóstico, falso-positivo, complicações de exames/tratamento",
+        "Há divergência entre INCA/MS (Brasil) e USPSTF/sociedades — conhecer ambas",
+        "Cessação do tabagismo e vacinação (HPV) são prevenções PRIMÁRIAS de maior impacto"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "RESUMO — POPULAÇÃO E MÉTODO (referência BR/MS)",
+      "section_color": "navy",
+      "headers": ["Câncer", "Quem / idade", "Método e intervalo"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.38, 0.44],
+      "rows": [
+        ["Colo de útero", "25-64 anos, com vida sexual", "Citologia (Papanicolau): 2 anuais; se negativas, a cada 3 anos (DNA-HPV incorporado ao SUS em 2024)"],
+        ["Cólon e reto", "50-75 anos (AGA/USPSTF: a partir de 45)", "FIT/sangue oculto anual OU colonoscopia; colonoscopia é o padrão-ouro/confirmatório"],
+        ["Próstata", "Decisão compartilhada (homens; ~50-69)", "PSA (± toque pela diretriz europeia); risco de sobrediagnóstico"],
+        ["Pulmão", "50-80 anos, >= 20 maços-ano, fumante ou parou < 15 anos", "TC de tórax de BAIXA DOSE anual (Lung-RADS)"],
+        ["Pele", "Sem rastreio populacional", "Diagnóstico precoce (regra ABCDE); acompanhar alto risco"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "COLO DE ÚTERO",
+      "section_color": "purple",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "MS: 25-64 anos com vida sexual; 2 citologias anuais e, se negativas, a cada 3 anos",
+        "NÃO rastrear < 25 anos nem quem nunca teve relação sexual (lesões NIC II em jovens regridem; risco de eventos adversos)",
+        "USPSTF: 21-65 anos; 21-29 citologia 3/3 anos; 30-65 citologia 3/3 OU teste de HPV (ou co-teste) a cada 5 anos",
+        "Suspender aos 64 anos se 2 exames negativos nos últimos 5 anos; após histerectomia total sem NIC II/III prévia, não rastrear",
+        "Prevenção primária: vacina HPV (SUS: quadrivalente, 9-14 anos, dose única; resgate 15-19a)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CÓLON E RETO",
+      "section_color": "purple",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "MS/INCA: 50-75 anos (risco habitual); incidência crescente em < 55 anos (AGA inicia aos 45; USPSTF: 45-49 recomendação B, 50-75 recomendação A)",
+        "Métodos: análise de fezes (FIT/FIT-DNA, g-FOBT) OU endoscópicos (colonoscopia, sigmoidoscopia, colonoTC)",
+        "Qualquer teste alterado -> COLONOSCOPIA (padrão-ouro)",
+        "Alto risco (HF): iniciar 10 anos antes da idade do familiar mais novo afetado, ou aos 40 anos",
+        "Suspender > 75-76 anos (individualizar); > 85 anos não rastrear"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PRÓSTATA E PULMÃO",
+      "section_color": "orange",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "PRÓSTATA: decisão COMPARTILHADA (benefício de mortalidade modesto x sobrediagnóstico alto). PSA é o método; biópsia se PSA > 4 (EUA) ou > 3 (Europa). USPSTF não recomenda toque retal de rotina",
+        "  Estratégias para reduzir dano: identificar grupos de risco, individualizar intervalo (PSA < 1 aos 40 / < 2 aos 60 -> adiar até 8 anos), RM/calculadoras antes de biopsiar, vigilância ativa em baixo risco",
+        "PULMÃO: TC de baixa dose ANUAL em 50-80 anos com >= 20 maços-ano (fumante atual ou cessou < 15 anos) — reduz mortalidade (NLST/NELSON)",
+        "  Suspender se > 80 anos, > 15 anos sem fumar ou comorbidade que impeça cirurgia curativa; usar Lung-RADS",
+        "  No Brasil: cuidado com falsos-positivos por doenças granulomatosas (TB); cessação do tabagismo é a medida de maior impacto"
+      ],
+      "accent": "orange",
+      "bg": "orange_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PELE — NÃO HÁ RASTREIO POPULACIONAL",
+      "section_color": "red",
+      "titulo": "DIAGNÓSTICO PRECOCE",
+      "items": [
+        "Câncer de pele é o mais comum; não melanoma (basocelular/espinocelular) é o mais frequente; melanoma causa a maioria das mortes",
+        "USPSTF: evidência INSUFICIENTE para rastreamento por exame da pele; MS reforça diagnóstico precoce",
+        "Regra ABCDE para melanoma: Assimetria, Bordas irregulares, Cor heterogênea, Diâmetro > 6 mm, Evolução",
+        "Alto risco (HF/pessoal de melanoma): acompanhamento periódico (INCA)",
+        "Prevenção: fotoproteção; danos do rastreio amplo incluem biópsias desnecessárias e sobrediagnóstico"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "OUTROS RASTREIOS RELEVANTES (contexto)",
+      "section_color": "navy",
+      "titulo": "PARA LEMBRAR",
+      "items": [
+        "Mama: mamografia (MS: 50-69 anos bienal; sociedades: a partir de 40)",
+        "CHC: USG hepática semestral no cirrótico (ver apostila específica)",
+        "Estômago/outros: sem rastreio populacional no Brasil (diagnóstico precoce e grupos de risco)",
+        "Sempre individualizar por expectativa de vida e comorbidades",
+        "Decisão compartilhada é central quando o benefício é incerto (próstata, pulmão)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE RASTREIO",
+      "titulo": "NA PRÁTICA",
+      "items": [
+        "Colo: 25-64a, citologia (2 anuais -> 3/3 anos); vacinar HPV",
+        "Cólon/reto: 50-75a, FIT anual ou colonoscopia; antecipar se alto risco",
+        "Próstata: decisão compartilhada + PSA",
+        "Pulmão: TC de baixa dose anual se >= 20 maços-ano (50-80a); ofertar cessação do tabagismo",
+        "Pele: sem rastreio populacional — diagnóstico precoce (ABCDE) e seguir alto risco"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MENSAGEM-CHAVE",
+      "section_color": "orange",
+      "titulo": "RESUMO",
+      "items": [
+        "Rastrear a população e o intervalo certos; nem todo câncer se beneficia de rastreio populacional (pele/próstata = controvérsia)",
+        "Conhecer as diferenças MS/INCA x USPSTF/sociedades",
+        "Prevenção primária (vacina HPV, cessação do tabagismo) tem o maior impacto",
+        "Individualizar por idade, comorbidades e preferências (decisão compartilhada)",
+        "Teste de rastreio alterado -> exame confirmatório (ex.: colonoscopia)"
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Segundo o Ministério da Saúde, qual a faixa etária e o método para rastreamento do câncer do colo do útero?",
+      "alternativas": [
+        "Toda mulher a partir da menarca, com USG",
+        "25 a 64 anos com vida sexual, citologia (Papanicolau): 2 anuais e, se negativas, a cada 3 anos",
+        "18 a 70 anos, anual indefinidamente",
+        "Apenas após os 50 anos",
+        "Somente com teste de HPV a partir dos 21 anos"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o método e o intervalo recomendados para rastreamento de câncer de pulmão em pacientes de alto risco?",
+      "alternativas": [
+        "Radiografia de tórax anual",
+        "Tomografia de tórax de baixa dose anual (50-80 anos, >= 20 maços-ano, fumante ou cessou < 15 anos)",
+        "Broncoscopia a cada 2 anos",
+        "PET-CT anual",
+        "Escarro citológico"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre o rastreamento do câncer de próstata, é correto:",
+      "alternativas": [
+        "Deve ser feito em todos os homens com toque retal obrigatório",
+        "Envolve decisão compartilhada (PSA), pelo benefício de mortalidade modesto e alto risco de sobrediagnóstico",
+        "Está formalmente recomendado para todos a partir dos 40 anos",
+        "Usa USG transretal como rastreio primário",
+        "Não há qualquer controvérsia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é a recomendação sobre o rastreamento populacional do câncer de pele?",
+      "alternativas": [
+        "Exame de pele anual obrigatório para todos",
+        "Não há benefício comprovado de rastreio populacional; foco em diagnóstico precoce (ABCDE) e seguimento de alto risco",
+        "Dermatoscopia universal a partir dos 30 anos",
+        "Biópsia de todas as lesões pigmentadas",
+        "Rastreio apenas com exames de sangue"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual exame é o padrão-ouro e confirmatório no rastreamento do câncer colorretal?",
+      "alternativas": [
+        "Sangue oculto nas fezes",
+        "Colonoscopia",
+        "Colonografia por TC",
+        "Sigmoidoscopia isolada",
+        "Enema opaco"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "MS: rastreio do colo entre 25 e 64 anos em quem já teve vida sexual, com citologia (Papanicolau) — 2 exames anuais e, se negativos, a cada 3 anos. Não se rastreia < 25 anos nem quem nunca teve relação sexual."},
+    {"resposta": "B", "comentario": "Rastreio de pulmão: TC de tórax de baixa dose ANUAL em 50-80 anos com >= 20 maços-ano, fumantes atuais ou que cessaram há < 15 anos (reduz mortalidade — NLST/NELSON). Cessação do tabagismo é a medida de maior impacto."},
+    {"resposta": "B", "comentario": "O rastreio de próstata é controverso: o benefício de mortalidade é modesto e o sobrediagnóstico é alto. Recomenda-se decisão compartilhada com PSA; USPSTF não recomenda o toque retal de rotina."},
+    {"resposta": "B", "comentario": "Não há benefício comprovado de rastreamento populacional do câncer de pele; o foco é o diagnóstico precoce (regra ABCDE para melanoma) e o acompanhamento de pacientes de alto risco."},
+    {"resposta": "B", "comentario": "A colonoscopia é o padrão-ouro do rastreio colorretal e o exame confirmatório: qualquer teste de fezes (FIT) ou outro método alterado deve ser seguido de colonoscopia."}
+  ]
+}

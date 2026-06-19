@@ -1,0 +1,182 @@
+{
+  "slug": "neoplasia_sitio_primario",
+  "titulo": "Neoplasia de Sítio Primário Indeterminado",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Câncer de sítio primário desconhecido",
+  "chapter_bar": "NEOPLASIA DE SÍTIO PRIMÁRIO INDETERMINADO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — INVESTIGAÇÃO",
+      "title": "CSPD — BIÓPSIA -> IMUNO-HISTOQUÍMICA -> SUBTIPO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Metastase sem primario obvio\nBIOPSIA confirma neoplasia + define que nao e primaria", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Linhagem: histologia + IMUNO-HISTOQUIMICA\n+ marcadores sericos dirigidos", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Subtipo FAVORAVEL:\ntratar como o\nsitio especifico", "color": "green", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "DESFAVORAVEL:\nQT baseada em\nplatina", "color": "orange", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E EPIDEMIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Neoplasia que se apresenta como METÁSTASE sem sítio primário identificado ao diagnóstico",
+        "~2% de todos os cânceres invasivos; incidência em queda (melhores tecnologias diagnósticas)",
+        "Sintomas dependem do local das lesões (dor óssea, tosse...) ou achado incidental",
+        "Alta mortalidade: sobrevida em 1 ano ~20%, metade das mortes nos primeiros 3 meses"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INVESTIGAÇÃO (ESMO 2022)",
+      "section_color": "purple",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "1. BIÓPSIA confirmando que a lesão é neoplásica",
+        "2. Definir se a lesão NÃO é primária daquela região (tamanho, localização, imagem, padrão de disseminação; ausência de linfonodos próximos reduz chance de ser primária)",
+        "3. Exames básicos + história/exame dirigidos pelas hipóteses",
+        "4. Determinar a LINHAGEM por histologia + IMUNO-HISTOQUÍMICA (papel central do patologista)",
+        "5. Painéis moleculares (alvos terapêuticos) para definir tratamento"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MARCADORES SÉRICOS DIRIGIDOS",
+      "section_color": "navy",
+      "headers": ["Suspeita", "Marcador"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.42, 0.58],
+      "rows": [
+        ["Células germinativas", "Alfa-fetoproteína e beta-hCG"],
+        ["Próstata", "PSA"],
+        ["Ginecológico", "CA 125 (e CA 15-3)"],
+        ["Trato gastrointestinal", "CA 19-9, CEA, CA 72-4"],
+        ["Neuroendócrino", "Cromogranina A"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "GRUPOS HISTOLÓGICOS",
+      "section_color": "navy",
+      "titulo": "4 GRUPOS (ESMO)",
+      "items": [
+        "Adenocarcinomas diferenciados — 50% dos casos",
+        "Adenocarcinoma pouco diferenciado / carcinoma não diferenciado — 30%",
+        "Carcinoma de células escamosas — 15%",
+        "Neoplasias indiferenciadas — 5%",
+        "NÃO são considerados CSPD: tumores neuroendócrinos (diretriz nova), sarcomas, melanomas, germinativos e hematológicos — seguem diretrizes próprias"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MANEJO POR SUBTIPO",
+      "section_color": "orange",
+      "titulo": "FAVORÁVEL x DESFAVORÁVEL",
+      "items": [
+        "Se o sítio primário for descoberto -> tratar conforme o tumor de origem",
+        "Subtipos FAVORÁVEIS (ex.: 7 subtipos da ESMO; renal-like; CSPD localizado/oligometastático) -> terapia do sítio específico",
+        "DESFAVORÁVEL (não se enquadra nos favoráveis): prognóstico ruim, geralmente quimioterapia baseada em PLATINA",
+        "Painel molecular pode indicar terapia-alvo/imunoterapia",
+        "Manejo por equipe multidisciplinar de oncologia"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ABORDAGEM NO PS / ENCAMINHAMENTO",
+      "titulo": "O QUE FAZER",
+      "items": [
+        "Tratar as urgências oncológicas associadas (hipercalcemia, compressão medular, TEV, dor)",
+        "Documentar a apresentação (metástases, sintomas) e antecedentes",
+        "Solicitar biópsia da lesão acessível e exames básicos",
+        "Encaminhar à oncologia para imuno-histoquímica/painel molecular e estadiamento",
+        "Estabelecer cuidados de suporte/paliativos conforme a gravidade"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com metástase(s) em ___ sem sítio primário definido; biópsia: ___ (linhagem).",
+        "Imuno-histoquímica/marcadores: ___; sintomas/urgências oncológicas: ___.",
+        "Conduta: suporte + investigação (IHQ/molecular); subtipo favorável/desfavorável: ___.",
+        "Encaminho à oncologia para estadiamento e definição terapêutica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o primeiro passo na investigação de uma neoplasia de sítio primário desconhecido?",
+      "alternativas": [
+        "Quimioterapia empírica imediata",
+        "Biópsia confirmando que a lesão é neoplásica (e depois definir linhagem por imuno-histoquímica)",
+        "Radioterapia de todo o corpo",
+        "Apenas marcadores tumorais séricos",
+        "Cirurgia exploradora"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o grupo histológico mais frequente no câncer de sítio primário desconhecido?",
+      "alternativas": [
+        "Carcinoma de células escamosas",
+        "Adenocarcinomas diferenciados (~50%)",
+        "Neoplasias indiferenciadas",
+        "Sarcomas",
+        "Melanomas"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Em homem jovem com CSPD, quais marcadores séricos sugerem tumor de células germinativas?",
+      "alternativas": [
+        "PSA",
+        "Alfa-fetoproteína e beta-hCG",
+        "CA 125",
+        "Cromogranina A",
+        "CEA isolado"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual exame é central para determinar a linhagem celular no CSPD?",
+      "alternativas": [
+        "Tomografia de corpo inteiro",
+        "Imuno-histoquímica da biópsia (com histologia)",
+        "Hemograma",
+        "PET-CT isolado",
+        "Marcadores tumorais séricos isolados"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual o tratamento geral do CSPD de subtipo DESFAVORÁVEL?",
+      "alternativas": [
+        "Apenas observação",
+        "Quimioterapia baseada em platina (prognóstico reservado)",
+        "Cirurgia curativa em todos",
+        "Radioterapia exclusiva",
+        "Antibioticoterapia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O primeiro passo é a biópsia confirmando a natureza neoplásica da lesão; em seguida, determina-se a linhagem por histologia + imuno-histoquímica, orientando a busca do primário e o tratamento."},
+    {"resposta": "B", "comentario": "Os adenocarcinomas diferenciados são o grupo mais frequente (~50%), seguidos por adenocarcinoma pouco diferenciado/não diferenciado (30%), escamosos (15%) e indiferenciados (5%)."},
+    {"resposta": "B", "comentario": "Alfa-fetoproteína e beta-hCG sugerem tumor de células germinativas; PSA aponta próstata; CA 125 ginecológico; CA 19-9/CEA gastrointestinal; cromogranina A neuroendócrino."},
+    {"resposta": "B", "comentario": "A imuno-histoquímica da biópsia (associada à morfologia histológica) é central para determinar a linhagem celular e orientar a investigação do sítio primário e o tratamento."},
+    {"resposta": "B", "comentario": "O subtipo desfavorável (não enquadrado nos favoráveis) tem prognóstico reservado e é geralmente tratado com quimioterapia baseada em platina; painel molecular pode indicar terapia-alvo/imunoterapia."}
+  ]
+}

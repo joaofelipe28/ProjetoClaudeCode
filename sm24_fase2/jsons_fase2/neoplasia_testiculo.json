@@ -1,0 +1,184 @@
+{
+  "slug": "neoplasia_testiculo",
+  "titulo": "Neoplasia de Testículo",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Câncer de Testículo",
+  "chapter_bar": "NEOPLASIA DE TESTÍCULO — MASSA NO JOVEM",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — MASSA TESTICULAR",
+      "title": "TESTÍCULO — USG -> ORQUIECTOMIA (NÃO BIOPSIAR)",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Massa testicular (homem jovem)\nUSG de bolsa escrotal + marcadores (AFP, beta-hCG, DHL)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Lesao sugestiva -> ORQUIECTOMIA inguinal\n(diagnostica e terapeutica; NUNCA biopsiar)", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.3, "w": 205, "h": 22, "text": "Estadiar (TC torax/abdome/pelve) + IGCCCG\nseminoma x nao-seminoma", "color": "teal", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Tratamento: orquiectomia +/- QT/RT", "color": "orange", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EPIDEMIOLOGIA E FATORES DE RISCO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Neoplasia sólida mais comum do HOMEM JOVEM (15-35 anos); altas taxas de cura (~95%; 80-90% mesmo com metástase)",
+        "Tipo mais comum: tumor de CÉLULAS GERMINATIVAS (95%) — seminoma x não-seminoma",
+        "Não-seminomas (mais agressivos): carcinoma embrionário, coriocarcinoma, tumor do seio endodérmico, teratoma; mistos comportam-se como não-seminoma",
+        "Fatores de risco: história FAMILIAR (irmãos: risco 8-10x), CRIPTORQUIDIA (sobretudo correção tardia, > 13 anos)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO",
+      "section_color": "purple",
+      "titulo": "QUANDO SUSPEITAR",
+      "items": [
+        "MASSA testicular indolor (sintoma de maior destaque)",
+        "Dor lombar (linfonodos retroperitoneais); sintomas de metástase (pulmão, SNC)",
+        "Ginecomastia (mais no tumor de Leydig, mas possível nos germinativos por hCG)",
+        "Síndromes paraneoplásicas: hipertireoidismo (hCG estimula a tireoide), encefalite límbica (anti-Ma2)",
+        "Infertilidade pode preceder a massa palpável"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES E MARCADORES",
+      "section_color": "navy",
+      "titulo": "INVESTIGAÇÃO",
+      "items": [
+        "USG de bolsa escrotal = exame INICIAL (massa hipoecoica, calcificação, margens irregulares)",
+        "NUNCA biopsiar (risco de contaminação do escroto/drenagem linfática) — a orquiectomia é diagnóstica",
+        "Marcadores: AFP e beta-hCG (elevam nos NÃO-seminomas; no seminoma só beta-hCG em ~20%, AFP NÃO eleva); DHL avalia extensão",
+        "Estadiamento: TC de tórax, abdome e pelve (metástases: pulmão, ossos, fígado, SNC)",
+        "RM de crânio se sintomas ou risco desfavorável (metástase cerebral é quase exclusiva de não-seminoma)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SEMINOMA x NÃO-SEMINOMA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Seminoma", "Não-seminoma"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.24, 0.36, 0.40],
+      "rows": [
+        ["AFP", "NÃO se eleva", "Pode elevar"],
+        ["Beta-hCG", "Eleva em ~20%", "Pode elevar"],
+        ["Agressividade", "Menos agressivo", "Mais agressivo"],
+        ["Metástase SNC", "Rara", "Quase exclusiva deste grupo"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "ORQUIECTOMIA + QT/RT",
+      "items": [
+        "ORQUIECTOMIA radical inguinal: base diagnóstica e terapêutica; marcadores pós-orquiectomia compõem o estadiamento",
+        "Estágio 1 (maioria): a cirurgia pode ser suficiente para a cura (± vigilância/QT adjuvante conforme risco)",
+        "QT adjuvante: carboplatina (seminoma) ou BEP (Bleomicina + Etoposídeo + cisPlatina)",
+        "Bleomicina contraindicada se carga tabágica alta, disfunção renal ou idade > 50 -> substituir por ifosfamida",
+        "RT: para linfonodos retroperitoneais em casos selecionados (aumenta 2-6x o risco de 2a neoplasia em 10-16 anos)",
+        "Alternativa à RT em metástase linfonodal: linfadenectomia retroperitoneal"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS / PONTOS-CHAVE",
+      "section_color": "red",
+      "titulo": "NÃO ERRAR",
+      "items": [
+        "NUNCA realizar biópsia transescrotal (dissemina; a via é inguinal com orquiectomia)",
+        "Marcadores normais NÃO excluem o tumor (sobretudo seminoma)",
+        "Toda massa testicular sólida no jovem = neoplasia até prova em contrário (USG + orquiectomia)",
+        "Estratificar pelo IGCCCG (marcadores + extensão) para definir tratamento e prognóstico",
+        "Discutir CRIOPRESERVAÇÃO de sêmen antes da QT/RT (fertilidade)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Homem ___ anos com massa testicular ___ (USG: ___); marcadores AFP ___, beta-hCG ___, DHL ___.",
+        "Fatores de risco: criptorquidia/história familiar; sintomas de metástase: ___.",
+        "Conduta: encaminhamento para ORQUIECTOMIA inguinal (não biopsiar) + estadiamento (TC).",
+        "Encaminho à urologia/oncologia; oferecer criopreservação de sêmen."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Homem de 25 anos com massa testicular sólida indolor à USG. Qual a conduta diagnóstica correta?",
+      "alternativas": [
+        "Biópsia transescrotal da massa",
+        "Orquiectomia radical inguinal (diagnóstica e terapêutica) — não se biopsia o testículo",
+        "Punção aspirativa escrotal",
+        "Apenas observação",
+        "Antibiótico para orquite"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Sobre os marcadores tumorais no câncer de testículo, é correto:",
+      "alternativas": [
+        "A AFP se eleva no seminoma puro",
+        "AFP e beta-hCG elevam-se nos não-seminomas; no seminoma a AFP não se eleva e o beta-hCG sobe em ~20%",
+        "Marcadores normais excluem o diagnóstico",
+        "O PSA é o principal marcador",
+        "A DHL não tem utilidade"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o exame inicial de escolha na suspeita de neoplasia testicular?",
+      "alternativas": [
+        "Tomografia de pelve",
+        "Ultrassonografia da bolsa escrotal",
+        "Ressonância de crânio",
+        "Cintilografia",
+        "PET-CT"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual fármaco quimioterápico do esquema do câncer de testículo é contraindicado em tabagistas pesados, disfunção renal ou idade > 50 anos?",
+      "alternativas": [
+        "Cisplatina",
+        "Bleomicina (substituir por ifosfamida)",
+        "Etoposídeo",
+        "Carboplatina",
+        "Ifosfamida"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual fator de risco está classicamente associado ao câncer de testículo?",
+      "alternativas": [
+        "Tabagismo",
+        "Criptorquidia (sobretudo com correção tardia)",
+        "Obesidade",
+        "Vasectomia",
+        "Hipertensão"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Massa testicular sólida no jovem é neoplasia até prova em contrário: a conduta é orquiectomia radical por via INGUINAL (diagnóstica e terapêutica). NUNCA se biopsia o testículo por via transescrotal (risco de disseminação)."},
+    {"resposta": "B", "comentario": "AFP e beta-hCG elevam-se nos não-seminomas; no seminoma puro a AFP NÃO se eleva e o beta-hCG sobe em ~20%. A DHL avalia extensão. Marcadores normais não excluem o tumor."},
+    {"resposta": "B", "comentario": "A USG da bolsa escrotal é o exame inicial de escolha, caracterizando a massa (hipoecoica, com calcificações/margens irregulares) e indicando a orquiectomia."},
+    {"resposta": "B", "comentario": "A bleomicina (do esquema BEP) é contraindicada em tabagistas pesados, disfunção renal e idade > 50 anos pelo risco de toxicidade pulmonar — substitui-se por ifosfamida."},
+    {"resposta": "B", "comentario": "A criptorquidia, especialmente com correção tardia (> 13 anos), é fator de risco clássico, assim como a história familiar (irmãos com risco 8-10x maior)."}
+  ]
+}

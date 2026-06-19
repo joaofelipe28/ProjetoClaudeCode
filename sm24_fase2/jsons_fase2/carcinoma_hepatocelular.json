@@ -1,0 +1,183 @@
+{
+  "slug": "carcinoma_hepatocelular",
+  "titulo": "Carcinoma Hepatocelular (CHC)",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Carcinoma Hepatocelular",
+  "chapter_bar": "CARCINOMA HEPATOCELULAR — RASTREIO E DX",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — RASTREIO E DIAGNÓSTICO",
+      "title": "CHC — USG 6/6 MESES NO CIRRÓTICO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Populacao de risco (cirrose; hepatite B cronica)\nRASTREIO: USG hepatica a cada 6 meses", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Nodulo detectado -> TC/RM com contraste (LI-RADS)", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "LI-RADS 5 + alto risco:\ndiagnostico SEM\nbiopsia", "color": "orange", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "Incerteza/sem cirrose:\nbiopsia + estadiar\n(BCLC)", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E FATORES DE RISCO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Câncer hepático PRIMÁRIO mais prevalente (colangiocarcinoma é o 2o; metástases — sobretudo de cólon/reto — são as lesões mais comuns no geral)",
+        "Principais fatores de risco: CIRROSE (qualquer etiologia) e infecção crônica pelo vírus da HEPATITE B (mesmo sem cirrose)",
+        "Outros: hepatite C, esteato-hepatite (NASH), álcool, hemocromatose",
+        "Diagnóstico precoce permite terapia curativa (sobrevida em 5 anos até 70%)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — MANIFESTAÇÕES",
+      "section_color": "purple",
+      "titulo": "FREQUENTEMENTE ASSINTOMÁTICO",
+      "items": [
+        "Descompensação de cirrose: ascite, encefalopatia, piora da icterícia/hipertensão portal (pouca tolerância à infiltração tumoral)",
+        "Acometimento local: icterícia obstrutiva, rotura tumoral com hemoperitônio, abscesso hepático",
+        "Síndromes paraneoplásicas: HIPOGLICEMIA, hipercalcemia, alterações dermatológicas (dermatomiosite, pênfigo foliáceo, sinal de Leser-Trélat)",
+        "Muitos pacientes não têm sintomas específicos — daí a importância do rastreio",
+        "No PS: pensar em CHC no cirrótico que descompensa sem causa clara"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "RASTREAMENTO",
+      "section_color": "navy",
+      "titulo": "QUEM E COMO",
+      "items": [
+        "Indicação: pacientes com CIRROSE (maioria das diretrizes); hepatite B crônica conforme risco (ex.: ferramenta PAGE-B)",
+        "Exame de escolha: USG hepática a cada 6 MESES (TC de abdome se USG tecnicamente difícil)",
+        "Alfa-fetoproteína: papel CONTROVERSO — nunca isolada; com USG aumenta a detecção em ~10%",
+        "Lesões benignas/sem lesão: repetir USG em 6 meses",
+        "O rastreio aumenta a chance de terapia curativa e a sobrevida"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO — IMAGEM E LI-RADS",
+      "section_color": "navy",
+      "headers": ["Método", "Papel"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["TC com contraste", "Pouco sensível para < 2 cm; VPP até 92% para >= 2 cm em candidatos a transplante"],
+        ["RM com contraste", "Possivelmente mais acurada que a TC; gadolínio com cautela se ClCr < 30; gadoxetato não usar se bilirrubina > 3"],
+        ["USG com contraste", "Caracteriza nódulo já visto; se suspeita de CHC, seguir com TC/RM"],
+        ["LI-RADS 5 + alto risco", "Diagnóstico de CHC SEM biópsia (>=2 cm com 1 característica; ou 1-2 cm com washout ou crescimento >=50% em 6 meses)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO BIOPSIAR",
+      "section_color": "orange",
+      "titulo": "BIÓPSIA RESERVADA",
+      "items": [
+        "Em geral a IMAGEM diagnostica o CHC (LI-RADS 5 em alto risco dispensa biópsia)",
+        "Biópsia se: incerteza diagnóstica ou quando muda a conduta",
+        "Indicação de terapia locorregional (ablação) ou transplante em caso duvidoso",
+        "Suspeita de outro tumor (colangiocarcinoma, metástase)",
+        "AUSÊNCIA de cirrose (LI-RADS validado para alto risco)"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "TRATAMENTO (visão geral — BCLC)",
+      "section_color": "navy",
+      "titulo": "DEPENDE DO ESTÁGIO E DA FUNÇÃO HEPÁTICA",
+      "items": [
+        "Curativos: RESSECÇÃO tumoral e TRANSPLANTE hepático; ablação em estágio inicial",
+        "Locorregionais: ablação, quimioembolização transarterial (TACE), radioembolização",
+        "Sistêmicos: terapia-alvo, IMUNOTERAPIA, quimioterapia",
+        "Algoritmo BCLC integra estágio do tumor, função hepática (Child) e performance status",
+        "Manejo por equipe multidisciplinar (hepatologia, cirurgia, oncologia, radiologia intervencionista)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com fator de risco (cirrose/hepatite B) e nódulo hepático ___ cm; LI-RADS ___.",
+        "Alfa-fetoproteína ___; função hepática (Child) ___; descompensação: ___.",
+        "Conduta: TC/RM com contraste para caracterização; biópsia se indicada.",
+        "Encaminho à hepatologia/oncologia (estadiamento BCLC e definição de terapia curativa x paliativa)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o exame e o intervalo de escolha para rastreamento de CHC no paciente cirrótico?",
+      "alternativas": [
+        "TC de abdome anual",
+        "Ultrassonografia hepática a cada 6 meses",
+        "Alfa-fetoproteína isolada mensal",
+        "Ressonância anual",
+        "Biópsia hepática semestral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quais são os principais fatores de risco para carcinoma hepatocelular?",
+      "alternativas": [
+        "Hipertensão e diabetes",
+        "Cirrose (qualquer etiologia) e infecção crônica pelo vírus da hepatite B",
+        "Tabagismo isolado",
+        "Litíase biliar",
+        "Refluxo gastroesofágico"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre a alfa-fetoproteína no rastreamento de CHC, é correto:",
+      "alternativas": [
+        "Deve ser usada isoladamente como rastreio",
+        "Tem papel controverso; nunca isolada, mas associada à USG aumenta a detecção (~10%)",
+        "É diagnóstica isoladamente",
+        "Substitui a ultrassonografia",
+        "Não tem qualquer valor"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Em qual situação o CHC pode ser diagnosticado SEM biópsia?",
+      "alternativas": [
+        "Qualquer nódulo hepático",
+        "Lesão LI-RADS 5 em paciente de alto risco (achados típicos de CHC à imagem com contraste)",
+        "Sempre é necessária biópsia",
+        "Apenas se alfa-fetoproteína normal",
+        "Somente em pacientes sem cirrose"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quais são as terapias com intenção CURATIVA no CHC?",
+      "alternativas": [
+        "Apenas quimioterapia",
+        "Ressecção tumoral e transplante hepático (e ablação em estágio inicial)",
+        "Somente quimioembolização",
+        "Apenas imunoterapia",
+        "Radioterapia exclusiva"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O rastreamento de CHC no cirrótico é feito com USG hepática a cada 6 meses (TC se USG difícil). Detecta lesões em fase precoce, aumentando a chance de terapia curativa e a sobrevida."},
+    {"resposta": "B", "comentario": "Os principais fatores de risco são a cirrose (qualquer etiologia) e a hepatite B crônica (que pode causar CHC mesmo sem cirrose). Hepatite C, NASH e álcool também contribuem."},
+    {"resposta": "B", "comentario": "A alfa-fetoproteína tem papel controverso: nunca deve ser usada isoladamente para rastreio, mas associada à USG aumenta a taxa de detecção em cerca de 10%."},
+    {"resposta": "B", "comentario": "Em paciente de alto risco com lesão LI-RADS 5 (achados típicos à imagem com contraste — washout, cápsula, crescimento), o CHC é diagnosticado sem biópsia. A biópsia fica para incerteza ou ausência de cirrose."},
+    {"resposta": "B", "comentario": "As terapias curativas do CHC são a ressecção tumoral e o transplante hepático, além da ablação em estágio inicial. TACE, terapia sistêmica e imunoterapia controlam a doença em estágios mais avançados."}
+  ]
+}

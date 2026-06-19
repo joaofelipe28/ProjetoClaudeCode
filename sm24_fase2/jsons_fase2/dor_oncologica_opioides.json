@@ -1,0 +1,199 @@
+{
+  "slug": "dor_oncologica_opioides",
+  "titulo": "Dor Oncológica e Rotação de Opioides",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Dor oncológica aguda e opioides",
+  "chapter_bar": "DOR ONCOLÓGICA E ROTAÇÃO DE OPIOIDES",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ESCADA ANALGÉSICA ADAPTADA",
+      "title": "DOR ONCOLÓGICA — INTENSIDADE GUIA A CONDUTA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Avaliar intensidade (0-10) + tipo + causa tratavel", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.22, "y": 0.5, "w": 135, "h": 24, "text": "Leve (1-3):\nnao opioide\n+/- adjuvante", "color": "green", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 24, "text": "Moderada (4-6):\nopioide fraco/forte\nbaixa dose", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.78, "y": 0.5, "w": 135, "h": 24, "text": "Severa (7-10):\nOPIOIDE FORTE\n+ titular rapido", "color": "red", "font_size": 5.8},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Reavaliar + adjuvantes; falha -> rotacao de opioides", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO DA DOR",
+      "section_color": "teal",
+      "titulo": "TRIAGEM RÁPIDA E REPETIDA",
+      "items": [
+        "Intensidade (0-10), características (somática/visceral/NEUROPÁTICA), localização, fatores agravantes",
+        "Impacto no sono, humor e atividades; exame físico dirigido",
+        "Identificar e tratar a CAUSA (infecção, obstrução, fratura patológica, compressão)",
+        "Dor aguda intensa = prioridade clínica — tratar prontamente e reavaliar até o controle",
+        "Princípios da OMS: 'pela boca' (VO quando possível), 'pelo relógio' (horário fixo), 'pela escada'"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANALGÉSICOS NÃO OPIOIDES E ADJUVANTES",
+      "section_color": "navy",
+      "headers": ["Fármaco", "Dose orientativa", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Paracetamol", "500-1000 mg VO 6/6h (máx 3-4 g/dia)", "Coadjuvante seguro; hepatotoxicidade em dose alta"],
+        ["Dipirona", "500-1000 mg VO/IV 6/6h", "Cautela em risco hematológico"],
+        ["AINE (ibuprofeno/naproxeno)", "Ibuprofeno 600 mg 8/8h", "Cuidado renal/GI; útil em dor óssea"],
+        ["Dexametasona (adjuvante)", "4-8 mg/dia VO/IV", "Infiltração tumoral, edema, compressão"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "OPIOIDES FORTES — BASE DA DOR MODERADA A SEVERA",
+      "section_color": "orange",
+      "titulo": "TITULAR ATÉ O ALÍVIO (sem teto fixo)",
+      "items": [
+        "Morfina (padrão): VO 5-15 mg 4/4h (opioide-naïve); IV/SC 2-5 mg 2-4h na dor aguda intensa; sem dose-teto — titular",
+        "Oxicodona: VO 10-20 mg 12/12h; alternativa quando morfina não tolerada",
+        "Metadona: VO 2,5-10 mg 8-12/12h — titulação difícil (meia-vida longa/variável), exige experiência",
+        "Opioide fraco (Tramadol 50-100 mg 4-6h, máx 400 mg/dia): dor moderada/transição — NÃO isolado na dor severa",
+        "SEMPRE prescrever laxante (constipação não tem tolerância) + antiemético no início; vigiar sedação/depressão respiratória",
+        "Não atrasar opioide forte na dor severa — pode-se 'pular degraus'"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ADJUVANTES POR TIPO DE DOR",
+      "section_color": "navy",
+      "headers": ["Tipo de dor", "Adjuvante"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Neuropática", "Gabapentina 300 mg/noite -> 900-2400 mg/dia; Pregabalina 50-75 mg 2x -> 150-300 mg/dia; Duloxetina 30-60 mg; Nortriptilina 10-25 mg"],
+        ["Óssea/metastática", "Bisfosfonato/denosumabe; RADIOTERAPIA antálgica; AINE/corticoide"],
+        ["Inflamatória/compressão", "Corticoide (dexametasona)"],
+        ["Refratária", "Técnicas intervencionistas (bloqueios, analgesia intratecal); cuidados paliativos"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ROTAÇÃO DE OPIOIDES — QUANDO E COMO",
+      "section_color": "purple",
+      "titulo": "TROCA DE OPIOIDE/VIA (tolerância cruzada INCOMPLETA)",
+      "items": [
+        "Indicações: dor mal controlada apesar da dose, efeitos adversos intoleráveis, necessidade de outra via (sem VO), barreiras de acesso, comorbidade (ex.: DRC -> opioide sem depuração renal)",
+        "Passo 1: converter a dose diária do opioide atual em equivalente de MORFINA ORAL e, daí, para o novo opioide (usar tabela de equipotência)",
+        "Equipotência: morfina 10 mg IV = 10 mg SC = 30 mg VO (parenteral 3x mais potente que oral)",
+        "Passo 2: REDUÇÃO automática de 25-50% da dose (tolerância cruzada incompleta); ~50% se idoso/frágil/dose alta, ~25% se sem fatores de risco",
+        "Passo 3: dose de RESGATE 5-15% da dose total diária (ou 1/10 a 1/6) com opioide de ação rápida + monitorar de perto",
+        "Metadona/buprenorfina: equipotência NÃO linear; metadona com meia-vida longa (8-120h) -> ajustes a cada 3-7 dias (risco de intoxicação)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS / MONITORIZAÇÃO",
+      "section_color": "red",
+      "titulo": "SEGURANÇA",
+      "items": [
+        "Reavaliar a dor a cada 30-60 min (IV) ou < 4h (VO) após a titulação inicial",
+        "Vigiar sedação e DEPRESSÃO RESPIRATÓRIA; ter naloxona disponível",
+        "Metadona: alívio em < 48h após ajuste sugere risco de intoxicação (acúmulo) — ir devagar",
+        "Compressão medular (dor + déficit) ou dor irruptiva severa = emergência -> imagem/dexametasona/RT, analgesia intensiva",
+        "Prevenir constipação (laxante de rotina) e náusea; ajustar em disfunção renal/hepática"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Medir intensidade e impacto funcional; tratar a causa tratável",
+        "Escalonar conforme a dor; opioide forte sem demora na dor severa (titulação rápida)",
+        "Adjuvante conforme o tipo (neuropática -> gabapentinoide/antidepressivo; óssea -> RT/bisfosfonato)",
+        "Rotação: converter p/ morfina oral -> novo opioide -> reduzir 25-50% -> resgate 5-15%",
+        "Laxante + antiemético de rotina; reavaliar e encaminhar a cuidados paliativos se complexa"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente oncológico com dor ___ /10, tipo ___ (nociceptiva/neuropática/mista); causa: ___.",
+        "Opioide atual ___ (dose diária ___); efeitos adversos: ___; necessidade de rotação/via: ___.",
+        "Conduta: opioide forte titulado + adjuvante ___; rotação realizada (novo opioide ___, dose reduzida ___, resgate ___).",
+        "Encaminho a cuidados paliativos/dor se refratária ou complexa."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente oncológico com dor severa (9/10) por metástase óssea. Qual a conduta analgésica?",
+      "alternativas": [
+        "Apenas paracetamol e reavaliar em 24h",
+        "Iniciar opioide forte (ex.: morfina) com titulação rápida + adjuvantes (AINE/corticoide, considerar radioterapia antálgica)",
+        "Tramadol isolado",
+        "Aguardar avaliação ambulatorial",
+        "Somente medidas não farmacológicas"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Ao realizar rotação de opioides, qual a redução de dose recomendada pela tolerância cruzada incompleta?",
+      "alternativas": [
+        "Aumentar a dose em 25%",
+        "Reduzir a dose total diária em 25-50% (mais próximo de 50% se idoso/frágil/dose alta)",
+        "Manter a mesma dose",
+        "Reduzir 90% sempre",
+        "Não há necessidade de ajuste"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual a equivalência analgésica da morfina entre as vias?",
+      "alternativas": [
+        "10 mg IV = 10 mg VO",
+        "10 mg IV = 10 mg SC = 30 mg VO (parenteral ~3x mais potente que oral)",
+        "30 mg IV = 10 mg VO",
+        "As vias são equivalentes",
+        "A via oral é mais potente que a IV"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Por que a metadona exige cuidado especial na titulação?",
+      "alternativas": [
+        "Por não ter efeito analgésico",
+        "Por meia-vida longa e variável (8-120h) e equipotência não linear, com risco de intoxicação por acúmulo",
+        "Por ser eliminada apenas pelo rim",
+        "Por não causar depressão respiratória",
+        "Por ser um agonista parcial fraco"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual cuidado deve acompanhar SEMPRE a prescrição de opioides?",
+      "alternativas": [
+        "Restrição hídrica",
+        "Prescrição de laxante (constipação não desenvolve tolerância) e antiemético no início",
+        "Suspender adjuvantes",
+        "Evitar doses de resgate",
+        "Jejum prolongado"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor severa oncológica indica opioide forte (morfina) com titulação rápida, sem 'subir degraus' lentamente. Em dor óssea metastática, associam-se AINE/corticoide e considera-se radioterapia antálgica e bisfosfonato/denosumabe."},
+    {"resposta": "B", "comentario": "Pela tolerância cruzada incompleta, reduz-se a dose total diária em 25-50% ao rotacionar (mais próximo de 50% em idosos, frágeis ou em altas doses), prescrevendo doses de resgate (5-15%)."},
+    {"resposta": "B", "comentario": "A morfina parenteral é ~3x mais potente que a oral: 10 mg IV = 10 mg SC = 30 mg VO. Essa relação é essencial na conversão de vias durante a rotação de opioides."},
+    {"resposta": "B", "comentario": "A metadona tem meia-vida longa e imprevisível (8-120h) e equipotência não linear; ajustes devem respeitar 3-7 dias entre doses, pois alívio em < 48h sugere risco de acúmulo/intoxicação."},
+    {"resposta": "B", "comentario": "Todo paciente em opioide deve receber laxante profilático (a constipação opioide não desenvolve tolerância) e antiemético no início; vigia-se sedação/depressão respiratória."}
+  ]
+}

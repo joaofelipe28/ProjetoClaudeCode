@@ -1,0 +1,170 @@
+{
+  "slug": "hic_malignidade",
+  "titulo": "Hipertensão Intracraniana da Malignidade",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "HIC da malignidade no PS",
+  "chapter_bar": "HIC DA MALIGNIDADE — DEXAMETASONA + IMAGEM",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — EMERGÊNCIA NEUROLÓGICA",
+      "title": "HIC — CABECEIRA, DEXAMETASONA, TC, TRANSFERIR",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Oncologico + cefaleia/vomito/rebaixamento/deficit\n= HIC ate prova em contrario", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 205, "h": 22, "text": "ABCDE (IOT se Glasgow<=8) + cabeceira 30 + neutra\nDEXAMETASONA 10mg EV", "color": "orange", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.34, "w": 205, "h": 22, "text": "TC de cranio sem contraste IMEDIATA\n(NUNCA puncao lombar antes)", "color": "red", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Sinais de herniacao -> osmoterapia + neurocirurgia", "color": "purple", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CAUSAS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Emergência neurológica: aumento crítico da pressão intracraniana em paciente oncológico",
+        "Causas: METÁSTASES cerebrais, tumores primários do SNC, edema vasogênico tumoral, hidrocefalia obstrutiva, hemorragia tumoral",
+        "Consequências: redução da perfusão cerebral, herniação, coma e morte se não tratada",
+        "Em oncológico, REBAIXAMENTO ou déficit focal AGUDO = HIC até prova em contrário"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MANIFESTAÇÕES CLÍNICAS",
+      "section_color": "purple",
+      "titulo": "DO INICIAL AO TARDIO",
+      "items": [
+        "Iniciais: cefaleia progressiva (PIOR pela manhã), náuseas/vômitos em jato, visão turva/diplopia, sonolência",
+        "Gravidade: rebaixamento do nível de consciência, déficit focal, convulsões, anisocoria, postura de descerebração/decorticação",
+        "Tardio (herniação iminente): TRÍADE DE CUSHING (bradicardia + hipertensão + irregularidade respiratória)",
+        "Não atrasar: tempo perdido = risco de herniação",
+        "Suspeita -> elevar a cabeceira, dexametasona e providenciar imagem/transferência"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "ABCDE + IMAGEM",
+      "items": [
+        "ABCDE imediato: via aérea (IOT se Glasgow <= 8), O2, monitor, acesso calibroso",
+        "Neuro rápido: Glasgow, pupilas, déficits focais, sinais de lateralização",
+        "TC de crânio SEM contraste IMEDIATA: massa, edema, desvio de linha média, hidrocefalia, hemorragia",
+        "NUNCA realizar punção lombar antes da imagem (risco de herniação)",
+        "Laboratório geral: hemograma, PCR, eletrólitos (Na, K, Ca), função renal"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS",
+      "section_color": "orange",
+      "titulo": "POSIÇÃO + DEXAMETASONA + OSMOTERAPIA",
+      "items": [
+        "Cabeceira elevada a 30 graus, cabeça em posição NEUTRA (sem rotação)",
+        "DEXAMETASONA (pilar do edema tumoral): 10 mg EV imediato + 4 mg EV 6/6h (efeito em horas)",
+        "Osmoterapia (se HIC grave): Manitol 20% 0,5-1 g/kg EV em 15-20 min (repetir 6-8/8h; monitorar osmolaridade/função renal)",
+        "  OU Salina hipertônica 3% 250 mL EV em 20 min (alternativa se hipotensão/IR)",
+        "Convulsão: Diazepam 10 mg EV ou Midazolam 5 mg; profilaxia (lesão cortical/crise prévia): Levetiracetam 500-1000 mg 12/12h",
+        "Suporte: SatO2 > 94%, PaCO2 35-40 (se ventilado), evitar hipotensão, glicemia 140-180, analgesia + ondansetrona"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MENSAGEM-CHAVE / ENCAMINHAMENTO",
+      "section_color": "red",
+      "titulo": "TODOS DEVEM SER ENCAMINHADOS",
+      "items": [
+        "Suspeitou de HIC em paciente oncológico? Eleve a cabeceira, faça DEXAMETASONA e providencie IMAGEM + transferência imediata",
+        "Todo paciente com HIC suspeita/confirmada deve ser internado e avaliado pela neurocirurgia",
+        "Osmoterapia (manitol/salina hipertônica) é ponte na herniação iminente",
+        "Corticoide trata o edema VASOGÊNICO (tumoral) — não o edema citotóxico do AVC",
+        "Tempo perdido = risco de herniação cerebral"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente oncológico (___) com suspeita/confirmação de HIC; alteração neurológica: ___; Glasgow ___.",
+        "TC de crânio: ___ (massa/edema/desvio de linha média/hidrocefalia/hemorragia).",
+        "Condutas: cabeceira 30, DEXAMETASONA, osmoterapia ___, profilaxia/tratamento de convulsão, IOT se RNC.",
+        "Solicito internação + neurocirurgia (vigilância neurológica) — transferência imediata."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente oncológico com cefaleia matinal, vômitos em jato e sonolência. Qual a conduta inicial além da imagem?",
+      "alternativas": [
+        "Punção lombar imediata",
+        "Elevar a cabeceira a 30 graus e administrar dexametasona, providenciando TC de crânio",
+        "Apenas analgésico e alta",
+        "Iniciar anticoagulação",
+        "Hidratação vigorosa para diurese alta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o pilar do tratamento do edema vasogênico tumoral na HIC da malignidade?",
+      "alternativas": [
+        "Manitol isolado",
+        "Dexametasona (corticoide)",
+        "Furosemida",
+        "Solução salina 0,9%",
+        "Antibiótico"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que NÃO se deve realizar punção lombar antes da TC na suspeita de HIC?",
+      "alternativas": [
+        "Por desconforto do paciente",
+        "Pelo risco de herniação cerebral",
+        "Porque a punção é sempre normal",
+        "Porque atrasa o antibiótico",
+        "Porque não há líquor"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual achado caracteriza a tríade de Cushing (sinal tardio de herniação iminente)?",
+      "alternativas": [
+        "Taquicardia, hipotensão e taquipneia",
+        "Bradicardia, hipertensão e irregularidade respiratória",
+        "Febre, sudorese e tremor",
+        "Hipoglicemia, palidez e síncope",
+        "Anisocoria isolada"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual conduta é indicada na HIC grave com sinais de herniação iminente?",
+      "alternativas": [
+        "Apenas observação",
+        "Osmoterapia (manitol 20% ou salina hipertônica 3%) e acionamento da neurocirurgia",
+        "Reduzir a cabeceira",
+        "Suspender o oxigênio",
+        "Hiperventilação prolongada de rotina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Em oncológico com sinais de HIC, eleva-se a cabeceira a 30 graus (cabeça neutra) e administra-se dexametasona (reduz o edema vasogênico em horas), providenciando TC de crânio imediata. Punção lombar é contraindicada antes da imagem."},
+    {"resposta": "B", "comentario": "A dexametasona é o pilar do tratamento do edema vasogênico tumoral (10 mg EV + 4 mg 6/6h). A osmoterapia (manitol/salina hipertônica) entra na HIC grave/herniação como ponte."},
+    {"resposta": "B", "comentario": "A punção lombar antes da imagem em HIC com efeito de massa pode precipitar herniação cerebral pela redução abrupta da pressão liquórica caudal. Por isso, sempre TC primeiro."},
+    {"resposta": "B", "comentario": "A tríade de Cushing — bradicardia + hipertensão + respiração irregular — é sinal TARDIO de herniação iminente, refletindo a tentativa de manter a perfusão cerebral."},
+    {"resposta": "B", "comentario": "Na HIC grave com herniação iminente, usa-se osmoterapia (manitol 20% 0,5-1 g/kg ou salina hipertônica 3%) como medida de ponte, com acionamento imediato da neurocirurgia."}
+  ]
+}

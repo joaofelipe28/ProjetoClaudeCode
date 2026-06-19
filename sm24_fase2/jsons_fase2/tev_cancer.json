@@ -1,0 +1,170 @@
+{
+  "slug": "tev_cancer",
+  "titulo": "Tromboembolismo Venoso no Câncer",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "TEV no paciente com câncer",
+  "chapter_bar": "TEV NO CÂNCER — DOAC OU HBPM",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — PROFILAXIA E TRATAMENTO",
+      "title": "TEV NO CÂNCER — ANTICOAGULAR (NÃO VARFARINA)",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Paciente oncologico - avaliar risco de TEV\n(internado / ambulatorial / TEV confirmado)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 26, "text": "Internado:\nprofilaxia (HBPM)\n+/- mecanica", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "TEV confirmado:\nDOAC ou HBPM\n(melhor que varfarina)", "color": "red", "font_size": 5.6},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Ambulatorial alto risco (Khorana>=2): considerar DOAC", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CONTEXTO",
+      "section_color": "teal",
+      "titulo": "POR QUE É DIFERENTE",
+      "items": [
+        "Câncer é estado de hipercoagulabilidade — alto risco de TVP/TEP",
+        "Anticoagulantes de escolha no TEV do câncer: DOAC ou HBPM (ambos MELHORES que a varfarina, com menos sangramento)",
+        "Varfarina NÃO é recomendada (mais sangramento, interações, controle difícil)",
+        "Ressalva aos DOAC: neoplasia GASTROINTESTINAL (maior risco de sangramento) — preferir HBPM"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PROFILAXIA PRIMÁRIA",
+      "section_color": "navy",
+      "headers": ["Cenário", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Internado com neoplasia", "Profilaxia para TEV (HBPM preferível à HNF)"],
+        ["Internado de ALTO risco", "Profilaxia medicamentosa (HBPM) + mecânica (compressão pneumática)"],
+        ["Alto risco de SANGRAMENTO", "Profilaxia MECÂNICA isolada"],
+        ["Pós-cirurgia abdominal/pélvica", "Manter profilaxia (HBPM) por até 4 semanas após a alta"],
+        ["Ambulatorial em QT, alto risco (Khorana >= 2)", "Considerar profilaxia com DOAC (apixabana ou rivaroxabana)"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO DO TEV CONFIRMADO",
+      "section_color": "red",
+      "titulo": "ANTICOAGULAÇÃO",
+      "items": [
+        "1a linha: DOAC (apixabana, rivaroxabana, edoxabana) OU HBPM — ambos superiores à varfarina",
+        "Neoplasia gastrointestinal / mucosite / sangramento: preferir HBPM (DOAC tem mais sangramento GI)",
+        "Trombocitopenia / função renal alterada: ajustar/escolher conforme o caso (HBPM com ajuste; cautela com DOAC se ClCr baixo)",
+        "Manter por >= 3-6 meses; enquanto houver câncer ATIVO/em tratamento, manter anticoagulação (tempo estendido)",
+        "Evitar varfarina (mais sangramento, interações com QT)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TEP INCIDENTAL / SUBSEGMENTAR",
+      "section_color": "purple",
+      "titulo": "TRATAR MESMO SE ACHADO INCIDENTAL",
+      "items": [
+        "No câncer, TEP incidental deve ser SEMPRE tratado",
+        "TEP subsegmentar: tratar se houver neoplasia ativa, múltiplos TEP, paciente hospitalizado ou TVP associada",
+        "Achados incidentais em estadiamento são frequentes e clinicamente relevantes no câncer",
+        "A decisão pondera sempre o risco de sangramento",
+        "Escore de Khorana >= 2 = alto risco ambulatorial (limitação: subestima neoplasia renal e de SNC)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS / CUIDADOS",
+      "section_color": "red",
+      "titulo": "PONDERAR SANGRAMENTO",
+      "items": [
+        "Sempre avaliar o risco de SANGRAMENTO antes de anticoagular (plaquetopenia por QT, tumor sangrante, mucosite)",
+        "TEP de alto risco (instabilidade) -> conduzir como TEP grave (reperfusão), independentemente do câncer",
+        "Varfarina desequilibra o risco/benefício (mais sangramento) — não recomendada",
+        "Reavaliar periodicamente a indicação conforme atividade da doença e plaquetas",
+        "Filtro de veia cava: reservar para contraindicação absoluta à anticoagulação"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente oncológico (___) com TEV ___ (TVP/TEP, incidental/subsegmentar?); estabilidade ___.",
+        "Risco de sangramento: ___ (neoplasia GI? plaquetopenia?); função renal ___.",
+        "Conduta: anticoagulação com ___ (DOAC/HBPM); profilaxia conforme cenário; tempo: enquanto câncer ativo.",
+        "Solicito seguimento com oncologia; TEP de alto risco -> manejo de emergência (reperfusão)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com câncer e TVP confirmada. Qual o anticoagulante de escolha?",
+      "alternativas": [
+        "Varfarina",
+        "DOAC ou heparina de baixo peso molecular (ambos melhores que a varfarina)",
+        "Apenas AAS",
+        "Heparina não fracionada subcutânea de rotina",
+        "Nenhum"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Em qual situação se prefere HBPM ao DOAC no tratamento do TEV do câncer?",
+      "alternativas": [
+        "Neoplasia de pele",
+        "Neoplasia gastrointestinal (maior risco de sangramento com DOAC)",
+        "Câncer de mama em remissão",
+        "Tumor cerebral pequeno",
+        "Sempre o DOAC é preferível"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre o TEP incidental/subsegmentar no paciente oncológico, é correto:",
+      "alternativas": [
+        "Nunca tratar",
+        "TEP incidental deve ser sempre tratado; subsegmentar trata-se se neoplasia ativa, múltiplos TEP, hospitalizado ou TVP associada",
+        "Tratar apenas se sintomático",
+        "Tratar somente TEP central",
+        "Observar por 30 dias"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual escore identifica pacientes ambulatoriais com câncer de alto risco para TEV (candidatos a profilaxia)?",
+      "alternativas": [
+        "Escore de Wells",
+        "Escore de Khorana (>= 2)",
+        "Escore de Genebra",
+        "Escore de Caprini isolado",
+        "Escore MASCC"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Por que a varfarina NÃO é recomendada no TEV associado ao câncer?",
+      "alternativas": [
+        "Porque é cara",
+        "Porque tem maior taxa de sangramento e interações, desequilibrando o risco/benefício frente a DOAC/HBPM",
+        "Porque não é eficaz contra TVP",
+        "Porque exige aplicação subcutânea",
+        "Porque é contraindicada em qualquer trombose"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No TEV do câncer, os anticoagulantes de escolha são os DOAC ou a HBPM, ambos com menos sangramento e melhor desfecho que a varfarina (que não é recomendada)."},
+    {"resposta": "B", "comentario": "Prefere-se a HBPM ao DOAC quando há neoplasia gastrointestinal (e mucosite/lesões sangrantes), pelo maior risco de sangramento digestivo associado aos DOAC."},
+    {"resposta": "B", "comentario": "No câncer, o TEP incidental deve ser sempre tratado; o subsegmentar trata-se se houver neoplasia ativa, múltiplos êmbolos, hospitalização ou TVP associada — ponderando o risco de sangramento."},
+    {"resposta": "B", "comentario": "O escore de Khorana (>= 2 = alto risco) identifica pacientes ambulatoriais em quimioterapia candidatos a profilaxia primária com DOAC (apixabana/rivaroxabana). Subestima neoplasia renal e de SNC."},
+    {"resposta": "B", "comentario": "A varfarina tem maior taxa de sangramento, interações com a quimioterapia e controle difícil (INR instável), desequilibrando o risco/benefício frente aos DOAC e à HBPM."}
+  ]
+}

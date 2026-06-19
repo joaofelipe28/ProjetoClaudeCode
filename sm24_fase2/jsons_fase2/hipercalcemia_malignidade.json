@@ -1,0 +1,168 @@
+{
+  "slug": "hipercalcemia_malignidade",
+  "titulo": "Hipercalcemia da Malignidade",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Hipercalcemia da Malignidade no PS",
+  "chapter_bar": "HIPERCALCEMIA DA MALIGNIDADE — HIDRATAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — EMERGÊNCIA ONCOLÓGICA",
+      "title": "HIPERCALCEMIA — SF + BISFOSFONATO (+ CALCITONINA)",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Ca corrigido elevado em paciente oncologico\nECG (QT curto) + avaliar volemia/consciencia", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "HIDRATACAO SF 0,9% (diurese 100-150 mL/h)", "color": "orange", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Calcitonina (rapido,\n4-6h) se grave/\nsintomatica", "color": "teal", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 26, "text": "Bisfosfonato (zoledronico)\ncontrole sustentado\n(efeito 24-48h)", "color": "red", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CAUSAS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Emergência oncológica; elevação do cálcio por neoplasia (mortalidade ~50% em 30 dias — pior prognóstico)",
+        "Tumores: pulmão (não pequenas células), mama, MIELOMA múltiplo, espinocelular de cabeça/pescoço, urotelial, ovário",
+        "Mecanismos: PTHrP (mais comum), osteólise por metástases, calcitriol ectópico (LINFOMAS), invasão óssea",
+        "Sempre usar o cálcio CORRIGIDO pela albumina: Ca corr = Ca total + 0,8 x (4 - albumina), ou cálcio iônico"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "GRAVIDADE E QUADRO CLÍNICO",
+      "section_color": "navy",
+      "headers": ["Cálcio total", "Gravidade / clínica"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["10,6-11,9", "Leve — geralmente assintomática"],
+        ["12-13,9", "Moderada — sintomas neurológicos leves, GI (anorexia, náusea, constipação)"],
+        [">= 14", "GRAVE/emergência — confusão, coma, arritmias"],
+        ["Sintomas-chave", "'Stones, bones, groans, psychic moans' + poliúria/desidratação; ECG: QT CURTO, BAV, bradicardia"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "NO PS",
+      "items": [
+        "Anamnese: tipo de câncer e se em tratamento; avaliar estado mental, volemia e desidratação",
+        "Laboratório: cálcio total e iônico, ALBUMINA, função renal, eletrólitos (Na, K, Mg, P), hemograma, gasometria se grave",
+        "ECG SEMPRE: observar o intervalo QT (encurtado na hipercalcemia)",
+        "Tratar TODOS os casos >= 12 mg/dL OU sintomáticos"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "HIDRATAR -> CALCITONINA -> BISFOSFONATO",
+      "items": [
+        "HIDRATAÇÃO (pilar): SF 0,9% bolus 500-1000 mL + manutenção 200-300 mL/h; meta de diurese >= 100-150 mL/h (cautela em IC/DRC)",
+        "Furosemida 20-40 mg EV SOMENTE após hidratação e se hipervolemia (não de rotina)",
+        "CALCITONINA (ação rápida 4-6h): 4 UI/kg SC/IM 12/12h — uso curto (taquifilaxia em 48-72h)",
+        "BISFOSFONATO (controle sustentado): Ácido zoledrônico 4 mg EV em 15 min OU Pamidronato 60-90 mg EV (efeito em 24-48h, pico 4-7 dias); ajustar/evitar se TFG < 30",
+        "Corticoide (Hidrocortisona 200-300 mg/dia ou Prednisona 40-60 mg/dia): útil em LINFOMAS/tumores produtores de calcitriol",
+        "Diálise: refratária com IR grave, sobrecarga volêmica ou arritmias ameaçadoras"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS / INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "GRAVIDADE",
+      "items": [
+        "Cálcio >= 14, confusão/coma, arritmias = emergência",
+        "Internar: Ca >= 12, sintomas neurológicos, insuficiência renal, arritmias, necessidade de bisfosfonato EV, diagnóstico oncológico não estabelecido",
+        "Calcitonina dá o alívio rápido; o bisfosfonato sustenta o controle (mas demora 24-48h)",
+        "Denosumabe é alternativa (sobretudo se IR / refratário aos bisfosfonatos)",
+        "Alta só se: leve, assintomática e ECG sem alterações"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente oncológico (___) com hipercalcemia ___ (Ca corrigido ___; iônico ___).",
+        "Sintomas: ___ (confusão/náusea/poliúria); ECG (QT): ___; função renal ___.",
+        "Condutas: SF ___ mL/h, calcitonina, bisfosfonato (zoledrônico/pamidronato), corticoide se linfoma.",
+        "Solicito internação + oncologia/nefrologia (monitorização e exames seriados)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o pilar do tratamento inicial da hipercalcemia da malignidade?",
+      "alternativas": [
+        "Restrição hídrica",
+        "Hidratação venosa com soro fisiológico (meta de diurese 100-150 mL/h)",
+        "Diálise imediata para todos",
+        "Reposição de cálcio",
+        "Bisfosfonato isolado, sem hidratar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual medicação proporciona alívio RÁPIDO (4-6h) na hipercalcemia grave sintomática?",
+      "alternativas": [
+        "Ácido zoledrônico",
+        "Calcitonina",
+        "Pamidronato",
+        "Furosemida isolada",
+        "Denosumabe"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o mecanismo mais comum da hipercalcemia da malignidade?",
+      "alternativas": [
+        "Produção tumoral de PTHrP (peptídeo relacionado ao PTH)",
+        "Hiperparatireoidismo primário",
+        "Deficiência de vitamina D",
+        "Insuficiência renal",
+        "Hipoalbuminemia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Em qual situação o corticoide é particularmente útil na hipercalcemia da malignidade?",
+      "alternativas": [
+        "Carcinoma de pulmão de pequenas células",
+        "Linfomas e tumores produtores de calcitriol",
+        "Mieloma sem produção de calcitriol",
+        "Tumores sólidos de cólon",
+        "Hipercalcemia leve assintomática"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual alteração eletrocardiográfica é típica da hipercalcemia?",
+      "alternativas": [
+        "Onda U",
+        "Encurtamento do intervalo QT",
+        "Supra de ST difuso",
+        "Onda T apiculada",
+        "Onda delta"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A hidratação venosa com SF 0,9% (meta de diurese 100-150 mL/h) é o pilar inicial, corrigindo a desidratação e aumentando a calciúria. A furosemida só entra após hidratar e se houver hipervolemia."},
+    {"resposta": "B", "comentario": "A calcitonina age em 4-6h, sendo útil para alívio rápido na hipercalcemia grave/sintomática (uso curto pela taquifilaxia). O bisfosfonato dá o controle sustentado, mas só age em 24-48h."},
+    {"resposta": "A", "comentario": "O mecanismo mais comum é a produção tumoral de PTHrP (hipercalcemia humoral da malignidade), seguido de osteólise por metástases e produção ectópica de calcitriol (linfomas)."},
+    {"resposta": "B", "comentario": "O corticoide é particularmente útil em linfomas e tumores produtores de calcitriol (reduz a produção/ativação da vitamina D), além do mieloma."},
+    {"resposta": "B", "comentario": "A hipercalcemia encurta o intervalo QT (e pode causar bradicardia/BAV). A onda U e o QT longo são da hipocalemia/hipocalcemia; a T apiculada é da hipercalemia."}
+  ]
+}

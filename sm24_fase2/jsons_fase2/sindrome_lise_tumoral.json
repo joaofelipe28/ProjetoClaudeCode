@@ -1,0 +1,182 @@
+{
+  "slug": "sindrome_lise_tumoral",
+  "titulo": "Síndrome de Lise Tumoral",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Síndrome de Lise Tumoral no PS",
+  "chapter_bar": "SÍNDROME DE LISE TUMORAL",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — EMERGÊNCIA METABÓLICA",
+      "title": "LISE TUMORAL — HIDRATAR, BAIXAR ÁCIDO ÚRICO, K",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Lise de celulas tumorais -> hiperK + hiperfosfatemia\n+ hiperuricemia + hipocalcemia", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "HIDRATACAO EV vigorosa (diurese >=100 mL/h) + ECG", "color": "orange", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Ac. urico:\nRasburicase (alto risco)\nou alopurinol", "color": "teal", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "HiperK/fosfato:\ntratar; dialise se\nrefratario", "color": "red", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Emergência oncológica e metabólica por destruição maciça de células tumorais (espontânea ou induzida por tratamento)",
+        "Liberação abrupta de conteúdo intracelular: HIPERURICEMIA, HIPERCALEMIA, HIPERFOSFATEMIA, HIPOCALCEMIA secundária",
+        "Alto risco: leucemias agudas, linfoma de Burkitt, linfomas de alto grau, alta carga tumoral, neoplasias muito quimiossensíveis",
+        "Pode ser assintomática no início — a vigilância LABORATORIAL é fundamental"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MANIFESTAÇÕES CLÍNICAS",
+      "section_color": "purple",
+      "titulo": "POR SISTEMA",
+      "items": [
+        "Neurológicas: letargia, confusão, convulsões (hipocalcemia)",
+        "Cardiovasculares: arritmias, parada cardíaca (HIPERCALEMIA)",
+        "Renais: oligúria, anúria, edema (nefropatia por ácido úrico/fosfato)",
+        "Gastrointestinais: náuseas, vômitos, diarreia",
+        "ECG é OBRIGATÓRIO (avaliar hipercalemia/hipocalcemia)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES E DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "CAIRO-BISHOP (laboratorial + clínico)",
+      "items": [
+        "Iniciais: hemograma, ureia/creatinina, ÁCIDO ÚRICO, potássio, FÓSFORO, cálcio, gasometria",
+        "ECG obrigatório",
+        "Lise laboratorial: alterações de >=2 (ácido úrico, K, fósforo, cálcio) em torno do início do tratamento",
+        "Lise clínica: lise laboratorial + IRA, arritmia ou convulsão",
+        "Avaliar volemia e débito urinário"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — HIDRATAÇÃO E ÁCIDO ÚRICO",
+      "section_color": "orange",
+      "titulo": "BASE DO TRATAMENTO",
+      "items": [
+        "HIDRATAÇÃO EV: SF 0,9% 200-300 mL/h, meta de diurese >= 100 mL/h (cautela em IC/IRA)",
+        "Hiperuricemia (alto risco/SLT estabelecida): RASBURICASE 0,15-0,2 mg/kg EV dose única (ação em horas)",
+        "  CONTRAINDICADA na deficiência de G6PD (risco de hemólise/metemoglobinemia)",
+        "Profilaxia / casos leves: Alopurinol 300 mg VO/dia (não reduz o ácido úrico JÁ formado)",
+        "Não usar alcalinização urinária de rotina (favorece precipitação de fosfato de cálcio)"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — DISTÚRBIOS ELETROLÍTICOS",
+      "section_color": "red",
+      "titulo": "K, FÓSFORO, CÁLCIO",
+      "items": [
+        "HIPERCALEMIA (K >= 6,0 ou alteração no ECG): Gluconato de cálcio 10% 10 mL EV em 10 min + Insulina 10 UI EV + glicose 25 g + furosemida se euvolêmico/hipervolêmico",
+        "HIPERFOSFATEMIA: restrição de fósforo + quelante (Sevelamer 800-1600 mg VO 8/8h)",
+        "HIPOCALCEMIA: NÃO corrigir se assintomática (risco de precipitação de fosfato de cálcio); corrigir só se convulsão/arritmia/tetania (gluconato de cálcio)",
+        "Monitorização cardíaca contínua; eletrólitos seriados",
+        "DIÁLISE: hipercalemia refratária, acidose grave, sobrecarga volêmica, IRA progressiva, hiperfosfatemia grave sintomática"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS / ENCAMINHAMENTO",
+      "section_color": "red",
+      "titulo": "TODOS DEVEM SER ENCAMINHADOS",
+      "items": [
+        "Todo paciente com síndrome de lise tumoral deve ser internado/encaminhado a serviço especializado",
+        "Necessidade de exames seriados, nefrologia e, frequentemente, leito de UTI",
+        "Hipercalemia é a causa de morte mais temida (arritmia/PCR)",
+        "Não corrigir hipocalcemia assintomática (piora a precipitação de fosfato de cálcio renal)",
+        "Antecipar a profilaxia em pacientes de alto risco antes da QT"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com SLT (neoplasia ___; última QT há ___); ácido úrico ___, K ___, fósforo ___, cálcio ___, creatinina ___.",
+        "ECG: ___; débito urinário ___; sintomas: ___ (arritmia/convulsão/oligúria).",
+        "Condutas: hidratação ___ mL/h, rasburicase/alopurinol, manejo de hiperK; diálise: sim/não.",
+        "Solicito internação + nefrologia + leito de UTI (exames seriados)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a base do tratamento da síndrome de lise tumoral?",
+      "alternativas": [
+        "Restrição hídrica",
+        "Hidratação endovenosa vigorosa (meta de diurese >= 100 mL/h)",
+        "Bicarbonato de rotina",
+        "Diálise para todos imediatamente",
+        "Reposição de cálcio em todos"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual distúrbio eletrolítico da síndrome de lise tumoral é a principal causa de morte (arritmia/PCR)?",
+      "alternativas": [
+        "Hipocalcemia",
+        "Hipercalemia",
+        "Hiperfosfatemia",
+        "Hiponatremia",
+        "Hipomagnesemia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Em qual situação a rasburicase é CONTRAINDICADA?",
+      "alternativas": [
+        "Insuficiência renal",
+        "Deficiência de G6PD",
+        "Hipercalemia",
+        "Idade avançada",
+        "Linfoma de Burkitt"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a hipocalcemia na síndrome de lise tumoral, é correto:",
+      "alternativas": [
+        "Deve ser sempre corrigida com cálcio EV",
+        "Não corrigir se assintomática (corrigir só se convulsão, arritmia ou tetania) pelo risco de precipitação de fosfato de cálcio",
+        "Indica diálise imediata",
+        "É sinal de bom prognóstico",
+        "Contraindica a hidratação"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quais neoplasias são de ALTO risco para síndrome de lise tumoral?",
+      "alternativas": [
+        "Tumores sólidos pequenos",
+        "Leucemias agudas, linfoma de Burkitt e linfomas de alto grau (alta carga tumoral/quimiossensíveis)",
+        "Carcinoma basocelular",
+        "Tumores benignos",
+        "Cistos ovarianos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A base do tratamento é a hidratação EV vigorosa (SF 0,9% 200-300 mL/h) com meta de diurese >= 100 mL/h, para proteger o rim da precipitação de ácido úrico/fosfato, associada ao controle do ácido úrico e dos eletrólitos."},
+    {"resposta": "B", "comentario": "A hipercalemia é o distúrbio mais perigoso (arritmias e parada cardíaca) na síndrome de lise tumoral — exige ECG, monitorização e tratamento imediato (cálcio, insulina+glicose, etc.)."},
+    {"resposta": "B", "comentario": "A rasburicase é contraindicada na deficiência de G6PD pelo risco de hemólise grave e metemoglobinemia (o peróxido de hidrogênio gerado pela uricase não é detoxificado)."},
+    {"resposta": "B", "comentario": "A hipocalcemia da SLT não deve ser corrigida se assintomática, pois repor cálcio com fósforo elevado favorece a precipitação de fosfato de cálcio (lesão renal). Corrige-se só se convulsão, arritmia ou tetania."},
+    {"resposta": "B", "comentario": "Alto risco: leucemias agudas, linfoma de Burkitt e linfomas de alto grau, além de tumores de alta carga e muito quimiossensíveis — nesses, antecipa-se a profilaxia (hidratação ± rasburicase/alopurinol)."}
+  ]
+}
