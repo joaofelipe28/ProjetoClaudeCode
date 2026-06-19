@@ -1,0 +1,209 @@
+{
+  "slug": "angina_ludwig",
+  "titulo": "Angina de Ludwig",
+  "especialidade": "CIRURGIA CABEÇA E PESCOÇO",
+  "chapter_subject": "Angina de Ludwig no PS",
+  "chapter_bar": "ANGINA DE LUDWIG — VIA AÉREA É PRIORIDADE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — EMERGÊNCIA DE VIA AÉREA",
+      "title": "LUDWIG — CELULITE DO ASSOALHO DA BOCA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Edema bilateral do assoalho da boca + trismo\n+ lingua elevada (origem odontogenica)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Estridor/dispneia/SatO2<94%?", "color": "red", "font_size": 6.2},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "SIM: via aerea JA\n(IOT; crico/traqueo\nse falhar)", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 145, "h": 24, "text": "NAO: ATB amplo +\nTC pescoco +\nvigilancia da VA", "color": "teal", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Celulite GRAVE dos tecidos moles dos espaços submandibular e sublingual, de origem ODONTOGÊNICA",
+        "Risco de rápida progressão para obstrução de via aérea, sepse e extensão cervical/mediastinal",
+        "É celulite difusa (não coleção delimitada inicialmente) — por isso a ênfase em via aérea e ATB",
+        "Emergência: o tempo de progressão é curto"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — SINAIS DE ALERTA",
+      "section_color": "purple",
+      "titulo": "QUADRO CLÁSSICO",
+      "items": [
+        "Dor facial/bucal intensa + edema BILATERAL do assoalho da boca",
+        "Trismo (limitação da abertura oral)",
+        "Disfagia / odinofagia",
+        "Elevação e fixação da língua ao palato",
+        "Dificuldade para deglutir saliva ou voz abafada",
+        "Dispneia ou ESTRIDOR inspiratório = risco imediato de via aérea comprometida"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESTRATIFICAÇÃO DE GRAVIDADE",
+      "section_color": "navy",
+      "headers": ["Gravidade", "Características"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Alta", "Estridor, SatO2 < 94%, edema de rápida progressão, sinais de sepse"],
+        ["Moderada", "Edema importante, trismo, dor intensa, mas saturação e respiração preservadas"],
+        ["Leve", "Edema discreto, sem comprometimento importante da via aérea"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — VIA AÉREA (PRIORIDADE 1)",
+      "section_color": "red",
+      "titulo": "QUALQUER SINAL DE VA COMPROMETIDA = URGÊNCIA ABSOLUTA",
+      "items": [
+        "Estridor inspiratório, dispneia, queda de saturação",
+        "Garantir via aérea com segurança ANTES de qualquer outra etapa",
+        "Em obstrução iminente: intubação (preferir via aérea avançada planejada / acordada)",
+        "Se IOT falhar ou for inviável: cricotireoidostomia ou traqueostomia de emergência",
+        "Reavaliar a via aérea continuamente — pode deteriorar rapidamente"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES",
+      "section_color": "navy",
+      "titulo": "COMPLEMENTARES (sem atrasar a via aérea)",
+      "items": [
+        "TC de pescoço com contraste: extensão das coleções, regiões envolvidas, abscessos drenáveis",
+        "Laboratório: hemograma, PCR, função renal, eletrólitos, glicemia",
+        "Culturas (sangue e secreções) quando possível",
+        "Imagem NÃO deve preceder a estabilização da via aérea em paciente instável"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIOTICOTERAPIA E SUPORTE",
+      "section_color": "orange",
+      "titulo": "COBRIR FLORA ORAL POLIMICROBIANA",
+      "items": [
+        "Piperacilina-tazobactam 4,5g IV 6-8h, OU",
+        "Meropenem 1g IV 8/8h, OU",
+        "Cefepime 2g IV 12/12h + Metronidazol 500mg IV 8/8h",
+        "Adicionar Vancomicina 15-20 mg/kg IV 8-12h se risco de MRSA",
+        "Duração inicial 14-21 dias (ajustar pela evolução)",
+        "Suporte: internação em UTI/semi, hidratação, analgesia, correção eletrolítica, suporte nutricional"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONTROLE CIRÚRGICO DO FOCO",
+      "section_color": "orange",
+      "titulo": "DRENAGEM / TRATAMENTO DENTÁRIO",
+      "items": [
+        "Drenagem imediata se: abscesso colecionável ou tecido necrótico",
+        "Ausência de melhora em 24-48h apesar de ATB adequado",
+        "Extensão cervical profunda ou mediastinite",
+        "Incisão e drenagem dos espaços comprometidos + drenos",
+        "Tratar o foco primário: extração/endodontia do dente causal assim que possível"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "MONITORIZAÇÃO E SINAIS DE ALARME",
+      "titulo": "VIGIAR",
+      "items": [
+        "Sinais vitais contínuos, saturação e trabalho respiratório",
+        "Sinais de sepse/choque e progressão do edema",
+        "Deterioração neurológica ou hemodinâmica -> reavaliar via aérea imediatamente",
+        "Resposta ao ATB e necessidade de drenagem em 24-48h",
+        "Glicemia (diabéticos têm pior evolução)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA (SAMU)",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com Angina de Ludwig (edema bilateral submandibular/sublingual, língua elevada, trismo), gravidade ___.",
+        "Via aérea: ___ (pérvia / IOT / crico-traqueo). SatO2 ___ | sinais de sepse: sim/não.",
+        "ATB amplo iniciado às ___; TC de pescoço: ___. Foco dentário: ___.",
+        "Solicito UTI móvel / vaga em serviço com cirurgia de cabeça e pescoço (risco iminente de via aérea)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com edema bilateral do assoalho da boca, língua elevada, trismo e agora estridor inspiratório. Qual a prioridade absoluta?",
+      "alternativas": [
+        "Solicitar TC de pescoço antes de tudo",
+        "Garantir a via aérea (IOT; se falhar, cricotireoidostomia/traqueostomia)",
+        "Iniciar apenas antibiótico oral",
+        "Aguardar avaliação odontológica eletiva",
+        "Prescrever corticoide e dar alta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a origem mais comum da Angina de Ludwig?",
+      "alternativas": [
+        "Infecção odontogênica",
+        "Otite média",
+        "Sinusite frontal",
+        "Infecção urinária",
+        "Pneumonia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual esquema antibiótico empírico é adequado para a Angina de Ludwig (flora oral polimicrobiana)?",
+      "alternativas": [
+        "Azitromicina oral isolada",
+        "Piperacilina-tazobactam IV (ou meropenem; ou cefepime + metronidazol), com vancomicina se risco de MRSA",
+        "Apenas metronidazol oral",
+        "Ciprofloxacino oral",
+        "Nenhum antibiótico, só drenagem"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual achado classifica a Angina de Ludwig como de ALTA gravidade?",
+      "alternativas": [
+        "Edema discreto sem dispneia",
+        "Estridor, SatO2 < 94%, edema de rápida progressão ou sinais de sepse",
+        "Apenas trismo leve",
+        "Febre isolada",
+        "Dor de garganta leve"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando indicar controle cirúrgico do foco na Angina de Ludwig?",
+      "alternativas": [
+        "Nunca, o tratamento é exclusivamente clínico",
+        "Abscesso colecionável/necrose, ausência de melhora em 24-48h ou extensão profunda/mediastinite, além de tratar o dente causal",
+        "Somente após 21 dias de antibiótico",
+        "Apenas se houver febre",
+        "Somente em pacientes diabéticos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A Angina de Ludwig é primariamente uma emergência de via aérea. Diante de estridor/dispneia, a prioridade absoluta é assegurar a via aérea (IOT; cricotireoidostomia/traqueostomia se falhar), antes de imagem ou outras medidas."},
+    {"resposta": "A", "comentario": "A Angina de Ludwig é tipicamente de origem odontogênica (infecção dos molares inferiores), disseminando-se pelos espaços submandibular e sublingual de forma bilateral."},
+    {"resposta": "B", "comentario": "Cobre-se flora oral polimicrobiana (gram-positivos, anaeróbios e gram-negativos) com pipe-tazo, meropenem ou cefepime + metronidazol; adiciona-se vancomicina se houver risco de MRSA. Macrolídeo/quinolona oral isolados são insuficientes."},
+    {"resposta": "B", "comentario": "Alta gravidade = estridor, SatO2 < 94%, edema de rápida progressão ou sinais de sepse — qualquer sinal de via aérea comprometida configura urgência absoluta."},
+    {"resposta": "B", "comentario": "Indica-se drenagem na presença de abscesso colecionável/necrose, falha clínica em 24-48h de ATB, ou extensão cervical profunda/mediastinite, sempre tratando o foco dentário primário assim que possível."}
+  ]
+}

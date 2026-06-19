@@ -1,0 +1,211 @@
+{
+  "slug": "abscesso_cervical",
+  "titulo": "Abscesso Cervical",
+  "especialidade": "CIRURGIA CABEÇA E PESCOÇO",
+  "chapter_subject": "Abscesso Cervical no PS",
+  "chapter_bar": "ABSCESSO CERVICAL — VIA AÉREA E DRENAGEM",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "ABSCESSO CERVICAL — VIA AÉREA PRIMEIRO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Dor/edema cervical + febre + disfagia\nSinais de obstrucao de via aerea?", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 140, "h": 26, "text": "SIM: garantir\nvia aerea (IOT/\ntraqueo) - jejum", "color": "red", "font_size": 6.0},
+        {"id": "c", "x": 0.7, "y": 0.5, "w": 150, "h": 24, "text": "NAO: TC cervical c/ contraste\n+ ATB amplo espectro", "color": "teal", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.15, "w": 200, "h": 20, "text": "Colecao definida / toxemia / falha ATB -> DRENAGEM", "color": "orange", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ESPAÇOS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Coleção de pus nos planos cervicais (profundos ou superficiais) por infecção bacteriana",
+        "Origem: odontogênica, amigdaliana, trauma, corpo estranho, contiguidade ou hematogênica",
+        "Espaços: submandibular/sublingual, parafaríngeo, retrofaríngeo, pré-vertebral, carotídeo",
+        "Distinção crítica: CELULITE (fase inicial, sem coleção) x ABSCESSO (coleção purulenta delimitada -> drenar)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR",
+      "section_color": "purple",
+      "titulo": "MANIFESTAÇÕES TÍPICAS",
+      "items": [
+        "Dor cervical intensa (frequentemente unilateral), edema, rubor e calor local",
+        "Febre, mal-estar e sinais sistêmicos",
+        "Disfagia, odinofagia, voz abafada, trismo",
+        "Flutuação à palpação (coleção definida)",
+        "Casos graves: dispneia, estridor (via aérea comprometida)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — ALERTA IMEDIATO",
+      "section_color": "red",
+      "titulo": "VIA AÉREA E COMPLICAÇÕES GRAVES",
+      "items": [
+        "Sinais de obstrução de via aérea / estridor / dificuldade para deglutir a própria saliva",
+        "Taquipneia, hipoxemia; sinais de sepse ou choque",
+        "Complicações: mediastinite descendente, Síndrome de Lemierre (trombose séptica da jugular)",
+        "Erosão vascular, osteomielite mandibular, fístula cervical",
+        "Qualquer comprometimento de via aérea = urgência absoluta (assegurar via aérea ANTES de imagem)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO DIAGNÓSTICA",
+      "section_color": "navy",
+      "titulo": "EXAMES",
+      "items": [
+        "Laboratório: hemograma (leucocitose com desvio), PCR/VHS, função renal, eletrólitos",
+        "Hemoculturas antes do antibiótico, quando possível",
+        "TC de pescoço COM CONTRASTE = padrão-ouro (localiza coleção, extensão, relação com via aérea/vasos)",
+        "USG cervical: útil em coleções superficiais ou para guiar punção",
+        "RM em casos selecionados (suspeita de envolvimento neurovascular)",
+        "Diferencial: linfadenite, tumores, cistos congênitos (branquial/tireoglosso), infecção viral"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "SUPORTE INICIAL E VIA AÉREA",
+      "section_color": "red",
+      "titulo": "PRIMEIROS PASSOS",
+      "items": [
+        "1. Garantir via aérea patente — PRIORIDADE (sinais de obstrução: considerar IOT; se falhar/inviável -> traqueostomia)",
+        "2. Jejum (NPO) até estabilização / via aérea assegurada",
+        "3. Monitorização contínua em emergência ou UTI",
+        "4. Acesso IV, hidratação, correção de distúrbios eletrolíticos",
+        "5. Avaliação contínua antes, durante e após procedimentos"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIOTICOTERAPIA EMPÍRICA (aeróbios + anaeróbios orais)",
+      "section_color": "orange",
+      "headers": ["Esquema", "Detalhe / observação"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.42, 0.58],
+      "rows": [
+        ["Vancomicina + Piperacilina-tazobactam", "Vanco 15-20 mg/kg IV 8-12h + Pipe-tazo 4,5g IV 6-8h"],
+        ["Vancomicina + Meropenem", "Vanco + Meropenem 1g IV 8/8h"],
+        ["Vanco + Ceftriaxona + Metronidazol", "Ceftriaxona 1-2g/dia + Metronidazol 500mg IV 8/8h"],
+        ["Clindamicina + Piperacilina-tazobactam", "Alternativa (cobertura anaeróbia/MRSA, alergias)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DRENAGEM CIRÚRGICA",
+      "section_color": "orange",
+      "titulo": "INDICAÇÕES",
+      "items": [
+        "Abscesso claramente delimitado em imagem",
+        "Sinais de toxemia sistêmica",
+        "Falha clínica após 24-48h de antibioticoterapia adequada",
+        "Coleções grandes, múltiplas ou com risco de extensão profunda",
+        "Técnica: incisão e drenagem ampla em centro cirúrgico + coleta de cultura (aeróbia/anaeróbia)",
+        "ATB em geral 7-14 dias (ajustar conforme evolução e cultura)"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "MONITORIZAÇÃO E SEGUIMENTO",
+      "titulo": "ACOMPANHAR",
+      "items": [
+        "Avaliação clínica diária + trabalho respiratório/via aérea",
+        "Controle dos drenos (volume e aspecto)",
+        "Exames seriados (hemograma, PCR)",
+        "Reavaliar imagem se não houver melhora",
+        "Tratar o foco primário (dentário/amigdaliano) assim que possível"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA (SAMU)",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com abscesso cervical (espaço ___), febre + disfagia/trismo. Via aérea: ___ (pérvia/IOT/traqueo).",
+        "TC cervical com contraste: coleção em ___; relação com via aérea/vasos: ___.",
+        "ATB empírico iniciado às ___; drenagem indicada: sim/não.",
+        "Solicito UTI móvel / vaga em serviço com cirurgia de cabeça e pescoço (via aérea instável = urgência)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com abscesso cervical e estridor, dificuldade para deglutir a própria saliva e queda de saturação. Qual a prioridade?",
+      "alternativas": [
+        "Solicitar TC e aguardar antes de qualquer medida",
+        "Garantir a via aérea (IOT ou, se falhar, traqueostomia) antes da imagem",
+        "Iniciar apenas antibiótico e observar",
+        "Drenagem ambulatorial imediata sem via aérea",
+        "Alta com antibiótico oral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual exame de imagem é o padrão-ouro para localizar e avaliar a extensão de um abscesso cervical profundo?",
+      "alternativas": [
+        "Radiografia simples de pescoço",
+        "Tomografia de pescoço com contraste",
+        "Ultrassonografia apenas",
+        "Ressonância sem contraste de rotina",
+        "Cintilografia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado distingue ABSCESSO de CELULITE cervical e indica drenagem?",
+      "alternativas": [
+        "Presença de febre",
+        "Coleção purulenta delimitada (flutuação/imagem)",
+        "Dor à deglutição",
+        "Leucocitose",
+        "Edema difuso sem coleção"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Complicação grave do abscesso cervical caracterizada por trombose séptica da veia jugular interna é a:",
+      "alternativas": [
+        "Síndrome de Lemierre",
+        "Síndrome de Horner",
+        "Síndrome de Eagle",
+        "Síndrome de Ramsay-Hunt",
+        "Síndrome de Sjögren"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando está indicada a drenagem cirúrgica no abscesso cervical?",
+      "alternativas": [
+        "Sempre, antes do antibiótico",
+        "Coleção delimitada em imagem, toxemia sistêmica ou falha clínica após 24-48h de ATB adequada",
+        "Apenas após 14 dias de antibiótico",
+        "Somente se houver mediastinite",
+        "Nunca, o tratamento é exclusivamente clínico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No abscesso cervical com sinais de obstrução (estridor, sialorreia, dessaturação), a prioridade absoluta é assegurar a via aérea (IOT; traqueostomia se falhar), ANTES de exames de imagem. Via aérea instável é urgência."},
+    {"resposta": "B", "comentario": "A TC de pescoço com contraste é o padrão-ouro: localiza a coleção, define a extensão e a relação com a via aérea e os grandes vasos, orientando a drenagem. USG ajuda em coleções superficiais."},
+    {"resposta": "B", "comentario": "A coleção purulenta delimitada (flutuação ao exame ou coleção na imagem) distingue o abscesso da celulite (fase inicial sem coleção) e é o que indica drenagem cirúrgica."},
+    {"resposta": "A", "comentario": "A Síndrome de Lemierre é a tromboflebite séptica da veia jugular interna, complicação grave de infecções orofaríngeas/cervicais (clássico: Fusobacterium necrophorum), com êmbolos sépticos pulmonares."},
+    {"resposta": "B", "comentario": "Drena-se o abscesso cervical quando há coleção delimitada na imagem, toxemia sistêmica, falha após 24-48h de ATB adequada, ou coleções grandes/múltiplas com risco de extensão. Antibiótico isolado não basta na coleção."}
+  ]
+}

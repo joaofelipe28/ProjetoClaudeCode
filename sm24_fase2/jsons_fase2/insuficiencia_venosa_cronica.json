@@ -1,0 +1,207 @@
+{
+  "slug": "insuficiencia_venosa_cronica",
+  "titulo": "Insuficiência Venosa Crônica",
+  "especialidade": "CIRURGIA VASCULAR",
+  "chapter_subject": "Insuficiência Venosa Crônica",
+  "chapter_bar": "INSUFICIÊNCIA VENOSA CRÔNICA — CEAP",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "IVC — REFLUXO, CONGESTÃO E ÚLCERA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Dor em peso + varizes + edema vespertino\nque melhora com elevacao", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 200, "h": 20, "text": "Classificar CEAP + USG Doppler venoso", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.25, "y": 0.25, "w": 145, "h": 24, "text": "Sintomatico:\ntto clinico +\nintervencao", "color": "green", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.25, "w": 145, "h": 24, "text": "C6 (ulcera ativa):\noperar mesmo\ncom ferida", "color": "orange", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "ANATOMIA — RETORNO VENOSO",
+      "section_color": "teal",
+      "titulo": "SISTEMAS",
+      "items": [
+        "Superficial (~10% do retorno): safena magna, parva e tributárias",
+        "Profundo (~90% do retorno): femoral, poplítea, tibiais -> ilíacas e cava",
+        "Perfurantes: comunicam o sistema profundo com o superficial",
+        "A insuficiência (refluxo) gera congestão e aumento da pressão pós-capilar"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O QUE É — FISIOPATOLOGIA E CLÍNICA",
+      "section_color": "purple",
+      "titulo": "IVC",
+      "items": [
+        "Doença muito prevalente (>80% em algum grau), na maioria GENÉTICA (varizes em jovens, magros, atletas)",
+        "Refluxo -> congestão -> edema -> infiltração do subcutâneo -> hemossiderina (escurecimento) -> úlcera",
+        "Sintomas: dor em PESO, sobretudo no fim do dia/após ortostase, que MELHORA com a elevação dos membros",
+        "Geralmente acompanha varizes visíveis (raro ser sintomático sem veias visíveis)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO CEAP (clínica)",
+      "section_color": "navy",
+      "headers": ["Classe", "Achado clínico"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.18, 0.82],
+      "rows": [
+        ["C0-C1", "Sem sinais visíveis / telangiectasias e reticulares"],
+        ["C2-C3", "Varizes / edema"],
+        ["C4", "Alterações de pele (hiperpigmentação por hemossiderina, eczema, lipodermatoesclerose)"],
+        ["C5", "Úlcera CICATRIZADA"],
+        ["C6", "Úlcera ATIVA (fundo granulado, bem perfundida) + estigmas venosos"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PLANEJAMENTO",
+      "section_color": "navy",
+      "titulo": "AVALIAÇÃO ANTES DE TRATAR",
+      "items": [
+        "Exame físico + USG Doppler venoso (superficial e profundo)",
+        "Pesquisar insuficiência de safenas e perfurantes",
+        "Pesquisar insuficiência do sistema profundo (sequela de TVP, trauma, congênito, compressão central)",
+        "Se safena saudável -> PRESERVAR a safena",
+        "Safena insuficiente -> programar tratamento (concomitante ou não às demais veias)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO DA SAFENA — TERMOABLAÇÃO x FLEBOEXTRAÇÃO",
+      "section_color": "orange",
+      "headers": ["Método", "Vantagens", "Desvantagens"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.22, 0.42, 0.36],
+      "rows": [
+        ["Termoablação (laser/radiofrequência)", "Melhor estética, recuperação rápida, baixa recanalização", "Maior custo"],
+        ["Fleboextração (cirúrgica)", "Menor custo, recanalização zero", "Pior estética, dor pós-op, mais afastamento"],
+        ["Espuma (polidocanol)", "Alternativa a idosos sem condição cirúrgica", "Alta falha e complicação local (flebite, mancha)"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "VEIAS MENORES E COMPLICAÇÕES",
+      "section_color": "navy",
+      "titulo": "NÃO CIRÚRGICO E EHIT",
+      "items": [
+        "Reticulares/telangiectasias: escleroterapia (etamolin, glicose, polidocanol) em consultório; CLaCS (criolaser + esclerosante)",
+        "Termoablação preserva pior resultado estético em veias pequenas; combinar técnicas conforme o caso",
+        "EHIT (trombose induzida por calor endotérmico): complicação da termoablação",
+        "EHIT costuma ter comportamento mais benigno que uma TVP verdadeira (classificação/tratamento divergentes)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ÚLCERA VENOSA (CEAP C6) — CONDUTA",
+      "section_color": "orange",
+      "titulo": "TRATAR A INSUFICIÊNCIA É O QUE CICATRIZA",
+      "items": [
+        "Paciente C6 deve ser operado MESMO com a ferida aberta",
+        "O tratamento adequado da insuficiência venosa é FUNDAMENTAL para cicatrizar a úlcera",
+        "Base do tratamento clínico: COMPRESSÃO elástica + cuidado da ferida + elevação dos membros",
+        "Sempre associar: atividade física, controle de peso, meia elástica",
+        "NÃO postergar o acompanhamento ambulatorial com o cirurgião vascular"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "MANEJO CLÍNICO E SEGUIMENTO",
+      "titulo": "BASE DO TRATAMENTO",
+      "items": [
+        "Meia elástica de compressão (pilar do tratamento clínico)",
+        "Elevação dos membros e atividade física regular",
+        "Controle de peso",
+        "Cuidado da úlcera (limpeza, cobertura, compressão) na úlcera venosa",
+        "Encaminhamento ao cirurgião vascular (sintomáticos se beneficiam de intervenção)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA O AMBULATÓRIO/VASCULAR",
+      "items": [
+        "Paciente com IVC CEAP ___ (varizes/edema/alterações de pele/úlcera).",
+        "Sintomas: dor em peso vespertina que melhora com elevação; varizes visíveis: sim/não.",
+        "USG Doppler venoso: insuficiência de safena/perfurantes/sistema profundo ___.",
+        "Conduta: compressão + medidas clínicas; encaminho ao cirurgião vascular para programar intervenção (C6 = prioridade)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual sintoma é característico da insuficiência venosa crônica?",
+      "alternativas": [
+        "Dor em peso nas pernas no fim do dia que melhora com a elevação dos membros",
+        "Claudicação que cessa com o repouso independentemente da distância",
+        "Dor em repouso que melhora com as pernas pendentes",
+        "Dor torácica ao esforço",
+        "Dor abdominal pós-prandial"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Na classificação CEAP, o que caracteriza a classe C6?",
+      "alternativas": [
+        "Telangiectasias",
+        "Úlcera venosa ATIVA",
+        "Úlcera cicatrizada",
+        "Apenas varizes",
+        "Edema isolado"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre a comparação entre termoablação e fleboextração da safena, é correto:",
+      "alternativas": [
+        "A fleboextração tem melhor resultado estético e recuperação mais rápida",
+        "A termoablação tem melhor estética e recuperação mais rápida, com maior custo",
+        "Ambas têm o mesmo custo",
+        "A termoablação tem taxa de recanalização zero",
+        "A fleboextração dispensa anestesia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente com úlcera venosa ativa (CEAP C6) e insuficiência de safena. Qual conduta é correta?",
+      "alternativas": [
+        "Aguardar a cicatrização completa antes de tratar a insuficiência venosa",
+        "Tratar a insuficiência venosa (operar) mesmo com a ferida aberta, pois é fundamental para a cicatrização",
+        "Contraindicar qualquer intervenção",
+        "Apenas antibiótico sistêmico",
+        "Amputação"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o pilar do tratamento clínico da insuficiência venosa crônica?",
+      "alternativas": [
+        "Anticoagulação plena",
+        "Meia elástica de compressão (associada a elevação, atividade física e controle de peso)",
+        "Antibiótico contínuo",
+        "Repouso absoluto no leito",
+        "Corticoide sistêmico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "A", "comentario": "A IVC cursa com dor em peso/cansaço nas pernas, pior no fim do dia e após ortostase, que MELHORA com a elevação dos membros — oposto da dor isquêmica (que melhora com as pernas pendentes)."},
+    {"resposta": "B", "comentario": "CEAP C6 = úlcera venosa ATIVA (fundo granulado, bem perfundida, com estigmas de doença venosa). C5 é a úlcera já cicatrizada."},
+    {"resposta": "B", "comentario": "A termoablação (laser/radiofrequência) oferece melhor resultado estético e recuperação mais rápida com baixa recanalização, porém maior custo; a fleboextração é mais barata mas com pior estética e recanalização zero."},
+    {"resposta": "B", "comentario": "No C6, opera-se mesmo com a ferida aberta: tratar a insuficiência venosa (refluxo de safena/perfurantes) é fundamental para a cicatrização da úlcera. Compressão e cuidado da ferida acompanham o tratamento."},
+    {"resposta": "B", "comentario": "A meia elástica de compressão é o pilar do tratamento clínico da IVC, associada à elevação dos membros, atividade física e controle de peso; sintomáticos beneficiam-se de intervenção sobre as veias insuficientes."}
+  ]
+}

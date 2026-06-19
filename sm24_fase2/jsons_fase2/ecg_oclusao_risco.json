@@ -1,0 +1,198 @@
+{
+  "slug": "ecg_oclusao_risco",
+  "titulo": "ECG — Padrões de Oclusão Coronariana e Alto Risco",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "Padrões ECG de OMI/Risco no PS",
+  "chapter_bar": "ECG — PADRÕES DE OCLUSÃO (OMI) E ALTO RISCO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DOR TORÁCICA SEM SUPRA CLÁSSICO",
+      "title": "OMI — OCLUSÃO PODE NÃO TER SUPRA 'DE LIVRO'",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Dor toracica + ECG sem supra ST classico\nNAO descartar IAM!", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 24, "text": "Procurar padroes de OCLUSAO (OMI):\nDe Winter, Wellens, T hiperaguda, posterior, aVR", "color": "orange", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Padrao de oclusao\npresente = ativar\nHEMODINAMICA", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 145, "h": 24, "text": "Duvida: ECG seriado\n+ troponina +\ncomparar previos", "color": "teal", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONCEITO FUNDAMENTAL — PARADIGMA OMI x STEMI",
+      "section_color": "purple",
+      "titulo": "OCLUSÃO NÃO É SÓ 'SUPRA DE ST'",
+      "items": [
+        "OMI (Occlusion MI) = artéria ocluída que se beneficia de reperfusão IMEDIATA, mesmo SEM critério clássico de supra",
+        "Cerca de 25-30% dos 'NSTEMI' têm artéria ocluída e pior prognóstico",
+        "Reconhecer padrões de oclusão = ativar hemodinâmica como se fosse STEMI",
+        "Sempre comparar com ECG prévio, repetir seriado e correlacionar com a clínica/troponina",
+        "Na dúvida com instabilidade ou dor refratária: discutir cateterismo precoce"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PADRÕES DE OCLUSÃO CORONARIANA (OMI)",
+      "section_color": "navy",
+      "headers": ["Padrão", "Achado no ECG", "Significado"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.20, 0.46, 0.34],
+      "rows": [
+        ["T hiperaguda", "Ondas T amplas, simétricas, pontiagudas (precedem o supra)", "Fase inicial de oclusão — vigiar"],
+        ["De Winter", "Ponto J infra + ST ascendente + T altas/simétricas em V1-V6 (± supra aVR)", "Oclusão proximal de DA"],
+        ["Wellens A", "T bifásica (plus-minus) em V2-V3", "Lesão crítica de DA proximal"],
+        ["Wellens B", "T profundamente invertida e simétrica em V2-V3 (até V1-V6)", "Lesão crítica de DA (75% dos casos)"],
+        ["Posterior", "Infra ST V1-V3/V4; confirmar com V7-V8-V9 (supra em >=1)", "IAM infero-lateral/posterior"],
+        ["Aslanger", "Supra em DIII isolado + ST V1>V2 + infra V4-V6", "Oclusão inferior + doença multiarterial"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PADRÕES DE ALTO RISCO / ARMADILHAS",
+      "section_color": "navy",
+      "headers": ["Padrão", "Achado no ECG", "Significado"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.22, 0.46, 0.32],
+      "rows": [
+        ["Isquemia circunferencial", "Supra aVR (± supra V1) + infra ST em >6 derivações", "Lesão de tronco/DA proximal ou triarterial"],
+        ["'Bandeira da África do Sul'", "Supra em DI, aVL e V2 (± V1) + infra em DIII", "Oclusão do 1o ramo diagonal (parede anterolateral alta)"],
+        ["Brugada (tipo 1)", "Supra ST em cúpula ('barbatana de tubarão') + T invertida em V1-V3, QRS estreito", "Canalopatia: risco de arritmia/morte súbita (NÃO é oclusão)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — ATIVAR HEMODINÂMICA",
+      "section_color": "red",
+      "titulo": "OCLUSÃO PROVÁVEL = REPERFUSÃO",
+      "items": [
+        "Qualquer padrão de OMI (De Winter, Wellens em evolução, T hiperaguda persistente, posterior confirmado)",
+        "Supra de aVR com infra difuso + instabilidade -> suspeita de tronco: cateterismo urgente",
+        "Dor torácica refratária a terapia, instabilidade hemodinâmica ou elétrica",
+        "Sempre fazer derivações posteriores (V7-V9) e direitas (V3R-V4R) quando indicado",
+        "Brugada tipo 1 com síncope/arritmia: monitorização + cardiologia (não é reperfusão)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DICAS PRÁTICAS DE AQUISIÇÃO",
+      "section_color": "navy",
+      "titulo": "NÃO PERDER A OCLUSÃO",
+      "items": [
+        "Infra ST de V1 a V3 -> sempre solicitar V7, V8, V9 (posterior)",
+        "Supra inferior -> avaliar V3R/V4R (acometimento de VD)",
+        "ECG seriado a cada 10-15 min se dor persistente e ECG inicial duvidoso",
+        "Wellens: padrão tipicamente aparece com o paciente SEM dor (período livre) — não subestimar",
+        "Comparar SEMPRE com ECG prévio; correlacionar com curva de troponina"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CONDUTA AO RECONHECER OMI",
+      "section_color": "orange",
+      "titulo": "PASSOS NO PS",
+      "items": [
+        "1. Monitorização + acesso + O2 se SatO2 < 90% + desfibrilador à beira-leito",
+        "2. AAS 200-300 mg VO macerado",
+        "3. Acionar HEMODINÂMICA / discutir reperfusão como STEMI (não esperar troponina)",
+        "4. Anticoagulação e 2o antiagregante conforme protocolo local/estratégia de reperfusão",
+        "5. Nitrato e analgesia se dor (cautela: evitar nitrato em IAM de VD/hipotensão)",
+        "6. Se sem hemodinâmica no serviço: ativar transferência/regular para reperfusão"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DO ECG DE DOR TORÁCICA",
+      "titulo": "ANTES DE 'DESCARTAR IAM'",
+      "items": [
+        "ECG em < 10 min da chegada e seriado se dor",
+        "Procurei ativamente padrões de OMI (De Winter, Wellens, T hiperaguda, posterior, Aslanger)?",
+        "Avaliei aVR (isquemia circunferencial) e fiz derivações posteriores se infra V1-V3?",
+        "Comparei com ECG prévio e correlacionei com troponina/clínica?",
+        "Padrão de oclusão presente -> hemodinâmica acionada / transferência regulada"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com dor torácica e ECG com padrão de OCLUSÃO: ___ (De Winter / Wellens / posterior / aVR+infra difuso).",
+        "Sem supra clássico, mas padrão de OMI -> conduta de reperfusão. AAS administrado às ___.",
+        "Troponina ___ | hemodinâmica local: disponível/indisponível.",
+        "Solicito vaga em serviço com hemodinâmica para cateterismo/angioplastia primária URGENTE."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com dor torácica e ECG mostrando, em V1-V6, infradesnível do ponto J com ST ascendente e ondas T altas e simétricas. Qual o significado?",
+      "alternativas": [
+        "Pericardite aguda",
+        "Padrão de De Winter — equivalente de oclusão proximal da descendente anterior",
+        "Repolarização precoce benigna",
+        "Hipercalemia",
+        "Bloqueio de ramo direito"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com angina recente, agora sem dor, e ECG com ondas T bifásicas/profundamente invertidas em V2-V3. Qual a conduta?",
+      "alternativas": [
+        "Alta, pois está sem dor e sem supra de ST",
+        "Reconhecer síndrome de Wellens (lesão crítica de DA) e encaminhar para estratégia invasiva — evitar teste ergométrico",
+        "Iniciar AINE para pericardite",
+        "Repetir ECG em 30 dias ambulatorialmente",
+        "Tranquilizar: T invertida é sempre benigna"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Diante de infradesnível de ST de V1 a V3, qual conduta complementar é fundamental?",
+      "alternativas": [
+        "Solicitar derivações posteriores V7, V8 e V9 para confirmar IAM posterior",
+        "Solicitar apenas troponina e liberar",
+        "Realizar massagem do seio carotídeo",
+        "Administrar trombolítico imediatamente sem mais avaliação",
+        "Solicitar derivações direitas V3R-V4R apenas"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "ECG com supradesnível em aVR associado a infradesnível de ST em mais de seis derivações, em paciente instável. Qual a interpretação?",
+      "alternativas": [
+        "Isquemia circunferencial — sugere lesão de tronco da coronária esquerda ou doença triarterial",
+        "Padrão normal",
+        "Pericardite",
+        "Síndrome de Brugada",
+        "Bloqueio de ramo esquerdo isolado"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre o paradigma OMI (Occlusion MI) versus STEMI, é correto afirmar:",
+      "alternativas": [
+        "Apenas o supra clássico de ST indica artéria ocluída",
+        "Parte dos pacientes rotulados como NSTEMI tem artéria ocluída e se beneficia de reperfusão imediata",
+        "Padrões como De Winter e Wellens não têm valor clínico",
+        "Nunca se deve ativar hemodinâmica sem supra de ST clássico",
+        "A troponina deve sempre preceder a decisão de reperfusão"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Infra do ponto J com ST ascendente e T altas/simétricas em precordiais é o padrão de De Winter, equivalente de oclusão proximal da DA — deve ser tratado como OMI (reperfusão), mesmo sem supra clássico."},
+    {"resposta": "B", "comentario": "T bifásica (tipo A) ou profundamente invertida (tipo B) em V2-V3, tipicamente no período sem dor, é a síndrome de Wellens — lesão crítica de DA. Indica-se estratégia invasiva; teste de esforço é perigoso (pode precipitar IAM)."},
+    {"resposta": "A", "comentario": "Infra de ST em V1-V3 pode ser a imagem em espelho de um IAM posterior. As derivações posteriores V7-V8-V9 confirmam (supra em pelo menos uma), mudando a conduta para reperfusão."},
+    {"resposta": "A", "comentario": "Supra de aVR (± V1) com infra difuso em >6 derivações sugere isquemia circunferencial por lesão de tronco da coronária esquerda ou doença triarterial — alto risco, cateterismo urgente."},
+    {"resposta": "B", "comentario": "O paradigma OMI reconhece que ~25-30% dos NSTEMI têm artéria ocluída e pior prognóstico. Padrões como De Winter, Wellens, posterior e aVR identificam oclusão que se beneficia de reperfusão imediata, mesmo sem supra clássico."}
+  ]
+}

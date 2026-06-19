@@ -1,0 +1,226 @@
+{
+  "slug": "miocardite_pericardite",
+  "titulo": "Miocardite, Pericardite e Miopericardite",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "Mio/Pericardite no PS",
+  "chapter_bar": "MIOCARDITE, PERICARDITE E MIOPERICARDITE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DOR TORÁCICA INFLAMATÓRIA",
+      "title": "PERICARDITE x MIOCARDITE — TROPONINA E VENTRÍCULO DECIDEM",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Dor toracica recente + ECG + troponina\nAvaliar instabilidade", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 140, "h": 26, "text": "Troponina normal +\nfuncao VE normal\n= PERICARDITE", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.55, "y": 0.5, "w": 140, "h": 26, "text": "Troponina elevada +\nVE normal\n= MIOPERICARDITE", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.83, "y": 0.5, "w": 130, "h": 26, "text": "Troponina + disfuncao\nVE/arritmia\n= MIOCARDITE", "color": "red", "font_size": 5.8},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Miocardite/instabilidade = internar; pericardite estavel = ambulatorial", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÕES",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Pericardite: inflamação do pericárdio (viral/idiopática); dor típica + alterações DIFUSAS no ECG",
+        "Miocardite: inflamação do miocárdio (frequentemente viral); risco de disfunção VE, arritmias e choque cardiogênico",
+        "Miopericardite: intermediária — pericardite + lesão miocárdica LEVE (troponina elevada) sem disfunção VE significativa",
+        "Causas: viral (entero/adeno/influenza/SARS-CoV-2), autoimune, medicamentosa, bacteriana (rara), idiopática"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR",
+      "section_color": "purple",
+      "titulo": "ANAMNESE E EXAME",
+      "items": [
+        "Dor torácica PLEURÍTICA que melhora ao sentar e inclinar para frente (pericardite)",
+        "História recente de infecção viral (vias aéreas/GI)",
+        "Dispneia, palpitações ou síncope; piora aos esforços SUGERE miocardite",
+        "Exame: atrito pericárdico (quando presente), taquicardia",
+        "Sinais de IC, hipotensão ou choque indicam forma grave (miocardite)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIFERENCIAÇÃO — ECG, TROPONINA E FUNÇÃO VE",
+      "section_color": "navy",
+      "headers": ["Característica", "Pericardite", "Miocardite / Miopericardite"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Dor torácica", "Típica, pleurítica", "Variável (mio) / típica (miopericardite)"],
+        ["ECG", "Supra DIFUSO de ST + infra de PR", "Inespecífico/arritmias (mio) ou supra difuso (miopericardite)"],
+        ["Troponina", "Normal", "Elevada (mio) / elevada leve (miopericardite)"],
+        ["Função ventricular", "Normal", "Reduzida (mio) / normal ou discreta (miopericardite)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — EMERGÊNCIA CARDIOLÓGICA",
+      "section_color": "red",
+      "titulo": "MIOCARDITE COM INSTABILIDADE",
+      "items": [
+        "Suspeita de miocardite com instabilidade hemodinâmica é EMERGÊNCIA",
+        "Sinais de IC aguda / edema agudo de pulmão / choque cardiogênico",
+        "Arritmias ventriculares ou bloqueios de alto grau",
+        "Derrame pericárdico moderado/grande -> risco de tamponamento (turgência jugular, hipotensão, bulhas abafadas)",
+        "Febre persistente associada"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO INICIAL",
+      "section_color": "navy",
+      "titulo": "CHECKLIST DE SEGURANÇA",
+      "items": [
+        "Dor torácica de início recente — sempre ECG IMEDIATO",
+        "Dosar troponina (separa pericardite de mio/miopericardite)",
+        "Avaliar instabilidade hemodinâmica e sinais de IC",
+        "Ecocardiograma: função ventricular e derrame pericárdico",
+        "Considerar marcadores inflamatórios (PCR/VHS) e investigação etiológica"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "PERICARDITE / MIOPERICARDITE",
+        "items": [
+          "Repouso (evitar exercício até resolução)",
+          "Ibuprofeno 600mg VO 8/8h por 7-14 dias",
+          "  (alt.: AAS 750-1000mg VO 8/8h)",
+          "Colchicina 0,5mg VO 12/12h (0,5mg/dia se <70kg) por 3 meses",
+          "Dipirona 1g VO/IV 6/6h se dor",
+          "Reduz recorrência: colchicina é peça-chave"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "MIOCARDITE",
+        "items": [
+          "Internação OBRIGATÓRIA + monitorização",
+          "Suporte hemodinâmico",
+          "Tratamento de insuficiência cardíaca",
+          "EVITAR AINEs (podem piorar a evolução)",
+          "Suporte avançado/UTI se instabilidade ou arritmia"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ARMADILHA — CONTRAINDICAÇÕES",
+      "section_color": "red",
+      "titulo": "ATENÇÃO AO AINE/COLCHICINA",
+      "items": [
+        "NÃO usar AINE na miocardite isolada (piora a evolução)",
+        "Contraindicações ao AINE/colchicina: insuficiência renal moderada-grave",
+        "Sangramento gastrointestinal ativo",
+        "Ajustar colchicina na disfunção renal/hepática e em interações (estatinas, macrolídeos)",
+        "Na dúvida pericardite x miocardite com troponina alta: tratar como miopericardite e internar"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: suspeita de miocardite, troponina elevada com disfunção VE, instabilidade, derrame moderado/grande, febre persistente",
+        "ALTA: pericardite de baixo risco, paciente estável",
+        "ALTA: troponina normal ou discretamente elevada (miopericardite) SEM disfunção ventricular",
+        "ALTA: seguimento cardiológico garantido + orientação de sinais de alarme",
+        "Alarme para retorno: dispneia progressiva, síncope, palpitações, dor refratária"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com dor torácica inflamatória; hipótese: ___ (pericardite/miopericardite/miocardite).",
+        "ECG: supra difuso/infra PR; troponina: ___; função VE ao eco: ___.",
+        "Tratamento no PS: monitorização + analgesia/anti-inflamatório (se indicado).",
+        "Solicito internação/avaliação cardiológica especializada (SBC/ESC) — motivo: ___."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente jovem, dor torácica que melhora ao inclinar-se para frente, ECG com supra difuso de ST e infra de PR, troponina normal e função ventricular preservada. Diagnóstico e conduta?",
+      "alternativas": [
+        "Miocardite — internar e evitar AINE",
+        "Pericardite aguda — AINE + colchicina, possível manejo ambulatorial se baixo risco",
+        "IAM com supra — trombólise",
+        "Dissecção de aorta — TC de aorta",
+        "Embolia pulmonar — anticoagulação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que se deve EVITAR AINE na miocardite isolada?",
+      "alternativas": [
+        "Porque não tem efeito analgésico",
+        "Porque pode piorar a evolução da miocardite",
+        "Porque eleva falsamente a troponina",
+        "Porque causa supra de ST",
+        "Porque é contraindicado em qualquer dor torácica"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual medicação reduz a recorrência na pericardite aguda e deve ser associada ao anti-inflamatório?",
+      "alternativas": [
+        "Amiodarona",
+        "Colchicina",
+        "Furosemida",
+        "Enoxaparina",
+        "Digoxina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual achado caracteriza a MIOPERICARDITE em relação à pericardite isolada?",
+      "alternativas": [
+        "Função ventricular gravemente reduzida",
+        "Troponina elevada (lesão miocárdica leve) sem disfunção ventricular significativa",
+        "Ausência de dor torácica",
+        "ECG sempre normal",
+        "Hemoculturas positivas"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Paciente com suspeita de miocardite e sinais de choque cardiogênico. Qual a conduta?",
+      "alternativas": [
+        "Alta com AINE e colchicina",
+        "Internação (emergência cardiológica), suporte hemodinâmico e tratamento de IC, evitando AINE",
+        "Apenas analgesia oral",
+        "Teste ergométrico imediato",
+        "Iniciar anticoagulação plena"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor que melhora ao inclinar-se para frente, supra DIFUSO de ST com infra de PR, troponina normal e VE preservado = pericardite aguda. Trata-se com AINE + colchicina; casos de baixo risco e estáveis podem ser ambulatoriais."},
+    {"resposta": "B", "comentario": "Na miocardite isolada o AINE pode piorar a evolução (lesão miocárdica), por isso é evitado. O suporte é repouso, tratamento da IC e monitorização; AINE/colchicina ficam para o componente pericárdico."},
+    {"resposta": "B", "comentario": "A colchicina associada ao AINE reduz a recorrência da pericardite aguda e é recomendada por 3 meses, ajustando a dose pelo peso e função renal/hepática."},
+    {"resposta": "B", "comentario": "Miopericardite = pericardite + lesão miocárdica leve, com troponina elevada porém SEM disfunção ventricular significativa. Difere da miocardite (disfunção VE) e da pericardite pura (troponina normal)."},
+    {"resposta": "B", "comentario": "Miocardite com choque cardiogênico é emergência: internação com suporte hemodinâmico e tratamento da IC, evitando AINE. Pode necessitar UTI e suporte circulatório avançado."}
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "slug": "complicacoes_tireoidectomia",
+  "titulo": "Complicações Agudas Pós-Tireoidectomia",
+  "especialidade": "CIRURGIA CABEÇA E PESCOÇO",
+  "chapter_subject": "Pós-tireoidectomia no PS",
+  "chapter_bar": "COMPLICAÇÕES AGUDAS PÓS-TIREOIDECTOMIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — PÓS-OPERATÓRIO IMEDIATO",
+      "title": "TIREOIDECTOMIA — 3 COMPLICAÇÕES QUE MATAM",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Pos-tireoidectomia com queixa aguda", "color": "navy", "font_size": 6.2},
+        {"id": "b", "x": 0.2, "y": 0.5, "w": 135, "h": 26, "text": "Edema cervical +\nestridor/dispneia\n= HEMATOMA", "color": "red", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 26, "text": "Parestesia/tetania\n= HIPOCALCEMIA\n(Ca<8,5)", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.8, "y": 0.5, "w": 135, "h": 26, "text": "Disfonia/disfagia/\nestridor = LESAO\nNERVO LARINGEO", "color": "purple", "font_size": 5.8},
+        {"id": "e", "x": 0.2, "y": 0.13, "w": 135, "h": 18, "text": "Abrir ferida + via aerea", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["b", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "1) HEMATOMA CERVICAL — RED FLAG",
+      "section_color": "red",
+      "titulo": "PERÍODO CRÍTICO: PRIMEIRAS 6 HORAS",
+      "items": [
+        "Precoce: piora da dor cervical, assimetria do pescoço, mudança na saída do dreno, tensão cervical",
+        "Tardio (via aérea): disfagia, mudança na voz, ESTRIDOR, dispneia/taquipneia, edema facial/língua, desvio traqueal, agitação",
+        "É emergência: o hematoma comprime a via aérea por obstrução venosa/linfática (edema laríngeo), não só por compressão direta",
+        "CONDUTA: evacuação IMEDIATA dos coágulos à beira-leito se desconforto respiratório importante (abrir a ferida)",
+        "Avaliar necessidade de IOT/traqueostomia; depois levar ao centro cirúrgico para reabordagem (hemostasia)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "HEMATOMA — CONDUTA NO PS",
+      "section_color": "red",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "1. Chamar ajuda (cirurgia/anestesia) e preparar via aérea difícil",
+        "2. Se desconforto respiratório importante / edema de mucosa laríngea: ABRIR a ferida e evacuar coágulos à beira-leito",
+        "3. Reavaliar via aérea: IOT precoce; se falhar/inviável -> cricotireoidostomia/traqueostomia",
+        "4. Quadros sem repercussão grave: encaminhar ao centro cirúrgico para reabordagem",
+        "5. Monitorização contínua, O2, acesso e suporte"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "2) HIPOCALCEMIA — QUANDO SUSPEITAR",
+      "section_color": "orange",
+      "titulo": "POR LESÃO/RESSECÇÃO DAS PARATIREOIDES",
+      "items": [
+        "Geralmente TRANSITÓRIA; sintomas iniciam em região perioral e ponta dos dedos",
+        "Parestesia, câimbras, dormência, espasmos e rigidez muscular",
+        "Grave: tetania, laringoespasmo, convulsões",
+        "Sinal de Trousseau (espasmo carpopedal ao insuflar o manguito) e Chvostek (contração facial à percussão do facial)",
+        "ECG: prolongamento do QT -> risco de Torsades de Pointes",
+        "Diagnóstico: clínico + Cálcio < 8,5 mg/dL (considerar dosagem 4-6h pós-op para flagrar assintomático)"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "HIPOCALCEMIA — TRATAMENTO (não esperar laboratório)",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "LEVE / POUCO SINTOMÁTICO (Ca 7,5-8,5)",
+        "items": [
+          "Carbonato de cálcio 500mg VO 8/8h (longe das refeições)",
+          "Se sem melhora com VO:",
+          "Gluconato de cálcio 10% 10mL + SF 50mL EV em BIC, correr em 30 min",
+          "Reavaliar sintomas e cálcio seriado"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "GRAVE / SINTOMÁTICO (Ca < 7,5)",
+        "items": [
+          "Gluconato de cálcio 10% 20mL + SF 50mL EV em BIC, correr em 20 min",
+          "Eleva o cálcio por apenas 2-3h -> MANTER infusão",
+          "Manter até regime oral efetivo de cálcio (± calcitriol)",
+          "Não aguardar o laboratório para iniciar a reposição",
+          "Monitorizar ECG (QT) durante a reposição"
+        ]
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "3) LESÃO DO NERVO LARÍNGEO RECORRENTE (INFERIOR)",
+      "section_color": "navy",
+      "headers": ["Padrão", "Voz / sintomas", "Via aérea"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.30, 0.42, 0.28],
+      "rows": [
+        ["Unilateral, paralisia mediana", "Pode não ter disfonia; sem disfagia", "Preservada"],
+        ["Unilateral, paralisia lateral", "Piora da voz, disfagia, broncoaspiração", "Geralmente ok"],
+        ["Bilateral, paralisia lateral", "Voz ruim, disfagia, broncoaspiração", "Respiração 'boa'"],
+        ["Bilateral, paralisia mediana", "Dispneia importante", "TRAQUEOSTOMIA"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "LESÃO DO NERVO LARÍNGEO SUPERIOR",
+      "section_color": "navy",
+      "titulo": "RAMOS",
+      "items": [
+        "Ramo externo: dificuldade para emitir sons agudos (perda da projeção/voz aguda)",
+        "Ramo interno: engasgos frequentes (perda da sensibilidade supraglótica)",
+        "Lesão bilateral do recorrente em paralisia mediana = dispneia grave -> indicação de traqueostomia",
+        "Documentar a voz e a deglutição; encaminhar à cirurgia de cabeça e pescoço/ORL"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE AVALIAÇÃO PÓS-OP",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Inspeção/palpação cervical e do dreno (hematoma) nas primeiras 6h",
+        "Pesquisar parestesia perioral/dedos e sinais de Chvostek/Trousseau (hipocalcemia)",
+        "Avaliar voz, deglutição e ruído respiratório (lesão de nervo laríngeo)",
+        "Cálcio e ECG (QT) se sintomas; iniciar reposição sem aguardar laboratório se sintomático",
+        "Hematoma com desconforto respiratório = abrir a ferida JÁ"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente em pós-operatório de tireoidectomia (___h) com ___ (hematoma cervical / hipocalcemia / disfonia-estridor).",
+        "Via aérea: ___ (pérvia / IOT / traqueostomia). Cálcio: ___; reposição iniciada: sim/não.",
+        "Hematoma evacuado à beira-leito: sim/não. Conduta atual: ___.",
+        "Solicito reabordagem cirúrgica / vaga / avaliação de cirurgia de cabeça e pescoço."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente 4 horas após tireoidectomia total apresenta abaulamento cervical tenso, disfagia, voz alterada e estridor. Qual a conduta IMEDIATA?",
+      "alternativas": [
+        "Solicitar TC de pescoço e aguardar resultado",
+        "Abrir a ferida cervical à beira-leito para evacuar o hematoma e assegurar a via aérea",
+        "Administrar corticoide e observar",
+        "Repor cálcio endovenoso",
+        "Encaminhar para fonoaudiologia"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente pós-tireoidectomia com parestesia perioral e nas pontas dos dedos, sinal de Chvostek positivo. Qual a conduta?",
+      "alternativas": [
+        "Aguardar o cálcio sérico antes de qualquer medida",
+        "Iniciar reposição de cálcio (VO ou EV conforme gravidade) sem aguardar o laboratório",
+        "Administrar bicarbonato",
+        "Iniciar antibiótico",
+        "Repor potássio"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual lesão nervosa pós-tireoidectomia tipicamente exige traqueostomia por dispneia importante?",
+      "alternativas": [
+        "Lesão unilateral do nervo laríngeo recorrente em posição mediana",
+        "Lesão BILATERAL do nervo laríngeo recorrente em paralisia mediana",
+        "Lesão do ramo externo do laríngeo superior",
+        "Lesão do ramo interno do laríngeo superior",
+        "Lesão isolada do nervo hipoglosso"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a hipocalcemia pós-tireoidectomia, é correto afirmar:",
+      "alternativas": [
+        "É sempre permanente",
+        "Decorre de lesão/ressecção das paratireoides, é frequentemente transitória e pode prolongar o intervalo QT",
+        "Não causa sintomas neuromusculares",
+        "Nunca causa arritmia",
+        "Dispensa monitorização eletrocardiográfica"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o período mais crítico para o hematoma cervical pós-tireoidectomia?",
+      "alternativas": [
+        "Após 30 dias",
+        "Primeiras 6 horas",
+        "Entre o 7o e o 14o dia",
+        "Apenas durante a cirurgia",
+        "Após 72 horas"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Hematoma cervical expansivo com estridor é emergência de via aérea: abre-se a ferida à beira-leito para descompressão imediata e garante-se a via aérea (IOT precoce; traqueostomia se falhar). Imagem não deve atrasar a descompressão."},
+    {"resposta": "B", "comentario": "Hipocalcemia sintomática pós-tireoidectomia deve ser tratada de imediato (VO se leve, gluconato de cálcio EV se grave), sem aguardar o laboratório. O cálcio confirma (<8,5) mas não deve atrasar a reposição."},
+    {"resposta": "B", "comentario": "A lesão BILATERAL do nervo laríngeo recorrente com cordas em posição mediana fecha a via aérea, causando dispneia importante e exigindo traqueostomia. As unilaterais costumam preservar a respiração."},
+    {"resposta": "B", "comentario": "A hipocalcemia decorre de lesão/ressecção das paratireoides, é em geral transitória, cursa com sintomas neuromusculares (Chvostek/Trousseau) e prolonga o QT, predispondo a Torsades — exige monitorização."},
+    {"resposta": "B", "comentario": "As primeiras 6 horas são o período crítico do hematoma cervical pós-tireoidectomia, quando o risco de expansão e obstrução de via aérea é maior — justificando observação rigorosa nesse intervalo."}
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "slug": "sindrome_veia_cava_superior",
+  "titulo": "Síndrome da Veia Cava Superior",
+  "especialidade": "CIRURGIA VASCULAR",
+  "chapter_subject": "SVCS no PS",
+  "chapter_bar": "SÍNDROME DA VEIA CAVA SUPERIOR (SVCS)",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CONGESTÃO DE CABEÇA E PESCOÇO",
+      "title": "SVCS — IDENTIFICAR A FORMA CRÍTICA",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Edema facial/cervical + MMSS + dispneia\n+ colaterais toracicas", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 24, "text": "CRITICA? estridor / rebaixamento /\nsincope sem gatilho / hipotensao", "color": "red", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "SIM: emergencia\nvia aerea + stent\nprecoce", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "NAO: cabeceira +\nTC torax c/ contraste\n+ etiologia", "color": "teal", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Sinais/sintomas por obstrução (parcial ou completa) do fluxo na veia cava superior",
+        "Gera congestão venosa de cabeça, pescoço e MMSS",
+        "Edema facial/cervical, edema de MMSS, dispneia, tosse, colaterais torácicas dilatadas",
+        "Sintomas pioram ao DEITAR/abaixar a cabeça"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ETIOLOGIAS",
+      "section_color": "navy",
+      "headers": ["Grupo", "Causas", "Pista temporal"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.46, 0.34],
+      "rows": [
+        ["Malignas (maioria)", "Compressão/invasão mediastinal: câncer de pulmão, linfomas", "Semanas (massa/compressão)"],
+        ["Benignas (crescentes)", "Trombose/estenose por cateter central, hemodiálise, portocath, marcapasso/CDI", "Horas-dias (trombose)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — SVCS CRÍTICA (via aérea / SNC)",
+      "section_color": "red",
+      "titulo": "TRATAR COMO EMERGÊNCIA",
+      "items": [
+        "Edema laríngeo: ESTRIDOR, voz abafada/rouquidão progressiva, piora rápida da dispneia",
+        "Edema cerebral: confusão/obnubilação, cefaleia intensa, alterações visuais, síncope",
+        "Compromisso hemodinâmico: síncope sem gatilho, hipotensão",
+        "Regra prática: estridor + rebaixamento + síncope 'do nada' + hipotensão = SVCS crítica",
+        "Acionar intervenção (radiologia intervencionista/vascular) precocemente: stent é o alívio mais rápido (~0-72h)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "INVESTIGAÇÃO",
+      "items": [
+        "Exame: sinais vitais, SpO2, nível de consciência; face/pescoço (edema, pletora, turgência jugular)",
+        "Tórax: colaterais dilatadas; via aérea (estridor/edema de língua); MMSS (edema/dor assimétrica = trombose)",
+        "TC de TÓRAX COM CONTRASTE (principal exame): local, gravidade e etiologia",
+        "USG Doppler (jugular/subclávia/inominada) se suspeita de trombose por cateter/dispositivo",
+        "Venografia = padrão-ouro no contexto de intervenção endovascular (stent/trombólise)",
+        "Labs: hemograma, função renal (contraste/anticoag), coagulograma, gaso se insuf. respiratória"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS — MEDIDAS IMEDIATAS",
+      "section_color": "orange",
+      "titulo": "PASSOS GERAIS",
+      "items": [
+        "Cabeceira elevada 30-45 graus (reduz a pressão venosa em cabeça/pescoço — medida simples e eficaz)",
+        "Oxigênio se hipóxia + monitorização contínua",
+        "EVITAR punção/infusão em MMSS (pressão venosa alta piora edema/fluxo) -> preferir acesso em MMII / veia femoral",
+        "Analgesia/ansiolítico com CAUTELA",
+        "Se crítica (estridor/rebaixamento/hipotensão): suporte de via aérea + acionar intervenção para stent precoce"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO ESPECÍFICO POR ETIOLOGIA",
+      "section_color": "orange",
+      "headers": ["Etiologia", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Trombose (cateter/dispositivo)", "Anticoagulação sistêmica; ± trombólise/trombectomia antes do stent em trombo agudo; considerar retirar o cateter"],
+        ["Compressão tumoral", "Planejar com oncologia/radio: QT (pulmão pequenas células/linfoma) ou RT; stent para alívio rápido nos casos severos"],
+        ["Adjuvantes", "Corticoide/diurético usados em alguns cenários (evidência limitada; dexametasona se linfoma provável ou edema de VA)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ARMADILHA — DIAGNÓSTICO TECIDUAL",
+      "section_color": "purple",
+      "titulo": "NÃO IRRADIAR ÀS CEGAS",
+      "items": [
+        "Evitar radioterapia ANTES do diagnóstico tecidual quando possível (pode inviabilizar a biópsia e não dá alívio imediato)",
+        "Em casos severos, o stent dá alívio rápido e permite tratar o tumor depois com diagnóstico definido",
+        "RT é mais lenta (melhora em dias-semanas); QT é melhor em tumores quimiossensíveis",
+        "Acesso venoso em MMII evita agravar a congestão e a imprevisibilidade do fluxo"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: sinais de gravidade (estridor, rebaixamento, síncope, hipotensão), necessidade de O2, trombose extensa, suspeita forte de malignidade sintomática",
+        "UTI: SVCS crítica, via aérea ameaçada, choque, rebaixamento",
+        "ALTA só se TODOS: quadro leve/estável, saturando bem, etiologia provável definida e plano em curto prazo",
+        "Alarme: piora rápida da dispneia, estridor/rouquidão, confusão, síncope, cefaleia intensa, piora ao deitar, edema assimétrico de braço",
+        "Iniciar anticoagulação se trombose confirmada/altamente provável"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "SVCS (gravidade: leve/moderada/crítica). Início: horas-dias (trombose) vs semanas (massa).",
+        "Neoplasia conhecida (pulmão/linfoma): sim/não. Cateter/port/hemodiálise/marcapasso: sim/não.",
+        "Sinais de gravidade: estridor/rebaixamento/síncope/hipotensão. TC tórax c/ contraste: ___.",
+        "Condutas: cabeceira elevada, O2, acesso em MMII, anticoagulação (se trombose), ± corticoide. Solicito intervenção endovascular (stent) / UTI / investigação oncológica rápida."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com SVCS apresenta estridor, rouquidão progressiva, confusão e síncope sem gatilho. Como classificar e conduzir?",
+      "alternativas": [
+        "Quadro leve — alta com orientações",
+        "SVCS crítica — emergência: suporte de via aérea e acionar intervenção para stent precoce",
+        "Conjuntivite — colírio",
+        "Crise hipertensiva — anti-hipertensivo",
+        "Quadro ansioso — ansiolítico e alta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o exame de imagem principal para avaliar a SVCS no PS?",
+      "alternativas": [
+        "Radiografia de tórax",
+        "Tomografia de tórax com contraste",
+        "Ecocardiograma",
+        "Ressonância de crânio",
+        "Cintilografia óssea"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual cuidado com acesso venoso é recomendado na SVCS?",
+      "alternativas": [
+        "Preferir punção em membros superiores",
+        "Evitar punção/infusão em MMSS e preferir acesso em MMII (veia femoral)",
+        "Usar exclusivamente veia jugular",
+        "Não puncionar em nenhum sítio",
+        "Acesso intraósseo no úmero"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual a etiologia MAIS comum da síndrome da veia cava superior?",
+      "alternativas": [
+        "Trombose por cateter",
+        "Causas malignas (câncer de pulmão e linfomas)",
+        "Trauma cervical",
+        "Insuficiência cardíaca",
+        "Pericardite"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Por que se deve evitar radioterapia antes do diagnóstico tecidual na SVCS por provável massa tumoral?",
+      "alternativas": [
+        "Porque a radioterapia é contraindicada em câncer",
+        "Porque pode inviabilizar a biópsia/diagnóstico e não oferece alívio imediato; o stent dá alívio rápido",
+        "Porque a radioterapia piora a trombose",
+        "Porque sempre causa edema cerebral",
+        "Porque não há tratamento para SVCS"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Estridor, rebaixamento e síncope sem gatilho caracterizam SVCS crítica (via aérea/SNC ameaçados): é emergência, com suporte de via aérea e acionamento precoce de intervenção endovascular (stent), o alívio mais rápido."},
+    {"resposta": "B", "comentario": "A TC de tórax com contraste é o principal exame: define localização, gravidade e etiologia da obstrução (massa vs trombo). A venografia é o padrão-ouro apenas no contexto da intervenção endovascular."},
+    {"resposta": "B", "comentario": "Na SVCS, evita-se puncionar/infundir em MMSS (a pressão venosa elevada agrava o edema e torna o fluxo imprevisível); prefere-se acesso em MMII (veia femoral)."},
+    {"resposta": "B", "comentario": "A maioria das SVCS é de causa maligna, por compressão/invasão mediastinal — sobretudo câncer de pulmão e linfomas. Causas benignas (trombose por cateter/dispositivo) vêm crescendo."},
+    {"resposta": "B", "comentario": "Irradiar antes da biópsia pode inviabilizar o diagnóstico tecidual e não dá alívio imediato. Em casos severos, o stent oferece alívio rápido, permitindo depois o tratamento oncológico com diagnóstico definido."}
+  ]
+}

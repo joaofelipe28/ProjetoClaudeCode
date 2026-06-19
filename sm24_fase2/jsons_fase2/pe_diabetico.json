@@ -1,0 +1,225 @@
+{
+  "slug": "pe_diabetico",
+  "titulo": "Pé Diabético",
+  "especialidade": "CIRURGIA VASCULAR",
+  "chapter_subject": "Pé Diabético no PS",
+  "chapter_bar": "PÉ DIABÉTICO — INFECÇÃO, ISQUEMIA E GLICEMIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — AVALIAÇÃO NO PS",
+      "title": "PÉ DIABÉTICO — GRAVIDADE DEFINE O DESTINO",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Ulcera/lesao no pe do diabetico\nInfeccao? Isquemia? Osso exposto?", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Classificar WAGNER + grau de infeccao (IDSA)", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 145, "h": 24, "text": "Leve (Wagner 1):\nATB VO + curativo\nambulatorial", "color": "green", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 150, "h": 26, "text": "Grave (Wagner>=3/\nSIRS/isquemia):\nATB EV + internar", "color": "red", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — ANAMNESE",
+      "section_color": "purple",
+      "titulo": "PERGUNTAS-CHAVE",
+      "items": [
+        "Sente dor na ferida? (NÃO = neuropatia grave — lesão indolor)",
+        "Tem pus ou mau cheiro saindo da ferida? (infecção)",
+        "Teve febre/calafrios em casa? (infecção sistêmica)",
+        "Pés sempre frios, claudicação, feridas que não cicatrizam? (isquemia)",
+        "Já teve úlcera/amputação antes? Último controle glicêmico (HbA1c)?"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAME FÍSICO ESSENCIAL",
+      "section_color": "navy",
+      "titulo": "INSPEÇÃO + PALPAÇÃO + NEURO",
+      "items": [
+        "Úlcera: localização (plantar=neuropática, bordas/dedos=isquêmica), tamanho, profundidade, base, secreção",
+        "Pulsos pedioso e tibial posterior (OBRIGATÓRIO, comparar bilateralmente); temperatura (quente=infecção, frio=isquemia)",
+        "Probe-to-bone: tocar osso na base da úlcera = OSTEOMIELITE (sensibilidade ~87%)",
+        "CREPITAÇÃO subcutânea = fasciite necrosante/gangrena gasosa = EMERGÊNCIA cirúrgica",
+        "Neuro: monofilamento 10g (3 pontos), diapasão 128 Hz no hálux, reflexo aquileu"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE WAGNER",
+      "section_color": "navy",
+      "headers": ["Grau", "Características", "Conduta"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.12, 0.50, 0.38],
+      "rows": [
+        ["0", "Pé de risco (calosidade, deformidade), sem úlcera", "Orientação, calçado adequado"],
+        ["1", "Úlcera superficial não infectada", "Curativo, descarga, ambulatorial"],
+        ["2", "Úlcera profunda (tendão/articulação) sem abscesso/osteomielite", "ATB VO, avaliar internação"],
+        ["3", "Úlcera profunda COM abscesso, osteomielite ou celulite", "ATB EV + INTERNAÇÃO"],
+        ["4", "Gangrena localizada (dedos/calcanhar)", "ATB EV + cirurgia vascular"],
+        ["5", "Gangrena extensa do pé", "Amputação"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — INTERNAÇÃO IMEDIATA",
+      "section_color": "red",
+      "titulo": "INFECÇÃO GRAVE / ISQUEMIA CRÍTICA",
+      "items": [
+        "Sinais sistêmicos: febre > 38, taquicardia, hipotensão, confusão (sepse)",
+        "Celulite extensa (eritema > 2 cm), linfangite ascendente, secreção purulenta abundante",
+        "CREPITAÇÃO subcutânea (fasciite/gangrena gasosa) = EMERGÊNCIA cirúrgica (desbridamento)",
+        "Necrose/gangrena; osteomielite (osso exposto/probe-to-bone +); abscesso profundo",
+        "Isquemia crítica: pulsos ausentes + lesão que não cicatriza, dor em repouso, ITB < 0,5"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIOTICOTERAPIA POR GRAVIDADE (IDSA/IWGDF)",
+      "section_color": "orange",
+      "headers": ["Gravidade", "Esquema", "Local"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.52, 0.30],
+      "rows": [
+        ["Leve (eritema <2cm)", "Cefalexina 500mg VO 6/6h OU Amoxi-clav 875/125mg VO 12/12h (7-14d)", "Ambulatorial"],
+        ["Moderada", "Amoxi-clav 875/125 VO 12/12h (alergia: Levofloxacino + Clindamicina) 14d", "Internar se comorbidade"],
+        ["Grave (SIRS/isquemia)", "Ampi-sulbactam 3g EV 6/6h OU Pipe-tazo 4,5g EV 8/8h OU Ceftriaxona + Metronidazol", "INTERNAÇÃO"],
+        ["MRSA / Pseudomonas", "Add Vancomicina 1g EV 12/12h / usar Pipe-tazo ou Cefepime 2g EV 8/8h", "INTERNAÇÃO"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CONTROLE GLICÊMICO E CURATIVO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "CONTROLE GLICÊMICO",
+        "items": [
+          "Meta no PS: glicemia 140-180 mg/dL",
+          "Se > 250: insulina regular 8-10 UI SC (repetir em 2-4h se > 250)",
+          "Hidratação SF 0,9% 500-1000 mL",
+          "Avaliar cetoacidose se > 300 + cetonúria/acidose -> protocolo CAD",
+          "Encaminhar para ajuste com endocrinologia"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "CUIDADOS LOCAIS",
+        "items": [
+          "Lavar com SF 0,9% abundante (jato suave)",
+          "Desbridar necrose/esfacelo/calosidade se viável no PS",
+          "NÃO usar iodopovidona, água oxigenada, permanganato (citotóxicos)",
+          "Infectada: sulfadiazina de prata / carvão com prata",
+          "Necrose SECA (escara): manter seca até avaliação vascular — NÃO desbridar no PS"
+        ]
+      }
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES",
+      "section_color": "navy",
+      "titulo": "SOLICITAR",
+      "items": [
+        "Todos: HGT, hemograma, PCR, ureia/creatinina, Na/K, HbA1c",
+        "Se infecção mod/grave: hemoculturas (2) antes do ATB, cultura profunda da ferida, gaso/lactato",
+        "RX do pé (AP/perfil/oblíquo): Wagner >= 2 ou suspeita de osteomielite (osteólise, gás nos tecidos)",
+        "RM = padrão-ouro para osteomielite (fora do PS); Doppler/ITB se ausência de pulsos (ITB < 0,9 = DAP)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA E ORIENTAÇÕES",
+      "titulo": "ALTA SE (infecção leve)",
+      "items": [
+        "Celulite < 2 cm sem sinais sistêmicos; glicemia controlada (< 250); pulsos presentes/isquemia leve",
+        "Capacidade de curativo em casa/UBS e seguimento garantido (vascular, endócrino, curativo)",
+        "Orientar: inspeção diária dos pés, calçado adequado, nunca andar descalço, não usar escalda-pés/bolsa quente",
+        "Cortar unhas retas; hidratar a pele (exceto entre os dedos)",
+        "Retorno IMEDIATO: febre, piora do eritema, pus/odor, escurecimento dos dedos, dor intensa, crepitação"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente diabético, pé diabético Wagner ___; úlcera em ___, ___ cm, profundidade ___; infectada: sim/não.",
+        "Pulsos: presentes/ausentes; probe-to-bone: +/-; febre/leucocitose/PCR ___; glicemia ___.",
+        "ATB iniciado (EV/VO): ___; RX do pé: ___.",
+        "Necessita internação para ___ (ATB EV / desbridamento / amputação / avaliação vascular / controle glicêmico)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Diabético com úlcera plantar profunda, crepitação subcutânea e secreção fétida, febril e hipotenso. Qual a conduta prioritária?",
+      "alternativas": [
+        "Antibiótico oral e alta com retorno em 7 dias",
+        "Internação + antibiótico EV de amplo espectro + desbridamento cirúrgico URGENTE (suspeita de fasciite/gangrena gasosa)",
+        "Apenas curativo com sulfadiazina e observação",
+        "Aguardar cultura antes de qualquer medida",
+        "Encaminhamento ambulatorial à endocrinologia"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "No exame da úlcera, ao tocar o fundo com swab estéril percebe-se contato ósseo. O que isso sugere?",
+      "alternativas": [
+        "Neuropatia",
+        "Osteomielite (probe-to-bone positivo)",
+        "Isquemia crítica",
+        "Celulite leve",
+        "Úlcera venosa"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual a meta glicêmica no PS para o paciente com pé diabético infectado?",
+      "alternativas": [
+        "80-110 mg/dL",
+        "140-180 mg/dL",
+        "200-250 mg/dL",
+        "Menor que 70 mg/dL",
+        "Acima de 300 mg/dL"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual produto NÃO deve ser usado no leito da úlcera por ser citotóxico?",
+      "alternativas": [
+        "Soro fisiológico 0,9%",
+        "Iodopovidona / água oxigenada / permanganato",
+        "Alginato de cálcio",
+        "Hidrogel",
+        "Sulfadiazina de prata"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Pé diabético Wagner grau 3 (úlcera profunda com osteomielite). Qual a conduta?",
+      "alternativas": [
+        "Antibiótico oral por 7 dias e alta",
+        "Antibioticoterapia endovenosa e internação (osteomielite exige ATB prolongado)",
+        "Apenas curativo ambulatorial",
+        "Observação sem antibiótico",
+        "Amputação imediata em todos os casos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Crepitação subcutânea + secreção fétida + sepse sugere fasciite necrosante/gangrena gasosa — emergência cirúrgica. Conduta: internar, ATB EV de amplo espectro e desbridamento cirúrgico urgente; não aguardar cultura."},
+    {"resposta": "B", "comentario": "O teste probe-to-bone positivo (contato ósseo no fundo da úlcera) tem alta sensibilidade (~87%) para osteomielite, que muda o tratamento (ATB prolongado 4-6 semanas e avaliação cirúrgica)."},
+    {"resposta": "B", "comentario": "A meta glicêmica no PS para o pé diabético infectado é 140-180 mg/dL; controle adequado favorece a resposta à infecção e a cicatrização, sem o risco da hipoglicemia de metas muito rígidas."},
+    {"resposta": "B", "comentario": "Iodopovidona, água oxigenada e permanganato são citotóxicos e prejudicam a granulação. Limpa-se com SF 0,9%; cobre-se conforme o leito (alginato/hidrogel se limpa; prata se infectada)."},
+    {"resposta": "B", "comentario": "Wagner 3 (úlcera profunda com osteomielite/abscesso/celulite) requer internação e antibioticoterapia EV; a osteomielite demanda tratamento prolongado (4-6 semanas) e avaliação cirúrgica, não apenas ATB oral."}
+  ]
+}

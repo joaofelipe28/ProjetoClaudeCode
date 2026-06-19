@@ -1,0 +1,212 @@
+{
+  "slug": "oclusao_arterial_aguda",
+  "titulo": "Oclusão Arterial Aguda",
+  "especialidade": "CIRURGIA VASCULAR",
+  "chapter_subject": "Oclusão Arterial Aguda no PS",
+  "chapter_bar": "OCLUSÃO ARTERIAL AGUDA — TEMPO É MÚSCULO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — 6 Ps E RUTHERFORD",
+      "title": "OAA — DIAGNÓSTICO CLÍNICO, AGIR JÁ",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Dor subita no membro + 6 Ps\n(Pain, Pallor, Pulseless, Parestesia, Paralisia, Poiquilotermia)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Classificar RUTHERFORD + HEPARINIZAR", "color": "orange", "font_size": 6.0},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 145, "h": 24, "text": "I-IIA-IIB viavel:\nrevascularizar\n(<6h se ameacado)", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 145, "h": 24, "text": "III irreversivel:\nparalisia+anestesia\n+ rigidez = amputar", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — OS 6 Ps",
+      "section_color": "purple",
+      "titulo": "RECONHECIMENTO RÁPIDO",
+      "items": [
+        "Pain (dor): início súbito, intensa no membro afetado",
+        "Pallor (palidez): pele pálida, cerosa",
+        "Pulselessness: pulso distal ausente/diminuído (COMPARAR com o contralateral)",
+        "Paresthesia: formigamento, dormência",
+        "Paralysis: fraqueza/incapacidade de mover (isquemia crítica)",
+        "Poikilothermia (frialdade): membro frio. Início < 6h = melhor prognóstico"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE RUTHERFORD",
+      "section_color": "navy",
+      "headers": ["Classe", "Achados", "Conduta"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.22, 0.46, 0.32],
+      "rows": [
+        ["I - Viável", "Sem déficit motor/sensitivo; não ameaçado", "Urgência (horas)"],
+        ["IIA - Marginal", "Sem déficit motor, parestesia mínima", "URGÊNCIA (< 6h)"],
+        ["IIB - Imediato", "Fraqueza leve-moderada, perda sensitiva além dos dedos", "EMERGÊNCIA (< 6h)"],
+        ["III - Irreversível", "Paralisia completa, anestesia, rigidez muscular", "Amputação"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — ISQUEMIA IRREVERSÍVEL (Rutherford III)",
+      "section_color": "red",
+      "titulo": "PROVÁVEL AMPUTAÇÃO",
+      "items": [
+        "Paralisia completa do membro + anestesia (perda total da sensibilidade)",
+        "Rigidez muscular (contratura) — síndrome compartimental",
+        "Marmóreo FIXO (livedo que não clareia à elevação)",
+        "Rabdomiólise (urina escura, CPK elevada)",
+        "Diagnóstico é CLÍNICO — não postergar conduta aguardando exames se isquemia grave"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ETIOLOGIA — EMBOLIA x TROMBOSE",
+      "section_color": "navy",
+      "headers": ["Característica", "Embolia (50-60%)", "Trombose (30-40%)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Início", "Súbito, dor intensa imediata", "Mais gradual (horas)"],
+        ["Claudicação prévia", "Ausente", "Presente (DAP crônica)"],
+        ["Membro contralateral", "Pulsos normais", "Pulsos diminuídos bilateral"],
+        ["Fonte/contexto", "FA (80%), IAM, prótese, endocardite", "Aterosclerose, tabagismo, DM, HAS"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CONDUTA — EMERGÊNCIA VASCULAR",
+      "section_color": "orange",
+      "titulo": "MEDIDAS IMEDIATAS + HEPARINA",
+      "items": [
+        "2 acessos calibrosos, O2 se SatO2 < 94%, analgesia (morfina fracionada / dipirona)",
+        "Hidratação SF para manter diurese (prevenir rabdomiólise); JEJUM (provável cirurgia)",
+        "Membro em posição neutra ou levemente em DECLIVE (NÃO elevar); proteger/acolchoar",
+        "HEPARINA não fracionada JÁ (se sem contraindicação): bolus 80 UI/kg (máx 5.000) + 18 UI/kg/h em BIC",
+        "  Alvo TTPA 1,5-2,5x; contraindicações: sangramento ativo, AVCh recente, plaq < 50.000",
+        "ACIONAR cirurgia vascular IMEDIATAMENTE — IIA/IIB = revascularizar em < 6h"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SÍNDROME DE REPERFUSÃO (pós-revascularização)",
+      "section_color": "red",
+      "titulo": "ANTECIPAR E PREVENIR",
+      "items": [
+        "Liberação de metabólitos: acidose metabólica, HIPERCALEMIA (arritmia/PCR), mioglobinúria (IRA), SDRA",
+        "Síndrome compartimental -> fasciotomia",
+        "Hidratação vigorosa (200-300 mL/h SF); monitorar K+ rigorosamente",
+        "Alcalinização (bicarbonato 1-2 mEq/kg se acidose grave); considerar manitol 0,5 g/kg",
+        "Manter diurese > 0,5 mL/kg/h"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES (sem atrasar a conduta)",
+      "section_color": "navy",
+      "titulo": "ENQUANTO MOBILIZA A CIRURGIA",
+      "items": [
+        "Doppler arterial confirma ausência de fluxo e localiza — NÃO postergar tratamento para fazê-lo",
+        "AngioTC/arteriografia: anatomia para planejar revascularização (se tempo permitir / no preparo)",
+        "Laboratório: hemograma, coagulograma, ureia/creatinina, eletrólitos, CPK/mioglobina, gaso/lactato, ECG",
+        "ECG: avaliar FA (fonte embólica); se suspeita de IAM, troponina + avaliação cardiológica"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO",
+      "titulo": "TODOS OS CASOS INTERNAM",
+      "items": [
+        "Classe I: internação para revascularização programada (horas)",
+        "Classe IIA/IIB: UTI/centro cirúrgico imediato (< 6h)",
+        "Classe III: internação para amputação ou cuidados",
+        "Se FA: controle de FC e anticoagulação prolongada após cirurgia",
+        "Monitorar K+, função renal e diurese (reperfusão)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO (EMERGÊNCIA)",
+      "items": [
+        "OAA de ___ (membro/artéria), início há ___ h. Rutherford ___.",
+        "Pulsos ___; temperatura ___; sensibilidade ___; motricidade ___. Etiologia provável: embólica/trombótica.",
+        "Heparina iniciada (dose) / não iniciada (motivo). ECG: FA/sinusal.",
+        "NECESSITA REVASCULARIZAÇÃO URGENTE. Janela: ___ h. Transferência IMEDIATA para cirurgia vascular."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com FA, dor súbita e intensa em MID, palidez, frialdade, ausência de pulso pedioso e parestesia mínima sem déficit motor. Classificação e conduta?",
+      "alternativas": [
+        "Rutherford III — amputação imediata",
+        "Rutherford IIA — heparinizar e revascularizar com urgência (< 6h)",
+        "Rutherford I — observar ambulatorialmente",
+        "Não é oclusão arterial — alta",
+        "Trombose venosa — anticoagular e alta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado caracteriza isquemia IRREVERSÍVEL (Rutherford III)?",
+      "alternativas": [
+        "Parestesia mínima",
+        "Paralisia completa + anestesia + rigidez muscular",
+        "Pulso diminuído com dor leve",
+        "Palidez isolada",
+        "Claudicação intermitente"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual medida deve ser iniciada imediatamente na oclusão arterial aguda, salvo contraindicação?",
+      "alternativas": [
+        "Elevar o membro afetado",
+        "Heparina não fracionada (bolus + manutenção em BIC)",
+        "Antibiótico de amplo espectro",
+        "Trombolítico oral",
+        "Compressão do membro"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Após a revascularização, o paciente pode desenvolver hipercalemia, mioglobinúria e acidose. Como se chama essa complicação e qual medida a previne?",
+      "alternativas": [
+        "Síndrome de reperfusão — hidratação vigorosa e monitorização do potássio",
+        "Choque séptico — antibiótico",
+        "Embolia gordurosa — corticoide",
+        "Síndrome nefrótica — albumina",
+        "Crise tireotóxica — betabloqueador"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre embolia x trombose como causa de OAA, é correto:",
+      "alternativas": [
+        "A embolia cursa com claudicação prévia e pulsos contralaterais diminuídos",
+        "A embolia tem início súbito, sem claudicação prévia, frequentemente por FA, com pulsos normais no membro contralateral",
+        "A trombose tem início abrupto sem fatores de risco",
+        "Ambas têm exatamente a mesma apresentação",
+        "A trombose nunca ocorre em ateroscleróticos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Membro viável com parestesia mínima e sem déficit motor é Rutherford IIA (ameaçado marginal): heparinização imediata e revascularização urgente (< 6h). A fonte (FA) sugere embolia."},
+    {"resposta": "B", "comentario": "Rutherford III (irreversível) = paralisia completa + anestesia + rigidez muscular (e marmóreo fixo), indicando inviabilidade do membro e provável amputação."},
+    {"resposta": "B", "comentario": "Na OAA, inicia-se heparina não fracionada de imediato (bolus 80 UI/kg + 18 UI/kg/h em BIC, salvo contraindicação) para evitar propagação do trombo e embolia distal, enquanto se aciona a cirurgia vascular."},
+    {"resposta": "A", "comentario": "A síndrome de reperfusão (acidose, hipercalemia, mioglobinúria, SDRA) ocorre após restaurar o fluxo. Previne-se com hidratação vigorosa, monitorização rigorosa do K+, alcalinização e atenção à síndrome compartimental."},
+    {"resposta": "B", "comentario": "A embolia (geralmente por FA) tem início súbito, sem claudicação prévia e com pulsos normais no membro contralateral; a trombose é mais gradual, em aterosclerótico com claudicação prévia e pulsos diminuídos bilateralmente."}
+  ]
+}

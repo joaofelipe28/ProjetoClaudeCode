@@ -1,0 +1,220 @@
+{
+  "slug": "oclusao_arterial_cronica",
+  "titulo": "Oclusão Arterial Crônica (DAP)",
+  "especialidade": "CIRURGIA VASCULAR",
+  "chapter_subject": "Doença Arterial Periférica Crônica",
+  "chapter_bar": "OCLUSÃO ARTERIAL CRÔNICA (DAP)",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CLAUDICAÇÃO x ISQUEMIA CRÍTICA",
+      "title": "DAP — A GRAVIDADE CLÍNICA DEFINE A CONDUTA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "DAP: ausencia de pulsos, atrofia de pele/pelos\nHistoria e exame fisico = diagnostico", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 26, "text": "CLAUDICACAO:\ndor a marcha que\ncessa no repouso", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "ISQUEMIA CRITICA:\ndor em repouso /\nlesao trofica", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.25, "y": 0.15, "w": 145, "h": 18, "text": "Tto CLINICO", "color": "green", "font_size": 6.2},
+        {"id": "e", "x": 0.75, "y": 0.15, "w": 150, "h": 18, "text": "REVASCULARIZAR", "color": "red", "font_size": 6.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO — ATEROSCLEROSE",
+      "section_color": "teal",
+      "titulo": "DOENÇA SISTÊMICA",
+      "items": [
+        "Doença crônica inflamatória com infiltração da parede arterial (foam cells, centro necrótico, fibroateroma)",
+        "Acomete simultaneamente vários territórios: carotídeo, coronariano, membros inferiores",
+        "Fatores de risco: HAS, DM, hipercolesterolemia, obesidade; principal externo = TABAGISMO",
+        "Nos MMII: atrofia da pele, ausência de pelos, sarcopenia e AUSÊNCIA DE PULSOS"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLAUDICAÇÃO x ISQUEMIA CRÍTICA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Claudicação", "Isquemia crítica"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.22, 0.39, 0.39],
+      "rows": [
+        ["Dor", "À marcha, cessa COMPLETAMENTE no repouso", "Em REPOUSO; melhora com pernas pendentes"],
+        ["Membro", "Não ameaçado", "Ameaçado (risco de amputação)"],
+        ["Lesão trófica", "Ausente", "Pode haver ferida que não cicatriza/gangrena"],
+        ["Conduta", "Tratamento CLÍNICO", "REVASCULARIZAÇÃO + imagem"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — ISQUEMIA CRÍTICA",
+      "section_color": "red",
+      "titulo": "MEMBRO AMEAÇADO = REVASCULARIZAR",
+      "items": [
+        "Dor em REPOUSO (tipicamente noturna, alivia com a perna pendente)",
+        "Lesão trófica: úlcera que não cicatriza ou gangrena",
+        "Dois cenários: OAC descompensada (acidente de placa -> OAA aterotrombótica) ou OAC + lesão trófica infectada",
+        "Descompensada: dor em repouso, frialdade, déficit sensitivo/motor, ± elevação de CPK/acidose/IRA",
+        "Isquemia crítica é indicação de revascularização (não postergar avaliação vascular)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO E ITB",
+      "section_color": "navy",
+      "titulo": "CLÍNICO, ITB AUXILIA",
+      "items": [
+        "Diagnóstico é CLÍNICO (história + exame físico); ITB não é fundamental para diagnosticar",
+        "ITB (índice tornozelo-braço): útil para seguimento e comparação pré/pós-operatória",
+        "ITB pode ser FALSAMENTE elevado (>1) em artérias calcificadas (DM) -> usar pressão de pododáctilo (toe pressure)",
+        "Imagem para planejar revascularização: AngioTC (aorto-ilíaco/femoro-poplíteo) ou Doppler (infragenicular)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO DA CLAUDICAÇÃO (clínico)",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "MODIFICADORES DE MORTALIDADE",
+        "items": [
+          "AAS + estatina",
+          "Alternativa: AAS + Rivaroxabana 2,5mg 12/12h + estatina",
+          "CESSAÇÃO DO TABAGISMO (a mais importante)",
+          "Controle de comorbidades (HAS, DM, dislipidemia)"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "MODIFICADORES DE DISTÂNCIA DE MARCHA",
+        "items": [
+          "Cilostazol (melhora a distância de marcha)",
+          "Caminhada / exercício supervisionado",
+          "  -> estímulo à formação de circulação colateral",
+          "Colateral: hipertrofia de rede pré-existente, angiogênese, resposta à acidose"
+        ]
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "REVASCULARIZAÇÃO (isquemia crítica)",
+      "section_color": "orange",
+      "headers": ["Estratégia", "Características"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Angioplastia", "Punção + heparinização + balão ± stent (aorto-ilíaco/femoro-poplíteo); dupla antiagregação no pós-op"],
+        ["Enxerto (bypass)", "Anastomose término-lateral; veia safena ipsilateral devalvulada; AAS + estatina no pós-op"],
+        ["Híbridos", "Combinam técnicas; escolha por critérios anatômicos + performance clínica"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ESCORES — WIfI E GLASS",
+      "section_color": "purple",
+      "titulo": "ESTRATIFICAR PARA PLANEJAR",
+      "items": [
+        "WIfI (Wound, Ischemia, foot Infection): severidade CLÍNICA do membro; estima risco de amputação",
+        "  WIfI 3-4 geralmente exigem revascularização e desbridamento",
+        "GLASS: severidade ANATÔMICA (precisa de imagem); define a melhor estratégia de revascularização e a artéria-alvo",
+        "Ferida pequena + isquemia severa pode precisar revascularizar; ferida extensa pode tornar o membro inviável",
+        "Planejar com base na gravidade clínica do membro + gravidade anatômica da lesão"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA RESUMIDA",
+      "titulo": "NO PS / AMBULATÓRIO",
+      "items": [
+        "Claudicação = tratamento clínico (AAS + estatina + cessar tabagismo + cilostazol + exercício)",
+        "Isquemia crítica = encaminhamento vascular para revascularização + imagem",
+        "Diferenciar OAC descompensada (tratar como OAA — heparinizar, vascular urgente) de claudicação estável",
+        "ITB para seguimento; toe pressure se artérias calcificadas (DM)",
+        "Controle agressivo dos fatores de risco em todos"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO/VASCULAR",
+      "items": [
+        "Paciente com DAP: ( ) claudicação estável ( ) isquemia crítica (dor em repouso/lesão trófica).",
+        "Pulsos ___; ITB/toe pressure ___; lesão trófica em ___; sinais de descompensação aguda: sim/não.",
+        "Em tratamento clínico: AAS + estatina + cessação de tabagismo ± cilostazol.",
+        "Isquemia crítica -> solicito imagem (AngioTC/Doppler) e avaliação vascular para revascularização."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com dor na panturrilha desencadeada pela caminhada, que cessa completamente com o repouso, pulsos diminuídos. Diagnóstico e conduta inicial?",
+      "alternativas": [
+        "Isquemia crítica — revascularização imediata",
+        "Claudicação intermitente — tratamento clínico (AAS, estatina, cessar tabagismo, cilostazol, exercício)",
+        "Trombose venosa profunda — anticoagulação",
+        "Insuficiência venosa — meia elástica",
+        "Oclusão arterial aguda — heparina e cirurgia"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado caracteriza a isquemia crítica de membro (e não a claudicação)?",
+      "alternativas": [
+        "Dor apenas à marcha que cessa no repouso",
+        "Dor em repouso e/ou lesão trófica (úlcera/gangrena) — membro ameaçado",
+        "Pulsos normais",
+        "Ausência de fatores de risco",
+        "Edema vespertino que melhora com elevação"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que o ITB pode ser falsamente elevado no diabético, e qual a alternativa?",
+      "alternativas": [
+        "Por anemia; usar hematócrito",
+        "Por calcificação arterial (artérias incompressíveis); usar a pressão de pododáctilo (toe pressure)",
+        "Por desidratação; repor volume",
+        "Por febre; usar termômetro",
+        "Não há alteração no diabético"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Quais intervenções modificam a MORTALIDADE na doença arterial periférica?",
+      "alternativas": [
+        "Cilostazol e caminhada",
+        "AAS + estatina + cessação do tabagismo (e controle de comorbidades)",
+        "Apenas meia elástica",
+        "Anticoagulação plena isolada",
+        "Repouso absoluto"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre os escores WIfI e GLASS na isquemia crítica, é correto:",
+      "alternativas": [
+        "WIfI avalia a anatomia vascular e dispensa imagem",
+        "GLASS avalia a severidade ANATÔMICA (precisa de imagem) e define a estratégia de revascularização; WIfI estima a severidade clínica/risco de amputação",
+        "Ambos avaliam apenas a glicemia",
+        "WIfI define a artéria-alvo da revascularização",
+        "Nenhum tem utilidade clínica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor à marcha que cessa completamente no repouso é claudicação intermitente (DAP), cujo tratamento é clínico: AAS + estatina, cessação do tabagismo, cilostazol e exercício/caminhada para estimular colaterais."},
+    {"resposta": "B", "comentario": "Isquemia crítica = dor em repouso e/ou lesão trófica (úlcera/gangrena), com membro ameaçado e risco de amputação — indicação de revascularização, diferente da claudicação (membro não ameaçado)."},
+    {"resposta": "B", "comentario": "No diabético, a calcificação da camada média torna as artérias incompressíveis, elevando falsamente o ITB (>1). A pressão de pododáctilo (toe pressure) é mais fidedigna nesse cenário."},
+    {"resposta": "B", "comentario": "Modificam mortalidade: AAS + estatina, cessação do tabagismo e controle de comorbidades (pode-se associar AAS + rivaroxabana 2,5mg). Cilostazol e exercício melhoram a distância de marcha, mas não a mortalidade."},
+    {"resposta": "B", "comentario": "GLASS avalia a severidade anatômica (exige imagem) e orienta a estratégia/artéria-alvo de revascularização; o WIfI estratifica a gravidade clínica do membro e o risco de amputação (avalia a anatomia só indiretamente)."}
+  ]
+}

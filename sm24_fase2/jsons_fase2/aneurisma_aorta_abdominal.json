@@ -1,0 +1,209 @@
+{
+  "slug": "aneurisma_aorta_abdominal",
+  "titulo": "Aneurisma de Aorta Abdominal (AAA)",
+  "especialidade": "CIRURGIA VASCULAR",
+  "chapter_subject": "AAA no PS",
+  "chapter_bar": "ANEURISMA DE AORTA ABDOMINAL (AAA)",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — A ROTURA MUDA TUDO",
+      "title": "AAA — ASSINTOMÁTICO x SINTOMÁTICO x ROTO",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Dilatacao da aorta abdominal >=3,0 cm (POCUS)", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.2, "y": 0.5, "w": 135, "h": 24, "text": "Assintomatico:\nestratificar +\nencaminhar", "color": "green", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 24, "text": "Sintomatico (dor):\nurgencia vascular\nAngioTC + internar", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.8, "y": 0.5, "w": 135, "h": 26, "text": "Roto (instavel):\nhipotensao permissiva\n+ vascular JA", "color": "red", "font_size": 5.8},
+        {"id": "e", "x": 0.8, "y": 0.15, "w": 135, "h": 18, "text": "Transfusao macica", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Dilatação permanente da aorta abdominal (geralmente infrarrenal) >= 3,0 cm (ou >50% do esperado)",
+        "Pode ser assintomático (incidental), sintomático (iminência de rotura) ou roto (emergência)",
+        "Etiologia mais comum: degenerativo/aterosclerótico",
+        "Fatores de risco: idade > 60, TABAGISMO, HAS, aterosclerose, história familiar"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — SUSPEITA DE ROTURA (rAAA)",
+      "section_color": "red",
+      "titulo": "RECONHECER A EMERGÊNCIA",
+      "items": [
+        "Dor abdominal/lombar/flanco SÚBITA e intensa + instabilidade/síncope",
+        "A tríade clássica (dor + hipotensão + massa pulsátil) é POUCO sensível — não exigir os 3",
+        "Rotura contida retroperitoneal pode 'enganar' com estabilidade relativa",
+        "Embolização distal: dor/frieza/perda de pulso em MMII",
+        "Hematêmese/melena = suspeitar de fístula aortoentérica (sobretudo pós-reparo)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "NO PS",
+      "items": [
+        "ABCDE + monitorização + 2 acessos venosos calibrosos; avaliar choque",
+        "POCUS/US à beira-leito: confirma rapidamente o AAA (NÃO exclui rotura, mas acelera a decisão)",
+        "Laboratório: hemograma, gaso/lactato, eletrólitos/creatinina, coagulograma, TIPAGEM e prova cruzada",
+        "AngioTC (CTA) se ESTÁVEL: planeja a cirurgia (aorta toracoabdominal + vasos de acesso)",
+        "Regra prática: instável -> NÃO atrasar com TC; chamar a cirurgia vascular cedo"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONDUTA POR CENÁRIO",
+      "section_color": "orange",
+      "headers": ["Cenário", "Conduta", "Destino"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.48, 0.30],
+      "rows": [
+        ["Incidental / assintomático", "Confirmar medida + estratificar risco; sem medicação resolutiva", "Alta + vascular (prazo pelo tamanho)"],
+        ["Sintomático (dor), estável", "Urgência vascular: monitor, jejum, analgesia, AngioTC, chamar vascular", "Internar/observar"],
+        ["Rotura (rAAA)", "Hipotensão permissiva + hemoderivados + vascular imediato", "Centro cirúrgico/transferência"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONCEITO — HIPOTENSÃO PERMISSIVA (rAAA)",
+      "section_color": "purple",
+      "titulo": "NÃO 'NORMALIZAR' A PRESSÃO",
+      "items": [
+        "Manter PAS ~70-90 mmHg desde que o paciente mantenha consciência (controle de dano)",
+        "Evitar cristaloide em excesso (piora coagulopatia/sangramento) — bolus pequenos e reavaliar",
+        "Preferir HEMODERIVADOS; ativar protocolo de transfusão maciça se choque",
+        "Evitar intubação eletiva se possível (a queda do tônus simpático pode colapsar a PA)",
+        "Aquecimento ativo (evitar a tríade letal: acidose + hipotermia + coagulopatia)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PRESCRIÇÃO NO PS",
+      "section_color": "orange",
+      "titulo": "SUSPEITA DE rAAA / AAA SINTOMÁTICO",
+      "items": [
+        "Monitorização contínua + oximetria + 2 acessos calibrosos",
+        "Coletar: hemograma, gaso/lactato, eletrólitos/creatinina, coagulograma, tipagem/prova cruzada",
+        "Jejum + aquecimento ativo",
+        "Analgesia titulada: Dipirona 1g IV 6-8h; se dor forte (cautela): Fentanil 25-50 mcg IV ou Morfina 2mg IV fracionada",
+        "Antiemético: Ondansetrona 4mg IV se necessário",
+        "rAAA: evitar reposição volêmica agressiva; meta PAS 70-90 com consciência; priorizar concentrado de hemácias"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "LIMIARES DE REPARO ELETIVO (assintomático)",
+      "section_color": "teal",
+      "titulo": "QUANDO ENCAMINHAR PARA CIRURGIA",
+      "items": [
+        "Homens: considerar reparo eletivo a partir de >= 55 mm",
+        "Mulheres: limiar mais baixo (ex.: >= 50 mm pode ser considerado)",
+        "Crescimento acelerado conhecido -> avaliação vascular prioritária",
+        "Abaixo desses limites em assintomáticos: NÃO se recomenda reparo eletivo (vigilância)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR/OBSERVAR: dor atribuível ao AAA, suspeita/confirmação de rotura, instabilidade, queda de Hb, lactato alto, AAA grande/crescimento acelerado",
+        "ALTA: AAA incidental assintomático, estável, sem sinais de complicação, com encaminhamento garantido",
+        "Alta = plano + alerta + encaminhamento (não há 'analgésico do aneurisma')",
+        "Orientar cessação de tabagismo e controle de PA/risco cardiovascular",
+        "Alarme: dor súbita intensa, desmaio, palidez/sudorese fria, dor/frieza súbita em perna"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com AAA: ( ) sintomático ( ) rotura suspeita/confirmada. Dor em ___, início súbito, ± síncope/hipotensão.",
+        "POCUS: aorta ___ cm. AngioTC (se feito): ___. Hb ___; lactato ___; tipagem/prova cruzada solicitada.",
+        "Condutas: 2 acessos, analgesia, aquecimento, hipotensão permissiva (PAS 70-90), ± transfusão maciça.",
+        "Solicito avaliação vascular IMEDIATA e transferência para centro com capacidade de reparo."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Homem, 72a, tabagista, dor lombar súbita intensa e síncope; PA 80/50, massa abdominal pulsátil. Qual a conduta hemodinâmica correta?",
+      "alternativas": [
+        "Reposição volêmica agressiva com cristaloide até normalizar a PA",
+        "Hipotensão permissiva (PAS ~70-90 mantendo consciência), hemoderivados e cirurgia vascular imediata",
+        "Aguardar AngioTC antes de qualquer medida",
+        "Anticoagulação plena",
+        "Alta com analgésico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual exame é mais útil à beira-leito para confirmar rapidamente a presença de um AAA no PS?",
+      "alternativas": [
+        "Radiografia de abdome",
+        "POCUS/ultrassonografia à beira-leito",
+        "Ressonância magnética",
+        "Endoscopia digestiva",
+        "Cintilografia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre a tríade clássica de rotura de AAA (dor + hipotensão + massa pulsátil), é correto:",
+      "alternativas": [
+        "Está presente em todos os casos",
+        "É pouco sensível — muitos pacientes não apresentam os três componentes",
+        "Sua ausência exclui rotura",
+        "Só ocorre em aneurismas torácicos",
+        "É exclusiva de aneurismas infecciosos"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente com AAA incidental assintomático de 45 mm, estável. Conduta?",
+      "alternativas": [
+        "Reparo cirúrgico de urgência",
+        "Internação para observação prolongada",
+        "Alta com encaminhamento à cirurgia vascular e controle de fatores de risco; reparo eletivo não indicado nesse diâmetro",
+        "Anticoagulação plena",
+        "Trombólise"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o principal fator de risco modificável associado ao AAA?",
+      "alternativas": [
+        "Sedentarismo isolado",
+        "Tabagismo",
+        "Consumo de cafeína",
+        "Exposição solar",
+        "Dieta rica em fibras"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na rotura de AAA aplica-se hipotensão permissiva (PAS ~70-90 com consciência), evitando reposição agressiva (que agrava sangramento e coagulopatia), priorizando hemoderivados e cirurgia vascular imediata. Não atrasar com TC se instável."},
+    {"resposta": "B", "comentario": "O POCUS/US à beira-leito confirma rapidamente a presença de AAA, acelerando a decisão. Não exclui rotura (a TC define isso no estável), mas é a ferramenta inicial ideal no PS."},
+    {"resposta": "B", "comentario": "A tríade clássica é pouco sensível; muitos pacientes com rotura não a apresentam completa. Por isso, dor abdominal/lombar súbita com instabilidade em paciente de risco deve levantar a suspeita mesmo sem massa palpável."},
+    {"resposta": "C", "comentario": "AAA assintomático de 45 mm está abaixo do limiar de reparo eletivo (homens >=55 mm; mulheres >=50 mm). Conduta: alta com encaminhamento vascular para vigilância e controle de fatores de risco (cessar tabagismo)."},
+    {"resposta": "B", "comentario": "O tabagismo é o principal fator de risco modificável do AAA (associado à formação, crescimento e rotura), além de idade, HAS, aterosclerose e história familiar."}
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "slug": "pseudoaneurisma",
+  "titulo": "Pseudoaneurisma Arterial",
+  "especialidade": "CIRURGIA VASCULAR",
+  "chapter_subject": "Pseudoaneurisma no PS",
+  "chapter_bar": "PSEUDOANEURISMA — PÓS-PUNÇÃO ARTERIAL",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — MASSA PULSÁTIL PÓS-PUNÇÃO",
+      "title": "PSEUDOANEURISMA — TAMANHO E SINTOMAS GUIAM",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Massa pulsatil dolorosa no sitio de puncao\nUSG Doppler (sinal yin-yang)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.22, "y": 0.5, "w": 135, "h": 24, "text": "<2cm assint:\nexpectante +\nDoppler seriado", "color": "green", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 140, "h": 24, "text": ">=2cm / falha:\nINJECAO DE\nTROMBINA", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.8, "y": 0.5, "w": 135, "h": 26, "text": "Roto/isquemia/\ninfeccao = CIRURGIA", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CAUSAS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Coleção pulsátil de sangue FORA da parede arterial, contida por tecidos adjacentes (não tem as 3 camadas)",
+        "Causa mais comum: punção arterial (cateterismo coronário/angiografia, femoral/radial)",
+        "Outras: punções repetidas, anticoagulantes/antiagregantes, trauma vascular, infecção (raro)",
+        "Difere do aneurisma verdadeiro (que mantém a parede arterial dilatada)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO",
+      "section_color": "purple",
+      "titulo": "QUANDO SUSPEITAR",
+      "items": [
+        "Massa pulsátil dolorosa no local da punção",
+        "Sopro à ausculta; hematoma de aumento progressivo",
+        "Dor local ou irradiada",
+        "Sinais de complicação: isquemia distal, compressão nervosa, sangramento ativo",
+        "Instabilidade hemodinâmica é rara (mas possível em rotura)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "DIAGNÓSTICO E CLASSIFICAÇÃO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "DIAGNÓSTICO",
+        "items": [
+          "Exame de escolha: USG DOPPLER",
+          "Sinal do 'yin-yang' (fluxo bidirecional)",
+          "Avaliar o COLO do pseudoaneurisma e o tamanho",
+          "Complementares: AngioTC (casos complexos), arteriografia (planejamento)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "CLASSIFICAÇÃO (prática)",
+        "items": [
+          "Pequeno: < 2 cm",
+          "Médio: 2-4 cm",
+          "Grande: > 4 cm",
+          "Complicado: infecção, crescimento rápido, isquemia ou ruptura"
+        ]
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONDUTA TERAPÊUTICA",
+      "section_color": "orange",
+      "headers": ["Opção", "Indicação", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Expectante", "< 2 cm, assintomático, estável, sem anticoagulação plena", "Repouso, compressão, Doppler seriado 7-14 dias"],
+        ["Compressão guiada por USG", "2-4 cm, sintomático leve, colo estreito", "Contra: dor intensa, infecção, grande"],
+        ["Injeção de trombina", ">= 2 cm, falha da compressão, em anticoagulado, colo definido", "ESCOLHA: sucesso >95%, rápido, minimamente invasivo"],
+        ["Cirurgia", "Roto, crescimento rápido, isquemia, compressão neuro, infecção, falha percutânea", "Reparo aberto"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INJEÇÃO DE TROMBINA — TRATAMENTO DE ESCOLHA",
+      "section_color": "purple",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Alta taxa de sucesso (>95%), procedimento rápido e minimamente invasivo",
+        "Indicada para pseudoaneurismas >= 2 cm, com colo bem definido, sobretudo em anticoagulados",
+        "Contraindicações: infecção, comunicação arteriovenosa associada, alergia conhecida à trombina",
+        "Guiada por USG, injetando no saco (não no colo) para trombosar"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — INDICAÇÃO CIRÚRGICA",
+      "section_color": "red",
+      "titulo": "NÃO TENTAR PERCUTÂNEO SE",
+      "items": [
+        "Pseudoaneurisma ROTO ou com sangramento ativo / instabilidade",
+        "Crescimento rápido",
+        "Isquemia distal (monitorar pulsos)",
+        "Compressão neurológica (déficit motor/sensitivo)",
+        "Infecção local (pseudoaneurisma micótico)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CUIDADOS E SEGUIMENTO",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Revisar/ajustar anticoagulação e antiagregação",
+        "Analgesia adequada e monitorização dos pulsos distais",
+        "Curativo compressivo pós-procedimento",
+        "USG Doppler de controle conforme protocolo institucional",
+        "Orientar sinais de alerta: aumento da massa, dor intensa, sangramento"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com pseudoaneurisma ___ (sítio: femoral/radial) de ___ cm, pós-punção, anticoagulado: sim/não.",
+        "USG Doppler: yin-yang, colo ___; complicações: isquemia/compressão/infecção/rotura.",
+        "Conduta proposta: expectante / compressão / injeção de trombina / cirurgia.",
+        "Solicito avaliação da cirurgia vascular / hemodinâmica para tratamento definitivo."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente pós-cateterismo femoral com massa pulsátil dolorosa de 3 cm, em uso de dupla antiagregação, colo bem definido ao Doppler. Qual o tratamento de escolha?",
+      "alternativas": [
+        "Cirurgia aberta imediata",
+        "Injeção de trombina guiada por ultrassom",
+        "Apenas observação por 30 dias",
+        "Anticoagulação plena",
+        "Compressão manual por 5 minutos"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o exame de escolha para o diagnóstico do pseudoaneurisma arterial?",
+      "alternativas": [
+        "Radiografia",
+        "Ultrassonografia com Doppler (sinal do yin-yang)",
+        "Ressonância sem contraste",
+        "Cintilografia",
+        "Tomografia sem contraste"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual situação contraindica a injeção de trombina e indica tratamento cirúrgico?",
+      "alternativas": [
+        "Pseudoaneurisma de 2,5 cm assintomático",
+        "Infecção local, ruptura, isquemia distal ou compressão neurológica",
+        "Uso de anticoagulante",
+        "Colo bem definido",
+        "Paciente idoso"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Pseudoaneurisma de 1,5 cm, assintomático, paciente estável e sem anticoagulação plena. Conduta inicial adequada?",
+      "alternativas": [
+        "Cirurgia imediata",
+        "Conduta expectante com repouso, compressão e Doppler seriado",
+        "Injeção de trombina obrigatória",
+        "Amputação",
+        "Trombólise sistêmica"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual a principal causa de pseudoaneurisma arterial na prática hospitalar?",
+      "alternativas": [
+        "Aterosclerose",
+        "Punção arterial (cateterismo/angiografia)",
+        "Hipertensão isolada",
+        "Diabetes",
+        "Vasculite"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Pseudoaneurisma >= 2 cm, com colo definido, especialmente em anticoagulado, tem como tratamento de escolha a injeção de trombina guiada por USG (sucesso >95%, rápido e minimamente invasivo)."},
+    {"resposta": "B", "comentario": "O USG Doppler é o exame de escolha: demonstra o sinal do 'yin-yang' (fluxo bidirecional no saco), avalia o colo e o tamanho, orientando a conduta."},
+    {"resposta": "B", "comentario": "Infecção, ruptura, isquemia distal e compressão neurológica são indicações de cirurgia e contraindicam/superam o tratamento percutâneo (trombina). Anticoagulação e colo definido, ao contrário, favorecem a trombina."},
+    {"resposta": "B", "comentario": "Pseudoaneurisma < 2 cm, assintomático, estável e sem anticoagulação plena pode ser manejado de forma expectante: repouso, compressão e Doppler seriado (muitos trombosam espontaneamente)."},
+    {"resposta": "B", "comentario": "A causa mais comum de pseudoaneurisma é a punção arterial (cateterismo/angiografia, tipicamente femoral), favorecida por punções repetidas e uso de anticoagulantes/antiagregantes."}
+  ]
+}

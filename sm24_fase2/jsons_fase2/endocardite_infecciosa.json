@@ -1,0 +1,237 @@
+{
+  "slug": "endocardite_infecciosa",
+  "titulo": "Endocardite Infecciosa",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "Endocardite Infecciosa no PS",
+  "chapter_bar": "ENDOCARDITE INFECCIOSA — ADMISSÃO E MANEJO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — SUSPEITA À CONDUTA",
+      "title": "EI — HEMOCULTURAS PRIMEIRO, ECO SEMPRE",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Febre + sopro novo / fator de risco\n(protese, drogas IV, EI previa)", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 205, "h": 22, "text": "3 pares de HEMOCULTURAS + ECO (ETT->ETE)\nCriterios de Duke-ISCVID 2023", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 145, "h": 24, "text": "Estavel: aguardar\nhemocultura antes\ndo ATB", "color": "green", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 145, "h": 26, "text": "Sepse/IC/AVC:\nATB empirico JA\n(apos hemocultura)", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Infecção do endocárdio — em geral valvar (também mural, septos, cordoalhas, dispositivos)",
+        "Forma vegetações (plaquetas + fibrina + microrganismos), destrói tecido e embolize",
+        "Alta morbimortalidade: mortalidade hospitalar 15-30%",
+        "A insuficiência cardíaca é a principal causa de morte na EI"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MICROBIOLOGIA — PRINCIPAIS AGENTES",
+      "section_color": "navy",
+      "headers": ["Agente", "Freq.", "Contexto"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.14, 0.56],
+      "rows": [
+        ["S. aureus", "30-40%", "EI aguda, drogas IV, nosocomial, dispositivos"],
+        ["Streptococcus viridans", "20-30%", "EI subaguda, pós-procedimento dentário, válvula nativa"],
+        ["Enterococcus spp.", "10-15%", "Idosos, manipulação geniturinária, nosocomial"],
+        ["S. coagulase-negativo", "10-15%", "Próteses valvares, dispositivos"],
+        ["Grupo HACEK", "2-5%", "Crescimento lento, hemoculturas 'negativas'"],
+        ["Hemocultura negativa", "5-10%", "ATB prévio, Coxiella, Bartonella, Tropheryma"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — CLÍNICA VARIÁVEL",
+      "section_color": "purple",
+      "titulo": "PISTAS E FATORES DE RISCO",
+      "items": [
+        "Febre (80-90%) + sopro novo/mudança de sopro (até 85%) + fadiga/anorexia",
+        "Fenômenos embólicos (25-50%): AVC, dor em HCE (baço), hematúria, êmbolo pulmonar séptico",
+        "Periféricos clássicos (raros, <10%): Osler (doloroso, imunológico), Janeway (indolor, embólico), Roth, splinter",
+        "Alto risco: prótese valvar, EI prévia, cardiopatia congênita cianótica, dispositivo intracardíaco",
+        "Outros: drogas IV (risco 30-40x), hemodiálise, CVC, DM, má higiene oral"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CRITÉRIOS DE DUKE-ISCVID 2023",
+      "section_color": "navy",
+      "headers": ["Categoria", "Maiores (microbiológico/imagem/cirúrgico)", "Menores (7)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.44, 0.38],
+      "rows": [
+        ["Definitiva", "2 maiores OU 1 maior + 3 menores OU 5 menores", "Predisposição; febre >38; fenômeno vascular; fenômeno imunológico; microbiológico menor; PET-CT; nova regurgitação"],
+        ["Possível", "1 maior + 1 menor OU 3 menores", "(mesma lista de menores)"],
+        ["Rejeitada", "Dx alternativo OU resolução com ATB <4 dias OU não preenche", "—"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "EXAMES — HEMOCULTURAS E ECO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "HEMOCULTURAS (essencial!)",
+        "items": [
+          "3 pares ANTES do ATB, técnica asséptica",
+          "Sítios diferentes, intervalo 15-30 min",
+          "Informar laboratório: suspeita de EI (HACEK)",
+          "Positividade 85-95% se sem ATB prévio",
+          "ATB prévio = causa importante de hemocultura negativa"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "ECOCARDIOGRAMA",
+        "items": [
+          "ETT primeiro (sens. 60-70%), nas 12-24h",
+          "ETE = padrão-ouro (sens. 90-100%)",
+          "ETE se: ETT neg + alta suspeita, prótese, dispositivo, complicações",
+          "Achados: vegetação, abscesso, pseudoaneurisma, deiscência, nova regurgitação",
+          "Repetir ETE em 5-7 dias se negativo e suspeita persiste"
+        ]
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIOTICOTERAPIA EMPÍRICA INICIAL",
+      "section_color": "orange",
+      "headers": ["Cenário", "Esquema empírico"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Válvula nativa, comunitária", "Ampicilina-sulbactam 3g IV 6/6h + Gentamicina 3 mg/kg/dia IV (alt.: Vanco + Genta + Ceftriaxona)"],
+        ["Usuário de drogas IV (válvula direita)", "Vancomicina 15-20 mg/kg IV 12/12h + Gentamicina 3 mg/kg/dia (± Ceftriaxona 2g/dia)"],
+        ["Prótese valvar / nosocomial", "Vancomicina 15-20 mg/kg 12/12h + Gentamicina 3 mg/kg/dia + Rifampicina 300mg 8/8h"],
+        ["Alergia à vancomicina", "Daptomicina 10-12 mg/kg IV 1x/dia"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO INICIAR ATB x AGUARDAR",
+      "section_color": "red",
+      "titulo": "DECISÃO CRÍTICA",
+      "items": [
+        "Iniciar ATB empírico IMEDIATAMENTE (após hemoculturas) se: sepse/choque, instabilidade, IC aguda, AVC/déficit neurológico agudo",
+        "AGUARDAR resultado das hemoculturas se o paciente está ESTÁVEL (melhora a acurácia diagnóstica e o direcionamento)",
+        "ANTICOAGULAÇÃO é CONTRAINDICADA na EI (aumenta risco de hemorragia/transformação de AVC)",
+        "AVC embólico: NÃO fazer trombólise (risco de transformação hemorrágica)",
+        "Todos os pacientes com EI devem ser INTERNADOS (ATB IV 4-6 semanas)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "INDICAÇÕES CIRÚRGICAS (30-50% dos casos)",
+      "section_color": "orange",
+      "titulo": "CIRURGIA URGENTE — CLASSE I",
+      "items": [
+        "1. IC por regurgitação aguda grave, obstrução valvar ou deiscência de prótese (mais comum)",
+        "2. Infecção não controlada: abscesso perivalvar, fístula, febre persistente >5-7 dias com ATB adequado",
+        "3. Microrganismo difícil: fungo, MRSA/VRE, multirresistente",
+        "4. Prevenção de embolia: vegetação >10mm com embolia prévia, ou >15mm em válvula mitral",
+        "Suspeitar de abscesso perivalvar se BAV novo ou febre persistente -> ETE/TC cardíaca"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "MONITORIZAÇÃO E INTERNAÇÃO",
+      "titulo": "ACOMPANHAMENTO",
+      "items": [
+        "Internação SEMPRE; UTI se IC descompensada, choque, BAV alto grau, AVC ou cirurgia urgente",
+        "Hemoculturas de controle 48-72h após início do ATB (devem negativar)",
+        "ECG diário (detectar BAV novo = abscesso); ecocardiograma semanal ou se piora",
+        "Função renal e hemograma 2-3x/semana; vancocinemia (vale 15-20); CPK se daptomicina",
+        "Alta só após completar ATB IV (4-6 sem); OPAT apenas em casos muito selecionados e estáveis"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com EI (definitiva/possível por Duke): febre + ___ (sopro novo / fenômeno embólico / vegetação ao eco).",
+        "Hemoculturas coletadas (3 pares) às ___; ATB empírico iniciado: sim/não (motivo).",
+        "Complicações: IC / abscesso (BAV) / embolia / sepse. Necessita ___ (UTI / cirurgia cardíaca / vaga).",
+        "Anticoagulação suspensa (contraindicada). Solicito avaliação de cardiologia + infectologia + cirurgia cardíaca."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente estável com suspeita de endocardite subaguda. Qual a conduta correta quanto ao antibiótico?",
+      "alternativas": [
+        "Iniciar antibiótico empírico imediatamente, antes das hemoculturas",
+        "Coletar 3 pares de hemoculturas e, se estável, aguardar o resultado antes do ATB para melhor acurácia",
+        "Não colher hemoculturas se o foco for evidente",
+        "Iniciar anticoagulação plena",
+        "Dar alta com antibiótico oral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual exame é o padrão-ouro para visualização de vegetações e complicações na endocardite, especialmente em próteses?",
+      "alternativas": [
+        "Ecocardiograma transtorácico (ETT)",
+        "Ecocardiograma transesofágico (ETE)",
+        "Radiografia de tórax",
+        "Eletrocardiograma",
+        "Cintilografia óssea"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente com endocardite e AVC embólico agudo. Qual conduta é CORRETA?",
+      "alternativas": [
+        "Realizar trombólise imediatamente",
+        "Iniciar anticoagulação plena para prevenir novos êmbolos",
+        "NÃO trombolisar nem anticoagular plenamente (risco de transformação hemorrágica); TC de crânio e estabilizar",
+        "Suspender o antibiótico",
+        "Alta hospitalar precoce"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é a principal causa de morte na endocardite infecciosa e principal indicação de cirurgia urgente?",
+      "alternativas": [
+        "Embolia esplênica",
+        "Insuficiência cardíaca (regurgitação valvar aguda)",
+        "Glomerulonefrite",
+        "Anemia",
+        "Febre persistente isolada"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Surgimento de bloqueio atrioventricular novo durante o tratamento de endocardite deve levantar suspeita de:",
+      "alternativas": [
+        "Hipocalemia",
+        "Abscesso perivalvar com extensão perianular",
+        "Efeito do antibiótico",
+        "Pericardite associada",
+        "Embolia pulmonar"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No paciente ESTÁVEL com suspeita de EI subaguda, coletam-se 3 pares de hemoculturas e aguarda-se o resultado antes do ATB, melhorando a acurácia e o direcionamento. ATB empírico imediato (pós-hemocultura) reserva-se a sepse/IC/instabilidade."},
+    {"resposta": "B", "comentario": "O ETE é o padrão-ouro (sensibilidade 90-100%), indicado especialmente em prótese, dispositivos, ETT negativo com alta suspeita e avaliação de complicações (abscesso, perfuração). O ETT é a primeira linha, mas menos sensível."},
+    {"resposta": "C", "comentario": "Na EI com AVC embólico, NÃO se faz trombólise (alto risco de transformação hemorrágica) e a anticoagulação plena é contraindicada. Faz-se TC de crânio, estabiliza-se e considera-se cirurgia cardíaca após avaliação neurológica."},
+    {"resposta": "B", "comentario": "A insuficiência cardíaca por regurgitação valvar aguda é a principal causa de morte na EI e a principal indicação de cirurgia urgente (classe I), junto a infecção não controlada e prevenção de embolia."},
+    {"resposta": "B", "comentario": "BAV novo durante a EI sugere extensão perianular da infecção com abscesso perivalvar (proximidade do sistema de condução). Investiga-se com ETE/TC cardíaca; geralmente exige cirurgia."}
+  ]
+}
