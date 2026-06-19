@@ -1,0 +1,210 @@
+{
+  "slug": "doenca_renal_cronica",
+  "titulo": "Doença Renal Crônica — Agudização",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "DRC agudizada no PS",
+  "chapter_bar": "DOENÇA RENAL CRÔNICA — COMPLICAÇÕES NO PS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DRC NO PS",
+      "title": "DRC — TRATAR AS COMPLICAÇÕES AGUDAS",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "DRC (TFG<60 ou lesao renal >3 meses)\navaliar complicacao aguda + estado volemico", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.2, "y": 0.5, "w": 135, "h": 24, "text": "Hipercalemia /\nacidose ->\ntratar + ECG", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 24, "text": "Sobrecarga\nvolemica ->\nfurosemida", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.8, "y": 0.5, "w": 135, "h": 24, "text": "Uremia (encef./\npericardite) ->\ndialise", "color": "purple", "font_size": 5.8},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Refratario / K>7 / EAP -> HEMODIALISE de urgencia", "color": "red", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["b", "e"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Anormalidade de estrutura ou função renal por > 3 meses",
+        "Critério: TFG < 60 mL/min/1,73m2 (CKD-EPI 2021) OU albuminúria >= 30 mg/g OU outra lesão renal",
+        "Principais etiologias: HAS, DM, doença renal policística (DRPAD), glomerulopatias",
+        "No PS, o foco é tratar as COMPLICAÇÕES AGUDAS e reconhecer urgências dialíticas"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — SINTOMAS URÊMICOS E VOLEMIA",
+      "section_color": "purple",
+      "titulo": "ANAMNESE E EXAME",
+      "items": [
+        "Sintomas urêmicos: náuseas/vômitos, anorexia, prurido, alteração do nível de consciência, sabor metálico",
+        "Sobrecarga volêmica: dispneia, ortopneia, edema, turgência jugular, estertores",
+        "Débito urinário (oligúria/anúria); exposições recentes (contraste, AINE, antibióticos)",
+        "Exame: estado volêmico, ASTERIXIS, atrito pericárdico (pericardite urêmica), palidez (anemia)",
+        "Buscar o fator de agudização (sepse, hipovolemia, nefrotóxico, obstrução)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES",
+      "section_color": "navy",
+      "titulo": "SOLICITAR",
+      "items": [
+        "Função renal: ureia, creatinina, TFG estimada (CKD-EPI 2021)",
+        "Eletrólitos: Na, K, Cl, Ca, fósforo, Mg; gasometria (acidose)",
+        "Hemograma (anemia), urina I, relação albumina/creatinina, glicemia",
+        "USG de rins e vias urinárias (tamanho renal, hidronefrose/obstrução)",
+        "ECG: hipercalemia (T apiculada, alargamento de QRS, bloqueios). Conforme clínica: PTH, vitamina D, sorologias"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — HIPERCALEMIA",
+      "section_color": "red",
+      "titulo": "K > 5,5 (estabilizar -> redistribuir -> eliminar)",
+      "items": [
+        "Estabilização cardíaca (K > 6,5 ou alteração no ECG): Gluconato de cálcio 10% 10-20 mL EV em 5-20 min",
+        "Redistribuição: Insulina regular 10 UI EV + glicose 50% 100 mL; Salbutamol inalatório 6 puffs",
+        "  Bicarbonato de sódio 8,4% 50-100 mEq EV (se acidose associada)",
+        "Eliminação: Furosemida 40-80 mg EV (se diurese preservada); resina (poliestireno sulfonato)",
+        "  Ciclossilicato de zircônio (Lokelma) 10 g VO 3x/dia até 48h, depois 5-10 g/dia",
+        "HEMODIÁLISE de urgência se refratário ou K > 7,0"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO — ACIDOSE, VOLEMIA, ANEMIA, UREMIA",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "ACIDOSE / SOBRECARGA",
+        "items": [
+          "Acidose (HCO3 < 18): Bicarbonato 8,4% 50-100 mEq EV",
+          "  Meta HCO3 18-22 (não ultrapassar a normalidade)",
+          "Sobrecarga: Furosemida 40-100 mg EV (ou BIC contínua se refratário)",
+          "EAP refratário -> hemodiálise de urgência",
+          "Suspender AINE e nefrotóxicos"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "ANEMIA / SINTOMAS URÊMICOS",
+        "items": [
+          "Anemia: investigar/tratar ferropenia (sulfato ferroso ou ferro EV)",
+          "Transfundir se Hb < 7 ou sintomático; ESA via nefrologia",
+          "Sintomas urêmicos: antieméticos (metoclopramida/ondansetrona)",
+          "Diálise de urgência se: encefalopatia urêmica, pericardite urêmica,",
+          "  sintomas refratários ao tratamento clínico"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO / URGÊNCIA DIALÍTICA",
+      "section_color": "red",
+      "titulo": "INTERNAR SE",
+      "items": [
+        "Hipercalemia grave (K > 6,5) ou refratária; acidose grave (pH < 7,2 ou HCO3 < 15)",
+        "Sobrecarga volêmica com edema pulmonar; sintomas urêmicos graves (encefalopatia, pericardite, pleurite)",
+        "Anúria/oligúria persistente; instabilidade; necessidade de hemodiálise de urgência",
+        "Declínio agudo da função renal (> 25% da TFG basal); DRC G4-G5 com complicações não controladas",
+        "Mnemônico de diálise de urgência (AEIOU): Acidose, Eletrólitos (K), Intoxicação, Overload (volume), Uremia"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA E ORIENTAÇÕES",
+      "titulo": "ALTA SE",
+      "items": [
+        "Estabilidade hemodinâmica; K <= 5,5; HCO3 > 18; sem sobrecarga; sem sintomas urêmicos",
+        "Dieta: restrição de sódio (<2g/dia), de potássio (se hiperK) e de fósforo; proteína ~0,8 g/kg/dia",
+        "Suspender AINE/nefrotóxicos; evitar contraste sem orientação; iSGLT2 conforme indicação (TFG>20, albuminúria)",
+        "Monitorar peso e PA em casa; controle glicêmico (HbA1c <= 7% se DM)",
+        "Retorno: dispneia/edema progressivo, queda do volume urinário, vômitos persistentes, confusão, dor torácica"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "DRC estágio ___ (pré-dialítico/dialítico) agudizada por ___ (sepse/hipovolemia/contraste/obstrução).",
+        "K ___; HCO3 ___; creatinina ___; débito urinário ___; acesso vascular (se dialítico): ___.",
+        "Condutas: gluconato de cálcio / insulina+glicose / furosemida / bicarbonato. Evitar punção no membro da fístula!",
+        "Solicito hemodiálise de urgência / avaliação nefrológica / manejo de hipercalemia refratária."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com DRC G5, K 7,2 mEq/L e onda T apiculada no ECG. Qual a PRIMEIRA medida?",
+      "alternativas": [
+        "Resina de troca por via oral isoladamente",
+        "Gluconato de cálcio EV para estabilização da membrana miocárdica",
+        "Furosemida em dose alta isolada",
+        "Bicarbonato oral",
+        "Aguardar a hemodiálise sem medidas"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quais são indicações de hemodiálise de urgência (mnemônico AEIOU)?",
+      "alternativas": [
+        "Apenas creatinina elevada",
+        "Acidose grave, distúrbios eletrolíticos (hipercalemia) refratários, intoxicações, sobrecarga volêmica e uremia (encefalopatia/pericardite)",
+        "Apenas anemia",
+        "Hipertensão controlada",
+        "Proteinúria isolada"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual conduta medicamentosa deve ser SUSPENSA no paciente com DRC agudizada?",
+      "alternativas": [
+        "Bicarbonato de sódio",
+        "AINEs e demais nefrotóxicos",
+        "Sulfato ferroso",
+        "Furosemida",
+        "Quelante de potássio"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual achado indica pericardite urêmica e necessidade de diálise?",
+      "alternativas": [
+        "Sopro sistólico",
+        "Atrito pericárdico em paciente urêmico",
+        "Edema de membros inferiores isolado",
+        "Hipertensão leve",
+        "Anemia ferropriva"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "No acesso venoso de paciente com DRC dialítico, qual cuidado é essencial?",
+      "alternativas": [
+        "Puncionar preferencialmente o membro da fístula arteriovenosa",
+        "Evitar puncionar o membro da fístula arteriovenosa",
+        "Usar sempre acesso intraósseo",
+        "Não obter acesso venoso",
+        "Puncionar a fístula para infusão de medicações"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Com K > 6,5 e alteração no ECG, a primeira medida é o gluconato de cálcio EV (estabiliza a membrana miocárdica, protegendo contra arritmia), seguido de insulina+glicose e salbutamol (redistribuição) e medidas de eliminação/diálise."},
+    {"resposta": "B", "comentario": "As indicações de diálise de urgência (AEIOU): Acidose refratária, Eletrólitos (hipercalemia refratária), Intoxicações dialisáveis, Overload (sobrecarga volêmica/EAP refratário) e Uremia (encefalopatia/pericardite)."},
+    {"resposta": "B", "comentario": "AINEs e demais nefrotóxicos devem ser suspensos na DRC agudizada, pois agravam a lesão renal. Mantêm-se as medidas de suporte (bicarbonato, furosemida, quelantes, ferro) conforme a indicação."},
+    {"resposta": "B", "comentario": "O atrito pericárdico em paciente urêmico indica pericardite urêmica — uma das indicações de diálise de urgência (componente 'U' do AEIOU), pelo risco de tamponamento."},
+    {"resposta": "B", "comentario": "Deve-se EVITAR puncionar o membro da fístula arteriovenosa (risco de trombose/infecção do acesso vital para a diálise). Usa-se o membro contralateral ou outro acesso."}
+  ]
+}

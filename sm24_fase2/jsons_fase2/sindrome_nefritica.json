@@ -1,0 +1,182 @@
+{
+  "slug": "sindrome_nefritica",
+  "titulo": "Síndrome Nefrítica",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Síndrome Nefrítica no PS",
+  "chapter_bar": "SÍNDROME NEFRÍTICA — INFLAMAÇÃO GLOMERULAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "NEFRÍTICA — HEMATÚRIA + HAS + EDEMA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Hematuria + HAS + edema + oliguria\n+ proteinuria leve-moderada", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 205, "h": 20, "text": "Funcao renal + EAS + complemento + autoanticorpos", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.25, "w": 145, "h": 24, "text": "Controlar PA/volume\n+ tratar causa\n(IECA/BRA, diuretico)", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.25, "w": 150, "h": 24, "text": "Queda rapida da\nfuncao = GNRP\n(emergencia/biopsia)", "color": "red", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Glomerulopatia marcada pela INFLAMAÇÃO glomerular",
+        "Cursa com hematúria, proteinúria, redução da TFG e hipertensão",
+        "Causas principais: pós-infecciosa (estreptococo), GNRP, doenças autoimunes (lúpus, vasculites), nefropatia por IgA",
+        "Diferente da nefrótica (que é por lesão da barreira de filtração, com proteinúria maciça)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO",
+      "section_color": "purple",
+      "titulo": "APRESENTAÇÃO",
+      "items": [
+        "Hematúria: urina cor de 'coca-cola' ou 'água de carne' (dismórfica, cilindros hemáticos)",
+        "Proteinúria leve a moderada (subnefrótica)",
+        "Oligúria e hipertensão arterial",
+        "Edema geralmente DISCRETO, com predomínio em face e pálpebras pela MANHÃ",
+        "Pós-estreptocócica: 1-3 semanas após faringite/piodermite, com C3 baixo"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "EXAMES — ESSENCIAIS x ETIOLÓGICOS",
+      "section_color": "navy",
+      "headers": ["Essenciais", "Etiológicos (variáveis)"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.50, 0.50],
+      "rows": [
+        ["Hemograma, função renal, eletrólitos", "Sorologia para estreptococo (ASLO) e hepatites"],
+        ["Gasometria", "Autoanticorpos: FAN, anti-DNA, ANCA"],
+        ["Sumário de urina (hematúria dismórfica)", "Complemento C3 e C4 (C3 baixo na pós-infecciosa/lúpus)"],
+        ["Proteinúria (isolada ou 24h), creatinina urinária", "Biópsia renal se dúvida/curso atípico/perda de função"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — QUANDO PENSAR EM GNRP",
+      "section_color": "red",
+      "titulo": "PERDA ACELERADA DE FUNÇÃO",
+      "items": [
+        "Queda rápida da TFG (dias-semanas) = suspeitar de glomerulonefrite rapidamente progressiva (GNRP) — emergência",
+        "Cilindros hemáticos + creatinina em ascensão acelerada",
+        "Sinais sistêmicos de vasculite (hemoptise, púrpura, artrite) -> síndrome pulmão-rim",
+        "Hipertensão grave/emergência hipertensiva, sobrecarga volêmica (EAP), hipercalemia",
+        "Esses casos exigem internação, biópsia precoce e avaliação nefrológica urgente"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS",
+      "section_color": "orange",
+      "titulo": "CONTROLE + CAUSA + COMPLICAÇÕES",
+      "items": [
+        "Controle pressórico e do volume: anti-hipertensivos (IECA/BRA) + diuréticos para edema/sobrecarga",
+        "Tratar a causa: antibiótico se glomerulonefrite pós-infecciosa/bacteriana ativa",
+        "  imunossupressores (corticoide ± ciclofosfamida) nas autoimunes/vasculites — com nefrologia",
+        "Manejo das complicações: corrigir distúrbios hidroeletrolíticos; tratar IRA",
+        "Dieta: restrição moderada de sódio; ajustar proteína; controlar K e fósforo se disfunção renal",
+        "Acompanhamento com nefrologia"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA E PRESCRIÇÃO PARA CASA",
+      "titulo": "ALTA SE",
+      "items": [
+        "Estabilidade hemodinâmica e volemia ajustada",
+        "Causa subjacente identificada e em tratamento",
+        "Sem sinais de GNRP / perda acelerada de função / complicação grave",
+        "Casa: diurético + IECA/BRA (se tolerar) + tratamento específico da causa",
+        "Acompanhamento precoce com nefrologia garantido"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Síndrome nefrítica: hematúria + HAS + edema + oligúria; proteinúria subnefrótica.",
+        "Creatinina ___ (prévia ___); C3/C4 ___; autoanticorpos ___; contexto infeccioso: ___.",
+        "Conduta: controle pressórico/volume + tratamento da causa.",
+        "Sinais de GNRP? Se sim, solicito internação/biópsia e avaliação nefrológica URGENTE."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Criança com urina cor de coca-cola, edema palpebral matinal, hipertensão e história de faringite há 2 semanas. Diagnóstico provável?",
+      "alternativas": [
+        "Síndrome nefrótica",
+        "Glomerulonefrite difusa aguda pós-estreptocócica (síndrome nefrítica)",
+        "Infecção urinária",
+        "Litíase renal",
+        "Necrose tubular aguda"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado urinário é característico da síndrome nefrítica?",
+      "alternativas": [
+        "Proteinúria maciça (> 3,5 g/dia) isolada",
+        "Hematúria dismórfica com cilindros hemáticos e proteinúria subnefrótica",
+        "Glicosúria",
+        "Cilindros graxos",
+        "Urina límpida sem alterações"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual exame ajuda na etiologia da síndrome nefrítica (baixo na pós-infecciosa e no lúpus)?",
+      "alternativas": [
+        "Ácido úrico",
+        "Complemento (C3 e C4)",
+        "TSH",
+        "Amilase",
+        "CPK"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente com síndrome nefrítica e creatinina subindo rapidamente em dias. O que essa evolução sugere?",
+      "alternativas": [
+        "Resolução espontânea",
+        "Glomerulonefrite rapidamente progressiva (GNRP) — emergência, indicar internação e biópsia",
+        "Síndrome nefrótica pura",
+        "Cistite",
+        "Desidratação simples"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual o objetivo do tratamento no PS da síndrome nefrítica?",
+      "alternativas": [
+        "Apenas analgesia",
+        "Controle da pressão/volume, tratamento da causa e manejo das complicações",
+        "Diálise de rotina em todos",
+        "Antibiótico para todos os casos",
+        "Restrição hídrica absoluta isolada"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Hematúria macroscópica (coca-cola), edema palpebral matinal e HAS 1-3 semanas após faringite caracterizam a glomerulonefrite pós-estreptocócica, forma clássica de síndrome nefrítica (com C3 consumido)."},
+    {"resposta": "B", "comentario": "A síndrome nefrítica cursa com hematúria dismórfica (origem glomerular), cilindros hemáticos e proteinúria subnefrótica. Proteinúria maciça com cilindros graxos é da síndrome nefrótica."},
+    {"resposta": "B", "comentario": "A dosagem de complemento (C3/C4) auxilia a etiologia: o C3 está baixo na glomerulonefrite pós-infecciosa e na nefrite lúpica, orientando a investigação."},
+    {"resposta": "B", "comentario": "Síndrome nefrítica com queda acelerada da função renal (dias-semanas) sugere GNRP — emergência nefrológica que requer internação, biópsia precoce e considerar pulsoterapia."},
+    {"resposta": "B", "comentario": "No PS, trata-se a síndrome nefrítica controlando pressão e volume (IECA/BRA, diuréticos), tratando a causa subjacente e manejando complicações (distúrbios hidroeletrolíticos, IRA)."}
+  ]
+}

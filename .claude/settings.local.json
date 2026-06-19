@@ -44,7 +44,10 @@
       "Bash(sips -s format png apostila_celulite_facial.pdf --out /tmp/cel_chk.png)",
       "Bash(sips -s format png apostila_drge.pdf --out /tmp/drge_chk.png)",
       "Bash(sips -s format png apostila_faringoamigdalite_aguda.pdf --out /tmp/far2_chk.png)",
-      "Bash(sips -s format png apostila_angina_ludwig.pdf --out /tmp/ang_chk.png)"
+      "Bash(sips -s format png apostila_angina_ludwig.pdf --out /tmp/ang_chk.png)",
+      "Bash(cd /Users/joaofelipescheidt/ProjetoClaudeCode/sm24_fase2)",
+      "Bash(sips -s format png apostila_disturbios_acido_base.pdf --out /tmp/ab_chk.png)",
+      "Bash(sips -s format png apostila_disturbios_calcio.pdf --out /tmp/ca_chk.png)"
     ]
   }
 }

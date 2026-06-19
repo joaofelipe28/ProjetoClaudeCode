@@ -1,0 +1,196 @@
+{
+  "slug": "nefrite_intersticial_aguda",
+  "titulo": "Nefrite Intersticial Aguda (NIA)",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "NIA no PS",
+  "chapter_bar": "NEFRITE INTERSTICIAL AGUDA (NIA)",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — IRA SEM CAUSA EVIDENTE",
+      "title": "NIA — PENSAR EM IRA + MEDICAMENTO NOVO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "IRA sem causa pre-renal/obstrutiva\n+ medicamento novo (2-8 semanas)?", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 205, "h": 22, "text": "EAS: leucocituria esteril +/- cilindros leucocitarios\nproteinuria < 1 g/dia", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.28, "w": 205, "h": 22, "text": "SUSPENDER o agente suspeito + suporte\n+/- corticoide (com nefro)", "color": "red", "font_size": 5.6},
+        {"id": "d", "x": 0.5, "y": 0.08, "w": 200, "h": 16, "text": "Biopsia = padrao-ouro (nao rotineira no PS)", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Causa de IRA por inflamação do INTERSTÍCIO renal e túbulos, geralmente IMUNOMEDIADA",
+        "Frequentemente associada a MEDICAMENTOS",
+        "Diagnóstico importante e potencialmente REVERSÍVEL de IRA",
+        "Considerar em TODO paciente com IRA sem causa pré-renal ou obstrutiva evidente"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS",
+      "section_color": "navy",
+      "headers": ["Grupo", "Exemplos"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Medicamentosa (> 70%)", "Antibióticos (betalactâmicos, sulfas, rifampicina), AINEs, INIBIDORES DE BOMBA DE PRÓTONS, diuréticos"],
+        ["Infecções", "Bacterianas e virais"],
+        ["Doenças sistêmicas", "Sarcoidose, lúpus, Sjögren"],
+        ["Idiopática", "Sem causa identificada"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR",
+      "section_color": "purple",
+      "titulo": "ANAMNESE E ACHADOS",
+      "items": [
+        "Uso recente de novos medicamentos (últimas 2-8 semanas); AINE/IBP crônicos",
+        "Tríade clássica (febre + rash + artralgia) é POUCO frequente — sua ausência NÃO exclui NIA",
+        "Oligúria ou alteração recente do volume urinário",
+        "EAS: LEUCOCITÚRIA ESTÉRIL (sugestiva), CILINDROS LEUCOCITÁRIOS (fortemente sugestivos), proteinúria < 1 g/dia",
+        "Eosinofilia/eosinofilúria: baixa sensibilidade e especificidade — ausência não afasta o diagnóstico"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES E DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "INVESTIGAÇÃO",
+      "items": [
+        "Creatinina e ureia seriadas; urina I (EAS); proteinúria quantificada",
+        "Hemograma (eosinofilia pode ocorrer); eletrólitos",
+        "USG de rins e vias urinárias (excluir obstrução)",
+        "Diagnóstico é predominantemente CLÍNICO",
+        "Biópsia renal = padrão-ouro, mas NÃO rotineira no PS (indicar se dúvida, falha de recuperação ou IRA grave sem causa)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS",
+      "section_color": "orange",
+      "titulo": "O MAIS IMPORTANTE: SUSPENDER O AGENTE",
+      "items": [
+        "1. SUSPENDER IMEDIATAMENTE o agente suspeito (AINE, antibiótico, IBP, outros)",
+        "2. Corrigir distúrbios hidroeletrolíticos; SF 0,9% conforme volemia (evitar sobrecarga)",
+        "3. Evitar outros nefrotóxicos; monitorização laboratorial seriada (Cr, ureia, eletrólitos, EAS)",
+        "4. CORTICOIDE (com nefrologia): se suspeita clínica forte E persistência da IRA após suspender o agente",
+        "   Prednisona 0,5-1 mg/kg/dia VO (máx 60 mg/dia), 2-4 semanas com desmame",
+        "   Iniciar preferencialmente em 7-14 dias do diagnóstico (melhor recuperação renal)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "INTERNAR SE",
+      "items": [
+        "IRA estágio 2 ou 3 (KDIGO)",
+        "Distúrbios hidroeletrolíticos graves (ex.: hipercalemia)",
+        "Oligúria persistente",
+        "Necessidade de biópsia renal",
+        "Impossibilidade de seguimento ambulatorial"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CRITÉRIOS DE ALTA",
+      "titulo": "ALTA SE",
+      "items": [
+        "IRA leve e estável",
+        "Agente causal identificado e SUSPENSO",
+        "Creatinina em tendência de melhora",
+        "Acompanhamento nefrológico garantido",
+        "Orientar o paciente a evitar a reexposição ao agente causal (anotar alergia/intolerância)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Suspeita de NIA: IRA sem causa pré-renal/obstrutiva + uso recente de ___ (medicamento suspeito).",
+        "EAS: leucocitúria estéril / cilindros leucocitários / proteinúria < 1 g/dia. Creatinina ___.",
+        "Conduta: agente SUSPENSO + suporte; corticoide considerado (com nefrologia).",
+        "Solicito internação/avaliação nefrológica para investigação avançada e eventual biópsia."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com IRA, iniciou omeprazol e ibuprofeno há 3 semanas, EAS com leucocitúria estéril e cilindros leucocitários, proteinúria 0,6 g/dia. Conduta mais importante?",
+      "alternativas": [
+        "Manter as medicações e observar",
+        "Suspender imediatamente os agentes suspeitos e dar suporte, considerando corticoide com nefrologia",
+        "Iniciar antibiótico para infecção urinária",
+        "Indicar diálise crônica",
+        "Aumentar a dose do AINE"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a causa MAIS comum de nefrite intersticial aguda?",
+      "alternativas": [
+        "Infecciosa",
+        "Medicamentosa (> 70%)",
+        "Sarcoidose",
+        "Lúpus",
+        "Idiopática"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado urinário é fortemente sugestivo de NIA?",
+      "alternativas": [
+        "Cilindros hemáticos",
+        "Leucocitúria estéril com cilindros leucocitários e proteinúria < 1 g/dia",
+        "Proteinúria maciça (> 3,5 g/dia)",
+        "Glicosúria isolada",
+        "Cristais de oxalato"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a eosinofilia/eosinofilúria na NIA, é correto:",
+      "alternativas": [
+        "Sua ausência exclui o diagnóstico",
+        "Têm baixa sensibilidade e especificidade; a ausência NÃO afasta NIA",
+        "Confirmam o diagnóstico isoladamente",
+        "São obrigatórias para o diagnóstico",
+        "Indicam glomerulonefrite"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando indicar corticoide na NIA?",
+      "alternativas": [
+        "Em todos os casos, imediatamente",
+        "Suspeita clínica forte com persistência da IRA após suspensão do agente, idealmente em 7-14 dias, com nefrologia",
+        "Nunca",
+        "Apenas após 3 meses",
+        "Somente se houver febre"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "IRA com leucocitúria estéril e cilindros leucocitários após início de IBP/AINE é típica de NIA. A medida mais importante é SUSPENDER imediatamente os agentes suspeitos e dar suporte; corticoide se a IRA persistir (com nefrologia)."},
+    {"resposta": "B", "comentario": "A causa mais comum de NIA é medicamentosa (> 70%): antibióticos (betalactâmicos, sulfas, rifampicina), AINEs, inibidores de bomba de prótons e diuréticos."},
+    {"resposta": "B", "comentario": "Leucocitúria estéril (sugestiva), cilindros leucocitários (fortemente sugestivos) e proteinúria < 1 g/dia compõem o padrão típico da NIA. Cilindros hemáticos sugerem glomerulonefrite; proteinúria maciça, nefrótica."},
+    {"resposta": "B", "comentario": "Eosinofilia e eosinofilúria têm baixa sensibilidade e especificidade na NIA; sua ausência NÃO exclui o diagnóstico, que é predominantemente clínico (com biópsia como padrão-ouro quando necessária)."},
+    {"resposta": "B", "comentario": "O corticoide (prednisona 0,5-1 mg/kg/dia) é indicado na suspeita clínica forte com persistência da IRA após suspender o agente, idealmente iniciado em 7-14 dias para melhor recuperação renal, com a nefrologia."}
+  ]
+}

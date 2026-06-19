@@ -1,0 +1,199 @@
+{
+  "slug": "disturbios_acido_base",
+  "titulo": "Distúrbios Ácido-Base — Interpretação da Gasometria",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Gasometria e distúrbios ácido-base no PS",
+  "chapter_bar": "DISTÚRBIOS ÁCIDO-BASE — GASOMETRIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — LEITURA SISTEMÁTICA",
+      "title": "GASOMETRIA — pH PRIMEIRO, DEPOIS CO2 e HCO3",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 20, "text": "1o passo: avaliar o pH (arterial = diagnostico)", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.25, "y": 0.6, "w": 145, "h": 22, "text": "pH < 7,35 = ACIDOSE\nver pCO2 e HCO3", "color": "red", "font_size": 6.0},
+        {"id": "c", "x": 0.75, "y": 0.6, "w": 145, "h": 22, "text": "pH > 7,45 = ALCALOSE\nver pCO2 e HCO3", "color": "teal", "font_size": 6.0},
+        {"id": "d", "x": 0.25, "y": 0.28, "w": 150, "h": 24, "text": "pCO2>45 = respiratoria\nHCO3<22 = metabolica\n(metab: calcular AG)", "color": "orange", "font_size": 5.6},
+        {"id": "e", "x": 0.75, "y": 0.28, "w": 150, "h": 24, "text": "pCO2<35 = respiratoria\nHCO3>26 = metabolica\n(checar compensacao)", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CONCEITO BASE",
+      "section_color": "teal",
+      "titulo": "SISTEMA TAMPÃO E GASOMETRIA",
+      "items": [
+        "Equilíbrio: CO2 + H2O <-> H2CO3 <-> HCO3- + H+ (desloca-se conforme a necessidade)",
+        "Gasometria descreve pH, pO2, pCO2 e bicarbonato",
+        "Sangue ARTERIAL = diagnóstico de distúrbios | VENOSO = acompanhamento",
+        "1o parâmetro SEMPRE é o pH; depois pCO2 (respiratório) e HCO3 (metabólico)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "OS 4 DISTÚRBIOS SIMPLES",
+      "section_color": "navy",
+      "headers": ["Distúrbio", "pH", "Alteração primária / causas"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.14, 0.62],
+      "rows": [
+        ["Acidose respiratória", "baixo", "pCO2 > 45 — retenção de CO2: DPOC, asma, neuromusculares (Guillain-Barré, miastenia)"],
+        ["Acidose metabólica", "baixo", "HCO3 < 22 — perda de HCO3, retenção/ganho de ácidos (calcular ânion gap)"],
+        ["Alcalose respiratória", "alto", "pCO2 < 35 — hiperventilação: ansiedade, dor, VM excessiva"],
+        ["Alcalose metabólica", "alto", "HCO3 > 26 — acúmulo de HCO3 ou perda de cloro (GI/diuréticos)"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "COMPENSAÇÃO ESPERADA (distúrbio simples x misto)",
+      "section_color": "navy",
+      "headers": ["Distúrbio", "Compensação esperada"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Acidose metabólica", "pCO2 = 1,5 x HCO3 + 8 (±2) — fórmula de Winter"],
+        ["Alcalose metabólica", "pCO2 = HCO3 + 15"],
+        ["Acidose respiratória", "HCO3 sobe 1/10 mmHg de pCO2 (aguda); até 2/10 (crônica)"],
+        ["Alcalose respiratória", "HCO3 cai 2/10 mmHg de pCO2 (aguda); até 4/10 (crônica)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ÂNION GAP — CHAVE DA ACIDOSE METABÓLICA",
+      "section_color": "purple",
+      "titulo": "AG = Na - (HCO3 + Cl) ~ 12",
+      "items": [
+        "Conceito: eletroneutralidade — cargas + e - se equivalem; o 'gap' (~12) reflete ânions não medidos",
+        "CORRIGIR pela albumina: AG corrigido = AG + 2,5 x (4 - albumina do paciente)",
+        "AG AUMENTADO (ânions não mensuráveis): Lactato (hipoperfusão, hepatopatia), Cetoacidose (DM, álcool),",
+        "  uremia (DRC avançada), intoxicações (metanol, etilenoglicol)",
+        "AG NORMAL (hiperclorêmica): diarreia, acidose tubular renal, SF 0,9% em excesso, perda de HCO3",
+        "GAP OSMOLAR (Osm medida - calculada) > 10 sugere tóxico exógeno (metanol/etilenoglicol)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "RELAÇÃO DELTA/DELTA — DISTÚRBIOS ASSOCIADOS",
+      "section_color": "navy",
+      "titulo": "DELTA-AG / DELTA-HCO3 = (AG - 12) / (24 - HCO3)",
+      "items": [
+        "Avalia se há um SEGUNDO distúrbio metabólico escondido na acidose de AG aumentado",
+        "Relação < 1: acidose metabólica de AG aumentado + acidose de AG NORMAL associada",
+        "Relação 1-2: acidose metabólica de AG aumentado PURA",
+        "Relação > 2: acidose metabólica de AG aumentado + ALCALOSE metabólica associada",
+        "Pergunta-chave: 'esse ânion gap explica toda a queda do bicarbonato?'"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ALCALOSE METABÓLICA — CLORO URINÁRIO DEFINE",
+      "section_color": "teal",
+      "titulo": "SALINO-RESPONSIVA x RESISTENTE",
+      "items": [
+        "A perda de cloro causa retenção compensatória de bicarbonato (manter eletroneutralidade)",
+        "Cloro urinário < 15 mEq/L = hipoclorêmica / salino-RESPONSIVA: vômitos, perdas GI altas, alcalose de contração",
+        "Cloro urinário > 15 mEq/L = retenção de HCO3 / salino-RESISTENTE: diurético crônico, hiperaldosteronismo",
+        "  (raros: Liddle, Bartter [mimetiza diurético de alça], Gitelman [mimetiza tiazídico])",
+        "Salino-responsiva trata com SF 0,9% + correção do K; resistente trata a causa de base"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ROTEIRO PRÁTICO DE INTERPRETAÇÃO",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "1. pH: acidose (<7,35) ou alcalose (>7,45)?",
+        "2. Distúrbio primário: pCO2 (respiratório) ou HCO3 (metabólico)?",
+        "3. Compensação adequada? (Winter / fórmulas) — se não, há distúrbio MISTO",
+        "4. Se acidose metabólica: calcular ânion gap CORRIGIDO pela albumina",
+        "5. Se AG aumentado: calcular delta/delta para distúrbio associado; gap osmolar se suspeita de tóxico",
+        "6. Se alcalose metabólica: dosar cloro urinário (responsiva x resistente)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRATAR A CAUSA",
+      "section_color": "orange",
+      "titulo": "PRINCÍPIOS",
+      "items": [
+        "O distúrbio ácido-base é um SINAL — o tratamento é da causa de base (sepse, CAD, DPOC, vômitos...)",
+        "Acidose metabólica: corrigir hipoperfusão/CAD; bicarbonato só em situações selecionadas (ex.: pH < 7,1)",
+        "Acidose respiratória: melhorar ventilação (broncodilatador, VNI/IOT); não corrigir só o número",
+        "Alcalose respiratória: tratar dor/ansiedade/hipóxia/causa da hiperventilação",
+        "Alcalose metabólica salino-responsiva: volume com SF + reposição de potássio"
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente séptico com pH 7,20, HCO3 10, pCO2 24, Na 140, Cl 100. Qual o distúrbio e a interpretação da compensação?",
+      "alternativas": [
+        "Acidose respiratória pura",
+        "Acidose metabólica de ânion gap aumentado (AG=30) com compensação respiratória adequada (Winter: pCO2 esperado ~23)",
+        "Alcalose metabólica",
+        "Distúrbio respiratório crônico",
+        "Gasometria normal"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Como se calcula e corrige o ânion gap?",
+      "alternativas": [
+        "AG = Cl - Na; sem correção",
+        "AG = Na - (HCO3 + Cl), normal ~12, corrigido por AG + 2,5 x (4 - albumina)",
+        "AG = pCO2 - HCO3",
+        "AG = HCO3 x 2",
+        "AG não tem correção pela albumina"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Acidose metabólica de ânion gap NORMAL (hiperclorêmica) é causada por:",
+      "alternativas": [
+        "Cetoacidose diabética",
+        "Diarreia, acidose tubular renal ou infusão excessiva de SF 0,9%",
+        "Intoxicação por metanol",
+        "Acidose láctica",
+        "Uremia avançada"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Na alcalose metabólica, qual exame distingue a forma salino-responsiva da salino-resistente?",
+      "alternativas": [
+        "Lactato sérico",
+        "Cloro urinário (< 15 responsiva; > 15 resistente)",
+        "Ânion gap",
+        "Gap osmolar",
+        "pCO2 venoso"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Em acidose de ânion gap aumentado, uma relação delta/delta > 2 indica:",
+      "alternativas": [
+        "Acidose de AG aumentado pura",
+        "Alcalose metabólica associada",
+        "Acidose de AG normal associada",
+        "Alcalose respiratória",
+        "Distúrbio respiratório crônico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "pH baixo + HCO3 baixo = acidose metabólica. AG = 140-(10+100)=30 (aumentado), típico de sepse/lactato. Winter: pCO2 esperado = 1,5x10+8 = 23 (±2); o pCO2 de 24 confirma compensação respiratória adequada (distúrbio simples)."},
+    {"resposta": "B", "comentario": "AG = Na - (HCO3 + Cl), valor normal ~12, refletindo ânions não medidos. Corrige-se pela hipoalbuminemia: AG corrigido = AG + 2,5 x (4 - albumina), pois a albumina é um ânion não medido importante."},
+    {"resposta": "B", "comentario": "Acidose de AG normal (hiperclorêmica) decorre de perda de bicarbonato ou ganho de cloro: diarreia, acidose tubular renal e SF 0,9% em excesso. Cetoacidose, lactato, uremia e metanol cursam com AG aumentado."},
+    {"resposta": "B", "comentario": "O cloro urinário define a alcalose metabólica: < 15 mEq/L = hipoclorêmica/salino-responsiva (vômitos, perdas GI); > 15 mEq/L = salino-resistente (diurético crônico, hiperaldosteronismo)."},
+    {"resposta": "B", "comentario": "Delta/delta = (AG-12)/(24-HCO3). >2 indica que o bicarbonato caiu menos do que o esperado pelo AG, sugerindo alcalose metabólica associada. <1 sugere acidose de AG normal concomitante; 1-2 = AG aumentado puro."}
+  ]
+}

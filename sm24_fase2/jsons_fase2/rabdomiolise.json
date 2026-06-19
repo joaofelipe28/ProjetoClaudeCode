@@ -1,0 +1,197 @@
+{
+  "slug": "rabdomiolise",
+  "titulo": "Rabdomiólise",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Rabdomiólise no PS",
+  "chapter_bar": "RABDOMIÓLISE — HIDRATAR E PROTEGER O RIM",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "RABDOMIÓLISE — VOLUME É O TRATAMENTO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Mialgia + fraqueza + urina escura + CPK > 5.000\n(metade NAO tem dor muscular!)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Monitor + HIDRATACAO VIGOROSA + SVD", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 145, "h": 24, "text": "Meta diurese\n200-300 mL/h\najustar volume", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 150, "h": 24, "text": "Tratar HiperK,\nhipoCa, IRA\n+ causa base", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Quebra rápida das fibras musculares com liberação de mioglobina, CPK, ácido úrico e íons celulares na corrente sanguínea",
+        "A mioglobina é nefrotóxica -> risco de injúria renal aguda",
+        "Tríade clássica: dor muscular + fraqueza + urina escurecida (castanho-avermelhada)",
+        "CUIDADO: mais da METADE dos pacientes NÃO apresenta dor muscular"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS — BUSCAR ATIVAMENTE",
+      "section_color": "navy",
+      "headers": ["Grupo", "Exemplos"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Traumática", "Trauma, esmagamento, choque elétrico, queimaduras, imobilização prolongada"],
+        ["Esforço/térmica", "Atividade física extenuante, desregulação térmica (hipertermia)"],
+        ["Medicamentos", "Estatinas, colchicina, ISRS, zidovudina, lítio, anti-histamínicos"],
+        ["Substâncias", "Álcool, cocaína, anfetaminas, LSD"],
+        ["Outras", "Acidente ofídico/picada, dermatopolimiosite/polimiosite, infecções"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — COMPLICAÇÕES",
+      "section_color": "red",
+      "titulo": "VIGIAR E TRATAR",
+      "items": [
+        "Insuficiência renal aguda (mioglobinúria) — principal complicação",
+        "HIPERCALEMIA (potencialmente fatal) — monitorização cardíaca contínua",
+        "Hipocalcemia, hiperfosfatemia, hiperuricemia",
+        "Hipovolemia (sequestro de líquido no músculo lesado)",
+        "Síndrome compartimental (sobretudo no trauma) — avaliar perfusão/pressão do compartimento"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES",
+      "section_color": "navy",
+      "titulo": "SOLICITAR",
+      "items": [
+        "CPK — marcador de maior sensibilidade (rabdomiólise se > 5.000, ou 5x o limite superior)",
+        "Função renal (ureia, creatinina); urina I (mioglobinúria: dipstick + para sangue sem hemácias)",
+        "Eletrólitos: Na, K, CÁLCIO, FÓSFORO, ácido úrico",
+        "Gasometria arterial (acidose); hemograma e coagulograma (risco de CIVD)",
+        "ECG: principalmente se distúrbio de potássio ou cálcio"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — HIDRATAÇÃO É A BASE",
+      "section_color": "orange",
+      "titulo": "PROTEGER O RIM",
+      "items": [
+        "Trauma: seguir protocolo de trauma e ABCDE",
+        "Monitorização cardíaca contínua",
+        "HIDRATAÇÃO VIGOROSA: cristaloide 1-2 L na primeira hora; ajustar conforme diurese",
+        "Sondagem vesical (SVD) e meta de diurese 200-300 mL/h",
+        "Corrigir a causa de base quando possível; Alopurinol para hiperuricemia",
+        "Hipercalemia: seguir protocolo (gluconato de cálcio, insulina+glicose, etc.)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONCEITO — CUIDADO COM O CÁLCIO",
+      "section_color": "purple",
+      "titulo": "NÃO REPOR CÁLCIO DE ROTINA",
+      "items": [
+        "A hipocalcemia da rabdomiólise é geralmente ASSINTOMÁTICA e transitória",
+        "NÃO repor cálcio de rotina (o cálcio pode redepositar no músculo e gerar hipercalcemia na recuperação)",
+        "Repor cálcio APENAS se hipocalcemia sintomática ou hipercalemia grave com instabilidade",
+        "Bicarbonato/manitol são controversos — a hidratação vigorosa é a medida com maior respaldo",
+        "Foco: manter perfusão renal e débito urinário altos"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO",
+      "titulo": "INDICAÇÕES",
+      "items": [
+        "Todo paciente com diagnóstico de rabdomiólise tem indicação de internação",
+        "Objetivo: controle de hidratação, débito urinário e complicações",
+        "Monitorar CPK, função renal e eletrólitos seriados",
+        "Vigiar hipercalemia (ECG) e síndrome compartimental",
+        "Avaliação nefrológica se IRA estabelecida / necessidade de diálise"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Rabdomiólise (CPK ___); causa: ___ (trauma/esforço/droga/medicamento/imobilização).",
+        "Coloração da urina: ___; débito urinário: ___ mL/h; alterações no ECG: sim/não.",
+        "Eletrólitos: K ___, Ca ___, fósforo ___; função renal: ureia/creatinina ___.",
+        "Conduta: hidratação ___ mL na 1a hora + SVD (meta 200-300 mL/h). Solicito internação para vigilância renal."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente encontrado caído após imobilização prolongada, urina escura, CPK 28.000. Qual a principal medida terapêutica?",
+      "alternativas": [
+        "Restrição hídrica",
+        "Hidratação venosa vigorosa com meta de diurese 200-300 mL/h e sondagem vesical",
+        "Reposição rotineira de cálcio",
+        "Furosemida isolada de imediato",
+        "Apenas observação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o exame de maior sensibilidade para o diagnóstico de rabdomiólise?",
+      "alternativas": [
+        "Mioglobina urinária isolada",
+        "CPK (creatinofosfoquinase)",
+        "Ácido úrico",
+        "Lactato",
+        "Ureia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual distúrbio eletrolítico é a complicação potencialmente fatal mais temida na rabdomiólise?",
+      "alternativas": [
+        "Hipernatremia",
+        "Hipercalemia",
+        "Hipocloremia",
+        "Hipermagnesemia",
+        "Hiponatremia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a hipocalcemia na rabdomiólise, é correto:",
+      "alternativas": [
+        "Deve ser sempre corrigida com cálcio endovenoso",
+        "Geralmente é assintomática e NÃO se repõe cálcio de rotina (risco de hipercalcemia de rebote)",
+        "Indica transfusão de cálcio em todos os casos",
+        "É sinal de bom prognóstico e dispensa monitorização",
+        "Contraindica a hidratação venosa"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Mesmo sem dor muscular, a rabdomiólise deve ser suspeitada porque:",
+      "alternativas": [
+        "A dor está presente em 100% dos casos",
+        "Mais da metade dos pacientes não apresenta dor muscular; urina escura e fraqueza podem ser as únicas pistas",
+        "A CPK é sempre normal",
+        "Nunca causa lesão renal",
+        "Só ocorre após trauma"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A base do tratamento da rabdomiólise é a hidratação venosa vigorosa (1-2 L na 1a hora, ajustando pela diurese) com meta de diurese de 200-300 mL/h e sondagem vesical, para proteger o rim da mioglobinúria."},
+    {"resposta": "B", "comentario": "A CPK é o marcador de maior sensibilidade; valores > 5.000 (ou 5x o limite) confirmam rabdomiólise. A mioglobina sérica/urinária tem meia-vida curta e é menos confiável."},
+    {"resposta": "B", "comentario": "A hipercalemia é a complicação eletrolítica mais temida (potencialmente fatal por arritmia), pela liberação maciça de potássio intracelular — exige monitorização cardíaca e tratamento imediato."},
+    {"resposta": "B", "comentario": "A hipocalcemia da rabdomiólise costuma ser assintomática e transitória; não se repõe cálcio de rotina, pois o cálcio depositado no músculo pode ser liberado na recuperação, causando hipercalcemia. Repor só se sintomática ou hiperK grave."},
+    {"resposta": "B", "comentario": "Mais da metade dos pacientes não tem dor muscular; urina escura (castanho-avermelhada) e fraqueza podem ser as únicas manifestações. Por isso, deve-se manter alto índice de suspeição e dosar CPK."}
+  ]
+}

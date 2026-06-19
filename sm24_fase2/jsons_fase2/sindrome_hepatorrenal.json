@@ -1,0 +1,195 @@
+{
+  "slug": "sindrome_hepatorrenal",
+  "titulo": "Síndrome Hepatorrenal (SHR-IRA)",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Síndrome Hepatorrenal no PS",
+  "chapter_bar": "SÍNDROME HEPATORRENAL — CIRROSE + IRA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — IRA NO CIRRÓTICO",
+      "title": "SHR — DIAGNÓSTICO DE EXCLUSÃO",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Cirrose + ascite + IRA (KDIGO)\nrastrear PBE e fatores precipitantes", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Suspender nefrotoxicos/diureticos + avaliar volemia\nexpansao guiada pela volemia", "color": "orange", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.32, "w": 205, "h": 22, "text": "Sem melhora + sem outra causa = SHR-IRA\nTERLIPRESSINA + ALBUMINA", "color": "red", "font_size": 5.6},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Avaliar transplante hepatico", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E FISIOPATOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Lesão renal FUNCIONAL no paciente com cirrose e ascite, sem doença renal estrutural",
+        "Vasodilatação arterial sistêmica e esplâncnica (substâncias vasodilatadoras + translocação bacteriana)",
+        "Resposta: ativação do SRAA e simpático -> vasoconstrição renal intensa + retenção hidrossalina -> IRA",
+        "Padrão: insuficiência renal progressiva SEM hematúria/proteinúria significativas"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR E FATORES PRECIPITANTES",
+      "section_color": "purple",
+      "titulo": "BUSCAR O GATILHO",
+      "items": [
+        "Cirrose avançada + ascite com piora recente da função renal (creatinina subindo, oligúria)",
+        "Sinais de descompensação hepática: icterícia, encefalopatia, hipotensão (PAS < 100)",
+        "Principal precipitante: PERITONITE BACTERIANA ESPONTÂNEA (PBE) — sempre puncionar a ascite!",
+        "Outros: hipovolemia (vômitos/diarreia, sangramento digestivo, EXCESSO de diuréticos)",
+        "Medicações: AINEs, vasodilatadores, nefrotóxicos, contraste iodado"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES E CRITÉRIOS DIAGNÓSTICOS",
+      "section_color": "navy",
+      "titulo": "EXCLUIR OUTRAS CAUSAS",
+      "items": [
+        "Creatinina/TFG, urina I (sem hematúria/proteinúria), USG de rins e vias (sem obstrução/estrutural)",
+        "Função hepática: TGO/TGP, FA, GGT, BT, albumina, INR; eletrólitos (sódio urinário tipicamente < 10)",
+        "PARACENTESE diagnóstica: bioquímica, celularidade, citologia, bacterioscopia — investigar PBE",
+        "Rastreio infeccioso: hemograma, PCR, RX tórax, hemoculturas",
+        "Critérios: Cirrose + ascite | IRA (KDIGO) | SEM melhora com expansão | ausência de outra causa de IRA"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — EXPANSÃO GUIADA PELA VOLEMIA",
+      "section_color": "orange",
+      "titulo": "1) AVALIAR VOLEMIA ANTES DE EXPANDIR",
+      "items": [
+        "Hipovolemia: expandir com cristaloides balanceados até corrigir",
+        "Volemia incerta: 250-500 mL de cristaloide OU albumina 20-25% 1-1,5 g/kg",
+        "Euvolemia/hipervolemia: NÃO administrar cristaloide/albumina de rotina",
+        "Avaliar a resposta em 24h (creatinina e/ou débito urinário) — não atrasar o diagnóstico/vasoconstritor",
+        "Suspender diuréticos, betabloqueadores e nefrotóxicos; tratar a PBE (ceftriaxona + albumina)"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — VASOCONSTRITOR + ALBUMINA",
+      "section_color": "red",
+      "titulo": "2) BASE DO TRATAMENTO DA SHR-IRA",
+      "items": [
+        "TERLIPRESSINA (1a escolha): 2-4 mg/dia EV em infusão contínua",
+        "  Se não reduzir creatinina >= 25% em 24h: aumentar 2 mg até máx 12 mg/dia",
+        "Alternativa: noradrenalina EV (em ambiente monitorizado/UTI)",
+        "ALBUMINA 20-25% 20-40 g/dia EM CONJUNTO com o vasoconstritor",
+        "  Suspender a albumina se houver sinais de SOBRECARGA volêmica",
+        "Encaminhar para avaliação de transplante hepático (tratamento definitivo)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS / INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "GRAVIDADE",
+      "items": [
+        "Instabilidade hemodinâmica / necessidade de vasopressor / choque",
+        "Encefalopatia hepática, sangramento digestivo, PBE",
+        "Oligúria/anúria, necessidade de terapia renal substitutiva",
+        "Internar todos; UTI se instabilidade ou necessidade de DVA",
+        "Calcular MELD; acionar hepatologia / fila de transplante"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CRITÉRIOS DE ALTA",
+      "titulo": "ALTA SE",
+      "items": [
+        "Estabilidade hemodinâmica sem vasopressor",
+        "Creatinina em redução sustentada (< 1,5 mg/dL ou retorno a 0,3 do basal)",
+        "Ascite controlada, sem necessidade de paracenteses frequentes",
+        "Fatores precipitantes resolvidos (PBE tratada, nefrotóxicos suspensos, hipovolemia corrigida)",
+        "Avaliação para transplante encaminhada + orientações de alarme"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Cirrose por ___; SHR-IRA. Precipitante: PBE / HDA / diuréticos. Creatinina ___ (basal ___).",
+        "Sódio urinário < 10; ascite volumosa; encefalopatia grau ___; MELD ___.",
+        "Condutas: expansão guiada pela volemia + terlipressina/noradrenalina + albumina; diuréticos/BB suspensos.",
+        "Solicito suporte terciário (DVA, hemodiálise) e avaliação de transplante hepático."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Cirrótico com ascite e creatinina subindo de 1,0 para 2,5, sem hematúria/proteinúria, USG renal normal, sem melhora após albumina. Diagnóstico e tratamento?",
+      "alternativas": [
+        "Necrose tubular aguda — apenas hidratação",
+        "Síndrome hepatorrenal (SHR-IRA) — terlipressina + albumina",
+        "Glomerulonefrite — corticoide",
+        "Obstrução urinária — sondagem",
+        "Nefrite intersticial — suspender antibiótico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o principal fator precipitante da síndrome hepatorrenal que deve ser ativamente investigado?",
+      "alternativas": [
+        "Hipertensão arterial",
+        "Peritonite bacteriana espontânea (PBE)",
+        "Diabetes",
+        "Hipotireoidismo",
+        "Litíase renal"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o vasoconstritor de primeira escolha no tratamento da SHR-IRA?",
+      "alternativas": [
+        "Dopamina",
+        "Terlipressina (associada à albumina)",
+        "Dobutamina",
+        "Adrenalina",
+        "Vasopressina isolada"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a expansão volêmica na SHR, a conduta atual recomenda:",
+      "alternativas": [
+        "Expandir todos com 1 g/kg de albumina por 48h, independentemente da volemia",
+        "Avaliar a volemia antes: expandir se hipovolemia; não expandir de rotina se euvolêmico/hipervolêmico, reavaliando em 24h",
+        "Nunca expandir",
+        "Usar apenas cristaloide hipotônico",
+        "Restrição hídrica absoluta"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o tratamento DEFINITIVO da síndrome hepatorrenal?",
+      "alternativas": [
+        "Hemodiálise crônica",
+        "Transplante hepático",
+        "Terlipressina por tempo indefinido",
+        "Paracenteses seriadas",
+        "Betabloqueador"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "IRA funcional no cirrótico com ascite, sem doença renal estrutural (urina e USG normais) e sem resposta à expansão = SHR-IRA. Tratamento: vasoconstritor (terlipressina) + albumina, após excluir/tratar precipitantes."},
+    {"resposta": "B", "comentario": "A PBE é o principal fator precipitante da SHR — por isso, todo cirrótico com ascite e piora renal deve ter a ascite puncionada para investigar PBE (e tratá-la com ceftriaxona + albumina)."},
+    {"resposta": "B", "comentario": "A terlipressina é o vasoconstritor de primeira escolha na SHR-IRA, sempre associada à albumina; a noradrenalina é alternativa em ambiente monitorizado. Reverte a vasodilatação esplâncnica e melhora a perfusão renal."},
+    {"resposta": "B", "comentario": "A diretriz atual recomenda avaliar a volemia antes de expandir (evita atraso do diagnóstico e sobrecarga): expandir se hipovolêmico, não expandir de rotina se euvolêmico/hipervolêmico, reavaliando a resposta em 24h."},
+    {"resposta": "B", "comentario": "O transplante hepático é o tratamento definitivo da SHR, pois corrige a doença de base. Terlipressina + albumina são ponte/tratamento da fase aguda enquanto se avalia o transplante."}
+  ]
+}

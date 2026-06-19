@@ -1,0 +1,182 @@
+{
+  "slug": "sindrome_nefrotica",
+  "titulo": "Síndrome Nefrótica",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Síndrome Nefrótica no PS",
+  "chapter_bar": "SÍNDROME NEFRÓTICA — PROTEINÚRIA MACIÇA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "NEFRÓTICA — PROTEINÚRIA > 3,5 g + EDEMA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Anasarca + proteinuria > 3,5 g/24h\n+ hipoalbuminemia + dislipidemia", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 205, "h": 20, "text": "Funcao renal + EAS + proteinuria + sorologias", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.25, "w": 145, "h": 24, "text": "Tratar causa +\nIECA/BRA + diuretico\n+ controlar lipides", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.75, "y": 0.25, "w": 150, "h": 26, "text": "Complicacoes:\ninfeccao, TROMBOSE\n(anticoagular se risco)", "color": "red", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Glomerulopatia por LESÃO DA BARREIRA DE FILTRAÇÃO glomerular",
+        "Tétrade: proteinúria maciça (> 3,5 g/24h) + hipoalbuminemia + anasarca + dislipidemia",
+        "Primária: lesão mínima, glomeruloesclerose segmentar e focal (GESF), membranosa",
+        "Secundária: diabetes, lúpus, amiloidose, infecções crônicas (HIV, hepatite B)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO",
+      "section_color": "purple",
+      "titulo": "APRESENTAÇÃO",
+      "items": [
+        "ANASARCA (edema generalizado, mole, frio, depressível)",
+        "Proteinúria maciça (> 3,5 g/24h) — urina espumosa",
+        "Hipoalbuminemia e hiperlipidemia (dislipidemia)",
+        "Fadiga e mal-estar",
+        "Maior suscetibilidade a infecções (perda urinária de imunoglobulinas)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "EXAMES — ESSENCIAIS x VARIÁVEIS",
+      "section_color": "navy",
+      "headers": ["Essenciais", "Variáveis (etiologia)"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.50, 0.50],
+      "rows": [
+        ["Hemograma, função renal, eletrólitos", "Sorologias: HIV, hepatites B e C"],
+        ["Gasometria; sumário de urina", "USG renal (tamanho, ecogenicidade, morfologia)"],
+        ["Proteinúria (isolada ou 24h), creatinina urinária", "Glicemia/HbA1c (DM), FAN/anti-DNA (lúpus)"],
+        ["Albumina, perfil lipídico", "Biópsia renal (define o tipo histológico e o tratamento)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — COMPLICAÇÕES",
+      "section_color": "red",
+      "titulo": "VIGIAR",
+      "items": [
+        "TROMBOEMBOLISMO (estado de hipercoagulabilidade — perda de antitrombina): TVP, TEP, trombose de veia renal",
+        "Infecções (perda de imunoglobulinas): peritonite primária (pneumococo), celulite, sepse",
+        "Injúria renal aguda (hipovolemia por edema/diurético excessivo ou doença de base)",
+        "Crise de hipovolemia x sobrecarga — avaliar a volemia antes de diurético agressivo",
+        "Dislipidemia acentuada e desnutrição proteica nos quadros arrastados"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS",
+      "section_color": "orange",
+      "titulo": "CAUSA + SINTOMAS + COMPLICAÇÕES",
+      "items": [
+        "Causa específica: primária/idiopática -> corticoide ± imunossupressor (conforme histologia, com nefrologia)",
+        "  secundária -> tratar a base (controle do DM, lúpus; suspender nefrotóxicos)",
+        "Controle: IECA/BRA (reduz proteinúria e protege o rim) + diurético para edema/sobrecarga",
+        "Complicações: anticoagulação se alto risco/trombose; tratamento precoce de infecções (+ vacinação)",
+        "Dislipidemia: dieta + estatina se necessário",
+        "Dieta: restrição moderada de sódio; ajuste de proteína (evitar deficiência e sobrecarga)"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA E PRESCRIÇÃO PARA CASA",
+      "titulo": "ALTA SE",
+      "items": [
+        "Estabilidade hemodinâmica e volemia ajustada",
+        "Causa subjacente identificada e em tratamento",
+        "Sem complicação aguda (trombose, infecção grave, IRA descompensada)",
+        "Casa: diurético + IECA/BRA (se tolerar) + tratamento específico da causa",
+        "Acompanhamento precoce com nefrologia; orientar sinais de TVP/TEP e infecção"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Síndrome nefrótica: anasarca + proteinúria ___ g/24h + albumina ___ + dislipidemia.",
+        "Função renal ___; sorologias ___; suspeita etiológica: ___ (primária/secundária).",
+        "Conduta: IECA/BRA + diurético + tratamento da causa; profilaxia/tratamento de trombose e infecção.",
+        "Encaminho à nefrologia para biópsia e definição terapêutica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com anasarca, urina espumosa, proteinúria de 6 g/24h, albumina 2,0 e colesterol elevado. Diagnóstico?",
+      "alternativas": [
+        "Síndrome nefrítica",
+        "Síndrome nefrótica",
+        "Insuficiência cardíaca isolada",
+        "Cirrose hepática",
+        "Infecção urinária"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual complicação tromboembólica é típica da síndrome nefrótica?",
+      "alternativas": [
+        "Trombose de veia renal (e TVP/TEP), por perda urinária de antitrombina",
+        "Embolia gordurosa",
+        "Trombose arterial mesentérica exclusiva",
+        "Nenhuma, pois há tendência a sangramento",
+        "Apenas trombose de seio cavernoso"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que pacientes com síndrome nefrótica têm maior suscetibilidade a infecções?",
+      "alternativas": [
+        "Por excesso de imunoglobulinas",
+        "Pela perda urinária de imunoglobulinas (e fatores do complemento)",
+        "Por hipercalemia",
+        "Por hiperalbuminemia",
+        "Por desidratação isolada"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual medicação reduz a proteinúria e protege a função renal na síndrome nefrótica?",
+      "alternativas": [
+        "AINEs",
+        "IECA ou BRA",
+        "Antibiótico",
+        "Corticoide tópico",
+        "Diurético poupador de potássio isolado"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual exame define o tipo histológico e orienta o tratamento da síndrome nefrótica primária?",
+      "alternativas": [
+        "Urocultura",
+        "Biópsia renal",
+        "Radiografia de abdome",
+        "Cintilografia renal",
+        "Cistoscopia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Proteinúria maciça (>3,5 g/24h) + hipoalbuminemia + anasarca + dislipidemia é a tétrade da síndrome nefrótica, por lesão da barreira de filtração glomerular (urina espumosa)."},
+    {"resposta": "A", "comentario": "A síndrome nefrótica é estado de hipercoagulabilidade (perda urinária de antitrombina), predispondo a TVP, TEP e, classicamente, trombose de veia renal — justifica anticoagulação em pacientes de alto risco."},
+    {"resposta": "B", "comentario": "A perda urinária de imunoglobulinas (e de fatores do complemento) aumenta a suscetibilidade a infecções, como peritonite primária por pneumococo e celulite — daí a importância da vacinação e do tratamento precoce."},
+    {"resposta": "B", "comentario": "IECA/BRA reduzem a proteinúria (efeito hemodinâmico intraglomerular) e protegem a função renal, sendo pilar do manejo da síndrome nefrótica, associados ao tratamento da causa."},
+    {"resposta": "B", "comentario": "A biópsia renal define o tipo histológico (lesão mínima, GESF, membranosa) e orienta o tratamento imunossupressor na síndrome nefrótica primária, conduzida pela nefrologia."}
+  ]
+}

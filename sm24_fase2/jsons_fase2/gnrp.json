@@ -1,0 +1,183 @@
+{
+  "slug": "gnrp",
+  "titulo": "Glomerulonefrite Rapidamente Progressiva (GNRP)",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "GNRP no PS",
+  "chapter_bar": "GNRP — EMERGÊNCIA NEFROLÓGICA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — SUSPEITA À CONDUTA",
+      "title": "GNRP — RIM EM SEMANAS, AGIR RÁPIDO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Sindrome nefritica + queda >=50% da funcao renal\nem dias a semanas (rins de tamanho normal)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "INTERNAR + screening etiologico + BIOPSIA renal", "color": "orange", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.32, "w": 205, "h": 22, "text": "Pulsoterapia com corticoide (mesmo antes da biopsia)\n+/- ciclofosfamida + plasmaferese", "color": "red", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Hemorragia alveolar = sindrome pulmao-rim", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Síndrome de piora >= 50% da função renal em dias a semanas (< 3 meses)",
+        "Histologia clássica: CRESCENTES glomerulares",
+        "3 grupos etiológicos: anti-MBG (Goodpasture); imunocomplexos (LES, nefropatia por IgA); pauci-imune (vasculites ANCA, ex.: granulomatose com poliangeíte)",
+        "Pode evoluir com hemorragia alveolar = SÍNDROME PULMÃO-RIM"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR",
+      "section_color": "purple",
+      "titulo": "QUADRO NEFRÍTICO + PERDA RÁPIDA DE FUNÇÃO",
+      "items": [
+        "Hematúria (dismorfismo eritrocitário / CILINDROS HEMÁTICOS) + proteinúria subnefrótica (1-3 g/24h)",
+        "Oligúria (> 50% dos casos; associada a pior prognóstico), HAS, edema",
+        "Em adultos costuma ser subaguda: astenia, inapetência, febre baixa",
+        "Sintomas sistêmicos de vasculite: artralgia, rash/púrpura, epistaxe/sinusite, neuropatia",
+        "Pulmonar: hemoptise/dispneia -> síndrome pulmão-rim (Goodpasture ou vasculite ANCA)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES",
+      "section_color": "navy",
+      "titulo": "FUNÇÃO + ETIOLOGIA + BIÓPSIA",
+      "items": [
+        "Função/urgência: hemograma, ureia, creatinina, eletrólitos, gasometria",
+        "Urina I (hematúria dismórfica/cilindros), proteinúria 24h ou relação P/C",
+        "Etiologia: FAN, anti-DNA, COMPLEMENTO (C3/C4), ANCA, anti-MBG, PCR",
+        "  sorologias HIV/sífilis/hepatites B e C; conforme suspeita: crioglobulinas, eletroforese",
+        "USG: rins de TAMANHO NORMAL com IRA reforçam a suspeita de GNRP",
+        "BIÓPSIA RENAL: todo paciente com suspeita deve biopsiar (diagnóstico + prognóstico + guia do imunossupressor)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "red",
+      "titulo": "PULSOTERAPIA + IMUNOSSUPRESSÃO",
+      "items": [
+        "Na SUSPEITA, mesmo antes da confirmação, considerar PULSOTERAPIA com corticoide",
+        "Metilprednisolona 10-15 mg/kg/dia (até ~1 g/dia) por até 3 dias",
+        "  diluir em 150-200 mL de SG 5%, infusão LENTA EV em 2-3h (menor repercussão hemodinâmica)",
+        "Ciclofosfamida conforme etiologia (anti-MBG, vasculite ANCA, nefrite lúpica) — esquema pela doença de base",
+        "PLASMAFÉRESE em casos específicos (doença anti-MBG; hemorragia alveolar)",
+        "Doença que EXIGE acompanhamento do nefrologista — não conduzir isolado"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — EMERGÊNCIA",
+      "section_color": "red",
+      "titulo": "INTERNAR IMEDIATAMENTE",
+      "items": [
+        "Toda suspeita de GNRP = internação hospitalar imediata",
+        "Avaliar urgências dialíticas (hipercalemia, acidose, sobrecarga, uremia)",
+        "Hemorragia alveolar (hemoptise, queda de Hb, infiltrado) = síndrome pulmão-rim, risco de vida",
+        "Definir etiologia rapidamente (guia o tratamento) — não atrasar a pulsoterapia na forte suspeita",
+        "Oligúria/anúria = forte associação com evolução para doença renal terminal"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PASSOS",
+      "items": [
+        "Reconhecer a síndrome nefrítica com perda acelerada de função (creatinina seriada)",
+        "Colher screening etiológico ANTES da imunossupressão (FAN, ANCA, anti-MBG, complemento, sorologias)",
+        "Avaliar e tratar urgências dialíticas",
+        "Acionar nefrologia para biópsia e definição terapêutica; considerar pulsoterapia na forte suspeita",
+        "Buscar e tratar hemorragia alveolar (síndrome pulmão-rim)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Síndrome nefrítica com perda acelerada de função (suspeita de GNRP). Creatinina atual ___ (prévia ___).",
+        "EAS: hematúria dismórfica / cilindros hemáticos / proteinúria. Débito: oligúrico? Achados extrarrenais: ___ (hemoptise?).",
+        "USG: rins de tamanho preservado. Necessidade de diálise: sim/não.",
+        "Solicito transferência URGENTE para biópsia renal e início de pulsoterapia/plasmaférese (nefrologia)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com hematúria, cilindros hemáticos, creatinina subindo de 1,0 para 4,0 em 3 semanas e rins de tamanho normal ao USG. Qual a hipótese e conduta?",
+      "alternativas": [
+        "Doença renal crônica terminal — diálise eletiva",
+        "GNRP — internação imediata, screening etiológico, biópsia renal e considerar pulsoterapia com corticoide",
+        "Infecção urinária — antibiótico oral",
+        "Nefrolitíase — analgesia e alta",
+        "Síndrome nefrótica — corticoide ambulatorial"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado histopatológico é clássico da GNRP?",
+      "alternativas": [
+        "Esclerose glomerular difusa",
+        "Crescentes glomerulares",
+        "Depósitos de amiloide",
+        "Membrana basal espessada isolada",
+        "Necrose tubular aguda"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "A associação de GNRP com hemorragia alveolar caracteriza qual quadro?",
+      "alternativas": [
+        "Síndrome nefrótica",
+        "Síndrome pulmão-rim",
+        "Síndrome hepatorrenal",
+        "Síndrome de lise tumoral",
+        "Síndrome cardiorrenal"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual exame é mandatório na investigação da GNRP (diagnóstico e prognóstico)?",
+      "alternativas": [
+        "Urocultura",
+        "Biópsia renal",
+        "Radiografia de abdome",
+        "Cintilografia renal",
+        "Cistoscopia"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre o tratamento da GNRP na forte suspeita clínica, é correto:",
+      "alternativas": [
+        "Aguardar sempre a biópsia antes de qualquer tratamento",
+        "Considerar pulsoterapia com corticoide mesmo antes da confirmação, com acompanhamento do nefrologista",
+        "Iniciar antibiótico empírico de amplo espectro",
+        "Apenas hidratação e observação",
+        "Diálise eletiva ambulatorial"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Síndrome nefrítica com queda rápida da função renal (>50% em semanas) e rins de tamanho normal define GNRP — emergência. Conduta: internar, colher screening etiológico, biopsiar e considerar pulsoterapia com corticoide."},
+    {"resposta": "B", "comentario": "As crescentes glomerulares são o achado histopatológico clássico da GNRP, refletindo proliferação extracapilar por ruptura da parede do capilar glomerular."},
+    {"resposta": "B", "comentario": "GNRP + hemorragia alveolar (hemoptise) caracteriza a síndrome pulmão-rim, vista na doença anti-MBG (Goodpasture) e em vasculites ANCA — quadro grave, com risco de vida."},
+    {"resposta": "B", "comentario": "A biópsia renal é mandatória na GNRP: define o padrão (anti-MBG, imunocomplexos, pauci-imune), o prognóstico e guia a escolha do imunossupressor e terapias adjuvantes."},
+    {"resposta": "B", "comentario": "Na forte suspeita de GNRP, considera-se a pulsoterapia com corticoide mesmo antes da confirmação histológica, dado o risco de perda renal irreversível, sempre com acompanhamento do nefrologista."}
+  ]
+}

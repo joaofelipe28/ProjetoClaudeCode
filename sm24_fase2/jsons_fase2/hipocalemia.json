@@ -1,0 +1,209 @@
+{
+  "slug": "hipocalemia",
+  "titulo": "Hipocalemia no Pronto-Socorro",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Hipocalemia no PS",
+  "chapter_bar": "HIPOCALEMIA — REPOSIÇÃO E ECG",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — REPOSIÇÃO POR GRAVIDADE",
+      "title": "HIPOCALEMIA — K < 3,5 mEq/L",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 22, "text": "K < 3,5 mEq/L - ECG + dosar magnesio\nbuscar a causa (shift x perda)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 24, "text": "K > 3,0 assint:\nreposicao ORAL\n(reavaliar 12/12h)", "color": "green", "font_size": 6.0},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "K < 3,0 OU sintomatico:\nreposicao EV em BIC\n(monitor + K 6/6h)", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Sempre corrigir hipomagnesemia junto", "color": "orange", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E GRAVIDADE",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Potássio sérico < 3,5 mEq/L",
+        "Leve (K 3,0-3,4): geralmente assintomática — CUIDADO em cardiopatas e pneumopatas",
+        "Grave (K < 3,0): sintomas neuromusculares, gastrointestinais e cardíacos",
+        "Frequentemente assintomática, mas com risco de arritmia (sobretudo em uso de digoxina)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO",
+      "section_color": "purple",
+      "titulo": "MANIFESTAÇÕES",
+      "items": [
+        "Neuromusculares: fraqueza, arreflexia, paralisia, cãibras",
+        "Gastrointestinais: constipação, náuseas, vômitos (íleo se grave)",
+        "Cardíacas: alterações no ECG e arritmias",
+        "ECG: achatamento da onda T, depressão de ST, ONDA U, prolongamento do QT, Torsades de Pointes",
+        "Quanto mais grave o K e mais cardiopata, maior o risco arrítmico"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS — SHIFT x PERDA",
+      "section_color": "navy",
+      "headers": ["Mecanismo", "Exemplos"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.32, 0.68],
+      "rows": [
+        ["Shift intracelular", "Insulina, beta-2 agonistas (salbutamol), dobutamina, alcalose; abstinência alcoólica, IAM, TCE (hiperadrenérgico); risperidona/quetiapina"],
+        ["Perda renal", "Diuréticos de alça e tiazídicos, anfotericina, gentamicina, hiperaldosteronismo"],
+        ["Perda gastrointestinal", "Vômitos, diarreia, uso de laxativos"],
+        ["Diálise", "Hemodiálise (principalmente peritoneal)"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "NO PS",
+      "items": [
+        "Anamnese: buscar a causa (shift x perda renal x perda GI); revisar medicações",
+        "Exame físico: avaliar reflexos e exame abdominal",
+        "Laboratório: potássio sérico, gasometria arterial, MAGNÉSIO",
+        "ECG: atentar para o intervalo QT (risco de Torsades)",
+        "A hipomagnesemia perpetua a hipocalemia — sempre dosar e repor Mg"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO — REPOSIÇÃO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "K > 3,0 (oral)",
+        "items": [
+          "Reposição ORAL (EV se incapaz de ingesta oral)",
+          "KCl xarope 6%: 10-20 mL VO 6/6h ou 8/8h",
+          "OU KCl comprimido: 1-2 cp VO 6/6h ou 8/8h",
+          "Reavaliar potássio sérico a cada 12 horas",
+          "Tratar a causa de base"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "K < 3,0 ou sintomática (EV)",
+        "items": [
+          "Reposição EV em bomba de infusão contínua + monitor",
+          "KCl 19,1% diluído em 500 mL SF 0,9%",
+          "Infundir em 4h se K > 2,5; em 2h se K < 2,5",
+          "Monitorizar K sérico a cada 6 horas",
+          "Cuidados: dor/flebite (preferir via central se concentrado), hipervolemia, hipercalemia de rebote"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONCEITO — REPOR MAGNÉSIO JUNTO",
+      "section_color": "red",
+      "titulo": "HIPOCALEMIA REFRATÁRIA = PENSAR EM Mg",
+      "items": [
+        "A hipomagnesemia aumenta a perda renal de potássio e torna a reposição de K refratária",
+        "Sempre dosar e corrigir o magnésio em hipocalemia (sobretudo se refratária)",
+        "Sulfato de magnésio conforme protocolo do serviço",
+        "Cuidado com a velocidade da reposição EV de K (nunca em bolus)",
+        "Em uso de digoxina, a hipocalemia potencializa a toxicidade digitálica"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "ALTA: nível sérico adequado + melhora dos sintomas",
+        "INTERNAR: hipocalemia refratária à reposição",
+        "INTERNAR: hipocalemia sintomática, principalmente com alteração eletrocardiográfica",
+        "Garantir seguimento e tratar a causa (rever diuréticos, repor Mg)",
+        "Orientar retorno se fraqueza, palpitações ou síncope"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com hipocalemia (K ___ mEq/L) refratária à reposição; sintomas: ___.",
+        "ECG: ___ (onda U / QT longo / arritmia). Magnésio: ___.",
+        "Conduta: KCl reposto ___ (VO/EV, quantidade) + correção de Mg.",
+        "Solicito avaliação de nefrologia / vaga conforme gravidade."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com K 2,3 mEq/L, fraqueza muscular e onda U no ECG. Qual a conduta?",
+      "alternativas": [
+        "Reposição oral lenta e alta",
+        "Reposição endovenosa de potássio em bomba de infusão contínua, com monitorização cardíaca e do K a cada 6h",
+        "Bolus endovenoso rápido de KCl",
+        "Apenas observação",
+        "Furosemida endovenosa"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que a hipocalemia pode ser refratária à reposição de potássio?",
+      "alternativas": [
+        "Por excesso de sódio",
+        "Por hipomagnesemia associada (aumenta a perda renal de K)",
+        "Por hipercalcemia",
+        "Por alcalose respiratória",
+        "Por desidratação isolada"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual alteração eletrocardiográfica é típica da hipocalemia?",
+      "alternativas": [
+        "Onda T apiculada",
+        "Onda U, achatamento de T, depressão de ST e prolongamento do QT",
+        "Supra de ST difuso",
+        "Onda delta",
+        "Bloqueio de ramo direito"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual classe de medicamento é causa comum de hipocalemia por perda renal?",
+      "alternativas": [
+        "Inibidores da ECA",
+        "Diuréticos de alça e tiazídicos",
+        "Betabloqueadores",
+        "Espironolactona",
+        "AINEs"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual cuidado é essencial na reposição endovenosa de potássio?",
+      "alternativas": [
+        "Administrar em bolus rápido",
+        "Diluir e infundir em bomba com monitorização cardíaca, nunca em bolus",
+        "Repor sem monitorizar",
+        "Associar a furosemida sempre",
+        "Usar a maior concentração possível em veia periférica fina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "K < 3,0 e sintomática (fraqueza + onda U) exige reposição EV em bomba de infusão contínua, com monitorização cardíaca e dosagem de K a cada 6h. Bolus de potássio é contraindicado (risco de parada cardíaca)."},
+    {"resposta": "B", "comentario": "A hipomagnesemia associada aumenta a excreção renal de potássio e impede a correção da hipocalemia. Por isso, dosa-se e repõe-se o magnésio sempre, sobretudo na hipocalemia refratária."},
+    {"resposta": "B", "comentario": "A hipocalemia cursa com onda U, achatamento da onda T, depressão de ST e prolongamento do QT, predispondo a Torsades de Pointes. A onda T apiculada é da hipercalemia."},
+    {"resposta": "B", "comentario": "Diuréticos de alça e tiazídicos são causas frequentes de hipocalemia por perda renal de potássio. Espironolactona e IECA, ao contrário, tendem a elevar o potássio."},
+    {"resposta": "B", "comentario": "A reposição EV de potássio deve ser diluída e infundida em bomba com monitorização cardíaca, nunca em bolus, pela alta concentração ser arritmogênica; concentrações altas exigem via central."}
+  ]
+}

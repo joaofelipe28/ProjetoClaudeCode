@@ -1,0 +1,207 @@
+{
+  "slug": "disturbios_calcio",
+  "titulo": "Distúrbios do Cálcio",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Hipo e Hipercalcemia no PS",
+  "chapter_bar": "DISTÚRBIOS DO CÁLCIO — HIPO x HIPER",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CÁLCIO CORRIGIDO + PTH",
+      "title": "CÁLCIO — CORRIGIR PELA ALBUMINA, DOSAR PTH",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Confirmar Ca corrigido (albumina) ou Ca ionico\nECG (QT) + dosar magnesio e PTH", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 26, "text": "HIPOcalcemia:\ngluconato Ca EV se\ngrave/sintomatica", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "HIPERcalcemia:\nSF + calcitonina +\nbisfosfonato", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "PTH orienta a etiologia em ambos", "color": "purple", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E PRINCÍPIO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Alterações do cálcio com manifestações neuromusculares, cardiovasculares e neurológicas",
+        "SEMPRE confirmar o cálcio CORRIGIDO pela albumina ou o cálcio IÔNICO",
+        "Ca corrigido = Ca total + 0,8 x (4 - albumina)",
+        "Solicitar ECG (QT longo na hipo; QT curto na hiper), avaliar Mg, função renal e medicações"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE GRAVIDADE",
+      "section_color": "navy",
+      "headers": ["Distúrbio", "Leve", "Grave"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.30, 0.34, 0.36],
+      "rows": [
+        ["Hipocalcemia (Ca total)", "8,0-8,4 mg/dL", "< 7,0 mg/dL ou sintomática"],
+        ["Hipercalcemia", "10,6-11,9 mg/dL", ">= 14 mg/dL"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "QUADRO CLÍNICO",
+      "section_color": "purple",
+      "left": {
+        "tipo": "highlightbox",
+        "titulo": "HIPOCALCEMIA (excitabilidade +)",
+        "items": [
+          "Parestesia perioral/extremidades, cãibras, tetania",
+          "Sinais de Chvostek e Trousseau",
+          "Laringoespasmo, convulsões (grave)",
+          "ECG: prolongamento do QT (risco de arritmia)"
+        ],
+        "accent": "red",
+        "bg": "red_light"
+      },
+      "right": {
+        "tipo": "highlightbox",
+        "titulo": "HIPERCALCEMIA ('stones/bones/groans')",
+        "items": [
+          "Poliúria, desidratação, litíase (stones)",
+          "Dor óssea (bones); dor abdominal, constipação, náusea (groans)",
+          "Confusão, letargia, fraqueza (psychic moans)",
+          "ECG: encurtamento do QT"
+        ],
+        "accent": "orange",
+        "bg": "orange_light"
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ETIOLOGIA PELO PTH",
+      "section_color": "navy",
+      "headers": ["Distúrbio", "PTH baixo/suprimido", "PTH alto/inapropriadamente normal"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.40, 0.40],
+      "rows": [
+        ["Hipocalcemia", "Hipoparatireoidismo", "Def. de vitamina D, DRC, pancreatite, rabdomiólise"],
+        ["Hipercalcemia", "Neoplasia (PTHrP, metástase), vitamina D, granulomatoses (sarcoidose)", "Hiperparatireoidismo primário, lítio, FHH"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — HIPOCALCEMIA",
+      "section_color": "red",
+      "titulo": "GRAVE OU SINTOMÁTICA",
+      "items": [
+        "Gluconato de cálcio 10% 10 mL (1 amp = 90 mg de Ca elementar) diluído em 100 mL SG 5%/SF, EV em 10-20 min (BIC)",
+        "Manutenção: 10 ampolas de gluconato de cálcio 10% em 1.000 mL SG 5%, 0,5-1,5 mg/kg/h de Ca elementar, com Ca seriado",
+        "CORRIGIR HIPOMAGNESEMIA associada (sulfato de magnésio) — sem isso a hipocalcemia não corrige",
+        "Tratar a causa (vitamina D, ajuste em hipoparatireoidismo)",
+        "Preferir via central em infusão prolongada/concentrada (cálcio é flebite/necrosante)"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — HIPERCALCEMIA",
+      "section_color": "orange",
+      "titulo": "SOLOTAR (HIDRATAR), DESLOCAR, INIBIR OSSO",
+      "items": [
+        "Expansão volêmica: SF 0,9% EV abundante (corrige a desidratação e aumenta a calciúria)",
+        "Calcitonina 4 UI/kg SC/IM 12/12h — efeito rápido e transitório (taquifilaxia em 48-72h)",
+        "Ácido zoledrônico 4 mg EV (infundir em >= 15 min) — EVITAR se TFG < 30",
+        "Denosumabe 120 mg SC — útil na hipercalcemia da malignidade com IR (monitorar hipocalcemia)",
+        "Furosemida APENAS após repleção volêmica adequada, se necessário (não de rotina)",
+        "Hemodiálise em casos graves/refratários, sobretudo com IR"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "INTERNAR SE",
+      "items": [
+        "Hipocalcemia grave ou sintomática (tetania, laringoespasmo, convulsão, QT longo)",
+        "Hipercalcemia >= 14 mg/dL",
+        "Alterações neurológicas ou cardíacas",
+        "Insuficiência renal associada",
+        "Necessidade de terapia endovenosa contínua / monitorização"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Distúrbio do cálcio: ___ (hipo/hiper); Ca corrigido ___; Ca iônico ___; PTH ___.",
+        "Sintomas: ___ (tetania/Chvostek/Trousseau OU poliúria/confusão); ECG (QT): ___.",
+        "Conduta: gluconato de cálcio EV + Mg (hipo) OU SF + calcitonina + bisfosfonato (hiper).",
+        "Solicito internação/avaliação especializada conforme gravidade (nefro/endócrino/onco)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com Ca total 6,5 mg/dL, parestesia perioral, sinal de Trousseau positivo e QT longo. Qual a conduta?",
+      "alternativas": [
+        "Reposição oral lenta de cálcio",
+        "Gluconato de cálcio 10% endovenoso e correção da hipomagnesemia associada",
+        "Apenas observação",
+        "Furosemida endovenosa",
+        "Restrição de cálcio na dieta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que se deve sempre corrigir o cálcio pela albumina (ou dosar o cálcio iônico)?",
+      "alternativas": [
+        "Porque a albumina não influencia o cálcio",
+        "Porque parte do cálcio circula ligada à albumina; a hipoalbuminemia reduz o cálcio total sem alterar o iônico",
+        "Porque o cálcio total é sempre mais preciso",
+        "Porque a albumina aumenta o cálcio iônico",
+        "Porque só o cálcio urinário importa"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é a base inicial do tratamento da hipercalcemia grave?",
+      "alternativas": [
+        "Restrição hídrica",
+        "Expansão volêmica com soro fisiológico 0,9%",
+        "Furosemida isolada antes de hidratar",
+        "Reposição de cálcio",
+        "Diálise em todos os casos"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Na hipercalcemia com PTH SUPRIMIDO, qual a etiologia mais provável?",
+      "alternativas": [
+        "Hiperparatireoidismo primário",
+        "Neoplasia (PTHrP/metástases), intoxicação por vitamina D ou doença granulomatosa",
+        "Hipoparatireoidismo",
+        "Deficiência de vitamina D",
+        "Doença renal crônica"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual cuidado é necessário ao prescrever ácido zoledrônico na hipercalcemia?",
+      "alternativas": [
+        "Usar livremente em qualquer função renal",
+        "Evitar se TFG < 30 mL/min (risco renal) e infundir em pelo menos 15 minutos",
+        "Administrar em bolus rápido",
+        "Associar sempre a furosemida antes de hidratar",
+        "Usar por via subcutânea"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Hipocalcemia grave/sintomática (tetania, Trousseau+, QT longo) trata-se com gluconato de cálcio 10% EV, sempre corrigindo a hipomagnesemia associada — sem corrigir o Mg, a hipocalcemia é refratária."},
+    {"resposta": "B", "comentario": "Cerca de 40% do cálcio circula ligado à albumina. Na hipoalbuminemia, o cálcio total cai sem reduzir o cálcio iônico (fisiologicamente ativo); por isso corrige-se pela albumina ou dosa-se o cálcio iônico."},
+    {"resposta": "B", "comentario": "A base do tratamento da hipercalcemia grave é a expansão volêmica com SF 0,9% (corrige a desidratação e aumenta a excreção de cálcio). A furosemida só entra APÓS repleção volêmica, se necessário."},
+    {"resposta": "B", "comentario": "Hipercalcemia com PTH suprimido é PTH-independente: causas como neoplasia (PTHrP, metástases ósseas), intoxicação por vitamina D e doenças granulomatosas (sarcoidose). Hiperparatireoidismo cursa com PTH alto."},
+    {"resposta": "B", "comentario": "O ácido zoledrônico deve ser evitado se TFG < 30 mL/min (nefrotoxicidade) e infundido em pelo menos 15 minutos. Em hipercalcemia da malignidade com IR, o denosumabe é alternativa."}
+  ]
+}
