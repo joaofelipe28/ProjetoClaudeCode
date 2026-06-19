@@ -1,0 +1,219 @@
+{
+  "slug": "conjuntivite",
+  "titulo": "Conjuntivite",
+  "especialidade": "OFTALMOLOGIA",
+  "chapter_subject": "Conjuntivite no PS",
+  "chapter_bar": "CONJUNTIVITE — DIFERENCIAR E RED FLAGS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — OLHO VERMELHO",
+      "title": "CONJUNTIVITE — ANTES, EXCLUIR O GRAVE",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Olho vermelho + secrecao\nMedir ACUIDADE VISUAL", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 24, "text": "Red flag? (baixa de visao, dor intensa,\nfotofobia, vesiculas, lente de contato)", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 140, "h": 24, "text": "SIM: encaminhar\noftalmo (excluir\nceratite/glaucoma)", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 145, "h": 26, "text": "NAO: classificar\nviral/bacteriana/\nalergica/irritativa", "color": "teal", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Inflamação/infecção da conjuntiva (membrana que reveste esclera anterior e interior das pálpebras)",
+        "Caracteriza-se por hiperemia, edema e secreção ocular",
+        "Classificação: infecciosa (viral, bacteriana) ou não infecciosa (alérgica, irritativa)",
+        "Diagnóstico é predominantemente CLÍNICO (história + exame)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIFERENCIAÇÃO DAS ETIOLOGIAS",
+      "section_color": "navy",
+      "headers": ["Tipo", "Sintoma-chave / lateralidade", "Secreção e achados"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.16, 0.42, 0.42],
+      "rows": [
+        ["Viral", "Bilateral, contato com doente; pode ter faringite", "Aquosa; folículos; linfadenopatia pré-auricular (adenovírus)"],
+        ["Bacteriana", "Unilateral no início, pálpebras grudadas ao acordar", "Mucopurulenta/purulenta; hiperemia difusa, sem prurido"],
+        ["Alérgica", "Bilateral; PRURIDO INTENSO; atopia", "Aquosa/mucoide clara; papilas tarsais"],
+        ["Irritativa/tóxica", "Exposição química/ambiental", "Hiperemia, lacrimejamento; sem secreção purulenta"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — NÃO É 'SÓ CONJUNTIVITE'",
+      "section_color": "red",
+      "titulo": "ENCAMINHAR / EXCLUIR DIAGNÓSTICO GRAVE",
+      "items": [
+        "Diminuição da acuidade visual (qualquer grau)",
+        "Dor ocular moderada/intensa (não apenas 'areia') ou fotofobia importante",
+        "Vesículas em pálpebras ou nariz (herpes/zóster) ou sinais de envolvimento corneano",
+        "Secreção hiperaguda/purulenta intensa (suspeita de gonococo) ou conjuntivite neonatal",
+        "Uso de lente de contato (risco de ceratite por Pseudomonas), imunossupressão, trauma/cirurgia recente",
+        "Náuseas/vômitos com olho vermelho e dor -> pensar GLAUCOMA AGUDO"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAME E QUANDO INVESTIGAR",
+      "section_color": "navy",
+      "titulo": "AVALIAÇÃO",
+      "items": [
+        "SEMPRE medir acuidade visual; inspecionar hiperemia, tipo de secreção, edema palpebral",
+        "Pesquisar linfadenopatia pré-auricular (viral); fluoresceína se suspeita de lesão corneana",
+        "Exames complementares só em casos específicos: neonatal (cultura), gonocócica/clamidial, herpes com córnea",
+        "Casos graves/recorrentes/crônicos/refratários: cultura, citologia, avaliação oftalmológica"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO — VIRAL E BACTERIANA",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "VIRAL (autolimitada 7-14 dias)",
+        "items": [
+          "Lágrimas artificiais (carmelose 0,5%) 1-2 gotas 4-6x/dia",
+          "Compressas frias 3-4x/dia por 10-15 min",
+          "Anti-histamínico tópico opcional (olopatadina 0,1% 12/12h)",
+          "Higiene rigorosa: não compartilhar toalhas; lavar as mãos",
+          "NÃO é necessário antibiótico"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "BACTERIANA não complicada",
+        "items": [
+          "Tobramicina 0,3% colírio 1-2 gotas 6/6h por 7-10 dias",
+          "OU Ciprofloxacino 0,3% colírio 6/6h por 7 dias",
+          "Usuário de lente de contato: cobrir Pseudomonas -> quinolona + avaliar oftalmo",
+          "Limpeza das secreções com SF (gaze separada por olho)"
+        ]
+      }
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — ALÉRGICA E IRRITATIVA",
+      "section_color": "orange",
+      "titulo": "PRESCRIÇÃO",
+      "items": [
+        "ALÉRGICA: Cetotifeno 0,025% colírio (anti-H1 + estabilizador de mastócito) 1 gota 12/12h",
+        "  + anti-histamínico oral se necessário (loratadina 10mg/dia); afastar o alérgeno",
+        "IRRITATIVA/TÓXICA: identificar e remover o agente; lavar com SF abundante se exposição química",
+        "  + lágrimas artificiais 4-6x/dia + compressas frias",
+        "Entre dois colírios diferentes, aguardar 5-10 min; nunca encostar o bico no olho"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE ALTA",
+      "titulo": "ANTES DE LIBERAR",
+      "items": [
+        "Acuidade visual preservada e reflexos pupilares normais",
+        "Córnea íntegra (sem opacidade/úlcera/hipópio) e motilidade ocular sem dor",
+        "Ausência de dor intensa, fotofobia incapacitante ou náuseas/vômitos (afasta glaucoma agudo)",
+        "Sem trauma/perfuração/queimadura química grave; não imunossuprimido grave",
+        "Etiologia definida + capacidade de aplicar colírios + plano de retorno e afastamento (se infecciosa)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ORIENTAÇÕES E SINAIS DE ALERTA",
+      "section_color": "purple",
+      "titulo": "RETORNAR IMEDIATAMENTE SE",
+      "items": [
+        "Visão ficar muito embaçada",
+        "Dor forte no olho (não apenas 'areia'/ardência)",
+        "Sensibilidade à luz insuportável ou secreção purulenta intensa",
+        "Suspender lentes de contato até cura total; não coçar; não compartilhar toalhas/maquiagem"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO — OFTALMO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Olho vermelho há ___ dias com sinais de alarme: ___ (baixa de AV / dor intensa / fotofobia / suspeita de ceratite).",
+        "Acuidade visual: OD ___ / OE ___. Lavagem ocular realizada: sim/não.",
+        "Conduta na unidade: ___. Solicito avaliação oftalmológica para excluir glaucoma agudo, uveíte ou úlcera de córnea."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com olho vermelho, dor ocular intensa, fotofobia, náuseas e visão embaçada. Qual a conduta mais adequada?",
+      "alternativas": [
+        "Prescrever colírio antibiótico e alta como conjuntivite bacteriana",
+        "Tranquilizar e dar alta, pois é conjuntivite viral",
+        "Considerar diagnóstico grave (ex.: glaucoma agudo) e encaminhar com urgência ao oftalmologista",
+        "Prescrever corticoide tópico e alta",
+        "Apenas compressas frias"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado é mais característico da conjuntivite alérgica?",
+      "alternativas": [
+        "Secreção purulenta unilateral",
+        "Prurido intenso bilateral com papilas tarsais",
+        "Linfadenopatia pré-auricular",
+        "Pálpebras grudadas ao acordar",
+        "Hipópio"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente usuário de lentes de contato com olho vermelho, dor e secreção. Qual a principal preocupação?",
+      "alternativas": [
+        "Conjuntivite alérgica sazonal",
+        "Ceratite infecciosa (risco de Pseudomonas) — encaminhar/avaliar oftalmo",
+        "Conjuntivite viral autolimitada",
+        "Pterígio",
+        "Episclerite benigna"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Conjuntivite bilateral, secreção aquosa, folículos e linfadenopatia pré-auricular, com história de contato. Etiologia e tratamento?",
+      "alternativas": [
+        "Bacteriana — antibiótico tópico",
+        "Viral (adenovírus) — medidas de suporte e higiene; geralmente sem antibiótico",
+        "Alérgica — corticoide sistêmico",
+        "Fúngica — antifúngico tópico",
+        "Gonocócica — ceftriaxona IM"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre os exames complementares na conjuntivite, é correto:",
+      "alternativas": [
+        "São obrigatórios em todos os casos",
+        "O diagnóstico é predominantemente clínico; exames ficam para casos específicos (neonatal, gonocócica/clamidial, grave/refratário)",
+        "Sempre exigem cultura de secreção",
+        "A sorologia viral é mandatória",
+        "A biópsia conjuntival é rotina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Olho vermelho com dor intensa, fotofobia, baixa de visão e náuseas/vômitos NÃO é conjuntivite banal — sugere glaucoma agudo de ângulo fechado (ou uveíte/ceratite). É emergência: encaminhar ao oftalmologista."},
+    {"resposta": "B", "comentario": "O prurido intenso bilateral com papilas na conjuntiva tarsal é o marcador da conjuntivite alérgica, frequentemente com atopia associada. Secreção purulenta/pálpebras grudadas = bacteriana; linfadenopatia = viral."},
+    {"resposta": "B", "comentario": "Em usuário de lente de contato, olho vermelho doloroso obriga a afastar ceratite infecciosa, especialmente por Pseudomonas — potencialmente cegante. Suspender a lente e garantir avaliação oftalmológica."},
+    {"resposta": "B", "comentario": "Bilateral, secreção aquosa, folículos e linfadenopatia pré-auricular após contato = conjuntivite viral por adenovírus. Tratamento é de suporte (lágrimas, compressas, higiene); antibiótico não é necessário."},
+    {"resposta": "B", "comentario": "O diagnóstico de conjuntivite é clínico. Exames complementares (cultura, citologia, testes específicos) reservam-se a situações como neonatal, suspeita de gonococo/clamídia, herpes com córnea, e casos graves/refratários."}
+  ]
+}

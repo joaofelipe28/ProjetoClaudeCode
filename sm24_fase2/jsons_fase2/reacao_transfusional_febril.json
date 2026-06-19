@@ -1,0 +1,212 @@
+{
+  "slug": "reacao_transfusional_febril",
+  "titulo": "Reação Transfusional Febril Não Hemolítica",
+  "especialidade": "HEMATOLOGIA",
+  "chapter_subject": "Reação Transfusional Febril no PS",
+  "chapter_bar": "REAÇÃO TRANSFUSIONAL FEBRIL (RFNH)",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — FEBRE DURANTE TRANSFUSÃO",
+      "title": "RFNH — PRIMEIRO PASSO É SEMPRE PARAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 20, "text": "Febre/calafrio durante ou ate horas apos transfusao", "color": "navy", "font_size": 6.2},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 200, "h": 22, "text": "INTERROMPER transfusao + manter acesso\nchecar identificacao bolsa/paciente", "color": "red", "font_size": 6.0},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 140, "h": 24, "text": "So febre/calafrio,\nestavel = provavel RFNH\nantitermico", "color": "teal", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 145, "h": 26, "text": "Hipotensao/dor lombar/\nhemoglobinuria/dispneia\n= excluir hemolise/TRALI/sepse", "color": "orange", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Temperatura >= 38 C COM aumento > 1 C em relação à temperatura pré-transfusional",
+        "Associada à transfusão de hemocomponentes, na AUSÊNCIA de outras causas",
+        "Mecanismo: anticorpos do receptor contra antígenos leucocitários/plaquetários do doador",
+        "+ liberação de citocinas acumuladas na bolsa durante a estocagem",
+        "É a reação transfusional mais comum; geralmente benigna e autolimitada"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR",
+      "section_color": "purple",
+      "titulo": "QUADRO CLÍNICO E CONTEXTO",
+      "items": [
+        "Febre + tremor + calafrio + náusea/vômito",
+        "Pode ocorrer no início, durante ou HORAS após o término da transfusão",
+        "Tipicamente em pacientes POLITRANSFUNDIDOS (aloimunização prévia)",
+        "Diagnóstico CLÍNICO e de EXCLUSÃO — sempre afastar causas graves antes",
+        "Ausência de hipotensão, dor lombar, hemoglobinúria ou dispneia franca favorece RFNH"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL — NÃO CONFUNDIR",
+      "section_color": "red",
+      "headers": ["Reação", "Pistas que a distinguem", "Gravidade"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.26, 0.50, 0.24],
+      "rows": [
+        ["RFNH", "Só febre/calafrio, estável, sem hemólise", "Benigna"],
+        ["Hemolítica aguda", "Febre + dor lombar/no acesso, hipotensão, hemoglobinúria, ABO incompatível", "GRAVE"],
+        ["Contaminação/sepse", "Febre alta, calafrio intenso, choque precoce, bolsa suspeita", "GRAVE"],
+        ["TRALI", "Dispneia + hipoxemia + infiltrado bilateral até 6h", "GRAVE"],
+        ["Alérgica/anafilaxia", "Urticária, broncoespasmo, hipotensão, SEM febre isolada", "Leve a GRAVE"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — REAÇÃO GRAVE (NÃO É RFNH)",
+      "section_color": "red",
+      "titulo": "PENSAR EM CAUSA GRAVE SE",
+      "items": [
+        "Hipotensão, choque ou taquicardia desproporcional",
+        "Dor lombar, dor no local do acesso, hemoglobinúria (urina escura) -> hemólise aguda",
+        "Dispneia, hipoxemia, infiltrado pulmonar bilateral -> TRALI",
+        "Febre muito alta com calafrios e deterioração rápida -> contaminação bacteriana/sepse",
+        "Nesses casos: NÃO reiniciar a bolsa, suporte agressivo e comunicar a agência transfusional"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES — PARA EXCLUSÃO",
+      "section_color": "navy",
+      "titulo": "QUANDO INVESTIGAR",
+      "items": [
+        "Reverificar identificação do paciente e da bolsa (erro ABO é a causa mais temida)",
+        "Provas de hemólise: LDH, bilirrubina indireta, haptoglobina, Coombs direto",
+        "Hemoglobina livre no plasma/urina (hemoglobinúria)",
+        "Culturas (paciente + bolsa) se suspeita de contaminação",
+        "Devolver a bolsa e o equipo à agência transfusional para reanálise"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "CONDUTA NA RFNH",
+      "items": [
+        "1. INTERROMPER a transfusão imediatamente",
+        "2. Manter acesso venoso pérvio com soro fisiológico",
+        "3. Reverificar identificação bolsa x paciente",
+        "4. Antitérmico: Dipirona 1g IV OU Paracetamol VO",
+        "5. Sintomáticos conforme necessário (ex.: meperidina se calafrio intenso/tremor)",
+        "6. Monitorizar sinais vitais e reavaliar para excluir reação grave",
+        "7. Comunicar a agência transfusional e notificar o evento (hemovigilância)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PROFILAXIA",
+      "section_color": "teal",
+      "titulo": "PREVENIR NOVOS EPISÓDIOS",
+      "items": [
+        "Indicada após 2o episódio leve OU após o 1o se grave",
+        "Hemocomponentes DESLEUCOTIZADOS (filtrados) — medida mais eficaz",
+        "Antitérmico pré-transfusional é controverso e não substitui a filtragem",
+        "Registrar a reação no prontuário e na ficha transfusional do paciente"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST PÓS-EVENTO",
+      "titulo": "ANTES DE LIBERAR / SEGUIR",
+      "items": [
+        "Reação grave excluída (estável, sem hemólise/dispneia/hipotensão)",
+        "Febre controlada com antitérmico",
+        "Bolsa e equipo devolvidos à agência transfusional",
+        "Evento notificado (hemovigilância) e registrado no prontuário",
+        "Indicação de hemocomponente filtrado em transfusões futuras documentada"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / NOTIFICAÇÃO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA HEMOVIGILÂNCIA",
+      "items": [
+        "Paciente em transfusão de ___ (CH/plaquetas), apresentou febre (___ C, elevação > 1 C) + calafrios.",
+        "Transfusão interrompida; identificação bolsa/paciente conferida; reação grave excluída (sem hipotensão, dor lombar, hemoglobinúria, dispneia).",
+        "Conduta: antitérmico/sintomáticos; bolsa e equipo devolvidos para reanálise.",
+        "Hipótese: RFNH. Solicito desleucotização nas próximas transfusões e notifico o evento."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente politransfundido, 20 minutos após início de concentrado de hemácias, apresenta febre (38,5 C, elevação de 1,2 C) e calafrios, mantendo-se estável, sem dor lombar ou hipotensão. Primeira conduta?",
+      "alternativas": [
+        "Acelerar a transfusão para terminar logo a bolsa",
+        "Interromper a transfusão e manter o acesso com soro fisiológico",
+        "Administrar adrenalina intramuscular",
+        "Manter a transfusão e apenas dar antitérmico",
+        "Iniciar antibiótico de amplo espectro de imediato"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado, durante febre transfusional, mais fortemente aponta para reação hemolítica aguda (e não RFNH)?",
+      "alternativas": [
+        "Calafrio isolado",
+        "Náusea leve",
+        "Dor lombar com hipotensão e hemoglobinúria",
+        "Febre que cede com dipirona",
+        "Ocorrência em paciente politransfundido"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é a medida profilática MAIS eficaz para prevenir recorrência de RFNH?",
+      "alternativas": [
+        "Pré-medicar sempre com corticoide",
+        "Transfundir mais rápido",
+        "Usar hemocomponentes desleucotizados (filtrados)",
+        "Aquecer a bolsa antes de infundir",
+        "Reduzir o volume transfundido pela metade"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre o diagnóstico da RFNH, é correto afirmar:",
+      "alternativas": [
+        "É confirmado por teste sorológico específico",
+        "É um diagnóstico clínico e de exclusão de outras causas de febre",
+        "Exige biópsia de medula óssea",
+        "Só pode ocorrer nas primeiras 24h após a transfusão",
+        "É sempre acompanhado de hipotensão grave"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Paciente transfundido evolui em 2h com dispneia, hipoxemia e infiltrado pulmonar bilateral, sem sinais de sobrecarga. A hipótese mais provável é:",
+      "alternativas": [
+        "RFNH",
+        "Reação alérgica leve",
+        "TRALI (lesão pulmonar aguda relacionada à transfusão)",
+        "Contaminação bacteriana",
+        "Reação hemolítica tardia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Diante de qualquer febre durante a transfusão, o primeiro passo é SEMPRE interromper a infusão e manter o acesso com SF, antes de classificar a reação. Só então se reverifica identificação e se exclui reação grave. Antitérmico vem depois."},
+    {"resposta": "C", "comentario": "Dor lombar + hipotensão + hemoglobinúria é a tríade que distingue a reação hemolítica aguda (frequentemente por incompatibilidade ABO) da RFNH, que é benigna e cursa apenas com febre/calafrio em paciente estável."},
+    {"resposta": "C", "comentario": "A medida profilática mais eficaz é o uso de hemocomponentes desleucotizados (filtrados), reduzindo a carga de leucócitos e citocinas responsáveis pela RFNH. Pré-medicação antitérmica é controversa e não substitui a filtragem."},
+    {"resposta": "B", "comentario": "A RFNH é diagnóstico clínico e de exclusão: confirma-se afastando hemólise, contaminação, TRALI e reação alérgica. Não há teste confirmatório específico, e pode surgir até horas após o término da transfusão."},
+    {"resposta": "C", "comentario": "Dispneia + hipoxemia + infiltrado bilateral até 6h, sem sobrecarga volêmica, caracteriza TRALI — reação grave distinta da RFNH. Exige suporte respiratório e não reexposição ao hemocomponente do doador implicado."}
+  ]
+}

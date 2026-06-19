@@ -1,0 +1,195 @@
+{
+  "slug": "acesso_venoso_central",
+  "titulo": "Acesso Venoso Central",
+  "especialidade": "PROCEDIMENTOS",
+  "chapter_subject": "Acesso Venoso Central no PS",
+  "chapter_bar": "ACESSO VENOSO CENTRAL — TÉCNICA E SÍTIOS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — TÉCNICA DE SELDINGER",
+      "title": "ACESSO CENTRAL — PASSO A PASSO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 20, "text": "Indicacao + escolher sitio + USG se disponivel", "color": "navy", "font_size": 6.2},
+        {"id": "b", "x": 0.5, "y": 0.66, "w": 200, "h": 20, "text": "Antissepsia + paramentacao + anestesia local", "color": "teal", "font_size": 6.2},
+        {"id": "c", "x": 0.5, "y": 0.42, "w": 200, "h": 22, "text": "Puncionar -> retorno venoso -> passar FIO GUIA\n(nao forcar)", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.5, "y": 0.15, "w": 200, "h": 22, "text": "Dilatador -> cateter pelo fio guia -> retirar guia -> fixar\nRX checar posicao/PTX", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "INDICAÇÕES",
+      "section_color": "teal",
+      "titulo": "QUANDO ESTÁ INDICADO",
+      "items": [
+        "Impossibilidade de acesso venoso periférico",
+        "Medicações com alto risco de flebite: NPT, vasopressores, quimioterapia, soluções hiperosmolares",
+        "Paciente grave em uso de múltiplas medicações (cateter com 2-3 vias)",
+        "Necessidade de monitorização (PVC) ou terapias específicas (hemodiálise — cateter próprio)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONTRAINDICAÇÕES E CUIDADOS",
+      "section_color": "red",
+      "titulo": "ATENÇÃO ANTES DE PUNCIONAR",
+      "items": [
+        "Distúrbios de coagulação / plaquetopenia < 20.000 (relativa) — preferir femoral (compressível)",
+        "Trombose do vaso a ser puncionado",
+        "Infecção / lesão no sítio de punção",
+        "Sempre usar USG para guiar a punção quando disponível (reduz complicações)",
+        "Não introduzir a agulha além do necessário em jugular/subclávia (risco de pneumotórax)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "MATERIAIS",
+      "section_color": "navy",
+      "titulo": "PREPARO DA MESA",
+      "items": [
+        "Gaze, clorexidina alcoólica, luva e campo estéril",
+        "Seringa 20mL, agulha rosa (40x12) e agulha fina (30x7) para botão anestésico",
+        "Lidocaína 2% (anestésico local), soro fisiológico, cuba rim",
+        "Kit do cateter central (agulha, fio guia, dilatador, cateter)",
+        "Kit cirúrgico básico (porta-agulha, tesoura) + fio mononylon 3-0 ou 2-0 para fixação"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SÍTIOS — VANTAGENS E DESVANTAGENS",
+      "section_color": "navy",
+      "headers": ["Sítio", "Marco / relação anatômica", "Prós e contras"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.16, 0.40, 0.44],
+      "rows": [
+        ["Jugular interna", "Triângulo de Sedillot; veia LATERAL à carótida; ~2-3 cm de profundidade", "Compressível, pouca infecção; risco de PTX e hematoma cervical. Preferir à DIREITA (trajeto reto)"],
+        ["Subclávia", "0,5 cm lateral/inferior ao tubérculo conoide; agulha rente à pele, rumo à fúrcula", "Menos infecção, menos variação; NÃO compressível; MAIOR risco de PTX"],
+        ["Femoral", "Veia MEDIAL à artéria femoral; punção medial ao pulso, 45 graus", "Compressível, SEM risco de PTX; MAIS infecta. Preferência se discrasia"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TÉCNICA — PONTOS-CHAVE POR SÍTIO",
+      "section_color": "orange",
+      "titulo": "EXECUÇÃO",
+      "items": [
+        "Posição: DDH, Trendelenburg (jugular/subclávia — veia mais túrgida), face para o lado oposto",
+        "JUGULAR: punção no ápice do triângulo, agulha 45 graus rumo ao mamilo ipsilateral, LATERAL ao pulso carotídeo",
+        "Se puncionar artéria (sangue vivo/pulsátil): retirar e COMPRIMIR; puncionar lateral à tentativa prévia",
+        "SUBCLÁVIA: bater na clavícula e passar ABAIXO do osso, agulha quase paralela à pele, rumo à fúrcula",
+        "FEMORAL: punção medial ao pulso femoral, 45 graus; rotação externa leve do membro",
+        "Seldinger: retorno venoso -> fio guia (sem forçar) -> dilatador -> cateter -> retirar guia -> fixar com sutura"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "COMPLICAÇÕES — RED FLAGS",
+      "section_color": "red",
+      "titulo": "RECONHECER E AGIR",
+      "items": [
+        "Pneumotórax (jugular/subclávia): dispneia, dessaturação, MV abolido -> RX/USG, drenar se hipertensivo",
+        "Punção arterial: comprimir; se dilatou a artéria, vigiar hematoma expansivo (cervical pode ser grave)",
+        "Embolia gasosa: manter Trendelenburg e ocluir o canhão ao manipular",
+        "Arritmia: fio guia profundo demais — tracionar",
+        "Sempre confirmar posição da ponta e excluir PTX com RX de tórax antes de usar a via (exceto urgência)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST FINAL",
+      "titulo": "ANTES DE LIBERAR O CATETER",
+      "items": [
+        "Retorno venoso em todas as vias + lavar com SF",
+        "Cateter fixado com fio de sutura e curativo estéril",
+        "RX de tórax: ponta em VCS (junção cavoatrial) e ausência de pneumotórax",
+        "Registrar sítio, número de tentativas e intercorrências",
+        "Reavaliar indicação diariamente e retirar assim que possível (prevenir infecção de corrente sanguínea)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DICA DE SEGURANÇA",
+      "section_color": "orange",
+      "titulo": "ESCOLHA DO SÍTIO NA PRÁTICA",
+      "items": [
+        "Discrasia / plaquetopenia -> femoral (compressível, sem PTX)",
+        "Necessidade de menor risco infeccioso e longa permanência -> subclávia (se coagulação ok e operador experiente)",
+        "Emergência com USG -> jugular interna direita guiada é a mais versátil",
+        "Na dúvida ou sem USG, escolha o sítio que você domina e tem material de resgate"
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com plaquetopenia grave (< 20.000) e necessidade de acesso central. Qual o sítio preferencial e por quê?",
+      "alternativas": [
+        "Subclávia, por ser o que menos infecta",
+        "Jugular interna esquerda, por trajeto mais reto",
+        "Femoral, por ser compressível e não causar pneumotórax",
+        "Qualquer sítio, pois a coagulação não influencia",
+        "Subclávia, por não ser compressível"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Durante punção de jugular interna, retorna sangue vermelho vivo e pulsátil ao retirar a seringa. Conduta?",
+      "alternativas": [
+        "Progredir o fio guia rapidamente",
+        "Retirar a agulha e comprimir o local; vigiar hematoma antes de nova tentativa",
+        "Dilatar o trajeto imediatamente",
+        "Trocar para o lado contralateral sem comprimir",
+        "Introduzir o cateter assim mesmo"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual sítio de acesso venoso central apresenta o MAIOR risco de pneumotórax?",
+      "alternativas": [
+        "Femoral",
+        "Subclávia",
+        "Jugular externa",
+        "Basílica",
+        "Nenhum causa pneumotórax"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Ao passar o fio guia pela técnica de Seldinger, há resistência logo no início. Qual a conduta mais segura?",
+      "alternativas": [
+        "Forçar o fio guia até vencer a resistência",
+        "Não forçar; reposicionar a agulha (tracionar/avançar) e reconfirmar retorno venoso com a seringa",
+        "Dilatar o trajeto para facilitar a passagem",
+        "Introduzir o cateter sem o fio guia",
+        "Aumentar o calibre do dilatador"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre a relação anatômica nos sítios de punção, assinale a correta:",
+      "alternativas": [
+        "Na jugular, a veia é medial à carótida",
+        "Na femoral, a veia é lateral à artéria femoral",
+        "Na jugular a veia é lateral à carótida; na femoral a veia é medial à artéria",
+        "Em ambos os sítios a veia é sempre lateral à artéria",
+        "A relação anatômica é irrelevante quando se usa USG"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Na discrasia/plaquetopenia grave, prefere-se o sítio femoral: é compressível (permite hemostasia por compressão) e não causa pneumotórax. Subclávia é não compressível — pior escolha nesse cenário."},
+    {"resposta": "B", "comentario": "Sangue vivo e pulsátil = punção arterial (carótida). Retirar a agulha e comprimir; em geral, se só puncionou sem dilatar, não forma hematoma. Localizada a artéria, puncionar lateral à tentativa anterior. Nunca dilatar/cateterizar a artéria."},
+    {"resposta": "B", "comentario": "A subclávia tem o maior risco de pneumotórax pela proximidade do ápice pulmonar; por isso a agulha deve correr rente à pele/abaixo da clavícula. A femoral não causa pneumotórax."},
+    {"resposta": "B", "comentario": "Resistência ao fio guia sugere agulha mal posicionada — NUNCA forçar (risco de lesão vascular). Reposicionar a agulha e reconfirmar o retorno venoso com a seringa antes de prosseguir."},
+    {"resposta": "C", "comentario": "Relação anatômica inverte-se: no pescoço a jugular interna é LATERAL à carótida; na virilha a veia femoral é MEDIAL à artéria femoral. Conhecer isso orienta a punção mesmo com USG."}
+  ]
+}

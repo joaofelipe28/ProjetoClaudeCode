@@ -1,0 +1,243 @@
+{
+  "slug": "pancitopenia",
+  "titulo": "Pancitopenia no Pronto-Socorro",
+  "especialidade": "HEMATOLOGIA",
+  "chapter_subject": "Pancitopenia no PS",
+  "chapter_bar": "PANCITOPENIA NO PS — EMERGÊNCIA E CAUSA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — PRIORIDADES NO PS",
+      "title": "PANCITOPENIA — IDENTIFICAR A EMERGÊNCIA",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 22, "text": "Pancitopenia: anemia + leucopenia + plaquetopenia\nProcurar blastos no esfregaco", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.2, "y": 0.5, "w": 130, "h": 26, "text": "Febre +\nneutrofilos <500\n= NEUTROPENIA FEBRIL", "color": "red", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 130, "h": 26, "text": "Sangramento ou\nplaq <10mil\n= TRANSFUNDIR", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.8, "y": 0.5, "w": 130, "h": 26, "text": "Hb<7 sintomatica\n= CONCENTRADO\nde hemacias", "color": "teal", "font_size": 6.0},
+        {"id": "e", "x": 0.5, "y": 0.15, "w": 200, "h": 20, "text": "Estabilizar + acionar HEMATOLOGIA (mielograma)", "color": "purple", "font_size": 6.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["b", "e"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Redução SIMULTÂNEA das 3 linhagens: hemácias (anemia) + leucócitos (leucopenia) + plaquetas (plaquetopenia)",
+        "NÃO é diagnóstico — é achado laboratorial de múltiplas causas",
+        "Principais riscos: sepse (neutropenia), sangramento (plaquetopenia), anemia sintomática",
+        "Diagnóstico definitivo: mielograma / biópsia de medula óssea (NÃO no PS)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS PRINCIPAIS",
+      "section_color": "navy",
+      "headers": ["Mecanismo", "Exemplos", "Pista clínica"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Falência/infiltração medular", "Aplásica, leucemia aguda, mielodisplasia, metástase", "Blastos, sintomas B, organomegalia"],
+        ["Carência", "Déficit de B12 / folato (megaloblástica)", "Macrocitose, glossite, álcool"],
+        ["Hiperesplenismo", "Cirrose, esquistossomose", "Esplenomegalia, estigmas hepáticos"],
+        ["Drogas mielotóxicas", "QT, metotrexato, carbamazepina", "História medicamentosa"],
+        ["Infecção", "HIV, hepatites, parvovírus B19, CMV, EBV", "Sorologias, contexto epidemiológico"],
+        ["Autoimune", "LES, artrite reumatoide", "FAN, clínica de doença de base"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PERGUNTAS-CHAVE",
+      "section_color": "purple",
+      "titulo": "ANAMNESE DIRIGIDA",
+      "items": [
+        "Há quanto tempo os sintomas (fadiga, febre, sangramentos)?",
+        "Tem febre agora? Infecções de repetição?",
+        "Está sangrando? Roxos na pele, gengivorragia?",
+        "Usa medicamentos? Quimioterapia, anticonvulsivantes, antibióticos?",
+        "Etilismo? HIV / hepatite? Doença autoimune (lúpus, AR)?"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES — PS",
+      "section_color": "navy",
+      "titulo": "SOLICITAR",
+      "items": [
+        "Hemograma com diferencial: avaliar VCM, reticulócitos e PRESENÇA DE BLASTOS",
+        "Função renal e hepática (TGO, TGP, BT, albumina) + LDH e BI (hemólise/lise)",
+        "Coagulograma (TP, TTPA)",
+        "Vitamina B12 e ácido fólico; sorologias HIV, hepatites B e C",
+        "Se febre: hemoculturas (2 pares), urocultura, RX tórax, PCR/procalcitonina",
+        "Conforme suspeita: FAN/anti-DNA (LES), TSH, TC crânio (se cefaleia/sangramento)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — A) NEUTROPENIA FEBRIL (EMERGÊNCIA)",
+      "section_color": "red",
+      "titulo": "FEBRE + NEUTRÓFILOS < 500/mm³",
+      "items": [
+        "Definição: febre >= 38,3 C (ou 38 C por > 1h) + neutrófilos < 500/mm3",
+        "Hemoculturas (2 pares) ANTES do antibiótico — sem atrasar a 1a dose",
+        "ATB amplo espectro IMEDIATO (< 1h): Piperacilina-tazobactam 4,5g IV 6/6h",
+        "  OU Cefepime 2g IV 8/8h OU Meropenem 1g IV 8/8h (se instável/resistência)",
+        "Se instabilidade ou suspeita MRSA/cateter: adicionar Vancomicina 15-20 mg/kg IV 12/12h",
+        "Hidratação venosa + suporte; internação em UTI/semi + acionar hematologia"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO — B) SANGRAMENTO / C) ANEMIA GRAVE",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "PLAQUETOPENIA / SANGRAMENTO",
+        "items": [
+          "Plaq < 10.000: transfundir profilaticamente",
+          "  (1 aférese ou 6-8 U de pool)",
+          "Sangramento ativo: transfundir independente do valor",
+          "  (meta > 50.000 se sangramento ativo)",
+          "Evitar IM, punção arterial, AINE, AAS",
+          "Sangramento grave: ác. tranexâmico 1g IV 8/8h"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "ANEMIA GRAVE SINTOMÁTICA",
+        "items": [
+          "Hb < 7: transfundir concentrado de hemácias",
+          "Hb 7-8 com sintomas (dispneia, angina, taquicardia): transfundir",
+          "Cardiopata/idoso: considerar com Hb < 8",
+          "Transfundir lentamente (evitar sobrecarga)",
+          "Furosemida 20-40mg IV entre bolsas se cardiopatia"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CENÁRIOS ESPECIAIS",
+      "section_color": "purple",
+      "titulo": "D) BLASTOS / E) MEGALOBLÁSTICA",
+      "items": [
+        "BLASTOS no hemograma = suspeita de leucemia aguda: NÃO iniciar QT no PS",
+        "  Acionar hematologia URGENTE; suporte + hidratação + Alopurinol 300mg/dia (profilaxia de lise)",
+        "B12 < 200 pg/mL: B12 1000 mcg IM/dia por 7 dias, depois semanal por 4 semanas",
+        "  + Ácido fólico 5mg VO/dia",
+        "NUNCA repor folato isolado sem B12 — piora a neuropatia"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "INTERNAR SE",
+      "items": [
+        "Neutropenia febril (neutrófilos < 500 + febre)",
+        "Sepse / choque séptico",
+        "Plaquetas < 10.000 ou sangramento ativo",
+        "Anemia grave sintomática (Hb < 7, ou < 8 com sintomas)",
+        "Suspeita de leucemia aguda (blastos) ou necessidade de suporte transfusional"
+      ],
+      "accent": "red"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE ALTA",
+      "titulo": "ALTA SE (pancitopenia leve/moderada assintomática)",
+      "items": [
+        "Neutrófilos > 1000, plaquetas > 20.000, Hb > 8 sem sintomas",
+        "Sem febre, sangramento ou instabilidade",
+        "Encaminhamento garantido para hematologia (< 7 dias)",
+        "Evitar AINE/AAS, aglomerações, alimentos crus, trauma; escova macia, sem lâmina de barbear",
+        "Retorno IMEDIATO se febre, sangramento ou fraqueza extrema"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA HEMATOLOGIA",
+      "items": [
+        "Pancitopenia: Hb ___, leucócitos ___, neutrófilos ___, plaquetas ___.",
+        "Sintomas: ___ | Exame: ___ (palidez/petéquias/organomegalia). Blastos: presentes/ausentes.",
+        "Sem sepse/sangramento ativo no momento; fatores de risco: ___.",
+        "Exames iniciais realizados (função renal/hepática, LDH, B12, folato, sorologias).",
+        "Solicito avaliação hematológica URGENTE (mielograma/biópsia) e definição de conduta."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente em quimioterapia, febre 38,8 C, neutrófilos 320/mm³. Qual a conduta prioritária?",
+      "alternativas": [
+        "Aguardar resultado das hemoculturas antes de iniciar antibiótico",
+        "Antipirético e reavaliação em 24h",
+        "Coletar hemoculturas e iniciar antibiótico de amplo espectro em até 1 hora",
+        "Transfundir plaquetas profilaticamente",
+        "Iniciar fator estimulador de colônias isoladamente"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Homem etilista com pancitopenia, VCM 112, glossite. B12 sérica baixa. Qual erro pode agravar o quadro neurológico?",
+      "alternativas": [
+        "Repor B12 intramuscular",
+        "Repor folato isoladamente sem reposição de B12",
+        "Solicitar reticulócitos",
+        "Investigar mielodisplasia",
+        "Suspender o álcool"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente com pancitopenia e plaquetas 6.000/mm³, sem sangramento. Conduta?",
+      "alternativas": [
+        "Não transfundir até surgir sangramento",
+        "Transfundir plaquetas profilaticamente (< 10.000)",
+        "Transfundir somente se plaquetas < 5.000",
+        "Iniciar ácido tranexâmico e dispensar transfusão",
+        "Corticoide em altas doses"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Hemograma com pancitopenia e 30% de blastos circulantes. Qual a conduta no PS?",
+      "alternativas": [
+        "Iniciar quimioterapia de indução imediatamente no PS",
+        "Alta com retorno ambulatorial em 30 dias",
+        "Suporte (transfusão/ATB se febre), hidratação + alopurinol e acionar hematologia urgente",
+        "Apenas transfusão de hemácias e alta",
+        "Corticoide e observação domiciliar"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual exame é definitivo para esclarecer a causa de uma pancitopenia, mas NÃO deve ser realizado no PS?",
+      "alternativas": [
+        "Reticulócitos",
+        "Mielograma / biópsia de medula óssea",
+        "LDH",
+        "Eletroforese de hemoglobina",
+        "Dosagem de ferritina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Neutropenia febril é emergência oncológica: hemoculturas (2 pares) sem atrasar e ATB empírico amplo (Pipe-tazo/Cefepime/Meropenem) em < 1h. Atrasar antibiótico aumenta mortalidade. Não se aguarda cultura para iniciar."},
+    {"resposta": "B", "comentario": "Folato isolado em deficiência de B12 corrige a anemia mas pode precipitar/piorar a degeneração neurológica (mielose funicular). Sempre repor B12 junto, e na dúvida iniciar B12 antes ou em conjunto."},
+    {"resposta": "B", "comentario": "Gatilho de transfusão profilática de plaquetas é < 10.000/mm3 mesmo sem sangramento, pelo risco de sangramento espontâneo (incl. SNC). Com sangramento ativo, transfunde independente do número (meta > 50.000)."},
+    {"resposta": "C", "comentario": "Blastos = suspeita de leucemia aguda. No PS: NÃO iniciar QT; dar suporte (transfusão/ATB se febre), hidratar e iniciar alopurinol para profilaxia de síndrome de lise tumoral, e acionar hematologia com urgência."},
+    {"resposta": "B", "comentario": "O diagnóstico etiológico definitivo da pancitopenia é o mielograma/biópsia de medula, conduzido pela hematologia — não é exame de PS. No PS prioriza-se estabilizar e tratar as emergências."}
+  ]
+}

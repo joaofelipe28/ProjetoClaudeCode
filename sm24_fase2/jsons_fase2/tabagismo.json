@@ -1,0 +1,220 @@
+{
+  "slug": "tabagismo",
+  "titulo": "Abstinência à Nicotina e Tabagismo",
+  "especialidade": "PNEUMOLOGIA",
+  "chapter_subject": "Abstinência à Nicotina no PS e Cessação",
+  "chapter_bar": "ABSTINÊNCIA À NICOTINA E TABAGISMO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "TABAGISMO — DO PS À CESSAÇÃO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 22, "text": "Sintomas de abstinencia (ansiedade, fissura, irritabilidade)\nou fumante internado", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 200, "h": 20, "text": "Avaliar gravidade / comorbidade psiquiatrica / risco CV", "color": "teal", "font_size": 6.2},
+        {"id": "c", "x": 0.25, "y": 0.25, "w": 145, "h": 24, "text": "Sintomatico:\nmedidas gerais +\nTRN se necessario", "color": "green", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.25, "w": 145, "h": 24, "text": "Cessacao ambulatorial:\nFagerstrom + farmaco\n+ TCC", "color": "purple", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "ABSTINÊNCIA À NICOTINA",
+      "items": [
+        "Conjunto de manifestações neuropsiquiátricas e autonômicas pela interrupção/redução abrupta do tabaco em dependentes",
+        "Sintomas intensos impactam a adesão e levam à recaída — é condição clínica reconhecida",
+        "Gatilhos: suspensão abrupta, internação sem reposição, redução involuntária, estresse físico/emocional",
+        "No PS o tratamento é PREFERENCIALMENTE SINTOMÁTICO — não é emergência isolada (salvo associações)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — SINTOMAS",
+      "section_color": "purple",
+      "titulo": "QUADRO DE ABSTINÊNCIA",
+      "items": [
+        "Ansiedade, irritabilidade, inquietação psicomotora",
+        "Cefaleia, insônia, dificuldade de concentração",
+        "Fissura intensa (craving)",
+        "Bradicardia leve e aumento do apetite",
+        "Tipicamente após suspensão abrupta (incl. internação hospitalar)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE GRAVIDADE (PS)",
+      "titulo": "AVALIAR SEMPRE",
+      "items": [
+        "Comorbidades psiquiátricas",
+        "Risco cardiovascular recente (IAM / AVC)",
+        "Uso concomitante de álcool / outras drogas",
+        "Risco de autoagressão / autoextermínio"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS",
+      "section_color": "orange",
+      "titulo": "MANEJO SINTOMÁTICO",
+      "items": [
+        "Medidas gerais: ambiente calmo, acolhimento, psicoeducação",
+        "Evitar contenção farmacológica desnecessária",
+        "Terapia de reposição de nicotina (TRN) se necessário:",
+        "  Goma de nicotina 2mg VO sob demanda a cada 1-2h, OU",
+        "  Adesivo transdérmico 7-14 mg/dia (se internação)",
+        "Preferir doses MENORES em IAM/AVC recente (evitar picos -> preferir adesivo)"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TESTE DE FAGERSTRÖM — GRAU DE DEPENDÊNCIA",
+      "section_color": "navy",
+      "headers": ["Pontuação", "Dependência", "Implicação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.30, 0.50],
+      "rows": [
+        ["0 - 2", "Muito baixa", "Aconselhamento; TRN se sintomas"],
+        ["3 - 4", "Baixa", "Aconselhamento + considerar TRN"],
+        ["5", "Moderada", "Farmacoterapia + TCC"],
+        ["6 - 7", "Alta", "Farmacoterapia + TCC"],
+        ["8 - 10", "Muito alta", "Farmacoterapia + TCC (doses plenas)"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "FARMACOTERAPIA — TRN (ADESIVO POR CARGA TABÁGICA)",
+      "section_color": "orange",
+      "headers": ["Cigarros/dia", "Adesivo", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.26, 0.48],
+      "rows": [
+        ["> 20", "21 mg/dia", "Reduzir progressivamente em 6-12 semanas"],
+        ["10 - 20", "14 mg/dia", "Pode associar goma/pastilha sob demanda"],
+        ["< 10", "7 mg/dia", "Goma/pastilha 2-4mg (máx 15-20/dia)"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "FARMACOTERAPIA — BUPROPIONA E VARENICLINA",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "BUPROPIONA SR",
+        "items": [
+          "Dia 1-3: 150mg VO 1x/dia",
+          "A partir do dia 4: 150mg VO 12/12h (7-12 semanas)",
+          "REDUZ O LIMIAR CONVULSIVO",
+          "Contraindicada: epilepsia/convulsão, distúrbio alimentar,",
+          "  abstinência de álcool/BZD, IMAO, TCE recente",
+          "Adversos: insônia, boca seca, ansiedade"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "VARENICLINA",
+        "items": [
+          "Dia 1-3: 0,5mg VO 1x/dia",
+          "Dia 4-7: 0,5mg VO 12/12h",
+          "A partir do dia 8: 1mg VO 12/12h (12 semanas)",
+          "Adversos: náuseas, sonhos vívidos",
+          "Monitorar sintomas psiquiátricos"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RECOMENDAÇÃO MS / INCA",
+      "section_color": "teal",
+      "titulo": "PRINCÍPIO DO TRATAMENTO",
+      "items": [
+        "Todo paciente com dependência MODERADA a ALTA deve receber farmacoterapia ASSOCIADA à TCC",
+        "TCC: enfrentamento do craving, identificação de gatilhos, acompanhamento semanal inicial",
+        "Abordagem multiprofissional (Programa Nacional de Controle do Tabagismo)",
+        "Seguimento: retorno em 7-14 dias, ajuste de doses e reforço motivacional contínuo"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO E ALTA",
+      "section_color": "red",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: abstinência com surto psiquiátrico, risco de autoextermínio, uso de múltiplas substâncias, comorbidade clínica descompensada",
+        "ALTA: sintomas controlados + orientações fornecidas + encaminhamento ambulatorial estruturado",
+        "Encaminhar todo fumante motivado ao programa de cessação (ambulatório/UBS)"
+      ],
+      "accent": "red"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente internado, fumante de 25 cigarros/dia, desenvolve ansiedade, irritabilidade e fissura intensa. Qual a melhor conduta?",
+      "alternativas": [
+        "Contenção física e sedação profunda",
+        "Medidas gerais + terapia de reposição de nicotina (ex.: adesivo)",
+        "Bupropiona em dose plena imediata, independentemente de contraindicações",
+        "Apenas observação, pois não há tratamento para abstinência",
+        "Benzodiazepínico de longo prazo como primeira linha"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual condição é contraindicação ABSOLUTA ao uso de bupropiona?",
+      "alternativas": [
+        "Hipertensão controlada",
+        "Diabetes tipo 2",
+        "História de epilepsia / convulsão",
+        "Dislipidemia",
+        "Doença do refluxo"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Segundo o MS/INCA, qual a recomendação para o paciente com dependência moderada a alta (Fagerström)?",
+      "alternativas": [
+        "Apenas aconselhamento breve",
+        "Apenas terapia cognitivo-comportamental",
+        "Farmacoterapia associada à terapia cognitivo-comportamental (TCC)",
+        "Internação compulsória",
+        "Acompanhamento anual sem medicação"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente com IAM há 1 semana solicita ajuda para abstinência de nicotina. Sobre a TRN, qual o cuidado adequado?",
+      "alternativas": [
+        "Está absolutamente contraindicada em qualquer dose",
+        "Usar as maiores doses possíveis para controle rápido",
+        "Preferir doses menores (7-14 mg) e evitar picos, dando preferência ao adesivo",
+        "Substituir obrigatoriamente por vareniclina em dose dobrada",
+        "Suspender qualquer abordagem até 6 meses do evento"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre o manejo da abstinência à nicotina no PS, assinale a correta:",
+      "alternativas": [
+        "É uma emergência médica isolada que exige UTI",
+        "O tratamento é preferencialmente sintomático, salvo associação com outros quadros graves",
+        "Sempre exige internação psiquiátrica",
+        "A reposição de nicotina é proibida no ambiente hospitalar",
+        "Não há relação entre abstinência e recaída"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Abstinência à nicotina em internado: tratar de forma sintomática com medidas gerais e TRN (adesivo conforme carga tabágica). Evita-se contenção/sedação desnecessária; benzodiazepínico de longo prazo não é primeira linha."},
+    {"resposta": "C", "comentario": "Bupropiona reduz o limiar convulsivo — epilepsia/história de convulsão é contraindicação absoluta, assim como distúrbios alimentares, abstinência de álcool/BZD, uso de IMAO e TCE recente."},
+    {"resposta": "C", "comentario": "MS/INCA: dependência moderada a alta deve receber farmacoterapia ASSOCIADA à TCC. Nenhuma das duas isoladamente é a recomendação preferencial nesse grau de dependência."},
+    {"resposta": "C", "comentario": "Em IAM/AVC recente, a TRN não é proibida, mas deve usar doses menores (7-14 mg) e evitar picos de nicotina — preferindo o adesivo isolado pela liberação mais estável."},
+    {"resposta": "B", "comentario": "No PS o tratamento da abstinência é preferencialmente sintomático e não configura emergência isolada, exceto quando associada a surto psiquiátrico, risco de autoextermínio ou descompensação clínica."}
+  ]
+}

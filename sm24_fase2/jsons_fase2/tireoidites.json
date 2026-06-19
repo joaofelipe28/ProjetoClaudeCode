@@ -1,0 +1,196 @@
+{
+  "slug": "tireoidites",
+  "titulo": "Tireoidites",
+  "especialidade": "ENDOCRINOLOGIA",
+  "chapter_subject": "Tireoidites no PS",
+  "chapter_bar": "TIREOIDITES — DIFERENCIAR PARA TRATAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DOR CERVICAL E TIREOIDE",
+      "title": "TIREOIDITE — A DOR (OU SUA AUSÊNCIA) ORIENTA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 20, "text": "Acometimento da tireoide: dor? febre? sinais flogisticos?", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.2, "y": 0.5, "w": 135, "h": 26, "text": "Dor + febre +\nsinais flogisticos\n= AGUDA (supurativa)", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 26, "text": "Dor pos-viral +\nVHS muito alto\n= DE QUERVAIN", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.8, "y": 0.5, "w": 135, "h": 26, "text": "SEM dor\n(indolor/pos-parto/\nHashimoto)", "color": "teal", "font_size": 5.8},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Aguda = internar/ATB; demais = geralmente ambulatorial", "color": "purple", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["b", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Processo inflamatório da tireoide, de etiologia bacteriana, viral ou autoimune",
+        "Classificação por tempo de evolução e causa: aguda, subaguda e crônica",
+        "A presença e o tipo de DOR são o principal divisor clínico no PS",
+        "Muitas cursam em 4 fases: hiper -> eu -> hipo transitório -> recuperação"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TIPOS DE TIREOIDITE — QUADRO E LABORATÓRIO",
+      "section_color": "navy",
+      "headers": ["Tipo", "Clínica", "Laboratório / imagem"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.40, 0.40],
+      "rows": [
+        ["Aguda (supurativa)", "Início súbito, doloroso, febre, sinais flogísticos, disfagia/disfonia; imunodeprimidos", "Leucocitose com desvio, VHS alto; TSH/T4L normais; USG: abscesso; PAAF confirma"],
+        ["De Quervain (subaguda granulomatosa)", "Pós-viral, dor que piora à deglutição; causa mais comum de dor tireoidiana", "VHS > 50, PCR e transaminases altas; fase hiper (T4>T3, TSH baixo); cintilo hipocaptante"],
+        ["Linfocítica indolor / pós-parto", "SEM dor cervical; pós-parto/aborto; risco de hipotireoidismo definitivo", "Anti-TPO/AAT +; VHS normal; cintilo hipocaptante"],
+        ["Hashimoto (crônica)", "Autoimune; pode ter hashitoxicose; evolui p/ hipotireoidismo", "Anti-TPO +; hipotireoidismo definitivo"],
+        ["Riedel", "Fibrose, bócio pétreo indolor, sintomas compressivos; simula CA anaplásico", "Cintilo normal; PAAF não elucidativa; dx por biópsia a céu aberto"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — TIREOIDITE COMPLICADA",
+      "section_color": "red",
+      "titulo": "ALARMES (INTERNAÇÃO/EMERGÊNCIA)",
+      "items": [
+        "Tireoidite AGUDA supurativa: internação MANDATÓRIA",
+        "Sepse / infecção grave",
+        "Insuficiência respiratória aguda / compressão de via aérea",
+        "Dor refratária / sintomas sistêmicos intensos",
+        "Necessidade de drenagem cirúrgica de urgência (abscesso)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — POR TIPO",
+      "section_color": "orange",
+      "titulo": "CONDUTA",
+      "items": [
+        "AGUDA: ATB EV para S. aureus, S. pyogenes, S. pneumoniae (imunodeprimido: pensar fungos/P. jirovecii)",
+        "  + monitorização de via aérea + drenagem cirúrgica se abscesso",
+        "DE QUERVAIN: AINE ou corticoide para a dor; betabloqueador para sintomas adrenérgicos",
+        "  NÃO usar tionamidas (não há hiperprodução, e sim liberação por destruição)",
+        "INDOLOR/PÓS-PARTO: betabloqueador na fase hiper; LT4 se hipotireoidismo clínico",
+        "RIEDEL: tratamento cirúrgico; bom prognóstico"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONCEITO-CHAVE — TIREOTOXICOSE POR DESTRUIÇÃO",
+      "section_color": "purple",
+      "titulo": "POR QUE NÃO USAR TIONAMIDAS",
+      "items": [
+        "Na tireoidite, o hipertireoidismo é por LIBERAÇÃO do hormônio pré-formado (destruição glandular)",
+        "Não há síntese aumentada -> metimazol/propiltiouracila NÃO funcionam",
+        "Cintilografia HIPOCAPTANTE confirma o mecanismo destrutivo (diferencia de Graves, que é hipercaptante)",
+        "Tratar sintomas adrenérgicos com betabloqueador; a fase hiper é autolimitada"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INTERNAÇÃO x AMBULATORIAL",
+      "section_color": "navy",
+      "headers": ["Tipo", "Conduta usual", "Quando internar"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.24, 0.34, 0.42],
+      "rows": [
+        ["Aguda supurativa", "Internação", "Sempre (ATB EV, via aérea, drenagem)"],
+        ["De Quervain", "Ambulatorial", "Dor incapacitante, falha terapêutica, IRpA, supuração"],
+        ["Indolor/Hashimoto/pós-parto", "Ambulatorial", "Raramente (instabilidade grave)"]
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE SEGUIMENTO",
+      "titulo": "ANTES DA ALTA AMBULATORIAL",
+      "items": [
+        "Excluída tireoidite supurativa / complicação de via aérea",
+        "Dor controlada (AINE/corticoide) e sintomas adrenérgicos manejados (betabloqueador)",
+        "Função tireoidiana solicitada para seguimento das fases",
+        "Pós-parto com hipotireoidismo: reavaliar suspensão da LT4 após 8-12 semanas",
+        "Retorno ambulatorial (endocrinologia) garantido"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE TRANSFERÊNCIA — URGENTE",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com tireoidite complicada (___ supurativa / De Quervain / tireotoxicose).",
+        "Motivo da transferência: compressão de via aérea / abscesso cervical / instabilidade.",
+        "Estado: ___ | SatO2 ___ | FC ___ | PA ___.",
+        "Recurso necessário: cirurgia de cabeça e pescoço / endocrino + vaga de ___ (UTI/enfermaria)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com dor cervical intensa após quadro viral de vias aéreas, VHS 80, fase de hipertireoidismo com cintilografia hipocaptante. Diagnóstico mais provável?",
+      "alternativas": [
+        "Doença de Graves",
+        "Tireoidite de De Quervain (subaguda granulomatosa)",
+        "Tireoidite aguda supurativa",
+        "Tireoidite de Riedel",
+        "Bócio multinodular tóxico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que NÃO se usam tionamidas (metimazol/PTU) na fase de hipertireoidismo da tireoidite subaguda?",
+      "alternativas": [
+        "Porque causam agranulocitose sempre",
+        "Porque o hipertireoidismo decorre de liberação do hormônio pré-formado por destruição, não de síntese aumentada",
+        "Porque a cintilografia é hipercaptante",
+        "Porque a tireoidite nunca causa hipertireoidismo",
+        "Porque as tionamidas pioram a dor cervical"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual tipo de tireoidite tem internação mandatória?",
+      "alternativas": [
+        "Tireoidite de Hashimoto",
+        "Tireoidite linfocítica indolor",
+        "Tireoidite aguda supurativa",
+        "Tireoidite pós-parto",
+        "Tireoidite de De Quervain não complicada"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Mulher no pós-parto com tireotoxicose indolor, anti-TPO positivo e cintilografia hipocaptante. Qual o tratamento da fase hiperadrenérgica?",
+      "alternativas": [
+        "Metimazol em dose alta",
+        "Betabloqueador para os sintomas adrenérgicos",
+        "Iodo radioativo",
+        "Levotiroxina imediata",
+        "Tireoidectomia de urgência"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Paciente com bócio pétreo, indolor, de crescimento progressivo, com sintomas compressivos, podendo simular carcinoma anaplásico. Qual a hipótese?",
+      "alternativas": [
+        "Tireoidite de De Quervain",
+        "Tireoidite aguda supurativa",
+        "Tireoidite de Riedel (fibrosante)",
+        "Tireoidite pós-parto",
+        "Doença de Graves"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor tireoidiana pós-viral + VHS muito elevado + fase hiper com cintilografia hipocaptante = tireoidite de De Quervain (subaguda granulomatosa), a causa mais comum de dor na tireoide. Graves seria hipercaptante."},
+    {"resposta": "B", "comentario": "Na tireoidite subaguda o hipertireoidismo é por LIBERAÇÃO de hormônio pré-formado pela destruição glandular — não há síntese aumentada, por isso tionamidas não funcionam. Cintilografia hipocaptante confirma. Trata-se com betabloqueador."},
+    {"resposta": "C", "comentario": "A tireoidite aguda supurativa tem internação mandatória: exige ATB EV, monitorização de via aérea e, conforme o caso, drenagem cirúrgica de urgência. As autoimunes/subaguda são, em geral, ambulatoriais."},
+    {"resposta": "B", "comentario": "Na tireotoxicose por destruição (pós-parto/indolor), a fase hiper é autolimitada e adrenérgica — trata-se com betabloqueador. LT4 fica para a fase de hipotireoidismo clínico; tionamidas e iodo não se aplicam."},
+    {"resposta": "C", "comentario": "Bócio pétreo indolor, fibrosante, com sintomas compressivos, que pode simular carcinoma anaplásico, caracteriza a tireoidite de Riedel. Diagnóstico por biópsia a céu aberto; tratamento cirúrgico, com bom prognóstico."}
+  ]
+}

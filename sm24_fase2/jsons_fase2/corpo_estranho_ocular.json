@@ -1,0 +1,208 @@
+{
+  "slug": "corpo_estranho_ocular",
+  "titulo": "Corpo Estranho Ocular",
+  "especialidade": "OFTALMOLOGIA",
+  "chapter_subject": "Corpo Estranho Ocular no PS",
+  "chapter_bar": "CORPO ESTRANHO OCULAR — EXCLUIR PERFURAÇÃO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "CORPO ESTRANHO — SUPERFICIAL OU PERFURANTE?",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Trauma ocular + sensacao de CE\nMedir ACUIDADE VISUAL (prognostico)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 24, "text": "Sinais de PERFURACAO do globo?\n(pupila em gota, camara rasa, hifema, alta velocidade)", "color": "red", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.27, "w": 145, "h": 26, "text": "SIM: escudo rigido\nNAO manipular\noftalmo urgente", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.27, "w": 145, "h": 26, "text": "NAO: superficial\nirrigar/remover\n+ ATB topico", "color": "teal", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CLASSIFICAÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Material que penetra/aloja nas estruturas oculares ou anexos por trauma mecânico",
+        "Externo (superfície: córnea, conjuntiva, pálpebra) | Intraocular | Intraorbitário",
+        "Material: metálico (maioria dos CE intraoculares), orgânico (madeira/planta — alto risco infeccioso), vidro/plástico",
+        "Mecanismo: baixa velocidade (poeira/cílio, superficial) x ALTA velocidade (esmeril, martelo — risco de perfuração)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PERGUNTAS-CHAVE",
+      "section_color": "purple",
+      "titulo": "ANAMNESE DIRIGIDA",
+      "items": [
+        "Como ocorreu? Estava martelando/lixando/cortando? Impacto de alta energia ou projétil?",
+        "Há quanto tempo? (apresentação > 24h aumenta risco de endoftalmite)",
+        "Qual material? (orgânico = maior risco infeccioso)",
+        "Dor, baixa de visão, fotofobia, flashes ou moscas volantes?",
+        "Usava EPI? Usa lente de contato? Tentou remover/esfregou o olho?"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAME FÍSICO",
+      "section_color": "navy",
+      "titulo": "AVALIAÇÃO SISTEMÁTICA",
+      "items": [
+        "ACUIDADE VISUAL (obrigatória, cada olho separado) — principal fator prognóstico; documentar antes de manipular",
+        "Inspeção: pálpebras, conjuntiva, córnea (fluoresceína), câmara anterior (profundidade, hifema, hipópio)",
+        "Pupila: formato (irregular/em gota sugere perfuração), reflexo, DPAR",
+        "EVERSÃO DA PÁLPEBRA SUPERIOR: fundamental para CE subtarsal (olhar para baixo, everter com cotonete)",
+        "Motilidade ocular (restrição = lesão muscular/orbitária); fundoscopia se possível"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — PERFURAÇÃO DO GLOBO",
+      "section_color": "red",
+      "titulo": "SINAIS DE GLOBO ABERTO",
+      "items": [
+        "Diminuição acentuada da acuidade visual",
+        "Pupila irregular ou em 'gota'; câmara anterior rasa ou ausente",
+        "Hifema (sangue) ou hipópio (pus); prolapso de íris/conteúdo intraocular",
+        "Ferida penetrante visível; hemorragia subconjuntival extensa circunferencial",
+        "Mecanismo de alta velocidade (martelo/esmeril) MESMO com exame inicial normal"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CONDUTA — POR CENÁRIO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "SUSPEITA DE PERFURAÇÃO",
+        "items": [
+          "NÃO manipular, NÃO pressionar, NÃO instilar colírios/pomadas",
+          "Proteger com ESCUDO RÍGIDO (nunca curativo compressivo)",
+          "Jejum (cirurgia iminente); evitar Valsalva",
+          "ATB sistêmico profilático + antiemético + analgesia (evitar AINE)",
+          "Profilaxia antitetânica; oftalmo de URGÊNCIA"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "CE SUPERFICIAL (sem alarme)",
+        "items": [
+          "Remover por irrigação com SF; anestésico tópico apenas para o exame",
+          "Se não sair com irrigação -> encaminhar para remoção com lâmpada de fenda",
+          "Pós-remoção: Tobramicina 0,3% 4/4h por 5 dias",
+          "AINE tópico (diclofenaco 0,1% 6/6h) + lágrimas artificiais",
+          "Analgesia oral; não usar lente de contato 5-7 dias"
+        ]
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESTRATIFICAÇÃO DO ENCAMINHAMENTO",
+      "section_color": "navy",
+      "headers": ["Urgência", "Situações", "Conduta"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.20, 0.46, 0.34],
+      "rows": [
+        ["Imediato (< 24h)", "Perfuração/CE intraocular, DPAR, hifema, CE orgânico, alta velocidade, endoftalmite", "Oftalmo URGENTE; escudo"],
+        ["24-48h", "CE superficial removido com abrasão extensa, sintomas persistentes, usuário de lente", "Reavaliação oftalmológica"],
+        ["Manejo no PS", "CE superficial removível por irrigação, abrasão simples, AV preservada", "Alta com prescrição e retorno"]
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST / ORIENTAÇÕES PÓS-REMOÇÃO",
+      "titulo": "ALTA SEGURA",
+      "items": [
+        "Acuidade visual preservada e sem sinais de alarme",
+        "Córnea sem opacidade densa/úlcera; câmara anterior normal",
+        "NÃO esfregar o olho; NÃO usar lente de contato até cicatrizar (5-7 dias); não tampar globo aberto",
+        "Lavar as mãos antes dos colírios; óculos escuros se fotofobia",
+        "Retorno IMEDIATO se: piora da dor, baixa de visão, vermelhidão intensa, secreção purulenta ou sem melhora em 24-48h"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO — OFTALMO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Trauma ocular em OD/OE há ___ h; mecanismo: ___ (metal-metal/esmeril/vegetal/poeira). EPI: sim/não.",
+        "AV: OD ___ / OE ___. Localização do CE: conjuntiva/córnea/suspeita intraocular.",
+        "Conduta: irrigação / tentativa de remoção sem sucesso / escudo rígido (se suspeita de perfuração) / analgesia.",
+        "Solicito avaliação especializada para remoção sob lâmpada de fenda e exclusão de CE retido/ceratite."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente estava martelando metal e refere baixa de visão súbita, pupila em 'gota' e câmara anterior rasa. Conduta correta?",
+      "alternativas": [
+        "Irrigar abundantemente e remover o corpo estranho na unidade",
+        "Instilar colírio antibiótico e pomada e dar alta",
+        "Proteger com escudo rígido, NÃO manipular, iniciar ATB sistêmico e encaminhar com urgência (suspeita de globo aberto)",
+        "Aplicar curativo compressivo no olho",
+        "Prescrever AINE tópico e reavaliar em 48h"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o principal fator prognóstico a ser documentado no trauma/corpo estranho ocular?",
+      "alternativas": [
+        "Pressão arterial",
+        "Acuidade visual inicial",
+        "Tipo de secreção",
+        "Idade do paciente",
+        "Tempo de jejum"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente com sensação de corpo estranho persistente, mas córnea sem alterações visíveis. Qual manobra é fundamental?",
+      "alternativas": [
+        "Tonometria de imediato",
+        "Eversão da pálpebra superior para procurar corpo estranho subtarsal",
+        "Fundoscopia sob midríase",
+        "Gonioscopia",
+        "Lavagem com soro hipertônico"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre o corpo estranho de material ORGÂNICO (madeira/vegetal), é correto:",
+      "alternativas": [
+        "Tem baixo risco e pode ser observado em casa",
+        "Tem maior risco infeccioso e merece encaminhamento/avaliação especializada",
+        "Deve ser removido sempre com ímã",
+        "Não causa endoftalmite",
+        "Dispensa antibiótico"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Corpo estranho corneano superficial removido por irrigação, AV preservada, sem sinais de alarme. Prescrição de alta adequada?",
+      "alternativas": [
+        "Corticoide tópico em dose alta",
+        "Antibiótico tópico (tobramicina) + lágrimas artificiais + analgesia, com orientação de retorno",
+        "Curativo compressivo por 7 dias",
+        "Apenas observação sem medicação",
+        "Atropina sistêmica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Mecanismo de alta velocidade (martelo/metal) + pupila em gota + câmara rasa = globo aberto. NÃO manipular, NÃO pressionar, NÃO instilar colírios; proteger com escudo rígido, ATB sistêmico, antitetânica e oftalmo urgente."},
+    {"resposta": "B", "comentario": "A acuidade visual inicial é o principal fator prognóstico no trauma ocular e deve ser documentada antes de qualquer manipulação, em cada olho separadamente."},
+    {"resposta": "B", "comentario": "Na sensação persistente de corpo estranho com córnea aparentemente normal, a eversão da pálpebra superior é fundamental para localizar um CE subtarsal, causa frequente de abrasões lineares."},
+    {"resposta": "B", "comentario": "Corpos estranhos orgânicos (madeira/vegetal) têm maior risco infeccioso (inclusive fúngico) e de endoftalmite, exigindo avaliação especializada e cobertura adequada — não devem ser apenas observados."},
+    {"resposta": "B", "comentario": "Após remoção de CE superficial sem alarme, a prescrição é antibiótico tópico (tobramicina) + lágrimas artificiais + analgesia oral, com orientação de não esfregar/usar lente e retorno se piora."}
+  ]
+}

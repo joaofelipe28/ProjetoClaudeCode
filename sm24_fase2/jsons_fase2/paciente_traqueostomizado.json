@@ -1,0 +1,217 @@
+{
+  "slug": "paciente_traqueostomizado",
+  "titulo": "Atendimento ao Paciente Traqueostomizado",
+  "especialidade": "PROCEDIMENTOS",
+  "chapter_subject": "Emergências da Traqueostomia no PS",
+  "chapter_bar": "PACIENTE TRAQUEOSTOMIZADO — EMERGÊNCIAS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DESCONFORTO RESPIRATÓRIO NO TRAQUEOSTOMIZADO",
+      "title": "TRAQUEO — OBSTRUÇÃO OU PERDA DE CÂNULA",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 20, "text": "Dispneia/dessaturacao em traqueostomizado", "color": "navy", "font_size": 6.2},
+        {"id": "b", "x": 0.5, "y": 0.64, "w": 200, "h": 22, "text": "O2 + monitor + aspirar via aerea\nmaterial de IOT pronto + chamar fisio", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 140, "h": 24, "text": "Obstrucao/cuff furado:\nTROCAR a canula\n(ambiente controlado)", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 145, "h": 26, "text": "Perdeu a canula:\nestenose? via aerea\npelo estoma vs IOT", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PRIMEIRO: POR QUE O PACIENTE TEM TRAQUEOSTOMIA?",
+      "section_color": "teal",
+      "titulo": "ENTENDER O CONTEXTO",
+      "items": [
+        "Investigar o motivo: estenose de traqueia, síndrome, AVC/TCE prévio, uso de CPAP/BIPAP, criança",
+        "Familiares de paciente crônico geralmente sabem cuidar — não vão ao PS por bobeira",
+        "NÃO dar alta sem entender exatamente o que está acontecendo; encaminhar se necessário",
+        "A causa muda a conduta na perda de cânula (ver adiante)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — EMERGÊNCIA DE VIA AÉREA",
+      "section_color": "red",
+      "titulo": "AGIR IMEDIATAMENTE",
+      "items": [
+        "Sinais de obstrução da cânula ou cuff furado com dessaturação",
+        "Sempre em ambiente controlado: O2, monitorização e material de IOT disponíveis",
+        "Aspirar a via aérea ANTES de qualquer troca",
+        "Chamar ajuda (fisioterapia / especialista) precocemente",
+        "DICA DE OURO: no sufoco, é mais fácil passar um TOT pequeno (5,0-6,5) pelo estoma do que uma cânula nova"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TROCA DE CÂNULA — TÉCNICA",
+      "section_color": "orange",
+      "titulo": "OBSTRUÇÃO / CUFF FURADO",
+      "items": [
+        "Posicionar em decúbito dorsal, pescoço estendido, boa exposição cervical",
+        "Aspirar a via aérea antes da troca",
+        "Forma comum: retirar a cânula antiga e já inserir a nova com xilocaína gel na ponta",
+        "Inserir a ponta de forma LATERAL e depois rodar 90 graus para a posição correta",
+        "Alternativa: guiar a troca por sonda (nasogástrica) introduzida pela cânula antiga",
+        "Ter SEMPRE mais de um tamanho de cânula à disposição"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REGRA DE OURO DO TAMANHO",
+      "section_color": "purple",
+      "titulo": "NUNCA AUMENTAR O CALIBRE NO PS",
+      "items": [
+        "NUNCA tente colocar cânula MAIOR do que a que o paciente usa",
+        "Ex.: usa plástica 7,5 -> trocar por 7,5 ou 7,0; NÃO passar 8,0",
+        "Cânula maior que não entra deve ser deixada para o especialista",
+        "Se a nova cânula não passar -> usar o TOT pequeno pelo estoma como resgate"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "PERDA DE CÂNULA — A CAUSA DECIDE A VIA AÉREA",
+      "section_color": "red",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "TEM ESTENOSE DE TRAQUEIA",
+        "items": [
+          "Estenose é PROXIMAL ao estoma (entre cordas e traqueostoma)",
+          "IOT pela boca tende a ser muito difícil/ineficaz",
+          "Estabelecer via aérea PELO ORIFÍCIO da traqueostomia",
+          "Resgate: TOT pequeno (5,0-6,5) pelo estoma"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "SEM DOENÇA TRAQUEAL",
+        "items": [
+          "Traqueo por causa neurológica/síndrome (via aérea alta pérvia)",
+          "Preferir INTUBAÇÃO OROTRAQUEAL se necessário",
+          "Encaminhar a serviço com cirurgia torácica",
+          "Estabilizar e transferir com via aérea garantida"
+        ]
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TIPOS DE CÂNULA",
+      "section_color": "navy",
+      "headers": ["Tipo", "Características", "Perfil do paciente"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.44, 0.38],
+      "rows": [
+        ["Plástica", "Pode ter cuff e/ou endocânula; sem endocânula = alto risco de rolha/obstrução", "Necessita cuff: VNI domiciliar ou proteção contra broncoaspiração"],
+        ["Metálica", "Sem cuff; SEMPRE tem endocânula; curta/média/longa; numeração 0-6", "Neurológico bom, não precisa proteger via aérea"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EQUIVALÊNCIA DE NUMERAÇÃO (METÁLICA x PLÁSTICA)",
+      "section_color": "navy",
+      "titulo": "REFERÊNCIA RÁPIDA",
+      "items": [
+        "A endocânula serve para o paciente retirar e limpar várias vezes/dia (evita rolha)",
+        "Metálica 4 média ~ equivale à plástica 7,0",
+        "Metálica 5 média ~ equivale à plástica 8,0",
+        "A maioria dos pacientes usa a versão média"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST PÓS-PROCEDIMENTO / ANTES DA ALTA",
+      "titulo": "CONFIRMAR",
+      "items": [
+        "Cânula pérvia, bem posicionada e fixada; SatO2 adequada",
+        "Causa do evento esclarecida e resolvida (obstrução/cuff/perda)",
+        "Aspiração eficaz e via aérea protegida conforme necessidade",
+        "Orientação ao cuidador sobre sinais de obstrução e higiene da endocânula",
+        "Encaminhamento a especialista (cirurgia torácica/ORL) se troca complexa ou doença traqueal"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente traqueostomizado por ___ (causa), apresentou ___ (obstrução / cuff furado / perda de cânula).",
+        "Conduta: aspiração + troca de cânula nº ___ / via aérea estabelecida por ___ (estoma/IOT).",
+        "Doença traqueal: sim/não. Via aérea atual: ___ | SatO2: ___.",
+        "Solicito avaliação de ___ (cirurgia torácica / ORL) e ___ (vaga/transferência)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente usa cânula plástica 7,5. Apresenta obstrução e a cânula 7,5 não passa na troca. Qual a conduta mais segura no PS?",
+      "alternativas": [
+        "Forçar uma cânula 8,0 para garantir calibre",
+        "Tentar cânula menor (7,0) ou, no sufoco, passar um TOT pequeno pelo estoma",
+        "Aguardar o especialista sem nenhuma via aérea",
+        "Intubar pela boca obrigatoriamente",
+        "Realizar nova traqueostomia cirúrgica imediata"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com ESTENOSE de traqueia perde a cânula de traqueostomia e está em insuficiência respiratória. Qual a melhor estratégia de via aérea?",
+      "alternativas": [
+        "Intubação orotraqueal pela boca, que será fácil",
+        "Estabelecer via aérea pelo orifício da traqueostomia (a estenose é proximal ao estoma)",
+        "Ventilação com máscara facial indefinidamente",
+        "Aguardar transferência sem intervenção",
+        "Cricotireoidostomia acima da estenose"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Antes de qualquer troca de cânula em ambiente de PS, qual medida é indispensável?",
+      "alternativas": [
+        "Iniciar antibiótico profilático",
+        "Garantir O2, monitorização e material de IOT disponíveis, e aspirar a via aérea",
+        "Sedação profunda do paciente",
+        "Radiografia de tórax prévia obrigatória",
+        "Jejum de 8 horas"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre os tipos de cânula, assinale a correta:",
+      "alternativas": [
+        "A cânula metálica possui cuff e é usada para ventilação positiva domiciliar",
+        "A cânula plástica sem endocânula tem baixo risco de obstrução",
+        "A cânula metálica não tem cuff, sempre tem endocânula e é usada em paciente neurológico bom",
+        "A endocânula impede a aspiração da via aérea",
+        "Toda cânula plástica é metálica internamente"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Paciente traqueostomizado por sequela neurológica (sem doença traqueal) perde a cânula e precisa de via aérea. Conduta preferencial?",
+      "alternativas": [
+        "Via aérea exclusivamente pelo estoma",
+        "Intubação orotraqueal e encaminhamento a serviço com cirurgia torácica",
+        "Não há indicação de via aérea",
+        "Forçar a recolocação de uma cânula de maior calibre",
+        "Traqueostomia cirúrgica imediata no PS"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Regra de ouro: nunca aumentar o calibre no PS. Se a cânula do mesmo número não passa, tentar uma menor (7,0); no sufoco, o resgate mais fácil é um TOT pequeno (5,0-6,5) pelo estoma. Cânula maior fica para o especialista."},
+    {"resposta": "B", "comentario": "Na estenose traqueal, a obstrução é proximal ao estoma (entre cordas e traqueostoma), tornando a IOT pela boca ineficaz. A via aérea deve ser estabelecida pelo próprio orifício da traqueostomia."},
+    {"resposta": "B", "comentario": "Toda troca de cânula deve ser feita em ambiente controlado: O2, monitorização e material de IOT prontos, com aspiração prévia da via aérea e ajuda (fisioterapia/especialista) disponível."},
+    {"resposta": "C", "comentario": "Metálica: sem cuff, sempre com endocânula, para paciente neurológico bom que não precisa proteger via aérea. Plástica sem endocânula tem ALTO risco de obstrução. Cuff/VNI domiciliar = cânula plástica com cuff."},
+    {"resposta": "B", "comentario": "Sem doença traqueal (via aérea alta pérvia), a perda de cânula deve ser manejada preferencialmente por intubação orotraqueal, com encaminhamento a serviço com cirurgia torácica para reabordagem do estoma."}
+  ]
+}

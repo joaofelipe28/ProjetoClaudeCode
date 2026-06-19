@@ -1,0 +1,208 @@
+{
+  "slug": "insuficiencia_adrenal",
+  "titulo": "Insuficiência Adrenal e Crise Adrenal",
+  "especialidade": "ENDOCRINOLOGIA",
+  "chapter_subject": "Insuficiência Adrenal no PS",
+  "chapter_bar": "INSUFICIÊNCIA ADRENAL — RECONHECER A CRISE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CRISE ADRENAL",
+      "title": "CRISE ADRENAL — NÃO ESPERAR CONFIRMAÇÃO",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Hipotensao/choque + hipoglicemia + disturbios GI\n+ contexto (suspensao de corticoide, HIV)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 200, "h": 22, "text": "Colher cortisol/ACTH (nao atrasar) +\nvolume + glicose", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.33, "w": 200, "h": 22, "text": "HIDROCORTISONA 100mg IV ataque\n+ 50mg IV 6/6h", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 18, "text": "Tratar precipitante + UTI se choque refratario", "color": "orange", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Redução da produção hormonal adrenal (cortisol +/- aldosterona +/- androgênios)",
+        "PRIMÁRIA (40%): lesão da própria glândula — Addison (autoimune, 70-90%), infecções (TB, paracoco, em HIV/SIDA), fármacos (etomidato, cetoconazol)",
+        "SECUNDÁRIA (60%): doença hipotálamo-hipofisária OU retirada abrupta de corticoide exógeno",
+        "Corticoide crônico (> 3 semanas, >= 40mg prednisona/dia) suprime o eixo — suspensão abrupta = crise"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — POR DÉFICIT HORMONAL",
+      "section_color": "purple",
+      "titulo": "PISTAS CLÍNICAS",
+      "items": [
+        "Déficit de GLICOCORTICOIDE: fadiga, astenia, mal-estar, náuseas/vômitos/diarreia, hipotensão, HIPOGLICEMIA",
+        "Déficit de ALDOSTERONA (só na primária): hipovolemia, hiponatremia, HIPERCALEMIA, acidose metabólica leve",
+        "Déficit de ANDROGÊNIO: queda da libido, perda de pilificação (axila/púbis)",
+        "HIPERPIGMENTAÇÃO cutânea/oral (ACTH alto): SÓ na insuficiência adrenal PRIMÁRIA",
+        "Buscar ativamente: suspensão de corticoide, HIV com oportunistas, desmame difícil de aminas"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INVESTIGAÇÃO — CORTISOL BASAL 8H",
+      "section_color": "navy",
+      "headers": ["Cortisol 8h", "Interpretação", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.38, 0.42],
+      "rows": [
+        ["< 3-5 ug/dL", "Confirma insuficiência adrenal", "Dosar ACTH (>100 = primária); encaminhar endocrino"],
+        ["5 - 18 ug/dL", "Inapropriadamente baixo (zona indeterminada)", "Teste da cortrosina (ACTH sintético) ou TTI com especialista"],
+        ["> 18 ug/dL", "Exclui insuficiência adrenal", "Investigar outras causas"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — CRISE ADRENAL",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA: TRATAR ANTES DE CONFIRMAR",
+      "items": [
+        "Hipotensão refratária (PAS < 90) ou choque sem outra causa",
+        "Rebaixamento do nível de consciência",
+        "Hipoglicemia sintomática ou refratária a correção IV",
+        "Hiponatremia < 125 / hipercalemia > 6,0 inexplicadas",
+        "Vômitos incoercíveis e desidratação grave — não atrasar a hidrocortisona aguardando exames"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO DA CRISE ADRENAL NO PS",
+      "section_color": "orange",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "1. Monitorização multiparamétrica + ECG (avaliar hipercalemia)",
+        "2. Acesso calibroso + expansão volêmica para corrigir hipovolemia",
+        "3. HGT 1/1h; hipoglicemia: 3-4 ampolas de glicose 50%; se persistente, glicose 10% em BIC 100-150 mL/h",
+        "4. HIDROCORTISONA 100mg IV ataque + 50mg IV 6/6h (manutenção)",
+        "5. Corrigir distúrbios hidroeletrolíticos + rastrear/tratar precipitante (cultura, RX, TC se HIV)",
+        "6. Noradrenalina se PAM < 65 sintomática apesar de volume; vaga de UTI se refratário"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONCEITO — DOSE DE ESTRESSE",
+      "section_color": "purple",
+      "titulo": "POR QUE A HIDROCORTISONA SALVA",
+      "items": [
+        "Na crise, o corpo não consegue aumentar o cortisol frente ao estresse (infecção, cirurgia, trauma)",
+        "Hidrocortisona em dose de estresse repõe gluco e, em doses altas, tem efeito mineralocorticoide",
+        "Paciente com IA conhecida em estresse precisa AUMENTAR a dose habitual de corticoide",
+        "Na dúvida diagnóstica com paciente instável: colher cortisol e JÁ tratar (dexametasona não interfere no teste se necessário)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CRITÉRIOS DE ALTA",
+      "titulo": "ALTA SE",
+      "items": [
+        "Estabilidade hemodinâmica sustentada",
+        "Eletrólitos normalizados e aceitação de via oral",
+        "Ajuste para corticoide oral estabelecido (retomar prednisona +/- fludrocortisona)",
+        "Orientação clara sobre DOSE DE ESTRESSE em intercorrências",
+        "Retorno ambulatorial garantido em 24-48h"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PRESCRIÇÃO PARA CASA",
+      "section_color": "teal",
+      "titulo": "AJUSTE AMBULATORIAL (IA CONFIRMADA)",
+      "items": [
+        "Se cessou a medicação: retomar prednisona e fludrocortisona na dose habitual",
+        "Sintomático em terapia: aumentar prednisona (ex.: 3-5mg VO, manhã ou manhã+tarde)",
+        "IA primária: fludrocortisona 0,05-0,2 mg às 8h VO (mineralocorticoide)",
+        "Parâmetros para titular: PA, sódio/potássio e sintomas gastrointestinais",
+        "Reforçar nunca suspender abruptamente e portar identificação de IA"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com crise adrenal (hipotensão/choque + hipoglicemia + distúrbio hidroeletrolítico).",
+        "Contexto: suspensão de corticoide / HIV / IA prévia em estresse. Precipitante: ___.",
+        "Conduta: volume + glicose + hidrocortisona 100mg IV + manutenção; aminas: sim/não.",
+        "Solicito vaga de UTI (se choque refratário) e avaliação de endocrinologia."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente em uso crônico de prednisona 40 mg/dia que suspendeu abruptamente, agora com hipotensão, náuseas e hipoglicemia. Qual a conduta IMEDIATA?",
+      "alternativas": [
+        "Aguardar o resultado do cortisol antes de qualquer medida",
+        "Volume + glicose e hidrocortisona 100 mg IV, sem aguardar confirmação laboratorial",
+        "Apenas hidratação venosa",
+        "Insulina endovenosa",
+        "Suspender qualquer corticoide definitivamente"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual conjunto de alterações é típico da insuficiência adrenal PRIMÁRIA (e não da secundária)?",
+      "alternativas": [
+        "Hipernatremia e hipocalemia",
+        "Hiponatremia, hipercalemia e hiperpigmentação cutânea",
+        "Hipocalemia e alcalose",
+        "Hiperglicemia e hipertensão",
+        "Ausência de qualquer distúrbio eletrolítico"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Na investigação da insuficiência adrenal, qual valor de cortisol basal das 8h CONFIRMA o diagnóstico?",
+      "alternativas": [
+        "> 18 ug/dL",
+        "Entre 5 e 18 ug/dL",
+        "< 3-5 ug/dL (inapropriadamente baixo)",
+        "Qualquer valor com ACTH baixo",
+        "Cortisol das 20h elevado"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual o glicocorticoide e esquema de escolha na crise adrenal?",
+      "alternativas": [
+        "Prednisona 5 mg VO ao dia",
+        "Dexametasona 0,75 mg VO",
+        "Hidrocortisona 100 mg IV em ataque, seguida de 50 mg IV 6/6h",
+        "Fludrocortisona 0,1 mg VO isolada",
+        "Metilprednisolona 4 mg IV dose única"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Paciente com insuficiência adrenal conhecida vai ser submetido a cirurgia/infecção. Qual orientação é correta?",
+      "alternativas": [
+        "Manter a mesma dose habitual de corticoide",
+        "Suspender o corticoide no dia do estresse",
+        "Aumentar a dose de corticoide (dose de estresse)",
+        "Substituir por anti-inflamatório não esteroide",
+        "Reduzir a dose pela metade"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Crise adrenal é diagnóstico clínico-presuntivo: trata-se ANTES de confirmar. Colhe-se cortisol/ACTH, mas a prioridade é volume, glicose e hidrocortisona 100mg IV. Atrasar o corticoide aguardando exame pode ser fatal."},
+    {"resposta": "B", "comentario": "A IA primária acomete também a zona glomerulosa (aldosterona): cursa com hiponatremia, hipercalemia e acidose. O ACTH elevado causa hiperpigmentação. Na secundária a aldosterona é preservada e não há hiperpigmentação."},
+    {"resposta": "C", "comentario": "Cortisol basal às 8h < 3-5 ug/dL é inapropriadamente baixo e confirma IA. Entre 5-18 é zona indeterminada (testar com cortrosina/TTI). > 18 exclui o diagnóstico."},
+    {"resposta": "C", "comentario": "Na crise adrenal, hidrocortisona 100mg IV em ataque seguida de 50mg 6/6h é o esquema de escolha (em dose alta tem efeito mineralocorticoide). Prednisona/dexametasona orais não servem para o paciente instável."},
+    {"resposta": "C", "comentario": "Paciente com IA não eleva o cortisol endógeno frente ao estresse; por isso, em infecção, cirurgia ou trauma deve-se AUMENTAR a dose de corticoide (dose de estresse) para evitar a crise adrenal."}
+  ]
+}

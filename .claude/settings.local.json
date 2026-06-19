@@ -21,7 +21,19 @@
       "Bash(dig +short github.com)",
       "Bash(GIT_CONFIG_NOSYSTEM=1 git push origin main)",
       "Bash(npm install *)",
-      "Bash(ls ~/.npm-global/node_modules/context-mode/ 2>&1 | head -20)"
+      "Bash(ls ~/.npm-global/node_modules/context-mode/ 2>&1 | head -20)",
+      "Bash(mkdir -p sm24_fase2)",
+      "Bash(unzip -o /Users/joaofelipescheidt/Downloads/sm24_gerador.zip)",
+      "Bash(python3 -c \"import reportlab, pypdf; print\\('reportlab', reportlab.Version, 'pypdf OK'\\)\")",
+      "Bash(python3 sm24_gerador/build_apostila.py sm24_gerador/jsons/sepse.json --outdir /tmp/teste)",
+      "mcp__d08a11bb-f82d-470e-acaf-664c193b738a__read_file_content",
+      "mcp__d08a11bb-f82d-470e-acaf-664c193b738a__search_files",
+      "Bash(python3 sm24_gerador/build_apostila.py --batch jsons_fase2/ --validate-only --outdir outputs)",
+      "Bash(python3 sm24_gerador/build_apostila.py --batch jsons_fase2/ --outdir outputs)",
+      "Bash(sips -s format png apostila_tep.pdf --out /tmp/tep_check.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight /tmp/tep_check.png)",
+      "Bash(python3 -c ' *)",
+      "Bash(sips -s format png outputs/apostila_tep.pdf --out /tmp/tep_check2.png)"
     ]
   }
 }

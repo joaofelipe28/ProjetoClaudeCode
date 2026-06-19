@@ -1,0 +1,244 @@
+{
+  "slug": "sepse",
+  "titulo": "Sepse e Choque Séptico",
+  "especialidade": "CLÍNICA MÉDICA",
+  "chapter_subject": "Sepse e Choque Séptico no PS",
+  "chapter_bar": "SEPSE E CHOQUE SÉPTICO — ABORDAGEM NO PS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — RECONHECER E AGIR",
+      "title": "SEPSE — PROTOCOLO DO PRIMEIRO CONTATO",
+      "height": 210,
+      "nodes": [
+        {"id": "inf", "x": 0.5, "y": 0.9, "w": 190, "h": 20, "text": "Infecção suspeita + qSOFA>=2 ou NEWS>4", "color": "navy", "font_size": 6.2},
+        {"id": "sofa", "x": 0.5, "y": 0.65, "w": 190, "h": 20, "text": "SOFA>=2 = SEPSE (lactato + culturas)", "color": "teal", "font_size": 6.2},
+        {"id": "sep", "x": 0.25, "y": 0.35, "w": 140, "h": 22, "text": "SEPSE: ATB em 3h\nVolume 30 mL/kg", "color": "orange", "font_size": 6.2},
+        {"id": "cho", "x": 0.75, "y": 0.35, "w": 140, "h": 22, "text": "CHOQUE: DVA + ATB\nimediato (PAM>=65)", "color": "red", "font_size": 6.2}
+      ],
+      "arrows": [["inf", "sofa"], ["sofa", "sep"], ["sofa", "cho"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÕES — SEPSIS-3 (2016)",
+      "section_color": "purple",
+      "titulo": "SEPSE",
+      "items": [
+        "Disfunção orgânica por resposta imune desregulada à infecção",
+        "Critério: infecção suspeita/confirmada + SOFA >= 2 (ou delta SOFA >= 2)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "titulo": "CHOQUE SÉPTICO",
+      "items": [
+        "Sepse + instabilidade circulatória e metabólica celular grave",
+        "Critério: DVA para PAM >= 65 mmHg + Lactato > 2 mmol/L após volume adequado"
+      ],
+      "accent": "red"
+    },
+    {
+      "tipo": "infobox",
+      "titulo": "qSOFA — Triagem (NÃO diagnostica, estima prognóstico)",
+      "items": [
+        "FR > 22 (1pt) + PAS < 100 mmHg (1pt) + Alteração mental/Glasgow <15 (1pt)",
+        "qSOFA >= 2 + infecção: buscar SOFA, colher lactato, acionar UTI",
+        "NEWS > 4: mais acurado que qSOFA no PS (atualização recente)"
+      ],
+      "accent": "purple"
+    },
+    {
+      "tipo": "highlightbox",
+      "titulo": "CONCEITO FUNDAMENTAL: CHOQUE NAO E HIPOTENSAO",
+      "items": [
+        "Choque = hipoperfusão tecidual (incapacidade de suprir demanda de O2)",
+        "Paciente hipotenso NÃO está necessariamente em choque",
+        "Paciente NORMOTENSO PODE estar em choque — lactato é o marcador!",
+        "Lactato > 2 mmol/L = hipoperfusão = critério de choque séptico",
+        "Lactato > 4 mmol/L = choque metabólico grave = mortalidade muito elevada"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SOFA — DISFUNÇÃO ORGÂNICA",
+      "section_color": "purple",
+      "headers": ["Sistema", "Parâmetro", "Pontuação (0 a 4)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.25, 0.55],
+      "rows": [
+        ["Respiratório", "PaO2/FiO2", ">=400->0 | <400->1 | <300->2 | <200+VM->3 | <100+VM->4"],
+        ["Coagulação", "Plaquetas (x10³)", ">=150->0 | <150->1 | <100->2 | <50->3 | <20->4"],
+        ["Hepático", "Bilirrubina (mg/dL)", "<1,2->0 | 1,2-1,9->1 | 2-5,9->2 | 6-11,9->3 | >=12->4"],
+        ["Cardiovascular", "PAM / DVA", ">=70->0 | <70->1 | Dopa<5->2 | Nora<=0,1->3 | Nora>0,1->4"],
+        ["SNC", "Glasgow", "15->0 | 13-14->1 | 10-12->2 | 6-9->3 | <6->4"],
+        ["Renal", "Creatinina (mg/dL)", "<1,2->0 | 1,2-1,9->1 | 2-3,4->2 | 3,5-4,9->3 | >5->4"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "4 TIPOS DE CHOQUE — DIFERENCIAÇÃO",
+      "section_color": "purple",
+      "headers": ["Tipo", "Hemodinâmica / Mecanismo", "Causas e DVA"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.35, 0.47],
+      "rows": [
+        ["DISTRIBUTIVO", "DC+ RVS- PVC- (vasodilatação)", "Sepse / Anafilaxia / Medular -> Noradrenalina"],
+        ["HIPOVOLÊMICO", "DC- RVS+ PVC- (volume baixo)", "Hemorragia / Queimadura / Diarreia -> Volume primeiro"],
+        ["CARDIOGÊNICO", "DC- RVS+ PVC+ (bomba falha)", "IAM / IC descompensada / Arritmia -> Dobutamina ± Nora"],
+        ["OBSTRUTIVO", "DC- RVS+ PVC+ (obstrução)", "TEP / PTX hipertensivo / Tamponamento -> Tratar causa"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "BUNDLE DE SEPSE — PRIMEIRAS HORAS",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "1-3 HORAS (SIMULTÂNEOS):",
+        "items": [
+          "1. Colher LACTATO sérico",
+          "2. Hemoculturas x2 (antes do ATB)",
+          "3. ATB EMPÍRICO amplo espectro:",
+          "  Choque: IMEDIATAMENTE (<1h)",
+          "  Sepse provável: idealmente <1h",
+          "  Sepse possível s/ choque: <3h",
+          "4. Cristaloide 30 mL/kg EV:",
+          "  Iniciar na 1a hora, completar 3h",
+          "  Ringer Lactato preferência"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "APÓS RESSUSCITAÇÃO:",
+        "items": [
+          "5. Reavaliação clínica:",
+          "  PAM >= 65 mmHg",
+          "  Diurese >= 0,5 mL/kg/h",
+          "  Melhora TEC / livedo",
+          "6. NORA se PAM <65 após volume",
+          "  (pode usar periférico curto prazo)",
+          "7. Repetir lactato se >2",
+          "8. Controle de foco cirúrgico",
+          "9. Internação UTI"
+        ]
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ATB EMPÍRICO — FOCO-DIRIGIDO",
+      "section_color": "orange",
+      "headers": ["Foco", "Esquema", "Cobertura"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.45, 0.33],
+      "rows": [
+        ["Pneumonia comunitária", "Ceftriaxona 2g + Azitro 500mg", "Gram+/- e atípicos"],
+        ["Pneumonia hosp/VAP", "Pipe-Tazo 4,5g 6/6h ± Vanco", "ESBL/Pseudo/MRSA"],
+        ["ITU", "Ceftriaxona 2g/dia", "E. coli / Klebsiella"],
+        ["Abdome / Peritonite", "Pipe-Tazo 4,5g 6/6h ou Ceftri+Metro", "Gram- / Anaeróbios"],
+        ["Meningite", "Ceftri 2g 12/12h + Ampi + Dexa", "Pneumo/Listeria/Meningo"],
+        ["Sem foco definido", "Pipe-Tazo ou Meropenem se grave", "Amplo espectro"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "VASOPRESSORES — HIERARQUIA",
+      "section_color": "orange",
+      "titulo": "SEQUÊNCIA NO CHOQUE SÉPTICO:",
+      "items": [
+        "1a LINHA: Noradrenalina — alfa >> beta -> vasoconstrição + inotrópico leve",
+        "  Dose: 0,01-1 mcg/kg/min EV BIC | PODE iniciar em veia periférica (curto prazo)",
+        "2a LINHA: Vasopressina 0,03-0,04 UI/min EV — adicionar se Nora > 0,25-0,5 mcg/kg/min",
+        "DOBUTAMINA: se disfunção cardíaca associada (IC, SvcO2 < 70%)",
+        "  NÃO usar isolada no distributivo | SvcO2 <70% isolado NÃO obriga dobutamina"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PRESCRIÇÃO — CHOQUE SÉPTICO (UTI/PS)",
+      "section_color": "orange",
+      "titulo": "PRESCRIÇÃO COMPLETA",
+      "items": [
+        "1. Monitorização: PA invasiva + débito urinário + SatO2 + ECG",
+        "2. 2 acessos calibrosos + acesso central precoce",
+        "3. Hemoculturas x2 + urocultura + demais culturas",
+        "4. ATB empírico IMEDIATO conforme foco",
+        "5. Ringer Lactato 30 mL/kg EV em 3h (cautela se oligoanúria/EAP)",
+        "6. Lactato seriado (repetir se >2 — avaliar clearance)",
+        "7. Noradrenalina BIC se PAM <65 após volume (meta PAM>=65, diurese>=0,5 mL/kg/h)",
+        "8. Reposição K+, Mg2+, Ca2+ conforme eletrólitos",
+        "9. Glicemia 140-180 mg/dL (insulina EV se >180 por >2h)",
+        "10. Hidrocortisona 200mg/dia EV se refratário a 2 vasopressores",
+        "11. IOT se: rebaixamento grave, hipóxia refratária, fadiga respiratória"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente com pneumonia, PA 100/60, FR 26, Glasgow 13, lactato 3,2. Após 30 mL/kg de cristaloide, mantém PAM 62 e lactato 2,8. Diagnóstico e conduta?",
+      "alternativas": [
+        "Sepse sem choque — manter hidratação e ATB, sem vasopressor",
+        "Choque séptico — iniciar noradrenalina para PAM >= 65",
+        "Choque hipovolêmico — repetir bolus de cristaloide 10 mL/kg",
+        "Choque cardiogênico — dobutamina + eco urgente",
+        "Hipoperfusão leve — observar e reavaliar em 2h"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que hemoculturas devem ser colhidas ANTES do ATB mas sem atrasar o antibiótico?",
+      "alternativas": [
+        "ATB inativa bactérias em 24-48h — culturas só são válidas antes",
+        "Hemoculturas após ATB têm crescimento inibido — colher antes aumenta rendimento diagnóstico",
+        "A coleta simultânea interfere com a ação do ATB por competição",
+        "Hemoculturas não são necessárias se o foco for óbvio",
+        "A coleta antes do ATB é apenas protocolo burocrático"
+      ]
+    },
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente séptico com PAM 58 após 30 mL/kg de cristaloide. Qual a DVA de escolha e por quê?",
+      "alternativas": [
+        "Dopamina — mais antigo e mais estudado",
+        "Adrenalina — alfa + beta ideal no distributivo",
+        "Noradrenalina — alfa potente, aumenta RVS, menor mortalidade que dopamina (SOAP II)",
+        "Dobutamina — distributivo tem baixo DC, precisa de inotrópico",
+        "Vasopressina — 1a linha por ação complementar"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Quando está indicada a hidrocortisona no choque séptico?",
+      "alternativas": [
+        "Em todo paciente com choque séptico",
+        "Choque refratário: PAM <65 apesar de 2 vasopressores adequados",
+        "Quando lactato >4 por mais de 2h",
+        "Quando PCT >10 ng/mL",
+        "Apenas em insuficiência adrenal primária comprovada"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual a principal diferença hemodinâmica entre choque séptico e cardiogênico?",
+      "alternativas": [
+        "Séptico: DC baixo + RVS alta. Cardiogênico: DC alto + RVS baixa",
+        "Séptico: DC alto + RVS baixa (distributivo). Cardiogênico: DC baixo + RVS alta (bomba falha)",
+        "Não há diferença — ambos causam hipoperfusão igual",
+        "Séptico: PVC alta. Cardiogênico: PVC baixa",
+        "Ambos são distributivos — tratamento idêntico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Critérios de choque séptico: DVA para PAM>=65 + lactato >2 após volume adequado. PAM 62 após 30 mL/kg = necessita vasopressor. Lactato 2,8 = hipoperfusão mantida. Noradrenalina BIC — titular para PAM >= 65. Pode iniciar em periférico de curto prazo."},
+    {"resposta": "B", "comentario": "ATB reduz carga bacteriana nas primeiras horas -> menor chance de positivar. REGRA: colher rapidamente (<5-10 min) e nunca atrasar o ATB para aguardar coleta. Foco óbvio não dispensa culturas — antibiograma guia o descalonamento."},
+    {"resposta": "C", "comentario": "Noradrenalina: agonista alfa potente -> vasoconstrição -> aumento da RVS -> PAM>=65. Efeito beta-1 discreto. SOAP II: menor mortalidade vs. dopamina. Dopamina: mais arritmias. Dobutamina: só se disfunção cardíaca associada (DC baixo)."},
+    {"resposta": "B", "comentario": "Hidrocortisona: indicada no choque refratário a DVA (insuficiência adrenal relativa por supressão do eixo HHA). Dose: 200mg/dia EV (50mg 6/6h ou BIC) por 7 dias. NÃO em todos os sépticos — sem benefício na sepse sem choque."},
+    {"resposta": "B", "comentario": "Distributivo (séptico): vasodilatação -> RVS cai -> DC sobe compensatoriamente -> extremidades QUENTES, pulso amplo. Cardiogênico: bomba falha -> DC cai -> RVS sobe -> extremidades FRIAS, pulso fino, congestão pulmonar."}
+  ]
+}

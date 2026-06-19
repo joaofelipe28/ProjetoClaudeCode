@@ -1,0 +1,202 @@
+{
+  "slug": "sindrome_cushing",
+  "titulo": "Síndrome de Cushing",
+  "especialidade": "ENDOCRINOLOGIA",
+  "chapter_subject": "Síndrome de Cushing — abordagem e triagem",
+  "chapter_bar": "SÍNDROME DE CUSHING — RECONHECER E TRIAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — INVESTIGAÇÃO",
+      "title": "CUSHING — EXCLUIR CORTICOIDE, DEPOIS TRIAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 20, "text": "Suspeita clinica de hipercortisolismo", "color": "navy", "font_size": 6.2},
+        {"id": "b", "x": 0.5, "y": 0.64, "w": 200, "h": 22, "text": "Excluir CORTICOIDE EXOGENO\n(oral, inalatorio, topico, infiltracao)", "color": "red", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.38, "w": 205, "h": 22, "text": "Triagem: 2 de 3 testes\ncortisol urinario 24h / salivar 23h / supressao 1mg dexa", "color": "teal", "font_size": 5.6},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 20, "text": "Confirmado -> ACTH + endocrino (localizar etiologia)", "color": "purple", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Conjunto de sinais/sintomas da exposição prolongada e inapropriada a níveis elevados de cortisol",
+        "Causa MAIS COMUM: corticoide exógeno (iatrogênica)",
+        "Endógena: ACTH-dependente (70-80%) ou ACTH-independente (20-30%)",
+        "ACTH-dependente: Doença de Cushing (adenoma hipofisário, maioria microadenoma) e ACTH ectópico",
+        "ACTH-independente: adenoma adrenal, carcinoma adrenocortical, hiperplasias adrenais"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO — ACHADOS DISCRIMINATÓRIOS",
+      "section_color": "purple",
+      "titulo": "MAIS ESPECÍFICOS DE CUSHING",
+      "items": [
+        "Estrias purpúreas (> 1 cm), violáceas — abdome, coxas, axilas",
+        "Pletora facial, equimoses fáceis sem trauma, pele fina e frágil",
+        "Fraqueza muscular PROXIMAL (dificuldade de levantar da cadeira/subir escadas)",
+        "Fácies em lua cheia, giba dorsal (buffalo hump), obesidade centrípeta",
+        "Osteoporose/fraturas vertebrais precoces; em crianças: ganho de peso COM baixa estatura"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "REPERCUSSÕES METABÓLICAS E SISTÊMICAS",
+      "section_color": "navy",
+      "headers": ["Sistema", "Manifestação", "Frequência / pista"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.40, 0.38],
+      "rows": [
+        ["Cardiometabólico", "HAS, DM2/hiperglicemia, dislipidemia", "HAS em 50-75%; DM recente/descompensado"],
+        ["Eletrolítico", "Hipocalemia", "Especialmente no ACTH ectópico"],
+        ["Musculoesquelético", "Miopatia proximal, osteoporose, fraturas", "Fraturas vertebrais > 50%"],
+        ["Neuropsiquiátrico", "Depressão, psicose, déficit cognitivo", "Risco aumentado de suicídio"],
+        ["Reprodutivo/imune", "Amenorreia, hirsutismo, infecções de repetição", "Imunossupressão, má cicatrização"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PERGUNTAS-CHAVE",
+      "section_color": "orange",
+      "titulo": "ANAMNESE DIRIGIDA",
+      "items": [
+        "Usa/usou corticoide? Oral, pomadas/cremes, inalatório, infiltração articular, fórmulas magistrais?",
+        "Surgiram estrias roxas? Hematomas fáceis? Pele mais fina?",
+        "Ganho de peso rápido? Mudança no formato do rosto? 'Bola' atrás do pescoço?",
+        "Dificuldade para levantar da cadeira / fraqueza proximal? Fraturas sem trauma?",
+        "DM ou HAS de início recente/difícil controle? Alterações de humor? Amenorreia/hirsutismo?"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES — TRIAGEM E ETIOLOGIA",
+      "section_color": "navy",
+      "titulo": "INVESTIGAÇÃO LABORATORIAL",
+      "items": [
+        "1o passo: EXCLUIR uso de glicocorticoide exógeno antes de investigar",
+        "Realizar 2 de 3 testes de triagem:",
+        "  Cortisol livre urinário 24h (2-3 amostras) | Cortisol salivar noturno 23h-meia-noite (2 amostras)",
+        "  Supressão com 1mg dexametasona overnight: cortisol >= 1,8 ug/dL sugere Cushing",
+        "2 testes positivos -> confirma hipercortisolismo endógeno; 2 normais -> improvável",
+        "Diferenciação: ACTH plasmático matinal (suprimido = adrenal; normal/alto = hipofisário/ectópico)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO POR ETIOLOGIA",
+      "section_color": "orange",
+      "headers": ["Etiologia", "Tratamento", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.40, 0.30],
+      "rows": [
+        ["Doença de Cushing", "Cirurgia transesfenoidal", "Adenoma hipofisário"],
+        ["ACTH ectópico", "Ressecção do tumor primário", "Buscar fonte (pulmão, timo)"],
+        ["Adenoma adrenal", "Adrenalectomia unilateral (laparoscópica)", "ACTH-independente"],
+        ["Carcinoma adrenocortical", "Cirurgia aberta + linfadenectomia", "Pior prognóstico"],
+        ["Exógena (iatrogênica)", "Redução/retirada GRADUAL do corticoide", "Risco de insuficiência adrenal"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ATENÇÃO — RETIRADA DO CORTICOIDE",
+      "section_color": "red",
+      "titulo": "NÃO SUSPENDER ABRUPTAMENTE",
+      "items": [
+        "A causa mais comum de Cushing é iatrogênica — o tratamento é desmame GRADUAL",
+        "Suspensão abrupta de corticoide crônico -> crise de insuficiência adrenal (potencialmente fatal)",
+        "Orientar dose de estresse em intercorrências (infecção, cirurgia, trauma)",
+        "Cushing é majoritariamente investigação/seguimento ambulatorial — no PS, reconhecer e triar"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO — ENDOCRINOLOGIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAR",
+      "items": [
+        "Paciente com triagem positiva para hipercortisolismo (achados: estrias violáceas, pletora, fraqueza proximal, giba).",
+        "Uso de corticoide exógeno: sim/não (especificar via).",
+        "Triagem: cortisol urinário ___ | salivar 23h ___ | pós-dexametasona ___ | ACTH ___.",
+        "Impacto metabólico: HAS de difícil controle / DM recente / osteoporose precoce.",
+        "Encaminho à endocrinologia para localização etiológica e definição terapêutica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a causa MAIS COMUM de síndrome de Cushing?",
+      "alternativas": [
+        "Adenoma hipofisário (doença de Cushing)",
+        "Carcinoma adrenocortical",
+        "Uso de glicocorticoides exógenos (iatrogênica)",
+        "Secreção ectópica de ACTH",
+        "Hiperplasia adrenal bilateral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado clínico é mais ESPECÍFICO (discriminatório) de síndrome de Cushing?",
+      "alternativas": [
+        "Obesidade isolada",
+        "Hipertensão arterial",
+        "Estrias purpúreas largas (> 1 cm) e fraqueza muscular proximal",
+        "Diabetes mellitus",
+        "Ganho de peso difuso"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre o teste de supressão com 1 mg de dexametasona (overnight), o resultado sugestivo de Cushing é:",
+      "alternativas": [
+        "Cortisol sérico matinal >= 1,8 ug/dL (ausência de supressão)",
+        "Cortisol suprimido abaixo de 1,8 ug/dL",
+        "ACTH elevado isoladamente",
+        "Glicemia de jejum elevada",
+        "Cortisol urinário normal"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Após confirmar hipercortisolismo endógeno, qual exame inicial diferencia causa adrenal de hipofisária/ectópica?",
+      "alternativas": [
+        "Cortisol salivar noturno",
+        "ACTH plasmático matinal (suprimido = adrenal; normal/alto = hipofisário/ectópico)",
+        "Glicemia de jejum",
+        "Cortisol livre urinário",
+        "Eletroforese de proteínas"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Paciente em uso crônico de prednisona com fácies cushingoide deseja parar o corticoide. Qual a conduta correta?",
+      "alternativas": [
+        "Suspender abruptamente o corticoide",
+        "Reduzir/retirar o corticoide de forma gradual, pelo risco de insuficiência adrenal",
+        "Dobrar a dose do corticoide",
+        "Iniciar quimioterapia",
+        "Realizar adrenalectomia bilateral"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "A causa mais comum de síndrome de Cushing é a exógena/iatrogênica (uso de glicocorticoides por qualquer via). Por isso, o 1o passo da investigação é sempre excluir corticoide exógeno antes de testes."},
+    {"resposta": "C", "comentario": "Obesidade, HAS e DM são comuns e inespecíficos. Estrias purpúreas largas (>1cm), pletora, equimoses fáceis e fraqueza muscular proximal são os achados mais discriminatórios do hipercortisolismo."},
+    {"resposta": "A", "comentario": "No teste de supressão overnight com 1mg de dexametasona, o normal é suprimir o cortisol. Cortisol >= 1,8 ug/dL às 8h indica ausência de supressão, sugestivo de síndrome de Cushing."},
+    {"resposta": "B", "comentario": "Confirmado o hipercortisolismo, o ACTH plasmático diferencia: suprimido aponta causa adrenal (ACTH-independente); normal ou elevado aponta causa hipofisária ou ectópica (ACTH-dependente)."},
+    {"resposta": "B", "comentario": "O corticoide crônico suprime o eixo HHA; a retirada deve ser gradual. Suspensão abrupta precipita crise de insuficiência adrenal, potencialmente fatal. Orientar dose de estresse em intercorrências."}
+  ]
+}

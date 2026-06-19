@@ -1,0 +1,239 @@
+{
+  "slug": "anemia",
+  "titulo": "Anemia no Pronto-Socorro",
+  "especialidade": "HEMATOLOGIA",
+  "chapter_subject": "Anemia no PS",
+  "chapter_bar": "ANEMIA NO PS — ESTRATIFICAÇÃO E TRANSFUSÃO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM NO PS",
+      "title": "ANEMIA — DECIDIR O QUE É TEMPO-DEPENDENTE",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 195, "h": 22, "text": "Anemia (Hb baixa) + repercussao clinica\nABCDE + sinais de choque", "color": "navy", "font_size": 6.2},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 195, "h": 20, "text": "Sangramento ativo ou instabilidade?", "color": "teal", "font_size": 6.5},
+        {"id": "c", "x": 0.25, "y": 0.32, "w": 140, "h": 24, "text": "SIM: reanimar\n2 acessos + transfundir\ncontrole do foco", "color": "red", "font_size": 6.2},
+        {"id": "d", "x": 0.75, "y": 0.32, "w": 140, "h": 24, "text": "NAO: estavel\ngatilho transfusional\n+ investigar causa", "color": "green", "font_size": 6.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "ANEMIA NO PS",
+      "items": [
+        "Redução da capacidade de transporte de O2 com repercussão clínica variável",
+        "No PS, o essencial NÃO é a etiologia exata — é separar 3 cenários:",
+        "1. Sangramento agudo / instabilidade (tempo-dependente)",
+        "2. Anemia sintomática sem instabilidade (gatilho transfusional + comorbidades)",
+        "3. Anemia crônica / achado incidental (investigar e tratar a causa)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR — PERGUNTAS-CHAVE",
+      "section_color": "purple",
+      "titulo": "ANAMNESE DIRIGIDA",
+      "items": [
+        "Sangramento ativo ou recente? (melena, hematêmese, hematoquezia, menorragia, trauma)",
+        "Sintomas de hipóxia/anemia? dispneia aos mínimos esforços, dor torácica, síncope, palpitações, confusão",
+        "Comorbidades críticas? coronariopatia / IC, DPOC grave, AVC recente, DRC",
+        "Uso de anticoagulante / antiagregante?",
+        "Tempo de evolução e Hb prévia conhecida? (crônico tolera valores muito mais baixos)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO POR VCM — ORIENTA A CAUSA",
+      "section_color": "navy",
+      "headers": ["VCM", "Tipo", "Causas mais comuns no PS"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.27, 0.55],
+      "rows": [
+        ["< 80 (micro)", "Microcítica", "Ferropriva (perda GI/menstrual), talassemia, doença crônica"],
+        ["80-100 (normo)", "Normocítica", "Sangramento agudo, hemólise, doença crônica/DRC, mista"],
+        ["> 100 (macro)", "Macrocítica", "B12/folato, álcool, hipotireoidismo, mielodisplasia, hepatopatia"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — ANEMIA QUE NÃO PODE ESPERAR",
+      "section_color": "red",
+      "titulo": "SINAIS DE GRAVIDADE",
+      "items": [
+        "Instabilidade hemodinâmica: hipotensão, taquicardia, perfusão lenta, oligúria",
+        "Sangramento ativo: hematêmese, melena, hematoquezia, sangramento vaginal intenso",
+        "Sintomas isquêmicos: dor torácica, alteração do nível de consciência, dispneia em repouso",
+        "ATENÇÃO: no sangramento agudo a Hb/Ht DEMORA a cair — decisão é CLÍNICA, não pelo número",
+        "Anticoagulado com sangramento = considerar reversão específica precoce"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES — O ESSENCIAL",
+      "section_color": "navy",
+      "titulo": "SOLICITAR NO PS",
+      "items": [
+        "Hemograma completo (Hb/Ht, VCM, RDW, plaquetas) + reticulócitos",
+        "Reticulócitos: ALTO = perda/hemólise | BAIXO = produção reduzida",
+        "Tipagem + PAI / prova cruzada se QUALQUER chance de transfusão",
+        "Função renal, eletrólitos, hepatograma (se suspeita de hemólise: LDH, BI, haptoglobina)",
+        "Coagulograma se sangramento / anticoagulante / procedimento planejado",
+        "Beta-hCG em toda mulher em idade fértil",
+        "Ferritina + sat. transferrina: se ferropriva e cenário não urgente (pode ser ambulatorial)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "GATILHOS TRANSFUSIONAIS — PACIENTE ESTÁVEL",
+      "section_color": "orange",
+      "headers": ["Hb (g/dL)", "Conduta", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.34, 0.48],
+      "rows": [
+        ["< 7", "Em geral transfundir", "Estratégia restritiva no estável"],
+        ["7 - 8", "Considerar / individualizar", "Transfundir se sintomático OU doença cardiovascular"],
+        ["> 8", "Geralmente NÃO transfundir", "Tratar causa e sintomas; só pelo número não justifica"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CONDUTA POR CENÁRIO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "INSTÁVEL / HEMORRAGIA AGUDA",
+        "items": [
+          "1. O2 se necessário + 2 acessos calibrosos",
+          "2. Cristaloide com parcimônia + aquecimento",
+          "3. Transfundir SEM esperar Hb cair (Ht ruim nas 1as horas)",
+          "4. Controle do foco: EDA / cirurgia / gineco",
+          "5. Sangramento maciço: protocolo de transfusão maciça",
+          "6. Reverter anticoagulação se aplicável"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "ESTÁVEL — TRANSFUNDIR CH",
+        "items": [
+          "1 unidade por vez na maioria dos estáveis",
+          "Reavaliar clínica + Hb APÓS cada unidade",
+          "Equipo com filtro; tempo máx 4h/bolsa",
+          "Cardiopata/idoso: furosemida 20-40mg IV entre bolsas",
+          "Ferro só se NÃO emergência + estável + ferropriva provável",
+          "Sempre programar investigação da fonte de perda"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "INTERNAR SE",
+      "items": [
+        "Instabilidade hemodinâmica ou sangramento ativo",
+        "Necessidade de transfusão repetida",
+        "Sintomas importantes atribuíveis à anemia (síncope, dispneia de repouso, angina, confusão)",
+        "Suspeita de hemólise grave ou anemia rapidamente progressiva",
+        "Comorbidades descompensadas (IC, DAC, DPOC grave) com anemia"
+      ],
+      "accent": "red"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE ALTA SEGURA",
+      "titulo": "ALTA SE",
+      "items": [
+        "Hemodinâmica estável, sem sangramento ativo",
+        "Sintomas controlados",
+        "Plano claro: investigação (GI/gineco), reposição se indicada, retorno programado",
+        "Orientações de alarme: dispneia, síncope, dor torácica, melena/hematêmese/hematoquezia, sangramento vaginal intenso"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com anemia (Hb ___ g/dL) e quadro de ___ (sintomas / sangramento / instabilidade).",
+        "Avaliação ABCDE; exames: hemograma, reticulócitos, função renal, coagulograma, tipagem/PAI.",
+        "Estratificada necessidade transfusional pela clínica + limiares (restritivo Hb ~7-8 em estáveis, individualizando comorbidades).",
+        "Conduta atual: ___ (transfusão / reposição / observação). Solicito ___ (vaga / avaliação especializada)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Homem, 60a, hematêmese volumosa há 1h. PA 88/50, FC 122, sudoreico. Hb da admissão = 11 g/dL. Qual a conduta correta?",
+      "alternativas": [
+        "Não transfundir: Hb 11 está acima do gatilho de 7 g/dL",
+        "Aguardar nova Hb em 6h para decidir transfusão",
+        "Reanimar e transfundir guiado pela clínica — a Hb ainda não reflete a perda aguda",
+        "Iniciar ferro endovenoso imediatamente",
+        "Transfundir apenas se Hb cair abaixo de 7 g/dL nas próximas coletas"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente estável, assintomático, Hb 7,5 g/dL, sem doença cardiovascular, em investigação de ferropriva. Conduta transfusional mais adequada?",
+      "alternativas": [
+        "Transfundir 2 unidades de CH de imediato",
+        "Não transfundir de rotina — estratégia restritiva; tratar causa e programar reposição de ferro",
+        "Transfundir 1 unidade e repetir até Hb > 12 g/dL",
+        "Transfundir somente se reticulócitos baixos",
+        "Internar obrigatoriamente para transfusão diária"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual exame melhor separa anemia por aumento de perda/destruição de anemia por falência de produção?",
+      "alternativas": [
+        "VCM isolado",
+        "RDW isolado",
+        "Contagem de reticulócitos",
+        "Ferritina",
+        "Dosagem de B12"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Mulher, 28a, anemia microcítica (VCM 72), menorragia há meses, hemodinamicamente estável, Hb 9 g/dL. Conduta inicial mais apropriada no PS?",
+      "alternativas": [
+        "Transfusão imediata de concentrado de hemácias",
+        "Mielograma de urgência",
+        "Investigar/tratar a causa (ferropriva por perda menstrual), repor ferro e encaminhar — sem transfusão",
+        "Iniciar B12 intramuscular",
+        "Corticoterapia para suspeita de hemólise"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Idoso cardiopata (DAC), estável, com anemia normocítica e Hb 7,6 g/dL e dispneia leve aos esforços. Qual a melhor decisão?",
+      "alternativas": [
+        "Não transfundir, pois Hb está acima de 7 g/dL",
+        "Considerar transfusão pela faixa 7-8 g/dL associada a sintomas e comorbidade cardiovascular",
+        "Transfundir apenas se Hb < 6 g/dL",
+        "Indicar ferro EV e alta imediata",
+        "Aguardar Hb < 7 g/dL obrigatoriamente antes de transfundir"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "No sangramento agudo, a Hb/Ht demora horas a refletir a perda (perde-se sangue total). A decisão de transfundir é CLÍNICA: instabilidade + sangramento ativo = reanimar e transfundir sem aguardar o número cair. Hb de admissão normal NÃO afasta perda grave."},
+    {"resposta": "B", "comentario": "Estratégia restritiva no estável: gatilho geral Hb < 7. Em 7-8 só transfunde se sintomático ou doença cardiovascular. Assintomático sem comorbidade = tratar a causa (ferro) e programar seguimento, sem transfusão."},
+    {"resposta": "C", "comentario": "Reticulócitos refletem a resposta medular: ALTOS sugerem perda/hemólise (medula respondendo); BAIXOS sugerem produção reduzida (falência medular, carências). É o primeiro divisor fisiopatológico da anemia."},
+    {"resposta": "C", "comentario": "Microcitose + menorragia = ferropriva por perda menstrual. Estável e Hb 9 não exige transfusão; conduta é repor ferro, tratar a fonte e encaminhar para investigação ambulatorial. Mielograma e B12 não se aplicam aqui."},
+    {"resposta": "B", "comentario": "Faixa 7-8 g/dL é zona de individualização: a presença de doença cardiovascular (DAC) e sintomas (dispneia) pesa a favor de transfundir. Em comorbidade cardíaca aceita-se limiar um pouco mais liberal que no jovem hígido."}
+  ]
+}

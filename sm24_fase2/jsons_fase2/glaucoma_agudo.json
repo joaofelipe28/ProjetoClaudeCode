@@ -1,0 +1,205 @@
+{
+  "slug": "glaucoma_agudo",
+  "titulo": "Glaucoma Agudo de Ângulo Fechado",
+  "especialidade": "OFTALMOLOGIA",
+  "chapter_subject": "Glaucoma Agudo no PS",
+  "chapter_bar": "GLAUCOMA AGUDO DE ÂNGULO FECHADO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — BAIXAR A PIO JÁ",
+      "title": "GLAUCOMA AGUDO — TEMPO É VISÃO",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Olho vermelho doloroso + visao turva + halos\n+ nauseas/vomitos", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 205, "h": 22, "text": "Pupila medio-dilatada fixa + cornea turva\n+ olho endurecido (PIO alta)", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.36, "w": 205, "h": 22, "text": "Timolol + Brimonidina + Acetazolamida\n(+ Manitol se PIO muito alta)", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Oftalmo urgente -> IRIDOTOMIA a laser (definitivo)", "color": "purple", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Elevação súbita e acentuada da PIO por contato iridotrabecular completo (fechamento do ângulo)",
+        "EMERGÊNCIA oftalmológica — pode causar cegueira irreversível rapidamente",
+        "Diferente do glaucoma crônico (neuropatia óptica progressiva, assintomática por anos)",
+        "O bloqueio pupilar impede a drenagem do humor aquoso -> PIO dispara"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO E FATORES DE RISCO",
+      "section_color": "purple",
+      "titulo": "RECONHECER",
+      "items": [
+        "Dor ocular intensa unilateral + visão turva súbita + halos coloridos ao redor de luzes",
+        "Cefaleia + náuseas e vômitos (podem simular abdome agudo!) + fotofobia + olho vermelho",
+        "Fatores de risco: hipermetropia (olho curto), idade avançada, sexo feminino, descendência asiática",
+        "Gatilhos: ambiente escuro (midríase), medicações midriáticas (anticolinérgicos, simpaticomiméticos, TOPIRAMATO)",
+        "Episódios prévios autolimitados (subagudos) são pista importante"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAME FÍSICO",
+      "section_color": "navy",
+      "titulo": "ACHADOS-CHAVE",
+      "items": [
+        "Hiperemia conjuntival/episcleral acentuada (injeção ciliar) — comparar com o olho contralateral",
+        "Córnea edemaciada (nebulosa/turva)",
+        "Pupila MÉDIO-DILATADA (4-6 mm) e NÃO reativa à luz",
+        "Câmara anterior rasa; PIO muito elevada (> 30-40 mmHg)",
+        "Palpação digital pelas pálpebras fechadas: olho afetado MUITO mais endurecido que o contralateral"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO MEDICAMENTOSO (EMERGÊNCIA)",
+      "section_color": "orange",
+      "titulo": "BAIXAR A PIO — INICIAR JÁ",
+      "items": [
+        "Timolol 0,5% colírio — 1 gota no olho afetado imediatamente (betabloqueador)",
+        "Brimonidina 0,2% colírio — 1 gota (agonista alfa-2; usar se CI ao timolol)",
+        "Acetazolamida 500mg EV em ataque (ou 250-500mg VO se EV indisponível) — inibidor da anidrase carbônica",
+        "Manitol 20% 1-2 g/kg EV em 30-60 min — se PIO muito elevada ou resposta inadequada",
+        "Suporte: antiemético (metoclopramida 10mg EV / ondansetrona) + analgesia (dipirona 1g EV)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PILOCARPINA — ATENÇÃO À ARMADILHA",
+      "section_color": "red",
+      "titulo": "MIÓTICO SÓ APÓS PIO < 40 mmHg",
+      "items": [
+        "Pilocarpina 1-2% 1 gota de hora em hora nas 3 primeiras horas — SOMENTE quando PIO < 40 mmHg",
+        "Com PIO muito alta, há isquemia do esfíncter pupilar -> a pupila NÃO responde ao miótico",
+        "CONTRAINDICADA se a causa for topiramato (mecanismo diferente — não é bloqueio pupilar)",
+        "A redução farmacológica é ponte para o tratamento definitivo, não substitui a iridotomia"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "TRATAMENTO DEFINITIVO",
+      "section_color": "navy",
+      "titulo": "RESOLVER O BLOQUEIO",
+      "items": [
+        "Iridotomia periférica a laser (LPI) — tratamento de ESCOLHA; assim que a PIO cair e a córnea clarear",
+        "Profilaxia no olho contralateral é recomendada (risco bilateral)",
+        "Alternativas: paracentese de câmara anterior, iridoplastia a laser, iridectomia cirúrgica, facoemulsificação se catarata",
+        "Gonioscopia é o padrão-ouro diagnóstico (realizada pelo oftalmologista)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "section_color": "navy",
+      "headers": ["Decisão", "Critérios"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Internar", "PIO não controlada; impossibilidade de LPI imediata; vômitos incoercíveis; necessidade de paracentese/cirurgia; sem seguimento em 24h"],
+        ["Alta", "PIO controlada (<21-25 mmHg); LPI realizada; sintomas controlados; córnea clareando; seguimento oftalmológico garantido em 24-48h"]
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST NO PS",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Reconhecer: olho vermelho doloroso + náuseas/vômitos NÃO é abdome agudo nem enxaqueca banal",
+        "Iniciar redução da PIO imediatamente (não aguardar oftalmo para começar)",
+        "Suspender/Evitar midriáticos e anticolinérgicos",
+        "Antiemético e analgesia para permitir cooperação",
+        "Acionar oftalmologista de urgência para iridotomia"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO — URGÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Glaucoma agudo de ângulo fechado em OD/OE há ___; dor intensa, halos, visão turva + náuseas/vômitos.",
+        "Exame: córnea turva, pupila médio-dilatada fixa, olho endurecido à palpação. PIO: ___.",
+        "Tratamento no PS: timolol + brimonidina + acetazolamida (+ manitol/pilocarpina se aplicável) + antiemético/analgesia.",
+        "Necessita URGENTE de iridotomia periférica a laser — risco de cegueira irreversível."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente idosa com dor ocular intensa unilateral, halos coloridos, visão turva, náuseas e vômitos. Ao exame: córnea turva, pupila médio-dilatada fixa, olho endurecido. Diagnóstico?",
+      "alternativas": [
+        "Conjuntivite viral",
+        "Glaucoma agudo de ângulo fechado",
+        "Enxaqueca com aura",
+        "Uveíte anterior leve",
+        "Episclerite"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tratamento DEFINITIVO do glaucoma agudo de ângulo fechado por bloqueio pupilar?",
+      "alternativas": [
+        "Timolol tópico contínuo",
+        "Acetazolamida oral por tempo indeterminado",
+        "Iridotomia periférica a laser",
+        "Corticoide sistêmico",
+        "Apenas manitol endovenoso"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que a pilocarpina só deve ser usada após a PIO cair abaixo de 40 mmHg?",
+      "alternativas": [
+        "Porque acima disso causa midríase paradoxal",
+        "Porque com PIO muito alta há isquemia do esfíncter pupilar e a pupila não responde ao miótico",
+        "Porque a pilocarpina eleva ainda mais a PIO",
+        "Porque só age na conjuntiva",
+        "Porque provoca descolamento de retina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual fator de risco anatômico está classicamente associado ao glaucoma agudo de ângulo fechado?",
+      "alternativas": [
+        "Miopia alta (olho longo)",
+        "Hipermetropia (olho curto, câmara anterior rasa)",
+        "Astigmatismo isolado",
+        "Presbiopia",
+        "Daltonismo"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre o manejo inicial no PS do glaucoma agudo, assinale a correta:",
+      "alternativas": [
+        "Deve-se aguardar o oftalmologista antes de qualquer medicação",
+        "Iniciar imediatamente a redução da PIO (timolol, brimonidina, acetazolamida +/- manitol) e acionar oftalmo urgente",
+        "Dilatar a pupila com tropicamida",
+        "Prescrever apenas analgésico e alta",
+        "Aplicar corticoide tópico como primeira medida"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A tríade olho vermelho doloroso + halos/visão turva + náuseas/vômitos, com córnea turva, pupila médio-dilatada fixa e olho endurecido, é típica do glaucoma agudo de ângulo fechado — emergência cegante."},
+    {"resposta": "C", "comentario": "O tratamento definitivo é a iridotomia periférica a laser, que alivia o bloqueio pupilar criando uma comunicação na íris. As medicações apenas baixam a PIO como ponte. Profilaxia no olho contralateral é recomendada."},
+    {"resposta": "B", "comentario": "Com PIO muito elevada (>40), o esfíncter pupilar fica isquêmico e não responde ao miótico — a pilocarpina seria ineficaz. Por isso, usa-se só após reduzir a PIO. É contraindicada se a causa for topiramato."},
+    {"resposta": "B", "comentario": "A hipermetropia (olho axialmente curto, com câmara anterior rasa e ângulo estreito) é o fator anatômico clássico. Miopia (olho longo) é fator protetor para o fechamento angular."},
+    {"resposta": "B", "comentario": "O manejo inicial não deve esperar o especialista: inicia-se imediatamente a redução da PIO (timolol, brimonidina, acetazolamida, manitol se necessário) com antiemético/analgesia, acionando oftalmo de urgência. Jamais dilatar a pupila."}
+  ]
+}

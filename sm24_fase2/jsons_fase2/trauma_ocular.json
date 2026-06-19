@@ -1,0 +1,210 @@
+{
+  "slug": "trauma_ocular",
+  "titulo": "Trauma Ocular",
+  "especialidade": "OFTALMOLOGIA",
+  "chapter_subject": "Trauma Ocular no PS",
+  "chapter_bar": "TRAUMA OCULAR — GLOBO ABERTO x FECHADO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — TRIAGEM DO TRAUMA",
+      "title": "TRAUMA OCULAR — PRIMEIRO, O GLOBO ESTÁ ÍNTEGRO?",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Trauma ocular - medir ACUIDADE VISUAL", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 205, "h": 22, "text": "Quimico? IRRIGAR JA (>=30 min)\nNAO esperar oftalmo", "color": "red", "font_size": 6.0},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 145, "h": 26, "text": "GLOBO ABERTO:\nescudo rigido,\nnao manipular, ATB", "color": "red", "font_size": 6.0},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 145, "h": 26, "text": "GLOBO FECHADO:\nhifema/abrasao\ntratar + oftalmo", "color": "teal", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CAUSAS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Lesão mecânica, química, térmica ou por radiação do globo e/ou anexos (pálpebras, órbita, vias lacrimais)",
+        "Classificação fundamental: GLOBO ABERTO (ruptura de parede total) x GLOBO FECHADO (parede íntegra)",
+        "Causas: corpos estranhos, trauma contuso (queda/agressão/esporte), penetrante, queimadura química/térmica",
+        "~50% relacionado ao trabalho em adultos — perguntar sobre EPI"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "ANAMNESE E EXAME",
+      "section_color": "navy",
+      "titulo": "AVALIAÇÃO",
+      "items": [
+        "Anamnese: mecanismo (contuso/penetrante/químico/alta velocidade), tempo, EPI, lente de contato, anticoagulação",
+        "ACUIDADE VISUAL é a informação MAIS IMPORTANTE no trauma ocular — documentar sempre",
+        "Exame externo: pálpebras, conjuntiva, córnea, câmara anterior (hifema/profundidade)",
+        "Pupila: simetria, reflexo, DPAR; movimentos extraoculares (diplopia/restrição)",
+        "PIO só se NÃO houver suspeita de globo aberto; fundoscopia quando possível",
+        "TC de órbita = padrão-ouro (fratura, CE intraocular); pH ocular nas queimaduras químicas"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — GLOBO ABERTO / GRAVE",
+      "section_color": "red",
+      "titulo": "SINAIS DE ALARME",
+      "items": [
+        "Ferida penetrante/laceração visível, extrusão de conteúdo, deformidade do globo",
+        "Perda súbita de visão, DPAR (pupila de Marcus Gunn) ou pupila irregular",
+        "Hifema; câmara anterior rasa; sinais de envolvimento intraocular",
+        "Hemorragia retrobulbar (proptose, dor intensa, perda visual progressiva, PIO alta) — emergência",
+        "Fratura de órbita com aprisionamento muscular, diplopia, enoftalmia, enfisema"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONDUTA POR TIPO DE TRAUMA",
+      "section_color": "orange",
+      "headers": ["Tipo", "Conduta imediata", "Não fazer"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.22, 0.46, 0.32],
+      "rows": [
+        ["Químico", "Irrigação copiosa IMEDIATA com SF/água >= 30 min (não esperar oftalmo); medir pH", "Não atrasar irrigação"],
+        ["Globo aberto/ruptura", "Escudo rígido, jejum, ATB sistêmico, antiemético, antitetânica", "NÃO manipular/pressionar/instilar colírio"],
+        ["Hifema", "Repouso, cabeceira 30-45 graus, analgesia, antiemético", "Evitar Valsalva e AINE"],
+        ["Abrasão corneana", "ATB tópico + ciclopégico + AINE tópico + lágrimas", "Não tampar olho contaminado"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "PRESCRIÇÃO — GLOBO ABERTO x ABRASÃO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "GLOBO ABERTO/RUPTURA",
+        "items": [
+          "Escudo ocular RÍGIDO (nunca curativo compressivo)",
+          "ATB sistêmico: Ciprofloxacino 400mg EV 12/12h + Vancomicina 1g EV 12/12h",
+          "  (ou Moxifloxacino 400mg VO/dia)",
+          "Antiemético (ondansetrona 4-8mg EV); analgesia (evitar AINE; paracetamol/opioide leve)",
+          "Profilaxia antitetânica; jejum; evitar Valsalva; NÃO instilar colírios",
+          "Oftalmo de URGÊNCIA para exploração cirúrgica"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "ABRASÃO CORNEANA",
+        "items": [
+          "ATB tópico: tobramicina 0,3% 4/4h (ou eritromicina pomada 8/8h)",
+          "Ciclopégico: ciclopentolato 1% 8/8h (conforto)",
+          "AINE tópico: cetorolaco 0,5% 6/6h",
+          "Lágrimas artificiais frequentes + analgesia oral",
+          "Não usar lente de contato até cicatrizar; retorno se piora"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REGRA DE OURO — QUEIMADURA QUÍMICA",
+      "section_color": "purple",
+      "titulo": "TEMPO É TUDO",
+      "items": [
+        "Queimadura química é a ÚNICA emergência ocular que se trata ANTES de qualquer avaliação",
+        "Irrigar copiosamente com SF ou água corrente por no mínimo 30 minutos",
+        "Álcali é mais grave que ácido (penetra mais profundamente — liquefação)",
+        "Medir o pH e continuar irrigando até normalizar; só então avaliar e encaminhar"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST / MEDIDAS NÃO FARMACOLÓGICAS",
+      "titulo": "NO GLOBO ABERTO SUSPEITO",
+      "items": [
+        "Protetor ocular rígido (escudo de metal ou copo plástico) — nunca curativo compressivo",
+        "Repouso absoluto e jejum (cirurgia iminente)",
+        "Evitar manobras de Valsalva; remover lente de contato",
+        "Acuidade visual documentada e mecanismo registrado",
+        "Profilaxia antitetânica verificada"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ENCAMINHAMENTO — URGÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Trauma ocular ___ (contuso/perfurante/químico) em OD/OE; mecanismo: ___.",
+        "Achados: AV ___, pupila ___ (em gota?), hifema presente/ausente, DPAR sim/não.",
+        "Conduta: lavagem abundante (se químico) / jejum / escudo rígido / antitetânica / ATB sistêmico.",
+        "Solicito avaliação urgente para exploração cirúrgica ou manejo de complicações (hifema/descolamento)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com respingo de produto de limpeza alcalino no olho há 5 minutos. Qual a PRIMEIRA conduta?",
+      "alternativas": [
+        "Aguardar avaliação oftalmológica para decidir",
+        "Irrigação copiosa imediata com soro fisiológico ou água por no mínimo 30 minutos",
+        "Aplicar pomada antibiótica e ocluir o olho",
+        "Instilar colírio anestésico e observar",
+        "Encaminhar sem nenhuma medida local"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Diante de suspeita de globo aberto (ruptura), qual conduta é CORRETA?",
+      "alternativas": [
+        "Aplicar curativo compressivo firme",
+        "Instilar colírio antibiótico e pomada",
+        "Proteger com escudo rígido, não manipular nem pressionar, iniciar ATB sistêmico e encaminhar",
+        "Medir a pressão intraocular com tonômetro de aplanação",
+        "Irrigar sob pressão para limpar a ferida"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é a informação mais importante a ser documentada na avaliação inicial do trauma ocular?",
+      "alternativas": [
+        "Pressão arterial",
+        "Acuidade visual",
+        "Tipo sanguíneo",
+        "Histórico vacinal completo",
+        "Glicemia capilar"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente com hifema traumático (sangue na câmara anterior). Qual medida faz parte do manejo correto?",
+      "alternativas": [
+        "Deambulação livre e esforço físico",
+        "Repouso com elevação da cabeceira 30-45 graus, analgesia e antieméticos, evitando Valsalva e AINE",
+        "Uso de AAS para evitar coágulos",
+        "Curativo compressivo bilateral",
+        "Irrigação intraocular"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando a aferição da pressão intraocular (PIO) NÃO deve ser realizada no trauma ocular?",
+      "alternativas": [
+        "Em qualquer trauma ocular",
+        "Quando há suspeita de globo aberto (risco de extrusão de conteúdo)",
+        "Quando há apenas hiperemia conjuntival",
+        "Em pacientes jovens",
+        "Quando a acuidade visual está preservada"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Queimadura química é a única emergência ocular tratada ANTES da avaliação especializada: irrigação copiosa imediata (>=30 min) com SF/água. Álcali penetra por liquefação e é mais grave — não atrasar a lavagem."},
+    {"resposta": "C", "comentario": "No globo aberto: escudo RÍGIDO, não manipular/pressionar/instilar colírios, ATB sistêmico, antiemético, antitetânica e oftalmo urgente. Curativo compressivo e tonometria de aplanação são contraindicados (risco de extrusão)."},
+    {"resposta": "B", "comentario": "A acuidade visual é a informação mais importante no trauma ocular e principal fator prognóstico; deve ser documentada o quanto antes, em cada olho separadamente."},
+    {"resposta": "B", "comentario": "Hifema traumático: repouso com cabeceira elevada (30-45 graus) favorece o depósito do sangue, mais analgesia e antieméticos. Evitar Valsalva e AINE/AAS (risco de ressangramento)."},
+    {"resposta": "B", "comentario": "A tonometria é contraindicada na suspeita de globo aberto, pois a pressão sobre o globo pode causar extrusão do conteúdo intraocular. Nesse cenário, protege-se com escudo e encaminha-se."}
+  ]
+}

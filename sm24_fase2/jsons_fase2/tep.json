@@ -1,0 +1,247 @@
+{
+  "slug": "tep",
+  "titulo": "Tromboembolismo Pulmonar (TEP)",
+  "especialidade": "PNEUMOLOGIA",
+  "chapter_subject": "TEP no PS",
+  "chapter_bar": "TEP — DIAGNÓSTICO E ESTRATIFICAÇÃO DE RISCO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — SUSPEITA À CONDUTA",
+      "title": "TEP — PROBABILIDADE GUIA A INVESTIGAÇÃO",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 20, "text": "Suspeita de TEP: dispneia subita, dor toracica, taquicardia", "color": "navy", "font_size": 6.0},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 200, "h": 20, "text": "Probabilidade clinica (Wells) + estabilidade?", "color": "teal", "font_size": 6.2},
+        {"id": "c", "x": 0.22, "y": 0.32, "w": 140, "h": 24, "text": "Baixa: PERC neg ou\nD-dimero neg\nEXCLUI TEP", "color": "green", "font_size": 6.0},
+        {"id": "d", "x": 0.55, "y": 0.32, "w": 140, "h": 24, "text": "Alta ou D-dimero+\nAngio-TC de torax\n(exame de escolha)", "color": "orange", "font_size": 6.0},
+        {"id": "e", "x": 0.85, "y": 0.32, "w": 120, "h": 24, "text": "Instavel/choque\nReperfusao\nimediata", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["b", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E EPIDEMIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Obstrução da circulação arterial pulmonar por trombo (geralmente de TVP de MMII)",
+        "Incidência ~1/1000/ano; até 20% morrem em 90 dias (frequentemente por comorbidade associada)",
+        "Coexiste com neoplasia e sepse — o TEP nem sempre é a causa direta do óbito",
+        "Espectro: desde achado incidental até PCR por choque obstrutivo"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO SUSPEITAR",
+      "section_color": "purple",
+      "titulo": "SINAIS, SINTOMAS E FATORES DE RISCO",
+      "items": [
+        "Dispneia geralmente SÚBITA + taquipneia + taquicardia + dessaturação",
+        "Dor torácica (diferencial com SCA), tosse, hemoptise, síncope, rebaixamento, PCR",
+        "Fatores de risco: imobilização, cirurgia recente, TVP/TEP prévio, câncer, gestação/puerpério",
+        "Estrogênio, trombofilia, fratura/trauma de MMII, internação prolongada",
+        "Quadro pode ser inespecífico — manter alto índice de suspeição"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESCORE DE WELLS — PROBABILIDADE CLÍNICA",
+      "section_color": "navy",
+      "headers": ["Faixa de pontos", "Probabilidade", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.30, 0.48],
+      "rows": [
+        ["0 - 1", "Baixa", "Aplicar PERC; se algum critério +, dosar D-dímero"],
+        ["2 - 6", "Intermediária", "D-dímero; se positivo -> Angio-TC"],
+        ["> 7", "Alta", "Ir direto à Angio-TC (não excluir por D-dímero)"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "FERRAMENTAS DE TRIAGEM",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "PERC (baixa probabilidade)",
+        "items": [
+          "Usar só quando probabilidade clínica é BAIXA",
+          "QUALQUER critério presente torna o PERC positivo",
+          "PERC negativo (todos ausentes): exclui TEP sem D-dímero",
+          "Inclui: idade >=50, FC >=100, SatO2 <95%, hemoptise, estrogênio, TVP/TEP prévio, cirurgia/trauma recente, edema unilateral de MI"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "D-DÍMERO",
+        "items": [
+          "Serve para EXCLUIR TEP (alta sensibilidade, baixa especificidade)",
+          "Muito falso-positivo: cirurgia, infecção, inflamação, CIVD, gestação, câncer",
+          "Não usar se probabilidade ALTA (não exclui)",
+          "Considerar ajuste por idade em idosos"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — TEP DE ALTO RISCO",
+      "section_color": "red",
+      "titulo": "INSTABILIDADE = EMERGÊNCIA",
+      "items": [
+        "Choque ou hipoperfusão tecidual",
+        "Hipotensão: PAS < 90 mmHg OU queda > 40 mmHg (sem sepse/arritmia/hipovolemia)",
+        "Parada cardiorrespiratória",
+        "Nestes casos: reperfusão IMEDIATA, salvo contraindicação — não esperar Angio-TC se instável",
+        "Sinais de sobrecarga de VD (turgência jugular, B2 hiperfonética, disfunção de VD ao eco)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESTRATIFICAÇÃO DE RISCO — DEFINE O TRATAMENTO",
+      "section_color": "orange",
+      "headers": ["Risco", "Critérios", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.42, 0.40],
+      "rows": [
+        ["ALTO", "Choque / hipotensão / PCR", "Reperfusão (trombólise) imediata"],
+        ["INTERMEDIÁRIO", "Disfunção de VD (eco/TC) e/ou troponina/BNP elevados, SEM hipotensão", "Anticoagular + monitorizar; reperfusão se deteriorar"],
+        ["BAIXO", "Sem instabilidade, sem disfunção de VD, biomarcadores normais", "Anticoagular (DOAC); considerar tto ambulatorial"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — ALTO RISCO (REPERFUSÃO)",
+      "section_color": "red",
+      "titulo": "TROMBÓLISE SISTÊMICA",
+      "items": [
+        "Tenecteplase (por peso): <60kg=30mg | 60-70=35mg | 70-80=40mg | 80-90=45mg | >=90kg=50mg",
+        "Alteplase: 100mg IV em 2h OU 0,6 mg/kg em 15 min (máx 50mg)",
+        "Suporte hemodinâmico (cautela com volume; noradrenalina se hipotensão) e ventilatório",
+        "Se contraindicação à trombólise: embolectomia (cirúrgica ou por cateter) ± trombólise dirigida",
+        "Iniciar/manter anticoagulação parenteral conforme protocolo do serviço"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO — INTERMEDIÁRIO E BAIXO RISCO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "RISCO INTERMEDIÁRIO",
+        "items": [
+          "Monitorização contínua (risco de evoluir para alto risco)",
+          "Anticoagulação plena — preferir HBPM (enoxaparina 1mg/kg SC 12/12h)",
+          "Se deteriorar hemodinamicamente -> reperfusão de resgate",
+          "ESC: após 2-3 dias de HBPM plena, pode converter para VO"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "BAIXO RISCO",
+        "items": [
+          "DOAC de primeira linha (rivaroxabana, apixabana)",
+          "Elegível a tratamento AMBULATORIAL se bom suporte social e baixo risco de sangramento",
+          "Orientar sinais de alarme e retorno",
+          "Garantir seguimento precoce"
+        ]
+      }
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "MANUTENÇÃO E TEMPO DE TRATAMENTO",
+      "section_color": "navy",
+      "titulo": "ANTICOAGULAÇÃO DE MANUTENÇÃO",
+      "items": [
+        "DOACs = 1a linha (sem monitorização; menos sangramento que AVK)",
+        "Câncer: DOAC (apixabana/edoxabana/rivaroxabana) ou HBPM",
+        "AVK (varfarina) se: DRC avançada, hepatopatia, SAF de alto título / trombose arterial",
+        "Gestação: HBPM (DOAC e AVK contraindicados)",
+        "Tempo: mínimo 3 meses | provocado por fator reversível -> suspender em 3 meses",
+        "Não provocado / fator persistente (câncer, SAF) / recorrente -> estender ou indefinido"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com TEP confirmado (Angio-TC) / alta probabilidade, classificado como risco ___ (alto/intermediário/baixo).",
+        "Hemodinâmica: ___ | Disfunção de VD: sim/não | Troponina/BNP: ___.",
+        "Conduta atual: ___ (trombólise / HBPM / DOAC). Necessita ___ (UTI / vaga / hemodinâmica para embolectomia).",
+        "Anticoagulação iniciada às ___; contraindicações a trombólise: ___."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com TEP confirmado, PAS 78 mmHg, sinais de hipoperfusão, sem contraindicações. Conduta de escolha?",
+      "alternativas": [
+        "Apenas heparina de baixo peso molecular em dose plena",
+        "DOAC oral e alta ambulatorial",
+        "Trombólise sistêmica (reperfusão) imediata",
+        "Apenas suporte com oxigênio e observação",
+        "Aguardar ecocardiograma para decidir conduta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Sobre o D-dímero na investigação de TEP, é correto:",
+      "alternativas": [
+        "Tem alta especificidade e confirma o diagnóstico",
+        "É útil para EXCLUIR TEP em probabilidade clínica baixa/intermediária; é sensível e pouco específico",
+        "Deve ser usado para excluir TEP mesmo na alta probabilidade",
+        "Um valor normal indica necessidade de trombólise",
+        "Não se altera em infecção, cirurgia ou câncer"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual o exame de imagem de escolha para o diagnóstico de TEP no paciente estável que não pôde ser excluído pelos escores/D-dímero?",
+      "alternativas": [
+        "Radiografia de tórax",
+        "Cintilografia V/Q de rotina",
+        "Angiotomografia de tórax (Angio-TC)",
+        "Ecocardiograma transtorácico",
+        "USG de membros inferiores"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente com TEP, normotenso, mas com disfunção de VD ao eco e troponina elevada. Classificação e conduta?",
+      "alternativas": [
+        "Baixo risco — DOAC e alta",
+        "Alto risco — trombólise imediata obrigatória",
+        "Risco intermediário — anticoagular e monitorizar de perto, reperfusão se deteriorar",
+        "Sem risco — apenas observação",
+        "Indicar AVK isolado sem heparina"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Gestante com TEP de baixo/intermediário risco. Qual a anticoagulação de escolha?",
+      "alternativas": [
+        "Rivaroxabana",
+        "Varfarina",
+        "Heparina de baixo peso molecular",
+        "Apixabana",
+        "Dabigatrana"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "TEP de alto risco = instabilidade hemodinâmica (PAS<90 ou choque). A conduta é reperfusão imediata com trombólise sistêmica, salvo contraindicação. Anticoagulação isolada é insuficiente no choque obstrutivo."},
+    {"resposta": "B", "comentario": "D-dímero é sensível e pouco específico: serve para EXCLUIR TEP quando a probabilidade é baixa/intermediária (valor normal afasta). Na alta probabilidade não exclui — vai direto à Angio-TC. Eleva-se em cirurgia, infecção, câncer, gestação."},
+    {"resposta": "C", "comentario": "A Angio-TC de tórax é o exame de escolha para confirmar TEP no paciente estável quando não foi possível excluir por escore/D-dímero. Demais exames (eco, USG MMII, troponina/BNP) auxiliam na estratificação, não no diagnóstico primário."},
+    {"resposta": "C", "comentario": "Normotenso + disfunção de VD e/ou biomarcadores elevados = risco INTERMEDIÁRIO. Conduta: anticoagular (preferir HBPM) e monitorizar de perto, com reperfusão de resgate se houver deterioração hemodinâmica."},
+    {"resposta": "C", "comentario": "Na gestação, a HBPM é o tratamento de escolha: não atravessa a placenta. DOACs e varfarina são contraindicados pelo risco fetal (varfarina é teratogênica; DOACs cruzam a placenta)."}
+  ]
+}

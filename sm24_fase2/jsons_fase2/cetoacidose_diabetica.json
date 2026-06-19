@@ -1,0 +1,224 @@
+{
+  "slug": "cetoacidose_diabetica",
+  "titulo": "Cetoacidose Diabética (CAD)",
+  "especialidade": "ENDOCRINOLOGIA",
+  "chapter_subject": "Cetoacidose Diabética no PS",
+  "chapter_bar": "CETOACIDOSE DIABÉTICA — VOLUME, K, INSULINA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ORDEM DO TRATAMENTO",
+      "title": "CAD — VOLUME PRIMEIRO, K ANTES DA INSULINA",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 200, "h": 22, "text": "CAD: cetose + acidose (pH<7,3 / HCO3<15)\n+ glicemia >200 (pode ser euglicemica)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 200, "h": 22, "text": "1. VOLUME: 500-1000 mL/h cristaloide\n(2-4h iniciais)", "color": "teal", "font_size": 6.0},
+        {"id": "c", "x": 0.5, "y": 0.36, "w": 200, "h": 22, "text": "2. POTASSIO: dosar antes da insulina\nK<3,5 = repor antes de insulinizar", "color": "orange", "font_size": 6.0},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 20, "text": "3. INSULINA regular 0,1 UI/kg/h BIC (sala/UTI)", "color": "red", "font_size": 6.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Complicação aguda típica do DM1, mas também ocorre no DM2",
+        "Tríade: CETOSE + ACIDOSE METABÓLICA + (hiperglicemia)",
+        "Consenso 2024: se DM prévio conhecido, NÃO é necessário glicemia elevada para o diagnóstico",
+        "Atenção à CAD EUGLICÊMICA (uso de iSGLT2, gestação, jejum prolongado)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO E FATORES DESENCADEANTES",
+      "section_color": "purple",
+      "titulo": "SUSPEITAR E BUSCAR A CAUSA",
+      "items": [
+        "Clínica: náuseas/vômitos, dor abdominal difusa, 'Ps' (poliúria, polidipsia, perda de peso), desidratação",
+        "Taquicardia, taquipneia / respiração de Kussmaul, fraqueza, letargia, coma",
+        "SEMPRE achar o fator desencadeante! Principal: descontinuação da insulina",
+        "Infecções (PNM, ITU, COVID, dengue), primodescompensação, álcool/cocaína",
+        "Estresse agudo (IAM, AVC, TEP, pancreatite, trauma), corticoide/antipsicóticos, gestação"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CRITÉRIOS DIAGNÓSTICOS E CLASSIFICAÇÃO",
+      "section_color": "navy",
+      "headers": ["Parâmetro", "Diagnóstico / Leve", "Moderada / Grave"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.26, 0.37, 0.37],
+      "rows": [
+        ["Cetose", "Cetonemia >=3 mmol/L ou cetonúria >=2+", "—"],
+        ["pH arterial", "Leve: 7,25-7,3", "Mod: 7,1-7,24 | Grave: <7,1"],
+        ["Bicarbonato", "Leve: 15-18", "Mod: 10-15 | Grave: <10"],
+        ["Glicemia", "> 200 mg/dL (pode faltar na euglicêmica)", "—"],
+        ["Consciência", "Leve: alerta", "Mod: alerta/torporoso | Grave: torpor/coma"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES E CÁLCULOS",
+      "section_color": "navy",
+      "titulo": "ADMISSÃO E SERIADOS",
+      "items": [
+        "Admissão: gasometria, eletrólitos (Na, K, Cl, Mg), função renal, hemograma, PCR, cetonemia",
+        "Rastreio infeccioso: urina 1, urocultura, RX tórax (buscar o gatilho)",
+        "Seriados: HGT 1/1h; gasometria venosa 2/2h; Na e K 2/2h",
+        "Ânion gap = Na - (Cl + HCO3) | normal 4-12",
+        "Osm = 2x Na + glicemia/18 + ureia/2,8"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — 1) VOLUME",
+      "section_color": "orange",
+      "titulo": "REPOSIÇÃO VOLÊMICA (PRIMEIRO PASSO)",
+      "items": [
+        "Déficit estimado de água ~100 mL/kg",
+        "500 a 1000 mL/h de cristaloide nas primeiras 2-4 horas",
+        "Preferir soluções balanceadas (Ringer lactato, Plasmalyte) se grandes volumes",
+        "  -> reduz acidose hiperclorêmica e tempo de resolução",
+        "Não atrasar a hidratação por indisponibilidade — usar o que estiver à mão (SF 0,9%)"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO — 2) POTÁSSIO e 3) INSULINA",
+      "section_color": "orange",
+      "left": {
+        "tipo": "rxbox",
+        "titulo": "POTÁSSIO (ANTES DA INSULINA)",
+        "items": [
+          "K < 3,5: NÃO iniciar insulina — repor K antes",
+          "K 3,5-5,0: insulina BIC + KCl 19,1% 10-30 mEq/h",
+          "K > 5,0: iniciar insulina, NÃO repor K",
+          "Sugestão: SF 0,9% 1000mL + KCl 19,1% 30mL (75 mEq/L)",
+          "Bicarbonato: NÃO de rotina; só se pH < 7,0"
+        ]
+      },
+      "right": {
+        "tipo": "rxbox",
+        "titulo": "INSULINA (sala de emergência/UTI)",
+        "items": [
+          "Diluir 100 UI de IR em 100 mL SF (1mL = 1UI)",
+          "Glicemia > 250: IR 0,1 UI/kg/h EV em BIC",
+          "Glicemia <= 250: reduzir p/ 0,05 UI/kg/h + SG 5%",
+          "Meta: glicemia 150-250 mg/dL",
+          "Queda > 70 mg/dL/h aumenta risco de edema cerebral"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE RESOLUÇÃO (TODOS)",
+      "section_color": "green",
+      "titulo": "CAD RESOLVIDA QUANDO",
+      "items": [
+        "Glicemia < 200 mg/dL",
+        "pH > 7,3",
+        "Bicarbonato > 15 mEq/L",
+        "Resolução da cetonemia",
+        "TODOS os critérios devem estar presentes simultaneamente"
+      ],
+      "accent": "green",
+      "bg": "green_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRANSIÇÃO PÓS-RESOLUÇÃO",
+      "section_color": "teal",
+      "titulo": "INSULINIZAÇÃO SUBCUTÂNEA",
+      "items": [
+        "Estimular alimentação precoce conforme nível de consciência",
+        "Sobreposição: administrar basal SC 1-2h ANTES de desligar a BIC (evita rebote)",
+        "Consenso 2024: basal SC 0,15-0,3 U/kg pode ser feita junto à BIC (reduz tempo de CAD)",
+        "Já usava insulina: retomar dose prévia",
+        "Primodescompensação: 0,5 U/kg/dia (50% basal, 50% prandial dividido nas refeições)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente DM em CAD ___ (leve/moderada/grave): pH ___, HCO3 ___, glicemia ___, K ___, AG ___.",
+        "Fator desencadeante: ___ | Em uso de hidratação ___ mL/h + insulina BIC ___ UI/kg/h.",
+        "Necessita ___ (vaga de UTI / sala de emergência com BIC e monitorização contínua).",
+        "K corrigido antes da insulina: sim/não. Rastreio infeccioso: ___."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente em CAD com K sérico inicial de 3,0 mEq/L. Qual a conduta correta quanto à insulina?",
+      "alternativas": [
+        "Iniciar insulina imediatamente em dose plena",
+        "Repor potássio antes de iniciar a insulina, pois a insulina agrava a hipocalemia",
+        "Iniciar insulina e repor potássio simultaneamente em qualquer dose",
+        "Não repor potássio, apenas hidratar",
+        "Administrar bicarbonato antes da insulina"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a PRIMEIRA medida terapêutica na cetoacidose diabética?",
+      "alternativas": [
+        "Insulina regular em bolus",
+        "Bicarbonato de sódio",
+        "Reposição volêmica com cristaloide",
+        "Potássio endovenoso",
+        "Glicose hipertônica"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre a reposição de bicarbonato na CAD, é correto afirmar:",
+      "alternativas": [
+        "Deve ser feita em todos os pacientes com pH < 7,3",
+        "Não é feita de rotina; reservada para pH < 7,0",
+        "Deve ser feita sempre que o bicarbonato estiver abaixo de 15",
+        "É a primeira medida do tratamento",
+        "Substitui a insulinoterapia na CAD grave"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente DM1 conhecido, com vômitos e dor abdominal, cetonemia 4 mmol/L, pH 7,2, HCO3 12, glicemia 190 mg/dL. Qual a interpretação?",
+      "alternativas": [
+        "Não é CAD, pois a glicemia está abaixo de 200",
+        "É CAD (euglicêmica/normoglicêmica) — em DM prévio a glicemia alta não é obrigatória para o diagnóstico",
+        "É estado hiperglicêmico hiperosmolar",
+        "É acidose láctica isolada",
+        "É hipoglicemia"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Durante a insulinoterapia, a glicemia atinge 240 mg/dL ainda com acidose. Qual a conduta?",
+      "alternativas": [
+        "Suspender a insulina imediatamente",
+        "Reduzir a insulina para 0,05 UI/kg/h e associar soro glicosado 5%, mantendo a BIC até resolução da acidose/cetose",
+        "Aumentar a insulina para corrigir a glicemia rapidamente",
+        "Dar alta, pois a glicemia já normalizou",
+        "Iniciar bicarbonato"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "K < 3,5 mEq/L contraindica iniciar insulina: a insulina desloca K para o intracelular e pode precipitar hipocalemia grave/arritmia. Repõe-se K primeiro e só depois insuliniza. Com K 3,5-5,0, insulina + reposição de K juntas."},
+    {"resposta": "C", "comentario": "A primeira medida na CAD é a reposição volêmica (500-1000 mL/h de cristaloide nas 2-4h iniciais), restaurando perfusão e reduzindo glicemia/contrarregulação antes mesmo da insulina."},
+    {"resposta": "B", "comentario": "Bicarbonato não é reposto de rotina na CAD; reserva-se para pH < 7,0 (risco de arritmia e hipocontratilidade). Reposição indiscriminada associa-se a hipocalemia, edema cerebral e acidose paradoxal do SNC."},
+    {"resposta": "B", "comentario": "Cetose + acidose com glicemia < 200 em diabético conhecido caracteriza CAD euglicêmica (consenso 2024 dispensa hiperglicemia no DM prévio). Frequente com iSGLT2, gestação e jejum. Tratar como CAD, com atenção ao SG precoce."},
+    {"resposta": "B", "comentario": "Ao atingir glicemia <= 250 ainda com acidose/cetose, reduz-se a insulina para 0,05 UI/kg/h e associa-se SG 5%, mantendo a infusão de insulina (que resolve a cetose) até preencher TODOS os critérios de resolução."}
+  ]
+}
