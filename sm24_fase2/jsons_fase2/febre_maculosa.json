@@ -1,0 +1,180 @@
+{
+  "slug": "febre_maculosa",
+  "titulo": "Febre Maculosa Brasileira",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Febre maculosa — diagnóstico e doxiciclina",
+  "chapter_bar": "FEBRE MACULOSA — DOXICICLINA NA SUSPEITA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — TEMPO É VIDA",
+      "title": "FEBRE MACULOSA — SUSPEITA -> DOXICICLINA JÁ",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Febre + cefaleia + mialgia + CONTATO COM CARRAPATO\n(area rural/capivara); exantema apos 5o dia", "color": "navy", "font_size": 5.0},
+        {"id": "b", "x": 0.5, "y": 0.55, "w": 205, "h": 22, "text": "INICIAR DOXICICLINA na suspeita (idealmente < 5o dia)\nNAO aguardar exantema nem sorologia", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.25, "w": 205, "h": 22, "text": "Forma grave (ictero-hemorragica/disfuncao): internar + suporte", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.06, "w": 200, "h": 14, "text": "Notificacao compulsoria", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E EPIDEMIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Riquetsiose adquirida pela picada de CARRAPATO infectado; principal agente: Rickettsia rickettsii (cocobacilo Gram-negativo intracelular obrigatório)",
+        "Perfis: Sudeste (R. rickettsii, carrapato de capivara/áreas rurais; junho-novembro); região metropolitana de SP (cães/gatos na Mata Atlântica); Nordeste (R. parkeri, quadro mais leve, escara de inoculação + linfonodomegalia)",
+        "Incubação 2-14 dias",
+        "Doença GRAVE e potencialmente fatal — a suspeição epidemiológica é decisiva",
+        "Notificação compulsória"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "QUADRO CLÍNICO",
+      "section_color": "navy",
+      "titulo": "EVOLUÇÃO",
+      "items": [
+        "Fase inicial (leve): síndrome febril inespecífica ou exantemática — febre, cefaleia, mialgia, artralgia, prostração, náuseas/vômitos",
+        "Exantema: geralmente APÓS o 5º dia — maculopapular não pruriginoso (1-5 mm), iniciando nas EXTREMIDADES (punhos/tornozelos, PALMAS e PLANTAS)",
+        "Pode evoluir para petéquias, sufusões hemorrágicas e NECROSE de extremidades",
+        "Formas fulminantes (óbito < 6 dias): o exantema pode nem ter tempo de aparecer",
+        "Grave: síndrome febril hemorrágica ou íctero-hemorrágica, disfunção orgânica múltipla, hemorragias, icterícia, choque"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES E DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "NÃO ATRASAR O TRATAMENTO",
+      "items": [
+        "Laboratório (apoio): leucopenia ou leucocitose, PLAQUETOPENIA, elevação de CPK, HIPONATREMIA, marcadores de disfunção orgânica",
+        "Diagnóstico definitivo NÃO é ágil — iniciar o tratamento pela CLÍNICA + epidemiologia, sem aguardar confirmação",
+        "Sorologia pareada (IgG fase aguda + nova amostra >= 14 dias): aumento de 4x no título = confirmado (IgM tem sensibilidade/especificidade limitadas)",
+        "Na fase aguda: isolamento direto (limitado) ou PCR (boa sensibilidade/especificidade, pouco disponível) em sangue/pele/vísceras",
+        "NÃO se faz profilaxia após picada de carrapato"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — DOXICICLINA É A CHAVE",
+      "section_color": "orange",
+      "titulo": "PRECOCE SALVA VIDAS",
+      "items": [
+        "Iniciar diante da SUSPEITA, idealmente ANTES do 5º dia — principal medida para reduzir formas graves (mesmo sem exantema, se houver contato com carrapato)",
+        "1ª linha: DOXICICLINA 100 mg EV ou VO 12/12h (adultos e crianças >= 45 kg)",
+        "  Duração: mínimo 5-7 dias OU até pelo menos 3 dias após a resolução da febre/melhora clínica",
+        "  Via EV preferencial se vômitos, alteração de consciência ou instabilidade; trocar para VO quando estável",
+        "Alternativa (só se contraindicação absoluta à doxiciclina): Cloranfenicol 500 mg VO 6/6h (grave: 1 g EV 6/6h) — associado a MAIOR mortalidade; considerar em gestantes/alergia grave; monitorização hematológica",
+        "As ÚNICAS drogas eficazes contra R. rickettsii são doxiciclina e cloranfenicol"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "SUPORTE E MEDIDAS GERAIS",
+      "section_color": "navy",
+      "titulo": "NO PS / INTERNAÇÃO",
+      "items": [
+        "Internação hospitalar; dieta VO se tolera (jejum se vômitos/alteração de consciência); SSVV 4/4h; controle de diurese; monitorização se instável",
+        "Hidratação: SF 0,9% ajustado ao estado volêmico e à função renal; balanço hídrico rigoroso (risco de edema pulmonar por extravasamento capilar)",
+        "Vasopressores se hipotensão refratária; isolamento de contato NÃO é necessário",
+        "Sintomáticos: Dipirona 1 g EV 6/6h se febre; Ondansetrona 4-8 mg EV 8/8h se náuseas/vômitos",
+        "Exames: hemograma com plaquetas, função renal, eletrólitos (Na), transaminases, sorologia/PCR para rickettsias"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "REAVALIAÇÃO E INTERNAÇÃO",
+      "titulo": "DECISÃO",
+      "items": [
+        "Espera-se melhora da febre em 24-48h se o tratamento foi iniciado precocemente",
+        "Sem resposta em 48h: considerar diagnóstico alternativo ou coinfecção (graves podem demorar > 48h)",
+        "INTERNAR: disfunção orgânica (renal/hepática/respiratória), trombocitopenia grave, alteração do estado mental, necessidade de suporte (volume/vasopressor/VM), incapacidade de VO, comorbidade/imunossupressão",
+        "Vigiar complicações: IRA, SARA, alterações neurológicas, choque",
+        "Notificação compulsória"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos; suspeita de febre maculosa; contato com carrapato/área de mata/capivaras nos últimos 15 dias: ___; início dos sintomas ___.",
+        "Clínica: febre/cefaleia/mialgia ___, exantema (palmas/plantas) ___, vômitos ___; sinais de alarme: hipotensão/alteração de consciência/oligúria/fenômenos hemorrágicos ___.",
+        "DOXICICLINA iniciada às ___ (dose ___); hidratação ___; sintomáticos.",
+        "Solicito unidade de referência com suporte/UTI; notificar Vigilância. Iniciar doxiciclina SEMPRE na suspeita, mesmo sem exantema."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a principal medida para reduzir o risco de formas graves na febre maculosa?",
+      "alternativas": [
+        "Aguardar o exantema para iniciar o tratamento",
+        "Iniciar doxiciclina precocemente diante da suspeita (idealmente antes do 5º dia), sem aguardar confirmação",
+        "Solicitar sorologia pareada antes de tratar",
+        "Profilaxia após picada de carrapato",
+        "Corticoide em altas doses"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o antibiótico de primeira linha para a febre maculosa brasileira?",
+      "alternativas": [
+        "Azitromicina",
+        "Doxiciclina",
+        "Penicilina G",
+        "Ceftriaxona",
+        "Vancomicina"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual característica do exantema é típica da febre maculosa?",
+      "alternativas": [
+        "Pruriginoso, poupando palmas e plantas",
+        "Maculopapular não pruriginoso, iniciando nas extremidades e acometendo palmas e plantas",
+        "Vesicular em dermátomo",
+        "Apenas no tronco",
+        "Em alvo"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Quais alterações laboratoriais podem apoiar a suspeita de febre maculosa?",
+      "alternativas": [
+        "Hipernatremia e leucocitose isolada",
+        "Plaquetopenia, elevação de CPK e hiponatremia",
+        "Hipoglicemia isolada",
+        "Eosinofilia",
+        "Anemia macrocítica"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre o uso de cloranfenicol na febre maculosa, é correto:",
+      "alternativas": [
+        "É a primeira escolha em todos os casos",
+        "Reserva-se a contraindicação absoluta à doxiciclina (ex.: gestante/alergia grave); associa-se a maior mortalidade",
+        "É contraindicado em qualquer situação",
+        "Não tem ação contra Rickettsia",
+        "Substitui a internação"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Iniciar doxiciclina precocemente diante da suspeita (idealmente antes do 5º dia), mesmo sem exantema e sem confirmação laboratorial, é a principal medida para reduzir formas graves e a mortalidade."},
+    {"resposta": "B", "comentario": "A doxiciclina é a 1ª linha (superior); o cloranfenicol é alternativa apenas quando há contraindicação absoluta à doxiciclina."},
+    {"resposta": "B", "comentario": "O exantema é maculopapular não pruriginoso, surge após ~5º dia, inicia nas extremidades (punhos/tornozelos) e acomete palmas e plantas, podendo evoluir para petéquias."},
+    {"resposta": "B", "comentario": "Plaquetopenia, elevação de CPK e hiponatremia apoiam a suspeita; o diagnóstico definitivo (sorologia pareada/PCR) não deve atrasar o tratamento."},
+    {"resposta": "B", "comentario": "O cloranfenicol fica reservado à contraindicação absoluta da doxiciclina (gestante/alergia grave) e associa-se a maior mortalidade, exigindo monitorização hematológica."}
+  ]
+}

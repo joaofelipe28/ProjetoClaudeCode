@@ -1,0 +1,180 @@
+{
+  "slug": "leptospirose",
+  "titulo": "Leptospirose",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Leptospirose na emergência",
+  "chapter_bar": "LEPTOSPIROSE — WEIL + ATB PRECOCE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — TRATAR NA SUSPEITA",
+      "title": "LEPTOSPIROSE — SUSPEITA -> ATB IMEDIATO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Febre + mialgia (panturrilhas) + exposicao (enchente)\nhiperemia conjuntival; ABCDE", "color": "navy", "font_size": 5.0},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "LEVE: doxiciclina VO\n+ hidratacao\n(ambulatorial)", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.46, "w": 150, "h": 28, "text": "GRAVE (Weil/hemorragia\npulmonar/IRA): Penicilina/\nCeftriaxona EV + UTI", "color": "red", "font_size": 5.0},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 205, "h": 18, "text": "Notificacao compulsoria imediata; nao aguardar sorologia", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E EPIDEMIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Doença bacteriana aguda sistêmica por espiroquetas (Leptospira interrogans); de leve autolimitada a multissistêmica fatal",
+        "Forma grave = SÍNDROME DE WEIL: icterícia + insuficiência renal aguda + hemorragias (especialmente PULMONAR) + choque",
+        "Transmissão: contato de pele lesada/mucosas com água, lama ou solo contaminados por urina de animais (ratos = principal reservatório)",
+        "Fatores: enchentes/alagamentos, exposição ocupacional (lixo, esgoto, agricultura), falta de saneamento, contato recreacional",
+        "Notificação COMPULSÓRIA imediata"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO (ABCDE) E ANAMNESE",
+      "section_color": "navy",
+      "titulo": "O QUE BUSCAR",
+      "items": [
+        "A/B: nível de consciência, taquipneia/hipoxemia, HEMOPTISE (hemorragia alveolar); C: PA/FC/TEC, choque; D: confusão/rebaixamento; E: icterícia, petéquias, sangramentos, mialgia intensa de panturrilhas",
+        "Anamnese: febre súbita, cefaleia intensa, mialgia importante (panturrilhas/lombar), náuseas/vômitos/diarreia, icterícia, redução da diurese, sangramentos",
+        "Exposição recente: enchente/alagamento, contato com lama/água contaminada, presença de roedores",
+        "Exame: febre, dor muscular à palpação, HIPEREMIA CONJUNTIVAL bilateral (achado típico), icterícia, hipotensão, estertores, oligúria",
+        "Diferenciais: dengue, hepatites, febre maculosa, malária, sepse de outra origem"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE GRAVIDADE",
+      "section_color": "navy",
+      "headers": ["Forma", "Características"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Leve", "Febre, cefaleia, mialgia, sem disfunção orgânica"],
+        ["Moderada", "Náuseas/vômitos persistentes, alteração discreta renal/hepática, hipotensão responsiva a fluidos"],
+        ["Grave (Weil)", "Icterícia + IRA; hemorragia PULMONAR; choque refratário; alteração neurológica; plaquetopenia; acidose; necessidade de VM/diálise"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIOTICOTERAPIA — INICIAR NA SUSPEITA",
+      "section_color": "orange",
+      "titulo": "NÃO AGUARDAR CONFIRMAÇÃO",
+      "items": [
+        "Iniciar IMEDIATAMENTE na suspeita clínica, sem aguardar sorologia",
+        "LEVE (ambulatorial): Doxiciclina 100 mg VO 12/12h por 7 dias",
+        "  Contraindicações à doxiciclina (gestante, lactente, < 8 anos): Amoxicilina 500 mg VO 8/8h por 7 dias ou Azitromicina 500 mg/dia por 5 dias",
+        "MODERADA/GRAVE (internação): Penicilina G cristalina 1,5 milhão UI EV 6/6h por 7 dias",
+        "  Alternativas equivalentes: Ceftriaxona 1-2 g EV/dia ou Cefotaxima 1 g EV 6/6h (eficácia semelhante)",
+        "Coletar exames antes do ATB se possível (sem atrasar); sorologia IgM (ELISA) — não aguardar resultado"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "SUPORTE (ESSENCIAL NAS FORMAS GRAVES)",
+      "section_color": "navy",
+      "titulo": "ÓRGÃO A ÓRGÃO",
+      "items": [
+        "Hidratação: cristaloide (SF 0,9%); bolus cauteloso no choque; EVITAR sobrecarga na IRA",
+        "Analgesia/antitérmico: Dipirona ou Paracetamol — EVITAR AINEs (agravam IRA e sangramentos)",
+        "IRA: monitorar creatinina/diurese; DIÁLISE PRECOCE se anúria persistente, acidose grave, hipercalemia ou sobrecarga",
+        "Hemorragia pulmonar: O2 de alto fluxo, VM precoce se necessário, UTI imediata",
+        "Choque: reposição volêmica + noradrenalina (protocolo de sepse)",
+        "Exames: hemograma (plaquetopenia), função renal/hepática, eletrólitos, CPK, gasometria, RX de tórax"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: qualquer forma moderada/grave, icterícia, IRA, sangramentos, hipotensão, alteração neurológica, incapacidade de VO",
+        "ALTA (forma leve): estável, função renal preservada, boa aceitação oral, ATB iniciado, retorno garantido",
+        "Casa (leve): Doxiciclina 100 mg 12/12h (ou Amoxicilina 500 mg 8/8h) por 7 dias + Dipirona + hidratação + repouso",
+        "Transferência: leptospirose grave, instabilidade, IRA com necessidade de diálise, hemorragia pulmonar, necessidade de UTI",
+        "Notificação compulsória imediata à Vigilância Epidemiológica"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos; suspeita de leptospirose (forma ___); exposição: ___ (enchente/lama/roedores) há ___ dias.",
+        "Gravidade: ___ (icterícia/IRA/hemorragia pulmonar/choque/neurológico); sinais vitais ___, diurese ___, SpO2 ___.",
+        "Exames: creatinina ___, plaquetas ___, bilirrubinas ___; ATB iniciado ___ às ___; volume/vasopressor ___.",
+        "Solicito hospital com UTI/Nefrologia (diálise) para suporte avançado; notificar Vigilância."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "A síndrome de Weil (leptospirose grave) caracteriza-se por:",
+      "alternativas": [
+        "Artralgia crônica e exantema",
+        "Icterícia + insuficiência renal aguda + hemorragias (especialmente pulmonar)",
+        "Microcefalia fetal",
+        "Tosse com guincho",
+        "Úlcera genital"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o antibiótico de escolha para a leptospirose LEVE (ambulatorial) em adulto não gestante?",
+      "alternativas": [
+        "Penicilina G cristalina EV",
+        "Doxiciclina 100 mg VO 12/12h por 7 dias",
+        "Vancomicina",
+        "Metronidazol",
+        "Fluconazol"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Quando iniciar o tratamento da leptospirose?",
+      "alternativas": [
+        "Somente após sorologia IgM positiva",
+        "Imediatamente na suspeita clínica, sem aguardar confirmação",
+        "Após 48h de observação",
+        "Apenas se houver icterícia",
+        "Após hemocultura positiva"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual achado de exame físico é típico da leptospirose?",
+      "alternativas": [
+        "Exantema pruriginoso",
+        "Hiperemia conjuntival bilateral e mialgia intensa de panturrilhas",
+        "Sopro cardíaco",
+        "Rigidez de nuca isolada",
+        "Esplenomegalia maciça"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual classe de analgésico deve ser EVITADA na leptospirose?",
+      "alternativas": [
+        "Paracetamol",
+        "AINEs (agravam insuficiência renal e sangramentos)",
+        "Dipirona",
+        "Opioides fracos",
+        "Nenhuma"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A síndrome de Weil é a forma grave: icterícia + insuficiência renal aguda + hemorragias (especialmente pulmonar), podendo evoluir com choque e falência múltipla."},
+    {"resposta": "B", "comentario": "Na forma leve, a doxiciclina 100 mg VO 12/12h por 7 dias é a escolha; em gestantes/lactentes/< 8 anos usa-se amoxicilina ou azitromicina."},
+    {"resposta": "B", "comentario": "O tratamento deve ser iniciado imediatamente na suspeita clínica, sem aguardar a sorologia, pois o início precoce do antibiótico melhora o prognóstico."},
+    {"resposta": "B", "comentario": "Hiperemia conjuntival bilateral e mialgia intensa das panturrilhas são achados típicos da leptospirose, em contexto epidemiológico compatível."},
+    {"resposta": "B", "comentario": "Os AINEs devem ser evitados por agravarem a insuficiência renal e o risco de sangramento; usa-se dipirona/paracetamol para febre e dor."}
+  ]
+}

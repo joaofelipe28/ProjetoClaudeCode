@@ -1,0 +1,184 @@
+{
+  "slug": "chikungunya",
+  "titulo": "Chikungunya",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Chikungunya — manejo por fases",
+  "chapter_bar": "CHIKUNGUNYA — ARTRALGIA + FASES",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — MANEJO POR FASES",
+      "title": "CHIKUNGUNYA — FASE GUIA O ANALGÉSICO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Febre alta + poliartralgia distal SIMETRICA\nintensa/incapacitante (< 14 dias)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "AGUDA (<3 sem):\nanalgesico/opioide\nSEM AINE/corticoide", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 130, "h": 26, "text": "SUBAGUDA (3-8 sem):\nAINE/corticoide +\nadjuvantes", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 145, "h": 26, "text": "CRONICA (>8 sem):\nhidroxicloroquina\n(reumato)", "color": "purple", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E QUADRO CLÍNICO",
+      "section_color": "teal",
+      "titulo": "A MARCA É A ARTRALGIA",
+      "items": [
+        "Alphavirus transmitido por Aedes aegypti e albopictus; 'chikungunya' = 'aquele que se dobra' (pela dor articular)",
+        "Caso suspeito: febre > 38,5 °C (< 14 dias) + artralgia/artrite intensa, sem outra causa",
+        "POLIARTRALGIA simétrica, DISTAL, em pequenas e grandes articulações (surge no 2º-5º dia); edema periarticular",
+        "Febre alta (~10 dias); exantema maculopapular precoce e NÃO pruriginoso; linfadenopatia cervical",
+        "Laboratório: hepatite branda (TGO/TGP 100-200), trombocitopenia leve (~100.000), VHS/PCR elevados"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "CLÍNICO-EPIDEMIOLÓGICO + LABORATÓRIO",
+      "items": [
+        "RT-PCR do RNA viral: até 8 dias do início dos sintomas — método de escolha na fase aguda",
+        "Sorologia: IgM detectável a partir do 5º dia (persiste por meses); IgG indica infecção recente/passada",
+        "Sorologias recomendadas após o 8º dia do início dos sintomas",
+        "Diferenciar de dengue (sem artralgia incapacitante, risco de choque) e Zika (exantema pruriginoso, conjuntivite)",
+        "Atenção à coinfecção com dengue em áreas endêmicas"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MANEJO FARMACOLÓGICO POR FASE",
+      "section_color": "navy",
+      "headers": ["Fase", "Conduta"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Aguda (até 3 sem)", "Apenas analgésicos simples e opioides (se dor moderada/grave). NÃO usar AINE nem corticoide (rebote/agrava viremia)"],
+        ["Subaguda (3-8 sem)", "AINE a partir do 14º-21º dia; Prednisona 5-20 mg/dia (mín. 6 sem); adjuvantes (amitriptilina, gabapentina)"],
+        ["Crônica (> 8 sem)", "HIDROXICLOROQUINA 5 mg/kg (máx 400 mg/dia) por 6-12 sem; refratário: sulfassalazina/MTX + adjuvantes"],
+        ["Grupo de risco crônico", "Mulheres, > 45 anos, substrato reumatológico prévio"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REGRA DE OURO DA FASE AGUDA",
+      "section_color": "red",
+      "titulo": "NADA DE AINE/CORTICOIDE NA AGUDA",
+      "items": [
+        "Na fase AGUDA (< 3 semanas), NÃO administrar AINE nem corticoide — risco de efeito rebote e de agravar a viremia (e mascarar dengue concomitante, com risco de sangramento)",
+        "Analgesia escalonada: Dipirona/Paracetamol; opioide fraco (codeína/tramadol) se dor intensa/incapacitante",
+        "Corticoterapia (subaguda) — cuidado: DM, HAS refratária, osteoporose com fratura, Cushing, DRC em hemodiálise",
+        "Compressas frias nas articulações (3x/dia) e repouso relativo",
+        "Hidroxicloroquina é o pilar na fase crônica (sob acompanhamento, geralmente reumatológico)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PRESCRIÇÃO — PS E CASA",
+      "section_color": "orange",
+      "titulo": "SINTOMÁTICOS",
+      "items": [
+        "PS: Dipirona 1 g EV agora; Tramadol 50 mg + SF 0,9% 100 mL EV em 20 min se dor persistente",
+        "PS: SF 0,9% 500-1000 mL EV conforme desidratação; Dexclorfeniramina 2 mg 8/8h ou Loratadina 10 mg/dia se prurido",
+        "Casa (aguda): Dipirona 1 g VO 6/6h (ou Paracetamol 750 mg 6/6h) se dor/febre",
+        "Casa: Codeína 30 mg VO 8/8h se dor intensa/incapacitante",
+        "Orientações: hidratação, repouso, compressas frias; PROIBIDO AINE e corticoide na fase aguda"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO",
+      "section_color": "purple",
+      "titulo": "FORMAS GRAVES E GRUPOS ESPECIAIS",
+      "items": [
+        "Manifestações graves: comprometimento neurológico (meningoencefalite, convulsões, rebaixamento), miocardite, IRA, insuficiência cardíaca ou qualquer disfunção orgânica aguda",
+        "Instabilidade hemodinâmica: hipotensão, taquicardia persistente, choque, necessidade de vasoativo",
+        "Dor incapacitante não controlada com analgesia (incluindo opioides), impedindo alimentação/hidratação/deambulação",
+        "Gestantes com febre/suspeita (risco de transmissão vertical); NEONATOS de mães infectadas no peri-parto (risco de doença grave/encefalopatia)",
+        "Descompensação de comorbidades; impossibilidade de manejo ambulatorial seguro"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com chikungunya (fase ___): febre alta + poliartralgia distal simétrica incapacitante há ___ dias.",
+        "Critério de gravidade: ___ (neurológico/miocardite/IRA/choque/dor refratária); gestante/neonato ___.",
+        "Conduta: analgesia ___ (dipirona/opioide), hidratação ___; SEM AINE/corticoide na fase aguda.",
+        "Solicito suporte hospitalar/UTI por gravidade ou comorbidade descompensada; CID A92.0."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a manifestação clínica marcante da chikungunya?",
+      "alternativas": [
+        "Hemoconcentração e choque",
+        "Poliartralgia intensa, simétrica e distal (incapacitante)",
+        "Exantema pruriginoso com conjuntivite",
+        "Icterícia e insuficiência renal",
+        "Tosse com guincho"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Na fase AGUDA da chikungunya (< 3 semanas), qual conduta é correta?",
+      "alternativas": [
+        "Iniciar AINE precocemente",
+        "Usar analgésicos simples/opioides e NÃO usar AINE nem corticoide",
+        "Corticoide em altas doses",
+        "Hidroxicloroquina de imediato",
+        "Antibiótico"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o pilar do tratamento na fase CRÔNICA da chikungunya (> 8 semanas)?",
+      "alternativas": [
+        "Opioide contínuo",
+        "Hidroxicloroquina (5 mg/kg, máx 400 mg/dia)",
+        "Antiviral específico",
+        "Corticoide em pulso",
+        "Apenas fisioterapia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual exame é o método de escolha no diagnóstico da chikungunya na fase aguda (até 8 dias)?",
+      "alternativas": [
+        "Sorologia IgG",
+        "RT-PCR do RNA viral",
+        "Hemocultura",
+        "Prova do laço",
+        "Cultura de urina"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Por que se evita AINE na fase aguda da chikungunya em área endêmica?",
+      "alternativas": [
+        "Por causar artrite",
+        "Pelo risco de efeito rebote/agravo da viremia e por mascarar dengue concomitante (risco de sangramento)",
+        "Por ser ineficaz para febre",
+        "Porque causa exantema",
+        "Não há motivo"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A marca da chikungunya é a poliartralgia intensa, simétrica e distal, frequentemente incapacitante, surgindo entre o 2º e o 5º dia."},
+    {"resposta": "B", "comentario": "Na fase aguda usam-se analgésicos simples e opioides; NÃO se usa AINE nem corticoide pelo risco de rebote e agravo da viremia (e mascaramento de dengue)."},
+    {"resposta": "B", "comentario": "Na fase crônica, o pilar é a hidroxicloroquina (5 mg/kg, máx 400 mg/dia) por 6-12 semanas, geralmente sob acompanhamento reumatológico."},
+    {"resposta": "B", "comentario": "O RT-PCR do RNA viral (até 8 dias) é o método de escolha na fase aguda; a sorologia IgM é útil a partir do 5º dia."},
+    {"resposta": "B", "comentario": "Evita-se AINE na fase aguda pelo risco de rebote/agravo da viremia e, sobretudo, por mascarar dengue concomitante (risco de sangramento) em área endêmica."}
+  ]
+}

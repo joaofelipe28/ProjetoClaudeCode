@@ -1,0 +1,182 @@
+{
+  "slug": "malaria",
+  "titulo": "Malária",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Malária — diagnóstico e tratamento",
+  "chapter_bar": "MALÁRIA — GOTA ESPESSA + ESPÉCIE GUIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — SUSPEITAR, DIAGNOSTICAR, TRATAR",
+      "title": "MALÁRIA — FEBRE + VIAGEM -> GOTA ESPESSA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Febre + calafrios + cefaleia + VIAGEM/area endemica\ngota espessa (padrao-ouro) ou teste rapido", "color": "navy", "font_size": 5.0},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "P. vivax:\ncloroquina +\nPRIMAQUINA (recaida)", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 130, "h": 26, "text": "P. falciparum:\nACT (artemeter-\nlumefantrina)", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 145, "h": 26, "text": "GRAVE (qualquer):\nARTESUNATO IV\n+ UTI", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E QUADRO CLÍNICO",
+      "section_color": "teal",
+      "titulo": "SÍNDROME FEBRIL AGUDA",
+      "items": [
+        "Doença por protozoário Plasmodium, transmitida pelo mosquito Anopheles; fase hepática (assintomática) + fase sanguínea (sintomas, hemólise)",
+        "Espécies mais relevantes: P. FALCIPARUM (grave) e P. VIVAX (recaídas por hipnozoítas); raras: transfusional, transplante, vertical",
+        "Tríade clássica (> 80%): FEBRE + calafrios + cefaleia; febre intermitente/paroxística; mialgia, mal-estar, náuseas/vômitos, inapetência",
+        "Grave (sobretudo falciparum): comprometimento neurológico (confusão/convulsões/coma), IRA, anemia intensa, icterícia, choque, sangramentos",
+        "Ausência de rash, linfadenopatia e foco pulmonar ajuda a diferenciar de outras febris"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ANAMNESE — A VIAGEM É A CHAVE",
+      "section_color": "purple",
+      "titulo": "PERGUNTAS OBRIGATÓRIAS",
+      "items": [
+        "Viagem/residência em ÁREA ENDÊMICA (datas, locais, duração) — MUITO IMPORTANTE!",
+        "Uso de profilaxia antimalárica (tipo, adesão, início/término)",
+        "Padrão da febre (contínua/intermitente/paroxística), calafrios, sudorese; sintomas de gravidade",
+        "Transfusão/transplante/agulhas compartilhadas; episódios prévios de malária (espécie, tratamento)",
+        "Comorbidades/risco: imunossupressão, HIV, GRAVIDEZ, doenças hematológicas; contato com outros casos"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES COMPLEMENTARES",
+      "section_color": "navy",
+      "titulo": "GOTA ESPESSA É O PADRÃO-OURO",
+      "items": [
+        "MICROSCOPIA de esfregaço (gota espessa e fina, Giemsa): padrão-ouro — identifica o parasita, quantifica a parasitemia e distingue espécies (detecta 5-10 parasitas/uL)",
+        "Testes rápidos (RDTs): úteis quando a microscopia não está disponível",
+        "Sorologia NÃO tem papel no diagnóstico agudo",
+        "Inespecíficos (apoio): hemograma (anemia hemolítica, trombocitopenia), bilirrubina indireta, LDH elevada, esquizócitos",
+        "TESTAR G6PD obrigatoriamente antes de prescrever primaquina"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO POR ESPÉCIE E GRAVIDADE",
+      "section_color": "orange",
+      "titulo": "ESQUEMAS",
+      "items": [
+        "P. FALCIPARUM (ou espécie desconhecida em área de risco): terapia combinada com artemisinina (ACT) — Artemeter-lumefantrina (mais usado); + Primaquina dose única (bloqueio de transmissão)",
+        "P. VIVAX (sensível à cloroquina): Etapa 1 — Cloroquina 3 dias (sangue); Etapa 2 — PRIMAQUINA 7-14 dias (hipnozoítas, previne recaída)",
+        "GRAVE (qualquer espécie): ARTESUNATO IV — 1ª linha (reduz mortalidade ~35% adultos, 22% crianças)",
+        "PRIMAQUINA contraindicada: deficiência de G6PD, gestantes, lactantes (bebê com G6PD desconhecido) — testar G6PD antes",
+        "Controle de cura: falciparum em D3/7/14/21/28/42; vivax/mista em D3/7/14/21/28/42/63"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE MALÁRIA GRAVE / INTERNAÇÃO",
+      "section_color": "red",
+      "titulo": "QUALQUER UM = GRAVE",
+      "items": [
+        "Rebaixamento (Glasgow < 11), convulsões múltiplas (> 2/24h), prostração",
+        "Insuficiência respiratória (SatO2 < 92%, FR > 30, edema pulmonar), CHOQUE (PAS < 80 com hipoperfusão)",
+        "Icterícia (BT > 3) com parasitemia > 100.000/uL; anemia grave (Hb <= 5 em < 12 anos; Hb < 7 em >= 12 anos) com parasitemia > 10.000",
+        "IRA (creatinina > 3), acidose metabólica (lactato >= 5), hipoglicemia (< 40 mg/dL), sangramentos significativos",
+        "Hiperparasitemia (falciparum > 10% dos eritrócitos); grupos de risco (crianças, gestantes, idosos, não imunes); incapacidade de tolerar VO -> internar"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA E ORIENTAÇÕES",
+      "titulo": "QUANDO LIBERAR",
+      "items": [
+        "Tolerância à VO sem vômitos; ausência de critérios de gravidade (disfunções resolvidas)",
+        "Afebril por 24-48h; parasitemia em declínio (idealmente < 1%); estabilidade hemodinâmica/respiratória",
+        "Função renal estável/em melhora; Hb estável (sem necessidade de transfusão adicional)",
+        "Capacidade de completar o tratamento oral em casa com seguimento garantido e exames de controle agendados",
+        "Orientar: completar o tratamento até o fim (mesmo sem sintomas); não é contagiosa; retorno se febre alta, sonolência/confusão, dispneia, urina escura ou vômitos persistentes"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos; suspeita de malária (esteve em área endêmica nos últimos 15-30 dias: ___); sintomas há ___ dias.",
+        "Gota espessa/RDT: ___ (espécie / parasitemia); Hb ___, plaquetas ___, creatinina ___; Glasgow ___.",
+        "Gravidade: ___ (neurológico/choque/IRA/icterícia/anemia grave/hiperparasitemia); tratamento iniciado: ___ (artesunato IV / ACT / cloroquina) às ___.",
+        "Solicito UTI / manejo de complicações (IRA/SARA/anemia grave) / ajuste especializado; testar G6PD antes da primaquina."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o exame padrão-ouro para o diagnóstico de malária?",
+      "alternativas": [
+        "Sorologia IgM",
+        "Microscopia de gota espessa (esfregaço corado por Giemsa)",
+        "Hemocultura",
+        "PCR de urina",
+        "Prova do laço"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "No tratamento da malária por P. vivax, qual fármaco previne as recaídas ao eliminar os hipnozoítas hepáticos?",
+      "alternativas": [
+        "Cloroquina",
+        "Primaquina",
+        "Artesunato",
+        "Doxiciclina",
+        "Azitromicina"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o tratamento de primeira linha da malária GRAVE (qualquer espécie)?",
+      "alternativas": [
+        "Cloroquina oral",
+        "Artesunato intravenoso",
+        "Primaquina isolada",
+        "Doxiciclina oral",
+        "Apenas hidratação"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "O que deve ser obrigatoriamente testado antes de prescrever primaquina?",
+      "alternativas": [
+        "Função tireoidiana",
+        "Deficiência de G6PD",
+        "Sorologia para HIV",
+        "Glicemia de jejum",
+        "Coagulograma"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual dado da anamnese é fundamental e não pode faltar na suspeita de malária?",
+      "alternativas": [
+        "História de tabagismo",
+        "Viagem ou residência em área endêmica",
+        "Vacinação infantil",
+        "História cirúrgica",
+        "Uso de anticoncepcional"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A microscopia de gota espessa (esfregaço corado por Giemsa) é o padrão-ouro: identifica o parasita, quantifica a parasitemia e distingue as espécies. A sorologia não serve para o diagnóstico agudo."},
+    {"resposta": "B", "comentario": "A primaquina elimina os hipnozoítas hepáticos do P. vivax, prevenindo recaídas; a cloroquina trata a fase sanguínea. Testar G6PD antes da primaquina."},
+    {"resposta": "B", "comentario": "Na malária grave (qualquer espécie), o artesunato intravenoso é a 1ª linha, reduzindo a mortalidade em relação aos demais esquemas."},
+    {"resposta": "B", "comentario": "A deficiência de G6PD deve ser testada antes da primaquina (risco de hemólise); a primaquina também é contraindicada em gestantes e lactantes com bebê de G6PD desconhecido."},
+    {"resposta": "B", "comentario": "A história de viagem ou residência em área endêmica é o dado epidemiológico fundamental para suspeitar de malária diante de uma síndrome febril aguda."}
+  ]
+}

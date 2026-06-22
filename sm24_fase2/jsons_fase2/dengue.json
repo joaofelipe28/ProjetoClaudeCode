@@ -1,0 +1,183 @@
+{
+  "slug": "dengue",
+  "titulo": "Dengue no Pronto-Socorro",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Dengue — classificação de risco e hidratação",
+  "chapter_bar": "DENGUE — GRUPOS A-D + HIDRATAÇÃO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — GRUPO DEFINE A CONDUTA",
+      "title": "DENGUE — CLASSIFICAR (A/B/C/D) E HIDRATAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Febre 2-7 dias + 2 criterios; prova do laco\nbuscar SINAIS DE ALARME e comorbidades", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.2, "y": 0.5, "w": 130, "h": 24, "text": "A: sem alarme/\ncomorbidade ->\nhidratacao VO", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 130, "h": 24, "text": "B: comorbidade ->\nhemograma +\nobservacao", "color": "teal", "font_size": 5.4},
+        {"id": "d", "x": 0.8, "y": 0.5, "w": 135, "h": 26, "text": "C: alarme -> EV +\ninternar; D: choque\n-> 20 mL/kg + UTI", "color": "red", "font_size": 5.2},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 205, "h": 18, "text": "REMISSAO DA FEBRE (dia 3-7) = FASE CRITICA!", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["a", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO, FASES E CASO SUSPEITO",
+      "section_color": "teal",
+      "titulo": "RECONHECER A FASE",
+      "items": [
+        "Doença febril aguda por arbovírus (Aedes aegypti); fases: FEBRIL (2-7 dias), CRÍTICA (remissão da febre, dias 3-7 — risco de choque por extravasamento), RECUPERAÇÃO (reabsorção)",
+        "Caso suspeito: febre (2-7 dias) + >= 2 de: náusea/vômito, exantema, mialgia/artralgia, cefaleia/dor retro-orbital, petéquias ou prova do laço +, leucopenia",
+        "Criança: febre aguda (2-7 dias) sem foco aparente",
+        "CHAVE: reconhecer sinais de alarme + hidratação adequada + CUIDADO na remissão da febre (fase crítica!)",
+        "PROVA DO LAÇO (em todos): insuflar manguito na PA média por 5 min; positivo se >= 20 petéquias (adultos) ou >= 10 (crianças) em quadrado de 2,5 cm"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE ALARME (GRUPO C) E DE CHOQUE (GRUPO D)",
+      "section_color": "red",
+      "titulo": "O QUE NÃO PODE PASSAR",
+      "items": [
+        "ALARME: dor abdominal intensa e contínua; vômitos persistentes; acúmulo de líquidos (ascite/derrame); hipotensão postural/lipotimia; hepatomegalia > 2 cm; sangramento de mucosa; letargia/irritabilidade; aumento progressivo do hematócrito",
+        "CHOQUE: taquicardia, extremidades frias, pulso fino, enchimento capilar > 2s",
+        "PA CONVERGENTE (< 20 mmHg entre sistólica e diastólica) — sinal precoce de choque",
+        "Hipotensão (tardia), oligúria (< 1,5 mL/kg/h), taquipneia",
+        "A remissão da febre marca o início da fase crítica — orientar retorno NO DIA em que a febre passar"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE RISCO (DEFINE A CONDUTA)",
+      "section_color": "navy",
+      "headers": ["Grupo", "Critério e conduta"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.16, 0.84],
+      "rows": [
+        ["A", "Sem alarme, sem comorbidade/risco social -> ambulatorial; exames a critério; hidratação oral + retorno"],
+        ["B", "Sem alarme, COM comorbidade/condição especial (lactente, gestante, idoso, HAS/DM/cardiopatia/DRC etc.) -> hemograma OBRIGATÓRIO + observação"],
+        ["C", "COM sinais de alarme -> hemograma/albumina/transaminases; hidratação VENOSA + internação (mín. 48h)"],
+        ["D", "Dengue grave (choque, sangramento grave, disfunção orgânica) -> expansão rápida + UTI"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "HIDRATAÇÃO — TRATAMENTO FUNDAMENTAL",
+      "section_color": "orange",
+      "titulo": "POR GRUPO",
+      "items": [
+        "A/B (oral): adultos 60 mL/kg/dia (1/3 SRO + 2/3 líquidos caseiros); crianças até 10 kg 130 mL/kg/dia, 10-20 kg 100 mL/kg/dia, > 20 kg 80 mL/kg/dia",
+        "C (venosa): SF 0,9% 10 mL/kg na 1ª hora -> reavaliar (sinais vitais, diurese alvo 1 mL/kg/h); 2ª hora 10 mL/kg/h; se melhora -> manutenção 25 mL/kg em 6h, depois 25 mL/kg em 8h",
+        "C sem melhora: repetir expansão (10 mL/kg/h) até 3x; se não melhorar -> Grupo D",
+        "D (choque): SF 0,9% 20 mL/kg em até 20 min (bolus) -> reavaliar; se melhora, tratar como C",
+        "D refratário com Ht em ELEVAÇÃO: expansores plasmáticos (albumina 0,5-1 g/kg, ou coloide 10 mL/kg/h); Ht em QUEDA: investigar hemorragia (concentrado de hemácias 10-15 mL/kg)",
+        "PARAR/reduzir quando: fim do extravasamento, normalização de PA/pulso/perfusão, queda do Ht (sem sangramento), diurese normal — CUIDADO com excesso (edema pulmonar em idosos/cardiopatas)"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES E SINTOMÁTICOS",
+      "section_color": "navy",
+      "titulo": "LABORATÓRIO E O QUE NÃO USAR",
+      "items": [
+        "Hematócrito: aumento = hemoconcentração (extravasamento, alarme); normal/baixo sem sangramento = melhora",
+        "Leucopenia comum; plaquetas em queda progressiva — NÃO transfundir plaquetas de rotina (só por critérios específicos)",
+        "Grupos C/D: albumina (hipoalbuminemia), transaminases, função renal, eletrólitos, gasometria se choque",
+        "Antitérmico/analgesia: Dipirona ou Paracetamol",
+        "NUNCA: AAS e AINEs (ibuprofeno/diclofenaco/nimesulida) — risco de sangramento; evitar injeções IM (hematoma)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CRITÉRIOS DE ALTA E ORIENTAÇÕES",
+      "titulo": "QUANDO LIBERAR",
+      "items": [
+        "Alta de internação (C/D) — TODOS os 6: estabilização hemodinâmica por 48h; afebril por 24h; melhora clínica; Ht normal/estável por 24h; plaquetas em elevação; diurese normal",
+        "Alta A/B: retorno diário até 48h após a remissão da febre; retorno IMEDIATO se alarme; retorno no dia da defervescência (fase crítica); entregar cartão da dengue",
+        "Orientar hidratação rigorosa mesmo sem febre; repouso; repelente",
+        "Retorno imediato: dor abdominal intensa, vômitos persistentes, sangramento, tontura ao levantar, queda da diurese, sonolência/irritabilidade, dispneia, extremidades frias, ascite",
+        "Sem defervescência: retornar no 5º dia de doença"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com dengue Grupo ___; febre há ___ dias, ___ remissão (fase ___); comorbidades ___.",
+        "Alarme: ___ (dor abdominal/vômitos/hepatomegalia ___ cm/sangramento/hipotensão postural/letargia/hemoconcentração); choque: PA ___/___ , FC ___, enchimento capilar ___s.",
+        "Sinais vitais ___, diurese ___ mL/kg/h; Ht ___% (variação ___), plaquetas ___; hidratação EV feita: ___ mL (___ mL/kg) em ___h; resposta ___.",
+        "Solicito internação em ___ (enfermaria/UTI) para hidratação/monitorização / expansão / transfusão."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Em qual momento da dengue ocorre o maior risco de choque (fase crítica)?",
+      "alternativas": [
+        "No primeiro dia de febre",
+        "Na remissão da febre (entre o 3º e o 7º dia), por extravasamento plasmático",
+        "Após a recuperação completa",
+        "Antes do início da febre",
+        "Apenas com plaquetas < 10.000"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual medicação é CONTRAINDICADA no tratamento sintomático da dengue?",
+      "alternativas": [
+        "Paracetamol",
+        "AAS e AINEs (risco de sangramento)",
+        "Dipirona",
+        "Soro de reidratação oral",
+        "Repelente"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente com dengue e sinais de choque (Grupo D). Qual a conduta inicial de hidratação?",
+      "alternativas": [
+        "SRO 60 mL/kg/dia",
+        "SF 0,9% 20 mL/kg em bolus (até 20 min) com reavaliação",
+        "Restrição hídrica",
+        "Apenas observação",
+        "Albumina isolada de imediato"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "No seguimento da dengue, o aumento do hematócrito indica:",
+      "alternativas": [
+        "Melhora do quadro",
+        "Hemoconcentração por extravasamento plasmático (sinal de alarme)",
+        "Sangramento ativo",
+        "Hidratação excessiva",
+        "Normalidade"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre a transfusão de plaquetas na dengue, é correto:",
+      "alternativas": [
+        "Transfundir sempre que plaquetas < 50.000",
+        "NÃO transfundir de rotina; reservar a critérios específicos (sangramento não controlado)",
+        "Transfundir em todos os Grupos C",
+        "Transfundir profilaticamente em todos",
+        "É o tratamento principal"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A fase crítica ocorre na remissão da febre (dias 3-7), quando o extravasamento plasmático aumenta o risco de choque — por isso se orienta retorno no dia em que a febre passar."},
+    {"resposta": "B", "comentario": "AAS e AINEs são contraindicados pelo risco de sangramento; usa-se Paracetamol ou Dipirona. Também se evitam injeções IM (hematoma)."},
+    {"resposta": "B", "comentario": "No Grupo D (choque), faz-se expansão rápida com SF 0,9% 20 mL/kg em bolus (até 20 min), reavaliando; se melhora, segue como Grupo C."},
+    {"resposta": "B", "comentario": "O aumento do hematócrito indica hemoconcentração por extravasamento plasmático — sinal de alarme; a queda (sem sangramento) sugere melhora."},
+    {"resposta": "B", "comentario": "Não se transfunde plaqueta de rotina na dengue, mesmo com plaquetopenia; reserva-se a situações específicas, como sangramento persistente não controlado."}
+  ]
+}

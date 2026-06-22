@@ -1,0 +1,196 @@
+{
+  "slug": "zika",
+  "titulo": "Zika no Pronto-Socorro",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Zika — exantema, gestante e Guillain-Barré",
+  "chapter_bar": "ZIKA — EXANTEMA + GESTANTE = PRIORIDADE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "ZIKA — DIAGNÓSTICO CLÍNICO + TRIAR GESTANTE/NEURO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Exantema maculopapular PRURIGINOSO + conjuntivite\nfebre baixa/ausente; diagnostico clinico", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "GESTANTE: notificar +\nRT-PCR + pre-natal\nALTO RISCO", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 26, "text": "Sinais neuro (fraqueza/\narreflexia): investigar\nGUILLAIN-BARRE", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Demais: sintomatico + repelente + preservativo", "color": "green", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E TRANSMISSÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Arbovirose pelo vírus Zika (ZIKV), transmitida pelo Aedes aegypti; 80% assintomáticos ou doença febril leve autolimitada",
+        "Quadro semelhante a dengue/chikungunya, porém mais LEVE; incubação 3-14 dias",
+        "Transmissão: picada (principal), VERTICAL (mãe-feto, risco de MICROCEFALIA), SEXUAL (sêmen até 6 meses), transfusional (raro)",
+        "Associações importantes: microcefalia congênita (gestantes) e síndrome de Guillain-Barré (SGB)",
+        "CHAVE: diagnóstico clínico + exantema maculopapular pruriginoso + GESTANTE = alto risco (encaminhar pré-natal de alto risco)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIFERENCIAÇÃO ENTRE ARBOVIROSES",
+      "section_color": "navy",
+      "headers": ["Sintoma", "Zika", "Dengue", "Chikungunya"],
+      "header_colors": ["gray", "teal", "orange", "red"],
+      "col_widths": [0.22, 0.26, 0.26, 0.26],
+      "rows": [
+        ["Febre", "Baixa/ausente", "Alta (39-40)", "Alta (39-40)"],
+        ["Exantema", "Intenso, PRURIGINOSO", "Discreto", "Discreto/ausente"],
+        ["Conjuntivite", "Comum (não purulenta)", "Rara", "Rara"],
+        ["Artralgia", "Leve-moderada", "Leve", "INTENSA (incapacitante)"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CASO SUSPEITO E EXAME FÍSICO",
+      "section_color": "navy",
+      "titulo": "O QUE BUSCAR",
+      "items": [
+        "Caso suspeito: exantema maculopapular pruriginoso + >= 1 de: febre (baixa/ausente), hiperemia conjuntival sem secreção, artralgia/mialgia, edema periarticular",
+        "Pele: exantema com início na face e disseminação craniocaudal, pruriginoso (diferente da dengue), pode descamar",
+        "Olhos: hiperemia conjuntival bilateral, sem secreção purulenta, sem dor ocular",
+        "Articulações: artralgia/edema em mãos, punhos, tornozelos (leve-moderada, NÃO incapacitante como chikungunya)",
+        "Neurológico: avaliar SGB (fraqueza ascendente, parestesias, arreflexia)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "GESTANTES — PRIORIDADE ABSOLUTA",
+      "section_color": "red",
+      "titulo": "RISCO DE MICROCEFALIA",
+      "items": [
+        "Risco de microcefalia e malformações fetais (especialmente 1º trimestre)",
+        "No PS: NOTIFICAR imediatamente, solicitar RT-PCR Zika (sangue + urina), ENCAMINHAR para pré-natal de alto risco (urgente)",
+        "Orientar repelente (DEET/icaridina, seguros) e preservativo durante toda a gestação",
+        "Seguimento: USG obstétrico seriado (perímetro cefálico, calcificações, ventriculomegalia); RT-PCR de líquido amniótico se alterações",
+        "Planejamento de gravidez: aguardar 8 semanas após os sintomas (mulher); parceiro 8 semanas (ou 6 meses se sêmen PCR+)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES COMPLEMENTARES",
+      "section_color": "navy",
+      "titulo": "NÃO DE ROTINA",
+      "items": [
+        "Diagnóstico é clínico-epidemiológico; exames NÃO de rotina",
+        "RT-PCR Zika (sangue até 5º dia / urina até 14º dia): gestantes, casos neurológicos, graves/atípicos, vigilância",
+        "Sorologia IgM/IgG após o 5º dia — pode ter reação cruzada com dengue/febre amarela",
+        "Hemograma inespecífico: pode ter leucopenia/linfocitose relativa, SEM hemoconcentração (diferente da dengue)",
+        "Sintomas neurológicos: punção lombar e eletroneuromiografia (investigar Guillain-Barré)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO (100% SINTOMÁTICO)",
+      "section_color": "orange",
+      "titulo": "SEM ANTIVIRAL ESPECÍFICO",
+      "items": [
+        "Repouso relativo; afastamento por ~7 dias",
+        "Hidratação oral abundante (2-3 L/dia); não requer hidratação EV (doença leve)",
+        "Analgesia/febre: Paracetamol 750 mg 6/6h (1ª escolha, seguro na gestante) ou Dipirona 500-1000 mg 6/6h",
+        "Prurido intenso: Loratadina 10 mg/dia ou Hidroxizina 25 mg 8/8h por 3-5 dias",
+        "Medidas: repelente (DEET/icaridina), barreira contra mosquitos (telas/ar-condicionado), preservativo por 8 semanas",
+        "ATENÇÃO: na suspeita de dengue concomitante, evitar AINE/AAS"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO, ALTA E ALARME",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR (raro): suspeita de Guillain-Barré, meningoencefalite, gestante com complicação (TPP, sofrimento fetal), criança < 3 meses com febre e exantema, impossibilidade de seguimento",
+        "ALTA: quadro leve sem complicações, sem sinais de dengue/chikungunya grave, sem sinais neurológicos, gestante com encaminhamento garantido ao pré-natal de alto risco",
+        "Retorno em 7 dias se não melhorar (ou antes se piora)",
+        "ALARME (retorno imediato): fraqueza muscular (pernas), dificuldade de andar/respirar, parestesia/arreflexia (Guillain-Barré); rigidez de nuca/cefaleia intensa/vômitos (meningite); sangramento/dor abdominal (suspeitar dengue)",
+        "Gestantes: contrações, sangramento vaginal, redução de movimentos fetais"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com Zika: exantema maculopapular pruriginoso há ___ dias, febre ___ (baixa/ausente), conjuntivite ___, artralgia em ___; gestante de ___ semanas / não gestante.",
+        "RT-PCR Zika ___ (coletado?); sinais neurológicos (fraqueza/arreflexia) ___ ; sinais vitais ___.",
+        "Gestante: encaminhada ao pré-natal de alto risco; USG obstétrico ___.",
+        "Solicito internação para ___ (investigação de Guillain-Barré / seguimento de gestação de alto risco / complicação neurológica)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual achado clínico é mais característico da infecção por Zika, ajudando a diferenciá-la da dengue?",
+      "alternativas": [
+        "Febre alta com mialgia intensa",
+        "Exantema maculopapular pruriginoso com hiperemia conjuntival não purulenta",
+        "Artralgia incapacitante",
+        "Hemoconcentração",
+        "Petéquias com prova do laço positiva"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que a gestante com Zika é prioridade absoluta?",
+      "alternativas": [
+        "Risco de choque hipovolêmico",
+        "Risco de microcefalia e malformações fetais (transmissão vertical)",
+        "Risco de artrite crônica",
+        "Risco de hepatite",
+        "Não há risco especial"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual complicação neurológica está associada à infecção pelo vírus Zika?",
+      "alternativas": [
+        "Esclerose múltipla",
+        "Síndrome de Guillain-Barré",
+        "Doença de Parkinson",
+        "Miastenia gravis",
+        "Esclerose lateral amiotrófica"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual orientação é correta quanto à transmissão sexual do Zika?",
+      "alternativas": [
+        "Não há transmissão sexual",
+        "Usar preservativo por 8 semanas após os sintomas (vírus persiste no sêmen)",
+        "Apenas evitar beijo",
+        "Transmissão só por transfusão",
+        "Não há necessidade de qualquer medida"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o tratamento da infecção por Zika não complicada?",
+      "alternativas": [
+        "Antiviral específico",
+        "Sintomático: repouso, hidratação, paracetamol/dipirona e anti-histamínico se prurido",
+        "Antibiótico",
+        "Corticoide sistêmico",
+        "Imunoglobulina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O exantema maculopapular pruriginoso com hiperemia conjuntival não purulenta e febre baixa/ausente é o quadro mais característico do Zika, diferenciando-o da dengue (febre alta, mialgia intensa)."},
+    {"resposta": "B", "comentario": "A gestante é prioridade pelo risco de microcefalia e malformações fetais por transmissão vertical (sobretudo no 1º trimestre), exigindo notificação, RT-PCR e pré-natal de alto risco."},
+    {"resposta": "B", "comentario": "A síndrome de Guillain-Barré é a complicação neurológica associada ao Zika; suspeitar diante de fraqueza ascendente, parestesias e arreflexia."},
+    {"resposta": "B", "comentario": "O vírus persiste no sêmen, por isso se orienta uso de preservativo por 8 semanas após os sintomas (ou mais se sêmen PCR+)."},
+    {"resposta": "B", "comentario": "Não há antiviral específico; o tratamento é sintomático (repouso, hidratação, paracetamol/dipirona e anti-histamínico se prurido), além de medidas de prevenção da transmissão."}
+  ]
+}
