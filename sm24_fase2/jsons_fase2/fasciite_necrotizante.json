@@ -1,0 +1,157 @@
+{
+  "slug": "fasciite_necrotizante",
+  "titulo": "Fasciíte Necrotizante",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Fasciíte necrotizante e Fournier",
+  "chapter_bar": "FASCIÍTE NECROTIZANTE — DESBRIDAR JÁ",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — TEMPO É TECIDO",
+      "title": "FASCIÍTE — ATB IMEDIATO + DESBRIDAMENTO URGENTE",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Dor DESPROPORCIONAL + toxemia + progressao rapida\nABCDE + 2 acessos + labs", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.55, "w": 205, "h": 20, "text": "ATB EV de amplo espectro IMEDIATO (nao atrasar)", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.3, "w": 205, "h": 22, "text": "DESBRIDAMENTO CIRURGICO URGENTE (pilar)\namplo + reabordagem seriada 24-48h", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.08, "w": 200, "h": 16, "text": "Perineo = Fournier (urologia/cirurgia)", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E RISCO",
+      "section_color": "teal",
+      "titulo": "EMERGÊNCIA CIRÚRGICA ABSOLUTA",
+      "items": [
+        "Infecção (frequentemente polimicrobiana) das fáscias, com progressão RÁPIDA e alta mortalidade se não tratada de imediato",
+        "Na região perineal/genital = síndrome de FOURNIER",
+        "Fatores de risco: diabetes, imunossupressão, alcoolismo, obesidade, DRC, trauma/procedimento local, idade avançada",
+        "Diagnóstico PRIMARIAMENTE CLÍNICO — não aguardar imagem para tratar",
+        "A pele pode parecer pouco alterada nas fases iniciais (a infecção corre pela fáscia)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO / RED FLAGS",
+      "section_color": "red",
+      "titulo": "SUSPEITAR PRECOCEMENTE",
+      "items": [
+        "Iniciais: DOR INTENSA e DESPROPORCIONAL ao exame, edema, eritema, febre, mal-estar",
+        "Gravidade: progressão rápida das lesões, CREPITAÇÃO subcutânea, alteração do estado mental",
+        "Instabilidade hemodinâmica, sepse/choque séptico",
+        "Bolhas hemorrágicas, anestesia cutânea e odor fétido são sinais avançados",
+        "A dor desproporcional ao achado cutâneo é a pista mais precoce"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO INICIAL (SIMULTÂNEO)",
+      "section_color": "orange",
+      "titulo": "ABCDE + ATB + CIRURGIA",
+      "items": [
+        "ABCDE, monitorização, 2 acessos calibrosos, ressuscitação volêmica (protocolo de sepse)",
+        "Labs: hemograma, PCR, função renal, eletrólitos, gasometria, lactato, glicemia; hemoculturas (sem atrasar ATB) + urocultura",
+        "ATB EV de amplo espectro IMEDIATO cobrindo Gram-positivos, Gram-negativos e anaeróbios:",
+        "  Piperacilina-tazobactam 4,5 g EV 6-8/8h (ou Meropenem 1 g 8/8h); alérgico: Ceftriaxona 2 g/dia + Metronidazol 500 mg 8/8h",
+        "  ± Vancomicina 15 mg/kg 12/12h se suspeita de MRSA (ajustar após culturas)",
+        "Acionar URGENTE a cirurgia geral (urologia se Fournier perineal/escrotal)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRATAMENTO DEFINITIVO",
+      "section_color": "purple",
+      "titulo": "DESBRIDAMENTO É O PILAR",
+      "items": [
+        "DESBRIDAMENTO CIRÚRGICO URGENTE, amplo, agressivo e PRECOCE — remover todo tecido desvitalizado",
+        "Reavaliação cirúrgica SERIADA (24-48h); frequentemente múltiplas abordagens",
+        "O ATRASO cirúrgico aumenta significativamente a mortalidade",
+        "Suporte intensivo (UTI) para sepse/disfunção orgânica",
+        "Antibiótico é adjuvante — NÃO substitui o desbridamento"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos, fator de risco ___ (DM/imunossupressão), com dor desproporcional + ___ (crepitação/necrose); local ___.",
+        "Sinais de sepse/choque ___; lactato ___; sinais vitais ___.",
+        "Condutas: ABCDE, volume, ATB ___ iniciado às ___; hemoculturas.",
+        "Solicito cirurgia URGENTE para desbridamento + UTI; transporte com monitorização — NÃO retardar a cirurgia."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o pilar do tratamento da fasciíte necrotizante?",
+      "alternativas": [
+        "Antibiótico isolado por tempo prolongado",
+        "Desbridamento cirúrgico urgente, amplo e precoce (com reabordagens seriadas)",
+        "Corticoide sistêmico",
+        "Oxigenoterapia hiperbárica isolada",
+        "Curativos compressivos"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o sinal clínico mais precoce e sugestivo de fasciíte necrotizante?",
+      "alternativas": [
+        "Eritema discreto indolor",
+        "Dor intensa e desproporcional aos achados cutâneos",
+        "Prurido",
+        "Descamação seca",
+        "Hipotermia isolada"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Como se denomina a fasciíte necrotizante de localização perineal/genital?",
+      "alternativas": [
+        "Síndrome de Mirizzi",
+        "Síndrome de Fournier",
+        "Síndrome de Lemierre",
+        "Síndrome de Ogilvie",
+        "Síndrome de Boerhaave"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a antibioticoterapia na fasciíte necrotizante, é correto:",
+      "alternativas": [
+        "Substitui o desbridamento cirúrgico",
+        "Deve ser de amplo espectro, iniciada imediatamente, cobrindo Gram-positivos, Gram-negativos e anaeróbios, sem substituir a cirurgia",
+        "Só deve ser iniciada após o resultado das culturas",
+        "Deve ser via oral",
+        "Não é necessária"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Por que o diagnóstico de fasciíte necrotizante não deve aguardar exames de imagem?",
+      "alternativas": [
+        "Porque a imagem é sempre normal",
+        "Porque é um diagnóstico primariamente CLÍNICO e o atraso cirúrgico aumenta a mortalidade",
+        "Porque a imagem é contraindicada",
+        "Porque não há tratamento",
+        "Porque a doença é benigna"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O pilar é o desbridamento cirúrgico urgente, amplo e precoce, com reabordagens seriadas (24-48h); o atraso aumenta muito a mortalidade. ATB e suporte são adjuvantes."},
+    {"resposta": "B", "comentario": "A dor intensa e desproporcional aos achados cutâneos é o sinal mais precoce e sugestivo — a pele pode parecer pouco alterada porque a infecção corre pela fáscia."},
+    {"resposta": "B", "comentario": "A fasciíte necrotizante perineal/genital é a síndrome de Fournier, que exige desbridamento urgente e frequentemente avaliação da urologia."},
+    {"resposta": "B", "comentario": "O ATB deve ser de amplo espectro, imediato, cobrindo Gram-positivos, Gram-negativos e anaeróbios (± vancomicina se MRSA), mas NÃO substitui o desbridamento cirúrgico."},
+    {"resposta": "B", "comentario": "É diagnóstico primariamente clínico; não se deve aguardar imagem, pois o atraso no desbridamento aumenta significativamente a mortalidade."}
+  ]
+}

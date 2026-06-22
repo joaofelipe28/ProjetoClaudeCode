@@ -1,0 +1,154 @@
+{
+  "slug": "drenagem_abscesso_cutaneo",
+  "titulo": "Abscesso Cutâneo — Drenagem",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Drenagem de abscesso cutâneo no PS",
+  "chapter_bar": "ABSCESSO CUTÂNEO — INCISÃO E DRENAGEM",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "ABSCESSO CUTÂNEO — FLUTUAÇÃO -> DRENAR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.85, "w": 205, "h": 22, "text": "Dor + calor + rubor + edema + FLUTUACAO\n(US de partes moles se duvida)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.5, "w": 205, "h": 22, "text": "INCISAO E DRENAGEM + romper septos + irrigar\n(ferida aberta, 2a intencao)", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.14, "w": 200, "h": 18, "text": "ATB so se celulite/sistemico/imunossupressao/MRSA", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["b", "c"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E INDICAÇÕES",
+      "section_color": "teal",
+      "titulo": "DRENAGEM É O TRATAMENTO",
+      "items": [
+        "Coleção localizada de pus na pele/subcutâneo; dor, calor, rubor, edema e FLUTUAÇÃO",
+        "Indicar drenagem: flutuação (pus), falha do ATB isolado, abscesso > 2 cm/sintomático, celulite extensa/febre/linfangite, risco anatômico (perianal, facial, mãos)",
+        "Não há contraindicação absoluta quando há indicação clara",
+        "Contraindicações relativas: proximidade de grandes vasos/nervos, anatomia incerta (-> drenagem cirúrgica especializada), coagulopatia grave (corrigir antes)",
+        "US de partes moles confirma coleção e guia drenagem profunda/complexa; labs/cultura se sinais sistêmicos, recorrência ou imunossupressão"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TÉCNICA DE INCISÃO E DRENAGEM",
+      "section_color": "orange",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "EPI + assepsia (clorexidina/iodopovidona); campo estéril",
+        "Anestesia local com lidocaína ao redor do abscesso (evitar injetar dentro da coleção)",
+        "Incisão linear de 1-2 cm sobre o ponto de máxima flutuação",
+        "Explorar a cavidade com pinça curva, ROMPER os septos internos para drenagem completa",
+        "Irrigar a cavidade com SF estéril; em abscessos grandes/profundos, colocar dreno (Penrose/loop)",
+        "NÃO suturar — manter a ferida ABERTA (cicatrização por 2ª intenção); curativo estéril"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MEDICAÇÕES",
+      "section_color": "navy",
+      "titulo": "ANALGESIA ± ATB",
+      "items": [
+        "Analgesia: Paracetamol 500 mg 6/6h ou Cetoprofeno 100 mg 8/8h por ~5 dias",
+        "ATB NÃO é necessário no abscesso simples drenado, sem sinais sistêmicos",
+        "ATB adjuvante se: celulite extensa/febre, imunossupressão, suspeita de MRSA, abscesso facial/perianal",
+        "Opções empíricas (cobrir MRSA comunitário): SMX-TMP 160/800 mg 12/12h; ou Clindamicina 300 mg 8/8h; ou Doxiciclina",
+        "Duração 5-10 dias, conforme evolução"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PÓS-PROCEDIMENTO, ALERTA E SITUAÇÕES ESPECIAIS",
+      "section_color": "red",
+      "titulo": "CUIDADOS",
+      "items": [
+        "Reavaliar em 24-48h; troca diária de curativo mantendo a ferida aberta; compressas mornas ajudam",
+        "Sinais de alerta (retorno imediato): aumento da dor/rubor, secreção fétida, febre persistente, linfangite",
+        "Abscesso FACIAL: risco de trombose do seio cavernoso — manejo cuidadoso + ATB",
+        "Perianal ou próximo a vasos/nervos: considerar drenagem cirúrgica especializada",
+        "Diabético/imunossuprimido: maior risco — ATB frequentemente indicado; vigiar evolução para fasciíte necrotizante"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE ALTA / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ALTA",
+      "items": [
+        "Paciente ___ anos com abscesso cutâneo em ___ ; drenado por incisão + irrigação; dreno: sim/não.",
+        "Sinais sistêmicos/celulite ___; comorbidade (DM/imunossupressão) ___.",
+        "Prescrição: analgesia ___; ATB ___ (se indicado); curativo diário, ferida aberta.",
+        "Retorno em 48h; sinais de alerta orientados; encaminhar cirurgia se perianal/recorrente/complexo."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o tratamento definitivo de um abscesso cutâneo flutuante?",
+      "alternativas": [
+        "Antibiótico oral isolado",
+        "Incisão e drenagem, com ruptura de septos e irrigação, mantendo a ferida aberta",
+        "Compressas mornas apenas",
+        "Corticoide",
+        "Observação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quando o antibiótico é adjuvante após drenagem de abscesso cutâneo?",
+      "alternativas": [
+        "Sempre, em todos os casos",
+        "Celulite extensa/febre, imunossupressão, suspeita de MRSA ou localização de risco (facial/perianal)",
+        "Nunca",
+        "Apenas se o abscesso for < 1 cm",
+        "Somente se houver dreno"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que a ferida do abscesso drenado não deve ser suturada?",
+      "alternativas": [
+        "Para acelerar a cicatrização primária",
+        "Para permitir a drenagem contínua e a cicatrização por segunda intenção, evitando recoleção",
+        "Por questão estética",
+        "Porque a sutura é proibida em qualquer ferida",
+        "Para reduzir o custo"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual antibiótico empírico cobre adequadamente MRSA comunitário em abscesso cutâneo?",
+      "alternativas": [
+        "Amoxicilina isolada",
+        "SMX-TMP, clindamicina ou doxiciclina",
+        "Penicilina cristalina",
+        "Cefalexina isolada",
+        "Azitromicina"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Por que o abscesso facial merece atenção especial?",
+      "alternativas": [
+        "Risco de trombose do seio cavernoso",
+        "Risco de litíase",
+        "Risco de hérnia",
+        "Risco de pancreatite",
+        "Não tem relevância"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O tratamento definitivo do abscesso flutuante é a incisão e drenagem, com ruptura dos septos e irrigação, mantendo a ferida aberta para cicatrização por segunda intenção."},
+    {"resposta": "B", "comentario": "O ATB é adjuvante quando há celulite extensa/febre, imunossupressão, suspeita de MRSA ou localização de risco (facial/perianal); no abscesso simples drenado e sem sinais sistêmicos, a drenagem basta."},
+    {"resposta": "B", "comentario": "Não se sutura para permitir a drenagem contínua e a cicatrização por segunda intenção, evitando a recoleção do pus."},
+    {"resposta": "B", "comentario": "SMX-TMP, clindamicina e doxiciclina cobrem MRSA comunitário; são as opções empíricas quando se indica ATB adjuvante."},
+    {"resposta": "A", "comentario": "Abscessos faciais (sobretudo no triângulo perinasal) têm risco de trombose do seio cavernoso por drenagem venosa, exigindo manejo cuidadoso e antibiótico."}
+  ]
+}

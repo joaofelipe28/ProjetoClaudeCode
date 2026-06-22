@@ -1,0 +1,156 @@
+{
+  "slug": "mordeduras_ferimentos",
+  "titulo": "Mordeduras e Ferimentos Perfurantes",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Mordeduras e ferimentos — tétano e raiva",
+  "chapter_bar": "MORDEDURAS E PERFURAÇÕES — TÉTANO + RAIVA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "FERIMENTO -> LAVAR -> PROFILAXIA (TÉTANO ± RAIVA)",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Ferimento/mordedura: limpar/irrigar abundante\n+ desbridar + avaliar neurovascular", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 145, "h": 26, "text": "TETANO: classificar\nferida + status vacinal\n-> vacina +/- TIG", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 26, "text": "RAIVA (mordedura):\nstatus do animal ->\nvacina +/- HRIG", "color": "purple", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "ATB se ferida profunda/mao/imunossuprimido", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E CUIDADOS LOCAIS",
+      "section_color": "teal",
+      "titulo": "LIMPEZA É A BASE",
+      "items": [
+        "Anamnese: tempo, mecanismo, tipo de objeto (enferrujado/sujo), animal e status vacinal antirrábico, comorbidades (DM/imunossupressão), vacinação antitetânica do paciente",
+        "Exame: extensão/profundidade, corpo estranho, lesão neurovascular/tendínea, localização (mão/pé/articulação)",
+        "Controle de sangramento + IRRIGAÇÃO ABUNDANTE (SF/água e sabão, idealmente >= 100 mL/cm de ferida)",
+        "Desbridar tecido desvitalizado e remover corpos estranhos; analgesia local",
+        "RX se corpo estranho profundo, suspeita de fratura ou objeto retido (ex.: prego)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PROFILAXIA ANTITETÂNICA",
+      "section_color": "navy",
+      "headers": ["Situação vacinal", "Ferida limpa", "Ferida suja/alto risco"],
+      "header_colors": ["gray", "green", "red"],
+      "col_widths": [0.30, 0.35, 0.35],
+      "rows": [
+        ["< 3 doses ou incerta", "Vacina (completar esquema)", "Vacina + TIG 250 UI IM"],
+        [">= 3 doses, última < 5 anos", "Nada", "Nada"],
+        [">= 3 doses, última 5-10 anos", "Nada", "Vacina (reforço)"],
+        [">= 3 doses, última > 10 anos", "Vacina (reforço)", "Vacina (reforço)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PROFILAXIA ANTIRRÁBICA (MORDEDURA)",
+      "section_color": "purple",
+      "titulo": "RAIVA É FATAL — DECISÃO PELO ANIMAL",
+      "items": [
+        "Cão/gato SADIO e observável por 10 dias: observar o animal e reavaliar (postergar/suspender se permanecer sadio)",
+        "Animal desconhecido, não observável, suspeito/raivoso, ou agressão grave: iniciar profilaxia",
+        "Não vacinado previamente: vacina IM nos dias 0, 3, 7 e 14 (esquema do MS); + IMUNOGLOBULINA (HRIG) infiltrada ao redor da ferida no dia 0 nas exposições graves",
+        "Já vacinado previamente: reforço apenas nos dias 0 e 3, SEM imunoglobulina",
+        "Lavar exaustivamente a ferida com água e sabão é também medida antirrábica essencial"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIÓTICO E FECHAMENTO",
+      "section_color": "orange",
+      "titulo": "QUANDO TRATAR E SUTURAR",
+      "items": [
+        "ATB profilático/terapêutico: Amoxicilina-clavulanato 875/125 mg 12/12h por 3-5d (profilaxia) ou 5-7d (infectado)",
+        "  Alérgico: Doxiciclina (evitar < 8 anos/gestante) ou Clindamicina + SMX-TMP",
+        "Indicações de ATB: feridas profundas/punção/esmagamento, mãos/pés/perto de articulações, imunossupressão/prótese, fechamento primário planejado",
+        "FECHAMENTO: a maioria das mordeduras cicatriza por 2ª intenção; primário só em feridas faciais limpas, bem irrigadas e com ATB; EVITAR sutura em ferida > 12h em extremidades",
+        "Antibiótico NÃO previne tétano (a prevenção é vacina/TIG + limpeza)",
+        "Elevar o membro 24-48h, curativo diário"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INTERNAÇÃO E MODELO DE REGULAÇÃO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Internar se: infecção grave (febre, edema/calor intenso), envolvimento de artéria/nervo/tendão, comprometimento funcional, miosite/celulite progressiva, falha terapêutica",
+        "Paciente ___ anos; ferimento ___ (mordedura/prego), local ___, há ___; objeto sujo/enferrujado ___.",
+        "Vacinação antitetânica ___ (doses/última); ferida limpa/suja ___; status do animal ___ (vacinado/observável?).",
+        "Conduta: irrigação/desbridamento, antitetânica (vacina ± TIG), antirrábica (vacina ± HRIG), ATB ___; solicito cirurgia/ortopedia se lesão profunda/articular."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com ferimento sujo/profundo (alto risco para tétano) e vacinação incerta (< 3 doses). Qual a conduta?",
+      "alternativas": [
+        "Apenas limpeza",
+        "Vacina antitetânica + imunoglobulina antitetânica (TIG 250 UI IM)",
+        "Somente antibiótico",
+        "Nenhuma profilaxia",
+        "Apenas reforço sem TIG"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Mordedura de cão SADIO, passível de observação por 10 dias. Qual a conduta antirrábica?",
+      "alternativas": [
+        "Iniciar imediatamente vacina + imunoglobulina em todos",
+        "Lavar a ferida e observar o animal por 10 dias, reavaliando a necessidade de profilaxia",
+        "Eutanásia imediata do animal",
+        "Apenas antibiótico",
+        "Nenhuma medida"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual o antibiótico de primeira linha para profilaxia/tratamento de mordedura de cão?",
+      "alternativas": [
+        "Azitromicina",
+        "Amoxicilina-clavulanato",
+        "Cefalexina isolada",
+        "Penicilina cristalina",
+        "Metronidazol isolado"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre o fechamento de feridas por mordedura, é correto:",
+      "alternativas": [
+        "Suturar sempre, em qualquer tempo e local",
+        "A maioria cicatriza por 2ª intenção; fechamento primário só em face limpa/bem irrigada; evitar sutura em ferida > 12h em extremidades",
+        "Nunca lavar antes de suturar",
+        "Suturar todas as feridas de mão",
+        "Fechamento primário é obrigatório"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual medida é mais importante para reduzir o risco de infecção (e de raiva) em mordeduras e ferimentos?",
+      "alternativas": [
+        "Antibiótico de amplo espectro isolado",
+        "Irrigação/lavagem abundante com água e sabão e desbridamento",
+        "Corticoide tópico",
+        "Sutura imediata",
+        "Imobilização gessada"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Ferida suja/alto risco com vacinação incerta ou < 3 doses indica vacina antitetânica + imunoglobulina antitetânica (TIG 250 UI IM, em local distinto da vacina)."},
+    {"resposta": "B", "comentario": "Cão sadio e observável por 10 dias permite lavar a ferida e observar o animal, reavaliando a profilaxia; inicia-se profilaxia se o animal for desconhecido/não observável, suspeito, ou em agressão grave."},
+    {"resposta": "B", "comentario": "A amoxicilina-clavulanato é a primeira linha (cobre Pasteurella, anaeróbios e flora oral do animal); alérgicos: doxiciclina ou clindamicina + SMX-TMP."},
+    {"resposta": "B", "comentario": "A maioria das mordeduras cicatriza por segunda intenção; o fechamento primário fica restrito a feridas faciais limpas e bem irrigadas (com ATB), evitando-se sutura em feridas > 12h em extremidades."},
+    {"resposta": "B", "comentario": "A irrigação/lavagem abundante com água e sabão, com desbridamento, é a medida mais importante para reduzir infecção e também integra a profilaxia antirrábica; o antibiótico não previne tétano."}
+  ]
+}

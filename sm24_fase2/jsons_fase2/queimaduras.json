@@ -1,0 +1,154 @@
+{
+  "slug": "queimaduras",
+  "titulo": "Queimaduras no Pronto-Socorro",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Atendimento ao queimado no PS",
+  "chapter_bar": "QUEIMADURAS — ABCDE + PARKLAND",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — É TRAUMA",
+      "title": "QUEIMADO — ABCDE -> TBSA -> RESSUSCITAÇÃO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Abordar como TRAUMA (ATLS): via aerea +\nsinais de inalacao (IOT precoce se indicado)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 205, "h": 20, "text": "Estimar TBSA (Regra dos 9 / Lund-Browder) + profundidade", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.3, "w": 205, "h": 22, "text": "Ressuscitacao (Parkland 2-4 mL x kg x %TBSA, RL)\nguiada pela DIURESE", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.08, "w": 200, "h": 16, "text": "Criterios -> centro de queimados", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO INICIAL (ABCDE) E INALAÇÃO",
+      "section_color": "teal",
+      "titulo": "VIA AÉREA É PRIORIDADE",
+      "items": [
+        "A: sinais de lesão por INALAÇÃO (queimadura facial, narinas carbonizadas, fuligem, estridor, rouquidão) -> IOT PRECOCE",
+        "B: O2 suplementar; suspeita de intoxicação por CO -> O2 a 100%",
+        "C: 2 acessos calibrosos (preferir área não queimada); iniciar fluidos se queimadura extensa",
+        "D: nível de consciência e analgesia; E: expor, estimar lesões e cobrir com lençol limpo/aquecido (evitar hipotermia), retirar roupas/joias",
+        "Abordar SEMPRE como trauma (pode haver lesões associadas)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PROFUNDIDADE E TBSA",
+      "section_color": "navy",
+      "headers": ["Item", "Descrição"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["1º grau", "Eritema, doloroso, SEM bolhas (não entra no cálculo de TBSA)"],
+        ["2º superficial", "Bolhas claras, dor intensa"],
+        ["2º profundo", "Menos doloroso, palidez, risco de cicatriz"],
+        ["3º / 4º grau", "3º: pele seca, branca/carbonizada, indolor; 4º: atinge músculo/osso"],
+        ["TBSA (Regra dos 9)", "Cabeça 9%, cada braço 9%, tronco ant 18%, post 18%, cada perna 18%, genitais 1% (Lund-Browder em crianças)"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "RESSUSCITAÇÃO VOLÊMICA",
+      "section_color": "orange",
+      "titulo": "PARKLAND GUIADA POR DIURESE",
+      "items": [
+        "Indicação: adultos >= 15-20% TBSA; crianças >= 10-15% TBSA (contar 2º grau ou mais profundo)",
+        "Fórmula (Parkland modificada): 2-4 mL x kg x %TBSA de RINGER LACTATO nas 24h — METADE nas primeiras 8h (desde a lesão), metade nas 16h seguintes (crianças 3-4 mL)",
+        "AJUSTAR pela DIURESE (principal parâmetro): adultos 0,5-1 mL/kg/h; crianças 1 mL/kg/h",
+        "Queimadura elétrica/rabdomiólise: alvo de diurese maior (1-2 mL/kg/h) para proteção renal",
+        "Evitar 'fluid creep' (hiper-ressuscitação -> edema pulmonar/cerebral, síndrome compartimental)",
+        "Analgesia: opioide EV (Morfina 0,1-0,2 mg/kg; Fentanil 1-2 mcg/kg) + adjuvantes"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "FERIDA, TÉTANO, ATB E INTERNAÇÃO",
+      "titulo": "CONDUTAS",
+      "items": [
+        "Ferida: resfriar com água corrente fria por 10-20 min (NÃO usar gelo); curativo estéril não aderente; bolhas íntegras em geral NÃO abrir no PS",
+        "Atualizar profilaxia antitetânica conforme histórico (ferida traumática)",
+        "ATB sistêmico NÃO de rotina — só se sinais de infecção (febre, pus, eritema progressivo, linfangite)",
+        "Critérios para CENTRO DE QUEIMADOS: TBSA alta (adulto >= 20-25%, criança >= 10-15%), 3º grau, face/mãos/pés/genitais, circunferencial de tórax, elétrica/química, inalação",
+        "Complicações: choque hipovolêmico, edema pulmonar/cerebral (hiper-ressuscitação), infecção/sepse, IRA"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos/___ kg; queimadura ___ (térmica/elétrica/química); TBSA ___% ; profundidade ___; inalação: ___.",
+        "Via aérea ___ (IOT?); diurese ___ mL/h; volume RL infundido ___ mL; analgesia ___; antitetânica ___.",
+        "Localizações críticas (face/mãos/pés/genitais/circunferencial): ___.",
+        "Solicito centro de queimados; transporte com via aérea segura, RL guiado por diurese e proteção térmica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Adulto de 70 kg com 30% de TBSA. Pela fórmula de Parkland (4 mL), qual o volume nas primeiras 24h e como distribuir?",
+      "alternativas": [
+        "2.000 mL, tudo nas primeiras 8h",
+        "Cerca de 8.400 mL de Ringer Lactato, metade nas primeiras 8h e metade nas 16h seguintes",
+        "1.000 mL em 24h",
+        "8.400 mL, todo no fim das 24h",
+        "Não há necessidade de fluidos"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o principal parâmetro para guiar a ressuscitação volêmica no queimado?",
+      "alternativas": [
+        "Pressão arterial isolada",
+        "Diurese horária (0,5-1 mL/kg/h em adultos)",
+        "Frequência cardíaca apenas",
+        "Temperatura",
+        "Peso diário"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado indica lesão por inalação e necessidade de intubação precoce?",
+      "alternativas": [
+        "Eritema isolado em membro",
+        "Queimadura facial, narinas carbonizadas, fuligem na orofaringe, estridor/rouquidão",
+        "Bolha em 2º grau no braço",
+        "Dor controlada",
+        "TBSA de 5%"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre o antibiótico sistêmico no queimado, é correto:",
+      "alternativas": [
+        "Profilaxia para todos desde a admissão",
+        "Não é de rotina; usar apenas se sinais de infecção (febre, pus, eritema progressivo)",
+        "Sempre carbapenêmico",
+        "Apenas tópico nunca sistêmico",
+        "Contraindicado em qualquer caso"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual conduta local inicial é adequada na queimadura térmica?",
+      "alternativas": [
+        "Aplicar gelo diretamente",
+        "Resfriar com água corrente fria por 10-20 min e cobrir com curativo estéril não aderente",
+        "Furar todas as bolhas no PS",
+        "Aplicar pasta de dente",
+        "Deixar exposta sem cobertura"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Parkland (4 mL x 70 kg x 30%) = ~8.400 mL de Ringer Lactato nas 24h, com metade nas primeiras 8h (desde a lesão) e metade nas 16h seguintes, ajustado pela diurese."},
+    {"resposta": "B", "comentario": "A diurese horária é o principal parâmetro de ajuste (0,5-1 mL/kg/h em adultos; 1 mL/kg/h em crianças); evita tanto a hipoperfusão quanto a hiper-ressuscitação ('fluid creep')."},
+    {"resposta": "B", "comentario": "Queimadura facial, narinas carbonizadas, fuligem na orofaringe e estridor/rouquidão indicam lesão por inalação e risco de obstrução — justificam intubação precoce."},
+    {"resposta": "B", "comentario": "O ATB sistêmico não é profilático de rotina no queimado; reserva-se aos sinais de infecção (febre, pus, eritema progressivo, linfangite)."},
+    {"resposta": "B", "comentario": "Resfria-se com água corrente fria por 10-20 min (NÃO gelo, que agrava a lesão) e cobre-se com curativo estéril não aderente; bolhas íntegras em geral não são abertas no PS."}
+  ]
+}

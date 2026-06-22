@@ -1,0 +1,156 @@
+{
+  "slug": "lesao_por_pressao",
+  "titulo": "Lesão por Pressão",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Lesão por pressão — prevenção e manejo",
+  "chapter_bar": "LESÃO POR PRESSÃO — PREVENIR + ESTADIAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "LESÃO POR PRESSÃO — ESTADIAR -> CONDUTA",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.85, "w": 205, "h": 22, "text": "Imobilidade + proeminencia ossea\navaliar risco (Braden) + estadiar (NPUAP)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 145, "h": 24, "text": "Grau I-II:\ncuidados topicos\n(NAO cirurgico)", "color": "green", "font_size": 5.6},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 26, "text": "Grau III-IV:\ndesbridar + retalho\n(cirurgico)", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "PREVENCAO: mudanca de decubito (pilar)", "color": "purple", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E FISIOPATOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Lesão de pele/tecidos sobre PROEMINÊNCIA ÓSSEA por pressão (± cisalhamento) prolongada; etiologia multifatorial (local e sistêmica)",
+        "Principal fator de risco: IMOBILIDADE (idosos, fraturas de MMII, doenças neurológicas)",
+        "Fisiopatologia: pressão de fechamento capilar ~32 mmHg; lesão ocorre com pressão > ~50 mmHg por > 2h",
+        "Locais típicos: sacro, ísquio, trocânter, calcâneo",
+        "Avaliação de risco com a escala de BRADEN (percepção sensorial, umidade, atividade, mobilidade, nutrição, fricção/cisalhamento)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO (NPUAP)",
+      "section_color": "navy",
+      "headers": ["Grau", "Achado"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Grau I", "Epiderme INTACTA, eritema fixo (não embranquece)"],
+        ["Grau II", "Perda de epiderme + derme (úlcera superficial/flictena)"],
+        ["Grau III", "Atinge subcutâneo, SEM exposição de estruturas profundas"],
+        ["Grau IV", "Atinge subcutâneo COM exposição de osso/tendão/músculo"],
+        ["Não classificável / tissular profunda", "Escara/esfacelo cobrindo o fundo; ou pele íntegra com descoloração (lesão tissular profunda)"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PREVENÇÃO (PILAR) E TRATAMENTO CLÍNICO",
+      "section_color": "orange",
+      "titulo": "GRAUS I-II — NÃO CIRÚRGICO",
+      "items": [
+        "PREVENÇÃO é o principal: MUDANÇA REGULAR DE DECÚBITO + dispositivos de alívio de pressão",
+        "Avaliação de risco (Braden), equipe multidisciplinar, controle de comorbidades, suporte nutricional",
+        "Cuidados com a pele: hidratação, produtos de barreira, controle de incontinência/umidade",
+        "Curativos tópicos (graus I-III): AGE/Dersani — limpar com SF, aplicar e ocluir, trocar a cada 12h",
+        "Desbridante enzimático: Papaína (2-10%) — limpar com SF, aplicar, ocluir, trocar a cada 12h"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRATAMENTO CIRÚRGICO (GRAUS III-IV)",
+      "section_color": "purple",
+      "titulo": "DESBRIDAMENTO + RETALHO",
+      "items": [
+        "Indicação: graus III e IV; excisão em bloco da bursa, retirada de espículas ósseas, preenchimento do espaço morto com retalhos fasciocutâneos/miocutâneos",
+        "Otimização clínica pré-operatória: Hb > 10 g/dL e albumina > 3,5 g/dL",
+        "Suspeita de OSTEOMIELITE: reconstrução em 2 tempos (biópsia/cultura óssea + avaliação ortopédica); baixo risco -> tempo único",
+        "Retalhos por local: sacral (V-Y, rotação/transposição), trocantérico (tensor da fáscia lata), isquiático (avanço posterior da coxa)",
+        "Complicações: necrose do retalho, recidiva, sinus, úlcera de Marjolin (degeneração maligna crônica)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos, imobilizado por ___; lesão por pressão em ___ (sacro/ísquio/trocânter/calcâneo); grau (NPUAP) ___.",
+        "Braden ___; sinais de infecção/osteomielite ___; Hb ___, albumina ___ (otimização).",
+        "Conduta: mudança de decúbito + alívio de pressão, curativo ___ (AGE/papaína); nutrição.",
+        "Encaminho à cirurgia plástica/geral se grau III-IV; ortopedia se suspeita de osteomielite."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a principal medida no manejo da lesão por pressão?",
+      "alternativas": [
+        "Antibiótico profilático",
+        "Prevenção, com mudança regular de decúbito e alívio de pressão",
+        "Cirurgia precoce em todos",
+        "Restrição hídrica",
+        "Repouso absoluto sem mudança de posição"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Lesão por pressão grau I (NPUAP) caracteriza-se por:",
+      "alternativas": [
+        "Exposição de osso",
+        "Epiderme intacta com eritema fixo (que não embranquece)",
+        "Perda total da pele com subcutâneo exposto",
+        "Escara cobrindo o leito",
+        "Necrose muscular"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual escala é usada para avaliar o risco de lesão por pressão?",
+      "alternativas": [
+        "Escala de Glasgow",
+        "Escala de Braden",
+        "Escala de Eckardt",
+        "Classificação de Hinchey",
+        "Escala de Zargar"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Quais lesões por pressão geralmente requerem tratamento CIRÚRGICO?",
+      "alternativas": [
+        "Graus I e II",
+        "Graus III e IV (desbridamento + retalho)",
+        "Apenas grau I",
+        "Nenhuma",
+        "Somente lesões em pele íntegra"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual complicação crônica da lesão por pressão corresponde à degeneração maligna?",
+      "alternativas": [
+        "Úlcera de Cameron",
+        "Úlcera de Marjolin",
+        "Úlcera de Curling",
+        "Úlcera de Cushing",
+        "Úlcera péptica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A prevenção é o principal: mudança regular de decúbito e dispositivos de alívio de pressão, associadas à avaliação de risco (Braden), cuidados com a pele e nutrição."},
+    {"resposta": "B", "comentario": "A lesão por pressão grau I (NPUAP) tem epiderme intacta com eritema fixo que não embranquece à digitopressão."},
+    {"resposta": "B", "comentario": "A escala de Braden avalia o risco de lesão por pressão (percepção sensorial, umidade, atividade, mobilidade, nutrição e fricção/cisalhamento)."},
+    {"resposta": "B", "comentario": "As lesões graus III e IV costumam exigir tratamento cirúrgico (desbridamento, excisão de espículas ósseas e cobertura com retalhos), enquanto graus I-II são manejados clinicamente."},
+    {"resposta": "B", "comentario": "A úlcera de Marjolin é a degeneração maligna (carcinoma) que pode surgir em feridas crônicas, incluindo lesões por pressão de longa evolução."}
+  ]
+}
