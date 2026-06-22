@@ -1,0 +1,171 @@
+{
+  "slug": "herpes_zoster",
+  "titulo": "Herpes Zoster",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Herpes zoster e neuralgia pós-herpética",
+  "chapter_bar": "HERPES ZOSTER — ANTIVIRAL EM 72h",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "ZOSTER — VESÍCULAS EM DERMÁTOMO -> ANTIVIRAL",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Exantema vesicular UNILATERAL em dermatomo + dor\nreativacao do varicela-zoster", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Imunocompetente:\nantiviral VO em 72h\n+ analgesia", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.46, "w": 150, "h": 28, "text": "Complicado (oftalmico/\ndisseminado/neuro/\nimunossup.): EV + internar", "color": "red", "font_size": 5.0},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Neuralgia pos-herpetica = complicacao tardia", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E MANIFESTAÇÕES",
+      "section_color": "teal",
+      "titulo": "REATIVAÇÃO DO VARICELA-ZOSTER",
+      "items": [
+        "Reativação da infecção latente pelo vírus varicela-zoster; principal fator de risco é a IDADE (aumenta após os 50 anos); imunossuprimidos mais suscetíveis",
+        "Achado clássico: exantema VESICULAR UNILATERAL, em 1-2 dermátomos contíguos; vesículas tornam-se crostosas em 7-10 dias (imunocompetentes)",
+        "Sintoma mais comum: DOR local (neurite aguda), frequentemente precedendo as lesões (pode haver prurido prodrômico)",
+        "Zoster SINE HERPETE: reativação só com dor, sem lesão cutânea (diagnóstico por PCR)",
+        "Formas especiais: herpes zoster OFTÁLMICO (V1), meningite asséptica, mielite, encefalite, síndrome de Ramsay Hunt"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "HZ COMPLICADO / RED FLAGS",
+      "section_color": "red",
+      "titulo": "TRATAMENTO EV / INTERNAÇÃO",
+      "items": [
+        "Imunocomprometidos (HIV/CD4 baixo, transplantados, quimioterapia ativa)",
+        "Acometimento de MAIS DE DOIS dermátomos (zoster disseminado) ou visceral",
+        "HZ OFTÁLMICO (V1) — risco de necrose retiniana aguda/perda visual: avaliação oftalmológica urgente",
+        "Complicações neurológicas: meningite/encefalite, mielite, Ramsay Hunt",
+        "Necessidade de aciclovir EV (incapacidade de VO), infecção secundária grave (celulite/sepse), dor intratável"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "CLÍNICO (PCR SE ATÍPICO)",
+      "items": [
+        "Diagnóstico CLÍNICO nas formas típicas (exantema vesicular unilateral + dor em faixa)",
+        "PCR em material das vesículas (ou liquor) nas formas atípicas/imunossuprimidos ou zoster sine herpete",
+        "Suspeita de meningite por VZV: PCR no liquor e/ou IgG anti-VZV no LCR (razão soro/liquor reduzida sugere atividade no SNC)",
+        "Principal diferencial: herpes simples (lesões em locais atípicos, esportes de contato)",
+        "HZ oftálmico exige avaliação oftalmológica"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO ANTIVIRAL E DA DOR",
+      "section_color": "orange",
+      "titulo": "ANTIVIRAL PRECOCE",
+      "items": [
+        "Antiviral idealmente em até 72h da primeira lesão (imunocompetentes); considerar após 72h se novas lesões, complicações ou alto risco (ex.: > 65 anos, V1)",
+        "Opções VO: Aciclovir, Valaciclovir ou Famciclovir; NÃO usar antiviral tópico (sem benefício)",
+        "Imunocomprometidos ou complicações neurológicas graves: ACICLOVIR EV em regime hospitalar",
+        "HZ oftálmico: antiviral sistêmico + avaliação oftalmológica (tratamento tópico/intraocular conforme necessário)",
+        "Dor AGUDA: analgésicos comuns e AINE; opioide fraco (tramadol) se dor intensa",
+        "NEURALGIA PÓS-HERPÉTICA: tópicos (lidocaína/capsaicina), gabapentinoides, tricíclicos, opioides — combinação é mais eficaz (cautela em idosos)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PREVENÇÃO, ISOLAMENTO E NEURALGIA",
+      "section_color": "purple",
+      "titulo": "VACINA E COMPLICAÇÃO TARDIA",
+      "items": [
+        "VACINA recombinante inativada (Shingrix) é a principal prevenção (eficácia > 90%, reduz neuralgia); contraindicação absoluta apenas alergia aos componentes; pode ser usada em imunocomprometidos",
+        "Intervalos: >= 6 meses após um episódio de HZ; >= 2 meses após outra imunização para HZ",
+        "Neuralgia PÓS-HERPÉTICA: dor que persiste > 90 dias após o exantema (até metade dos pacientes), com alodinia/hiperalgesia",
+        "Isolamento: imunocompetentes -> precaução de contato com lesões cobertas; imunocomprometidos -> contato + respiratório",
+        "Encerrar isolamento após todas as lesões em crosta"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com herpes zoster em ___ (dermátomo/oftálmico/disseminado); início há ___ horas/dias.",
+        "Sinais/sintomas: vesículas ___, dor intensa ___, febre ___, alteração visual ___, sinais meníngeos ___.",
+        "Critério de gravidade: ___ (oftálmico/disseminado/imunossupressão/neurológico/aciclovir EV/dor intratável).",
+        "Conduta: antiviral ___ (VO/EV) iniciado às ___, analgesia ___; encaminho a infectologia / OFTALMOLOGIA urgente (se V1)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o prazo ideal para iniciar o antiviral no herpes zoster em paciente imunocompetente?",
+      "alternativas": [
+        "Até 72 horas do início das lesões",
+        "Após 2 semanas",
+        "Apenas quando houver crostas",
+        "Somente se houver febre",
+        "Não há benefício em antiviral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que o herpes zoster oftálmico (V1) é uma situação de alerta?",
+      "alternativas": [
+        "Risco de surdez",
+        "Risco de necrose retiniana aguda e perda visual — exige avaliação oftalmológica urgente",
+        "Risco de hepatite",
+        "Risco de pancreatite",
+        "Não tem relevância"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Como se define a neuralgia pós-herpética?",
+      "alternativas": [
+        "Dor durante as primeiras 48h",
+        "Dor que persiste por mais de 90 dias após o início do exantema",
+        "Prurido leve transitório",
+        "Dor apenas no surgimento das vesículas",
+        "Cefaleia isolada"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é a principal forma de prevenção do herpes zoster?",
+      "alternativas": [
+        "Antibiótico profilático",
+        "Vacina recombinante inativada (Shingrix)",
+        "Antiviral tópico contínuo",
+        "Corticoide",
+        "Imunoglobulina mensal"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual classe de fármacos é usada no manejo da neuralgia pós-herpética?",
+      "alternativas": [
+        "Apenas antivirais",
+        "Gabapentinoides, tricíclicos, tópicos (lidocaína/capsaicina) e opioides",
+        "Apenas antibióticos",
+        "Corticoide tópico isolado",
+        "Antifúngicos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "A", "comentario": "O antiviral deve ser iniciado idealmente em até 72h do surgimento das lesões em imunocompetentes; após esse prazo, considera-se se houver novas lesões, complicações ou alto risco."},
+    {"resposta": "B", "comentario": "O HZ oftálmico (V1) tem risco de necrose retiniana aguda e perda visual, exigindo antiviral sistêmico e avaliação oftalmológica urgente."},
+    {"resposta": "B", "comentario": "A neuralgia pós-herpética é a dor que persiste por mais de 90 dias após o início do exantema, podendo cursar com alodinia e hiperalgesia."},
+    {"resposta": "B", "comentario": "A vacina recombinante inativada (Shingrix) é a principal prevenção, com eficácia > 90% e redução da neuralgia pós-herpética; pode ser usada em imunocomprometidos."},
+    {"resposta": "B", "comentario": "A neuralgia pós-herpética é manejada com gabapentinoides, tricíclicos, agentes tópicos (lidocaína/capsaicina) e opioides; a combinação é mais eficaz, com cautela em idosos."}
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "slug": "tuberculose",
+  "titulo": "Tuberculose",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Tuberculose no PS/UPA",
+  "chapter_bar": "TUBERCULOSE — TRM-TB + RHZE 6 MESES",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — IDENTIFICAR, ISOLAR, DIAGNOSTICAR",
+      "title": "TB — SINTOMÁTICO RESPIRATÓRIO -> TRM-TB -> RHZE",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Tosse >=3 sem (ou qualquer tempo se vulneravel)\nMASCARA + area arejada/isolamento", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 205, "h": 20, "text": "TRM-TB (prioritario) + RX torax (+ cultura se resistencia)", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 150, "h": 24, "text": "TB sensivel:\nRHZE 2m + RH 4m\n(6 meses)", "color": "green", "font_size": 5.4},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 26, "text": "Grave (IRpA/hemoptise\nmacica/meningea):\ninternar + isolamento", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E AVALIAÇÃO CLÍNICA",
+      "section_color": "teal",
+      "titulo": "QUANDO SUSPEITAR",
+      "items": [
+        "Doença por Mycobacterium tuberculosis; pulmonar (transmissível) ou extrapulmonar; transmissão por aerossóis",
+        "Sintomas: tosse PERSISTENTE (>= 3 semanas, geralmente produtiva), febre vespertina, sudorese noturna, perda de peso, anorexia, fadiga, hemoptise",
+        "Considerar TB em qualquer tosse > 2-3 semanas com sintomas sistêmicos ou fatores de risco",
+        "RX típico (adulto imunocompetente): infiltrado em lobos SUPERIORES, cavitações, fibrose/retração; em criança/imunossuprimido: linfadenopatia hilar, infiltrados em lobos médios/inferiores, derrame",
+        "Grupos de risco: PVHIV, privados de liberdade, diabéticos, etilistas/tabagistas, situação de rua, contatos domiciliares, indígenas"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "INVESTIGAÇÃO DIAGNÓSTICA",
+      "section_color": "navy",
+      "titulo": "TRM-TB É PRIORITÁRIO",
+      "items": [
+        "TRM-TB (GeneXpert): exame de ESCOLHA — detecta DNA do M. tuberculosis e resistência à rifampicina em ~2h; mais sensível/específico que o BAAR",
+        "Baciloscopia (BAAR): onde não há TRM-TB ou para controle mensal (sensibilidade 30-80%)",
+        "CULTURA (padrão-ouro): suspeita de resistência, populações vulneráveis, ou exames rápidos negativos com suspeita persistente",
+        "RX de tórax: triagem e avaliação de extensão; histopatológico nas formas extrapulmonares",
+        "PVHIV: investigar TB independentemente do tempo de tosse; LF-LAM (urina) na imunossupressão grave; CRIANÇAS: diagnóstico clínico-radiológico por escore"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ISOLAMENTO E PRECAUÇÕES",
+      "section_color": "purple",
+      "titulo": "BIOSSEGURANÇA",
+      "items": [
+        "Transmissão por aerossóis (formas pulmonar e laríngea); identificar o sintomático respiratório na recepção",
+        "Paciente: MÁSCARA CIRÚRGICA + área arejada/isolamento; profissional: máscara PFF2/N95",
+        "Domiciliar: ambientes arejados, etiqueta de tosse; não é preciso separar utensílios; não isolar dos conviventes (já expostos), mas usar máscara se houver < 5 anos/idosos/imunocomprometidos",
+        "Término do isolamento: >= 15 dias de tratamento + baciloscopia negativa (ambulatorial); hospitalar: 2 baciloscopias negativas após a 2ª semana (resposta clínica); TB resistente: cultura negativa",
+        "CONTATOS: investigar (sintomáticos -> TB; assintomáticos -> PPD/IGRA + RX; PVHIV assintomáticos -> tratar ILTB independente do PPD)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO DA TB SENSÍVEL (RHZE)",
+      "section_color": "orange",
+      "titulo": "6 MESES — 2RHZE + 4RH",
+      "items": [
+        "Fase INTENSIVA (2 meses): Rifampicina + Isoniazida + Pirazinamida + Etambutol (RHZE), comprimido em dose fixa combinada",
+        "Fase de MANUTENÇÃO (4 meses): Rifampicina + Isoniazida (RH) — total de 6 meses",
+        "Dose por peso (RHZE 150/75/400/275): 20-35 kg = 2 comp; 36-50 kg = 3 comp; > 50 kg = 4 comp — pela manhã, em jejum (1h antes do café), longe de antiácidos/IBP",
+        "Exceções: TB meningoencefálica e osteoarticular -> manutenção de 10 meses (total 12 meses), + corticoide na meníngea",
+        "TDO (tratamento diretamente observado) recomendado a todos, prioritário em TB resistente, situação de rua, vulnerabilidade, álcool/drogas",
+        "Notificação compulsória; acompanhamento mensal com baciloscopia de controle (cura: 2 baciloscopias negativas, uma nos últimos 2 meses)"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SITUAÇÕES ESPECIAIS E EFEITOS ADVERSOS",
+      "section_color": "navy",
+      "headers": ["Situação", "Conduta-chave"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["PVHIV", "Mesmo RHZE; dobrar dolutegravir (50 mg 12/12h) com rifampicina; iniciar TARV em até 7 dias (4-6 sem se TB meníngea)"],
+        ["Gestante/lactante", "Mesmo esquema + PIRIDOXINA 50 mg/dia (previne neuropatia da isoniazida); amamentação permitida"],
+        ["Hepatotoxicidade", "Suspender RHZE se TGO/TGP >= 5x (ou >= 3x com sintomas); reintroduzir após normalizar (R+E, depois H, depois Z)"],
+        ["Efeitos adversos", "Isoniazida: neuropatia (piridoxina); Etambutol: neurite óptica; Rifampicina: urina/secreções alaranjadas, indutor do P450"]
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO",
+      "titulo": "QUANDO HOSPITALIZAR",
+      "items": [
+        "Insuficiência respiratória aguda",
+        "Hemoptise maciça ou persistente (risco de asfixia)",
+        "TB disseminada/miliar, meníngea ou outras extrapulmonares graves (alteração de consciência, déficit, sinais meníngeos)",
+        "Intolerância medicamentosa incontrolável em regime ambulatorial; comorbidades descompensadas",
+        "Vulnerabilidade social extrema (sem moradia/risco de abandono, sobretudo em retratamento/falência/resistência)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos; TB pulmonar (suspeita/confirmada por TRM-TB com sensibilidade à rifampicina ___); tosse há ___; HIV ___.",
+        "Gravidade: ___ (IRpA / hemoptise volumosa / TB meníngea / caquexia / intolerância); SpO2 ___, RX ___ (cavitação?).",
+        "Isolamento respiratório (máscara cirúrgica no paciente, N95 na equipe); RHZE iniciado ___; suporte ___.",
+        "Solicito internação por critério ___; notificação compulsória; investigar contatos."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o exame diagnóstico prioritário (de escolha) para tuberculose pulmonar?",
+      "alternativas": [
+        "Baciloscopia (BAAR) isolada",
+        "TRM-TB (teste rápido molecular / GeneXpert), que também detecta resistência à rifampicina",
+        "Sorologia",
+        "PPD",
+        "Hemocultura"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o esquema padrão e a duração do tratamento da TB pulmonar sensível?",
+      "alternativas": [
+        "RHZE por 12 meses contínuos",
+        "2 meses de RHZE (fase intensiva) + 4 meses de RH (manutenção) = 6 meses",
+        "Apenas isoniazida por 9 meses",
+        "Rifampicina isolada por 6 meses",
+        "3 meses de RH"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual medicação do esquema da TB está associada à neurite óptica?",
+      "alternativas": [
+        "Rifampicina",
+        "Etambutol",
+        "Isoniazida",
+        "Pirazinamida",
+        "Estreptomicina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Em gestante e em PVHIV em tratamento de TB, qual medida previne a neuropatia periférica pela isoniazida?",
+      "alternativas": [
+        "Suspender a isoniazida",
+        "Suplementar piridoxina (vitamina B6) 50 mg/dia",
+        "Dobrar a rifampicina",
+        "Usar corticoide",
+        "Trocar por etambutol"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando suspender o RHZE por hepatotoxicidade?",
+      "alternativas": [
+        "Qualquer elevação de transaminases",
+        "TGO/TGP >= 5x o normal, ou >= 3x com sintomas (náusea, dor abdominal, icterícia)",
+        "Apenas se houver icterícia profunda",
+        "Nunca suspender",
+        "Somente se bilirrubina > 30"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O TRM-TB (teste rápido molecular/GeneXpert) é o exame prioritário: detecta o DNA do M. tuberculosis e a resistência à rifampicina em ~2h, com sensibilidade/especificidade superiores ao BAAR."},
+    {"resposta": "B", "comentario": "O esquema padrão é 2 meses de RHZE (fase intensiva) + 4 meses de RH (manutenção), totalizando 6 meses; TB meníngea/osteoarticular estende a manutenção para 10 meses (total 12)."},
+    {"resposta": "B", "comentario": "O etambutol associa-se à neurite óptica (escotomas, perda visual); na suspeita, suspende-se e modifica-se o esquema. A isoniazida causa neuropatia periférica."},
+    {"resposta": "B", "comentario": "A piridoxina (vitamina B6) 50 mg/dia previne a neuropatia periférica induzida pela isoniazida, indicada em gestantes, PVHIV e diabéticos."},
+    {"resposta": "B", "comentario": "Suspende-se o RHZE quando TGO/TGP >= 5x o limite normal, ou >= 3x com sintomas (náusea, dor abdominal, icterícia), reintroduzindo após a normalização de forma sequencial."}
+  ]
+}

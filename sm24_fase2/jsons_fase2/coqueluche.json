@@ -1,0 +1,167 @@
+{
+  "slug": "coqueluche",
+  "titulo": "Coqueluche",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Coqueluche no PS",
+  "chapter_bar": "COQUELUCHE — TOSSE + GUINCHO + AZITRO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "COQUELUCHE — TOSSE PROLONGADA -> AZITROMICINA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Tosse >2 sem + paroxismos/guincho/vomito pos-tosse\n(lactente <1a: APNEIA, com/sem cianose)", "color": "navy", "font_size": 5.0},
+        {"id": "b", "x": 0.5, "y": 0.55, "w": 205, "h": 22, "text": "Iniciar AZITROMICINA na suspeita\n(nao aguardar confirmacao)", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.26, "w": 205, "h": 22, "text": "Internar se: lactente <6m / apneia / esforco resp / O2", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.07, "w": 200, "h": 14, "text": "Notificacao + profilaxia de contatos", "color": "orange", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E QUADRO CLÍNICO",
+      "section_color": "teal",
+      "titulo": "AS TRÊS FASES",
+      "items": [
+        "Agente: Bordetella pertussis; transmissão por gotículas respiratórias",
+        "Fase CATARRAL (1-2 semanas): febre baixa, coriza, espirros, tosse — fase mais transmissível",
+        "Fase PAROXÍSTICA (2-6 semanas): paroxismos de tosse, GUINCHO inspiratório após o acesso, vômitos pós-tosse, hemorragias conjuntivais/petéquias na face",
+        "Fase de CONVALESCENÇA: tosse residual (pode durar até 3 meses)",
+        "LACTENTE < 1 ano: pode apresentar APNEIA (com ou sem cianose) em vez de guincho — sinal de alarme"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "CRITÉRIO CLÍNICO",
+      "items": [
+        "Suspeita: tosse > 2 semanas + >= 1 de: tosse paroxística, guincho inspiratório, vômitos pós-tosse, ou apneia em < 1 ano",
+        "Anamnese: contato com casos suspeitos/confirmados; situação vacinal",
+        "Exame: sinais vitais, esforço respiratório, ausculta cardiopulmonar",
+        "Laboratório: hemograma com LEUCOCITOSE e LINFOCITOSE; PCR/cultura para Bordetella",
+        "RX de tórax: pode mostrar 'coração felpudo' (infiltrado peri-hilar)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — INICIAR NA SUSPEITA",
+      "section_color": "orange",
+      "titulo": "MACROLÍDEO É A 1ª LINHA",
+      "items": [
+        "NÃO aguardar a confirmação laboratorial para iniciar o tratamento na suspeita clínica",
+        "1ª linha — AZITROMICINA: adultos 500 mg no 1º dia + 250 mg/dia do 2º ao 5º; crianças > 6 meses 10 mg/kg no 1º dia (máx 500) + 5 mg/kg/dia (máx 250) do 2º ao 5º (ou 10 mg/kg/dia por 5 dias)",
+        "Alternativa — Claritromicina: adultos 500 mg 12/12h por 7 dias; crianças 15 mg/kg/dia em 2 doses por 7 dias (não em < 1 mês)",
+        "Alternativa — SMX-TMP: adultos 800/160 mg 12/12h por 14 dias; crianças > 2 meses 8 mg/kg/dia de TMP por 14 dias (contraindicado < 2 meses)",
+        "Sintomáticos: Dipirona se dor/febre; o antibiótico precoce reduz a transmissão (mas pouco altera os paroxismos se já instalados)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INTERNAÇÃO, PROFILAXIA E NOTIFICAÇÃO",
+      "section_color": "red",
+      "titulo": "CONDUTA",
+      "items": [
+        "INTERNAR: instabilidade hemodinâmica, necessidade de O2 suplementar, sinais de esforço respiratório, lactente < 6 meses, APNEIA",
+        "Lactentes pequenos têm maior risco de complicações graves (apneia, pneumonia, hipertensão pulmonar) — vigilância em UTI quando indicado",
+        "Profilaxia dos CONTATOS próximos com o mesmo macrolídeo (azitromicina), independentemente da vacinação, sobretudo lactentes e gestantes",
+        "Notificação compulsória; verificar e atualizar o esquema vacinal (DTP/dTpa)",
+        "Isolamento respiratório por gotículas até 5 dias de antibiótico eficaz"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA E ORIENTAÇÕES",
+      "titulo": "AMBULATORIAL",
+      "items": [
+        "ALTA: estável, sem esforço respiratório, sem apneia, aceitando VO, antibiótico iniciado, família orientada",
+        "Receita exemplo (adulto): Azitromicina 500 mg (3 comp) — 1 cp no 1º dia e 1/2 cp do 2º ao 5º; Dipirona 1 g 6/6h se dor/febre",
+        "Orientar que a tosse residual pode durar semanas a meses (convalescença)",
+        "Retorno imediato: apneia/cianose, esforço respiratório, recusa alimentar, piora geral (sobretudo lactentes)",
+        "Reforçar vacinação de contatos e da gestante (dTpa)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ (idade) com suspeita de coqueluche; tosse há ___ dias, fase ___ (paroxística), com guincho/vômitos/APNEIA ___; vacinação ___; contato prévio ___.",
+        "Exame: estado geral ___, cianose ___, SpO2 ___, esforço respiratório ___; ausculta ___.",
+        "Hemograma: leucócitos ___ / linfócitos ___ (linfocitose?); RX: ___ (coração felpudo?).",
+        "Conduta: O2 ___, Azitromicina iniciada; solicito internação/UTI (lactente < 6m / apneia / insuficiência respiratória)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual achado clínico é característico da fase paroxística da coqueluche?",
+      "alternativas": [
+        "Tosse com guincho inspiratório e vômitos pós-tosse",
+        "Estridor laríngeo contínuo",
+        "Sibilância expiratória isolada",
+        "Tosse ladrante",
+        "Apenas coriza"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a manifestação típica da coqueluche em lactentes < 1 ano, em vez do guincho?",
+      "alternativas": [
+        "Exantema",
+        "Apneia (com ou sem cianose)",
+        "Diarreia",
+        "Artralgia",
+        "Icterícia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o antibiótico de primeira linha para a coqueluche?",
+      "alternativas": [
+        "Amoxicilina",
+        "Azitromicina (macrolídeo)",
+        "Ceftriaxona",
+        "Penicilina G",
+        "Vancomicina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual alteração no hemograma sugere coqueluche?",
+      "alternativas": [
+        "Leucopenia com neutrofilia",
+        "Leucocitose com linfocitose",
+        "Eosinofilia isolada",
+        "Plaquetopenia grave",
+        "Anemia macrocítica"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre os contatos próximos de um caso de coqueluche, é correto:",
+      "alternativas": [
+        "Não há necessidade de qualquer medida",
+        "Indicar quimioprofilaxia com macrolídeo, sobretudo lactentes e gestantes, e atualizar vacinação",
+        "Apenas isolar o caso",
+        "Tratar só se sintomáticos com cultura positiva",
+        "Vacinar somente após 1 mês"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "A", "comentario": "Na fase paroxística há paroxismos de tosse seguidos de guincho inspiratório e vômitos pós-tosse, podendo cursar com hemorragias conjuntivais/petéquias na face."},
+    {"resposta": "B", "comentario": "Em lactentes < 1 ano, a coqueluche pode se manifestar com APNEIA (com ou sem cianose) em vez do guincho — sinal de alarme que indica internação."},
+    {"resposta": "B", "comentario": "A azitromicina (macrolídeo) é a 1ª linha; alternativas são claritromicina e SMX-TMP. Iniciar na suspeita, sem aguardar confirmação."},
+    {"resposta": "B", "comentario": "A coqueluche cursa tipicamente com leucocitose e linfocitose no hemograma."},
+    {"resposta": "B", "comentario": "Os contatos próximos recebem quimioprofilaxia com macrolídeo (sobretudo lactentes e gestantes), com atualização do esquema vacinal; o caso é de notificação compulsória."}
+  ]
+}

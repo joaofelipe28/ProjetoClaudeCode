@@ -62,7 +62,8 @@
       "Bash(sips -s format png outputs/apostila_queimaduras.pdf --out /tmp/queim_p1.png)",
       "Bash(sips -s format png outputs/apostila_complicacoes_traqueostomia.pdf --out /tmp/traqueo_p1.png)",
       "Bash(sips -s format png --out /tmp/traqueo_p2.png outputs/apostila_complicacoes_traqueostomia.pdf)",
-      "Bash(sips -s format png outputs/apostila_dengue.pdf --out /tmp/dengue_p1.png)"
+      "Bash(sips -s format png outputs/apostila_dengue.pdf --out /tmp/dengue_p1.png)",
+      "Bash(sips -s format png outputs/apostila_tuberculose.pdf --out /tmp/tb_p1.png)"
     ]
   }
 }

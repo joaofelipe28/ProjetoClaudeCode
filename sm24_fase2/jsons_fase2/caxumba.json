@@ -1,0 +1,166 @@
+{
+  "slug": "caxumba",
+  "titulo": "Caxumba (Parotidite Epidêmica)",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Caxumba e complicações no PS",
+  "chapter_bar": "CAXUMBA — PAROTIDITE + COMPLICAÇÕES",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "CAXUMBA — PAROTIDITE -> RASTREAR COMPLICAÇÕES",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Edema doloroso de parotida (uni/bilateral)\nsuporte sintomatico (sem antiviral especifico)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Leve: analgesia +\nhidratacao +\nisolamento", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.46, "w": 150, "h": 28, "text": "Complicacoes: orquite/\npancreatite/meningite\n-> internar", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Notificacao compulsoria + atualizar SCR", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E EPIDEMIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Doença viral sistêmica aguda contagiosa (Orthorubulavirus, Paramyxoviridae); inflamação dolorosa das glândulas salivares, sobretudo PARÓTIDAS",
+        "Transmissão: gotículas respiratórias, saliva, contato com secreções orais; incubação 12-25 dias",
+        "Transmissibilidade: de 2 dias antes até 5 dias após o início da parotidite",
+        "Fatores de risco: não vacinados/esquema incompleto, ambientes coletivos; adolescentes/adultos jovens têm MAIOR risco de complicações",
+        "Pode complicar com manifestações neurológicas, genitais e pancreáticas; notificação compulsória"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO",
+      "section_color": "navy",
+      "titulo": "EXAME DIRIGIDO",
+      "items": [
+        "Anamnese: início do edema parotídeo, dor à mastigação/deglutição, febre/mialgia, situação vacinal (SCR), contato com casos; dor testicular/abdominal, cefaleia intensa/vômitos/rigidez de nuca",
+        "Local: aumento uni/bilateral da parótida, dor à palpação, DESVIO DO LÓBULO da orelha, pele sem hiperemia importante",
+        "Sistêmico: avaliação neurológica, abdominal e TESTICULAR (homens); estado de hidratação",
+        "Exames geralmente desnecessários; nos complicados: hemograma, amilase/lipase, PCR, US testicular, punção lombar (suspeita neurológica)",
+        "Diferenciais: parotidite bacteriana (supurada), litíase salivar, adenite, abscesso"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE GRAVIDADE",
+      "section_color": "navy",
+      "headers": ["Forma", "Características"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Leve", "Parotidite isolada, febre baixa/ausente, bom estado geral"],
+        ["Moderada", "Parotidite dolorosa importante, febre persistente, dificuldade alimentar, dor abdominal leve"],
+        ["Grave/complicada", "ORQUITE/ooforite, pancreatite, meningite/encefalite, desidratação moderada-grave, imunossuprimidos"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO SINTOMÁTICO",
+      "section_color": "orange",
+      "titulo": "SEM ANTIVIRAL ESPECÍFICO",
+      "items": [
+        "Medidas gerais: repouso, hidratação (VO ou EV se vômitos/desidratação), ISOLAMENTO por gotículas, dieta leve/fria/pastosa evitando alimentos ácidos (aumentam a dor salivar)",
+        "Analgesia/antitérmico: Dipirona 500-1000 mg 6-8/8h (crianças 10-20 mg/kg) ou Paracetamol; EVITAR AAS em crianças/adolescentes (síndrome de Reye)",
+        "AINE se dor moderada/intensa: Ibuprofeno 400-600 mg 8/8h por curto período",
+        "ORQUITE: repouso absoluto, elevação escrotal, compressas frias, analgesia plena; corticoide NÃO de rotina (considerar prednisona 0,5-1 mg/kg/dia em dor intensa selecionada)",
+        "PANCREATITE: internação, jejum, hidratação venosa, analgesia EV; NEUROLÓGICAS: internação, avaliação + PL se indicado, UTI se instabilidade",
+        "Antibiótico NÃO indicado (exceto suspeita de parotidite bacteriana/supurada)"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO, ALTA E ORIENTAÇÕES",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: orquite dolorosa intensa, complicações neurológicas, pancreatite, desidratação moderada/grave, dor não controlada, imunossuprimidos",
+        "ALTA: estabilidade clínica, dor/febre controladas, hidratação oral adequada, sem sinais de complicação, orientações compreendidas",
+        "Casa: Dipirona/Paracetamol + Ibuprofeno se dor moderada; repouso 7-10 dias; compressas frias na parótida; isolamento domiciliar por 5 dias após o início do edema",
+        "Orientar: evitar esforço físico; evitar contato com gestantes e imunossuprimidos; retorno se dor testicular, cefaleia intensa, vômitos persistentes ou rebaixamento",
+        "Notificação compulsória; avaliar/atualizar esquema vacinal (SCR)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com parotidite ___ (uni/bilateral) há ___ dias; vacinação SCR ___; contato ___.",
+        "Complicação: orquite ___ / pancreatite (amilase/lipase ___) / neurológica (cefaleia/rigidez/vômitos ___).",
+        "Conduta: analgesia ___, hidratação ___, isolamento; orquite (elevação/compressa) / pancreatite (jejum + EV).",
+        "Solicito internação por ___ (orquite intensa / pancreatite / complicação neurológica); notificar Vigilância."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a complicação mais temida da caxumba em adolescentes e adultos do sexo masculino?",
+      "alternativas": [
+        "Artrite",
+        "Orquite (com risco de atrofia testicular)",
+        "Hepatite",
+        "Nefrite",
+        "Pneumonia"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tratamento da caxumba?",
+      "alternativas": [
+        "Antiviral específico",
+        "Sintomático e de suporte (analgesia, hidratação, isolamento), sem antiviral específico",
+        "Antibiótico de rotina",
+        "Corticoide para todos",
+        "Imunoglobulina"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual analgésico/antitérmico deve ser EVITADO em crianças e adolescentes com caxumba?",
+      "alternativas": [
+        "Dipirona",
+        "AAS (ácido acetilsalicílico), pelo risco de síndrome de Reye",
+        "Paracetamol",
+        "Ibuprofeno",
+        "Nenhum"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual exame ajuda a confirmar pancreatite associada à caxumba?",
+      "alternativas": [
+        "Amilase e lipase",
+        "Hemoglobina glicada",
+        "TSH",
+        "Sorologia para dengue",
+        "PSA"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre a prevenção da caxumba, é correto:",
+      "alternativas": [
+        "Não há vacina",
+        "A vacinação (tríplice viral - SCR) é a principal forma de prevenção, e a doença é de notificação compulsória",
+        "Antibiótico profilático para contatos",
+        "Isolamento não é necessário",
+        "Só ocorre uma vez na vida sem necessidade de vacina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A orquite é a complicação mais temida em adolescentes/adultos do sexo masculino, com risco de atrofia testicular; o manejo inclui repouso, elevação escrotal, compressas frias e analgesia."},
+    {"resposta": "B", "comentario": "Não há antiviral específico: o tratamento é sintomático e de suporte (analgesia, hidratação, isolamento por gotículas)."},
+    {"resposta": "B", "comentario": "Evita-se o AAS em crianças e adolescentes pelo risco de síndrome de Reye; usam-se dipirona/paracetamol (± ibuprofeno se dor moderada)."},
+    {"resposta": "A", "comentario": "A elevação de amilase e lipase apoia o diagnóstico de pancreatite associada à caxumba, que indica internação, jejum e suporte."},
+    {"resposta": "B", "comentario": "A vacinação com a tríplice viral (SCR) é a principal forma de prevenção; a caxumba é de notificação compulsória, com avaliação do esquema vacinal."}
+  ]
+}

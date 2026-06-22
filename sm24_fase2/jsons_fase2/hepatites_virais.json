@@ -1,0 +1,168 @@
+{
+  "slug": "hepatites_virais",
+  "titulo": "Hepatites Virais Agudas",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Hepatites virais agudas no PS",
+  "chapter_bar": "HEPATITES VIRAIS — EXCLUIR FULMINANTE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — A PRIORIDADE É A FULMINANTE",
+      "title": "HEPATITE AGUDA — ICTERÍCIA -> EXCLUIR FALÊNCIA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Ictericia + coluria + transaminases altas\nbuscar ENCEFALOPATIA e COAGULOPATIA", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Sem gravidade:\nsuporte + suspender\nhepatotoxicos + alta", "color": "green", "font_size": 5.2},
+        {"id": "c", "x": 0.75, "y": 0.46, "w": 150, "h": 28, "text": "FULMINANTE (encef.+\nINR>1,5): UTI + centro\nde TRANSPLANTE", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Notificacao compulsoria (SINAN) - TODAS", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO, FASES E TRANSMISSÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Inflamação do fígado por vírus hepatotrópicos (A, B, C, D, E) — no PS, foco nas formas AGUDAS (icterícia, colúria, transaminases elevadas)",
+        "Fases: PRÉ-ICTÉRICA (febre baixa, mal-estar, náusea, aversão a cigarro) -> ICTÉRICA (icterícia, colúria, ACOLIA, prurido) -> recuperação (2-6 semanas)",
+        "Transmissão: HAV/HEV = fecal-oral; HBV/HCV/HDV = parenteral/sexual",
+        "Grupos de risco: HAV (crianças, viajantes, saneamento precário); HBV (UDI, sexo desprotegido, profissionais de saúde, hemodialisados); HCV (UDI, transfusão pré-1993, tatuagens); HDV (coinfecção com HBV); HEV (viajantes, GESTANTES — risco fulminante)",
+        "TODAS as hepatites virais são de NOTIFICAÇÃO compulsória (SINAN)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — HEPATITE FULMINANTE",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA",
+      "items": [
+        "ENCEFALOPATIA: confusão, ASTERIXIS (flapping), sonolência, coma",
+        "INR > 1,5 (coagulopatia); hipoglicemia (< 60 mg/dL); hipotensão/instabilidade",
+        "Hepatite fulminante = hepatite aguda + encefalopatia em < 8 semanas (mortalidade 50-90% sem transplante)",
+        "Outros sinais de gravidade: vômitos incoercíveis, desidratação, dor abdominal intensa (colangite?), febre alta, oligúria, sangramento espontâneo, icterícia rapidamente progressiva (BT > 20-30)",
+        "Atenção especial: GESTANTES (HEV), hepatopatas crônicos, imunossuprimidos"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "EXAMES E INTERPRETAÇÃO",
+      "section_color": "navy",
+      "headers": ["Exame", "Significado"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Triagem", "Hemograma, bilirrubinas, TGO/TGP, FA/GGT, TAP/INR, albumina, função renal, glicemia, eletrólitos"],
+        ["Sorologias", "HAV: anti-HAV IgM; HBV: HBsAg + anti-HBc IgM; HCV: anti-HCV + HCV-RNA; HDV: anti-HDV (se HBsAg+); HEV: anti-HEV IgM"],
+        ["TGO/TGP > 1000", "Viral aguda, tóxica (paracetamol), isquêmica"],
+        ["Padrão", "Viral: TGP > TGO (relação < 1); alcoólica: TGO > TGP (relação > 2); colestase: FA/GGT elevados"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS",
+      "section_color": "orange",
+      "titulo": "SUPORTE + SUSPENDER HEPATOTÓXICOS",
+      "items": [
+        "Medidas gerais: hidratação VO (ou EV se vômitos — SF 0,9% 1000-1500 mL); dieta leve, hipogordurosa, fracionada; repouso relativo",
+        "SUSPENDER: álcool, PARACETAMOL, AINEs e demais hepatotóxicos",
+        "Náuseas/vômitos: Metoclopramida 10 mg 8/8h ou Ondansetrona 4-8 mg; prurido: Hidroxizina 25 mg 8/8h ou Dexclorfeniramina; dor: Dipirona (EVITAR paracetamol)",
+        "Antiviral: HBV aguda grave/imunossuprimido -> Tenofovir 300 mg/dia; HCV aguda -> seguimento ambulatorial (maioria autolimitada)",
+        "Fulminante: UTI + contatar centro de transplante + antivirais",
+        "Imunização pós-exposição: HAV (vacina em até 2 semanas para comunicantes); HBV não vacinado (HBIG 0,06 mL/kg IM + vacina; vacinado -> dosar anti-HBs)"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: hepatite fulminante (encefalopatia, INR > 1,5), vômitos incoercíveis + desidratação, INR > 2/sangramento, BT > 20-25, IRA (Cr > 1,5), alteração de consciência, sepse/colangite, gestante grave, sem seguimento",
+        "ALTA: sem sinais de gravidade (encefalopatia/coagulopatia/ascite), bilirrubinas estáveis/em queda, INR < 1,5, tolerando VO, consciência normal, orientações compreendidas e retorno garantido",
+        "Casa: repouso, hidratação 2-3 L/dia, dieta leve, PROIBIDO ÁLCOOL (mín. 6 meses), NÃO usar paracetamol/AINE/suplementos sem orientação",
+        "Prevenção de transmissão: HAV (higiene de mãos, não preparar alimentos por 2 sem); HBV/HCV (preservativo, não compartilhar lâminas/escovas, não doar sangue); vacinar comunicantes",
+        "Retorno: hepatologista/infectologista em 7 dias com controle (bilirrubinas, transaminases, INR); alarme: confusão/tremor, vômitos, sangramento, dor intensa/febre, urina muito escura, aumento do abdome, piora da icterícia"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com hepatite viral aguda; icterícia há ___ dias + colúria/acolia; náusea/vômitos ___, dor em HCD ___, prurido ___.",
+        "BT ___ (BD/BI), TGO ___, TGP ___, FA ___, INR ___, albumina ___; sorologias: ___.",
+        "Gravidade: encefalopatia grau ___, flapping ___, INR ___, hipoglicemia ___; sinais vitais ___.",
+        "Solicito internação em ___ (enfermaria/UTI) para suporte / investigação de hepatite fulminante e avaliação de centro de transplante; notificar SINAN."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual achado define a hepatite FULMINANTE, exigindo UTI e contato com centro de transplante?",
+      "alternativas": [
+        "Icterícia isolada",
+        "Hepatite aguda + encefalopatia (e coagulopatia com INR > 1,5) em < 8 semanas",
+        "TGP > TGO",
+        "Colúria",
+        "Febre baixa"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual medicação deve ser SUSPENSA/evitada na hepatite viral aguda?",
+      "alternativas": [
+        "Dipirona",
+        "Paracetamol, AINEs e álcool (hepatotóxicos)",
+        "Soro fisiológico",
+        "Metoclopramida",
+        "Hidroxizina"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual sorologia confirma hepatite A aguda?",
+      "alternativas": [
+        "Anti-HAV IgG",
+        "Anti-HAV IgM",
+        "HBsAg",
+        "Anti-HCV",
+        "Anti-HEV IgG"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Em qual grupo a hepatite E (HEV) tem maior risco de evolução fulminante?",
+      "alternativas": [
+        "Crianças",
+        "Gestantes",
+        "Idosos vacinados",
+        "Profissionais de saúde",
+        "Hemodialisados"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual conduta de imunização pós-exposição é correta para contato não vacinado de hepatite B?",
+      "alternativas": [
+        "Apenas observação",
+        "Imunoglobulina anti-HBV (HBIG 0,06 mL/kg IM) + vacina",
+        "Somente antibiótico",
+        "Tenofovir profilático isolado",
+        "Nenhuma medida"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A hepatite fulminante é a hepatite aguda que evolui com encefalopatia (e coagulopatia, INR > 1,5) em menos de 8 semanas, com alta mortalidade sem transplante."},
+    {"resposta": "B", "comentario": "Suspendem-se os hepatotóxicos: paracetamol, AINEs e álcool. Para dor/febre prefere-se a dipirona."},
+    {"resposta": "B", "comentario": "O anti-HAV IgM confirma hepatite A aguda; o IgG indica infecção passada/imunidade."},
+    {"resposta": "B", "comentario": "A hepatite E (HEV) tem maior risco de forma fulminante em gestantes, especialmente no 3º trimestre."},
+    {"resposta": "B", "comentario": "Contato não vacinado de hepatite B recebe imunoglobulina (HBIG 0,06 mL/kg IM) + vacina; se vacinado, dosa-se o anti-HBs."}
+  ]
+}

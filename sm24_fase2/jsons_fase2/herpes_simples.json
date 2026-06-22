@@ -1,0 +1,156 @@
+{
+  "slug": "herpes_simples",
+  "titulo": "Herpes Simples (HSV)",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Herpes simples orolabial e genital",
+  "chapter_bar": "HERPES SIMPLES — HSV-1/2 + ACICLOVIR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "HSV — LESÕES VESICULARES -> ANTIVIRAL SISTÊMICO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Vesiculas/ulceras dolorosas orolabiais ou genitais\n(primoinfeccao x reativacao)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Ambulatorial:\naciclovir VO\n(<72h e ideal)", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.46, "w": 150, "h": 28, "text": "Grave (encefalite/\ndisseminado/imunossup.):\nACICLOVIR EV + internar", "color": "red", "font_size": 5.0},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": ">6 episodios/ano -> supressao cronica", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E MANIFESTAÇÕES",
+      "section_color": "teal",
+      "titulo": "PRIMOINFECÇÃO x REATIVAÇÃO",
+      "items": [
+        "HSV-1 (predileção orolabial) e HSV-2 (predileção genital), mas ambos podem afetar qualquer compartimento; doença = primoinfecção + reativações",
+        "Orolabial: primoinfecção na infância (gengivoestomatite herpética, faringite, febre, linfadenopatia); reativação = lesões labiais vesiculares dolorosas, precedidas por pródromo (dor/parestesia) em ~80%",
+        "Genital: primoinfecção no início da vida sexual (frequentemente assintomática); quando sintomática, pápulas/vesículas/úlceras dolorosas, fissuras, disúria, sintomas sistêmicos em ~50%",
+        "Reativação genital: pródromo em metade dos casos, com duração/intensidade menores que a primoinfecção",
+        "Recorrente: > 4-6 episódios/ano"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "CLÍNICO / SINDRÔMICO",
+      "items": [
+        "Diagnóstico CLÍNICO (sindrômico) na apresentação clássica — validado e preconizado pelo MS/OMS",
+        "PCR (swab da lesão): especificidade ~100%, melhor sensibilidade em lesões recentes (< 5 dias, em fase de vesícula) — para casos atípicos",
+        "Esfregaço de Tzanck: mostra efeito citopático (sensibilidade 60-80%), mas NÃO diferencia HSV de varicela-zoster",
+        "Sorologia: IgM SEM utilidade; IgG HSV-1 não recomendado (maioria já positiva); IgG HSV-2 tem papel em dúvida diagnóstica (positiva ~12 semanas) ou recorrência com PCR negativo",
+        "Rastreio sorológico na população geral NÃO é recomendado"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO ANTIVIRAL",
+      "section_color": "orange",
+      "titulo": "EPISÓDICO x SUPRESSIVO",
+      "items": [
+        "Antiviral sistêmico recomendado na maioria dos sintomáticos (primoinfecção ou reativação): controla parcialmente os sintomas e reduz a duração, sobretudo se iniciado nas primeiras 72h",
+        "Opções: Aciclovir, Valaciclovir ou Famciclovir (eficácia similar; nenhum erradica o vírus latente)",
+        "No SUS, o aciclovir (comp. 200 mg) é a medicação disponível; valaciclovir/famciclovir têm melhor posologia, porém mais caros",
+        "Tópico (pomada de aciclovir) NÃO tem benefício clínico — não recomendado",
+        "RECORRÊNCIA: tratamento episódico (reduz intensidade/duração de cada surto) OU supressivo crônico (reduz 70-80% das recorrências)",
+        "Supressão crônica: considerar se > 6 episódios/ano; reavaliar anualmente (drogas muito seguras, sem necessidade de monitorar eventos adversos)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE INTERNAÇÃO / GRAVIDADE",
+      "section_color": "red",
+      "titulo": "ACICLOVIR EV",
+      "items": [
+        "ENCEFALITE HERPÉTICA (alteração de consciência, convulsões, sinais focais) ou meningite grave — emergência, ACICLOVIR EV",
+        "HSV DISSEMINADO (hepatite, pneumonite, coagulopatia), comum em imunossuprimidos",
+        "Imunossupressão grave com lesões extensas/necróticas ou sem resposta à VO",
+        "Complicações oculares (necrose retiniana aguda, ceratite grave) e ECZEMA HERPÉTICO (sobre dermatite atópica — risco de sepse)",
+        "Gengivoestomatite grave impedindo hidratação/nutrição (especialmente crianças); impossibilidade de absorção oral"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com lesões herpéticas ___ (orolabial/genital/disseminado); primoinfecção/reativação; início há ___.",
+        "Gravidade: encefalite (consciência/convulsão/foco) ___, disseminação ___, imunossupressão ___, eczema herpético ___.",
+        "Conduta: Aciclovir ___ (VO/EV, dose ___) iniciado às ___; suporte ___.",
+        "Solicito internação para Aciclovir EV / investigação de encefalite (PCR liquor + TC) / suporte; isolamento de contato."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o tratamento de escolha (disponível no SUS) para herpes simples sintomático?",
+      "alternativas": [
+        "Aciclovir tópico isolado",
+        "Aciclovir sistêmico (VO), idealmente nas primeiras 72h",
+        "Antibiótico oral",
+        "Corticoide",
+        "Apenas observação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quando considerar a terapia supressiva crônica no herpes simples recorrente?",
+      "alternativas": [
+        "Em todos os pacientes",
+        "Quando há mais de 6 episódios por ano (reavaliar anualmente)",
+        "Apenas na primoinfecção",
+        "Somente em gestantes",
+        "Nunca"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual exame tem alta especificidade para confirmar HSV em lesões atípicas?",
+      "alternativas": [
+        "Sorologia IgM",
+        "PCR (swab da lesão), melhor em vesículas recentes",
+        "Hemocultura",
+        "Esfregaço de Tzanck isolado",
+        "Cultura de urina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual situação exige aciclovir endovenoso e internação?",
+      "alternativas": [
+        "Herpes labial recorrente leve",
+        "Encefalite herpética (alteração de consciência, convulsões, sinais focais)",
+        "Pródromo de dor labial",
+        "Lesão genital única em imunocompetente",
+        "Recorrência anual única"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre o tratamento tópico (pomada de aciclovir) no herpes simples, é correto:",
+      "alternativas": [
+        "É a primeira escolha",
+        "Não tem benefício clínico e não é recomendado",
+        "Substitui o tratamento sistêmico na encefalite",
+        "Erradica o vírus latente",
+        "É superior ao oral"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O aciclovir sistêmico (VO) é o tratamento de escolha disponível no SUS, idealmente iniciado nas primeiras 72h; valaciclovir/famciclovir têm eficácia similar e melhor posologia."},
+    {"resposta": "B", "comentario": "A supressão crônica é considerada quando há mais de 6 episódios por ano, reduzindo 70-80% das recorrências; a decisão é reavaliada anualmente."},
+    {"resposta": "B", "comentario": "A PCR (swab da lesão) tem especificidade próxima a 100% e melhor sensibilidade em lesões recentes (vesículas), sendo útil em casos atípicos."},
+    {"resposta": "B", "comentario": "A encefalite herpética é emergência que exige aciclovir EV e internação; outras indicações de EV incluem HSV disseminado, imunossupressão grave e eczema herpético."},
+    {"resposta": "B", "comentario": "O aciclovir tópico não tem benefício clínico e não é recomendado; o tratamento eficaz é o sistêmico, e nenhum antiviral erradica o vírus latente."}
+  ]
+}

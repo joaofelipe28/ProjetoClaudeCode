@@ -1,0 +1,183 @@
+{
+  "slug": "influenza_sindrome_gripal",
+  "titulo": "Síndrome Gripal e Influenza",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Síndrome gripal / influenza no PS",
+  "chapter_bar": "SÍNDROME GRIPAL — SRAG + OSELTAMIVIR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — SG x SRAG",
+      "title": "GRIPE — CLASSIFICAR E TRATAR GRUPO DE RISCO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Febre subita + tosse/odinofagia + sistemicos\nSpO2 OBRIGATORIA; buscar sinais de gravidade", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "SG sem gravidade:\nsintomatico; oseltamivir\nse grupo de risco", "color": "green", "font_size": 5.2},
+        {"id": "c", "x": 0.75, "y": 0.46, "w": 150, "h": 28, "text": "SRAG (dispneia/\nSpO2<95%): O2 +\nOSELTAMIVIR + internar", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Grupo de risco: SEMPRE tratar (independe do tempo)", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CLASSIFICAÇÃO",
+      "section_color": "teal",
+      "titulo": "RECONHECER A SÍNDROME",
+      "items": [
+        "SÍNDROME GRIPAL (SG): febre de início SÚBITO + tosse ou odinofagia + >= 1 sintoma sistêmico (cefaleia, mialgia, artralgia), SEM sinais de gravidade — maioria dos casos",
+        "Influenza: início súbito (diferente do resfriado, gradual), febre alta (> 39), calafrios, mialgia intensa, tosse seca, prostração; tosse/fadiga podem durar semanas",
+        "SRAG (Síndrome Respiratória Aguda Grave): SG + dispneia OU SpO2 < 95% OU desconforto respiratório OU piora nas últimas 24h -> REQUER INTERNAÇÃO",
+        "Complicações: pneumonia viral primária, pneumonia bacteriana secundária, descompensação de doença crônica, miocardite/encefalite (raras)",
+        "Diferencial: resfriado comum/rinofaringite (coriza predominante, febre baixa/ausente)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "GRUPOS DE RISCO PARA COMPLICAÇÕES",
+      "section_color": "purple",
+      "titulo": "SEMPRE TRATAR",
+      "items": [
+        "Gestantes (qualquer IG) e puérperas (até 2 semanas pós-parto)",
+        "Crianças < 2 anos (especialmente < 6 meses) e idosos >= 60 anos",
+        "Imunossuprimidos (HIV, quimioterapia, transplantados, corticoide > 20 mg/dia por > 14 dias)",
+        "Doenças crônicas: pneumopatias (asma/DPOC), cardiopatias, DRC, diabetes, hematológicas (falciforme)",
+        "Obesidade grave (IMC >= 40), indígenas aldeados, institucionalizados"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE ALERTA (SRAG)",
+      "section_color": "red",
+      "titulo": "RED FLAGS",
+      "items": [
+        "Dispneia/desconforto respiratório; SpO2 < 95% em ar ambiente; cianose",
+        "Taquipneia: adultos FR > 30; criança 2-12m FR > 50; 1-5 anos FR > 40 (< 2 meses FR > 60)",
+        "Hipotensão (PAS < 90), alteração do nível de consciência, desidratação/recusa alimentar",
+        "Tiragem intercostal/batimento de asa nasal; piora de doença crônica de base",
+        "Complicação bacteriana: dor pleurítica, escarro purulento/hemoptoico, retorno da febre após 3-4 dias"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "CLÍNICO-EPIDEMIOLÓGICO",
+      "items": [
+        "Durante a circulação do vírus (outono/inverno), o diagnóstico é CLÍNICO — quadro compatível + período epidêmico = influenza até prova em contrário",
+        "NÃO é necessário teste para iniciar o tratamento em paciente de risco",
+        "RT-PCR (swab nasofaríngeo): pacientes que internarão (SRAG), surtos em instituições, gestantes/puérperas, casos graves/atípicos",
+        "Complementares (se SRAG/complicação): hemograma, PCR/procalcitonina, função renal, gasometria, RX de tórax, lactato se sepse",
+        "Teste rápido de antígeno (influenza/COVID): útil para isolamento e notificação"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — OSELTAMIVIR E SINTOMÁTICOS",
+      "section_color": "orange",
+      "titulo": "ANTIVIRAL POR INDICAÇÃO",
+      "items": [
+        "TRATAR SEMPRE (independente do tempo de sintomas): todos os SRAG, todos os grupos de risco, gestantes/puérperas, < 2 anos, >= 60 anos, doenças crônicas, imunossuprimidos, obesidade grave, indígenas",
+        "OSELTAMIVIR adultos: 75 mg VO 12/12h por 5 dias; crianças por peso (< 15 kg 30 mg; 15-23 kg 45 mg; 23-40 kg 60 mg; > 40 kg 75 mg, 12/12h)",
+        "Ajuste renal: ClCr 30-60 -> 30 mg 12/12h; ClCr 10-30 -> 30 mg/dia; ClCr < 10 -> 30 mg dose única",
+        "Iniciar idealmente nas primeiras 48h, mas NÃO contraindicar após 48h em paciente de risco/grave; seguro em gestantes",
+        "Sintomáticos: Dipirona/Paracetamol (máx 4 g/dia); hidratação 2-3 L/dia; lavagem nasal com SF; EVITAR supressores da tosse (codeína)",
+        "ATB só em complicação bacteriana: Amox-clavulanato 500/125 8/8h por 7 dias (ou Ceftriaxona + Clindamicina se internar)"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO, ALTA E ORIENTAÇÕES",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: SRAG, SpO2 < 95% persistente, desconforto respiratório, desidratação/intolerância oral, alteração de consciência, pneumonia, gestante com gravidade, lactente < 3 meses com febre, paciente de risco descompensado",
+        "ALTA: afebril 24-48h sem antitérmico, SpO2 >= 95%, sem desconforto, tolerando VO, baixo risco (ou de risco mas estável com oseltamivir), retorno garantido",
+        "Casa: repouso 3-5 dias, hidratação, lavagem nasal, ISOLAMENTO respiratório (até 24h sem febre/7 dias), etiqueta respiratória, ambientes ventilados",
+        "Alarme (retorno imediato): falta de ar, dor no peito, cianose, confusão/sonolência, febre > 3 dias ou que retorna, piora após melhora, vômitos persistentes; criança: irritabilidade/recusa/gemência",
+        "Retorno em 3-5 dias se não melhorar; gestantes com obstetra"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com síndrome gripal evoluindo para SRAG; febre há ___ dias + tosse/mialgia; dispneia há ___, SpO2 ___% (ar ambiente), FR ___.",
+        "Grupo de risco: ___; oseltamivir ___ (dose/há quanto tempo); O2 ___ L/min; ausculta ___.",
+        "Exames: RX de tórax ___, hemograma ___, RT-PCR ___.",
+        "Solicito transferência para enfermaria/UTI para suporte ventilatório e monitorização de SRAG por influenza."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "O que caracteriza a Síndrome Respiratória Aguda Grave (SRAG) e indica internação?",
+      "alternativas": [
+        "Febre baixa isolada",
+        "Síndrome gripal + dispneia OU SpO2 < 95% OU desconforto respiratório OU piora nas últimas 24h",
+        "Coriza predominante",
+        "Apenas mialgia",
+        "Tosse seca de 2 dias"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o antiviral de escolha para influenza e quando tratar pacientes de grupo de risco?",
+      "alternativas": [
+        "Aciclovir, só nas primeiras 24h",
+        "Oseltamivir, sempre (independente do tempo de sintomas) nos grupos de risco e na SRAG",
+        "Azitromicina de rotina",
+        "Tenofovir",
+        "Nenhum antiviral"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre o diagnóstico de influenza em período epidêmico, é correto:",
+      "alternativas": [
+        "Exige RT-PCR antes de qualquer tratamento",
+        "É clínico-epidemiológico; não é necessário teste para iniciar o tratamento em paciente de risco",
+        "Só pode ser feito com cultura viral",
+        "Depende de hemocultura",
+        "Requer biópsia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual grupo deve receber oseltamivir mesmo se vacinado e mesmo após 48h de sintomas?",
+      "alternativas": [
+        "Adultos jovens hígidos",
+        "Gestantes, idosos, imunossuprimidos e demais grupos de risco / casos de SRAG",
+        "Apenas crianças > 12 anos",
+        "Somente pacientes afebris",
+        "Ninguém"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando indicar antibiótico na influenza?",
+      "alternativas": [
+        "Sempre, de rotina",
+        "Apenas se complicação bacteriana (pneumonia secundária, retorno da febre após 3-4 dias, escarro purulento)",
+        "Em todo paciente febril",
+        "Apenas em crianças",
+        "Nunca"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A SRAG é a síndrome gripal acompanhada de dispneia, SpO2 < 95%, desconforto respiratório ou piora nas últimas 24h — indicação de internação e suporte."},
+    {"resposta": "B", "comentario": "O oseltamivir é o antiviral de escolha; nos grupos de risco e na SRAG deve ser administrado SEMPRE, independentemente do tempo de sintomas (idealmente < 48h, mas não contraindicado depois)."},
+    {"resposta": "B", "comentario": "Em período epidêmico, o diagnóstico é clínico-epidemiológico; não é preciso teste para iniciar o tratamento em paciente de risco. O RT-PCR fica para SRAG, surtos, gestantes e casos graves/atípicos."},
+    {"resposta": "B", "comentario": "Gestantes, idosos, imunossuprimidos e demais grupos de risco (e os casos de SRAG) devem receber oseltamivir mesmo vacinados e mesmo após 48h."},
+    {"resposta": "B", "comentario": "O antibiótico só é indicado na complicação bacteriana (pneumonia secundária, retorno/persistência da febre após 3-4 dias, escarro purulento), não de rotina na influenza."}
+  ]
+}
