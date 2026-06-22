@@ -1,0 +1,183 @@
+{
+  "slug": "cricotireoidostomia",
+  "titulo": "Cricotireoidostomia de Emergência",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Via aérea cirúrgica de emergência (CICO)",
+  "chapter_bar": "CRICOTIREOIDOSTOMIA — CICO + MEMBRANA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CICO",
+      "title": "CICO -> VIA AÉREA CIRÚRGICA PELA MEMBRANA",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.85, "w": 205, "h": 22, "text": "CICO: nao intuba E nao oxigena\n(falha de mascara + supraglotico + VL)", "color": "red", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.5, "w": 205, "h": 22, "text": "Palpar membrana cricotireoidea\n-> incisao + canula/TOT 6.0", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.15, "w": 200, "h": 18, "text": "Confirmar (capno/ausculta) -> traqueo definitiva em 24-72h", "color": "green", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E OBJETIVO",
+      "section_color": "teal",
+      "titulo": "ÚLTIMO RECURSO DE VIA AÉREA",
+      "items": [
+        "Incisão na membrana cricotireoidea para inserir uma cânula e ventilar quando a via aérea superior é inacessível",
+        "Objetivo: estabelecer via aérea definitiva de emergência no cenário CICO ('Can't Intubate, Can't Oxygenate')",
+        "É o ÚLTIMO RECURSO — após tentativas adequadas e rápidas de manejos não cirúrgicos (máscara, supraglótico, videolaringoscopia)",
+        "Marco anatômico: membrana cricotireoidea, entre a cartilagem TIREOIDE e a CRICOIDE",
+        "Não retardar quando indicado — a hipoxemia prolongada é fatal"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INDICAÇÕES (CICO)",
+      "section_color": "red",
+      "titulo": "REALIZAR IMEDIATAMENTE QUANDO",
+      "items": [
+        "Cenário CICO: impossibilidade de intubar E de ventilar com máscara/supraglóticos",
+        "Trauma facial grave ou edema importante de vias aéreas superiores",
+        "Hemorragia maciça oral/nasal impedindo a visualização",
+        "Obstrução anatômica intransponível (tumor, anafilaxia com edema importante)",
+        "Falha repetida de dispositivos alternativos (videolaringoscopia, supraglótico)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONTRAINDICAÇÕES",
+      "section_color": "navy",
+      "headers": ["Tipo", "Observação"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Absoluta", "NENHUMA no cenário de emergência CICO"],
+        ["Relativa — idade", "Crianças pequenas (< 5-12 anos): risco de estenose subglótica — preferir broncoscopia rígida/traqueostomia por especialista, se disponível e seguro"],
+        ["Relativa — anatomia", "Cirurgia cervical prévia, laringe/traqueia muito alterada"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TÉCNICA ABERTA (PADRÃO-OURO)",
+      "section_color": "orange",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "Preparo: decúbito dorsal com leve hiperextensão cervical (se sem lesão cervical); antissepsia; identificar pomo de Adão, cricoide e a membrana",
+        "Material: bisturi (lâmina 10/11), pinça/dissector, cânula de cricostomia ou TOT nº 6,0 (5,5-8,0), guia/dilatador (Seldinger), seringa, fixação, ambu",
+        "1) Palpar e marcar a membrana; 2) incisão cutânea HORIZONTAL de 2-3 cm; 3) dissecar até expor a membrana",
+        "4) incisar diretamente a membrana cricotireoidea; 5) inserir a cânula/TOT na traqueia; 6) fixar",
+        "7) confirmar ventilação com ambu (expansão torácica bilateral + ausculta)",
+        "Alternativas: técnica de Seldinger (agulha + fio-guia + dilatador) com kit; cânula sobre agulha (mais simples, menos segura como via definitiva)"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CONFIRMAÇÃO E PÓS-PROCEDIMENTO",
+      "section_color": "navy",
+      "titulo": "APÓS A VIA AÉREA",
+      "items": [
+        "Confirmar: ventilação eficaz (movimento torácico bilateral), melhora da SpO2, ausculta, CAPNOGRAFIA se disponível",
+        "Monitorização contínua de oxigenação, ventilação e sinais vitais; aspirar secreções se necessário",
+        "Fixar firmemente a cânula para evitar deslocamento",
+        "CONVERSÃO para traqueostomia definitiva em 24-72h, após estabilização, quando possível",
+        "Registrar horário, técnica, dificuldades e complicações"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "COMPLICAÇÕES",
+      "section_color": "red",
+      "titulo": "VIGIAR",
+      "items": [
+        "Imediatas: hemorragia, perfuração da parede posterior da traqueia, FALSO TRAJETO, mau posicionamento",
+        "Tardias: estenose subglótica (sobretudo em crianças), infecção, traqueomalacia",
+        "O risco de estenose subglótica é o motivo da cautela na faixa pediátrica",
+        "Mau posicionamento/falso trajeto -> reavaliar com capnografia e ausculta",
+        "A conversão precoce para traqueostomia reduz complicações tardias"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos; cenário CICO por ___ (trauma facial/edema/hemorragia/obstrução); cricotireoidostomia às ___.",
+        "Técnica: aberta/Seldinger; cânula/TOT nº ___; confirmação por capnografia/ausculta ___; SpO2 atual ___.",
+        "Sangramento/complicação ___; sedoanalgesia/ventilação ___.",
+        "Solicito UTI + cirurgia/ORL para conversão em traqueostomia definitiva (24-72h); transporte com via aérea fixada e capnografia."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a indicação clássica para a cricotireoidostomia de emergência?",
+      "alternativas": [
+        "Qualquer dificuldade leve de intubação",
+        "Cenário CICO: impossibilidade de intubar E de oxigenar com máscara/supraglóticos",
+        "Apneia do sono",
+        "Pneumonia",
+        "Crise asmática leve"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o marco anatômico para a cricotireoidostomia?",
+      "alternativas": [
+        "Entre o osso hioide e a tireoide",
+        "Membrana cricotireoidea (entre a cartilagem tireoide e a cricoide)",
+        "Sobre a glândula tireoide",
+        "No 2º anel traqueal",
+        "Na fúrcula esternal"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Em qual faixa etária a cricotireoidostomia é relativamente contraindicada pelo risco de estenose subglótica?",
+      "alternativas": [
+        "Idosos",
+        "Crianças pequenas (< 5-12 anos)",
+        "Adultos jovens",
+        "Gestantes",
+        "Adolescentes"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Após a cricotireoidostomia de emergência, qual a conduta recomendada quando o paciente estabiliza?",
+      "alternativas": [
+        "Manter a cricostomia indefinidamente",
+        "Converter para traqueostomia definitiva em 24-72h",
+        "Retirar a cânula imediatamente",
+        "Extubar em 1h",
+        "Nenhuma medida adicional"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual método confirma o correto posicionamento da via aérea após o procedimento?",
+      "alternativas": [
+        "Apenas inspeção da pele",
+        "Capnografia, com expansão torácica bilateral e ausculta",
+        "Glicemia",
+        "Pressão arterial isolada",
+        "Frequência cardíaca isolada"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A indicação clássica é o cenário CICO ('Can't Intubate, Can't Oxygenate'): falha de intubação e de oxigenação por máscara/supraglóticos, com risco iminente de hipoxemia."},
+    {"resposta": "B", "comentario": "O marco é a membrana cricotireoidea, localizada entre a cartilagem tireoide e a cartilagem cricoide."},
+    {"resposta": "B", "comentario": "Em crianças pequenas (< 5-12 anos) há contraindicação relativa pelo risco de estenose subglótica; preferem-se alternativas (broncoscopia rígida/traqueostomia por especialista) quando possível."},
+    {"resposta": "B", "comentario": "Recomenda-se converter a cricotireoidostomia em traqueostomia definitiva em 24-72h, após a estabilização, para reduzir complicações tardias."},
+    {"resposta": "B", "comentario": "A capnografia (com expansão torácica bilateral e ausculta) confirma o posicionamento e a ventilação eficaz após o procedimento."}
+  ]
+}

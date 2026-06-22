@@ -1,0 +1,180 @@
+{
+  "slug": "mediastinite_aguda",
+  "titulo": "Mediastinite Aguda",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Mediastinite aguda na emergência",
+  "chapter_bar": "MEDIASTINITE AGUDA — ATB + CONTROLE DE FONTE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — EMERGÊNCIA SÉPTICA",
+      "title": "MEDIASTINITE — TRATAR COMO SEPSE + DRENAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Suspeita (esternotomia/perfuracao esofagica/foco cervical)\nABCDE + sepse + hemoculturas", "color": "navy", "font_size": 5.0},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 205, "h": 20, "text": "ATB EV amplo IMEDIATO + TC de torax com contraste", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.3, "w": 205, "h": 22, "text": "CONTROLE DE FONTE urgente (cirurgia toracica/\ncabeca-pescoco/endoscopia) + UTI", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.08, "w": 200, "h": 16, "text": "Internacao quase sempre (UTI frequente)", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIAS",
+      "section_color": "teal",
+      "titulo": "INFECÇÃO DO MEDIASTINO",
+      "items": [
+        "Infecção/inflamação aguda do mediastino — quase sempre exige ATB EV + drenagem/cirurgia; alta mortalidade",
+        "PÓS-ESTERNOTOMIA (cirurgia cardíaca): 7-30 dias de pós-op, febre, dor esternal, secreção na ferida, 'esterno instável'/clique",
+        "PERFURAÇÃO ESOFÁGICA (endoscopia, corpo estranho, IOT difícil, Boerhaave): dor torácica intensa após vômitos/procedimento, enfisema subcutâneo, pneumomediastino, derrame; evolui rápido para sepse",
+        "MEDIASTINITE NECROSANTE DESCENDENTE: origem odontogênica/amigdalar -> edema cervical, odinofagia, trismo, febre + dor torácica/dispneia",
+        "Trauma penetrante / pós-procedimentos (cateteres, cirurgias cervicais)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PERGUNTAS-CHAVE / RED FLAGS",
+      "section_color": "red",
+      "titulo": "ALTA SUSPEIÇÃO",
+      "items": [
+        "Esternotomia/cirurgia cardíaca nas últimas semanas? Secreção/instabilidade na ferida esternal?",
+        "Endoscopia/dilatação/IOT difícil ou corpo estranho? Vômitos fortes seguidos de dor torácica súbita (Boerhaave)?",
+        "Dor de garganta/infecção dentária antes de piorar? (mediastinite descendente)",
+        "CREPITAÇÃO no pescoço/peito (enfisema subcutâneo); dor retroesternal; disfagia/odinofagia; rouquidão",
+        "Sinais de SEPSE: calafrios, confusão, hipotensão, extremidades frias, lactato elevado"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "TC É O EXAME PRINCIPAL",
+      "items": [
+        "Exame físico: ABCDE + sinais de sepse; pescoço (edema, trismo, crepitação); tórax (dor retroesternal, MV reduzido); ferida esternal (hiperemia, drenagem, deiscência, instabilidade)",
+        "TC de TÓRAX com contraste IV é o principal exame do mediastino",
+        "Suspeita de mediastinite descendente: TC de PESCOÇO + tórax",
+        "Suspeita de perfuração esofágica: esofagografia com contraste hidrossolúvel ± TC contrastada",
+        "Labs: hemograma, eletrólitos, função renal/hepática, PCR, gaso/lactato se sepse; HEMOCULTURAS (2 pares) antes do ATB se não atrasar; ECG se dor torácica"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIÓTICO EMPÍRICO POR ETIOLOGIA",
+      "section_color": "orange",
+      "titulo": "AMPLO ESPECTRO IMEDIATO",
+      "items": [
+        "PÓS-ESTERNOTOMIA (cobrir MRSA + Gram-negativo + anaeróbio): Piperacilina-tazobactam + Vancomicina; ou Cefepime + Metronidazol + Vancomicina",
+        "PERFURAÇÃO ESOFÁGICA (Gram-negativo/anaeróbio ± fungo se grave): Piperacilina-tazobactam ou Cefepime + Metronidazol",
+        "DESCENDENTE (orofaríngea/odontogênica): Ceftriaxona + Metronidazol (ampliar conforme gravidade)",
+        "Doses: Pipe-tazo 4,5 g EV 6/6h; Cefepime 2 g EV 8-12/12h; Metronidazol 500 mg EV 8/8h; Vancomicina 15-20 mg/kg EV 8-12/12h",
+        "Colher culturas antes SE não atrasar; ajustar conforme antibiograma; em choque, considerar ampliar"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "SUPORTE E CONTROLE DE FONTE",
+      "section_color": "navy",
+      "titulo": "MEDIDAS NO PS",
+      "items": [
+        "Monitorização contínua, 2 acessos calibrosos, O2 para meta; cristaloide se hipoperfusão (protocolo de sepse)",
+        "JEJUM (especialmente se suspeita de perfuração esofágica); analgesia (a dor piora a ventilação); antiemético se náusea",
+        "CONTROLE DE FONTE urgente é determinante: acionar cirurgia torácica (± cirurgia geral, otorrino/cabeça-pescoço se foco cervical, endoscopia, UTI, infectologia)",
+        "Acionar a cirurgia IMEDIATAMENTE se instável, sinais de perfuração/coleção importante ou deterioração rápida",
+        "Analgesia: Dipirona 1 g EV 6-8/8h ou Paracetamol 1 g 8/8h; opioide titulado se dor intensa"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO / UTI",
+      "titulo": "DESTINO",
+      "items": [
+        "Suspeita de mediastinite aguda = INTERNAÇÃO (praticamente sempre)",
+        "UTI quase sempre: instabilidade, lactato elevado, necessidade de O2 alto fluxo/VM, rebaixamento, progressão rápida, coleções na TC, perfuração esofágica, pós-esternotomia com sinais locais importantes",
+        "Alta do PS em geral NÃO se aplica — só se mediastinite foi DESCARTADA por avaliação/imagem e há diagnóstico alternativo definido",
+        "Acionamento multidisciplinar precoce muda o prognóstico",
+        "Manter jejum e suporte de sepse durante a espera/transferência"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos; suspeita de mediastinite (etiologia: esternotomia/perfuração esofágica/foco cervical).",
+        "História típica ___; ferida esternal (drenagem/instabilidade) ___; crepitação cervical/torácica ___; sinais de sepse ___ (lactato ___).",
+        "TC ___ (coleção/ar/pneumomediastino?); hemoculturas ___; ATB ___ iniciado às ___; jejum + volume.",
+        "Solicito UTI + cirurgia torácica (± cabeça-pescoço/endoscopia) para controle de fonte URGENTE; transporte com monitorização."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente no 14º dia de pós-esternotomia com febre, dor esternal, secreção na ferida e 'esterno instável'. Qual a principal hipótese e o exame?",
+      "alternativas": [
+        "Pneumonia; radiografia simples",
+        "Mediastinite pós-esternotomia; TC de tórax com contraste",
+        "Pericardite; ecocardiograma apenas",
+        "Infecção urinária; urocultura",
+        "Costocondrite; observação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual o exame de imagem principal na suspeita de mediastinite aguda?",
+      "alternativas": [
+        "Radiografia de tórax isolada",
+        "Tomografia de tórax com contraste IV (± pescoço se suspeita descendente)",
+        "Ultrassom abdominal",
+        "Ressonância de crânio",
+        "Cintilografia óssea"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Na mediastinite pós-esternotomia, o esquema antibiótico empírico deve OBRIGATORIAMENTE cobrir:",
+      "alternativas": [
+        "Apenas Gram-positivos",
+        "MRSA + Gram-negativos + anaeróbios (ex.: pipe-tazo + vancomicina)",
+        "Apenas fungos",
+        "Apenas anaeróbios",
+        "Nenhum micro-organismo"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é a origem típica da mediastinite necrosante descendente?",
+      "alternativas": [
+        "Pós-esternotomia",
+        "Infecção odontogênica/amigdaliana cervical que desce pelos espaços profundos",
+        "Pancreatite",
+        "Litíase renal",
+        "Diverticulite"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Além do antibiótico, qual medida é determinante para o prognóstico da mediastinite aguda?",
+      "alternativas": [
+        "Repouso isolado",
+        "Controle de fonte urgente (drenagem/cirurgia) com abordagem multidisciplinar",
+        "Dieta hiperproteica",
+        "Fisioterapia respiratória isolada",
+        "Apenas analgesia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Pós-esternotomia (7-30 dias) com febre, dor esternal, secreção e esterno instável é mediastinite até prova em contrário; a TC de tórax com contraste é o exame principal."},
+    {"resposta": "B", "comentario": "A TC de tórax com contraste IV é o exame principal do mediastino; acrescenta-se a TC de pescoço quando há suspeita de mediastinite descendente."},
+    {"resposta": "B", "comentario": "Na mediastinite pós-esternotomia o esquema empírico deve cobrir MRSA + Gram-negativos + anaeróbios (ex.: piperacilina-tazobactam + vancomicina, ou cefepime + metronidazol + vancomicina)."},
+    {"resposta": "B", "comentario": "A mediastinite necrosante descendente origina-se de infecção odontogênica/amigdaliana (orofaríngea) que desce pelos espaços cervicais profundos até o mediastino."},
+    {"resposta": "B", "comentario": "O controle de fonte urgente (drenagem/desbridamento cirúrgico) com abordagem multidisciplinar é determinante, junto ao antibiótico precoce e ao suporte de sepse."}
+  ]
+}

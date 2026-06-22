@@ -1,0 +1,183 @@
+{
+  "slug": "complicacoes_traqueostomia",
+  "titulo": "Complicações da Traqueostomia",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Emergências da traqueostomia no PS",
+  "chapter_bar": "TRAQUEOSTOMIA — OBSTRUÍDA x DESLOCADA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — VIA AÉREA EM RISCO",
+      "title": "TRAQUEO — OXIGENAR, DESOBSTRUIR, VENTILAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Falha de ventilacao/dessatura: chamar ajuda + kit\nO2 DUPLO (face E estoma)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Retirar valvula/canula interna + ASPIRAR + testar sonda", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "Sonda PASSA:\npatente (rolha) ->\naspirar/umidificar", "color": "green", "font_size": 5.2},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 28, "text": "Sonda NAO passa:\ndesinsuflar cuff,\nremover canula, ventilar", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PONTO-CHAVE — TRAQUEOSTOMIA x LARINGECTOMIA",
+      "section_color": "purple",
+      "titulo": "DEFINIR ANTES DE TUDO",
+      "items": [
+        "TRAQUEOSTOMIA: a via aérea superior geralmente ainda existe -> pode-se ventilar por boca/nariz e até intubar pela boca",
+        "LARINGECTOMIA TOTAL (estoma terminal): NÃO ventila por boca/nariz — a via aérea é SOMENTE pelo pescoço",
+        "Perguntar ao paciente/família/prontuário qual é o caso muda toda a conduta",
+        "Tempo da traqueostomia: < 7 dias = estoma NÃO maduro (alto risco de falso trajeto ao recolocar)",
+        "Saber: depende de ventilador? tipo/tamanho da cânula? tem cuff? fenestrada? tem cânula interna?"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS PRINCIPAIS",
+      "section_color": "navy",
+      "headers": ["Complicação", "Características"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Obstrução", "Rolha de muco, secreção espessa, coágulo (a mais comum)"],
+        ["Deslocamento/decanulação", "Cânula parcial/totalmente fora, FALSO TRAJETO (sobretudo traqueostomia recente)"],
+        ["Problema do cuff", "Vazamento/ruptura (VM difícil); cuff muito cheio (isquemia)"],
+        ["Sangramento", "Trauma/aspiração; catastrófico: FÍSTULA TRAQUEO-INOMINADA (pode iniciar como 'sangramento sentinela')"],
+        ["Outras", "Infecção/dermatite do estoma, granuloma; pós-troca recente: enfisema subcutâneo, pneumotórax"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PACIENTE INSTÁVEL — ALGORITMO",
+      "section_color": "red",
+      "titulo": "NÃO VENTILA / DESSATURA",
+      "items": [
+        "Passo 0: chamar ajuda (anestesia/cirurgia) + trazer o KIT (aspirador, ambu, O2, máscaras, cânula igual + uma menor, seringa do cuff, xilo gel)",
+        "Passo 1: O2 DUPLO — alto fluxo na FACE E no ESTOMA enquanto decide",
+        "Passo 2: remover válvula de fala/conector + RETIRAR a cânula interna e limpar/trocar; ASPIRAR",
+        "Passo 3: testar patência com sonda — PASSA facilmente = patente (rolha parcial: aspirar, umidificar, nebulizar SF); NÃO passa = obstrução completa/deslocamento (emergência de via aérea)",
+        "Passo 4: desinsuflar o CUFF e reavaliar (pode permitir ventilação pela via aérea superior)",
+        "Passo 5-6: remover a cânula bloqueada; ventilar pelo caminho certo — traqueostomia: ambu por boca/nariz OCLUINDO o estoma; laringectomia: ventilar SÓ pelo estoma (máscara pediátrica veda melhor)"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "RECOLOCAR A CÂNULA? DEPENDE DO ESTOMA",
+      "section_color": "orange",
+      "titulo": "MADURO x RECENTE",
+      "items": [
+        "Estoma MADURO (> 7-10 dias, crônico): tentar recolocar mesmo tamanho; se difícil, uma menor; usar obturador, lubrificar, técnica suave",
+        "Confirmar com CAPNOGRAFIA + expansibilidade + ausculta antes de fixar",
+        "DICA: se difícil recolocar a cânula, introduzir um tubo orotraqueal fino (5,5/6,0/6,5, aramado se disponível) pelo traqueostoma — cuidado para não seletivar",
+        "Estoma RECENTE (< 7 dias) ou tempo desconhecido: EVITAR tentativas cegas repetidas (alto risco de falso trajeto) — priorizar ventilação por face e INTUBAÇÃO orotraqueal",
+        "Capnografia é o melhor 'detector de via aérea' quando o paciente ventila"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SANGRAMENTO — FÍSTULA TRAQUEO-INOMINADA",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA RARA E LETAL",
+      "items": [
+        "Sangramento pequeno e paciente bem: aspirar, avaliar trauma local, umidificar, revisar anticoagulação, observar (comum pós-aspiração)",
+        "Sangramento moderado/grande OU 'do nada': suspeitar de FÍSTULA TRAQUEO-INOMINADA (mortalidade altíssima)",
+        "Contenção (ponte até a cirurgia): HIPERINSUFLAR o cuff para tamponar",
+        "Se falhar: COMPRESSÃO DIGITAL via estoma contra a parede anterior — a artéria inominada é ANTERIOR à traqueia, então comprimir em direção ao ESTERNO (não à coluna)",
+        "Acionar CIRURGIA URGENTE imediatamente"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PACIENTE ESTÁVEL, INTERNAÇÃO E CASA",
+      "titulo": "CONDUTAS",
+      "items": [
+        "Estável (apito/vazamento/obstrução parcial): retirar válvula/tampão, limpar a cânula interna, aspirar, umidificar; checar circuito/cuff se em VM; nebulização com SF se secreção espessa",
+        "Estoma com celulite: higiene local, cultura se secreção purulenta, antibiótico conforme gravidade",
+        "INTERNAR/observar em sala de emergência: hipoxemia/desconforto, via aérea não confirmada, traqueostomia recente com complicação, sangramento importante/suspeita de fístula, pneumotórax/enfisema pós-troca, necessidade de broncoscopia/cirurgia",
+        "ALTA se: ventila bem, SpO2 basal, cânula patente e fixada, causa resolvida, sem sangramento, família orientada",
+        "Casa: nebulização com SF 5 mL 4-6/6h se secreção, umidificação/hidratação, aspiração só se necessário, sinais de alarme ('não entra ar', sonda não passa, dessaturação, sangramento, febre)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Via aérea: ( ) traqueostomia ( ) laringectomia total; tempo da traqueo ___ dias (última troca ___); cânula tamanho ___, cuffada? interna?",
+        "Dependência de VM ___; gatilho: obstrução/decanulação/sangramento/vazamento; SpO2 ___, necessidade de O2 ___.",
+        "Achados: sonda de aspiração (passa/não passa), secreção espessa, enfisema subcutâneo, sangramento; condutas: retirada de cânula interna, aspiração, desinsuflar cuff, troca/remoção, ventilação por face/estoma.",
+        "Solicito via aérea estável + broncoscopia/cirurgia se sangramento importante/fístula ou complicação pós-troca; UTI se instável."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Por que é fundamental diferenciar traqueostomia de laringectomia total na emergência de via aérea?",
+      "alternativas": [
+        "Não há diferença prática",
+        "Na traqueostomia ainda se pode ventilar por boca/nariz; na laringectomia total a via aérea é SOMENTE pelo estoma cervical",
+        "A laringectomia permite intubação oral",
+        "A traqueostomia nunca tem cuff",
+        "São a mesma coisa"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Diante de cânula de traqueostomia possivelmente obstruída, qual passo confirma a patência?",
+      "alternativas": [
+        "Radiografia de tórax",
+        "Tentar passar uma sonda de aspiração: se passa facilmente, está patente",
+        "Inserir contraste",
+        "Apenas auscultar",
+        "Trocar a cânula às cegas"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Traqueostomia recente (< 7 dias) com decanulação e dificuldade de recolocar a cânula. Qual a conduta mais segura?",
+      "alternativas": [
+        "Tentativas cegas repetidas de recolocação",
+        "Evitar tentativas cegas (risco de falso trajeto); priorizar ventilação por face e intubação orotraqueal",
+        "Aguardar sem fazer nada",
+        "Forçar a cânula maior",
+        "Apenas O2 no estoma"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sangramento volumoso e súbito pela traqueostomia. Qual a manobra de contenção até a cirurgia?",
+      "alternativas": [
+        "Clampear a cânula",
+        "Hiperinsuflar o cuff para tamponar e, se falhar, compressão digital via estoma em direção ao esterno (fístula traqueo-inominada)",
+        "Aspirar vigorosamente",
+        "Retirar a cânula e observar",
+        "Comprimir em direção à coluna"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o melhor 'detector de via aérea' para confirmar ventilação após manejo da traqueostomia?",
+      "alternativas": [
+        "Oximetria isolada",
+        "Capnografia (associada a expansibilidade e ausculta)",
+        "Frequência cardíaca",
+        "Temperatura",
+        "Glicemia capilar"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na traqueostomia a via aérea superior costuma estar pérvia (ventila-se por boca/nariz e pode-se intubar); na laringectomia total a via aérea é exclusivamente pelo estoma cervical — isso define a estratégia de ventilação."},
+    {"resposta": "B", "comentario": "Passar uma sonda de aspiração testa a patência: se passa facilmente, a cânula está pérvia (provável rolha parcial); se não passa, pensar em obstrução completa ou deslocamento."},
+    {"resposta": "B", "comentario": "Na traqueostomia recente (estoma não maduro), tentativas cegas de recolocação têm alto risco de falso trajeto; prioriza-se ventilação por face e intubação orotraqueal."},
+    {"resposta": "B", "comentario": "No sangramento volumoso suspeita-se de fístula traqueo-inominada: hiperinsuflar o cuff para tamponar e, se falhar, compressão digital via estoma contra a parede anterior em direção ao esterno (a artéria é anterior), acionando cirurgia urgente."},
+    {"resposta": "B", "comentario": "A capnografia é o melhor detector de via aérea quando o paciente ventila, complementada por expansibilidade torácica e ausculta."}
+  ]
+}

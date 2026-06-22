@@ -1,0 +1,195 @@
+{
+  "slug": "drenagem_torax",
+  "titulo": "Drenagem de Tórax",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Toracostomia com dreno no PS",
+  "chapter_bar": "DRENAGEM DE TÓRAX — TRIÂNGULO + SELO D'ÁGUA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — INDICAÇÃO E URGÊNCIA",
+      "title": "TÓRAX — DESCOMPRIMIR (HIPERTENSIVO) -> DRENAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Pneumotorax/derrame com indicacao de drenagem\nO2 + monitorizacao + analgesia", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.55, "w": 150, "h": 26, "text": "HIPERTENSIVO/instavel:\ndescompressao por agulha\nJA (4-5 EIC LAA)", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.75, "y": 0.55, "w": 150, "h": 24, "text": "Estavel com indicacao:\ntoracostomia no\ntriangulo de seguranca", "color": "teal", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.2, "w": 200, "h": 18, "text": "Selo d'agua + RX de controle (sempre)", "color": "green", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E OBJETIVOS",
+      "section_color": "teal",
+      "titulo": "PARA QUE SERVE",
+      "items": [
+        "Toracostomia com tubo: remover ar (pneumotórax) ou líquido (derrame/hemotórax) do espaço pleural",
+        "Permite a REEXPANSÃO pulmonar e previne/trata insuficiência respiratória",
+        "Evita o choque obstrutivo do pneumotórax HIPERTENSIVO",
+        "Pneumotórax (tamanho, adultos): pequeno < 2 cm ápice-cúpula; grande >= 2 cm ou > 30% do hemitórax",
+        "Pneumotórax pequeno, primário e assintomático pode apenas ser OBSERVADO (sem drenar)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INDICAÇÕES E CONTRAINDICAÇÕES",
+      "section_color": "navy",
+      "headers": ["Categoria", "Situações"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Absolutas", "Hipertensivo; instabilidade hemodinâmica; insuf. respiratória; traumático moderado/grande; bilateral; paciente em ventilação mecânica"],
+        ["Relativas", "Espontâneo grande e sintomático; secundário (mesmo pequeno) sintomático; recorrência precoce"],
+        ["Contraind. relativas", "Coagulopatia grave (avaliar), aderências pleurais, infecção no local de inserção"],
+        ["Emergência", "No HIPERTENSIVO, NENHUMA contraindicação impede o procedimento"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PNEUMOTÓRAX HIPERTENSIVO — DESCOMPRESSÃO IMEDIATA",
+      "section_color": "red",
+      "titulo": "ANTES DO TUBO, SE INSTÁVEL",
+      "items": [
+        "É diagnóstico CLÍNICO (não esperar RX): hipotensão, turgência jugular, desvio de traqueia, timpanismo, MV abolido",
+        "Descompressão imediata com AGULHA/cateter 14G (ou maior)",
+        "Local PREFERÍVEL: 5º EIC na linha axilar anterior (4-5º EIC LAA); alternativa: 2º EIC linha hemiclavicular",
+        "É medida TEMPORÁRIA — sempre seguida de drenagem torácica definitiva",
+        "Em ventilação mecânica, o hipertensivo evolui muito rápido"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANESTESIA, ANALGESIA E SEDAÇÃO",
+      "section_color": "orange",
+      "titulo": "MEDICAÇÕES (PACIENTE CONSCIENTE)",
+      "items": [
+        "Anestesia local OBRIGATÓRIA: Lidocaína 1-2% SEM vaso (máx 4,5 mg/kg; ~300 mg no adulto de 70 kg) — infiltrar pele, subcutâneo, músculo intercostal e PLEURA PARIETAL (ponto mais doloroso)",
+        "Analgesia sistêmica: Dipirona 1 g EV; Morfina 2-5 mg EV (titulada); Fentanil 25-50 mcg EV (preferir opioide em dor intensa/trauma)",
+        "Sedação (se agitado/dor intensa): Midazolam 1-2 mg EV titulado; Cetamina 0,5-1 mg/kg EV (trauma/instabilidade) — sempre com monitorização e O2",
+        "ATB profilático NÃO de rotina no pneumotórax espontâneo",
+        "ATB (ex.: Cefazolina 1 g EV) em trauma penetrante, drenagem prolongada ou alto risco de infecção"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "MATERIAL E LOCAL DE INSERÇÃO",
+      "section_color": "navy",
+      "titulo": "TRIÂNGULO DE SEGURANÇA",
+      "items": [
+        "Tubo: pneumotórax 14-24 Fr (tendência a tubos menores); hemotórax/derrame espesso, calibre maior",
+        "Kelly/Rochester, bisturi nº 10/11, fio (nylon 0/1 ou Vicryl 1), sistema de selo d'água (500 mL de SF), aspiração (opcional)",
+        "TRIÂNGULO DE SEGURANÇA: anterior = borda lateral do peitoral maior; posterior = borda anterior do latíssimo do dorso; inferior = 5º EIC; superior = base da axila",
+        "Ponto usual: 4º ou 5º EIC, linha axilar média/anterior",
+        "Inserir SEMPRE pela borda SUPERIOR da costela inferior (evitar o feixe vásculo-nervoso intercostal)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TÉCNICA PASSO A PASSO (TORACOSTOMIA)",
+      "section_color": "teal",
+      "titulo": "DISSECÇÃO ROMBA",
+      "items": [
+        "1) Posicionar em decúbito dorsal/semi-sentado, braço ipsilateral elevado; 2) antissepsia ampla (clorexidina alcoólica 2%) + campo estéril",
+        "3) Anestesia local profunda; 4) incisão cutânea de 2-3 cm sobre a costela inferior",
+        "5) Dissecção ROMBA com pinça até a pleura; 6) entrada no espaço pleural com o DEDO (confirmar e afastar aderências/víscera)",
+        "7) Introduzir o tubo direcionando-o APICALMENTE (ar) ou basal (líquido); 8) conectar ao SELO D'ÁGUA",
+        "9) Fixar o tubo com sutura (e ponto em bolsa para a retirada); 10) curativo oclusivo",
+        "Pós: confirmar expansão e posição com RX; selo d'água ± sucção (-10 a -20 cmH2O) se indicado; avaliar fuga aérea (borbulhamento)"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "RETIRADA, COMPLICAÇÕES E TRANSPORTE",
+      "titulo": "PÓS-PROCEDIMENTO",
+      "items": [
+        "Critérios de retirada: pulmão totalmente expandido + ausência de fuga aérea por 24h + paciente assintomático + RX satisfatório",
+        "Complicações: dor, infecção/empiema, enfisema subcutâneo, lesão pulmonar, hemotórax, mau posicionamento, EDEMA DE REEXPANSÃO (drenagem muito rápida de grande volume)",
+        "Transporte: manter o sistema SEMPRE abaixo do nível do tórax; NÃO clampear o dreno; clamp disponível só para troca do frasco",
+        "Conexões firmes, curativo oclusivo, monitorização contínua, O2 e material de emergência (agulha/tubo) à mão",
+        "Se piora respiratória no transporte: pensar em obstrução do dreno ou pneumotórax hipertensivo recorrente -> intervir"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos; pneumotórax/derrame/hemotórax ___ (lado ___); dreno ___ Fr no ___ EIC LAA; selo d'água ± sucção.",
+        "Funcionante: ___; borbulhamento (fuga aérea): ___; oscilação: ___; débito/aspecto: ___.",
+        "Sinais vitais ___; SpO2 ___; RX pós-dreno ___ (expansão?).",
+        "Checklist de transporte OK (sistema abaixo do tórax, NÃO clampear, clamp/agulha disponíveis); solicito leito/torácica conforme necessidade."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com pneumotórax hipertensivo e instabilidade hemodinâmica. Qual a primeira medida?",
+      "alternativas": [
+        "Aguardar a radiografia de tórax para confirmar",
+        "Descompressão imediata por agulha (4-5º EIC linha axilar anterior ou 2º EIC hemiclavicular), seguida de drenagem definitiva",
+        "Intubação orotraqueal isolada",
+        "Apenas oxigênio e observação",
+        "Pericardiocentese"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quais são os limites do triângulo de segurança para a toracostomia?",
+      "alternativas": [
+        "Esterno, clavícula e mamilo",
+        "Borda lateral do peitoral maior, borda anterior do latíssimo do dorso, 5º EIC e base da axila",
+        "Linha hemiclavicular e 2º EIC apenas",
+        "Apêndice xifoide e rebordo costal",
+        "Escápula e coluna"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Ao inserir o dreno torácico, por que se passa pela borda SUPERIOR da costela inferior?",
+      "alternativas": [
+        "Para facilitar a sutura",
+        "Para evitar o feixe vásculo-nervoso intercostal, que corre na borda inferior da costela",
+        "Por questão estética",
+        "Para reduzir a dor da pele",
+        "Não há diferença"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Quais são os critérios para retirada do dreno de tórax no pneumotórax?",
+      "alternativas": [
+        "Apenas ausência de dor",
+        "Pulmão expandido, ausência de fuga aérea por 24h, paciente assintomático e RX satisfatório",
+        "Retirar em 6h sempre",
+        "Apenas controle laboratorial",
+        "Retirar assim que cessar o borbulhamento, sem RX"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Durante o transporte de um paciente com dreno em selo d'água, qual conduta é correta?",
+      "alternativas": [
+        "Clampear o dreno para evitar vazamento",
+        "Manter o sistema abaixo do nível do tórax e NÃO clampear o dreno",
+        "Elevar o frasco acima do tórax",
+        "Desconectar o selo d'água",
+        "Pinçar o dreno e desligar o O2"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O pneumotórax hipertensivo é diagnóstico clínico e exige descompressão imediata por agulha (4-5º EIC LAA, ou 2º EIC hemiclavicular), seguida sempre de drenagem torácica definitiva — não se aguarda RX."},
+    {"resposta": "B", "comentario": "O triângulo de segurança é delimitado pela borda lateral do peitoral maior (anterior), borda anterior do latíssimo do dorso (posterior), 5º EIC (inferior) e base da axila (superior)."},
+    {"resposta": "B", "comentario": "Passa-se pela borda superior da costela inferior porque o feixe vásculo-nervoso intercostal corre na borda inferior de cada costela; assim evita-se lesão vascular/nervosa."},
+    {"resposta": "B", "comentario": "Retira-se o dreno quando o pulmão está totalmente expandido, sem fuga aérea por 24h, com paciente assintomático e RX de controle satisfatório."},
+    {"resposta": "B", "comentario": "No transporte mantém-se o sistema sempre abaixo do nível do tórax e NÃO se clampeia o dreno (risco de pneumotórax hipertensivo); o clamp fica disponível apenas para troca de frasco."}
+  ]
+}

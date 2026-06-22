@@ -1,0 +1,178 @@
+{
+  "slug": "paracentese",
+  "titulo": "Paracentese na Emergência",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Paracentese diagnóstica e terapêutica",
+  "chapter_bar": "PARACENTESE — PBE + SAAG + ALBUMINA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DIAGNÓSTICA x TERAPÊUTICA",
+      "title": "PARACENTESE — PUNCIONAR -> ANALISAR / ALIVIAR",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 20, "text": "Ascite: avaliar indicacao + coagulacao\nUS para marcar ponto seguro (QIE)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 150, "h": 26, "text": "DIAGNOSTICA:\nexcluir PBE\n(celulas/cultura/SAAG)", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "TERAPEUTICA (tensa):\nLVP + ALBUMINA se\n>5 L (6-8 g/L)", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.14, "w": 200, "h": 18, "text": "PMN >=250/mm3 = PBE -> cefotaxima/ceftriaxona", "color": "red", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INDICAÇÕES",
+      "section_color": "navy",
+      "headers": ["Tipo", "Situações"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Diagnóstica", "Ascite nova; cirrótico internado (excluir PBE); sinais de infecção/deterioração: febre, dor abdominal, confusão (encefalopatia), leucocitose, IRA"],
+        ["Terapêutica", "Ascite TENSA/sintomática (dispneia, desconforto); alívio imediato de pressão; ascite refratária a diuréticos"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONTRAINDICAÇÕES",
+      "section_color": "navy",
+      "headers": ["Tipo", "Observação"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Absolutas", "CIVD ativa/coagulopatia grave não reversível; infecção de pele no local de punção"],
+        ["Relativas", "Distensão intestinal intensa, aderências extensas, gestação avançada"],
+        ["Coagulopatia leve / plaquetas > 50.000", "Geralmente SEGURA com cuidado — coagulopatia isolada NÃO contraindica se há indicação urgente"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PRÉ-PROCEDIMENTO E MATERIAL",
+      "section_color": "teal",
+      "titulo": "PREPARO",
+      "items": [
+        "Avaliação: história/exame, sinais vitais e estabilidade; labs (hemograma, plaquetas, INR/TTPa, função renal)",
+        "US abdominal preferencial: confirma líquido, identifica o melhor ponto e evita vasos/órgãos/aderências",
+        "Material: luvas estéreis, campo, antisséptico (clorexidina 2%), agulha/cateter 14-18G com seringa 20 mL, conjunto de drenagem/bolsa (LVP), lidocaína 1-2%, frascos de hemocultura e tubos para citologia/bioquímica",
+        "Drogas: Lidocaína 1-2% sem vaso 5-10 mL; Albumina 20-25% 6-8 g por litro retirado se LVP > 5 L; Dipirona 1 g para conforto; sedação leve (Midazolam 0,02-0,05 mg/kg) só se ansioso e monitorizado",
+        "ATB se PBE suspeita/confirmada: Cefotaxima 2 g EV 8/8h ou Ceftriaxona 1 g EV/dia"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TÉCNICA PASSO A PASSO",
+      "section_color": "orange",
+      "titulo": "Z-TRACK NO QIE",
+      "items": [
+        "Local: quadrante inferior ESQUERDO, 5-8 cm acima da sínfise púbica e lateral à linha média (ou QID se melhor)",
+        "EVITAR a linha média (risco de lesão de bexiga) e a região subcostal (fígado/baço); confirmar líquido por US/palpação e marcar",
+        "Posição: decúbito dorsal, tronco levemente elevado, joelhos semifletidos; antissepsia + anestesia com lidocaína (pele -> peritônio)",
+        "Técnica Z-TRACK: deslocar a pele lateralmente antes de inserir a agulha (reduz vazamento posterior de líquido)",
+        "Inserir perpendicularmente aspirando; ao atingir o peritônio, coletar amostras e/ou conectar dreno para LVP; monitorar sinais vitais",
+        "LVP: remover lentamente (1-4h conforme volume); repor ALBUMINA 20-25% IV (6-8 g/L) após retirar > 5 L"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANÁLISE DO LÍQUIDO ASCÍTICO",
+      "section_color": "navy",
+      "headers": ["Exame", "Interpretação"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Células + diferencial", ">= 250 NEUTRÓFILOS/mm³ sugere PBE"],
+        ["Cultura (frasco de hemocultura)", "Maior sensibilidade na identificação do agente"],
+        ["SAAG (gradiente albumina soro-ascite)", ">= 1,1 = hipertensão portal (transudato); < 1,1 = outras causas"],
+        ["Proteínas, glicose, citologia, amilase", "Conforme suspeita (neoplasia, pancreática, etc.)"]
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PÓS-PROCEDIMENTO E COMPLICAÇÕES",
+      "titulo": "CUIDADOS",
+      "items": [
+        "Cobrir o sítio com curativo estéril; monitorar sinais vitais e diurese",
+        "Observar hipotensão pós-paracentese (prevenir com albumina na LVP), sangramento e perfuração",
+        "Reavaliar necessidade de repetir a paracentese ou ajustar a terapêutica (diurético, restrição de sódio)",
+        "Complicações: hipotensão pós-paracentese (disfunção circulatória), sangramento local, perfuração intestinal (rara), infecção do sítio, vazamento de líquido",
+        "PBE confirmada (PMN >= 250): iniciar ATB e considerar albumina (reduz síndrome hepatorrenal); profilaxia secundária após o episódio"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com ascite (cirrose/neoplasia/IC); indicação: diagnóstica (excluir PBE) / terapêutica (tensa).",
+        "Coagulação: plaquetas ___, INR ___; US marcou ponto no QIE ___; volume retirado ___ L; albumina ___ g (se > 5 L).",
+        "Líquido: PMN ___ /mm³ (PBE?), cultura ___, SAAG ___; ATB ___ (se PBE).",
+        "Solicito internação/seguimento (PBE -> ATB + albumina); vigiar hipotensão pós-paracentese e função renal."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual contagem no líquido ascítico define peritonite bacteriana espontânea (PBE)?",
+      "alternativas": [
+        ">= 250 neutrófilos/mm³",
+        "> 50 hemácias/mm³",
+        "Glicose < 100",
+        "Proteína > 3 g/dL",
+        "Qualquer leucócito"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Após paracentese de grande volume (> 5 L), o que deve ser administrado para prevenir a disfunção circulatória/hipotensão?",
+      "alternativas": [
+        "Solução glicosada",
+        "Albumina 20-25% IV (6-8 g por litro retirado)",
+        "Antibiótico",
+        "Diurético em bolus",
+        "Plasma fresco para todos"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o local preferencial de punção na paracentese?",
+      "alternativas": [
+        "Linha média infraumbilical",
+        "Quadrante inferior esquerdo (lateral à linha média, acima da sínfise)",
+        "Região subcostal direita",
+        "Epigástrio",
+        "Hipocôndrio esquerdo"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Um SAAG (gradiente albumina soro-ascite) >= 1,1 g/dL indica:",
+      "alternativas": [
+        "Ascite por hipertensão portal",
+        "Ascite neoplásica",
+        "Tuberculose peritoneal",
+        "Pancreatite",
+        "Síndrome nefrótica"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre coagulopatia e paracentese, é correto:",
+      "alternativas": [
+        "Qualquer alteração da coagulação contraindica o procedimento",
+        "Coagulopatia leve isolada (plaquetas > 50.000) geralmente não contraindica a paracentese quando há indicação",
+        "Sempre transfundir plasma antes",
+        "Nunca puncionar cirróticos",
+        "Exige INR < 1,0"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "A", "comentario": "Contagem >= 250 neutrófilos/mm³ no líquido ascítico define PBE, indicando antibiótico (cefotaxima/ceftriaxona) e, em geral, albumina."},
+    {"resposta": "B", "comentario": "Após LVP > 5 L, repõe-se albumina 20-25% IV (6-8 g por litro retirado) para prevenir a disfunção circulatória pós-paracentese e a hipotensão."},
+    {"resposta": "B", "comentario": "O local preferencial é o quadrante inferior esquerdo, lateral à linha média e acima da sínfise púbica, evitando linha média (bexiga) e região subcostal (fígado/baço)."},
+    {"resposta": "A", "comentario": "SAAG >= 1,1 g/dL indica ascite por hipertensão portal (transudativa, como na cirrose); < 1,1 sugere outras causas (neoplasia, TB, pancreática)."},
+    {"resposta": "B", "comentario": "Coagulopatia leve isolada (incluindo plaquetas > 50.000) geralmente não contraindica a paracentese quando há indicação; coagulopatia isolada não é, por si, contraindicação absoluta."}
+  ]
+}

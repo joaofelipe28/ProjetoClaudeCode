@@ -1,0 +1,194 @@
+{
+  "slug": "derrame_pleural",
+  "titulo": "Derrame Pleural na Emergência",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Derrame pleural — avaliação e conduta",
+  "chapter_bar": "DERRAME PLEURAL — LIGHT + QUANDO DRENAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — OBSERVAR x PUNCIONAR x DRENAR",
+      "title": "DERRAME PLEURAL — GRAVIDADE E ETIOLOGIA GUIAM",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Dispneia + macicez; confirmar com US/RX\nestratificar gravidade + etiologia provavel", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.22, "y": 0.5, "w": 140, "h": 26, "text": "Provavel transudato\n(ICC/cirrose): tratar\ncausa + diuretico", "color": "green", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 26, "text": "Unilateral/atipico:\nPUNCAO diagnostica\n(Light)", "color": "teal", "font_size": 5.2},
+        {"id": "d", "x": 0.78, "y": 0.5, "w": 145, "h": 28, "text": "Empiema/pH<=7,2 ou\ninsuf. resp/hemotorax:\nDRENAR", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ETIOLOGIAS — TRANSUDATO x EXSUDATO",
+      "section_color": "navy",
+      "headers": ["Grupo", "Causas"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Transudato (clínica)", "ICC (bilateral, congestão), cirrose/hidrotórax hepático (direito), síndrome nefrótica/hipoalbuminemia, sobrecarga/DRC"],
+        ["Exsudato (não clínica)", "Parapneumônico/empiema, neoplasia, TEP, tuberculose (linfocitário), trauma (hemotórax), pancreatite/ruptura esofágica"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO INICIAL",
+      "section_color": "teal",
+      "titulo": "ANAMNESE + EXAME + IMAGEM",
+      "items": [
+        "Anamnese: velocidade da dispneia, dor pleurítica, febre/calafrios; história de ICC/cirrose/DRC/neoplasia/TB/TEP/trauma; ortopneia/edema, tosse, perda ponderal; anticoagulantes",
+        "Exame: FR/SpO2/uso de musculatura; PA/FC/perfusão (sepse/hemotórax); MV reduzido, macicez, egofonia; congestão (turgência, edema, ascite)",
+        "Imagem: US torácico à beira-leito (confirma, estima volume, mostra septações/loculações e orienta a punção); RX (PA/perfil; decúbito lateral se dúvida)",
+        "TC de tórax: dúvida diagnóstica, suspeita de malignidade/complicação/loculação, ou derrame desproporcional",
+        "Labs conforme hipótese: hemograma, PCR, função renal, albumina, enzimas hepáticas, BNP (se ICC), gaso se hipoxemia"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "ANÁLISE DO LÍQUIDO PLEURAL (SE PUNCIONADO)",
+      "section_color": "navy",
+      "titulo": "PAINEL E CRITÉRIOS DE LIGHT",
+      "items": [
+        "Enviar (mínimo): proteína e LDH (classificar), pH, glicose, celularidade/diferencial, Gram/cultura (+ anaeróbios se infeccioso), citologia (se neoplasia)",
+        "Conforme contexto: triglicerídeos (quilotórax), ADA (TB), amilase (pancreática/esofágica)",
+        "CRITÉRIOS DE LIGHT (exsudato se >= 1): proteína pleural/sérica > 0,5; LDH pleural/sérico > 0,6; LDH pleural > 2/3 do limite superior do LDH sérico",
+        "SAAG e proteínas ajudam na ascite associada; no pleural, Light é o padrão de classificação",
+        "Atenção: pH cai com a DEMORA ao laboratório — colher e processar rápido (em seringa, com gelo)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "QUANDO OBSERVAR, PUNCIONAR OU DRENAR",
+      "section_color": "navy",
+      "headers": ["Situação", "Conduta"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Alta prob. de transudato, estável", "Tratar causa de base (diurético/otimização) + reavaliar; punção se falha/dúvida"],
+        ["Unilateral/atípico/1º episódio", "PUNÇÃO diagnóstica (se janela segura) — 'dar nome' ao derrame"],
+        ["Parapneumônico/empiema", "Antibiótico + decidir drenagem por critérios do líquido/imagem"],
+        ["Trauma/hemotórax ou insuf. resp.", "Estabilizar + DRENAGEM conforme gravidade (alívio/terapêutica)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO DRENAR COM URGÊNCIA (INFECÇÃO PLEURAL)",
+      "section_color": "red",
+      "titulo": "CRITÉRIOS DO LÍQUIDO",
+      "items": [
+        "PUS franco = empiema -> drenar",
+        "pH <= 7,2 -> derrame parapneumônico COMPLICADO -> drenar (pH é muito sensível ao tempo até o laboratório)",
+        "pH 7,2-7,4 (intermediário): considerar drenar se LDH alto (> 900), glicose baixa, grande volume, septações no US/realce pleural na TC, febre persistente",
+        "pH >= 7,4: baixo risco de complicado — geralmente sem necessidade de drenagem imediata",
+        "Parapneumônico NÃO complicado costuma ter pH > 7,2 e glicose > 60 — responde a antibiótico sem dreno se boa evolução",
+        "Insuficiência respiratória por derrame volumoso: drenagem terapêutica de alívio (toracocentese ou dreno)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO ETIOLÓGICO E SUPORTE",
+      "section_color": "orange",
+      "titulo": "O 'MOTOR' DO DERRAME",
+      "items": [
+        "Medidas gerais: monitorização, O2 para alvo, analgesia da dor pleurítica, reavaliação seriada (dispneia/FR/necessidade de O2)",
+        "ICC/sobrecarga: Furosemida + controle hídrico/sódio; repetir US/RX conforme evolução",
+        "Parapneumônico/empiema: antibiótico para pneumonia conforme protocolo + decisão de drenagem pelos critérios do líquido",
+        "Neoplásico: alívio sintomático + investigação (citologia/TC/oncologia); recorrentes -> pleurodese/cateter fora do PS",
+        "TEP: seguir protocolo de TEP; hidrotórax hepático grande melhora com punção, mas dreno contínuo costuma ser má ideia (perdas/infecção)"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: hipoxemia significativa/necessidade de O2 alto fluxo/VM; parapneumônico complicado/empiema (pH <= 7,2); sepse/pneumonia moderada-grave; hemotórax relevante; necessidade de procedimento sem condição ambulatorial; comorbidade descompensada",
+        "ALTA possível se TODOS: estável, SpO2 adequada, plano etiológico definido (ex.: ICC respondendo ao diurético), sem sinais de infecção pleural que exija drenagem, retorno programado",
+        "Orientações de alarme: piora da dispneia, dor torácica intensa, febre persistente, confusão, síncope, aumento rápido do derrame",
+        "Reavaliar em 48-72h (transudato em resposta) com imagem se necessário",
+        "Derrame pequeno/estável sem gravidade: observação + investigação ambulatorial"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com derrame pleural ___ (D/E, volume, uni/bilateral); dispneia ___; febre/dor pleurítica ___.",
+        "Gravidade: PA/FC/FR/SpO2 ___; necessidade de O2 ___; sepse/trauma ___; suspeita etiológica: ICC/parapneumônico/neoplásico/TEP/hemotórax.",
+        "Líquido (se colhido): proteína/LDH (Light) ___, pH ___, glicose ___, Gram/cultura ___, citologia ___.",
+        "Condutas: O2, diurético/ATB/analgesia; necessidade de drenagem (sim/não e por quê). Solicito leito/UTI/torácica conforme gravidade."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Pela análise do líquido pleural, qual achado indica derrame parapneumônico COMPLICADO, com necessidade de drenagem?",
+      "alternativas": [
+        "pH >= 7,4 e glicose normal",
+        "pH <= 7,2 ou pus franco (empiema)",
+        "Predomínio de transudato",
+        "LDH baixo",
+        "Citologia negativa"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Os critérios de Light classificam o derrame como EXSUDATO quando:",
+      "alternativas": [
+        "Proteína pleural/sérica < 0,3",
+        "Pelo menos um: proteína pleural/sérica > 0,5; LDH pleural/sérico > 0,6; ou LDH pleural > 2/3 do limite superior do sérico",
+        "Sempre que houver dispneia",
+        "Apenas se houver febre",
+        "Quando o derrame é bilateral"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente estável com ICC e derrame pleural bilateral compatível com congestão. Qual a conduta inicial?",
+      "alternativas": [
+        "Drenagem torácica imediata",
+        "Tratar a causa de base (diurético/otimização) e reavaliar; punção só se falha ou dúvida",
+        "Toracotomia",
+        "Pleurodese de urgência",
+        "Antibiótico empírico"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual exame de imagem é mais útil à beira-leito para confirmar o derrame, estimar volume e orientar a punção segura?",
+      "alternativas": [
+        "Radiografia em decúbito apenas",
+        "Ultrassom torácico",
+        "Ressonância de tórax",
+        "Cintilografia",
+        "PET-CT"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Por que o pH do líquido pleural deve ser processado rapidamente?",
+      "alternativas": [
+        "Porque não tem valor diagnóstico",
+        "Porque é muito sensível ao tempo — a demora até o laboratório pode reduzir falsamente o pH",
+        "Porque sobe com o tempo",
+        "Porque exige jejum",
+        "Porque depende da glicemia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Pus franco (empiema) ou pH <= 7,2 caracterizam derrame parapneumônico complicado e indicam drenagem; pH 7,2-7,4 é intermediário (considerar outros marcadores) e pH >= 7,4 é baixo risco."},
+    {"resposta": "B", "comentario": "Pelos critérios de Light, é exsudato se houver pelo menos um: proteína pleural/sérica > 0,5; LDH pleural/sérico > 0,6; ou LDH pleural > 2/3 do limite superior do LDH sérico."},
+    {"resposta": "B", "comentario": "Com alta probabilidade de transudato (ICC, derrame bilateral, congestão) e paciente estável, trata-se a causa de base (diurético/otimização), reservando a punção para falha de resposta ou dúvida."},
+    {"resposta": "B", "comentario": "O ultrassom torácico à beira-leito confirma o líquido, estima o volume, mostra septações/loculações e orienta a punção segura."},
+    {"resposta": "B", "comentario": "O pH pleural é muito sensível ao tempo; a demora no transporte ao laboratório pode reduzi-lo falsamente, levando a interpretação equivocada (parece complicado sem ser)."}
+  ]
+}

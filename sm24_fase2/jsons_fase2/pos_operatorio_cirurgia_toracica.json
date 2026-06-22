@@ -1,0 +1,193 @@
+{
+  "slug": "pos_operatorio_cirurgia_toracica",
+  "titulo": "Pós-Operatório de Cirurgia Torácica",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Pós-op de cirurgia torácica no PS",
+  "chapter_bar": "PÓS-OP TORÁCICO — DOR, DRENO E COMPLICAÇÕES",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — IDENTIFICAR O PROBLEMA CENTRAL",
+      "title": "PÓS-OP TORÁCICO — OXIGENAR + ANALGESIA + TRIAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Pos-op toracico no PS: ABCDE + RX\nidentificar o problema central", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.22, "y": 0.5, "w": 140, "h": 24, "text": "Dor/hipoventilacao:\nanalgesia multimodal\n+ higiene bronquica", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 130, "h": 26, "text": "Sangramento/hemo\n/pneumo/fuga aerea:\ndreno + cirurgia", "color": "red", "font_size": 5.0},
+        {"id": "d", "x": 0.78, "y": 0.5, "w": 140, "h": 24, "text": "Sepse/TEP/FA:\ntratar conforme\nprotocolo", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "COMPLICAÇÕES POR JANELA TEMPORAL",
+      "section_color": "navy",
+      "headers": ["Período", "Complicações"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["24-72h", "Dor intensa -> hipoventilação/atelectasia/hipoxemia; sangramento/hemotórax; pneumotórax/fuga aérea, enfisema subcutâneo; insuf. respiratória; FA pós-op; problemas do dreno"],
+        ["3-10 dias", "Atelectasia/pneumonia; derrame reacional/loculado, empiema; TEP/TVP; deiscência, náusea/constipação por opioide"],
+        ["Semanas (pós-alta)", "Dor neuropática/intercostal pós-toracotomia; infecção de sítio; derrame persistente, quilotórax, fístula broncopleural tardia"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E O DRENO QUE CHEGA AO PS",
+      "section_color": "teal",
+      "titulo": "ANAMNESE DIRIGIDA",
+      "items": [
+        "Qual cirurgia e quando? (VATS x toracotomia; ressecção/pleurodese/decorticação/trauma); lado operado; intercorrências",
+        "Tem DRENO? tipo, débito recente, aspecto (seroso/sanguinolento/leitoso), 'borbulhamento' (fuga aérea)",
+        "ATENÇÃO: paciente NÃO recebe alta com dreno tubular em selo d'água. Se chega drenado no PS, em geral tem VÁLVULA DE HEIMLICH (unidirecional), conectada ao dreno tubular ou a um dreno fino (PIGTAIL/Wayne/Pneumovalve)",
+        "Sintomas: dispneia, dor, febre/calafrios, tosse/expectoração, HEMOPTISE, síncope, dor pleurítica",
+        "Comorbidades/risco: DPOC/asma, cardiopatia, anticoagulante, neoplasia, tabagismo; analgesia/ATB/profilaxia de TEV em uso"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAME FÍSICO E EXAMES",
+      "section_color": "navy",
+      "titulo": "O QUE BUSCAR",
+      "items": [
+        "Sinais vitais, FR/SpO2, perfusão, temperatura; padrão ventilatório, musculatura acessória; ferida (eritema/secreção/deiscência); dreno (fixação, dobras, obstrução); ENFISEMA subcutâneo",
+        "Ausculta/percussão: MV reduzido unilateral, crepitações, roncos; cardiovascular (ritmo irregular = FA, congestão); MMII (TVP)",
+        "RX de tórax: pneumotórax, derrame/hemotórax, atelectasia, pneumonia, POSIÇÃO do dreno",
+        "ECG (dispneia/dor/palpitação/idoso); labs conforme quadro (hemograma, PCR, eletrólitos/renal, gaso se hipoxemia, lactato se sepse, troponina se dor/ECG alterado)",
+        "TC (± angio-TC) se suspeita de TEP, hemotórax/coleção não explicada, piora desproporcional ou dúvida de complicação cirúrgica"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANALGESIA MULTIMODAL (PERMITE TOSSIR/VENTILAR)",
+      "section_color": "orange",
+      "titulo": "BASE -> OPIOIDE SE NECESSÁRIO",
+      "items": [
+        "Base: Dipirona 1 g VO/EV 4-6/6h OU Paracetamol 750-1000 mg 6-8/8h",
+        "AINE por curto período se sem contraindicação renal/GI/hemorrágica: Ibuprofeno 400-600 mg 8/8h ou Cetoprofeno 100 mg 12/12h — EVITAR AINE se houve PLEURODESE recente",
+        "Opioide se a dor impede ventilar/tossir: Tramadol 50-100 mg 6-8/8h ou Morfina 2-4 mg EV (repetir a cada 10-15 min até controlar; monitorar sedação/FR)",
+        "Adjuvantes: antiemético (Ondansetrona 4 mg 8/8h) + laxativo se opioide (Lactulose 10-20 mL 8-12/12h)",
+        "A boa analgesia é o que previne atelectasia/pneumonia (permite respiração profunda e tosse)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "EMERGÊNCIAS — SANGRAMENTO, PNEUMOTÓRAX, TEP, DRENO",
+      "section_color": "red",
+      "titulo": "RED FLAGS E CONDUTA",
+      "items": [
+        "SANGRAMENTO/HEMOTÓRAX: palidez, hipotensão/taquicardia, queda de Hb, aumento rápido do débito sanguinolento no dreno -> ABC, 2 acessos, tipagem/prova cruzada, Hb seriado, reposição; acionar cirurgia torácica (pode exigir reabordagem)",
+        "PNEUMOTÓRAX/FUGA AÉREA: RX; checar o sistema do dreno (conexões, dobras, obstrução, frasco abaixo do tórax); grande pneumo + instabilidade = emergência (descompressão/drenagem)",
+        "ENFISEMA subcutâneo extenso SEM repercussão ventilatória: geralmente conservador — discutir com torácica/UTI",
+        "TEP/TVP: dispneia desproporcional, taquicardia, dor pleurítica, dessaturação inexplicada, síncope -> angio-TC e anticoagulação (avaliar risco, discutir com cirurgia)",
+        "PROBLEMAS DO DRENO: exteriorizou/saiu -> curativo OCLUSIVO + RX imediato; desconectou -> assepsia + restabelecer selo d'água; sem oscilação/sem débito com piora -> suspeitar obstrução (mas nem todo dreno sem oscilação é problema)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "FEBRE/PNEUMONIA E ARRITMIA (FA PÓS-OP)",
+      "section_color": "navy",
+      "titulo": "OUTRAS FRENTES",
+      "items": [
+        "Febre/tosse/suspeita de pneumonia: RX + hemograma/PCR ± gaso; antibiótico conforme gravidade/protocolo (pós-op recente e internação aumentam risco de germes hospitalares)",
+        "Higiene brônquica: incentivo respiratório, fisioterapia, nebulização com SF se secreção espessa, mobilização precoce",
+        "Sepse/instabilidade -> protocolo de sepse + UTI",
+        "FA pós-operatória (comum): ECG + corrigir gatilhos (dor, hipoxemia, distúrbio eletrolítico, infecção); controle de frequência se estável; instabilidade -> cardioversão e suporte avançado",
+        "Não esquecer profilaxia/avaliação de TEV"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR/observar em sala crítica: necessidade de O2/hipoxemia/fadiga respiratória; dor que impede ventilar apesar de analgesia; pneumotórax/hemotórax/complicação do dreno; sangramento/instabilidade/queda de Hb; pneumonia moderada-grave/sepse; FA sintomática; suspeita de TEP; pós-op recente (< 7 dias) ou cirurgia maior (lobectomia/pneumonectomia) com sintomas",
+        "ALTA possível se TODOS: estável, SpO2 adequada em ar ambiente/basal, dor controlada VO sem limitação ventilatória, RX sem complicação que exija observação, orientações de alarme + retorno com a equipe cirúrgica",
+        "Casa: Dipirona/Paracetamol ± AINE 3 dias ± Tramadol/Codeína; incentivo respiratório + caminhadas curtas; curativo conforme orientação",
+        "Orientações de alarme: piora da dispneia, febre persistente, dor progressiva, dessaturação, síncope, hemoptise, confusão",
+        "Retorno definido (idealmente contato com a equipe cirúrgica)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Cirurgia: VATS/toracotomia — procedimento ___, lado ___, data ___; queixa principal e evolução ___.",
+        "Dreno: ( ) não ( ) sim — tipo (tubular/Heimlich/pigtail) ___, débito ___ mL/h, aspecto ___, fuga aérea ___.",
+        "ABCDE: PA/FC/FR/SpO2/T ___; achados: MV reduzido, crepitações, enfisema subcutâneo, FA no ECG ___; RX/TC ___; Hb/leuco/PCR/gaso ___.",
+        "Motivo: ( ) hipoxemia ( ) sangramento/hemotórax ( ) pneumotórax/fuga aérea ( ) sepse/pneumonia ( ) arritmia ( ) suspeita TEP ( ) complicação do dreno -> solicito torácica/UTI."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Por que a analgesia multimodal é prioritária no pós-operatório de cirurgia torácica?",
+      "alternativas": [
+        "Apenas por conforto",
+        "Porque a dor causa hipoventilação, levando a atelectasia, hipoxemia e pneumonia; a analgesia permite respiração profunda e tosse eficaz",
+        "Para reduzir o tempo de cirurgia",
+        "Para evitar arritmias exclusivamente",
+        "Não é prioritária"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Um paciente pós-toracotomia chega ao PS com dreno exteriorizado (saiu). Qual a conduta imediata?",
+      "alternativas": [
+        "Recolocar o dreno às cegas",
+        "Curativo oclusivo no orifício + radiografia de tórax imediata",
+        "Apenas observação",
+        "Clampear e liberar",
+        "Aspirar pelo orifício"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sinais de palidez, hipotensão, taquicardia e aumento rápido do débito sanguinolento no dreno sugerem:",
+      "alternativas": [
+        "Atelectasia",
+        "Sangramento/hemotórax — acionar cirurgia torácica e repor volume",
+        "Constipação por opioide",
+        "Infecção urinária",
+        "Dor neuropática"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual analgésico deve ser EVITADO em paciente submetido a pleurodese recente?",
+      "alternativas": [
+        "Dipirona",
+        "AINE (anti-inflamatório não esteroidal)",
+        "Paracetamol",
+        "Tramadol",
+        "Morfina"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual arritmia é comum no pós-operatório de cirurgia torácica e exige correção de gatilhos (dor, hipoxemia, eletrólitos)?",
+      "alternativas": [
+        "Bloqueio AV total",
+        "Fibrilação atrial",
+        "Taquicardia ventricular sustentada",
+        "Bradicardia sinusal",
+        "Síndrome de Brugada"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A dor pós-toracotomia causa hipoventilação e tosse ineficaz, levando a atelectasia, hipoxemia e pneumonia; por isso a analgesia multimodal é prioritária — permite respiração profunda e higiene brônquica."},
+    {"resposta": "B", "comentario": "Dreno exteriorizado: aplica-se curativo oclusivo no orifício e faz-se RX de tórax imediato para avaliar pneumotórax; aciona-se a equipe cirúrgica."},
+    {"resposta": "B", "comentario": "Palidez, hipotensão, taquicardia e débito sanguinolento crescente indicam sangramento/hemotórax: ABC, acessos, prova cruzada, Hb seriado, reposição e acionamento da cirurgia torácica (possível reabordagem)."},
+    {"resposta": "B", "comentario": "Após pleurodese recente, evita-se o AINE, pois sua ação anti-inflamatória pode prejudicar a aderência pleural desejada pelo procedimento."},
+    {"resposta": "B", "comentario": "A fibrilação atrial é a arritmia mais comum no pós-op torácico; o manejo inclui corrigir gatilhos (dor, hipoxemia, distúrbios eletrolíticos, infecção) e controlar a frequência (ou cardioverter se instável)."}
+  ]
+}
