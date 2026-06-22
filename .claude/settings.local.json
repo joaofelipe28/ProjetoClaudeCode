@@ -57,7 +57,8 @@
       "Bash(python3 sm24_gerador/build_apostila.py jsons_fase2/desidratacao_pediatria.json --validate-only --outdir outputs)",
       "Bash(sips -s format png outputs/apostila_asma_pediatria.pdf --out /tmp/asma_p1.png)",
       "Bash(sips -s format png outputs/apostila_trauma_ortopedico_pediatria.pdf --out /tmp/trauma_ort_p1.png)",
-      "Bash(sips -s format png outputs/apostila_diverticulite_aguda.pdf --out /tmp/divert_p1.png)"
+      "Bash(sips -s format png outputs/apostila_diverticulite_aguda.pdf --out /tmp/divert_p1.png)",
+      "Bash(sips -s format png outputs/apostila_lesao_esofagica_caustica.pdf --out /tmp/caustico_p1.png)"
     ]
   }
 }

@@ -1,0 +1,156 @@
+{
+  "slug": "perfuracao_esofagica",
+  "titulo": "Perfuração Esofágica",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Perfuração esofágica na emergência",
+  "chapter_bar": "PERFURAÇÃO ESOFÁGICA — ATB + CIRURGIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — EMERGÊNCIA TEMPO-DEPENDENTE",
+      "title": "PERFURAÇÃO ESOFÁGICA — JEJUM + ATB + IMAGEM + CIRURGIA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Dor toracica/cervical + enfisema subcutaneo\nABCDE + jejum + ATB EV IMEDIATO", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.55, "w": 205, "h": 20, "text": "TC com contraste oral hidrossoluvel (localizar)", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.26, "w": 150, "h": 26, "text": "Cervical contida/\nestavel: conservador\n(NPO + ATB + drenar)", "color": "green", "font_size": 5.2},
+        {"id": "d", "x": 0.75, "y": 0.26, "w": 150, "h": 28, "text": "Instavel/toracica/\nperitonite: cirurgia\n(ou stent endoscopico)", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIA",
+      "section_color": "teal",
+      "titulo": "EMERGÊNCIA",
+      "items": [
+        "Solução de continuidade da parede esofágica com extravasamento para mediastino/pleura/cervical — alto risco de MEDIASTINITE, sepse e morte",
+        "Etiologia: IATROGÊNICA (endoscopia/dilatação — a mais comum hospitalar); espontânea por vômitos (Boerhaave, distal); trauma; corpo estranho/cáustico; neoplasia",
+        "Quadro: dor cervical/torácica/epigástrica súbita e intensa, ENFISEMA subcutâneo (crepitação), dispneia, disfagia/odinofagia",
+        "Evoluído: febre, taquicardia, hipotensão, odor fétido, mediastinite/choque",
+        "Apresentação pode ser INSIDIOSA após procedimentos — alto índice de suspeição"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "IMAGEM",
+      "items": [
+        "RX de tórax: pneumomediastino, enfisema subcutâneo, derrame pleural (frequentemente à esquerda no Boerhaave)",
+        "TC com contraste IV + contraste oral HIDROSSOLÚVEL (Gastrografin): exame de escolha — extravasamento, ar no mediastino, coleções, local/extensão",
+        "Esofagograma com contraste hidrossolúvel se TC inconclusiva (bário só com cautela — risco de mediastinite química)",
+        "EDA com cautela (evitar insuflação excessiva) — por equipe experiente, útil para terapia (stent)",
+        "Labs: hemograma, PCR, função renal, gasometria se instável, hemoculturas x2 se febre"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CONDUTA IMEDIATA NO PS",
+      "section_color": "orange",
+      "titulo": "JEJUM + ATB + SUPORTE",
+      "items": [
+        "ABCDE: via aérea (IOT precoce se comprometimento), O2, monitorização; 2 acessos calibrosos + reposição volêmica",
+        "JEJUM ABSOLUTO; analgesia titulada; corrigir distúrbios hidroeletrolíticos",
+        "ATB EV IMEDIATO: Piperacilina-tazobactam 4,5 g EV 6-8/8h (cobre Gram-negativos + anaeróbios + orais)",
+        "  Alergia grave a beta-lactâmico: Ciprofloxacino 400 mg 12/12h + Metronidazol 500 mg 8/8h",
+        "  Considerar Fluconazol 200 mg 12/12h em perfuração tardia (> 24h)/imunossuprimido",
+        "Pantoprazol 40 mg EV 12/12h; SNG de aspiração suave com cautela (não ultrapassar a perfuração às cegas); drenar derrame pleural significativo"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DECISÃO TERAPÊUTICA",
+      "section_color": "navy",
+      "headers": ["Estratégia", "Quando"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Conservador", "Perfuração CERVICAL contida, sem sepse/mediastinite extensa, paciente estável: NPO, ATB EV, vigilância, drenagem percutânea, suporte nutricional"],
+        ["Endoscópico", "Stent coberto (selar), clip (pequenas), terapia a vácuo — torácicas/abdominais selecionadas, diagnóstico precoce, bordas viáveis"],
+        ["Cirúrgico", "Instabilidade/choque séptico, peritonite, grande extravasamento/mediastinite difusa, falha do conservador/endoscópico"],
+        ["Cirurgia por local", "Cervical: drenagem/sutura; Torácica: toracotomia + desbridamento + drenagem; Abdominal: sutura + omento ou esofagectomia/derivação"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PONTOS-CHAVE / MODELO DE REGULAÇÃO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Alta suspeita: vômitos intensos + dor torácica súbita + enfisema subcutâneo (Boerhaave); ou pós-endoscopia (iatrogênica)",
+        "NÃO atrasar ATB e cirurgia/drenagem por busca de imagem se o paciente está instável",
+        "Cervical = melhor prognóstico (mais conservador); torácica/abdominal = maior risco de mediastinite (intervenção agressiva)",
+        "Paciente ___ anos; perfuração ___ (cervical/torácica/abdominal), ___ (precoce < 24h / tardia); enfisema ___; sepse ___.",
+        "Condutas: jejum, ATB ___ às ___, IBP EV, drenagem ___; solicito cirurgia torácica/geral URGENTE + UTI; nutrição por sonda distal/parenteral."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o exame de imagem de escolha para confirmar e localizar uma perfuração esofágica?",
+      "alternativas": [
+        "Radiografia simples isolada",
+        "TC com contraste IV e contraste oral hidrossolúvel (Gastrografin)",
+        "Esofagografia baritada",
+        "Ultrassom cervical",
+        "Ressonância magnética"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a etiologia mais comum de perfuração esofágica no ambiente hospitalar?",
+      "alternativas": [
+        "Espontânea (Boerhaave)",
+        "Iatrogênica (procedimentos endoscópicos/dilatação)",
+        "Trauma penetrante",
+        "Neoplasia",
+        "Corpo estranho"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual conduta deve ser iniciada IMEDIATAMENTE diante de suspeita de perfuração esofágica?",
+      "alternativas": [
+        "Dieta líquida",
+        "Jejum absoluto + antibiótico EV de amplo espectro + avaliação cirúrgica e imagem urgente",
+        "Alta com IBP oral",
+        "Endoscopia com insuflação ampla",
+        "Apenas analgesia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual perfuração esofágica tem melhor prognóstico e maior chance de manejo conservador?",
+      "alternativas": [
+        "Torácica com mediastinite",
+        "Cervical contida em paciente estável",
+        "Abdominal com peritonite",
+        "Qualquer perfuração tardia",
+        "Perfuração com choque séptico"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual achado clínico/radiológico reforça a suspeita de perfuração esofágica (ex.: Boerhaave)?",
+      "alternativas": [
+        "Ascite",
+        "Enfisema subcutâneo / pneumomediastino, frequentemente com derrame pleural à esquerda",
+        "Icterícia",
+        "Esplenomegalia",
+        "Sopro cardíaco"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A TC com contraste IV e contraste oral hidrossolúvel (Gastrografin) é o exame de escolha: identifica extravasamento, ar no mediastino, coleções e o local/extensão da perfuração."},
+    {"resposta": "B", "comentario": "A causa mais comum no ambiente hospitalar é a iatrogênica (procedimentos endoscópicos/dilatação); a espontânea (Boerhaave) é típica por vômitos intensos, na porção distal."},
+    {"resposta": "B", "comentario": "Toda suspeita exige jejum absoluto, antibiótico EV de amplo espectro imediato, avaliação cirúrgica e imagem urgente — não se deve atrasar o ATB/cirurgia em paciente instável."},
+    {"resposta": "B", "comentario": "A perfuração cervical contida, em paciente estável, tem melhor prognóstico e maior chance de manejo conservador; torácicas/abdominais têm maior risco de mediastinite e costumam exigir intervenção."},
+    {"resposta": "B", "comentario": "Enfisema subcutâneo e pneumomediastino (com derrame pleural frequentemente à esquerda no Boerhaave) reforçam a suspeita de perfuração esofágica."}
+  ]
+}

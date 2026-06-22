@@ -1,0 +1,168 @@
+{
+  "slug": "ulcera_peptica",
+  "titulo": "Úlcera Péptica",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Doença ulcerosa péptica e complicações",
+  "chapter_bar": "ÚLCERA PÉPTICA — H. PYLORI + IBP",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — NÃO COMPLICADA x COMPLICAÇÃO",
+      "title": "ÚLCERA PÉPTICA — DOR EPIGÁSTRICA -> ALARME?",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Dor epigastrica; pesquisar H. pylori e AINE\nbuscar SINAIS DE ALARME", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Nao complicada:\nIBP + erradicar HP\n+ suspender AINE", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 26, "text": "Sangramento: EDA +\nIBP EV; PERFURACAO:\ncirurgia urgente", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Ulcera gastrica: biopsiar (excluir neoplasia)", "color": "purple", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E RISCO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Perda focal da mucosa gástrica/duodenal que ultrapassa a muscular da mucosa",
+        "Causas principais: H. PYLORI, AINEs/AAS, estresse (criticamente enfermos)",
+        "Risco: AINE/AAS/corticoide, tabagismo, álcool, idade avançada, úlcera prévia, comorbidades",
+        "Dor: duodenal MELHORA com alimento; gástrica pode PIORAR; pirose, plenitude pós-prandial",
+        "Complicações: sangramento, perfuração, obstrução"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE ALARME",
+      "section_color": "red",
+      "titulo": "INDICAM EDA / INVESTIGAÇÃO",
+      "items": [
+        "Hemorragia digestiva alta: hematêmese, melena, queda de Hb",
+        "Vômitos persistentes / sinais de obstrução",
+        "Perda ponderal, disfagia, anemia",
+        "Idade > 60 anos com sintomas dispépticos NOVOS",
+        "Dor súbita intensa + abdome rígido = PERFURAÇÃO até prova em contrário"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — NÃO COMPLICADA",
+      "section_color": "orange",
+      "titulo": "IBP + ERRADICAÇÃO + MEDIDAS",
+      "items": [
+        "Suspender AINE/AAS quando possível; cessar tabagismo, reduzir álcool",
+        "IBP: Omeprazol 20-40 mg/dia (ou 20 mg 12/12h se sintomas intensos); duodenal 4-6 semanas, gástrica 8 semanas (reavaliar com EDA)",
+        "Pesquisar H. pylori (antígeno fecal/teste respiratório; suspender IBP 2 semanas antes quando viável)",
+        "Erradicação de HP (quádruplo com bismuto, 10-14d): IBP 12/12h + bismuto + tetraciclina 500 mg 6/6h + metronidazol 500 mg 8/8h",
+        "  Alternativa (baixa resistência): IBP 12/12h + amoxicilina 1 g 12/12h + claritromicina 500 mg 12/12h por 14d",
+        "Confirmar erradicação 4-8 semanas após o término; EDA na úlcera gástrica para confirmar cicatrização (e biopsiar)"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "COMPLICAÇÕES — SANGRAMENTO E PERFURAÇÃO",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIAS",
+      "items": [
+        "SANGRAMENTO: ABCDE, reposição volêmica, cruzar hemocomponentes; EDA urgente para hemostasia (Forrest); IBP EV alta dose (pantoprazol 80 mg bolus + 8 mg/h por 72h)",
+        "  Falha endoscópica -> embolização ou cirurgia; investigar/tratar HP antes da alta",
+        "PERFURAÇÃO: dor súbita + abdome em tábua; RX ortostático mostra pneumoperitônio (ar subdiafragmático); TC mais sensível",
+        "  Conduta: ABCDE, jejum, SNG, cristaloide; ATB EV imediato (Pipe-tazo 4,5 g 6-8/8h, ou Ceftriaxona 2 g + Metronidazol); Pantoprazol 40 mg EV 12/12h",
+        "  CIRURGIA de urgência: sutura primária + patch de omento (GRAHAM) ± drenagem",
+        "Instável: otimizar volemia/noradrenalina; não atrasar a cirurgia por exames irrelevantes"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR/UTI: sangramento ativo/instabilidade, perfuração, vômitos persistentes, complicação (obstrução), necessidade de EDA/embolização, comorbidades",
+        "ALTA (não complicada): dor controlada VO, sem sangramento, Hb estável, tratamento de HP iniciado se indicado, plano de seguimento/EDA",
+        "Orientações de alarme: hematêmese, melena, dor súbita intensa, síncope, febre, vômitos persistentes",
+        "Evitar AINE; se imprescindível, proteção com IBP",
+        "Em dúvida com dispepsia funcional, valorizar os sinais de alarme"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com dor epigástrica; uso de AINE ___; H. pylori ___; sinais de alarme ___.",
+        "Complicação: sangramento (Hb ___) / perfuração (pneumoperitônio ___); sinais vitais ___.",
+        "Condutas: jejum, SNG, fluidos, ATB ___ (se perfuração), IBP EV ___, analgesia; hemocomponentes ___.",
+        "Solicito EDA urgente (sangramento) ou cirurgia de urgência (perfuração) ± UTI."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com dor epigástrica súbita e intensa, abdome em tábua e RX com ar subdiafragmático. Qual o diagnóstico e a conduta?",
+      "alternativas": [
+        "Gastrite; alta com IBP oral",
+        "Úlcera péptica PERFURADA; jejum, ATB EV, IBP EV e cirurgia de urgência (Graham)",
+        "Pancreatite; apenas hidratação",
+        "Dispepsia funcional; ansiolítico",
+        "Cólica biliar; analgesia e alta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual a duração recomendada de IBP para a úlcera GÁSTRICA não complicada?",
+      "alternativas": [
+        "1 semana",
+        "8 semanas, com EDA de controle para confirmar cicatrização (e biópsia)",
+        "24 horas",
+        "6 meses sempre",
+        "Não usar IBP"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "No sangramento por úlcera péptica, qual a conduta-chave após a estabilização?",
+      "alternativas": [
+        "Cirurgia imediata em todos",
+        "Endoscopia digestiva alta urgente para hemostasia + IBP EV em dose alta",
+        "Apenas observação",
+        "Antibiótico oral",
+        "Alta precoce"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Por que toda úlcera GÁSTRICA deve ser biopsiada?",
+      "alternativas": [
+        "Para pesquisar varizes",
+        "Para excluir neoplasia (câncer gástrico)",
+        "Para medir o pH",
+        "Para avaliar motilidade",
+        "Não há necessidade de biópsia"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual o esquema de erradicação de H. pylori preferível em áreas de alta resistência?",
+      "alternativas": [
+        "IBP isolado",
+        "Terapia quádrupla com bismuto (IBP + bismuto + tetraciclina + metronidazol) por 10-14 dias",
+        "Amoxicilina isolada",
+        "Apenas claritromicina",
+        "Metronidazol isolado por 3 dias"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor súbita + abdome em tábua + pneumoperitônio (ar subdiafragmático) é úlcera perfurada: jejum, SNG, ATB EV, IBP EV e cirurgia de urgência (sutura primária + patch de omento de Graham)."},
+    {"resposta": "B", "comentario": "A úlcera gástrica não complicada usa IBP por 8 semanas, com EDA de controle para confirmar a cicatrização e biopsiar (excluir neoplasia); a duodenal, 4-6 semanas."},
+    {"resposta": "B", "comentario": "Após estabilizar o sangramento, a EDA urgente permite a hemostasia endoscópica (classificação de Forrest), associada a IBP EV em dose alta; falha endoscópica indica embolização/cirurgia."},
+    {"resposta": "B", "comentario": "A úlcera gástrica deve ser biopsiada para excluir câncer gástrico, e a EDA de controle confirma a cicatrização. A úlcera duodenal benigna não exige biópsia rotineira."},
+    {"resposta": "B", "comentario": "Em áreas de alta resistência prefere-se a terapia quádrupla com bismuto (IBP + bismuto + tetraciclina + metronidazol) por 10-14 dias; a tríplice com claritromicina depende da resistência local."}
+  ]
+}

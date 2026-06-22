@@ -1,0 +1,140 @@
+{
+  "slug": "gastroparesia",
+  "titulo": "Gastroparesia",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Gastroparesia na urgência",
+  "chapter_bar": "GASTROPARESIA — PROCINÉTICO + EXCLUIR OBSTR.",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "GASTROPARESIA — EXCLUIR OBSTRUÇÃO -> PROCINÉTICO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.85, "w": 205, "h": 22, "text": "Nausea/vomito/saciedade precoce\nclinica + EDA + TC (descartar obstrucao mecanica)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.5, "w": 205, "h": 22, "text": "Sem obstrucao: dieta zero + procineticos EV\n+ progredir dieta liquida", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.15, "w": 200, "h": 18, "text": "Vomitos: SNG + quantificar estase (retirar se <300 mL/24h)", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Síndrome de retardo do esvaziamento gástrico NA AUSÊNCIA de obstrução mecânica, com sintomas",
+        "Etiologia: idiopática, DM tipo 1 (neuropatia autonômica), lesão do nervo vago (pós-cirúrgica)",
+        "Medicamentos: análogos de GLP-1, opioides",
+        "Clínica: náusea, vômito, saciedade precoce, dor abdominal, perda de peso",
+        "Diagnóstico: clínica + EDA; TC de abdome para DESCARTAR obstrução mecânica (essencial)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NA URGÊNCIA",
+      "section_color": "orange",
+      "titulo": "PROCINÉTICOS + DIETA",
+      "items": [
+        "Dieta zero inicial + goma de mascar (estímulo)",
+        "Procinéticos: Bromoprida 10 mg EV 8/8h; Metoclopramida 10 mg EV 8/8h; Domperidona 10 mg VO 8/8h",
+        "Progredir a dieta conforme aceitação, iniciando por dieta LÍQUIDA",
+        "Se vômitos: passar SNG nº 18 e quantificar a estase gástrica",
+        "Retirar a SNG quando o débito for < 300 mL/24h"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ORIENTAÇÕES NA ALTA",
+      "section_color": "purple",
+      "titulo": "MANEJO AMBULATORIAL",
+      "items": [
+        "Refeições em pequenas porções, fracionadas",
+        "Evitar alimentos gordurosos, ácidos e picantes (retardam o esvaziamento)",
+        "Hidratação e suporte nutricional",
+        "Manter procinéticos conforme orientação",
+        "Otimizar a causa de base (controle glicêmico no DM; revisar opioides/GLP-1)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com náusea/vômito/saciedade precoce; causa provável ___ (DM/vagotomia/medicação).",
+        "Obstrução mecânica EXCLUÍDA (EDA/TC): ___; estase gástrica/débito de SNG: ___.",
+        "Conduta: dieta zero, procinético ___, progressão de dieta líquida; SNG se vômitos.",
+        "Encaminho à gastro para investigação/seguimento; otimizar causa de base."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual passo é indispensável antes de firmar o diagnóstico de gastroparesia?",
+      "alternativas": [
+        "Iniciar opioide",
+        "Descartar obstrução mecânica (EDA/TC)",
+        "Suspender hidratação",
+        "Indicar cirurgia",
+        "Solicitar colonoscopia"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a classe medicamentosa de escolha no tratamento da gastroparesia?",
+      "alternativas": [
+        "Opioides",
+        "Procinéticos (bromoprida, metoclopramida, domperidona)",
+        "Antibióticos",
+        "Corticoides",
+        "Anti-histamínicos"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual causa medicamentosa pode levar a gastroparesia?",
+      "alternativas": [
+        "Análogos de GLP-1 e opioides",
+        "Paracetamol",
+        "Amoxicilina",
+        "Vitamina C",
+        "Dipirona"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Quando retirar a sonda nasogástrica colocada por vômitos na gastroparesia?",
+      "alternativas": [
+        "Imediatamente após a passagem",
+        "Quando o débito for < 300 mL/24h",
+        "Somente após 7 dias fixos",
+        "Nunca retirar",
+        "Apenas em centro cirúrgico"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual orientação dietética é adequada na gastroparesia?",
+      "alternativas": [
+        "Grandes refeições ricas em gordura",
+        "Pequenas porções, evitando alimentos gordurosos, ácidos e picantes",
+        "Jejum prolongado permanente",
+        "Apenas alimentos sólidos volumosos",
+        "Dieta hipercalórica em poucas refeições grandes"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A gastroparesia é definida na AUSÊNCIA de obstrução mecânica; por isso é indispensável descartá-la com EDA e TC de abdome antes de firmar o diagnóstico."},
+    {"resposta": "B", "comentario": "Os procinéticos (bromoprida, metoclopramida, domperidona) são a classe de escolha, acelerando o esvaziamento gástrico."},
+    {"resposta": "A", "comentario": "Análogos de GLP-1 e opioides retardam o esvaziamento gástrico e podem causar/agravar gastroparesia — revisar essas medicações faz parte do manejo."},
+    {"resposta": "B", "comentario": "A SNG colocada por vômitos/estase deve ser retirada quando o débito cair para < 300 mL/24h, indicando melhora do esvaziamento."},
+    {"resposta": "B", "comentario": "Orienta-se refeições em pequenas porções, fracionadas, evitando alimentos gordurosos, ácidos e picantes, que retardam o esvaziamento gástrico."}
+  ]
+}

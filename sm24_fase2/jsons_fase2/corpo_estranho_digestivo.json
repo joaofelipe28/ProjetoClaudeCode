@@ -1,0 +1,155 @@
+{
+  "slug": "corpo_estranho_digestivo",
+  "titulo": "Corpo Estranho no Trato Digestivo",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Ingestão de corpo estranho no PS",
+  "chapter_bar": "CORPO ESTRANHO DIGESTIVO — EDA x OBSERVAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — TEMPO/TIPO DEFINE A URGÊNCIA",
+      "title": "CORPO ESTRANHO — EMERGÊNCIA, URGÊNCIA OU OBSERVAR",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Ingesta de corpo estranho: ABCDE + via aerea\ntipo, tempo, sintomas, RX (perfuracao -> TC)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 28, "text": "EMERGENCIA (<2-6h):\nobstrucao, bateria/\npontiagudo no esofago", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 130, "h": 26, "text": "URGENCIA (<24h):\nCE esofagico rombo,\nimpactacao alimentar", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 140, "h": 26, "text": "OBSERVAR:\nrombo <2,5x5cm\napos o estomago", "color": "green", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EPIDEMIOLOGIA E PRINCÍPIOS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Crianças (6 meses-6 anos), em geral acidental (moeda é o clássico); adultos por impactação alimentar (bolo de carne) — 80% têm esôfago normal, 20% têm doença esofágica",
+        "Atenção a esofagite eosinofílica (mimetiza), psiquiátricos, presidiários (não alimentares)",
+        "80% se resolvem espontaneamente (eliminados); 10-20% precisam de EDA",
+        "PRINCÍPIO: nenhum corpo estranho deve permanecer > 24h impactado no esôfago",
+        "Sintomas: disfagia, odinofagia, sialorreia (sugere obstrução total), dor torácica; avaliar via aérea (próximo ao cricofaríngeo)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE ALARME",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA / PERFURAÇÃO",
+      "items": [
+        "BATERIA (pilha) no esôfago = SEMPRE emergência (isquemia, queimadura elétrica/química)",
+        "Objeto PONTIAGUDO no esôfago (perfura em até 35%)",
+        "SIALORREIA = suspeita de obstrução esofágica total",
+        "Sintomas respiratórios (compressão da via aérea); febre/taquicardia/ENFISEMA subcutâneo -> TC (perfuração/mediastinite/abscesso/lesão vascular)",
+        "Bateria x moeda na imagem: 'sinal do duplo halo' e 'sinal do degrau' = bateria"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INDICAÇÃO DE ENDOSCOPIA POR URGÊNCIA",
+      "section_color": "navy",
+      "headers": ["Categoria", "Situações"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Emergência (<= 2h, até 6h)", "Obstrução esofágica, bateria no esôfago, objeto pontiagudo no esôfago"],
+        ["Urgência (< 24h)", "CE esofágico não pontiagudo, impactação alimentar sem obstrução total, pontiagudo/bateria no estômago/duodeno, ímã ao alcance, objeto > 6 cm no duodeno"],
+        ["Não urgente / ambulatorial", "Moeda no estômago assintomático (até 4 sem), bateria no estômago (observar até 48h), objeto > 2,5 cm de diâmetro"],
+        ["Indicação geral", "Rombos > 2,5 cm, impactados no esôfago, ou que não saem do estômago após 4 semanas"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO E OBSERVAÇÃO",
+      "section_color": "orange",
+      "titulo": "CONDUTAS",
+      "items": [
+        "Avaliação inicial e via aérea SEMPRE (IOT se necessário); jejum; avaliar risco de aspiração",
+        "Pode-se OBSERVAR: CE não perfurocortante (exceto pilhas, baterias e ímãs), < 2 cm de diâmetro e < 5 cm de comprimento, com RX de abdome semanal por 3-4 semanas",
+        "Passagem pelo piloro (~2-2,5 cm) e ângulo duodenal (~5-6 cm): se passou o estômago, costuma eliminar em 4-6 dias",
+        "PACOTE DE DROGAS (body packer): NÃO remover por endoscopia; conservador na maioria; cirurgia se risco de overdose/obstrução",
+        "Após remoção sem complicação: alta pós-recuperação anestésica; se não removido e há risco -> internar e seriar RX; cirurgia se não resolver em ~3 dias"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com ingestão de ___ (tipo: bateria/pontiagudo/rombo/alimentar) há ___; localização (RX): ___.",
+        "Sinais de alarme: sialorreia ___, sintomas respiratórios ___, enfisema/febre ___ (perfuração?).",
+        "Classificação: emergência (bateria/pontiagudo/obstrução no esôfago) / urgência (< 24h) / observação.",
+        "Solicito EDA com a urgência adequada / cirurgia se perfuração; via aérea protegida no transporte."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Criança que ingeriu uma BATERIA (pilha) impactada no esôfago. Qual a conduta?",
+      "alternativas": [
+        "Observar por 48 horas",
+        "Remoção endoscópica de EMERGÊNCIA (risco de queimadura/necrose)",
+        "Alta com RX semanal",
+        "Aguardar eliminação espontânea",
+        "Indução de vômito"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tempo máximo que um corpo estranho deve permanecer impactado no esôfago?",
+      "alternativas": [
+        "72 horas",
+        "Não deve permanecer mais de 24 horas",
+        "1 semana",
+        "30 dias",
+        "Indefinido se assintomático"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual corpo estranho gástrico pode ser observado com RX seriado em paciente assintomático?",
+      "alternativas": [
+        "Objeto pontiagudo",
+        "Objeto rombo < 2,5 cm de diâmetro e < 5 cm de comprimento",
+        "Bateria no esôfago",
+        "Ímã múltiplo",
+        "Objeto > 6 cm no duodeno"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Adulto com impactação alimentar e sialorreia intensa. O que a sialorreia sugere?",
+      "alternativas": [
+        "Boa evolução",
+        "Obstrução esofágica total",
+        "Doença hepática",
+        "Resolução espontânea",
+        "Refluxo simples"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Diante de um 'body packer' (pacote de drogas ingerido), qual a conduta?",
+      "alternativas": [
+        "Remoção endoscópica imediata",
+        "NÃO remover por endoscopia; manejo conservador na maioria, cirurgia se risco de overdose/obstrução",
+        "Indução de vômito",
+        "Lavagem gástrica vigorosa",
+        "Alta imediata sem observação"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Bateria (pilha) no esôfago é sempre emergência endoscópica (idealmente em até 2h), pelo risco de queimadura química/elétrica e necrose/perfuração."},
+    {"resposta": "B", "comentario": "Nenhum corpo estranho deve permanecer impactado no esôfago por mais de 24h, pelo risco de lesão de parede, perfuração e mediastinite."},
+    {"resposta": "B", "comentario": "Objetos rombos < 2,5 cm de diâmetro e < 5 cm de comprimento, já no estômago e em paciente assintomático, podem ser observados com RX seriado (prazo de 3-4 semanas)."},
+    {"resposta": "B", "comentario": "A sialorreia (incapacidade de deglutir a própria saliva) sugere obstrução esofágica total, indicando intervenção endoscópica urgente."},
+    {"resposta": "B", "comentario": "No body packer não se faz remoção endoscópica (risco de ruptura e overdose fatal); a maioria é conduzida conservadoramente, reservando-se a cirurgia para risco de overdose/obstrução."}
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "slug": "acalasia",
+  "titulo": "Acalásia / Megaesôfago",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Acalásia e megaesôfago chagásico",
+  "chapter_bar": "ACALÁSIA — DISFAGIA + MANOMETRIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "ACALÁSIA — DISFAGIA -> EDA + EED + MANOMETRIA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Disfagia (solidos E liquidos) + regurgitacao\nEDA (excluir neo) + esofagografia + manometria", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 205, "h": 20, "text": "Manometria (padrao-ouro): EEI nao relaxa + aperistalse", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.27, "y": 0.3, "w": 150, "h": 26, "text": "Nao avancado (G2-3):\nHeller-Pinotti ou POEM\n/ dilatacao pneumatica", "color": "green", "font_size": 5.2},
+        {"id": "d", "x": 0.73, "y": 0.3, "w": 150, "h": 24, "text": "Avancado (G4):\nesofagectomia /\nSerra-Doria", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIA",
+      "section_color": "teal",
+      "titulo": "PRINCIPAL DISTÚRBIO MOTOR DO ESÔFAGO",
+      "items": [
+        "Degeneração do plexo mioentérico (Auerbach) -> relaxamento INCOMPLETO do EEI + APERISTALSE do corpo esofágico",
+        "No Brasil, megaesôfago CHAGÁSICO responde por ~90% (parasitismo neuronal, inflamação, autoimunidade)",
+        "Outras causas: idiopática, genética, gás mostarda (lesão nervosa)",
+        "Sintomas: DISFAGIA (para sólidos E líquidos), regurgitação, manobras (coluna d'água), globus, emagrecimento lento",
+        "Escala de Eckardt gradua os sintomas (disfagia, regurgitação, dor, perda de peso)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "EXAMES",
+      "section_color": "navy",
+      "headers": ["Exame", "Papel / achados"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["EDA", "EXCLUIR neoplasia (pseudoacalásia); cromoscopia com lugol; ruim para diagnosticar acalásia"],
+        ["Esofagografia (EED)", "Grau de dilatação (escolha do tratamento): 'bico de pássaro/cauda de rato', ondas terciárias, estase, ausência de bolha gástrica"],
+        ["Manometria (PADRÃO-OURO)", "EEI com relaxamento incompleto + aperistalse; alta resolução: tipo I (sem pressurização), II (panesofágica), III (espástica)"],
+        ["Classificação", "Rezende-Mascarenhas (graus I-IV pela dilatação) orienta a terapêutica"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "OPÇÕES POR RISCO/GRAU",
+      "items": [
+        "Clínico (pouco usado): nitrato sublingual ou nifedipino — sintomas leves/alto risco cirúrgico; efeito colateral: hipotensão",
+        "Toxina botulínica no EEI: melhora TEMPORÁRIA (máx ~6 meses) — alto risco cirúrgico",
+        "Dilatação pneumática endoscópica: opção no alto risco cirúrgico; alta recidiva, ruim em jovens; risco de laceração",
+        "Cirúrgico PADRÃO-OURO (não avançado, G2-3): cardiomiotomia + fundoplicatura (HELLER-PINOTTI), miotomia de 7-9 cm pegando o EEI",
+        "POEM (miotomia endoscópica peroral): eficaz; principal complicação é o REFLUXO (importante)",
+        "Avançado (G4/megaesôfago): esofagectomia com tubo gástrico; Thal-Hatafuku; Serra-Doria + vagotomia"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RECIDIVA DA DISFAGIA E SEGUIMENTO",
+      "section_color": "red",
+      "titulo": "PONTOS DE ATENÇÃO",
+      "items": [
+        "Disfagia PRECOCE pós-op: miotomia curta/incompleta, migração aguda",
+        "Disfagia TARDIA: fibrose da cárdia, reaproximação das bordas, refluxo intenso (estenose), megaesôfago avançado, NEOPLASIA",
+        "Seguimento com EDA: risco aumentado de carcinoma espinocelular (CEC) de esôfago",
+        "POEM tem alto índice de refluxo — vigiar e tratar (IBP)",
+        "A acalásia é doença crônica: acompanhamento prolongado"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com disfagia para sólidos e líquidos + regurgitação; Eckardt ___; sorologia para Chagas: ___.",
+        "EDA (neoplasia excluída?) ___; EED: dilatação grau ___ (Rezende); manometria: ___.",
+        "Conduta proposta: Heller-Pinotti / POEM / dilatação (alto risco) / esofagectomia (avançado).",
+        "Encaminho à cirurgia do aparelho digestivo; manter seguimento por EDA (risco de CEC)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o exame padrão-ouro para o diagnóstico de acalásia?",
+      "alternativas": [
+        "Endoscopia digestiva alta",
+        "Manometria esofágica",
+        "Esofagografia baritada",
+        "Tomografia de tórax",
+        "pHmetria"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a principal causa de acalásia (megaesôfago) no Brasil?",
+      "alternativas": [
+        "Idiopática",
+        "Doença de Chagas (megaesôfago chagásico)",
+        "Neoplásica",
+        "Genética",
+        "Pós-radioterapia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o tratamento cirúrgico padrão-ouro da acalásia não avançada?",
+      "alternativas": [
+        "Esofagectomia",
+        "Cardiomiotomia a Heller com fundoplicatura (Heller-Pinotti)",
+        "Gastrectomia total",
+        "Vagotomia isolada",
+        "Apenas dilatação pneumática"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é a principal complicação do POEM (miotomia endoscópica peroral)?",
+      "alternativas": [
+        "Hemorragia maciça",
+        "Refluxo gastroesofágico",
+        "Estenose pilórica",
+        "Perfuração gástrica",
+        "Pancreatite"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Por que o seguimento endoscópico é importante no paciente com acalásia/megaesôfago?",
+      "alternativas": [
+        "Risco de úlcera duodenal",
+        "Risco aumentado de carcinoma espinocelular (CEC) de esôfago",
+        "Risco de adenoma gástrico",
+        "Risco de varizes",
+        "Risco de divertículo de Zenker"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A manometria esofágica é o padrão-ouro: demonstra relaxamento incompleto do EEI e aperistalse do corpo. A EDA exclui neoplasia e a esofagografia gradua a dilatação."},
+    {"resposta": "B", "comentario": "No Brasil, ~90% dos megaesôfagos são chagásicos (doença de Chagas), por destruição do plexo mioentérico."},
+    {"resposta": "B", "comentario": "A cardiomiotomia a Heller com fundoplicatura (Heller-Pinotti) é o padrão-ouro cirúrgico na acalásia não avançada (graus 2-3); a fundoplicatura reduz o refluxo pós-miotomia."},
+    {"resposta": "B", "comentario": "O POEM é eficaz para a disfagia, mas tem como principal complicação o refluxo gastroesofágico (por não incluir fundoplicatura), exigindo vigilância e IBP."},
+    {"resposta": "B", "comentario": "O megaesôfago mantém risco aumentado de carcinoma espinocelular de esôfago, justificando o seguimento endoscópico prolongado, mesmo após tratamento."}
+  ]
+}

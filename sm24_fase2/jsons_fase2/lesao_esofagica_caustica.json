@@ -1,0 +1,168 @@
+{
+  "slug": "lesao_esofagica_caustica",
+  "titulo": "Lesão Esofágica por Cáustico",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Ingestão de substância cáustica",
+  "chapter_bar": "LESÃO CÁUSTICA — ZARGAR + EDA 24-48h",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "CÁUSTICO — NÃO NEUTRALIZAR -> EDA -> ZARGAR",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Ingesta de caustico: ABCDE + via aerea\njejum; NAO induzir emese/agua/SNG/neutralizar", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.55, "w": 205, "h": 20, "text": "Labs (preditores) + RX; EDA em 24-48h -> ZARGAR", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.26, "w": 145, "h": 24, "text": "Zargar I-IIa:\nenfermaria + IBP\n+ dieta liquida", "color": "green", "font_size": 5.4},
+        {"id": "d", "x": 0.75, "y": 0.26, "w": 150, "h": 26, "text": "Zargar IIb-IV:\nUTI + IBP + ATB +\nSNE / cirurgia", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ÁLCALI x ÁCIDO",
+      "section_color": "navy",
+      "headers": ["Agente", "Características"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["Alcalino (soda cáustica)", "Necrose por LIQUEFAÇÃO; lesões mais proximais e profundas (maior dano de mucosa); ex.: 'diabo verde', limpeza pesada"],
+        ["Ácido (ác. de bateria)", "Necrose por COAGULAÇÃO; lesões mais distais e menos profundas (escara limita o dano)"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "FASES E CLÍNICA",
+      "section_color": "teal",
+      "titulo": "EVOLUÇÃO",
+      "items": [
+        "Fase AGUDA (primeiros ~10 dias): edema e inflamação",
+        "Fase TRAIÇOEIRA (4-8 semanas): cura aparente, redução do processo inflamatório",
+        "Fase de ESTENOSE cicatricial: disfagia progressiva",
+        "Clínica: epigastralgia, dor torácica, dispneia, vômito/hematêmese, sibilos, rouquidão/estridor, disfagia/odinofagia, sialorreia",
+        "Sintomas respiratórios (estridor/rouquidão) indicam acometimento de via aérea"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MANEJO INICIAL — O QUE NÃO FAZER",
+      "section_color": "red",
+      "titulo": "REGRAS DE OURO",
+      "items": [
+        "Definir substância, quantidade e tempo desde a ingesta; jejum; ABCDE com proteção de via aérea",
+        "NÃO induzir êmese; NÃO oferecer água/leite; NÃO passar SNG às cegas; NÃO tentar neutralizar (reação exotérmica piora a lesão)",
+        "Labs: hemograma, PCR, eletrólitos, TGO/TGP, gasometria; preditores de lesão grave: pH < 7,2, BE -12, transaminases elevadas, trombocitopenia",
+        "RX de tórax/abdome (pneumomediastino, pneumoperitônio); TC tem maior sensibilidade",
+        "EDA em 24-48h para classificar (Zargar) — janela ideal; após 48h aumenta o risco de perfuração ao exame"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE ZARGAR (EDA) E MANEJO",
+      "section_color": "navy",
+      "headers": ["Grau", "Achado -> conduta"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.18, 0.82],
+      "rows": [
+        ["I", "Edema/eritema -> enfermaria 24h + IBP dose plena + dieta líquida"],
+        ["IIa", "Friabilidade, erosões, exsudato -> enfermaria 24-48h + IBP + dieta líquida"],
+        ["IIb", "+ ulcerações profundas -> UTI + IBP + dieta via SNE + ATB"],
+        ["IIIa/IIIb", "Necrose (acinzentada/enegrecida) / extensa -> UTI + IBP + SNE + ATB + considerar cirurgia"],
+        ["IV", "Perfuração esofágica -> UTI + IBP + ATB + abordagem CIRÚRGICA"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PRESCRIÇÃO",
+      "section_color": "orange",
+      "titulo": "IBP ± CORTICOIDE",
+      "items": [
+        "IBP: Pantoprazol 80 mg EV 12/12h por 48h, depois 40 mg EV 12/12h",
+        "Corticoide se acometimento de via aérea: Dexametasona 1 mg/kg/dia EV pela manhã por 3 dias (máx 24 mg/dia)",
+        "  ou Prednisolona 2 mg/kg/dia EV pela manhã por 3 dias (máx 60 mg/dia)",
+        "ATB nos graus IIb-IV (translocação/necrose); suporte nutricional via SNE nos graus avançados",
+        "Acompanhamento para estenose tardia (dilatações); risco aumentado de CEC de esôfago a longo prazo"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos; ingestão de cáustico ___ (álcali/ácido), quantidade ___, há ___; intencional? ___.",
+        "Via aérea ___ (estridor/rouquidão?); preditores graves (pH < 7,2, BE, transaminases, plaquetas): ___.",
+        "Conduta: jejum, NÃO neutralizar, IBP EV ___, corticoide (se VA) ___, ATB ___; EDA (Zargar) ___.",
+        "Solicito UTI + cirurgia se Zargar IIb-IV/perfuração; transporte com via aérea protegida."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual conduta está CONTRAINDICADA na ingestão de cáustico?",
+      "alternativas": [
+        "Jejum",
+        "Induzir êmese, oferecer água/leite ou tentar neutralizar a substância",
+        "ABCDE com proteção de via aérea",
+        "Solicitar EDA em 24-48h",
+        "IBP endovenoso"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual o tipo de necrose causado por substâncias ALCALINAS?",
+      "alternativas": [
+        "Necrose por coagulação",
+        "Necrose por liquefação (lesões mais profundas)",
+        "Necrose caseosa",
+        "Necrose gordurosa",
+        "Sem necrose"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual o exame fundamental para classificar a gravidade da lesão cáustica, e em que janela?",
+      "alternativas": [
+        "Colonoscopia imediata",
+        "EDA em 24-48h (classificação de Zargar)",
+        "Manometria",
+        "pHmetria após 1 semana",
+        "Esofagografia baritada precoce"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Lesão cáustica Zargar IV (perfuração esofágica). Qual a conduta?",
+      "alternativas": [
+        "Alta com IBP oral",
+        "UTI + IBP + antibiótico + abordagem cirúrgica",
+        "Apenas dieta líquida",
+        "Observação ambulatorial",
+        "Corticoide isolado"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual complicação tardia é característica da lesão cáustica esofágica?",
+      "alternativas": [
+        "Acalásia",
+        "Estenose cicatricial com disfagia progressiva (e risco aumentado de CEC)",
+        "Hérnia de hiato",
+        "Divertículo de Zenker",
+        "Refluxo alcalino isolado"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "É contraindicado induzir êmese, oferecer água/leite ou tentar neutralizar a substância (reação exotérmica que agrava a lesão), bem como passar SNG às cegas. Mantém-se jejum, ABCDE e EDA precoce."},
+    {"resposta": "B", "comentario": "Os álcalis causam necrose por liquefação, com lesões mais proximais e profundas; os ácidos causam necrose por coagulação, mais distais e superficiais (a escara limita o dano)."},
+    {"resposta": "B", "comentario": "A EDA em 24-48h é fundamental e classifica a gravidade (Zargar). Após 48h o exame tem maior risco de perfuração; muito precocemente pode subestimar a lesão."},
+    {"resposta": "B", "comentario": "Zargar IV (perfuração esofágica) exige UTI, IBP, antibiótico e abordagem cirúrgica, dada a gravidade e o risco de mediastinite/sepse."},
+    {"resposta": "B", "comentario": "A complicação tardia característica é a estenose cicatricial com disfagia progressiva (fase de estenose), além de risco aumentado de carcinoma espinocelular esofágico a longo prazo."}
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "slug": "hernia_hiato",
+  "titulo": "Hérnia de Hiato",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Hérnia de hiato e paraesofágicas",
+  "chapter_bar": "HÉRNIA DE HIATO — TIPO I x PARAESOFÁGICA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — TIPO GUIA A CONDUTA",
+      "title": "HÉRNIA DE HIATO — DESLIZAMENTO x PARAESOFÁGICA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Pregas gastricas >2 cm acima do pincamento\nRx contrastado (padrao-ouro) / EDA", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 24, "text": "Tipo I (deslizamento,\n90%): tratar como\nDRGE", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 26, "text": "Paraesofagica (II-IV):\ncirurgia se sintomas/\ncomplicacao", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Volvo gastrico (Borchardt) = emergencia", "color": "red", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E FISIOPATOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Migração de parte do estômago para o tórax através do hiato esofágico; prevalência ~10% da população",
+        "Fisiopatologia: alargamento do hiato, aumento da pressão intra-abdominal, encurtamento esofágico",
+        "Pode predispor à DRGE e causar disfagia por impactação do bolo (alteração anatômica)",
+        "Diagnóstico: RX contrastado é o padrão-ouro; EDA mostra pregas gástricas > 2 cm acima do pinçamento diafragmático",
+        "Muitas são assintomáticas e achado incidental"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO",
+      "section_color": "navy",
+      "headers": ["Tipo", "Características"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["I — Deslizamento (90%)", "JEG e parte do estômago deslizam para o tórax; associada a DRGE"],
+        ["II — Paraesofágica (rolamento)", "JEG no lugar; fundo gástrico hernia ao lado do esôfago"],
+        ["III — Mista", "JEG deslocada para o tórax + grande porção gástrica"],
+        ["IV — Complexa", "Outras vísceras (cólon, delgado, baço, pâncreas); risco de VOLVO gástrico"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAG — VOLVO GÁSTRICO (TRÍADE DE BORCHARDT)",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA",
+      "items": [
+        "Dor epigástrica/torácica intensa e súbita",
+        "Ânsia de vômito SEM exteriorizar conteúdo (vômito improdutivo)",
+        "Impossibilidade de passar sonda nasogástrica",
+        "Essa tríade sugere VOLVO gástrico (mais comum nas hérnias tipo IV) — risco de estrangulamento/isquemia",
+        "Conduta: descompressão (tentativa de SNG), estabilização e CIRURGIA de urgência"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO",
+      "section_color": "navy",
+      "headers": ["Situação", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Tipo I (deslizamento)", "Mesmo princípio do tratamento da DRGE (medidas + IBP); cirurgia se DRGE refratária"],
+        ["Paraesofágica assintomática", "Seguimento"],
+        ["Paraesofágica c/ obstrução (disfagia/volvo)", "Cirurgia (hérnia + fundoplicatura)"],
+        ["Úlcera de Cameron / refluxo", "Cameron -> cirurgia; refluxo -> tratamento de DRGE"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com ___ (refluxo/disfagia/dor); hérnia de hiato tipo ___ (RX/EDA).",
+        "Sinais de Borchardt (dor + ânsia improdutiva + impossibilidade de SNG): ___ (volvo?).",
+        "Conduta: tratamento de DRGE (tipo I) / cirurgia (paraesofágica sintomática); emergência se volvo.",
+        "Encaminho à cirurgia URGENTE se volvo/estrangulamento; eletiva se paraesofágica sintomática."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o tipo mais comum de hérnia de hiato?",
+      "alternativas": [
+        "Tipo II (paraesofágica por rolamento)",
+        "Tipo I (por deslizamento)",
+        "Tipo III (mista)",
+        "Tipo IV (complexa)",
+        "Todos igualmente frequentes"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "A tríade de Borchardt (dor epigástrica, ânsia de vômito improdutiva e impossibilidade de passar SNG) sugere:",
+      "alternativas": [
+        "DRGE leve",
+        "Volvo gástrico (emergência)",
+        "Úlcera duodenal",
+        "Gastrite",
+        "Acalásia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual o tratamento da hérnia de hiato tipo I (deslizamento) sintomática?",
+      "alternativas": [
+        "Cirurgia para todos",
+        "Mesmo princípio do tratamento da DRGE (medidas + IBP)",
+        "Antibiótico",
+        "Apenas observação sempre",
+        "Esofagectomia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é o exame padrão-ouro para o diagnóstico de hérnia de hiato?",
+      "alternativas": [
+        "Endoscopia digestiva alta",
+        "Radiografia contrastada (esofagografia/EED)",
+        "Manometria",
+        "pHmetria",
+        "Ultrassom"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Hérnia paraesofágica com disfagia por obstrução alimentar. Qual a conduta?",
+      "alternativas": [
+        "Apenas IBP",
+        "Tratamento cirúrgico",
+        "Observação indefinida",
+        "Dieta líquida permanente",
+        "Antibiótico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A hérnia de hiato tipo I (por deslizamento) é a mais comum (~90%), com a JEG e parte do estômago deslizando para o tórax; associa-se à DRGE."},
+    {"resposta": "B", "comentario": "A tríade de Borchardt (dor epigástrica + ânsia de vômito improdutiva + impossibilidade de passar SNG) sugere volvo gástrico, emergência com risco de estrangulamento."},
+    {"resposta": "B", "comentario": "A hérnia tipo I sintomática é tratada como DRGE (medidas antirrefluxo + IBP); a cirurgia fica para casos refratários ou paraesofágicas complicadas."},
+    {"resposta": "B", "comentario": "O RX contrastado (esofagografia) é o padrão-ouro para o diagnóstico de hérnia de hiato; a EDA mostra as pregas gástricas acima do pinçamento diafragmático."},
+    {"resposta": "B", "comentario": "Hérnia paraesofágica com obstrução alimentar (disfagia/volvo) tem indicação cirúrgica; assintomáticas podem ser apenas acompanhadas."}
+  ]
+}

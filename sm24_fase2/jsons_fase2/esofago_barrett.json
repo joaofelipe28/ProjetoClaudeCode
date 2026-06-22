@@ -1,0 +1,156 @@
+{
+  "slug": "esofago_barrett",
+  "titulo": "Esôfago de Barrett",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Esôfago de Barrett — vigilância",
+  "chapter_bar": "ESÔFAGO DE BARRETT — DISPLASIA GUIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DISPLASIA GUIA A CONDUTA",
+      "title": "BARRETT — BIÓPSIA -> GRAU DE DISPLASIA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "DRGE cronica: epitelio colunar >=1 cm na EDA\nbiopsias (Seattle) -> metaplasia intestinal", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Sem displasia:\nIBP continuo +\nvigilancia 3-5 anos", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 28, "text": "Displasia alto grau\n/ lesao visivel:\nablacao/mucosectomia", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Baixo grau: confirmar 2o patologista -> ablacao", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E RISCO",
+      "section_color": "teal",
+      "titulo": "METAPLASIA INTESTINAL",
+      "items": [
+        "Substituição do epitélio escamoso esofágico distal por epitélio COLUNAR com metaplasia intestinal (células caliciformes), CONFIRMADA por biópsia",
+        "Associado à DRGE crônica; é lesão PRÉ-MALIGNA (adenocarcinoma esofágico)",
+        "Fatores de risco: DRGE > 5 anos, sexo masculino, idade > 50, obesidade abdominal, tabagismo, história familiar de Barrett/adenocarcinoma",
+        "EDA: epitélio colunar >= 1 cm acima da junção esofagogástrica; classificação de PRAGA (C = circunferencial, M = máxima extensão)",
+        "Protocolo de biópsias de SEATTLE: 4 biópsias a cada 1-2 cm do segmento + dirigidas a áreas suspeitas"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONDUTA CONFORME DISPLASIA",
+      "section_color": "navy",
+      "headers": ["Histologia", "Conduta"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Sem displasia", "IBP contínuo + vigilância: curto (< 3 cm) a cada 5 anos; longo (>= 3 cm) a cada 3 anos"],
+        ["Displasia indefinida", "Otimizar IBP e repetir EDA em 6 meses"],
+        ["Baixo grau", "Confirmar por 2º patologista -> ablação endoscópica (preferencial) ou vigilância anual"],
+        ["Alto grau", "Confirmação obrigatória -> ablação por radiofrequência; mucosectomia se lesão visível; cirurgia se falha"],
+        ["Adenocarcinoma", "Estadiamento e tratamento oncológico"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "MEDIDAS + IBP + ENDOSCÓPICO",
+      "items": [
+        "Medidas antirrefluxo (como na DRGE): perda de peso, elevar a cabeceira, evitar refeições noturnas, cessar tabagismo/álcool, dieta",
+        "IBP em DOSE PLENA contínua: Omeprazol 20-40 mg 1-2x/dia, ajustado para controle dos sintomas",
+        "Manter IBP indefinidamente, mesmo sem sintomas",
+        "Tratamento endoscópico da displasia: ablação por radiofrequência; mucosectomia (EMR) se lesão visível",
+        "Cirurgia (esofagectomia) reservada à falha do tratamento endoscópico ou contraindicação"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ACOMPANHAMENTO",
+      "section_color": "purple",
+      "titulo": "VIGILÂNCIA É A CHAVE",
+      "items": [
+        "Seguimento endoscópico conforme o risco (grau de displasia e extensão)",
+        "Manter IBP indefinidamente; avaliar adesão e sintomas de refluxo",
+        "Displasia de baixo/alto grau sempre confirmada por 2º patologista (variabilidade interobservador)",
+        "O objetivo da vigilância é detectar displasia/adenocarcinoma precoce, tratável por via endoscópica",
+        "Educar o paciente sobre a cronicidade e a importância da adesão"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com DRGE crônica; EDA: segmento de Barrett ___ cm (Praga C__ M__).",
+        "Biópsias (Seattle): metaplasia intestinal confirmada ___; displasia: ausente / indefinida / baixo / alto grau.",
+        "Conduta: IBP dose plena contínuo; vigilância em ___ ; ablação/mucosectomia se displasia.",
+        "Encaminho à gastro/endoscopia para vigilância programada e terapia endoscópica conforme displasia."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "O que define o esôfago de Barrett?",
+      "alternativas": [
+        "Esofagite erosiva sem metaplasia",
+        "Substituição do epitélio escamoso por epitélio colunar com metaplasia intestinal (células caliciformes), confirmada por biópsia",
+        "Estenose péptica",
+        "Hérnia de hiato",
+        "Divertículo esofágico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual a conduta no Barrett SEM displasia?",
+      "alternativas": [
+        "Esofagectomia profilática",
+        "IBP contínuo + vigilância endoscópica (3-5 anos conforme a extensão)",
+        "Ablação por radiofrequência imediata",
+        "Suspender qualquer seguimento",
+        "Antibiótico contínuo"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual o tratamento de escolha do Barrett com displasia de ALTO grau sem lesão visível?",
+      "alternativas": [
+        "Apenas vigilância anual",
+        "Ablação endoscópica por radiofrequência",
+        "IBP isolado",
+        "Fundoplicatura",
+        "Observação sem IBP"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Por que a displasia no Barrett deve ser confirmada por um segundo patologista?",
+      "alternativas": [
+        "Por exigência administrativa apenas",
+        "Pela alta variabilidade interobservador, que muda a conduta (vigilância x ablação)",
+        "Porque o primeiro laudo é sempre incorreto",
+        "Para repetir a biópsia",
+        "Não é necessário confirmar"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual a principal relevância clínica do esôfago de Barrett?",
+      "alternativas": [
+        "É uma condição benigna sem implicações",
+        "É lesão pré-maligna, associada a risco de adenocarcinoma esofágico",
+        "Causa apenas disfagia transitória",
+        "Predispõe a carcinoma espinocelular",
+        "Resolve espontaneamente com dieta"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Barrett é a substituição do epitélio escamoso esofágico distal por epitélio colunar com metaplasia intestinal (células caliciformes), confirmada por biópsia, no contexto de DRGE crônica."},
+    {"resposta": "B", "comentario": "Sem displasia, mantém-se IBP contínuo e vigilância endoscópica: a cada 5 anos se segmento curto (< 3 cm) e a cada 3 anos se longo (>= 3 cm)."},
+    {"resposta": "B", "comentario": "Na displasia de alto grau sem lesão visível, a ablação endoscópica por radiofrequência é o tratamento de escolha; havendo lesão visível, faz-se mucosectomia."},
+    {"resposta": "B", "comentario": "O diagnóstico de displasia tem alta variabilidade interobservador e muda a conduta (vigilância x ablação), por isso deve ser confirmado por um segundo patologista experiente."},
+    {"resposta": "B", "comentario": "O Barrett é lesão pré-maligna associada ao adenocarcinoma esofágico — daí a importância da vigilância endoscópica e do controle do refluxo com IBP."}
+  ]
+}
