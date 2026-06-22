@@ -1,0 +1,195 @@
+{
+  "slug": "asma_pediatria",
+  "titulo": "Crise Asmática na Criança",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Crise de asma pediátrica no PS",
+  "chapter_bar": "ASMA NA CRIANÇA — SABA + CORTICOIDE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CLASSIFICAR E TRATAR",
+      "title": "CRISE DE ASMA — GRAVIDADE GUIA A CONDUTA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Crianca com dispneia + sibilancia (clinico)\noximetria + classificar gravidade", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 150, "h": 26, "text": "Leve/moderada:\nSalbutamol +/- ipratropio\n+ corticoide VO", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 28, "text": "GRAVE (SatO2<90%):\nO2 + SABA+ipratropio +\ncorticoide EV + MgSO4", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Silencio/fadiga/PaCO2 alta -> UTI/IOT", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "teal",
+      "titulo": "EMINENTEMENTE CLÍNICO",
+      "items": [
+        "Dispneia, sibilância, tosse e aperto no peito, com ausculta de broncoespasmo bilateral",
+        "Anamnese-chave: tempo de início, gatilho (IVAS/alérgeno/poluente/estresse), uso atual de medicação",
+        "FATOR DE RISCO PARA ASMA QUASE FATAL: internação/IOT/ventilação prévias por asma",
+        "Buscar complicadores: febre, pneumonia, atelectasia, hemoptise",
+        "Diferenciais: aspiração de corpo estranho, obstrução laríngea, insuficiência cardíaca"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DA GRAVIDADE",
+      "section_color": "navy",
+      "headers": ["Parâmetro", "Leve", "Moderada", "Grave"],
+      "header_colors": ["gray", "green", "orange", "red"],
+      "col_widths": [0.22, 0.26, 0.26, 0.26],
+      "rows": [
+        ["Fala", "Frases completas", "Frases curtas/palavras", "Palavras isoladas"],
+        ["SatO2 (ar ambiente)", "> 95%", "90-95%", "< 90%"],
+        ["Sibilos", "Leves", "Audíveis", "Musc. acessória / silêncio"],
+        ["Estado", "Tranquilo", "Agitação leve", "Confusão/sonolência (hipercapnia)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — ASMA GRAVE / IMINÊNCIA DE PARADA",
+      "section_color": "red",
+      "titulo": "SINAIS DE ALARME",
+      "items": [
+        "Incapacidade de falar frases; uso de musculatura acessória; cianose central",
+        "SILÊNCIO respiratório (tórax silencioso = obstrução severa do fluxo)",
+        "Alteração neurológica: confusão, agitação, sonolência (sugere hipercapnia)",
+        "PaCO2 > 45 mmHg ou em elevação; SatO2 < 90% apesar do tratamento",
+        "Pulso paradoxal > 20 mmHg, bradicardia; FADIGA/exaustão respiratória"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — LEVE/MODERADA",
+      "section_color": "orange",
+      "titulo": "SABA + CORTICOIDE",
+      "items": [
+        "Salbutamol aerossol (100 mcg/jato) com ESPAÇADOR: 4-10 jatos a cada 20 min, 3 vezes (depois conforme necessidade)",
+        "Brometo de ipratrópio (20 mcg/jato): < 2 anos 4 jatos / > 12 anos 8 jatos, a cada 20 min, 3 vezes",
+        "Corticoide sistêmico: Prednisolona/Prednisona VO 1-2 mg/kg/dia por 3-5 dias",
+        "Dexametasona 0,6 mg/kg VO (máx 10 mg) dose única — opção se vômitos",
+        "Oximetria seriada; sempre usar espaçador (com máscara facial em lactentes)"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — GRAVE",
+      "section_color": "red",
+      "titulo": "O2 + SABA + IPRATRÓPIO + CORTICOIDE EV + MgSO4",
+      "items": [
+        "Oxigenoterapia para manter SatO2 adequada (alvo >= 94%)",
+        "Salbutamol + ipratrópio nas doses acima (nebulização/aerossol contínuos conforme resposta)",
+        "Corticoide EV: Metilprednisolona EV OU Dexametasona 0,6 mg/kg EV (máx 10 mg)",
+        "Sulfato de magnésio 50 mg/kg EV em 20 min (máx 2 g)",
+        "Salbutamol EV (refratário): ataque 10 mcg/kg + manutenção 0,1-1 mcg/kg/min",
+        "Sem resposta / fadiga / PaCO2 em elevação -> VNI ou IOT + UTI"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "QUANDO PEDIR EXAMES",
+      "section_color": "navy",
+      "titulo": "POUCOS, SELETIVOS",
+      "items": [
+        "Oximetria de pulso: SEMPRE (seriada — gravidade e resposta)",
+        "Laboratório: NÃO de rotina; não deve atrasar o tratamento",
+        "RX de tórax: só se ausência de resposta ou suspeita de complicação (pneumonia, pneumotórax, atelectasia, corpo estranho)",
+        "Gasometria: considerar em crise grave sem resposta/deterioração — PaCO2 normal ou alta (> 45) indica insuficiência respiratória iminente",
+        "Atenção: na crise grave, uma PaCO2 'normalizada' pode ser sinal de exaustão (alarme)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR/UTI: insuficiência respiratória mantida, SatO2 < 90% apesar do tratamento, alteração de consciência, PaCO2 > 45/elevação, necessidade de VNI/IOT, instabilidade, complicações, sem condição de seguimento",
+        "ALTA: boa resposta, SatO2 > 94% em ar ambiente, sem desconforto, falando frases completas, sem musculatura acessória, tolerando corticoide VO, família orientada",
+        "Receita: Salbutamol com espaçador + Prednisolona 1-2 mg/kg/dia por 3-5 dias (manhã)",
+        "Demonstrar técnica do espaçador; orientar gatilhos e sinais de alerta",
+        "RETORNO ambulatorial em 48h (24-48h em lactentes); retorno imediato se piora"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos/___ kg com crise asmática há ___; gatilho ___; IOT/internação prévia: ___.",
+        "SatO2 ___, fala ___, musculatura acessória ___, nível de consciência ___; PaCO2 ___.",
+        "Tratado: O2 ___, salbutamol + ipratrópio ___ ciclos, corticoide ___, MgSO4 ___, salbutamol EV ___; resposta ___.",
+        "Solicito UTI pediátrica + suporte ventilatório (VNI/IOT); manter broncodilatador no transporte."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Criança com crise asmática grave, SatO2 88%, uso de musculatura acessória, sem resposta após broncodilatador inicial. Além de O2, salbutamol e ipratrópio, qual a conduta?",
+      "alternativas": [
+        "Antibiótico de rotina",
+        "Corticoide endovenoso + sulfato de magnésio 50 mg/kg EV (máx 2 g)",
+        "Anti-histamínico",
+        "Apenas observação",
+        "Adrenalina nebulizada isolada"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual medicação é fundamental e deve ser administrada precocemente em toda crise asmática moderada/grave?",
+      "alternativas": [
+        "Antibiótico",
+        "Corticoide sistêmico (prednisolona VO ou metilprednisolona/dexametasona EV)",
+        "Anti-histamínico",
+        "Mucolítico",
+        "Antitussígeno"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado indica obstrução grave do fluxo aéreo (sinal de alarme) na crise asmática?",
+      "alternativas": [
+        "Sibilos abundantes e altos",
+        "Tórax silencioso (ausência de sibilos por redução severa do fluxo)",
+        "Tosse seca isolada",
+        "Febre baixa",
+        "Coriza"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a radiografia de tórax na crise asmática pediátrica, é correto:",
+      "alternativas": [
+        "Deve ser feita em todos os casos",
+        "Não é de rotina; indicar só se ausência de resposta ao tratamento ou suspeita de complicação",
+        "Substitui a oximetria",
+        "É obrigatória antes do broncodilatador",
+        "Deve atrasar o início do tratamento"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o critério adequado de alta após crise asmática na criança?",
+      "alternativas": [
+        "SatO2 85% em ar ambiente",
+        "SatO2 > 94% em ar ambiente, sem desconforto, falando frases completas e tolerando corticoide oral",
+        "Persistência de tiragem leve",
+        "Necessidade de O2 suplementar",
+        "Uso de musculatura acessória ainda presente"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na crise grave sem resposta às medidas iniciais, acrescentam-se corticoide EV e sulfato de magnésio 50 mg/kg EV em 20 min (máx 2 g); persistindo, considera-se salbutamol EV e suporte ventilatório (VNI/IOT) em UTI."},
+    {"resposta": "B", "comentario": "O corticoide sistêmico (prednisolona VO; metilprednisolona ou dexametasona EV nas graves) é fundamental e deve ser administrado precocemente, pois reduz a inflamação e as recidivas. Antibiótico não é de rotina."},
+    {"resposta": "B", "comentario": "O tórax silencioso (ausência de sibilos) indica fluxo aéreo gravemente reduzido — sinal de alarme de obstrução severa e iminência de insuficiência respiratória, não de melhora."},
+    {"resposta": "B", "comentario": "A radiografia de tórax não é de rotina; indica-se apenas na ausência de resposta ao tratamento ou suspeita de complicação (pneumonia, pneumotórax, atelectasia, corpo estranho), sem atrasar a terapia."},
+    {"resposta": "B", "comentario": "A alta é segura com SatO2 > 94% em ar ambiente, respiração confortável sem musculatura acessória, fala em frases completas e tolerância ao corticoide oral, com família orientada e retorno em 48h."}
+  ]
+}

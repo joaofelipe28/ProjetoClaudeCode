@@ -1,0 +1,197 @@
+{
+  "slug": "convulsao_febril",
+  "titulo": "Convulsão Febril",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Convulsão Febril no PS",
+  "chapter_bar": "CONVULSÃO FEBRIL — SIMPLES x COMPLEXA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "CONVULSÃO FEBRIL — EXCLUIR INFECÇÃO DO SNC",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Crise + febre, 6 meses a 5 anos\nsem infeccao do SNC / causa definida", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 22, "text": "Crise ativa >5 min? -> ABCDE + BENZODIAZEPINICO\n+ controle termico", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 24, "text": "SIMPLES (75%):\nalta + tratar foco\n+ orientar pais", "color": "green", "font_size": 5.6},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 26, "text": "COMPLEXA/red flag:\ninvestigar (PL/TC)\n+ internar", "color": "orange", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Crise convulsiva associada a FEBRE (> 38 C), entre 6 meses e 5 anos, sem infecção intracraniana ou causa definida",
+        "NÃO é epilepsia; história familiar positiva em ~25%",
+        "Excluir: crises afebris prévias (afastam o diagnóstico), infecção do SNC, distúrbio metabólico, trauma",
+        "Gatilho frequente: vacinação recente; foco febril comum (IVAS, OMA, GECA, roséola/HHV-6)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SIMPLES x COMPLEXA",
+      "section_color": "navy",
+      "headers": ["Característica", "Simples (75%)", "Complexa (25%)"],
+      "header_colors": ["gray", "green", "red"],
+      "col_widths": [0.24, 0.36, 0.40],
+      "rows": [
+        ["Duração", "< 15 minutos", "> 15 minutos"],
+        ["Tipo", "Generalizada (tônico-clônica)", "Focal (início/fim localizado)"],
+        ["Recorrência em 24h", "Única", "Múltipla (recorre em 24h)"],
+        ["Pós-ictal", "Recuperação rápida e completa", "Déficit transitório (paralisia de Todd)"],
+        ["Prognóstico", "Benigno", "Risco aumentado de epilepsia futura"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — INVESTIGAR / PENSAR EM SNC",
+      "section_color": "red",
+      "titulo": "SINAIS DE ALARME",
+      "items": [
+        "Crise prolongada (> 15 min — estado de mal) ou FOCAL; recorrência em < 24h",
+        "Déficit neurológico pós-ictal persistente (Todd > 15 min); rebaixamento persistente",
+        "Sinais de HIC (vômitos, cefaleia, fontanela tensa) e sinais MENÍNGEOS (rigidez de nuca, PETÉQUIAS)",
+        "Idade < 6 meses ou > 5 anos (questionar o diagnóstico de CF)",
+        "Trauma recente; sinais de infecção do SNC"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO DA CRISE AGUDA",
+      "section_color": "orange",
+      "titulo": "SE CRISE > 5 MIN OU ATIVA NA CHEGADA",
+      "items": [
+        "ABCDE: via aérea (aspirar, decúbito lateral), O2 se SatO2 < 92%, acesso venoso se crise persistente",
+        "BENZODIAZEPÍNICO (1a linha), repetir após 5 min se não cessar:",
+        "  Midazolam IM 0,2 mg/kg (máx 6 mg) — opção sem acesso venoso",
+        "  Midazolam EV: 6m-5a 0,05-0,1 mg/kg (máx 6 mg); 6-12a 0,025-0,05 mg/kg (máx 10 mg)",
+        "Controle térmico: banho morno + antitérmico (Dipirona 15 mg/kg/dose EV ou 0,6 gota/kg; Paracetamol 10-15 mg/kg/dose)",
+        "Crise refratária aos benzodiazepínicos -> manejar como estado de mal epiléptico"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "QUANDO PEDIR EXAMES",
+      "section_color": "navy",
+      "titulo": "INVESTIGAÇÃO SELETIVA",
+      "items": [
+        "CF SIMPLES com foco definido: exames de rotina (hemograma, eletrólitos, glicemia, imagem) NÃO são necessários",
+        "PUNÇÃO LOMBAR: < 1 ano -> considerar (sinais meníngeos frustros); > 1 ano -> apenas se suspeita de infecção do SNC",
+        "Neuroimagem (TC/RM): apenas em crise COMPLEXA, sinais focais, HIC ou suspeita de trauma",
+        "Glicemia capilar em toda crise (excluir hipoglicemia)",
+        "Identificar e tratar o foco febril"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PROFILAXIA E INTERNAÇÃO",
+      "section_color": "purple",
+      "titulo": "CONDUTA",
+      "items": [
+        "CF simples: NÃO indicar profilaxia de rotina (quadro benigno)",
+        "Profilaxia intermitente (na vigência da febre): benzodiazepínico (diazepam 0,3-0,5 mg/kg 8/8h por 24-48h) — casos selecionados; vigiar sonolência/depressão respiratória",
+        "Profilaxia contínua (especialista): valproato ou fenobarbital em casos específicos (estado de mal, crises recorrentes)",
+        "INTERNAR: CF complexa, estado de mal, suspeita de infecção do SNC, toxemia/instabilidade, < 1 ano com incerteza diagnóstica",
+        "ALTA (CF simples): recuperado (Glasgow 15), foco benigno identificado, sem sinais meníngeos, observação 2-4h sem nova crise, pais orientados"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ORIENTAÇÕES AOS PAIS (ALTA)",
+      "titulo": "EM CASA",
+      "items": [
+        "Tranquilizar sobre a BENIGNIDADE da CF simples (não causa lesão cerebral)",
+        "Em nova crise: proteger, lateralizar a criança e NÃO colocar nada na boca; cronometrar a duração",
+        "Controle da febre com antitérmico (não previne a recorrência, mas dá conforto)",
+        "Retornar IMEDIATAMENTE se: nova crise, crise > 5 min, vômitos, manchas na pele (petéquias), sonolência excessiva",
+        "Seguimento ambulatorial com pediatra"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos com crise ___ (simples/complexa); febre há ___; duração ___ min; recorrência: ___.",
+        "Neuro: Glasgow ___, sinais meníngeos ___, déficit focal (Todd?) ___; foco: ___.",
+        "Conduta: ABCDE, benzodiazepínico ___, controle térmico; PL/TC: ___.",
+        "Solicito internação/UTI se complexa/estado de mal/suspeita de meningite."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Criança de 2 anos, crise tônico-clônica generalizada de 3 min durante febre por OMA, recuperada e sem sinais meníngeos. Classificação e conduta?",
+      "alternativas": [
+        "Convulsão febril complexa — internar e fazer punção lombar",
+        "Convulsão febril simples — tratar o foco, orientar os pais e dar alta após observação",
+        "Epilepsia — iniciar valproato",
+        "Meningite — antibiótico endovenoso",
+        "Estado de mal — fenitoína"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado caracteriza convulsão febril COMPLEXA?",
+      "alternativas": [
+        "Crise generalizada de 5 minutos, única",
+        "Crise focal, ou > 15 minutos, ou recorrente em 24h",
+        "Recuperação rápida e completa",
+        "Idade de 2 anos",
+        "Febre por IVAS"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual a primeira linha medicamentosa para a crise convulsiva febril ativa (> 5 min)?",
+      "alternativas": [
+        "Fenobarbital oral",
+        "Benzodiazepínico (ex.: midazolam IM/EV)",
+        "Ácido valproico",
+        "Paracetamol",
+        "Fenitoína oral"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Em qual situação a punção lombar deve ser fortemente considerada na convulsão febril?",
+      "alternativas": [
+        "Toda criança com convulsão febril simples",
+        "Lactente < 1 ano (sinais meníngeos podem ser frustros) ou suspeita de infecção do SNC",
+        "Apenas se febre > 40 C",
+        "Nunca",
+        "Somente em crianças > 5 anos"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre a profilaxia na convulsão febril simples, é correto:",
+      "alternativas": [
+        "Toda criança deve usar anticonvulsivante contínuo",
+        "Não se indica profilaxia de rotina (quadro benigno); intermitente/contínua só em casos selecionados",
+        "Profilaxia com fenitoína para todos",
+        "Antitérmico contínuo previne a recorrência",
+        "Internação para todos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Crise generalizada < 15 min, única, com recuperação completa e foco febril benigno = convulsão febril simples. Conduta: tratar o foco, orientar os pais e dar alta após período de observação. Não exige PL nem exames de rotina."},
+    {"resposta": "B", "comentario": "A CF complexa tem pelo menos um de: crise focal, duração > 15 min, ou recorrência em 24h (e/ou déficit pós-ictal). Associa-se a maior risco de epilepsia futura."},
+    {"resposta": "B", "comentario": "A primeira linha da crise ativa é o benzodiazepínico (midazolam IM se sem acesso, ou EV), repetível após 5 min, junto ao controle térmico. Valproato/fenobarbital são para profilaxia contínua selecionada."},
+    {"resposta": "B", "comentario": "A PL deve ser considerada em lactentes < 1 ano (sinais meníngeos podem ser sutis) e sempre que houver suspeita de infecção do SNC. Em > 1 ano, só se houver suspeita clínica."},
+    {"resposta": "B", "comentario": "Na CF simples não se indica profilaxia de rotina, dada a benignidade. Profilaxia intermitente (benzodiazepínico na febre) ou contínua (valproato/fenobarbital) ficam para casos selecionados, com especialista."}
+  ]
+}

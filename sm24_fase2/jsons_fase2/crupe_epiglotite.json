@@ -1,0 +1,184 @@
+{
+  "slug": "crupe_epiglotite",
+  "titulo": "Crupe (Laringotraqueíte) e Epiglotite",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Crupe e Epiglotite no PS",
+  "chapter_bar": "CRUPE x EPIGLOTITE — ESTRIDOR NA CRIANÇA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ESTRIDOR + TOSSE",
+      "title": "ESTRIDOR — DIFERENCIAR CRUPE x EPIGLOTITE",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Crianca com estridor inspiratorio\nInicio gradual + tosse ladrante? OU subito + sialorreia?", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 26, "text": "CRUPE (viral):\ndexametasona +/-\nadrenalina NBZ", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 28, "text": "EPIGLOTITE:\nNAO manipular VA!\nORL/anestesia/UTI + ATB", "color": "red", "font_size": 5.4},
+        {"id": "d", "x": 0.25, "y": 0.15, "w": 145, "h": 18, "text": "Westley guia a gravidade", "color": "orange", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CRUPE x EPIGLOTITE — DIFERENCIAÇÃO",
+      "section_color": "navy",
+      "headers": ["Característica", "Crupe (viral)", "Epiglotite (emergência)"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.20, 0.40, 0.40],
+      "rows": [
+        ["Agente / idade", "Vírus (parainfluenza); 6m-3a", "H. influenzae b; 2-7a (raro se Hib em dia)"],
+        ["Início / febre", "Gradual (2-3 dias); febre baixa", "SÚBITO (<6-12h); febre ALTA (>39)"],
+        ["Tosse", "LADRANTE (latido)", "Ausente/mínima"],
+        ["Estridor / posição", "Inspiratório, piora à noite; qualquer posição", "Bifásico grave; posição em TRIPÉ"],
+        ["Salivação / aspecto", "Normal", "SIALORREIA; aspecto tóxico"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESCORE DE WESTLEY (gravidade do crupe)",
+      "section_color": "navy",
+      "headers": ["Pontuação", "Classificação / conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["0-2", "LEVE — alta domiciliar possível (após dexametasona)"],
+        ["3-7", "MODERADO — observação/internação (dexametasona + adrenalina nebulizada)"],
+        [">= 8", "GRAVE — UTI, risco de IOT"],
+        ["Itens", "Estridor, tiragem, entrada de ar, cianose, nível de consciência"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO DO CRUPE",
+      "section_color": "orange",
+      "titulo": "DEXAMETASONA EM TODOS + ADRENALINA SE MOD/GRAVE",
+      "items": [
+        "DEXAMETASONA 0,6 mg/kg (máx 16 mg) VO/IM/EV — dose única, para TODA gravidade (inclusive leve)",
+        "Adrenalina NEBULIZADA (crupe moderado/grave com estridor em repouso): L-adrenalina ou adrenalina 1:1000",
+        "  Observar >= 2-4h após a nebulização (efeito transitório, risco de rebote)",
+        "O2 'blow-by' (próximo ao rosto, sem agitar a criança); manter a criança calma (colo dos pais)",
+        "Alta se: leve, sem estridor em repouso, após observação e dexametasona; retorno se piora",
+        "Crupe grave refratário a múltiplas doses de adrenalina -> UTI (risco de IOT)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "EPIGLOTITE — EMERGÊNCIA DE VIA AÉREA",
+      "section_color": "red",
+      "titulo": "NÃO MANIPULAR A VIA AÉREA",
+      "items": [
+        "NÃO fazer oroscopia/baixar a língua (risco de obstrução total reflexa)!",
+        "NÃO deitar a criança nem agitá-la; manter na posição preferida (tripé), com os pais",
+        "O2 'blow-by'; acionar IMEDIATAMENTE ANESTESIA + ORL + UTI",
+        "IOT em CENTRO CIRÚRGICO com equipe preparada (via aérea difícil); traqueostomia de resgate",
+        "ATB: Ceftriaxona 50-100 mg/kg/dia EV (máx 2g/dose) OU Cefotaxima — APÓS via aérea segura",
+        "Exames (hemograma/hemocultura) e laringoscopia somente após assegurar a via aérea"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "QUANDO PEDIR EXAMES",
+      "section_color": "navy",
+      "titulo": "IMAGEM (só se estável)",
+      "items": [
+        "RX cervical NÃO é obrigatório no crupe típico; considerar se diagnóstico incerto",
+        "Crupe: 'sinal da torre/ponta de lápis' (estreitamento subglótico)",
+        "Epiglotite: 'sinal do polegar/dedo de luva' (epiglote edemaciada)",
+        "NUNCA enviar criança com suspeita de epiglotite sozinha ao RX (risco de obstrução)",
+        "Laboratório: desnecessário no crupe; na epiglotite, após via aérea segura"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "ALTA (crupe): Westley 0-2, sem estridor em repouso, boa entrada de ar, após dexametasona e observação",
+        "INTERNAR/UTI: crupe grave (Westley >= 8), refratário à adrenalina, ou SUSPEITA DE EPIGLOTITE",
+        "Epiglotite: internação em UTI obrigatória, via aérea assegurada em centro cirúrgico",
+        "Orientar retorno se: piora do estridor, esforço respiratório, sonolência, sialorreia",
+        "Verificar status vacinal (Hib) — orientar atualização"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos/___ kg com ___ (crupe grave / suspeita de epiglotite); Westley ___ pontos.",
+        "Estridor ___, tiragem ___, entrada de ar ___, sialorreia ___; vacina Hib: ___.",
+        "Conduta: dexametasona ___, adrenalina NBZ ___ doses (crupe) / NÃO manipular VA + ATB (epiglotite).",
+        "Solicito UTI pediátrica + IOT em centro cirúrgico (epiglotite); preparar material de via aérea no transporte."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Criança de 5 anos com início súbito de febre alta, sialorreia, posição em tripé e ausência de tosse. Conduta?",
+      "alternativas": [
+        "Oroscopia imediata para visualizar a orofaringe",
+        "NÃO manipular a via aérea; manter calma, O2 blow-by, acionar anestesia/ORL/UTI e antibiótico após via aérea segura (epiglotite)",
+        "Dexametasona oral e alta",
+        "Adrenalina nebulizada e observação domiciliar",
+        "Apenas antitérmico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual medicação está indicada em TODOS os casos de crupe, independentemente da gravidade?",
+      "alternativas": [
+        "Antibiótico",
+        "Dexametasona (0,6 mg/kg, dose única)",
+        "Adrenalina nebulizada em todos",
+        "Anti-histamínico",
+        "Salbutamol"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado clínico melhor diferencia o crupe da epiglotite?",
+      "alternativas": [
+        "Presença de febre",
+        "Tosse ladrante com início gradual (crupe) vs início súbito com sialorreia e sem tosse (epiglotite)",
+        "Idade da criança apenas",
+        "Presença de coriza",
+        "Cor da pele"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "No crupe moderado a grave com estridor em repouso, qual conduta acrescenta-se à dexametasona?",
+      "alternativas": [
+        "Antibiótico endovenoso",
+        "Adrenalina nebulizada (com observação por algumas horas)",
+        "Oroscopia",
+        "Anti-histamínico",
+        "Broncodilatador beta-2"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o sinal radiológico clássico da epiglotite?",
+      "alternativas": [
+        "Sinal da torre (estreitamento subglótico)",
+        "Sinal do polegar/dedo de luva (epiglote edemaciada)",
+        "Sinal do duplo halo",
+        "Sinal da bandeira",
+        "Sinal de Westermark"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Início súbito + febre alta + sialorreia + posição em tripé sem tosse = epiglotite. NÃO se manipula a via aérea (oroscopia pode causar obstrução): manter a criança calma, O2, acionar anestesia/ORL/UTI e antibiótico após a via aérea estar segura."},
+    {"resposta": "B", "comentario": "A dexametasona 0,6 mg/kg em dose única está indicada em TODOS os crupes (leve a grave), reduzindo o edema subglótico e a necessidade de retorno/internação."},
+    {"resposta": "B", "comentario": "O crupe tem início gradual com tosse ladrante e febre baixa; a epiglotite tem início súbito, febre alta, sialorreia, posição em tripé e ausência de tosse — esta última é emergência de via aérea."},
+    {"resposta": "B", "comentario": "No crupe moderado/grave com estridor em repouso, acrescenta-se adrenalina nebulizada à dexametasona, mantendo a criança em observação por algumas horas pelo risco de efeito rebote."},
+    {"resposta": "B", "comentario": "A epiglotite mostra o 'sinal do polegar/dedo de luva' (epiglote edemaciada) no RX cervical em perfil; o crupe mostra o 'sinal da torre' (estreitamento subglótico) no AP. Imagem só se a criança estiver estável."}
+  ]
+}

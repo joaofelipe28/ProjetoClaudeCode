@@ -1,0 +1,197 @@
+{
+  "slug": "trauma_ortopedico_pediatria",
+  "titulo": "Trauma Ortopédico em Pediatria",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Fraturas e trauma ortopédico na criança",
+  "chapter_bar": "TRAUMA ORTOPÉDICO PEDIÁTRICO — FISE + 5 Ps",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "FRATURA NA CRIANÇA — AVALIAR, IMOBILIZAR, EXCLUIR COMPARTIMENTAL",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Trauma ortopedico: avaliacao NEUROVASCULAR\n+ analgesia + imobilizacao precoce", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "RX em 2 incidencias (articulacao acima e abaixo)", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.28, "w": 145, "h": 26, "text": "Sem desvio/estavel:\nimobilizar (gesso/tala)\n+ alta orientada", "color": "green", "font_size": 5.4},
+        {"id": "d", "x": 0.75, "y": 0.28, "w": 150, "h": 28, "text": "Instavel/exposta/fise\nIII-V/neurovascular:\ncirurgia + internar", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PARTICULARIDADES DO OSSO PEDIÁTRICO",
+      "section_color": "teal",
+      "titulo": "POR QUE É DIFERENTE",
+      "items": [
+        "Mais elástico e poroso -> fraturas em GALHO VERDE (greenstick) e TORUS (buckle), sem ruptura completa",
+        "Periósteo espesso e resistente -> maior estabilidade, contém fragmentos e acelera a cicatrização",
+        "PLACAS DE CRESCIMENTO (fises): lesões fisárias podem comprometer o crescimento futuro",
+        "Alto potencial de REMODELAÇÃO -> tolera certo grau de desvio; favorece o tratamento conservador",
+        "Membros superiores são os mais acometidos (clavícula, punho, antebraço, cotovelo)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SALTER-HARRIS (FRATURAS FISÁRIAS)",
+      "section_color": "navy",
+      "headers": ["Tipo", "Traço / prognóstico"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.20, 0.80],
+      "rows": [
+        ["I (Slipped)", "Através da fise (separa epífise da metáfise); bom prognóstico; RX pode ser normal"],
+        ["II (Above)", "Fise + metáfise (poupa epífise); o MAIS COMUM (~75%); bom prognóstico (frag. de Thurston-Holland)"],
+        ["III (Lower)", "Fise + epífise (intra-articular); prognóstico reservado"],
+        ["IV (Through)", "Metáfise + fise + epífise (intra-articular); prognóstico ruim"],
+        ["V (Crush)", "Esmagamento da fise, sem desvio; o MAIS RARO e PIOR (parada de crescimento)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — SÍNDROME COMPARTIMENTAL (5 Ps)",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA ORTOPÉDICA",
+      "items": [
+        "DOR (Pain): intensa, DESPROPORCIONAL, refratária a analgésico, piora ao alongamento passivo — sinal mais precoce e confiável",
+        "Parestesia; Palidez; Paralisia (dificuldade de mover os dedos)",
+        "Ausência de Pulso (Pulselessness): sinal TARDIO e grave (isquemia avançada)",
+        "Fatores de risco: alta energia, fraturas de antebraço/tíbia/supracondiliana do úmero, gesso/tala apertados",
+        "Conduta: emergência CIRÚRGICA — fasciotomia descompressiva (não esperar a ausência de pulso!)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E IMAGEM",
+      "section_color": "navy",
+      "titulo": "EXAME NEUROVASCULAR É MANDATÓRIO",
+      "items": [
+        "Inspeção (deformidade, edema, ferida = exposta?), palpação (dor máxima, crepitação), avaliação NEUROVASCULAR distal (pulsos, TEC < 2s, sensibilidade, motricidade)",
+        "RX é o exame de escolha: pelo menos 2 incidências ortogonais (AP e perfil), incluindo articulação proximal e distal",
+        "RX comparativa do lado contralateral em dúvida (fises — Salter-Harris I e V podem ter RX normal)",
+        "TC: fraturas complexas/intra-articulares; RM: cartilagem/ligamentos/lesões fisárias sutis",
+        "Sempre avaliar SINAIS DE ABUSO (ver red flags sociais)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SUSPEITA DE MAUS-TRATOS",
+      "section_color": "purple",
+      "titulo": "PADRÕES SUGESTIVOS",
+      "items": [
+        "Fraturas metafisárias em lactentes; arcos costais POSTERIORES (bebê sacudido)",
+        "Múltiplas fraturas em DIFERENTES estágios de cicatrização",
+        "Fratura de ossos longos (fêmur/tíbia/úmero) ou espiralada em < 2 anos sem trauma de alto impacto",
+        "História inconsistente com a lesão; atraso inexplicável na procura; lesões associadas (hematomas/queimaduras)",
+        "NOTIFICAÇÃO obrigatória; série óssea completa em < 2 anos"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO GERAL",
+      "section_color": "orange",
+      "titulo": "ANALGESIA, IMOBILIZAÇÃO, REDUÇÃO",
+      "items": [
+        "Analgesia eficaz e escalonada por intensidade/idade; imobilização PRECOCE (reduz dor, edema e agravamento)",
+        "Redução FECHADA é preferencial (alto potencial de remodelação; ideal em Salter-Harris I e II)",
+        "Imobilização: gesso (mais comum) ou tala/órtese; tempo conforme idade/tipo/local",
+        "Fratura EXPOSTA: antibiótico precoce + profilaxia antitetânica + curativo estéril + cirurgia",
+        "Cirurgia: instável/irredutível, intra-articular com degrau, exposta, lesão neurovascular, Salter-Harris III-V, fêmur em maiores"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: fratura instável/cirúrgica, exposta, suspeita de síndrome compartimental, lesão neurovascular, dor incontrolável, suspeita de abuso, ambiente domiciliar inadequado",
+        "ALTA: fratura estável/sem desvio imobilizada, dor controlada VO, neurovascular preservado, família orientada",
+        "Casa: manter gesso limpo/seco, não inserir objetos, observar pele, analgesia prescrita",
+        "Retorno IMEDIATO: dor progressiva desproporcional, parestesia, palidez/cianose/frialdade da extremidade, edema com tensão, impossibilidade de mover os dedos, febre, gesso apertado/odor fétido",
+        "Seguimento ortopédico; reavaliar lesões fisárias pelo risco de distúrbio de crescimento"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos/___ kg; mecanismo ___; diagnóstico ___ (ex.: fratura exposta de tíbia — Gustilo ___).",
+        "Neurovascular: pulso ___, perfusão ___, sensibilidade/motricidade ___; suspeita de compartimental: ___.",
+        "Condutas: analgesia ___, imobilização ___, ATB (se exposta) ___ às ___, antitetânica ___; RX anexada.",
+        "Solicito ortopedia/cirurgia + transferência (exposta/instável/compartimental); notificar se suspeita de abuso."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Criança com fratura de antebraço gessada evolui com dor intensa, desproporcional, que piora ao estender passivamente os dedos e não cede com analgésico. Qual a principal hipótese e conduta?",
+      "alternativas": [
+        "Dor normal do gesso; manter conduta",
+        "Síndrome compartimental — emergência cirúrgica (abrir o gesso e considerar fasciotomia)",
+        "Ansiedade; prescrever ansiolítico",
+        "Infecção tardia; antibiótico oral e alta",
+        "Apenas elevar o membro e reavaliar em 1 semana"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tipo mais comum de fratura fisária (Salter-Harris) e seu prognóstico?",
+      "alternativas": [
+        "Tipo I — péssimo prognóstico",
+        "Tipo II — o mais comum (~75%), bom prognóstico",
+        "Tipo V — o mais comum, bom prognóstico",
+        "Tipo IV — o mais comum, sem risco de crescimento",
+        "Tipo III — o mais comum, excelente prognóstico"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual achado deve levantar suspeita de maus-tratos em um lactente com fratura?",
+      "alternativas": [
+        "Fratura única de clavícula por queda testemunhada",
+        "Múltiplas fraturas em diferentes estágios de cicatrização e/ou fratura de arcos costais posteriores",
+        "Fratura em galho verde de antebraço por queda da própria altura",
+        "Fratura de punho em adolescente após queda de bicicleta",
+        "Entorse de tornozelo no esporte"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Por que o tratamento conservador (redução fechada) é frequentemente possível nas fraturas pediátricas?",
+      "alternativas": [
+        "Porque o osso da criança não cicatriza",
+        "Pelo alto potencial de remodelação e pelo periósteo espesso, que toleram certo grau de desvio",
+        "Porque fraturas não desviam em crianças",
+        "Porque a dor é ausente",
+        "Porque a cirurgia é contraindicada em qualquer idade"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o exame de imagem de escolha para a maioria das fraturas pediátricas e como deve ser solicitado?",
+      "alternativas": [
+        "TC de todo o membro em todos os casos",
+        "Radiografia em pelo menos 2 incidências (AP e perfil), incluindo a articulação proximal e distal à lesão",
+        "Ressonância magnética de rotina",
+        "Apenas uma incidência única",
+        "Ultrassom como exame definitivo de fratura"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor intensa, desproporcional, refratária e que piora ao alongamento passivo é o sinal mais precoce e confiável da síndrome compartimental — emergência ortopédica. Abrir o gesso e avaliar fasciotomia; a ausência de pulso é sinal tardio e não se deve esperar por ele."},
+    {"resposta": "B", "comentario": "O Salter-Harris tipo II (fise + metáfise, poupando a epífise) é o mais comum (~75%) e tem bom prognóstico. Os tipos III, IV e V (intra-articulares/esmagamento) têm pior prognóstico de crescimento."},
+    {"resposta": "B", "comentario": "Múltiplas fraturas em diferentes estágios de cicatrização e fraturas de arcos costais posteriores (associadas ao bebê sacudido) são padrões altamente sugestivos de maus-tratos, exigindo investigação (série óssea) e notificação."},
+    {"resposta": "B", "comentario": "O alto potencial de remodelação e o periósteo espesso e resistente permitem tolerar certo grau de desvio, tornando a redução fechada o método preferencial para a maioria das fraturas pediátricas (especialmente Salter-Harris I e II)."},
+    {"resposta": "B", "comentario": "A radiografia é o exame de escolha, em pelo menos 2 incidências ortogonais (AP e perfil), incluindo as articulações proximal e distal à lesão; a comparativa contralateral ajuda em dúvidas (fises)."}
+  ]
+}

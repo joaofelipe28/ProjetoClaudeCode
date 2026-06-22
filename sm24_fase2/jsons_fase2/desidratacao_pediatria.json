@@ -1,0 +1,182 @@
+{
+  "slug": "desidratacao_pediatria",
+  "titulo": "Desidratação em Pediatria",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Desidratação na criança no PS",
+  "chapter_bar": "DESIDRATAÇÃO EM PEDIATRIA — TRO x EV",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — GRAU DEFINE A VIA",
+      "title": "DESIDRATAÇÃO — CLASSIFICAR E HIDRATAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Crianca com perdas (GECA/vomitos)\nclassificar o grau de desidratacao", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.22, "y": 0.5, "w": 135, "h": 24, "text": "LEVE:\nTRO 50-100 mL/kg\nem 4h", "color": "green", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 24, "text": "MODERADA:\nTRO assistida\nou EV", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.78, "y": 0.5, "w": 135, "h": 24, "text": "GRAVE/choque:\nSF 20 mL/kg\nbolus EV", "color": "red", "font_size": 5.8},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Apos estabilizar: manutencao (Holliday-Segar)", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CAUSAS",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Perda de água e eletrólitos suficiente para causar sinais/sintomas; maior risco em lactentes e crianças pequenas",
+        "Causa mais comum: GASTROENTERITE AGUDA (diarreia/vômitos)",
+        "Outras: febre prolongada, baixa ingesta, sudorese, diuréticos, doenças metabólicas (ex.: CAD)",
+        "A base do tratamento é a REIDRATAÇÃO; a via depende do grau"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DO GRAU DE DESIDRATAÇÃO",
+      "section_color": "navy",
+      "headers": ["Sinal", "Leve / sem sinais", "Moderada", "Grave"],
+      "header_colors": ["gray", "green", "orange", "red"],
+      "col_widths": [0.22, 0.26, 0.26, 0.26],
+      "rows": [
+        ["Estado geral", "Alerta", "Irritado/sedento", "Letárgico/comatoso"],
+        ["Olhos / mucosas", "Normais", "Fundos / secas", "Muito fundos / muito secas"],
+        ["Turgor / TEC", "Normal", "Lento", "Muito lento (> 3s)"],
+        ["Lágrimas / diurese", "Presentes", "Reduzidas", "Ausentes / oligoanúria"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS",
+      "section_color": "red",
+      "titulo": "SINAIS DE GRAVIDADE / CHOQUE",
+      "items": [
+        "Letargia ou irritabilidade extrema; rebaixamento do nível de consciência",
+        "Oligúria/anúria; vômitos incoercíveis; incapacidade de ingerir líquidos",
+        "Taquicardia persistente, hipotensão, sinais de CHOQUE (TEC > 3s, extremidades frias)",
+        "Fontanela muito deprimida (lactente); olhos muito encovados",
+        "Suspeita de sepse ou causa metabólica (CAD) -> internação e manejo específico"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "NO PS",
+      "items": [
+        "Anamnese: duração/volume das perdas, ingesta, número de micções, febre, aceitação, nível de consciência, peso prévio",
+        "Exame: estado geral, sinais vitais, turgor, mucosas, olhos, fontanela, enchimento capilar, peso atual",
+        "Desidratação leve: exames geralmente DESNECESSÁRIOS",
+        "Glicemia capilar em lactente/prostração",
+        "Variáveis (mod/grave): eletrólitos, gasometria, ureia/creatinina, urina I, hemograma se infecção"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "POR GRAU",
+      "items": [
+        "LEVE/MODERADA: Soro de reidratação ORAL (SRO) 50-100 mL/kg em 4 horas (TRO assistida na moderada)",
+        "Ondansetrona 0,15 mg/kg/dose se vômitos (facilita a TRO)",
+        "GRAVE/choque: SF 0,9% 20 mL/kg em BOLUS EV (repetir se necessário)",
+        "Após estabilizar: manutenção pela regra de Holliday-Segar + repor perdas",
+        "MANTER aleitamento materno; jejum apenas se vômitos intensos; retomar dieta precocemente",
+        "Reposição após cada evacuação/vômito; NÃO usar refrigerante/suco/chá como reidratação"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: desidratação moderada/grave, falha da TRO, vômitos incoercíveis, rebaixamento, distúrbio eletrolítico, suspeita de sepse, condição social desfavorável",
+        "ALTA: melhora clínica, boa aceitação oral, diurese presente, sinais vitais estáveis, responsável orientado/confiável",
+        "Casa: SRO conforme aceitação + dieta habitual/aleitamento + antiemético se necessário",
+        "Oferecer líquidos em pequena quantidade e com frequência",
+        "Retorno IMEDIATO: queda da diurese, vômitos persistentes, febre alta, prostração/sonolência, piora geral"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos/___ kg com desidratação ___ (leve/moderada/grave); causa: ___ (GECA?).",
+        "Sinais vitais ___; diurese ___; nível de consciência ___; glicemia ___.",
+        "Condutas: TRO ___ / SF 0,9% 20 mL/kg bolus ___ ; antiemético ___.",
+        "Solicito hospital com suporte pediátrico (grave/choque/falha da TRO)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Lactente com gastroenterite, desidratação grave e sinais de choque. Qual a conduta imediata?",
+      "alternativas": [
+        "Soro de reidratação oral 50 mL/kg",
+        "SF 0,9% 20 mL/kg em bolus endovenoso (repetir se necessário)",
+        "Apenas observação",
+        "Antibiótico endovenoso",
+        "Restrição hídrica"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tratamento de escolha da desidratação LEVE a moderada na criança?",
+      "alternativas": [
+        "Hidratação endovenosa de rotina",
+        "Soro de reidratação oral (50-100 mL/kg em 4 horas)",
+        "Refrigerante e sucos",
+        "Jejum absoluto",
+        "Antibiótico oral"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual medicação pode facilitar a terapia de reidratação oral na criança com vômitos?",
+      "alternativas": [
+        "Metoclopramida em dose alta",
+        "Ondansetrona 0,15 mg/kg/dose",
+        "Dimenidrinato intramuscular",
+        "Loperamida",
+        "Hioscina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a alimentação na criança com gastroenterite e desidratação, é correto:",
+      "alternativas": [
+        "Suspender o aleitamento materno",
+        "Manter o aleitamento materno e retomar a dieta precocemente (jejum só se vômitos intensos)",
+        "Jejum absoluto por 48h",
+        "Oferecer apenas chás",
+        "Dieta rica em açúcares simples"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual orientação aos pais é correta na alta da criança com gastroenterite?",
+      "alternativas": [
+        "Repor perdas com refrigerante ou suco",
+        "Oferecer SRO em pequenas quantidades e com frequência; repor após cada evacuação/vômito",
+        "Suspender líquidos para 'descansar' o intestino",
+        "Usar antibiótico de rotina",
+        "Dar grandes volumes de uma só vez"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Desidratação grave com choque exige reposição venosa imediata: SF 0,9% 20 mL/kg em bolus, repetindo conforme a resposta, antes de passar à manutenção. A TRO não é adequada no choque."},
+    {"resposta": "B", "comentario": "A desidratação leve/moderada é tratada com soro de reidratação oral (50-100 mL/kg em 4h), preferencial por ser eficaz, seguro e fisiológico. EV reserva-se à falha da TRO ou à forma grave."},
+    {"resposta": "B", "comentario": "A ondansetrona (0,15 mg/kg/dose) reduz os vômitos e aumenta o sucesso da terapia de reidratação oral, evitando hidratação venosa desnecessária."},
+    {"resposta": "B", "comentario": "Mantém-se o aleitamento materno e retoma-se a dieta precocemente (jejum apenas se vômitos intensos); a realimentação precoce melhora o desfecho na gastroenterite."},
+    {"resposta": "B", "comentario": "Orienta-se oferecer SRO em pequenas quantidades e com frequência, repondo perdas após cada evacuação/vômito. Refrigerantes, sucos e chás não são adequados (osmolaridade/composição inadequadas)."}
+  ]
+}

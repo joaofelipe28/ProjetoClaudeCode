@@ -1,0 +1,168 @@
+{
+  "slug": "dor_abdominal_pediatrica",
+  "titulo": "Dor Abdominal na Criança",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Dor abdominal aguda pediátrica no PS",
+  "chapter_bar": "DOR ABDOMINAL NA CRIANÇA — EXCLUIR CIRÚRGICO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "DOR ABDOMINAL — CIRÚRGICO x CLÍNICO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Crianca com dor abdominal aguda\nABCDE + buscar RED FLAGS (abdome agudo)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 150, "h": 26, "text": "Red flags presentes:\ncirurgico? -> US/labs\n+ cirurgia pediatrica", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 26, "text": "Sem red flags:\ncausa clinica provavel\n-> tratar + reavaliar", "color": "green", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Evitar AINE ate excluir abdome cirurgico", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS POR FAIXA / SISTEMA",
+      "section_color": "navy",
+      "headers": ["Grupo", "Causas a considerar"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Cirúrgico", "Apendicite, invaginação intestinal (lactente, 'geleia de morango'), hérnia encarcerada, torção testicular/ovariana, obstrução, abdome agudo"],
+        ["Gastrointestinal", "GECA, constipação, adenite mesentérica, ITU/pielonefrite, hepatite, gastrite"],
+        ["Urinário/genital", "ITU, litíase, torção de testículo/ovário, doença inflamatória pélvica (adolescente)"],
+        ["Extra-abdominal", "Pneumonia de base, CAD (cetoacidose diabética), PHS (púrpura de Henoch-Schönlein), faringite estreptocócica"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — ABDOME AGUDO",
+      "section_color": "red",
+      "titulo": "SINAIS DE ALARME",
+      "items": [
+        "VÔMITOS BILIOSOS (verdes) — obstrução até prova em contrário",
+        "Sangue nas fezes ou nos vômitos; fezes em 'geleia de morango' (invaginação)",
+        "Dor intensa, descompressão dolorosa, rigidez/defesa abdominal, distensão importante",
+        "Dor testicular/escrotal aguda (torção — urgência cirúrgica de horas!)",
+        "Toxemia, palidez, prostração, instabilidade hemodinâmica; dor que migra para FID (apendicite)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "NO PS",
+      "items": [
+        "Anamnese: localização, irradiação, tempo, febre, vômitos (biliosos?), hábito intestinal, sintomas urinários, alimentação, trauma; em meninas adolescentes: história menstrual/sexual",
+        "Exame: abdome (massa, defesa, descompressão), genitália/bolsa escrotal SEMPRE, sinais respiratórios (excluir pneumonia)",
+        "Exames conforme suspeita: hemograma, PCR, urina I/urocultura, amilase/lipase, transaminases, beta-hCG (adolescente)",
+        "Glicemia/cetonemia se suspeita de CAD; gasometria se toxemia",
+        "Imagem: US abdominal/pélvica e de bolsa escrotal (1a linha); RX se suspeita de obstrução/perfuração; TC em casos selecionados"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO SINTOMÁTICO",
+      "section_color": "orange",
+      "titulo": "ANALGESIA E ANTIEMÉTICO",
+      "items": [
+        "Analgesia NÃO mascara nem atrasa o diagnóstico — deve ser oferecida: Dipirona 10-15 mg/kg/dose VO/EV",
+        "Paracetamol 10-15 mg/kg/dose como alternativa",
+        "Ondansetrona 0,15 mg/kg/dose se vômitos",
+        "EVITAR AINE (ibuprofeno) até excluir abdome cirúrgico/sangramento",
+        "Hidratação conforme estado; jejum se suspeita cirúrgica",
+        "NÃO usar antiespasmódicos/analgesia que dificulte a reavaliação seriada"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA / DISPOSIÇÃO",
+      "titulo": "DECISÃO",
+      "items": [
+        "Suspeita cirúrgica (apendicite, invaginação, torção, obstrução): jejum, acesso venoso, avaliação da CIRURGIA PEDIÁTRICA, imagem",
+        "INTERNAR/observar: dor persistente sem diagnóstico, red flags, vômitos biliosos, abdome em investigação",
+        "ALTA: causa clínica benigna definida (constipação, GECA, ITU tratável ambulatorial), dor controlada, criança ativa, hidratada",
+        "Reavaliação seriada do abdome é a melhor ferramenta no quadro indeterminado",
+        "Retorno IMEDIATO: vômitos biliosos, sangue nas fezes, dor escrotal, piora da dor, febre alta, prostração"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos/___ kg com dor abdominal há ___; localização ___; vômitos ___ (biliosos?); febre ___.",
+        "Exame: defesa/descompressão ___, massa ___, bolsa escrotal ___; suspeita: ___ (apendicite/invaginação/torção).",
+        "Exames: hemograma ___, US ___; jejum + acesso + analgesia.",
+        "Solicito avaliação da cirurgia pediátrica / transferência para serviço com cirurgia pediátrica e US."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Lactente de 8 meses com dor abdominal em cólica, choro intermitente, vômitos e fezes em 'geleia de morango'. Diagnóstico mais provável?",
+      "alternativas": [
+        "Constipação funcional",
+        "Invaginação intestinal",
+        "Gastroenterite viral",
+        "Refluxo gastroesofágico",
+        "Cólica do lactente"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual sinal é considerado red flag de obstrução intestinal na criança?",
+      "alternativas": [
+        "Vômitos alimentares isolados",
+        "Vômitos biliosos (esverdeados)",
+        "Dor periumbilical leve",
+        "Febre baixa",
+        "Diarreia aquosa"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Menino de 13 anos com dor escrotal aguda e intensa, de início súbito. Qual a conduta prioritária?",
+      "alternativas": [
+        "Antibiótico oral e reavaliação em 48h",
+        "Avaliação urgente para torção testicular (urgência cirúrgica de horas)",
+        "Analgésico e alta",
+        "Apenas ultrassom eletivo",
+        "Anti-inflamatório e repouso domiciliar"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a analgesia na dor abdominal aguda da criança em investigação, é correto:",
+      "alternativas": [
+        "Deve ser evitada para não mascarar o diagnóstico",
+        "Deve ser oferecida (não atrasa o diagnóstico), evitando AINE até excluir abdome cirúrgico",
+        "Sempre usar AINE como primeira escolha",
+        "Usar opioide de rotina em todos",
+        "Analgesia só após a cirurgia"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual causa EXTRA-abdominal pode se manifestar como dor abdominal na criança?",
+      "alternativas": [
+        "Apendicite",
+        "Pneumonia de base e cetoacidose diabética",
+        "Invaginação intestinal",
+        "Constipação",
+        "Adenite mesentérica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Lactente com dor em cólica intermitente, vômitos e fezes em 'geleia de morango' (sangue + muco) é o quadro clássico da invaginação intestinal — emergência; US confirma ('sinal do alvo') e o enema pode ser terapêutico."},
+    {"resposta": "B", "comentario": "Vômitos biliosos (esverdeados) indicam obstrução intestinal até prova em contrário e exigem investigação urgente (jejum, imagem, cirurgia pediátrica)."},
+    {"resposta": "B", "comentario": "Dor escrotal aguda e súbita no adolescente é torção testicular até prova em contrário — urgência cirúrgica com janela de poucas horas para salvar a gônada. Exame da bolsa escrotal é mandatório em toda dor abdominal."},
+    {"resposta": "B", "comentario": "A analgesia adequada deve ser oferecida e não atrasa nem mascara o diagnóstico; evita-se o AINE até excluir abdome cirúrgico/sangramento. A reavaliação seriada é a melhor ferramenta no quadro indeterminado."},
+    {"resposta": "B", "comentario": "Causas extra-abdominais como pneumonia de base e cetoacidose diabética podem se manifestar como dor abdominal — por isso o exame respiratório e a glicemia/cetonemia fazem parte da avaliação."}
+  ]
+}

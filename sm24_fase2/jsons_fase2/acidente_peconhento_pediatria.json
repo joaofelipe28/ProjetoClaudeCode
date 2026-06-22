@@ -1,0 +1,185 @@
+{
+  "slug": "acidente_peconhento_pediatria",
+  "titulo": "Acidente com Animal Peçonhento — Pediatria",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Acidentes peçonhentos na criança",
+  "chapter_bar": "ANIMAL PEÇONHENTO — PEDIATRIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "PEÇONHENTO — IDENTIFICAR SÍNDROME + SORO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Acidente peconhento na crianca (mais grave: veneno/kg)\nABCDE + identificar o animal/sindrome", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Classificar gravidade + hidratacao + analgesia", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.5, "y": 0.32, "w": 205, "h": 22, "text": "SORO ANTIPECONHENTO especifico\n(nao atrasar; adrenalina a beira-leito)", "color": "red", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Notificacao compulsoria (SINAN)", "color": "purple", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PRINCÍPIOS GERAIS",
+      "section_color": "teal",
+      "titulo": "POR QUE É MAIS GRAVE NA CRIANÇA",
+      "items": [
+        "Relação VENENO/MASSA CORPORAL maior -> concentrações séricas de toxina mais altas e rápidas",
+        "Priorizar ABCDE (choque anafilático/neurogênico pode ocorrer); 2 acessos calibrosos",
+        "Evitar acesso jugular/subclávia se coagulopatia (risco de hematoma compressivo)",
+        "Identificar o animal (foto se possível), mas NUNCA tentar capturá-lo",
+        "Notificação COMPULSÓRIA (SINAN); profilaxia antitetânica (ferimento com porta de entrada)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O QUE NÃO FAZER",
+      "section_color": "red",
+      "titulo": "ORIENTAR PAIS / APH",
+      "items": [
+        "NÃO fazer torniquete/garrote (necrose; não impede a absorção)",
+        "NÃO cortar, furar ou sugar o local da picada",
+        "NÃO aplicar substâncias (pó de café, fumo, álcool) nem gelo",
+        "NÃO oferecer álcool nem sedativos à criança",
+        "Não atrasar o soro para fazer pré-medicação; ter ADRENALINA preparada à beira-leito"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ESCORPIONISMO — O GRANDE VILÃO URBANO",
+      "section_color": "purple",
+      "titulo": "VÔMITOS = GRAVIDADE",
+      "items": [
+        "Tityus serrulatus (amarelo) é a principal causa de envenenamento em crianças no Brasil",
+        "Dor local imediata e intensa, mas a GRAVIDADE é sistêmica (estimulação autonômica)",
+        "SINAL DE ALERTA: VÔMITOS INCOERCÍVEIS = risco de edema agudo de pulmão e choque",
+        "Soro antiescorpiônico (SAEsc) nos casos moderados/graves; suporte intensivo",
+        "Monitorização cardíaca contínua; preparar via aérea/aspiração (sialorreia/vômitos)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "OFIDISMO — SÍNDROME DEFINE O SORO",
+      "section_color": "navy",
+      "headers": ["Acidente", "Clínica", "Soro (leve/mod -> grave)"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.20, 0.46, 0.34],
+      "rows": [
+        ["Botrópico (jararaca, ~90%)", "Dor/edema progressivo, equimose, bolhas, sangramento; IRA/sd. compartimental", "SAB: 2-4 / 4-8 / 12 ampolas"],
+        ["Crotálico (cascavel)", "Fácies miastênica, mialgia, urina escura (mioglobinúria); alto risco de IRA", "SAC: 5-10 / 20 ampolas"],
+        ["Laquético (surucucu)", "Edema grave + efeito vagal (cólica, diarreia, bradicardia, hipotensão)", "SAL/SABL: 10-20 ampolas"],
+        ["Elapídico (coral)", "Neurotóxico puro: ptose, oftalmoplegia, disfagia -> paralisia respiratória", "SAE: 10 ampolas + preparar IOT"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ARANEÍSMO E LAGARTAS",
+      "section_color": "navy",
+      "headers": ["Agente", "Clínica", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.44, 0.34],
+      "rows": [
+        ["Loxosceles (marrom)", "Picada indolor; placa marmórea/necrose 12-24h; forma cutâneo-visceral: HEMÓLISE/IRA", "SALox 5-10 amp se hemólise/lesão grave; prednisona (controverso)"],
+        ["Phoneutria (armadeira)", "Dor local intensa; criança: choque neurogênico, EAP, priapismo", "Bloqueio anestésico local; SAAr 2-4 amp se mod/grave"],
+        ["Latrodectus (viúva-negra)", "Dor muscular, contraturas, 'abdome em tábua', tremores", "Benzodiazepínico + gluconato de cálcio; soro em casos graves"],
+        ["Lonomia (taturana)", "Queimação local + síndrome HEMORRÁGICA (TAP/TTPA altos, fibrinogênio baixo)", "SALon 5 / 10 ampolas"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MANEJO GERAL PEDIÁTRICO",
+      "section_color": "orange",
+      "titulo": "PILARES",
+      "items": [
+        "HIDRATAÇÃO VIGOROSA (manutenção dobrada nas primeiras horas) para prevenir NTA por mio/hemoglobinúria (crotálico, loxoscélico)",
+        "Analgesia (dipirona; bloqueio local com lidocaína sem vaso no foneutrismo)",
+        "Profilaxia antitetânica conforme status vacinal",
+        "ATB NÃO de rotina (só se necrose extensa/infecção ou chegada tardia com sinais flogísticos)",
+        "Soro é específico por síndrome e por gravidade — calcular pelo número de ampolas (não pelo peso)"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos/___ kg; acidente por ___ (escorpião/jararaca/cascavel/coral/aranha/lonomia); local ___; tempo ___.",
+        "Manifestações: locais ___ / sistêmicas ___ (vômitos? sangramento? fácies miastênica?); gravidade: leve/moderada/grave.",
+        "Soro ___ (tipo, ___ ampolas) iniciado às ___; hidratação ___; antitetânica.",
+        "Solicito UTI pediátrica + monitorização; notificar SINAN. Não fazer torniquete/incisão."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o principal marcador de gravidade no escorpionismo pediátrico?",
+      "alternativas": [
+        "Dor local intensa",
+        "Vômitos incoercíveis (risco de edema agudo de pulmão e choque)",
+        "Eritema no local",
+        "Febre baixa",
+        "Prurido"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual conduta NÃO deve ser realizada em acidente peçonhento?",
+      "alternativas": [
+        "Hidratação venosa",
+        "Torniquete/garrote e incisão/sucção do local",
+        "Analgesia",
+        "Soro antipeçonhento específico",
+        "Profilaxia antitetânica"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Acidente ofídico com fácies miastênica (ptose), mialgia e urina escura, com pouca reação local. Qual o tipo e o risco principal?",
+      "alternativas": [
+        "Botrópico — síndrome compartimental",
+        "Crotálico (cascavel) — insuficiência renal aguda por rabdomiólise/mioglobinúria",
+        "Elapídico — necrose local",
+        "Laquético — hemorragia local",
+        "Loxoscélico — necrose cutânea"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual medida é mandatória para prevenir a insuficiência renal nos acidentes crotálico e loxoscélico?",
+      "alternativas": [
+        "Restrição hídrica",
+        "Hidratação venosa vigorosa",
+        "Diurético de rotina",
+        "Antibiótico profilático",
+        "Corticoide em altas doses"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "O acidente loxoscélico (aranha-marrom) na forma cutâneo-visceral, mais comum em crianças, cursa com:",
+      "alternativas": [
+        "Paralisia respiratória",
+        "Hemólise intravascular (anemia, icterícia, hemoglobinúria) e insuficiência renal",
+        "Apenas necrose local",
+        "Síndrome hemorrágica por consumo de fibrinogênio",
+        "Bradicardia e diarreia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No escorpionismo pediátrico, os vômitos incoercíveis são o principal marcador de gravidade sistêmica, anunciando risco de edema agudo de pulmão e choque — indicam soroterapia e suporte intensivo."},
+    {"resposta": "B", "comentario": "NÃO se faz torniquete/garrote nem incisão/sucção (aumentam necrose e não impedem a absorção). O manejo correto é ABCDE, hidratação, analgesia e soro específico, com notificação e antitetânica."},
+    {"resposta": "B", "comentario": "Fácies miastênica + mialgia + urina escura com pouca reação local é o acidente crotálico (cascavel), cujo principal risco é a insuficiência renal aguda por rabdomiólise/mioglobinúria — exige hidratação vigorosa."},
+    {"resposta": "B", "comentario": "A hidratação venosa vigorosa é mandatória nos acidentes crotálico e loxoscélico para prevenir a necrose tubular aguda por mioglobinúria/hemoglobinúria."},
+    {"resposta": "B", "comentario": "A forma cutâneo-visceral do loxoscelismo (mais comum em crianças) cursa com hemólise intravascular (anemia, icterícia, hemoglobinúria) e insuficiência renal aguda, além da lesão cutânea."}
+  ]
+}

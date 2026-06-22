@@ -1,0 +1,181 @@
+{
+  "slug": "diarreia_crianca",
+  "titulo": "Diarreia Aguda na Criança",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Diarreia aguda pediátrica no PS",
+  "chapter_bar": "DIARREIA AGUDA NA CRIANÇA — TRO + ZINCO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — O RISCO É A DESIDRATAÇÃO",
+      "title": "DIARREIA — CLASSIFICAR DESIDRATAÇÃO E HIDRATAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": ">=3 evacuacoes liquidas/dia, <14 dias\nclassificar desidratacao + avaliar disenteria", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.25, "y": 0.5, "w": 145, "h": 24, "text": "Sem/leve-moderada:\nTRO + ZINCO\n+ manter dieta", "color": "green", "font_size": 5.8},
+        {"id": "c", "x": 0.75, "y": 0.5, "w": 150, "h": 24, "text": "Grave/choque/\nfalha TRO:\nSF 20 mL/kg EV", "color": "red", "font_size": 5.8},
+        {"id": "d", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "ATB so em indicacoes especificas; antidiarreico NUNCA", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        ">= 3 evacuações amolecidas/líquidas por dia, com duração < 14 dias",
+        "O risco NÃO é a diarreia em si, mas a PERDA hídrica e eletrolítica",
+        "VIRAL (mais comum): rotavírus, norovírus, adenovírus -> fezes aquosas, febre baixa, vômitos",
+        "BACTERIANA: E. coli, Shigella, Salmonella, Campylobacter -> febre alta, muco/SANGUE, toxemia",
+        "Parasitária (arrastada); outras: pós-ATB, intolerância à lactose secundária, ITU em lactentes"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DA DESIDRATAÇÃO",
+      "section_color": "navy",
+      "headers": ["Grau", "Achados"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Sem desidratação", "Ativo, mucosas úmidas, olhos normais, diurese preservada"],
+        ["Leve-moderada", "Sede/irritabilidade, olhos levemente fundos, mucosas secas, diurese reduzida, turgor discretamente lento"],
+        ["Grave", "Letargia/rebaixamento, olhos muito fundos, extremidades frias, oligoanúria, pulso fraco/taquicardia, hipotensão (tardia!)"],
+        ["Marcador objetivo", "Perda de peso recente é o melhor parâmetro"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUANDO INVESTIGAR / RED FLAGS",
+      "section_color": "red",
+      "titulo": "EXAMES E ALARME",
+      "items": [
+        "Exames (hemograma, Na/K, ureia/creatinina, gaso) se: diarreia com SANGUE, febre alta/toxemia, desidratação grave, lactente < 3 meses, falha terapêutica",
+        "Coprocultura/parasitológico em quadros prolongados ou graves",
+        "Disenteria (sangue/muco + febre) sugere etiologia bacteriana invasiva",
+        "Sinais de gravidade: rebaixamento, choque, oligoanúria, vômitos incoercíveis",
+        "Lactentes pequenos desidratam mais rápido — atenção redobrada"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — HIDRATAÇÃO É O PILAR",
+      "section_color": "orange",
+      "titulo": "TRO / EV + ZINCO",
+      "items": [
+        "TRO (principal): SRO 50 mL/kg (leve) ou 75-100 mL/kg (moderada) em 4h, em pequenos volumes frequentes",
+        "Reidratação VENOSA (grave/choque/vômitos incoercíveis/rebaixamento/falha da TRO): SF 0,9% 20 mL/kg em bolus (reavaliar) -> manutenção (Holliday-Segar)",
+        "ZINCO (reduz duração/recorrência): < 6 meses 10 mg/dia; >= 6 meses 20 mg/dia, por 10-14 dias",
+        "Manter alimentação habitual; NUNCA suspender o aleitamento materno; sem dietas restritivas",
+        "Ondansetrona 0,15 mg/kg/dose se vômitos (facilita a TRO)",
+        "ANTIDIARREICOS são CONTRAINDICADOS"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIÓTICO — NÃO DE ROTINA",
+      "section_color": "navy",
+      "titulo": "INDICAÇÕES ESPECÍFICAS",
+      "items": [
+        "Indicações: shigelose, cólera, Salmonella em lactentes/imunodeprimidos, sepse/quadro invasivo confirmado",
+        "Criança até 30 kg (>= 3 meses, sem imunodef.): Azitromicina 10 mg/kg/dia no 1o dia, depois 5 mg/kg/dia por 4 dias; ou Ceftriaxona 50 mg/kg IM/dia por 3-5 dias",
+        "< 3 meses ou imunodeprimido: Ceftriaxona 50-100 mg/kg EV/IM/dia por 3-5 dias",
+        "> 30 kg (> 10 anos): Ciprofloxacino 500 mg VO 12/12h por 3 dias; ou Ceftriaxona",
+        "A maioria das diarreias é viral e autolimitada — ATB não acelera a recuperação"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: desidratação grave, choque, rebaixamento, vômitos impossibilitando TRO, disenteria com toxemia/sepse, lactente < 3 meses, comorbidade, falha ambulatorial",
+        "ALTA: sem/leve desidratação, aceitando líquidos VO, retorno garantido, responsáveis orientados",
+        "Casa: SRO conforme aceitação, dieta habitual/aleitamento, zinco, antiemético se necessário",
+        "Repor após cada evacuação/vômito; NÃO usar refrigerante/suco/chá como reidratação",
+        "Retorno IMEDIATO: letargia, recusa de líquidos, oligúria, febre alta, sangue nas fezes, piora após 48h"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos/___ kg com diarreia aguda há ___; aspecto das fezes ___ (sangue/muco?); desidratação ___.",
+        "Sinais vitais ___; diurese ___; toxemia/sepse: ___; eletrólitos: ___.",
+        "Condutas: TRO ___ / SF 0,9% 20 mL/kg bolus ___; zinco; ATB ___ (se indicado).",
+        "Solicito internação (grave/choque/sepse/lactente < 3 meses) — vigilância de débito urinário."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Criança de 2 anos com diarreia aquosa, sem sangue, desidratação leve, aceitando líquidos. Qual a conduta?",
+      "alternativas": [
+        "Hidratação venosa imediata",
+        "Terapia de reidratação oral + zinco, mantendo a dieta",
+        "Antibiótico oral empírico",
+        "Antidiarreico (loperamida)",
+        "Jejum por 24h"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual suplemento reduz a duração e a recorrência da diarreia aguda na criança?",
+      "alternativas": [
+        "Ferro",
+        "Zinco (10-20 mg/dia por 10-14 dias)",
+        "Vitamina C",
+        "Cálcio",
+        "Magnésio"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Em qual situação está indicado antibiótico na diarreia aguda pediátrica?",
+      "alternativas": [
+        "Toda diarreia com febre",
+        "Shigelose, cólera, Salmonella em lactentes/imunodeprimidos ou quadro invasivo/sepse confirmados",
+        "Diarreia aquosa viral",
+        "Sempre que houver vômitos",
+        "Diarreia de 1 dia de duração"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre o uso de antidiarreicos na criança, é correto:",
+      "alternativas": [
+        "São a base do tratamento",
+        "São CONTRAINDICADOS",
+        "Devem ser usados se houver sangue nas fezes",
+        "Substituem a hidratação",
+        "Reduzem a mortalidade"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual achado nas fezes sugere etiologia bacteriana invasiva (disenteria)?",
+      "alternativas": [
+        "Fezes aquosas sem muco",
+        "Sangue e muco com febre alta e toxemia",
+        "Fezes espumosas",
+        "Fezes esverdeadas isoladas",
+        "Ausência de qualquer alteração"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Diarreia aquosa com desidratação leve trata-se com terapia de reidratação oral + zinco, mantendo a dieta e o aleitamento. Antidiarreicos são contraindicados; ATB não é de rotina (maioria viral)."},
+    {"resposta": "B", "comentario": "O zinco (10 mg/dia em < 6 meses; 20 mg/dia em >= 6 meses, por 10-14 dias) reduz a duração e a recorrência da diarreia aguda — recomendado pela OMS."},
+    {"resposta": "B", "comentario": "Antibiótico é indicado em situações específicas: shigelose, cólera, Salmonella em lactentes/imunodeprimidos, e quadros invasivos/sepse confirmados — não na diarreia viral aquosa."},
+    {"resposta": "B", "comentario": "Os antidiarreicos (ex.: loperamida) são contraindicados na criança (risco de íleo, megacólon e mascaramento), inclusive na disenteria. O pilar é a hidratação."},
+    {"resposta": "B", "comentario": "Sangue e muco nas fezes com febre alta e toxemia caracterizam disenteria, sugerindo etiologia bacteriana invasiva (Shigella, Campylobacter, Salmonella, E. coli invasiva)."}
+  ]
+}

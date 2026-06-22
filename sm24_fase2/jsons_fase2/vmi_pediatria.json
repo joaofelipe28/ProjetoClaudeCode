@@ -1,0 +1,187 @@
+{
+  "slug": "vmi_pediatria",
+  "titulo": "Ventilação Mecânica Invasiva em Pediatria",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "VMI pediátrica — princípios e ajustes",
+  "chapter_bar": "VMI EM PEDIATRIA — PROTEGER O PULMÃO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DA INDICAÇÃO AO DESMAME",
+      "title": "VMI PEDIÁTRICA — INDICAR, AJUSTAR, DESMAMAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Insuficiencia respiratoria / falencia\nindicar VMI (proteger o pulmao: evitar VILI)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Parametros iniciais por peso/patologia + IOT", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.5, "y": 0.32, "w": 205, "h": 22, "text": "Monitorizar: gasometria, SpO2, grafica\najustar para alvos (VC baixo, PIP<30-35)", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Doenca resolvida -> TRE -> desmame", "color": "green", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "FISIOLOGIA PEDIÁTRICA APLICADA",
+      "section_color": "teal",
+      "titulo": "POR QUE A CRIANÇA É DIFERENTE",
+      "items": [
+        "Objetivo: otimizar trocas gasosas, reduzir o trabalho respiratório e MINIMIZAR a lesão pulmonar induzida pelo ventilador (VILI)",
+        "Vias aéreas menores e mais complacentes -> maior resistência e tendência a colapso/obstrução",
+        "Pulmões com menor complacência e propensão a atelectasia (volume de fechamento > CRF)",
+        "Musculatura respiratória mais frágil, propensa à fadiga (sobretudo neonatos/lactentes)",
+        "Maior consumo de O2 e taxa metabólica -> menor reserva, dessatura mais rápido"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "INDICAÇÕES DE VMI",
+      "section_color": "red",
+      "titulo": "QUANDO INTUBAR/VENTILAR",
+      "items": [
+        "Insuficiência respiratória HIPOXÊMICA: PaO2 < 50 mmHg com FiO2 >= 0,6",
+        "Insuficiência respiratória HIPERCÁPNICA: PaCO2 > 50-60 mmHg com pH < 7,25",
+        "Apneias frequentes/prolongadas; fadiga da musculatura respiratória com iminência de falência",
+        "Doenças neuromusculares com comprometimento ventilatório",
+        "Condições específicas: HIC, pós-operatório complexo, sepse grave, SDR neonatal"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MODALIDADES VENTILATÓRIAS",
+      "section_color": "navy",
+      "headers": ["Modo", "Característica"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.22, 0.78],
+      "rows": [
+        ["VCV", "Volume corrente constante; pressão varia com a mecânica pulmonar"],
+        ["PCV", "Pressão inspiratória (PIP) constante; o volume corrente varia"],
+        ["SIMV", "Ciclos mandatórios sincronizados + respirações espontâneas entre eles"],
+        ["PSV", "Paciente dispara todas as respirações; ventilador dá pressão de suporte"],
+        ["A/C", "Ciclo mandatório a cada esforço, ou frequência mínima programada"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PARÂMETROS E ALVOS — VENTILAÇÃO PROTETORA",
+      "section_color": "purple",
+      "titulo": "METAS",
+      "items": [
+        "PIP NÃO deve ultrapassar 30-35 cmH2O (evitar lesão pulmonar)",
+        "PEEP titulada para oxigenar com FiO2 < 60% (pode chegar a 8-10 cmH2O na baixa complacência)",
+        "SpO2 92-97% com a menor FiO2; em PARDS com PEEP >= 10, aceitar 88-92% (hiperoxemia permissiva)",
+        "pH 7,35-7,45 (aceitar > 7,25 na HIPERCAPNIA PERMISSIVA — asma grave/SDRA)",
+        "PaCO2 35-45 (permissiva > 45 se pH > 7,25); PaO2 60-80 (permissiva 55-65 se sem acidose)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DESMAME",
+      "section_color": "navy",
+      "titulo": "CRITÉRIOS E TÉCNICA",
+      "items": [
+        "Iniciar assim que a causa de base estiver resolvida/em melhora significativa",
+        "Prontidão: estável hemodinamicamente (sem/baixo vasopressor), trocas adequadas (PaO2 >= 60 com FiO2 <= 40% e PEEP <= 5-8), pH 7,33-7,47",
+        "Paciente capaz de iniciar esforços, consciente/cooperativo, sem febre/distúrbio hidroeletrolítico relevante",
+        "Teste de Respiração Espontânea (TRE): PSV 5-10 + PEEP 5 (mais tolerado) ou tubo T por 30-120 min",
+        "Alternativa: redução gradual de FR, pressão de suporte ou volume mandatório"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "COMPLICAÇÕES DA VMI",
+      "section_color": "red",
+      "titulo": "VIGIAR",
+      "items": [
+        "PAV (pneumonia associada à ventilação): infecção após 48h de VMI — grande causa de morbimortalidade",
+        "VILI: barotrauma (pneumotórax/pneumomediastino), volutrauma, atelectrauma, biotrauma",
+        "Via aérea: lesão traqueal/laríngea (cuff), extubação acidental, intubação seletiva, obstrução do TOT por secreção",
+        "Hemodinâmica: hipotensão e queda do débito cardíaco por aumento da pressão intratorácica",
+        "Disfunção diafragmática por desuso; sedação excessiva e síndrome de abstinência"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos/___ kg em VMI por ___ (causa); modo ___; PIP ___, PEEP ___, FiO2 ___, FR ___, VC ___.",
+        "Gasometria: pH ___, PaCO2 ___, PaO2 ___, SpO2 ___; estratégia protetora (PIP < 30-35).",
+        "Hemodinâmica ___ (vasopressor?); sedoanalgesia ___; TOT nº ___ fixado em ___ cm.",
+        "Solicito UTI pediátrica; manter ventilação protetora no transporte e capnografia."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o limite de PIP recomendado na ventilação mecânica protetora pediátrica para evitar lesão pulmonar?",
+      "alternativas": [
+        "Não há limite",
+        "Não ultrapassar 30-35 cmH2O",
+        "Manter sempre acima de 45 cmH2O",
+        "Fixar em 50 cmH2O",
+        "Manter em 5 cmH2O"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "O que é a hipercapnia permissiva, aceitável em condições como asma grave/SDRA?",
+      "alternativas": [
+        "Manter PaCO2 < 30 mmHg sempre",
+        "Aceitar PaCO2 elevada (> 45 mmHg) desde que o pH se mantenha > 7,25, para evitar pressões altas nas vias aéreas",
+        "Reduzir o pH abaixo de 7,1 propositalmente",
+        "Hiperventilar para zerar a PaCO2",
+        "Manter PaO2 > 200 mmHg"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é a principal infecção associada à ventilação mecânica?",
+      "alternativas": [
+        "Infecção urinária",
+        "Pneumonia associada à ventilação (PAV), após 48h de VMI",
+        "Meningite",
+        "Endocardite",
+        "Celulite"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é um critério de prontidão para iniciar o desmame da VMI?",
+      "alternativas": [
+        "Instabilidade hemodinâmica com altas doses de vasopressor",
+        "Trocas gasosas adequadas (PaO2 >= 60 com FiO2 <= 40% e PEEP <= 5-8) e estabilidade hemodinâmica",
+        "Necessidade crescente de parâmetros ventilatórios",
+        "Febre alta e distúrbio eletrolítico",
+        "Paciente profundamente sedado e sem esforço"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual característica fisiológica torna a criança mais propensa à atelectasia na VMI?",
+      "alternativas": [
+        "Maior complacência pulmonar que o adulto",
+        "Menor complacência pulmonar com volume de fechamento frequentemente maior que a CRF",
+        "Musculatura respiratória mais forte",
+        "Menor consumo de oxigênio",
+        "Vias aéreas mais rígidas"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na ventilação protetora, a PIP não deve ultrapassar 30-35 cmH2O para evitar barotrauma/volutrauma (VILI), priorizando volumes correntes baixos e PEEP adequada."},
+    {"resposta": "B", "comentario": "A hipercapnia permissiva aceita PaCO2 > 45 mmHg, desde que o pH se mantenha > 7,25, para limitar as pressões nas vias aéreas em condições como asma grave e SDRA — reduz o risco de VILI."},
+    {"resposta": "B", "comentario": "A pneumonia associada à ventilação (PAV) — infecção respiratória que surge após 48h de VMI — é a principal infecção associada e uma das maiores causas de morbimortalidade em UTI pediátrica/neonatal."},
+    {"resposta": "B", "comentario": "São critérios de prontidão: doença de base resolvida, estabilidade hemodinâmica (sem/baixo vasopressor) e trocas gasosas adequadas (PaO2 >= 60 com FiO2 <= 40% e PEEP <= 5-8 cmH2O), com paciente capaz de esforço."},
+    {"resposta": "B", "comentario": "A criança tem menor complacência pulmonar e o volume de fechamento costuma ser maior que a CRF, favorecendo o colapso alveolar e a atelectasia — daí a importância de PEEP adequada."}
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "slug": "tce_infancia",
+  "titulo": "TCE na Infância",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Traumatismo cranioencefálico pediátrico",
+  "chapter_bar": "TCE NA INFÂNCIA — pGCS GUIA A CONDUTA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — GRAVIDADE GUIA TUDO",
+      "title": "TCE PEDIÁTRICO — ABCDE + pGCS",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "TCE na crianca: ABCDE do trauma\nclassificar pela Escala de Coma de Glasgow pediatrica", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.22, "y": 0.5, "w": 135, "h": 24, "text": "LEVE pGCS 13-15:\nobservar 4-8h\n+/- TC", "color": "green", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 135, "h": 24, "text": "MODERADO 9-12:\nTC obrigatoria\n+ internar", "color": "orange", "font_size": 5.8},
+        {"id": "d", "x": 0.78, "y": 0.5, "w": 135, "h": 26, "text": "GRAVE <=8:\nIOT + TC + UTI\ntratar HIC", "color": "red", "font_size": 5.8},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 200, "h": 18, "text": "Evitar lesao secundaria: sem hipoxia, sem hipotensao", "color": "purple", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E PARTICULARIDADES",
+      "section_color": "teal",
+      "titulo": "POR QUE A CRIANÇA É DIFERENTE",
+      "items": [
+        "Lesão das estruturas da cabeça por força mecânica externa; incidência bimodal (< 4 anos e adolescência), predomínio masculino",
+        "Lesão PRIMÁRIA (no impacto) x SECUNDÁRIA (hipóxia, hipotensão, edema, HIC) — esta é EVITÁVEL e o alvo do tratamento",
+        "Crânio mais fino, cabeça proporcionalmente maior, maior conteúdo de água -> mais vulnerável à lesão secundária",
+        "< 2 anos: quedas e MAUS-TRATOS (síndrome do bebê sacudido) — alta suspeição se história inconsistente",
+        "Avaliar sinais de fratura de base: Battle, guaxinim, rinorreia/otorreia de LCR"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — INDICAM TC / GRAVIDADE",
+      "section_color": "red",
+      "titulo": "SINAIS DE ALARME",
+      "items": [
+        "Rebaixamento (pGCS < 15), perda de consciência prolongada, amnésia, convulsão pós-traumática",
+        "Vômitos persistentes, cefaleia progressiva, irritabilidade/letargia anormal",
+        "Déficit focal, assimetria pupilar, fontanela abaulada (lactente)",
+        "Sinais de fratura de base de crânio; afundamento/fratura palpável; hematoma de couro cabeludo em lactente",
+        "Mecanismo de alta energia; suspeita de maus-tratos (história incompatível)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAME COMPLEMENTAR",
+      "section_color": "navy",
+      "titulo": "TC DE CRÂNIO É O EXAME DE ESCOLHA",
+      "items": [
+        "TC de crânio SEM contraste: padrão para lesão intracraniana; RX de crânio tem valor limitado",
+        "TCE leve sem critérios de risco (baixo risco): observação clínica 4-8h, em geral SEM TC",
+        "Risco intermediário: decisão individualizada (TC x observação — achados múltiplos, piora durante a observação, preferência dos pais)",
+        "Moderado/grave: TC obrigatória; glicemia capilar em todo rebaixamento",
+        "Diferencial do rebaixamento: hipoglicemia, intoxicação, infecção do SNC, crise não traumática"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO POR GRAVIDADE",
+      "section_color": "orange",
+      "titulo": "LEVE / MODERADO / GRAVE",
+      "items": [
+        "LEVE (pGCS 13-15): observação 4-8h; alta se pGCS 15, exame normal, TC normal (se feita) e responsáveis orientados sobre sinais de alerta",
+        "MODERADO (9-12): internar + TC; normotermia, cabeceira 30°, evitar hipóxia/hipotensão; neurocirurgia se lesão na TC",
+        "GRAVE (<= 8): IOT, ventilação (evitar hipóxia/hipercapnia), estabilidade hemodinâmica; monitorizar PIC/PPC (PIC < 22 mmHg)",
+        "Controle de HIC: cabeceira 30° neutra, sedoanalgesia (fentanil/midazolam/cetamina)",
+        "Terapia hiperosmolar: Manitol 20% 0,5-1 g/kg EV (osm < 320) OU salina 3% 1-3 mL/kg EV (Na 155-160)",
+        "Hiperventilação só na herniação iminente (PaCO2 25-30, transitória); anticonvulsivante (fenitoína/levetiracetam) se alto risco"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "ALTA (TCE leve): pGCS 15, exame neurológico normal, TC normal (se realizada), sem vômitos persistentes, responsável confiável e orientado",
+        "INTERNAR: TCE moderado/grave, alteração na TC, vômitos persistentes, convulsão, suspeita de maus-tratos, impossibilidade de observação domiciliar",
+        "UTI + neurocirurgia: pGCS <= 8, lesão com efeito de massa, HIC",
+        "Orientações de alta: repouso relativo, evitar impacto, dieta leve",
+        "Retorno IMEDIATO: vômitos repetidos, sonolência excessiva, cefaleia intensa, convulsão, déficit, irritabilidade, saída de líquido pelo nariz/ouvido"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Criança ___ anos/___ kg; TCE por ___ (mecanismo); pGCS ___; pupilas ___; déficit ___.",
+        "TC: ___ (lesão/efeito de massa?); vômitos ___; convulsão ___; suspeita de maus-tratos: ___.",
+        "Condutas: ABCDE, IOT ___, cabeceira 30°, sedoanalgesia, hiperosmolar (manitol/salina 3%) ___, anticonvulsivante ___.",
+        "Solicito UTI pediátrica + neurocirurgia; transporte evitando hipóxia/hipotensão. Notificar maus-tratos se suspeita."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Lactente de 18 meses com TCE, pGCS 7, pupila anisocórica. Qual a conduta imediata?",
+      "alternativas": [
+        "Observação clínica por 6 horas",
+        "ABCDE com intubação orotraqueal, TC de crânio e medidas para HIC (cabeceira 30°, terapia hiperosmolar), UTI",
+        "Alta com orientações",
+        "Apenas analgesia oral",
+        "RX de crânio e reavaliação ambulatorial"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o exame de escolha para avaliar lesão intracraniana no TCE pediátrico?",
+      "alternativas": [
+        "Radiografia de crânio",
+        "Tomografia computadorizada de crânio sem contraste",
+        "Ultrassonografia transfontanela de rotina",
+        "Ressonância magnética em todos",
+        "Eletroencefalograma"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "No TCE grave, o principal objetivo do tratamento é:",
+      "alternativas": [
+        "Reverter a lesão primária",
+        "Prevenir a lesão secundária (evitar hipóxia, hipotensão e HIC)",
+        "Indicar corticoide de rotina",
+        "Hiperventilação prolongada",
+        "Restrição hídrica agressiva"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Lactente < 2 anos com fratura de crânio e história inconsistente com o trauma relatado. O que deve ser considerado?",
+      "alternativas": [
+        "Quadro benigno, alta direta",
+        "Suspeita de maus-tratos (síndrome do bebê sacudido) — investigar e notificar",
+        "Apenas analgesia",
+        "Doença óssea fisiológica da idade",
+        "Convulsão febril"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual opção é correta sobre a terapia hiperosmolar para HIC no TCE pediátrico grave?",
+      "alternativas": [
+        "Manitol 20% 0,5-1 g/kg EV ou salina hipertônica 3% 1-3 mL/kg EV",
+        "Soro glicosado a 5% em bolus",
+        "Restrição total de líquidos",
+        "Furosemida isolada como primeira escolha",
+        "Solução hipotônica para reduzir o sódio"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "pGCS <= 8 com anisocoria indica TCE grave com possível HIC/herniação: ABCDE com IOT (proteção de via aérea), TC de crânio e medidas anti-HIC (cabeceira 30°, sedoanalgesia, terapia hiperosmolar), em UTI, com avaliação neurocirúrgica."},
+    {"resposta": "B", "comentario": "A TC de crânio sem contraste é o exame de escolha para lesões intracranianas; a radiografia de crânio tem valor limitado e não substitui a TC."},
+    {"resposta": "B", "comentario": "O objetivo é prevenir a lesão secundária — evitar hipóxia, hipotensão e controlar a HIC — pois a lesão primária já ocorreu no momento do trauma. Corticoide não é indicado no TCE."},
+    {"resposta": "B", "comentario": "Fratura de crânio em lactente < 2 anos com história inconsistente deve levantar suspeita de maus-tratos (incluindo síndrome do bebê sacudido), com investigação (série óssea) e notificação obrigatória."},
+    {"resposta": "A", "comentario": "A terapia hiperosmolar para HIC usa Manitol 20% (0,5-1 g/kg EV, osm < 320 mOsm/L) ou salina hipertônica 3% (1-3 mL/kg EV, Na-alvo 155-160 mEq/L). Evitam-se soluções hipotônicas."}
+  ]
+}

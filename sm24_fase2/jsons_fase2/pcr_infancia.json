@@ -1,0 +1,185 @@
+{
+  "slug": "pcr_infancia",
+  "titulo": "Parada Cardiorrespiratória na Infância (PALS)",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "PCR pediátrica no PS",
+  "chapter_bar": "PCR NA INFÂNCIA — PALS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — PALS (C-A-B)",
+      "title": "PCR PEDIÁTRICA — RCP DE ALTA QUALIDADE",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Inconsciente + sem pulso/FC<60 com ma perfusao\n(checar pulso e respiracao <=10s)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.62, "w": 205, "h": 20, "text": "RCP: comprimir 100-120/min + ventilar (15:2 / 30:2)", "color": "red", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 145, "h": 24, "text": "Chocavel (FV/TVSP):\ndesfibrilar 2 -> 4 J/kg\n+ adrenalina + amio", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 150, "h": 24, "text": "Nao chocavel (AESP/\nassistolia): adrenalina\n+ tratar Hs e Ts", "color": "purple", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CONTEXTO — DIFERENTE DO ADULTO",
+      "section_color": "teal",
+      "titulo": "A PCR PEDIÁTRICA É HIPÓXICA",
+      "items": [
+        "~80% das PCRs em crianças são secundárias a HIPÓXIA e CHOQUE (não cardíaca primária)",
+        "Causas: respiratórias (obstrução de VA, pneumonia, SDRA, depressão do SNC) e circulatórias (desidratação, sepse, anafilaxia, cardiogênico)",
+        "Cardíaca primária é minoria (cardiopatias congênitas, canalopatias/QT longo, TV)",
+        "Por isso, prevenir = reconhecer e tratar precocemente a insuficiência respiratória e o choque",
+        "Diagnóstico clínico: inconsciência + apneia/gasping + ausência de pulso central"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "RECONHECIMENTO E RCP",
+      "section_color": "red",
+      "titulo": "C — COMPRESSÕES DE ALTA QUALIDADE",
+      "items": [
+        "Pulso em <= 10s: lactente (<1a) BRAQUIAL; criança (>1a) carotídeo/femoral. Iniciar RCP se sem pulso OU FC < 60 com má perfusão",
+        "Frequência 100-120/min; profundidade ~1/3 do diâmetro AP (lactente ~4 cm, criança ~5 cm); retorno total do tórax; minimizar interrupções",
+        "Técnica: lactente = 2 polegares (2 socorristas) ou 2 dedos (1 socorrista); criança = 1 ou 2 mãos (região hipotenar)",
+        "Relação compressão:ventilação = 15:2 (2 socorristas) | 30:2 (1 socorrista)",
+        "Via aérea avançada: compressões contínuas + 1 ventilação a cada 2-3s (20-30/min); BVM com O2 100%, 1s/ventilação com elevação do tórax"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DESFIBRILAÇÃO E DROGAS",
+      "section_color": "navy",
+      "headers": ["Item", "Dose / detalhe"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Desfibrilação (FV/TVSP)", "1o choque 2 J/kg; subsequentes 4 J/kg (até 10 J/kg ou dose adulto). Ritmos chocáveis são raros (<10%)"],
+        ["ADRENALINA (todos os ritmos)", "0,01 mg/kg (0,1 mL/kg da solução 1:10.000) IV/IO, a cada 3-5 min"],
+        ["Amiodarona (FV/TVSP refratária)", "5 mg/kg IV/IO em bolus, repetir até 2x"],
+        ["Lidocaína (alternativa)", "1 mg/kg IV/IO"],
+        ["Bicarbonato (restrito)", "Só em PCR prolongada com acidose grave, hipercalemia ou intoxicação por ADT"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CAUSAS REVERSÍVEIS — Hs e Ts",
+      "section_color": "purple",
+      "titulo": "PROCURAR E TRATAR",
+      "items": [
+        "Hipovolemia: cristaloide 20 mL/kg IV/IO em bolus rápido (repetir conforme necessário)",
+        "Hipóxia: via aérea avançada + O2 100% (a causa mais comum na criança)",
+        "H+ (acidose): bicarbonato 1 mEq/kg IV se acidose grave documentada",
+        "Hipercalemia: gluconato de cálcio 10% 0,5-1 mL/kg (máx 20 mL) + solução polarizante",
+        "Hipotermia (reaquecer); Hipoglicemia (corrigir)",
+        "Ts: pneumotórax hipertensivo (toracocentese 2o EIC), tamponamento, toxinas, TEP"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CUIDADOS PÓS-RCE",
+      "section_color": "orange",
+      "titulo": "ESTABILIZAR E NEUROPROTEGER",
+      "items": [
+        "Respiratório: otimizar ventilação/oxigenação (SatO2 94-99%; evitar hiperóxia)",
+        "Hemodinâmico: manter PA adequada com fluidos e drogas vasoativas",
+        "Temperatura: EVITAR FEBRE; manter normotermia (36-37,5 C); hipotermia terapêutica em casos selecionados",
+        "Metabólico: corrigir hipoglicemia e distúrbios eletrolíticos",
+        "Neuro: tratar convulsões; monitorização contínua"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PROGNÓSTICO E PREVENÇÃO",
+      "section_color": "red",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Prognóstico reservado (sobrevida com bom desfecho neurológico baixa, sobretudo extra-hospitalar)",
+        "Bom prognóstico: PCR testemunhada, RCP precoce de alta qualidade, ritmo chocável inicial",
+        "A MELHOR estratégia é PREVENIR a PCR (reconhecer/tratar insuficiência respiratória e choque)",
+        "RCP de alta qualidade (frequência/profundidade/retorno/mínimas interrupções) é o que mais impacta",
+        "Adrenalina precoce em ritmos não chocáveis; desfibrilação imediata nos chocáveis"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PÓS-RCE",
+      "items": [
+        "Criança ___ anos/___ kg, PCR ___ (presenciada?), ritmo inicial ___ (chocável/não chocável); causa provável: ___.",
+        "RCP ___ min; adrenalina ___ doses; desfibrilação ___; RCE às ___.",
+        "Pós-RCE: via aérea ___, SatO2 ___, PA ___, glicemia ___, temperatura ___.",
+        "Solicito UTI pediátrica + transferência; causa reversível tratada: ___ (Hs e Ts)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a causa MAIS comum de parada cardiorrespiratória na criança?",
+      "alternativas": [
+        "Arritmia cardíaca primária",
+        "Hipóxia/insuficiência respiratória (e choque)",
+        "Infarto do miocárdio",
+        "Embolia pulmonar",
+        "Tamponamento cardíaco"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual a dose de adrenalina na PCR pediátrica e a frequência de repetição?",
+      "alternativas": [
+        "0,1 mg/kg a cada 10 min",
+        "0,01 mg/kg (0,1 mL/kg de 1:10.000) IV/IO a cada 3-5 min",
+        "1 mg fixo a cada 3 min",
+        "0,5 mg/kg dose única",
+        "Não se usa adrenalina em crianças"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual a energia do primeiro choque na FV/TVSP pediátrica?",
+      "alternativas": [
+        "0,5 J/kg",
+        "2 J/kg (subsequentes 4 J/kg)",
+        "10 J/kg de início",
+        "200 J fixo",
+        "Não se desfibrila crianças"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Em lactente, onde se palpa o pulso central durante a avaliação da PCR?",
+      "alternativas": [
+        "Carotídeo",
+        "Braquial",
+        "Radial",
+        "Pedioso",
+        "Femoral exclusivamente"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual a relação compressão:ventilação na RCP pediátrica com DOIS socorristas (sem via aérea avançada)?",
+      "alternativas": [
+        "30:2",
+        "15:2",
+        "5:1",
+        "10:2",
+        "Compressões contínuas sem ventilar"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Diferentemente do adulto (cardíaca/arrítmica), a PCR pediátrica é predominantemente HIPÓXICA (e por choque) — ~80% dos casos. Por isso o foco é reconhecer e tratar precocemente a insuficiência respiratória e o choque."},
+    {"resposta": "B", "comentario": "Adrenalina 0,01 mg/kg (0,1 mL/kg da solução 1:10.000) IV/IO, repetida a cada 3-5 min, em TODOS os ritmos de PCR pediátrica."},
+    {"resposta": "B", "comentario": "Na FV/TVSP pediátrica, o primeiro choque é 2 J/kg e os subsequentes 4 J/kg (podendo chegar a 10 J/kg ou à dose adulta). Ritmos chocáveis são raros na criança (<10%)."},
+    {"resposta": "B", "comentario": "No lactente (< 1 ano), palpa-se o pulso BRAQUIAL; na criança (> 1 ano), carotídeo ou femoral. A checagem deve durar no máximo 10 segundos."},
+    {"resposta": "B", "comentario": "Com dois socorristas e sem via aérea avançada, a relação é 15:2 na criança (30:2 com um socorrista). Com via aérea avançada, compressões contínuas + 1 ventilação a cada 2-3s."}
+  ]
+}
