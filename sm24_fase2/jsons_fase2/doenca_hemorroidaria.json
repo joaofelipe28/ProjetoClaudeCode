@@ -1,0 +1,169 @@
+{
+  "slug": "doenca_hemorroidaria",
+  "titulo": "Doença Hemorroidária",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Doença hemorroidária no PS",
+  "chapter_bar": "DOENÇA HEMORROIDÁRIA — GRAU GUIA CONDUTA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "HEMORROIDAS — INTERNA x EXTERNA + GRAU",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Sangramento/prolapso (interna) ou dor/nodulo (externa)\ninspecao + toque + anuscopia", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 145, "h": 26, "text": "Grau I-II / sintomas:\nmedidas + dieta\n+ flebotonico", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 26, "text": "Grau III-IV / refrataria\n/ trombose recorrente:\ncirurgia", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Trombose aguda: analgesia + banho de assento", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INTERNA x EXTERNA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Interna", "Externa"],
+      "header_colors": ["gray", "teal", "orange"],
+      "col_widths": [0.26, 0.37, 0.37],
+      "rows": [
+        ["Localização", "Acima da linha pectínea", "Abaixo da linha pectínea"],
+        ["Revestimento", "Mucosa (inervação visceral)", "Anoderma/pele (inervação somática)"],
+        ["Sintomas", "Prolapso, SANGRAMENTO, prurido", "TROMBOSE, dor aguda, nodulação"],
+        ["Coxins (posição)", "Lateral E (3h), posterior D (7h), anterior D (11h)", "—"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO (HEMORROIDAS INTERNAS)",
+      "section_color": "navy",
+      "headers": ["Grau", "Definição"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.22, 0.78],
+      "rows": [
+        ["Grau I", "Sem prolapso (apenas abaulamento/sangramento)"],
+        ["Grau II", "Prolapso ao esforço com retorno ESPONTÂNEO"],
+        ["Grau III", "Prolapso ao esforço com redução MANUAL"],
+        ["Grau IV", "Prolapso irredutível"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DEFINIÇÃO, RISCO E DIFERENCIAL",
+      "section_color": "teal",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Coxins vasculares (arteríolas + veias) sustentados por tecido conjuntivo: dão continência fina; doença = degeneração + hiperfluxo + deslizamento",
+        "Fatores: esforço evacuatório, dieta pobre em fibras, gestação, aumento da pressão abdominal, genética, sexo masculino",
+        "DIFERENCIAL essencial: VARIZES retais (hipertensão portal) e PROCIDÊNCIA de reto (prolapso de espessura total) — não confundir com grau IV",
+        "Sangramento hemorroidário é vermelho-vivo, ao evacuar — sempre EXCLUIR câncer colorretal em pacientes de risco (colonoscopia)",
+        "Pregas radiais = hemorroidas; pregas concêntricas = prolapso retal completo"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO CLÍNICO / PS",
+      "section_color": "orange",
+      "titulo": "MEDIDAS + ANALGESIA + FLEBOTÔNICO",
+      "items": [
+        "Medidas dietéticas: fibras + hidratação para regularizar o hábito intestinal (base do tratamento)",
+        "Banho de assento (com ou sem sais): analgésico/anti-inflamatório — PODE ser feito na vigência de trombose",
+        "Analgesia: Cetoprofeno 100 mg 12/12h por 4-6 dias (± Dipirona 1 g 6/6h)",
+        "Flebotônico: Diosmina 450 + Hesperidina 50 mg, 2-3x/dia por 7 dias",
+        "Trombose hemorroidária externa aguda: analgesia + banho de assento; excisão do trombo se < 72h e muito dolorosa"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRATAMENTO CIRÚRGICO",
+      "section_color": "purple",
+      "titulo": "INDICAÇÕES E TÉCNICAS",
+      "items": [
+        "Indicações: refratária ao tratamento clínico, internas grau III-IV, trombose de repetição",
+        "Excisional (PADRÃO-OURO): hemorroidectomia Milligan-Morgan (aberta) ou Ferguson (fechada) — desvantagem: dor pós-operatória",
+        "Não excisional (internas): PPH (grampeamento do prolapso mucoso); THD (desarterialização transanal)",
+        "Complicações da cirurgia: dor anal, estenose anal, incontinência (se lesão esfincteriana), sangramento, infecção (atenção à GANGRENA DE FOURNIER)",
+        "Acompanhamento com proctologia"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com ___ (sangramento/prolapso/trombose); hemorroida interna grau ___ / externa trombosada.",
+        "Sinais de alarme/diferencial excluídos: câncer ___ (colonoscopia?), hipertensão portal ___, procidência ___.",
+        "Conduta: medidas dietéticas, banho de assento, analgesia ___, flebotônico; trombo excisado: ___.",
+        "Encaminho à proctologia (grau III-IV/refratária/trombose recorrente) para programação cirúrgica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Hemorroida interna que prolapsa ao esforço e necessita de redução manual corresponde a qual grau?",
+      "alternativas": [
+        "Grau I",
+        "Grau II",
+        "Grau III",
+        "Grau IV",
+        "Não classificável"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a base do tratamento clínico da doença hemorroidária?",
+      "alternativas": [
+        "Antibiótico oral prolongado",
+        "Medidas dietéticas (fibras + hidratação), banho de assento e flebotônico",
+        "Corticoide sistêmico",
+        "Jejum",
+        "Imobilização"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o tratamento padrão-ouro para hemorroidas internas grau IV?",
+      "alternativas": [
+        "Ligadura elástica",
+        "Hemorroidectomia excisional (Milligan-Morgan/Ferguson)",
+        "Apenas flebotônico",
+        "Escleroterapia",
+        "Dieta isolada"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente cirrótico com sangramento anal e dilatações vasculares retais. Qual diagnóstico diferencial é fundamental?",
+      "alternativas": [
+        "Hemorroidas comuns",
+        "Varizes retais por hipertensão portal",
+        "Fissura anal",
+        "Prolapso mucoso",
+        "Condiloma"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre o banho de assento na trombose hemorroidária, é correto:",
+      "alternativas": [
+        "É contraindicado na vigência de trombose",
+        "Pode ser realizado na vigência de trombose, com efeito analgésico e anti-inflamatório",
+        "Substitui a cirurgia em todos os casos",
+        "Só pode ser feito com antibiótico",
+        "Aumenta o risco de sangramento"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Grau III = prolapso ao esforço com necessidade de redução MANUAL. Grau I sem prolapso, grau II reduz espontaneamente, grau IV é irredutível."},
+    {"resposta": "B", "comentario": "A base é a regularização do hábito intestinal com fibras e hidratação, somada a banho de assento e flebotônico (diosmina/hesperidina); a cirurgia fica para graus avançados/refratários."},
+    {"resposta": "B", "comentario": "A hemorroidectomia excisional (Milligan-Morgan aberta ou Ferguson fechada) é o padrão-ouro, indicada em grau III-IV, refratárias e trombose de repetição; tem como desvantagem a dor pós-operatória."},
+    {"resposta": "B", "comentario": "Em hepatopata/cirrótico, dilatações vasculares retais podem ser varizes retais por hipertensão portal — diferencial fundamental, pois o tratamento é distinto (sutura/ligadura, manejo da hipertensão portal)."},
+    {"resposta": "B", "comentario": "O banho de assento pode ser realizado na vigência de trombose, atuando como adjuvante analgésico e anti-inflamatório."}
+  ]
+}

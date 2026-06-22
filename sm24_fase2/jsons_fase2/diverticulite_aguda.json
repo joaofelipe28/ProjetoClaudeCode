@@ -1,0 +1,168 @@
+{
+  "slug": "diverticulite_aguda",
+  "titulo": "Diverticulite Aguda",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Diverticulite aguda na emergência",
+  "chapter_bar": "DIVERTICULITE AGUDA — HINCHEY + TC",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — TC DEFINE HINCHEY",
+      "title": "DIVERTICULITE — DOR EM FIE -> TC -> HINCHEY",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Dor em FIE + febre + leucocitose\nTC de abdome com contraste (padrao-ouro)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Ia nao complicada:\nambulatorial possivel\n(ATB seletivo)", "color": "green", "font_size": 5.2},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 26, "text": "Ib/II: internar +\nATB EV +/- drenagem;\nIII/IV: cirurgia", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Colonoscopia em 6-8 semanas (excluir CCR)", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "teal",
+      "titulo": "CLÍNICA + TC",
+      "items": [
+        "Inflamação/infecção de divertículos colônicos (mais no SIGMOIDE), de localizada a perfuração com peritonite/sepse",
+        "Dor CONTÍNUA em fossa ilíaca esquerda, febre, náuseas/vômitos, alteração do hábito, distensão, disúria (irritação vesical)",
+        "Idosos e imunossuprimidos podem ter pouca dor — atenção",
+        "Exame: dor e defesa em FIE; sinais peritoneais sugerem complicação",
+        "Laboratório: hemograma (leucocitose), PCR/procalcitonina, função renal, lactato, urina I, beta-hCG (mulheres)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "IMAGEM",
+      "section_color": "navy",
+      "titulo": "TC É O PADRÃO-OURO",
+      "items": [
+        "TC de abdome com contraste IV: confirma o diagnóstico e define o HINCHEY",
+        "Achados: espessamento parietal, inflamação da gordura pericólica, divertículos inflamados, abscesso, ar/líquido livre",
+        "COLONOSCOPIA é CONTRAINDICADA na fase aguda (risco de perfuração)",
+        "Colonoscopia eletiva em 6-8 semanas após a resolução para EXCLUIR câncer colorretal",
+        "US/RM em situações selecionadas (gestante, dúvida)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE HINCHEY",
+      "section_color": "navy",
+      "headers": ["Grau", "Achado / conduta"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.18, 0.82],
+      "rows": [
+        ["Ia", "Flegmão/inflamação pericólica, sem abscesso (não complicada)"],
+        ["Ib", "Abscesso pericólico pequeno (< 4 cm) — internar + ATB EV"],
+        ["II", "Abscesso > 4 cm (pélvico/retroperitoneal) — ATB EV + drenagem percutânea"],
+        ["III", "Peritonite PURULENTA generalizada (perfuração contida) — cirurgia"],
+        ["IV", "Peritonite FECAL (perfuração livre) — emergência cirúrgica"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO POR GRAVIDADE",
+      "section_color": "orange",
+      "titulo": "SUPORTE + ATB + DRENAGEM/CIRURGIA",
+      "items": [
+        "Suporte: jejum, acesso, cristaloide (SF/Ringer 20-30 mL/kg se sepse), correção eletrolítica; analgesia (Dipirona; Morfina se intensa; EVITAR AINE em idoso/DRC/sepse)",
+        "NÃO complicada (Ia): pode ser ambulatorial se estável, sem comorbidade grave, dor controlável e aceitando VO — ATB NÃO obrigatório em jovem imunocompetente estável; usar se febre persistente/PCR alta/idoso/imunossuprimido",
+        "  VO (7 dias): Amox-clavulanato 875/125 12/12h; ou Cipro 500 12/12h + Metronidazol 500 8/8h",
+        "Complicada leve (Ib): internar + EV — Ceftriaxona 1-2 g/dia + Metronidazol 500 8/8h, ou Pipe-tazo 4,5 g 6/6h (7 dias, transição VO)",
+        "Complicada (II): Pipe-tazo 4,5 g 6/6h (ou Cefepime + Metronidazol) + DRENAGEM percutânea do abscesso (7-10 dias); falha -> cirurgia",
+        "Grave (III/IV): EMERGÊNCIA cirúrgica + ATB amplo (Meropenem/Imipenem/Pipe-tazo); cirurgia de Hartmann, anastomose primária ± ileostomia, lavagem laparoscópica (III selecionados)"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "UTI / FALHA / ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "UTI: choque séptico, lactato elevado, insuficiência respiratória, IRA, peritonite difusa",
+        "Falha do tratamento clínico: dor > 72h, febre mantida, PCR em elevação, piora na TC -> reavaliar drenagem/cirurgia",
+        "ALTA: afebril, dor controlada VO, dieta tolerada, ATB VO (se indicado), seguimento ambulatorial",
+        "COLONOSCOPIA obrigatória em 6-8 semanas (excluir CCR)",
+        "Orientar sinais de retorno (dor intensa, febre, distensão, parada de eliminação)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com dor em FIE + febre; sinais peritoneais ___; leucócitos/PCR ___; lactato ___.",
+        "TC: ___ (abscesso? ar/líquido livre?); Hinchey ___.",
+        "Condutas: jejum, hidratação, ATB ___ iniciado às ___, analgesia; drenagem percutânea ___.",
+        "Solicito: ( ) internação + ATB EV ( ) drenagem (Hinchey II) ( ) cirurgia URGENTE (III/IV) ± UTI."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o exame padrão-ouro para diagnóstico e classificação (Hinchey) da diverticulite aguda?",
+      "alternativas": [
+        "Colonoscopia na fase aguda",
+        "Tomografia de abdome com contraste",
+        "Enema opaco",
+        "Ultrassom isolado",
+        "Radiografia simples de abdome"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Diverticulite Hinchey IV (peritonite fecal). Qual a conduta?",
+      "alternativas": [
+        "Antibiótico oral ambulatorial",
+        "Emergência cirúrgica (ex.: cirurgia de Hartmann) com antibiótico de amplo espectro",
+        "Apenas drenagem percutânea",
+        "Colonoscopia imediata",
+        "Observação clínica"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre o antibiótico na diverticulite NÃO complicada (Hinchey Ia), é correto:",
+      "alternativas": [
+        "Sempre carbapenêmico EV",
+        "Não é obrigatório em jovem imunocompetente estável; indicado se febre persistente, PCR elevada, idoso ou imunossuprimido",
+        "Contraindicado em todos",
+        "Apenas via endovenosa por 21 dias",
+        "Substituível por colonoscopia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Diverticulite com abscesso >= 4 cm (Hinchey II). Qual a conduta inicial?",
+      "alternativas": [
+        "Cirurgia de Hartmann imediata para todos",
+        "Antibiótico EV + drenagem percutânea do abscesso",
+        "Apenas antibiótico oral",
+        "Colonoscopia de urgência",
+        "Alta com analgesia"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Após resolução de um episódio de diverticulite aguda, qual exame é obrigatório em 6-8 semanas?",
+      "alternativas": [
+        "Nova tomografia de rotina",
+        "Colonoscopia, para excluir câncer colorretal",
+        "Ressonância de abdome",
+        "Endoscopia digestiva alta",
+        "Nenhum exame adicional"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A TC de abdome com contraste é o padrão-ouro: confirma o diagnóstico e define o Hinchey. A colonoscopia é contraindicada na fase aguda pelo risco de perfuração."},
+    {"resposta": "B", "comentario": "Hinchey IV (peritonite fecal por perfuração livre) é emergência cirúrgica (cirurgia de Hartmann é clássica), com antibiótico de amplo espectro e suporte de UTI."},
+    {"resposta": "B", "comentario": "Na diverticulite não complicada (Ia), o ATB não é obrigatório em pacientes jovens, imunocompetentes e estáveis; reserva-se a febre persistente, PCR elevada, idosos ou imunossuprimidos."},
+    {"resposta": "B", "comentario": "No Hinchey II (abscesso >= 4 cm), a conduta é antibiótico EV + drenagem percutânea do abscesso; a falha da drenagem indica cirurgia."},
+    {"resposta": "B", "comentario": "A colonoscopia é obrigatória 6-8 semanas após a resolução, para excluir câncer colorretal subjacente."}
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "slug": "cancer_colorretal",
+  "titulo": "Câncer Colorretal",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Câncer colorretal — rastreio e emergência",
+  "chapter_bar": "CÂNCER COLORRETAL — RASTREIO + OBSTRUÇÃO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DO RASTREIO À EMERGÊNCIA",
+      "title": "CCR — RASTREAR x APRESENTAÇÃO NO PS",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Sequencia adenoma-carcinoma (~10 anos)\nrastreio a partir dos 45 anos", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 145, "h": 24, "text": "Eletivo:\ncolonoscopia +\nestadiamento/cirurgia", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 26, "text": "PS: OBSTRUCAO\nintestinal -> SNG +\nTC + cirurgia geral", "color": "red", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Reto extraperitoneal: neoadjuvancia + ETM", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "FATORES DE RISCO E CARCINOGÊNESE",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Tumor mais comum do trato gastrointestinal; sequência adenoma-carcinoma leva ~10 anos",
+        "Risco: idade, sedentarismo, dieta inadequada, tabagismo, etilismo, obesidade, diabetes",
+        "Hereditários: PAF, polipose associada a MUTYH, síndrome de Lynch (HNPCC)",
+        "Doença inflamatória intestinal (RCU, Crohn) e colite actínica (pós-radiação)",
+        "Pólipos NEOPLÁSICOS (com displasia): adenoma tubular (melhor prognóstico) < tubuloviloso < viloso (pior); serrilhados (planos, difíceis); NÃO neoplásicos: hiperplásicos, hamartomas, inflamatórios"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "RASTREAMENTO",
+      "section_color": "navy",
+      "headers": ["População", "Estratégia"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Risco médio (a partir de 45 anos)", "Colonoscopia a cada 10 anos (padrão); ou TIF/sangue oculto anual; ou retossigmoidoscopia 5-10 anos ± TIF; ou colono-TC a cada 5 anos"],
+        ["Familiar de 1º grau com CCR", "Iniciar aos 40 anos OU 10 anos antes da idade do caso índice — colonoscopia"],
+        ["PAF / Lynch / RCU / Crohn", "Protocolos específicos (início mais precoce e intervalos menores)"],
+        ["Colono inviável (lesão intransponível)", "Colonografia por TC (colonoscopia virtual) se preparo adequado"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CLÍNICA POR LOCALIZAÇÃO / SINAIS DE ALARME",
+      "section_color": "red",
+      "titulo": "QUANDO SUSPEITAR",
+      "items": [
+        "Cólon DIREITO: anemia ferropriva, sangue oculto, massa palpável, sintomas tardios (lúmen amplo)",
+        "Cólon ESQUERDO/reto: alteração do hábito intestinal, fezes afiladas, hematoquezia, obstrução (lúmen estreito)",
+        "Sinais de alarme: sangramento, anemia inexplicada, emagrecimento, mudança do hábito após os 45 anos -> COLONOSCOPIA",
+        "Reto: toque retal, sangramento vivo, tenesmo",
+        "No PS, a apresentação mais comum é a OBSTRUÇÃO INTESTINAL"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "TRATAMENTO ONCOLÓGICO (VISÃO GERAL)",
+      "section_color": "navy",
+      "titulo": "CÓLON x RETO",
+      "items": [
+        "Cólon (e reto intraperitoneal): ressecção com linfadenectomia (ligadura dos vasos na origem, >= 12 linfonodos)",
+        "Reto EXTRAPERITONEAL (~até 7 cm da borda anal): excisão TOTAL do mesorreto (ETM); margem distal livre suficiente para R0",
+        "Neoadjuvância (QT-RT) no reto: T3/T4, linfonodo+, tumores distais (preservar esfíncter), envolvimento da fáscia mesorretal",
+        "  Benefícios: downstaging, preservação esfincteriana, menos recidiva local, resposta completa ('watch and wait'); TNT = QT sistêmica + RT",
+        "Amputação abdominoperineal (Miles) + colostomia definitiva quando há acometimento do esfíncter/elevador do ânus"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CCR NO PS — OBSTRUÇÃO",
+      "section_color": "orange",
+      "titulo": "MEDIDAS INICIAIS",
+      "items": [
+        "Sonda nasogástrica nº 18 para descompressão",
+        "Hidratação venosa + analgesia + antiemético",
+        "Correção de distúrbios hidroeletrolíticos",
+        "Imagem: TC de abdome e pelve (padrão-ouro na obstrução)",
+        "Avaliação da cirurgia geral / transferência via SAMU; jejum"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com ___ (obstrução/hematoquezia/anemia/massa); duração ___; história prévia ___.",
+        "Exame: distensão ___, sinais de estrangulamento ___, toque retal ___; sinais vitais completos.",
+        "Condutas: SNG, hidratação, analgesia, correção hidroeletrolítica; TC de abdome/pelve ___.",
+        "Solicito avaliação da cirurgia geral / transferência; fornecer exames e enfatizar alterações críticas."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "A partir de qual idade se recomenda iniciar o rastreamento do câncer colorretal na população de risco médio?",
+      "alternativas": [
+        "30 anos",
+        "45 anos",
+        "60 anos",
+        "70 anos",
+        "Não há rastreamento"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual apresentação clínica é mais típica do câncer de cólon DIREITO?",
+      "alternativas": [
+        "Obstrução intestinal precoce",
+        "Anemia ferropriva e sangue oculto nas fezes",
+        "Fezes afiladas",
+        "Tenesmo",
+        "Hematoquezia volumosa"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual o princípio oncológico da cirurgia do câncer de reto extraperitoneal?",
+      "alternativas": [
+        "Ressecção segmentar simples sem linfadenectomia",
+        "Excisão total do mesorreto (ETM)",
+        "Apenas polipectomia",
+        "Colostomia sem ressecção",
+        "Radioterapia isolada curativa"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Paciente chega ao PS com quadro de obstrução intestinal por provável neoplasia de cólon. Qual o exame de imagem de escolha?",
+      "alternativas": [
+        "Colonoscopia de urgência",
+        "Tomografia de abdome e pelve",
+        "Enema opaco",
+        "Ressonância de crânio",
+        "Cintilografia"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual tipo histológico de pólipo adenomatoso tem o PIOR prognóstico?",
+      "alternativas": [
+        "Tubular",
+        "Viloso",
+        "Hiperplásico",
+        "Hamartomatoso",
+        "Inflamatório"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O rastreamento do CCR em risco médio inicia aos 45 anos (colonoscopia a cada 10 anos é o padrão; alternativas incluem TIF anual, retossigmoidoscopia e colono-TC). Familiares de 1º grau e síndromes hereditárias começam antes."},
+    {"resposta": "B", "comentario": "O cólon direito tem lúmen amplo e cursa com sintomas tardios: anemia ferropriva e sangue oculto são típicos. Já o cólon esquerdo/reto cursa com alteração do hábito, fezes afiladas e obstrução."},
+    {"resposta": "B", "comentario": "No reto extraperitoneal, o princípio é a excisão total do mesorreto (ETM), que reduz a recidiva local; margem distal livre é suficiente para a ressecção R0."},
+    {"resposta": "B", "comentario": "Na obstrução por provável neoplasia colônica, a TC de abdome e pelve é o exame de escolha; a colonoscopia é contraindicada na obstrução aguda completa."},
+    {"resposta": "B", "comentario": "O adenoma viloso tem o pior prognóstico (maior risco de displasia/malignização); o tubular é o de melhor prognóstico e o tubuloviloso, intermediário. Hiperplásicos/hamartomatosos/inflamatórios não têm displasia."}
+  ]
+}

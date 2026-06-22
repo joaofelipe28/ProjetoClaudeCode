@@ -1,0 +1,168 @@
+{
+  "slug": "prolapso_retal",
+  "titulo": "Prolapso Retal",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Prolapso retal no PS",
+  "chapter_bar": "PROLAPSO RETAL — REDUZIR + CIRURGIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "PROLAPSO RETAL — REDUZIR x ESTRANGULADO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Massa anal exteriorizada (pregas CONCENTRICAS)\navaliar reducao e viabilidade", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 145, "h": 26, "text": "Redutivel:\nlubrificar + frio +\nreducao manual", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 28, "text": "ESTRANGULADO\n(necrose/cianose):\ncirurgia de urgencia", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Tratamento definitivo e CIRURGICO (eletivo)", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E FISIOPATOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Exteriorização do reto pelo canal anal: COMPLETO (espessura total, cilíndrico/concêntrico, idosos) ou MUCOSO (pregas radiais, associado a hemorroidas)",
+        "Multifatorial: fraqueza do assoalho pélvico, alongamento do ligamento reto-sacral, ângulo anorretal obtuso, hipotonia esfincteriana, constipação crônica/esforço, neuropatia pudenda (idosas multíparas)",
+        "Clínica: massa anal exteriorizada, sensação de peso, INCONTINÊNCIA fecal (frequente), secreção mucosa, sangramento, constipação paradoxal",
+        "DOR sugere ESTRANGULAMENTO",
+        "Dica: pregas CONCÊNTRICAS = prolapso completo; pregas RADIAIS = hemorroidas"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "CLÍNICO + COMPLEMENTAR",
+      "items": [
+        "Clínico (inspeção anal); manobra de Valsalva em posição ortostática para evidenciar o prolapso",
+        "Colonoscopia: EXCLUIR neoplasia (sobretudo em idosos) antes da cirurgia eletiva",
+        "Defecografia em casos complexos; manometria anorretal para planejamento cirúrgico",
+        "RM pélvica se associação com outras disfunções do assoalho pélvico",
+        "Diferenciais: hemorroidas internas prolapsadas, prolapso mucoso, tumor anal, intussuscepção retal interna"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CONDUTA NO PS — REDUÇÃO",
+      "section_color": "orange",
+      "titulo": "PROLAPSO REDUTÍVEL",
+      "items": [
+        "Lubrificação abundante + compressas frias + elevação da pelve (Trendelenburg)",
+        "Redução manual delicada e progressiva",
+        "Se edema importante: aplicar AÇÚCAR granulado ou compressa hipertônica sobre a mucosa por 20-30 min (reduz o edema osmoticamente) e então reduzir",
+        "Analgesia para conforto durante a manobra",
+        "Após redução, encaminhar para programação cirúrgica eletiva"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "EMERGÊNCIA — PROLAPSO ESTRANGULADO",
+      "section_color": "red",
+      "titulo": "NÃO REDUZ / ISQUEMIA",
+      "items": [
+        "Sinais: dor intensa, edema importante, cianose/necrose, irredutibilidade",
+        "Conduta: analgesia + antibioticoprofilaxia + avaliação cirúrgica IMEDIATA + cirurgia de urgência",
+        "Não insistir em reduzir mucosa francamente necrótica",
+        "Risco de perfuração/sepse se negligenciado",
+        "Encaminhamento prioritário ao cirurgião"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO DEFINITIVO (CIRÚRGICO)",
+      "section_color": "navy",
+      "headers": ["Abordagem", "Indicação / técnicas"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Abdominal (preferida se bom risco)", "Retopexia ± ressecção sigmoide (aberta/laparoscópica); menor recorrência, melhor continência; jovens/bom estado"],
+        ["Perineal (idosos/frágeis)", "Delorme (prolapso curto), Altemeier/retossigmoidectomia perineal (prolapso longo); menor risco anestésico, maior recorrência"],
+        ["Pós-operatório", "Controle rigoroso da constipação (fibras + laxativo osmótico), fisioterapia do assoalho pélvico, avaliar continência"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com prolapso retal ___ (completo/mucoso); redutível: ___; dor/cianose (estrangulado?): ___.",
+        "Incontinência ___; comorbidades/risco anestésico ___; neoplasia excluída (colono): ___.",
+        "Conduta no PS: redução ___ (lubrificação/açúcar/Trendelenburg), analgesia; antibiótico se estrangulado.",
+        "Encaminho à cirurgia: eletiva (retopexia/Delorme/Altemeier) OU URGENTE se estrangulado."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Como diferenciar, à inspeção, o prolapso retal completo das hemorroidas prolapsadas?",
+      "alternativas": [
+        "Prolapso completo tem pregas radiais; hemorroidas, concêntricas",
+        "Prolapso completo tem pregas CONCÊNTRICAS; hemorroidas, pregas RADIAIS",
+        "Não há diferença ao exame",
+        "Hemorroidas nunca sangram",
+        "Prolapso nunca causa incontinência"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Idoso com prolapso retal edemaciado, redutível, sem necrose. Qual conduta no PS?",
+      "alternativas": [
+        "Cirurgia de urgência imediata",
+        "Lubrificação, compressas frias/açúcar granulado para reduzir o edema e redução manual delicada",
+        "Apenas analgesia e alta",
+        "Antibiótico oral por 14 dias",
+        "Colostomia de urgência"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Quais sinais indicam prolapso retal estrangulado (emergência cirúrgica)?",
+      "alternativas": [
+        "Massa indolor e redutível",
+        "Dor intensa, edema importante, cianose/necrose e irredutibilidade",
+        "Apenas secreção mucosa",
+        "Incontinência isolada",
+        "Sangramento mínimo"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é o tratamento definitivo do prolapso retal completo?",
+      "alternativas": [
+        "Clínico com laxativos isolados",
+        "Cirúrgico (retopexia abdominal ou cirurgia perineal — Delorme/Altemeier)",
+        "Banho de assento",
+        "Antibiótico",
+        "Dieta apenas"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Antes da cirurgia eletiva de prolapso retal em idoso, qual exame é importante?",
+      "alternativas": [
+        "Endoscopia digestiva alta",
+        "Colonoscopia para excluir neoplasia",
+        "Ecocardiograma de rotina",
+        "Cintilografia óssea",
+        "Nenhum exame é necessário"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O prolapso retal completo mostra pregas CONCÊNTRICAS (cilíndrico), enquanto as hemorroidas prolapsadas têm pregas RADIAIS — diferença prática essencial ao exame."},
+    {"resposta": "B", "comentario": "No prolapso redutível com edema, lubrifica-se, aplicam-se compressas frias ou açúcar granulado/compressa hipertônica (reduz o edema por osmose) e faz-se a redução manual delicada, encaminhando depois para cirurgia eletiva."},
+    {"resposta": "B", "comentario": "Dor intensa, edema importante, cianose/necrose e irredutibilidade indicam estrangulamento — emergência que requer analgesia, antibioticoprofilaxia e cirurgia de urgência."},
+    {"resposta": "B", "comentario": "O tratamento definitivo é cirúrgico: abordagem abdominal (retopexia ± ressecção, preferida em bom risco) ou perineal (Delorme/Altemeier, em idosos/frágeis)."},
+    {"resposta": "B", "comentario": "A colonoscopia é importante antes da cirurgia eletiva, especialmente em idosos, para excluir neoplasia colorretal associada."}
+  ]
+}

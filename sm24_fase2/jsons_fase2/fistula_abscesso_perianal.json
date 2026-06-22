@@ -1,0 +1,172 @@
+{
+  "slug": "fistula_abscesso_perianal",
+  "titulo": "Abscesso e Fístula Perianal",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Abscesso e fístula perianal no PS",
+  "chapter_bar": "ABSCESSO E FÍSTULA PERIANAL — DRENAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — CONTÍNUO DOENÇA CRIPTOGLANDULAR",
+      "title": "ABSCESSO -> FÍSTULA — DRENAR O ABSCESSO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Infeccao das glandulas anais (criptoglandular)\ndor + abaulamento/flutuacao perianal", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.58, "w": 205, "h": 20, "text": "ABSCESSO: DRENAGEM (incisao) — nao esperar ATB", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.3, "w": 205, "h": 22, "text": "~50% evoluem para FISTULA -> tratamento CIRURGICO", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.08, "w": 200, "h": 16, "text": "Atencao a Fournier (emergencia)", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "ABSCESSO PERIANAL",
+      "section_color": "teal",
+      "titulo": "DRENAGEM É O TRATAMENTO",
+      "items": [
+        "Infecção das glândulas anais (criptoglandular); cerca de 50% evoluem para fístula perianal",
+        "Quadro: dor perianal contínua e progressiva, abaulamento, calor, flutuação; febre nos mais extensos",
+        "Tratamento DEFINITIVO é a DRENAGEM (incisão) — o antibiótico isolado NÃO resolve o abscesso",
+        "Fatores de risco: doença de Crohn, diabetes, imunossupressão (HIV/TB), mulheres",
+        "Sempre acompanhar com proctologia (risco de fístula e recorrência)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ABORDAGEM DO ABSCESSO NO PS",
+      "section_color": "orange",
+      "titulo": "ANALGESIA + DRENAGEM + ATB",
+      "items": [
+        "Analgesia: Dipirona 1 g EV; Cetoprofeno 100 mg EV; Tramadol 100 mg EV se intensa",
+        "Drenagem local (se ponto de flutuação acessível): assepsia, anestesia local com lidocaína 2% com vaso, incisão e drenagem do pus",
+        "NÃO suturar — manter o orifício aberto para drenagem e cicatrização por 2ª intenção",
+        "Drenagem em CENTRO CIRÚRGICO se: acesso difícil, analgesia insuficiente, pouca colaboração do paciente",
+        "ATB associado: Ciprofloxacino 500 mg 12/12h + Metronidazol 250 mg (2 cp) 8/8h por 7 dias",
+        "Indicações fortes de ATB: celulite extensa, imunossupressão, diabetes, sinais sistêmicos, valvopatia/prótese"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAG — GANGRENA DE FOURNIER",
+      "section_color": "red",
+      "titulo": "NÃO PERDER",
+      "items": [
+        "Dor desproporcional, toxemia, crepitação, necrose/bolhas, evolução rápida = fasciite necrotizante perineal (Fournier)",
+        "EMERGÊNCIA: ressuscitação + ATB de amplo espectro + DESBRIDAMENTO cirúrgico urgente e amplo",
+        "Diabéticos e imunossuprimidos são os mais propensos",
+        "Não retardar a cirurgia aguardando exames",
+        "Mortalidade elevada se o desbridamento for tardio"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "FÍSTULA PERIANAL — CLASSIFICAÇÃO DE PARKS",
+      "section_color": "navy",
+      "headers": ["Tipo (Parks)", "Trajeto / frequência"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["I — Interesfincteriana", "Entre os esfíncteres; ~45% (mais comum)"],
+        ["II — Transesfincteriana", "Atravessa o esfíncter externo; ~30%"],
+        ["III — Supraesfincteriana", "Acima do puborretal; ~20%"],
+        ["IV — Extraesfincteriana", "Fora do aparelho esfincteriano; ~5% (complexa)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "FÍSTULA — GOODSALL E TRATAMENTO",
+      "section_color": "purple",
+      "titulo": "EXCLUSIVAMENTE CIRÚRGICO",
+      "items": [
+        "Clínica: drenagem purulenta/fecaloide crônica pelo orifício externo perianal",
+        "Regra de GOODSALL: orifício externo ANTERIOR -> trajeto retilíneo à cripta correspondente; orifício POSTERIOR (ou > 3 cm da borda) -> trajeto curvilíneo para a linha média posterior",
+        "Imagem em fístulas complexas: RM de pelve (padrão), US endorretal, fistulografia",
+        "SIMPLES (< 30% do esfíncter, superficial, interesfincteriana): fistulotomia/fistulectomia",
+        "COMPLEXAS (supra/extraesfincteriana, transesfincteriana alta, Crohn, RT, neoplasia): sedenho (seton), retalho de avanço, cola, LIFT — risco de incontinência",
+        "Tratar a infecção ATIVA primeiro: Ceftriaxona 500 mg IM/dia (ou Cipro 500 mg 12/12h) + Clindamicina 300 mg 8/8h (ou Metronidazol) por 7 dias"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com dor perianal + abaulamento/flutuação (abscesso) OU drenagem crônica (fístula).",
+        "Sinais de Fournier (crepitação/necrose/toxemia): ___; comorbidade (DM/imunossupressão): ___.",
+        "Conduta: drenagem realizada ___ (local/CC), ferida aberta (sem sutura); ATB ___; analgesia.",
+        "Encaminho à proctologia (programar fistulotomia/seton) ou cirurgia URGENTE se Fournier."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com abscesso perianal flutuante e doloroso. Qual é o tratamento definitivo?",
+      "alternativas": [
+        "Antibiótico oral isolado",
+        "Drenagem cirúrgica (incisão), mantendo a ferida aberta para cicatrização por segunda intenção",
+        "Apenas banho de assento",
+        "Corticoide",
+        "Observação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tipo mais comum de fístula perianal na classificação de Parks?",
+      "alternativas": [
+        "Extraesfincteriana",
+        "Interesfincteriana (~45%)",
+        "Supraesfincteriana",
+        "Transesfincteriana alta",
+        "Todas igualmente frequentes"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Diabético com dor perineal intensa, crepitação, necrose cutânea e toxemia. Qual a conduta?",
+      "alternativas": [
+        "Antibiótico oral ambulatorial",
+        "Suspeitar de gangrena de Fournier: ressuscitação + ATB amplo + desbridamento cirúrgico urgente",
+        "Apenas analgesia",
+        "Banho de assento e alta",
+        "Drenagem eletiva em 1 semana"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Segundo a regra de Goodsall, um orifício fistuloso externo posterior tende a:",
+      "alternativas": [
+        "Ter trajeto retilíneo até a cripta correspondente",
+        "Ter trajeto curvilíneo dirigindo-se à linha média posterior",
+        "Não ter cripta de origem",
+        "Drenar para a bexiga",
+        "Ser sempre superficial"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o tratamento de uma fístula perianal simples (superficial, interesfincteriana, < 30% do esfíncter)?",
+      "alternativas": [
+        "Apenas antibiótico",
+        "Fistulotomia/fistulectomia",
+        "Sedenho (seton) sempre",
+        "Amputação abdominoperineal",
+        "Observação indefinida"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O tratamento do abscesso perianal é a drenagem cirúrgica (incisão), sem suturar, deixando cicatrizar por segunda intenção. O antibiótico é adjuvante (celulite, imunossupressão, sinais sistêmicos), não substitui a drenagem."},
+    {"resposta": "B", "comentario": "A fístula interesfincteriana é a mais comum (~45%) na classificação de Parks; seguem-se transesfincteriana (~30%), supraesfincteriana (~20%) e extraesfincteriana (~5%)."},
+    {"resposta": "B", "comentario": "O quadro é gangrena de Fournier (fasciite necrotizante perineal): emergência que exige ressuscitação, antibiótico de amplo espectro e desbridamento cirúrgico urgente e amplo — não se deve retardar."},
+    {"resposta": "B", "comentario": "Pela regra de Goodsall, orifício externo posterior tem trajeto curvilíneo em direção à linha média posterior; orifício anterior tende a trajeto retilíneo até a cripta correspondente."},
+    {"resposta": "B", "comentario": "Fístulas simples (superficiais, interesfincterianas, com < 30% de esfíncter envolvido) são tratadas com fistulotomia/fistulectomia; as complexas exigem técnicas poupadoras de esfíncter (seton, retalho, LIFT)."}
+  ]
+}

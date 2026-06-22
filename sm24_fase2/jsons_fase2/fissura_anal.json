@@ -1,0 +1,153 @@
+{
+  "slug": "fissura_anal",
+  "titulo": "Fissura Anal",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Fissura anal no PS",
+  "chapter_bar": "FISSURA ANAL — AGUDA x CRÔNICA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "FISSURA ANAL — TEMPO + LOCALIZAÇÃO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Dor ao evacuar + sangramento\nulceracao linear, linha media posterior (90%)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 145, "h": 24, "text": "AGUDA (<6 sem):\nmedidas + analgesia\ntopica", "color": "green", "font_size": 5.6},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 26, "text": "CRONICA (>6 sem):\nbloqueador de Ca topico\n-> cirurgia se falha", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Local atipico -> investigar Crohn/HIV/TB/sifilis/neo", "color": "red", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Ulceração linear distal à linha pectínea, tipicamente na LINHA MÉDIA POSTERIOR (90%) ou anterior",
+        "Etiologia: constipação (principal), diarreia volumosa, sexo anal, trauma anal",
+        "Fisiopatologia: hipertonia do esfíncter interno + isquemia local dificultam a cicatrização (linha média posterior é a menos vascularizada)",
+        "FISSURAS ATÍPICAS (laterais, múltiplas, irregulares) -> investigar Crohn, HIV, tuberculose, sífilis, neoplasia",
+        "Clínica clássica: dor intensa ao evacuar (e após) + sangramento vivo em pequena quantidade"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "AGUDA x CRÔNICA",
+      "section_color": "navy",
+      "headers": ["Tipo", "Características"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Aguda (< 6 semanas)", "Dor ao evacuar, sangramento, associação com constipação; ferida recente"],
+        ["Crônica (> 6 semanas)", "Hipertrofia esfincteriana, úlcera esbranquiçada, PLICOMA SENTINELA, papila hipertrófica (tríade da cronicidade)"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO CLÍNICO",
+      "section_color": "orange",
+      "titulo": "MEDIDAS + TÓPICOS",
+      "items": [
+        "Regularização do hábito evacuatório: aumento de fibras e água; laxativo se constipação associada",
+        "Banho de assento (relaxa o esfíncter, alívio sintomático)",
+        "AGUDA: pomada anestésica/cicatrizante local 2-3x/dia por ~14 dias; Lidocaína tópica 2% 2-3x/dia por 2-3 semanas",
+        "CRÔNICA: bloqueador de canal de cálcio TÓPICO — Diltiazem 2% na borda anal 3x/dia por 6-8 semanas (ou nitroglicerina tópica)",
+        "Analgesia oral: Cetoprofeno 100 mg 12/12h por 4-6 dias; Dipirona 1 g 6/6h se dor"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRATAMENTO CIRÚRGICO",
+      "section_color": "purple",
+      "titulo": "QUANDO FALHA O CLÍNICO",
+      "items": [
+        "ESFINCTEROTOMIA LATERAL INTERNA: padrão-ouro cirúrgico para fissura crônica refratária (alivia a hipertonia)",
+        "Toxina botulínica (Botox): alternativa que reduz o tônus esfincteriano sem incisão",
+        "Risco da esfincterotomia: incontinência (sobretudo a flatos) — selecionar bem o paciente",
+        "Cuidado especial em mulheres multíparas e em portadores de Crohn (preferir medidas conservadoras/Botox)",
+        "Antes de operar fissura atípica/lateral, EXCLUIR doença de base"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com dor ao evacuar + sangramento; fissura ___ (aguda/crônica), localização ___ (posterior/atípica).",
+        "Sinais de cronicidade (plicoma/papila/úlcera esbranquiçada): ___; suspeita de doença de base: ___.",
+        "Conduta: medidas dietéticas, banho de assento, tópico ___ (lidocaína/diltiazem), analgesia.",
+        "Encaminho à proctologia se refratária (> 6-8 semanas) para esfincterotomia/Botox; investigar Crohn/HIV/TB se atípica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a localização mais comum da fissura anal típica?",
+      "alternativas": [
+        "Lateral esquerda",
+        "Linha média posterior (~90%)",
+        "Circunferencial",
+        "Linha média lateral direita",
+        "Anterior exclusivamente"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado caracteriza a fissura anal CRÔNICA?",
+      "alternativas": [
+        "Ferida recente sem outras alterações",
+        "Plicoma sentinela, papila hipertrófica e úlcera esbranquiçada com hipertrofia esfincteriana",
+        "Sangramento volumoso",
+        "Febre alta",
+        "Massa pulsátil"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual a medicação tópica de escolha para a fissura anal crônica?",
+      "alternativas": [
+        "Corticoide tópico",
+        "Bloqueador de canal de cálcio tópico (diltiazem 2%) ou nitroglicerina tópica",
+        "Antibiótico tópico",
+        "Antifúngico tópico",
+        "Apenas vaselina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Fissura anal em localização atípica (lateral, múltipla) deve levantar suspeita de:",
+      "alternativas": [
+        "Constipação simples",
+        "Doença de Crohn, HIV, tuberculose, sífilis ou neoplasia",
+        "Apenas trauma",
+        "Hemorroida",
+        "Diverticulite"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o tratamento cirúrgico padrão-ouro da fissura anal crônica refratária?",
+      "alternativas": [
+        "Hemorroidectomia",
+        "Esfincterotomia lateral interna",
+        "Amputação abdominoperineal",
+        "Retopexia",
+        "Fistulotomia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A fissura típica localiza-se na linha média posterior em ~90% dos casos (área menos vascularizada, propensa à isquemia/hipertonia); pode ser anterior, sobretudo em mulheres."},
+    {"resposta": "B", "comentario": "A cronicidade (> 6 semanas) cursa com plicoma sentinela, papila hipertrófica e úlcera esbranquiçada, com hipertrofia/hipertonia do esfíncter interno."},
+    {"resposta": "B", "comentario": "Na fissura crônica usa-se bloqueador de canal de cálcio tópico (diltiazem 2%) ou nitroglicerina tópica, que reduzem o tônus esfincteriano e melhoram a perfusão para cicatrização."},
+    {"resposta": "B", "comentario": "Fissuras atípicas (laterais, múltiplas, irregulares) exigem investigar doença de base: Crohn, HIV, tuberculose, sífilis e neoplasia."},
+    {"resposta": "B", "comentario": "A esfincterotomia lateral interna é o padrão-ouro cirúrgico na fissura crônica refratária; o Botox é alternativa. Atenção ao risco de incontinência."}
+  ]
+}

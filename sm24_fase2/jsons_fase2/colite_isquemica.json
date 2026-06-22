@@ -1,0 +1,169 @@
+{
+  "slug": "colite_isquemica",
+  "titulo": "Colite Isquêmica",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Colite isquêmica na emergência",
+  "chapter_bar": "COLITE ISQUÊMICA — IDOSO + HEMATOQUEZIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "COLITE ISQUÊMICA — SUPORTE x CIRURGIA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Idoso vascular: dor abdominal + hematoquezia\nTC com contraste + lactato", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Leve/moderada:\njejum + hidratacao +\nATB se mod/grave", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.75, "y": 0.48, "w": 150, "h": 28, "text": "Gangrenosa/peritonite\n/perfuracao:\ncirurgia (ressecao)", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Suspender AINE/vasoconstritores", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CLÍNICA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Redução do fluxo sanguíneo ao cólon -> inflamação, lesão de mucosa e, potencialmente, necrose transmural com perfuração/sepse",
+        "Mais comum em IDOSOS com fatores vasculares e hipoperfusão sistêmica",
+        "Clínica: dor em cólica (tipicamente no quadrante inferior ESQUERDO), HEMATOQUEZIA, diarreia com muco/sangue, distensão, febre baixa",
+        "Fatores de risco: idade avançada, aterosclerose/arritmia, hipotensão/choque, vasoconstritores",
+        "Sinais de peritonite (dor intensa, rigidez) sugerem forma complicada/gangrenosa"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "LABORATÓRIO + IMAGEM",
+      "items": [
+        "Laboratório: hemograma (leucocitose, anemia), PCR/VHS, função renal e eletrólitos, LACTATO (perfusão)",
+        "TC de abdome com contraste: exame inicial de escolha — espessamento mural do cólon, exclui complicações (pneumoperitônio, ar na parede)",
+        "Colonoscopia/sigmoidoscopia: confirma e biopsia — indicada quando o paciente está ESTÁVEL",
+        "Diferenciar de isquemia mesentérica aguda (intestino delgado, dor desproporcional, mais grave)",
+        "Não retardar a avaliação cirúrgica se houver sinais de peritonite/instabilidade"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DE GRAVIDADE",
+      "section_color": "navy",
+      "headers": ["Nível", "Critérios-chave"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Leve / moderada", "Hemodinâmica estável, sem peritonite, hematoquezia leve"],
+        ["Severa", "Leucocitose alta, dor persistente, instabilidade hemodinâmica"],
+        ["Gangrenosa / complicada", "Perfuração, pneumoperitônio, peritonite franca -> cirurgia imediata"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "SUPORTE + ATB + ANALGESIA",
+      "items": [
+        "Suporte: jejum (NPO) nas primeiras 24-72h, hidratação EV com cristaloide, O2 se SatO2 < 94%",
+        "SUSPENDER AINEs e vasoconstritores; profilaxia de TVP conforme risco hemorrágico",
+        "ATB (casos moderados a graves, por translocação bacteriana): Pipe-tazo 3,375-4,5 g EV 6-8/8h; ou Ceftriaxona 1-2 g/dia + Metronidazol 500 mg 8/8h",
+        "  Alergia à penicilina: Ciprofloxacino 400 mg EV 12/12h + Metronidazol 500 mg 8/8h; duração 5-10 dias",
+        "Analgesia: Dipirona 500-1000 mg 6-8/8h; opioide (Morfina 2-4 mg) com cautela (monitorar peritonite/motilidade)",
+        "Nutrição progressiva (líquida -> regular) conforme melhora; parenteral se jejum > 5-7 dias"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "UTI / CIRURGIA",
+      "section_color": "red",
+      "titulo": "QUANDO ESCALAR",
+      "items": [
+        "UTI: instabilidade hemodinâmica, acidose persistente, choque, insuficiência respiratória",
+        "INDICAÇÃO CIRÚRGICA: perfuração com pneumoperitônio, peritonite franca, necrose transmural evidente, deterioração progressiva",
+        "Cirurgia: ressecção do segmento acometido com anastomose ou colostomia, conforme avaliação",
+        "Monitorizar sinais vitais 4-6/6h; hemograma e eletrólitos diários; vigiar piora (febre persistente, peritonite)",
+        "Critério cirúrgico imediato: peritonite, perfuração, instabilidade progressiva"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos, fatores vasculares ___, com dor abdominal + hematoquezia; peritonite ___.",
+        "Sinais vitais ___; lactato ___; TC: espessamento mural ___, pneumoperitônio/ar na parede ___; gravidade ___.",
+        "Condutas: jejum, hidratação, suspensão de AINE/vasoconstritor, ATB ___, analgesia.",
+        "Solicito UTI/cirurgia se instabilidade/peritonite/perfuração; transporte com monitorização e O2."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a apresentação típica da colite isquêmica?",
+      "alternativas": [
+        "Jovem com dor periumbilical e diarreia aquosa",
+        "Idoso com fatores vasculares, dor abdominal (quadrante inferior esquerdo) e hematoquezia",
+        "Criança com vômitos biliosos",
+        "Adulto com icterícia e colúria",
+        "Gestante com dor pélvica"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual exame de imagem é a escolha inicial na suspeita de colite isquêmica?",
+      "alternativas": [
+        "Colonoscopia de urgência em todos",
+        "Tomografia de abdome com contraste",
+        "Enema opaco",
+        "Radiografia de tórax",
+        "Cintilografia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual medida de suporte é importante na colite isquêmica?",
+      "alternativas": [
+        "Manter vasoconstritores",
+        "Suspender AINEs e vasoconstritores, com jejum e hidratação EV",
+        "Iniciar AINE de rotina",
+        "Restrição hídrica agressiva",
+        "Alta precoce com dieta livre"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual é a indicação de cirurgia na colite isquêmica?",
+      "alternativas": [
+        "Hematoquezia leve isolada",
+        "Perfuração, peritonite franca ou necrose transmural evidente",
+        "Dor controlada com analgesia oral",
+        "Hemodinâmica estável",
+        "Dieta tolerada"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual marcador laboratorial é útil para avaliar a perfusão/gravidade na colite isquêmica?",
+      "alternativas": [
+        "Bilirrubina",
+        "Lactato",
+        "Amilase",
+        "TSH",
+        "Troponina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A colite isquêmica é típica de idosos com fatores vasculares, manifestando-se com dor abdominal (geralmente no quadrante inferior esquerdo) e hematoquezia, após episódios de hipoperfusão."},
+    {"resposta": "B", "comentario": "A TC de abdome com contraste é a escolha inicial: mostra espessamento mural do cólon e exclui complicações (pneumoperitônio, ar na parede). A colonoscopia confirma quando o paciente está estável."},
+    {"resposta": "B", "comentario": "É importante suspender AINEs e vasoconstritores, manter jejum nas primeiras 24-72h e hidratação EV, além de antibiótico nos casos moderados/graves."},
+    {"resposta": "B", "comentario": "A cirurgia é indicada na presença de perfuração, peritonite franca ou necrose transmural evidente (forma gangrenosa/complicada) ou deterioração progressiva."},
+    {"resposta": "B", "comentario": "O lactato é marcador de hipoperfusão/gravidade na colite isquêmica, auxiliando a identificar isquemia significativa e a necessidade de escalonamento."}
+  ]
+}
