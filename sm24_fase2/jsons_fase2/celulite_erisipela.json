@@ -1,0 +1,168 @@
+{
+  "slug": "celulite_erisipela",
+  "titulo": "Celulite e Erisipela",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Celulite e erisipela no PS",
+  "chapter_bar": "CELULITE x ERISIPELA — GRAVIDADE GUIA ATB",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — GRAVIDADE GUIA A CONDUTA",
+      "title": "CELULITE/ERISIPELA — ESTRATIFICAR -> ATB",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Pele eritematosa/quente/edema + porta de entrada\nbuscar SINAIS DE SEPSE e fasceite", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.22, "y": 0.48, "w": 140, "h": 24, "text": "Leve:\ncefalexina VO\n+ elevar membro", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 135, "h": 26, "text": "Moderada: internar +\ncefazolina/oxacilina EV\n(vanco se MRSA)", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 145, "h": 28, "text": "Grave/necrotizante:\nUTI + amplo +\nCIRURGIA", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CELULITE x ERISIPELA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Erisipela", "Celulite"],
+      "header_colors": ["gray", "teal", "orange"],
+      "col_widths": [0.22, 0.39, 0.39],
+      "rows": [
+        ["Profundidade", "Derme (mais superficial)", "Derme + subcutâneo (mais profunda)"],
+        ["Bordas", "BEM delimitadas, elevadas ('em degrau')", "MAL delimitadas, difusas"],
+        ["Aspecto", "Vermelhidão intensa, brilhante ('casca de laranja'), crescimento rápido", "Vermelhidão difusa, evolução mais indolente"],
+        ["Agente", "Estreptococo beta-hemolítico do grupo A", "S. aureus + Estreptococo"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E PORTA DE ENTRADA",
+      "section_color": "teal",
+      "titulo": "O QUE BUSCAR",
+      "items": [
+        "Anamnese: início/evolução, localização, dor; PORTA DE ENTRADA (trauma, ferida cirúrgica, MICOSE interdigital/frieira, picada, úlcera venosa); comorbidades (DM, insuficiência venosa, linfedema, obesidade)",
+        "Exame: sinais vitais; inspeção (extensão, limites, edema); palpação (calor, FLUTUAÇÃO = abscesso, CREPITAÇÃO = alerta); pulsos/perfusão; linfonodos regionais",
+        "DEMARCAR a borda da lesão com caneta para monitorar a evolução",
+        "Buscar e tratar a porta de entrada (antifúngico para frieira, curativo para feridas)",
+        "Diferencial: TVP (edema assimétrico), fasceíte necrotizante, abscesso"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE ALERTA",
+      "section_color": "red",
+      "titulo": "INVESTIGAÇÃO IMEDIATA",
+      "items": [
+        "Febre alta (>= 38,5 °C) ou hipotermia; taquicardia/taquipneia/hipotensão (SEPSE); alteração do nível de consciência",
+        "Dor DESPROPORCIONAL, progressão rápida, crepitação, bolhas hemorrágicas, necrose = FASCEÍTE NECROTIZANTE (emergência cirúrgica)",
+        "Lesão em FACE (risco de trombose de seio cavernoso)",
+        "Imunossupressão/diabetes descompensado; falha após 48-72h de ATB correto",
+        "Crepitação ou gás nos tecidos no RX -> gangrena/fasceíte"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO POR GRAVIDADE",
+      "section_color": "orange",
+      "titulo": "ATB + MEDIDAS DE SUPORTE",
+      "items": [
+        "LEVE (ambulatorial): Cefalexina 500 mg VO 6/6h por 7-10 dias (alérgico: Clindamicina 300 mg 8/8h); analgesia (Dipirona) ± AINE",
+        "MODERADA (internação): Cefazolina 1-2 g EV 8/8h ou Oxacilina 2 g EV 4/4h; se risco de MRSA -> Vancomicina 15-20 mg/kg EV 12/12h (ou Linezolida); transição VO em 48-72h de melhora",
+        "GRAVE/necrotizante: UTI + avaliação CIRÚRGICA imediata; cobertura ampla — Vancomicina + Piperacilina-tazobactam 4,5 g 6/6h (ou Meropenem)",
+        "Suspeita de FASCEÍTE: ADICIONAR Clindamicina 600-900 mg EV 8/8h (inibe a produção de toxinas)",
+        "Suporte: ELEVAÇÃO do membro (fundamental), compressas frias, analgesia, tratar a porta de entrada, profilaxia de TVP se imobilidade",
+        "Exames (moderado/grave): hemograma, PCR, função renal, glicemia; hemocultura se febre/sepse; US-Doppler se suspeita de abscesso/TVP; TC/RM se fasceíte"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: grave/extensa, sinais sistêmicos (febre alta/taquicardia/hipotensão), comorbidade descompensada, imunossupressão, falha ambulatorial (piora em 48-72h), suspeita de infecção profunda (abscesso/fasceíte), lesão facial, sem condição de seguimento, necessidade de ATB EV",
+        "ALTA: lesão estabilizada/em regressão (não ultrapassa a marca), afebril >= 24h, melhora da dor, deambulando (se MMII), tolerando VO, comorbidades controladas, retorno em 48-72h",
+        "Receita: Cefalexina/Amox-clav (ou Clindamicina se alérgico) + analgesia; manter o membro elevado",
+        "Alarme (retorno imediato): vermelhidão ultrapassa a marca da caneta, febre persistente, bolhas/necrose, piora da dor, confusão",
+        "Diabéticos: controle glicêmico rigoroso e seguimento"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com celulite/erisipela em ___ há ___ dias; bordas ___ (definidas/difusas); extensão ___ cm; porta de entrada ___.",
+        "Gravidade: febre ___, sepse ___, bolhas/necrose/crepitação ___ (fasceíte?); comorbidades (DM/imunossupressão) ___.",
+        "Conduta: ATB ___ iniciado às ___, elevação do membro, analgesia; demarcação feita; exames ___.",
+        "Solicito internação enfermaria/UTI / avaliação cirúrgica (necrose/fasceíte); resposta ao tratamento ___."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual característica diferencia a erisipela da celulite?",
+      "alternativas": [
+        "Bordas mal delimitadas e difusas",
+        "Bordas BEM delimitadas e elevadas ('em degrau'), mais superficial (derme), por estreptococo do grupo A",
+        "Acomete músculo e osso",
+        "É sempre indolor",
+        "Não tem porta de entrada"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado sugere fasceíte necrotizante e exige avaliação cirúrgica de emergência?",
+      "alternativas": [
+        "Eritema leve sem dor",
+        "Dor desproporcional, progressão rápida, crepitação, bolhas hemorrágicas e necrose",
+        "Febre baixa isolada",
+        "Edema simétrico",
+        "Prurido"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o tratamento da celulite/erisipela LEVE (ambulatorial)?",
+      "alternativas": [
+        "Vancomicina EV",
+        "Cefalexina 500 mg VO 6/6h (alérgico: clindamicina), com elevação do membro",
+        "Meropenem EV",
+        "Apenas compressas",
+        "Antifúngico oral"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Na suspeita de fasceíte necrotizante, qual antibiótico se ADICIONA pela ação antitoxina?",
+      "alternativas": [
+        "Azitromicina",
+        "Clindamicina (inibe a produção de toxinas bacterianas)",
+        "Fluconazol",
+        "Cefalexina",
+        "Doxiciclina"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual medida de suporte é fundamental no tratamento da celulite/erisipela de membro inferior?",
+      "alternativas": [
+        "Manter o membro pendente",
+        "Elevação do membro afetado",
+        "Imobilização gessada",
+        "Compressas quentes contínuas",
+        "Restrição hídrica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A erisipela é mais superficial (derme), tem bordas bem delimitadas e elevadas ('em degrau'), aspecto brilhante e é causada pelo estreptococo do grupo A; a celulite é mais profunda e de bordas difusas."},
+    {"resposta": "B", "comentario": "Dor desproporcional, progressão rápida, crepitação, bolhas hemorrágicas e necrose sugerem fasceíte necrotizante — emergência cirúrgica (desbridamento) com ATB de amplo espectro + clindamicina."},
+    {"resposta": "B", "comentario": "A forma leve trata-se ambulatorialmente com cefalexina VO (clindamicina se alérgico), elevação do membro e analgesia, demarcando a lesão para acompanhamento."},
+    {"resposta": "B", "comentario": "A clindamicina é adicionada na suspeita de fasceíte por inibir a produção de toxinas bacterianas, além do esquema de amplo espectro e do desbridamento cirúrgico."},
+    {"resposta": "B", "comentario": "A elevação do membro afetado é medida de suporte fundamental, reduzindo o edema e favorecendo a resposta ao tratamento."}
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "slug": "sifilis",
+  "titulo": "Sífilis",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Sífilis — estágios e penicilina",
+  "chapter_bar": "SÍFILIS — ESTÁGIO + PENICILINA BENZATINA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ESTÁGIO GUIA O ESQUEMA",
+      "title": "SÍFILIS — CLASSIFICAR -> PENICILINA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Lesao/exantema/sorologia +; classificar estagio\nVDRL (titulo) + treponemico", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.22, "y": 0.48, "w": 140, "h": 26, "text": "Recente (1a/2a/lat<1a):\nBenzatina 2,4 mi UI\nDOSE UNICA", "color": "green", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 135, "h": 26, "text": "Tardia/ignorada:\nBenzatina 2,4 mi UI\nsemanal x3", "color": "teal", "font_size": 5.2},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 145, "h": 28, "text": "NEUROSSIFILIS:\nCristalina EV 14d\n(internar)", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESTÁGIOS CLÍNICOS",
+      "section_color": "navy",
+      "headers": ["Estágio", "Características"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["Primária", "CANCRO DURO: úlcera genital única, INDOLOR, base limpa, bordas endurecidas + linfadenopatia regional (~3 sem)"],
+        ["Secundária", "Exantema maculopapular PALMO-PLANTAR, roséola, condiloma plano, placas mucosas, alopecia em clareira + linfadenopatia generalizada (4-10 sem)"],
+        ["Latente", "Sorologia + SEM sintomas: recente (< 1 ano) ou tardia (> 1 ano/ignorada)"],
+        ["Terciária", "Gomas, sífilis cardiovascular (insuf. aórtica/aneurisma), neurossífilis tardia (tabes, demência)"],
+        ["Neurossífilis", "QUALQUER estágio: meningite, AVC, uveíte, surdez (ou assintomática com alteração liquórica)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — NEUROSSÍFILIS",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIA",
+      "items": [
+        "Cefaleia intensa e persistente; rigidez de nuca (meningite sifilítica)",
+        "Alteração VISUAL (uveíte, papilite, neurite óptica) ou AUDITIVA súbita",
+        "Confusão mental/alteração de comportamento; déficit focal (AVC sifilítico); convulsões",
+        "Coinfecção HIV + sífilis = maior risco de neurossífilis",
+        "Sífilis cardiovascular: insuficiência aórtica, aneurisma de aorta; sífilis congênita sintomática no RN (hepatoesplenomegalia, pênfigo palmo-plantar, rinite, pseudoparalisia de Parrot)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO LABORATORIAL",
+      "section_color": "navy",
+      "titulo": "NÃO-TREPONÊMICO + TREPONÊMICO",
+      "items": [
+        "NÃO-treponêmico (VDRL/RPR): rastreio e SEGUIMENTO (quantitativo, títulos); positiva 1-4 semanas após o cancro",
+        "TREPONÊMICO (FTA-Abs, TPHA, teste rápido): confirmatório; positiva 2-3 semanas após o cancro; permanece positivo 'para sempre' (cicatriz) — NÃO serve para monitorar tratamento",
+        "Diagnóstico: combinar os dois testes (um de cada tipo)",
+        "Neurossífilis: punção lombar (VDRL no liquor, celularidade, proteína)",
+        "Testar SEMPRE HIV, hepatites B e C; notificação compulsória (adquirida, gestante e congênita)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — PENICILINA É A BASE",
+      "section_color": "orange",
+      "titulo": "ESQUEMA POR ESTÁGIO",
+      "items": [
+        "RECENTE (primária, secundária, latente < 1 ano): Penicilina G Benzatina 2.400.000 UI IM em DOSE ÚNICA (1,2 mi em cada glúteo) — NÃO repetir semanalmente",
+        "TARDIA (latente > 1 ano/ignorada, terciária exceto neuro): Penicilina G Benzatina 2.400.000 UI IM SEMANAL por 3 semanas (total 7,2 mi UI)",
+        "NEUROSSÍFILIS (qualquer estágio): Penicilina G Cristalina 18-24 mi UI/dia EV (3-4 mi 4/4h) por 14 dias — INTERNAR; alternativa: Procaína 2,4 mi IM/dia + Probenecida 14 dias",
+        "Alergia (não gestante): Doxiciclina 100 mg 12/12h por 14 dias (recente) ou 28 dias (tardia)",
+        "GESTANTE alérgica: DESSENSIBILIZAÇÃO (único tratamento eficaz para prevenir sífilis congênita) — encaminhar a referência",
+        "REAÇÃO DE JARISCH-HERXHEIMER: febre/calafrios/mialgia 2-24h após a 1ª dose (resposta à lise do treponema, NÃO é alergia) — tratar sintomático, não suspender; orientar antes"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "SEGUIMENTO, PARCEIROS E NOTIFICAÇÃO",
+      "titulo": "PÓS-TRATAMENTO",
+      "items": [
+        "VDRL de controle em 3, 6, 12 e 24 meses; cura = queda de 2 diluições (ex.: 1:64 -> 1:16) em 6-12 meses (recente) ou 12-24 meses (tardia)",
+        "VDRL pode não negativar ('cicatriz sorológica') — é normal; se não cair ou subir -> reinfecção/falha",
+        "Convocar e TRATAR parceiros (tratamento epidemiológico, mesmo com sorologia negativa): últimos 3 meses (primária), 6 meses (secundária), 12 meses (latente)",
+        "Notificação compulsória (SINAN): sífilis adquirida, em gestante e congênita",
+        "INTERNAR: neurossífilis sintomática, sífilis congênita sintomática, gestante com complicações, Jarisch-Herxheimer grave, alergia na gestante (dessensibilização), HIV com neurossífilis"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com sífilis estágio ___; VDRL ___, treponêmico ___; gestante ___ (IG ___).",
+        "Neurossífilis: cefaleia/rigidez/visual/auditiva/foco/convulsão ___; PL ___; HIV ___.",
+        "Conduta: Penicilina ___ (benzatina dose única / semanal x3 / cristalina EV) iniciada às ___; parceiro notificado ___.",
+        "Solicito internação para Penicilina Cristalina EV (neurossífilis) / dessensibilização / seguimento de alto risco; notificar SINAN."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o tratamento da sífilis primária, secundária ou latente recente (< 1 ano)?",
+      "alternativas": [
+        "Penicilina G Benzatina 2.400.000 UI IM em dose única",
+        "Penicilina G Benzatina semanal por 3 semanas",
+        "Penicilina Cristalina EV por 14 dias",
+        "Azitromicina dose única",
+        "Doxiciclina por 7 dias"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado dermatológico é muito sugestivo de sífilis secundária?",
+      "alternativas": [
+        "Úlcera genital indolor",
+        "Exantema maculopapular palmo-plantar",
+        "Vesículas agrupadas",
+        "Úlcera dolorosa purulenta",
+        "Nódulo com fístula"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o tratamento da neurossífilis?",
+      "alternativas": [
+        "Penicilina Benzatina dose única",
+        "Penicilina G Cristalina 18-24 milhões UI/dia EV por 14 dias (internação)",
+        "Doxiciclina oral por 7 dias",
+        "Azitromicina dose única",
+        "Ceftriaxona IM dose única"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Gestante alérgica à penicilina com sífilis. Qual a conduta correta?",
+      "alternativas": [
+        "Doxiciclina por 14 dias",
+        "Dessensibilização à penicilina (único tratamento eficaz para prevenir sífilis congênita)",
+        "Azitromicina",
+        "Eritromicina por 14 dias",
+        "Não tratar"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "A reação de Jarisch-Herxheimer após a primeira dose de penicilina é:",
+      "alternativas": [
+        "Uma reação alérgica que exige suspender o antibiótico",
+        "Resposta inflamatória à lise do treponema (febre/calafrios/mialgia); tratar sintomático sem suspender",
+        "Sinal de falha terapêutica",
+        "Indicação de troca para doxiciclina",
+        "Sempre grave e fatal"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "A", "comentario": "Sífilis recente (primária, secundária ou latente < 1 ano) é tratada com Penicilina G Benzatina 2.400.000 UI IM em DOSE ÚNICA; a tardia usa o mesmo, porém semanal por 3 semanas."},
+    {"resposta": "B", "comentario": "O exantema maculopapular palmo-plantar é muito sugestivo de sífilis secundária, junto a roséola, condiloma plano e placas mucosas."},
+    {"resposta": "B", "comentario": "A neurossífilis (qualquer estágio) é tratada com Penicilina G Cristalina 18-24 milhões UI/dia EV por 14 dias, em regime de internação."},
+    {"resposta": "B", "comentario": "Na gestante alérgica, a dessensibilização à penicilina é o único tratamento eficaz para prevenir a sífilis congênita; alternativas (doxiciclina/eritromicina) não previnem a forma congênita."},
+    {"resposta": "B", "comentario": "A reação de Jarisch-Herxheimer é uma resposta inflamatória à destruição do treponema (febre, calafrios, mialgia), não uma alergia; trata-se de forma sintomática, sem suspender o antibiótico."}
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "slug": "furunculo_carbunculo_hidradenite",
+  "titulo": "Furúnculo, Carbúnculo e Hidradenite Supurativa",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Infecções foliculares e hidradenite",
+  "chapter_bar": "FURÚNCULO / CARBÚNCULO / HIDRADENITE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "NÓDULO/ABSCESSO -> DRENAR + ATB SE INDICADO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Nodulo/abscesso folicular; avaliar flutuacao,\nsinais sistemicos e localizacao de risco", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.22, "y": 0.48, "w": 140, "h": 26, "text": "Furunculo simples:\ncompressas mornas\n+/- drenar", "color": "green", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 135, "h": 26, "text": "Carbunculo: ATB\nsistemico SEMPRE\n+ drenar +/- internar", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 145, "h": 28, "text": "Hidradenite (cronica/\nrecorrente): clinda +/-\nrifampicina + dermato", "color": "purple", "font_size": 5.0}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "AS TRÊS ENTIDADES",
+      "section_color": "navy",
+      "headers": ["Entidade", "Características"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["Furúnculo", "Infecção profunda do folículo (S. aureus 90%): nódulo eritematoso doloroso 1-5 cm com pústula central e drenagem"],
+        ["Carbúnculo", "Confluência de furúnculos: massa > 5 cm, múltiplos pontos de drenagem ('crivo'), enduração; maior risco de bacteremia/sistêmico"],
+        ["Hidradenite supurativa (HS)", "Doença inflamatória CRÔNICA recorrente das glândulas apócrinas (axilas, virilha, anogenital): nódulos, abscessos, FÍSTULAS, cicatrizes; NÃO é furúnculo recorrente"],
+        ["HS — Hurley", "I: nódulos/abscessos sem fístulas; II: + fístulas e cicatrizes; III: túneis interconectados, fibrose difusa"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS / LOCALIZAÇÕES DE RISCO",
+      "section_color": "red",
+      "titulo": "NÃO PERDER",
+      "items": [
+        "FACE (triângulo nasolabial): risco de trombose do seio cavernoso (cefaleia intensa, proptose, oftalmoplegia)",
+        "PERÍNEO/genital: risco de gangrena de FOURNIER (edema, crepitação, necrose, odor fétido, toxemia)",
+        "Fasceíte necrotizante: dor desproporcional, progressão rápida, crepitação, bolhas hemorrágicas, necrose",
+        "SEPSE: febre/hipotermia, taquicardia, hipotensão, alteração mental",
+        "Carbúnculo é sempre potencialmente grave; imunossuprimido/diabético descompensado tem maior risco"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — FURÚNCULO E CARBÚNCULO",
+      "section_color": "orange",
+      "titulo": "DRENAR + ATB QUANDO INDICADO",
+      "items": [
+        "FURÚNCULO simples: compressas mornas 3-4x/dia (favorece drenagem); higiene antisséptica; NUNCA espremer/manipular; analgesia (Dipirona)",
+        "DRENAGEM cirúrgica se: flutuação (abscesso maduro), > 5 cm, dor intensa, sem melhora em 48h",
+        "ATB sistêmico (se celulite perilesional > 2 cm, múltiplas lesões, face, febre/sistêmico, imunossupressão/DM, impossibilidade de drenar): Cefalexina 500 mg 6/6h ou Amox-clav 875/125 12/12h por 7 dias",
+        "Suspeita de MRSA/alérgico: SMX-TMP 800/160 12/12h, ou Doxiciclina 100 mg 12/12h, ou Clindamicina 300-450 mg 8/8h por 7-10 dias",
+        "CARBÚNCULO: ATB sistêmico SEMPRE + drenagem se flutuação; internar se febre alta/toxemia/face/imunossupressão/DM descompensado; Oxacilina 2 g EV 4/4h ou Cefazolina (Vancomicina se MRSA); 10-14 dias",
+        "Sempre coletar CULTURA do material drenado no carbúnculo/recorrência"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — HIDRADENITE E FURUNCULOSE RECORRENTE",
+      "section_color": "navy",
+      "titulo": "ABORDAGEM ESPECÍFICA",
+      "items": [
+        "HS agudo (abscesso flutuante): incisão e drenagem simples (evitar excisão ampla na fase aguda)",
+        "HS Hurley I (leve): Clindamicina 300 mg 8/8h por 10-14 dias (boa penetração nas glândulas apócrinas)",
+        "HS Hurley II-III/refratário: Clindamicina 300 mg 8/8h + Rifampicina 300 mg 12/12h por 10 semanas (ou Doxiciclina + Rifampicina); encaminhar à DERMATOLOGIA (biológicos — adalimumabe; antiandrogênios; cirurgia definitiva)",
+        "HS — medidas fundamentais: PARAR DE FUMAR (essencial), perda de peso, roupas folgadas, antissépticos, evitar depilação com lâmina",
+        "FURUNCULOSE recorrente: descolonização de S. aureus — Mupirocina nasal 2x/dia + banho com clorexidina 4% por 5 dias; repetir mensalmente por 3-6 meses; ATB supressivo (clindamicina 150 mg/dia por 3 meses) se falha"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: carbúnculo com sinais sistêmicos/sepse; localização facial (triângulo); suspeita de fasceíte/Fournier (EMERGÊNCIA); celulite extensa/linfangite progressiva; imunossupressão grave; DM descompensado (glicemia > 300); falha ambulatorial; dor não controlada (HS grave); drenagem em centro cirúrgico",
+        "ALTA: afebril 24-48h, lesão drenada se indicado, melhora clínica, sem celulite progressiva, tolerando ATB VO, glicemia controlada, seguimento garantido",
+        "Cuidados: completar o ATB; curativos 1-2x/dia; compressas mornas se ainda endurado; NÃO espremer/furar em casa; higiene rigorosa",
+        "Alarme: febre alta, vermelhidão em expansão/listras, dor crescente, bolhas/necrose, confusão, lesão facial piorando (cefaleia/diplopia), sem melhora em 48-72h",
+        "HS: encaminhar à dermatologia (tratamento de longo prazo); recorrente: investigar DM/imunossupressão/MRSA"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com ___ (furúnculo/carbúnculo/HS) em ___ há ___ dias; flutuação ___, drenagem ___, celulite perilesional ___ cm.",
+        "Gravidade: febre ___, toxemia/sepse ___, face/Fournier/fasceíte ___; comorbidade (DM HGT ___, imunossupressão).",
+        "Conduta: drenagem ___, ATB ___ iniciado às ___, analgesia, controle glicêmico; cultura ___.",
+        "Solicito internação enfermaria/UTI / drenagem em CC; complicação: ___."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "O que diferencia o carbúnculo do furúnculo?",
+      "alternativas": [
+        "O carbúnculo é mais superficial e indolor",
+        "O carbúnculo é a confluência de vários furúnculos, com múltiplos pontos de drenagem ('crivo') e maior risco sistêmico",
+        "São sinônimos",
+        "O furúnculo atinge osso",
+        "O carbúnculo não tem agente bacteriano"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual conduta é fundamental no furúnculo simples flutuante?",
+      "alternativas": [
+        "Espremer a lesão em casa",
+        "Drenagem (incisão) quando há flutuação, com compressas mornas; ATB só se indicado",
+        "Antibiótico EV de rotina",
+        "Corticoide sistêmico",
+        "Excisão ampla imediata"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que a hidradenite supurativa NÃO deve ser tratada apenas como 'furúnculo recorrente'?",
+      "alternativas": [
+        "Porque é uma infecção simples",
+        "Porque é doença inflamatória crônica das glândulas apócrinas, com fístulas/cicatrizes, exigindo abordagem específica (clindamicina ± rifampicina, dermatologia)",
+        "Porque não tem tratamento",
+        "Porque é contagiosa",
+        "Porque sempre exige cirurgia imediata"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Por que o furúnculo do triângulo nasolabial (face) é uma localização de risco?",
+      "alternativas": [
+        "Risco de osteomielite",
+        "Risco de trombose do seio cavernoso",
+        "Risco de pancreatite",
+        "Risco de hérnia",
+        "Não tem risco"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é a medida não farmacológica MAIS importante no manejo da hidradenite supurativa?",
+      "alternativas": [
+        "Aumentar a fricção local",
+        "Cessar o tabagismo (e perda de peso)",
+        "Depilar com lâmina",
+        "Usar roupas justas",
+        "Banhos quentes prolongados"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O carbúnculo é a confluência de vários furúnculos adjacentes, formando massa maior com múltiplos pontos de drenagem ('crivo') e maior risco de bacteremia/complicações sistêmicas — exige ATB sistêmico sempre."},
+    {"resposta": "B", "comentario": "No furúnculo simples flutuante, a drenagem (incisão) é fundamental, com compressas mornas; o antibiótico é reservado a celulite, face, sinais sistêmicos, imunossupressão ou impossibilidade de drenar. Nunca espremer."},
+    {"resposta": "B", "comentario": "A HS é doença inflamatória crônica das glândulas apócrinas, com fístulas e cicatrizes, e demanda abordagem específica (clindamicina ± rifampicina, medidas gerais e dermatologia), não apenas drenagem de 'furúnculo'."},
+    {"resposta": "B", "comentario": "O furúnculo do triângulo nasolabial tem risco de trombose do seio cavernoso pela drenagem venosa da face, exigindo cuidado e ATB."},
+    {"resposta": "B", "comentario": "A cessação do tabagismo (associada à perda de peso) é a medida não farmacológica mais importante na hidradenite supurativa, reduzindo os surtos."}
+  ]
+}

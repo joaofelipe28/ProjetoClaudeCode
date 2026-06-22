@@ -1,0 +1,165 @@
+{
+  "slug": "ectoparasitoses",
+  "titulo": "Ectoparasitoses (Escabiose e Pediculose)",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Escabiose e pediculose no PS",
+  "chapter_bar": "ECTOPARASITOSES — ESCABIOSE + PEDICULOSE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "ECTOPARASITOSE — PERMETRINA + TRATAR CONTATOS",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Prurido intenso (escabiose: noturno) + lesoes/lendeas\ntratar paciente E TODOS os contatos", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "1a linha TOPICA:\nPermetrina (5% escabiose\n/ 1% pediculose)", "color": "green", "font_size": 5.2},
+        {"id": "c", "x": 0.75, "y": 0.46, "w": 150, "h": 28, "text": "Extensa/crostosa/falha:\nIVERMECTINA VO\n200 mcg/kg + repetir", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Higiene de roupas/cama em agua quente", "color": "teal", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "ESCABIOSE (SARNA)",
+      "section_color": "teal",
+      "titulo": "SARCOPTES SCABIEI",
+      "items": [
+        "Ectoparasitose pelo ácaro Sarcoptes scabiei var. hominis; transmissão por contato direto e prolongado pele a pele (surtos familiares/institucionais)",
+        "PRURIDO INTENSO de predomínio NOTURNO + pápulas/vesículas/escoriações e SULCOS acarinos",
+        "Distribuição típica: espaços interdigitais, punhos, cotovelos, axilas, periumbilical, genitais, nádegas (lactentes: face/couro cabeludo)",
+        "Formas: clássica, nodular e CROSTOSA (norueguesa) — grave, hiperqueratótica, altíssima carga parasitária, pouco prurido, MUITO contagiosa (idosos/imunossuprimidos)",
+        "Prurido pode persistir 2-4 semanas após a cura (hipersensibilidade residual) ≠ falha terapêutica"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PEDICULOSE",
+      "section_color": "navy",
+      "titulo": "PIOLHOS (PEDICULUS/PTHIRUS)",
+      "items": [
+        "Ectoparasitose por piolhos hematófagos; prurido, lesões e potencial infecção secundária; transmissão por contato direto (higiene NÃO é fator determinante)",
+        "Tipos: CAPITIS (couro cabeludo, mais comum — lêndeas aderidas ao fio, região occipital/retroauricular); CORPORIS (corpo/costuras das roupas); PUBIS/ftiríase (região pubiana, pode acometer cílios)",
+        "Pediculose capitis é frequente em crianças e ambientes coletivos (escolas/creches)",
+        "Sinais: prurido, piolhos vivos, lêndeas, escoriações, crostas melicéricas (impetiginização)",
+        "Pediculose pubis: avaliar/tratar ISTs associadas e tratar parceiros sexuais"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO TÓPICO (1ª LINHA)",
+      "section_color": "orange",
+      "titulo": "PERMETRINA",
+      "items": [
+        "ESCABIOSE — Permetrina 5% creme (padrão-ouro): aplicar à noite sobre pele seca, do PESCOÇO PARA BAIXO (incluir dobras, genitais, interdigitais); em lactentes/idosos/crostosa incluir couro cabeludo e face (evitar olhos/boca); manter 8-12h, lavar pela manhã; REPETIR após 7 dias",
+        "PEDICULOSE — Permetrina 1% (loção/shampoo): aplicar no couro cabeludo úmido, agir 10 min, enxaguar; REPETIR em 7-10 dias; remoção mecânica das lêndeas com pente fino",
+        "Pediculose corporis: banho diário + troca/lavagem das roupas em água quente (tópico só se necessário)",
+        "Controle do prurido: Loratadina 10 mg/dia; Hidroxizina 25 mg à noite; corticoide tópico leve por curto período",
+        "Infecção bacteriana secundária (impetigo/celulite): antibiótico sistêmico + cuidados locais"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO SISTÊMICO — IVERMECTINA",
+      "section_color": "navy",
+      "titulo": "QUANDO USAR",
+      "items": [
+        "Indicações: falha do tópico, escabiose CROSTOSA/extensa, infestações extensas, surtos institucionais, dificuldade de adesão ao tópico",
+        "Dose: 200 mcg/kg VO em dose única; REPETIR após 7-14 dias (escabiose) / 7-10 dias (pediculose)",
+        "CONTRAINDICAÇÕES: crianças < 15 kg, gestantes (lactação: avaliar risco/benefício)",
+        "ESCABIOSE CROSTOSA (protocolo específico): Permetrina 5% diária por 7 dias e depois 2x/semana até resolver + Ivermectina nos dias 1, 2, 8, 9 e 15 + ISOLAMENTO de contato + avaliar internação + notificar CCIH/vigilância",
+        "Não confundir prurido residual pós-tratamento com falha"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONTATOS, ALTA E INTERNAÇÃO",
+      "titulo": "MEDIDAS-CHAVE",
+      "items": [
+        "TRATAR TODOS os contatos domiciliares SIMULTANEAMENTE (mesmo assintomáticos)",
+        "Lavar roupas, toalhas e roupas de cama em ÁGUA QUENTE; itens não laváveis -> isolar por 72h (escabiose) / 48-72h (pediculose); cortar unhas; não compartilhar pentes/bonés/toalhas",
+        "INTERNAR: escabiose crostosa, infecção secundária extensa, comprometimento sistêmico, imunossuprimidos graves, incapacidade de tratamento domiciliar, necessidade de isolamento hospitalar",
+        "ALTA: diagnóstico definido, tratamento iniciado, orientações completas, sem critério de internação, seguimento definido",
+        "Escabiose e pediculose NÃO são de notificação compulsória; surtos institucionais devem ser comunicados à vigilância sanitária"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Paciente ___ anos com ___ (escabiose clássica/nodular/CROSTOSA / pediculose capitis/corporis/pubis); prurido ___ ; contatos sintomáticos ___.",
+        "Gravidade: forma crostosa ___, infecção secundária ___, imunossupressão ___; institucionalizado ___.",
+        "Conduta: Permetrina ___, Ivermectina ___ (se indicado), anti-histamínico; ATB se impetiginização ___.",
+        "Tratar contatos + higiene de roupas/cama; solicito internação/isolamento se crostosa/infecção extensa; comunicar vigilância se surto."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o tratamento tópico de primeira linha (padrão-ouro) da escabiose?",
+      "alternativas": [
+        "Permetrina 5% creme",
+        "Corticoide tópico",
+        "Antibiótico tópico",
+        "Cetoconazol",
+        "Ácido salicílico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Em qual situação está indicada a ivermectina oral nas ectoparasitoses?",
+      "alternativas": [
+        "Em todo caso leve",
+        "Falha do tópico, escabiose crostosa/extensa, surtos institucionais ou dificuldade de adesão",
+        "Apenas em gestantes",
+        "Em crianças < 15 kg",
+        "Nunca"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual forma de escabiose é grave, hiperqueratótica e altamente contagiosa, comum em imunossuprimidos?",
+      "alternativas": [
+        "Escabiose nodular",
+        "Escabiose crostosa (norueguesa)",
+        "Escabiose clássica",
+        "Pediculose capitis",
+        "Ftiríase"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual medida é essencial para evitar a reinfestação nas ectoparasitoses?",
+      "alternativas": [
+        "Tratar apenas o paciente",
+        "Tratar todos os contatos domiciliares simultaneamente e higienizar roupas/cama em água quente",
+        "Isolamento hospitalar de rotina",
+        "Antibiótico para todos",
+        "Repouso absoluto"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "O prurido que persiste por 2-4 semanas após o tratamento adequado da escabiose indica:",
+      "alternativas": [
+        "Falha terapêutica obrigatória",
+        "Reação de hipersensibilidade residual (não é falha); tratar com anti-histamínico",
+        "Necessidade de antibiótico",
+        "Resistência ao tratamento",
+        "Reinfecção sempre"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "A", "comentario": "A permetrina 5% creme é o tratamento tópico padrão-ouro da escabiose (aplicar do pescoço para baixo, manter 8-12h, repetir em 7 dias)."},
+    {"resposta": "B", "comentario": "A ivermectina oral (200 mcg/kg, repetir) é indicada na falha do tópico, escabiose crostosa/extensa, surtos institucionais ou dificuldade de adesão; é contraindicada em < 15 kg e gestantes."},
+    {"resposta": "B", "comentario": "A escabiose crostosa (norueguesa) é a forma grave, hiperqueratótica, com altíssima carga parasitária e muito contagiosa, típica de idosos e imunossuprimidos."},
+    {"resposta": "B", "comentario": "Tratar todos os contatos domiciliares simultaneamente e higienizar roupas/toalhas/cama em água quente é essencial para evitar a reinfestação."},
+    {"resposta": "B", "comentario": "O prurido residual por 2-4 semanas é reação de hipersensibilidade ao ácaro, não falha terapêutica; trata-se com anti-histamínico (± corticoide tópico leve por curto período)."}
+  ]
+}

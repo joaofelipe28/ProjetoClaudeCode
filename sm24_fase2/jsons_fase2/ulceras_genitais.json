@@ -1,0 +1,167 @@
+{
+  "slug": "ulceras_genitais",
+  "titulo": "Úlceras Genitais (Cancro Mole, Donovanose e LGV)",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Úlceras genitais — abordagem sindrômica",
+  "chapter_bar": "ÚLCERAS GENITAIS — SINDRÔMICO + ISTs",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM SINDRÔMICA",
+      "title": "ÚLCERA GENITAL — TRATAR SINDRÔMICO + RASTREAR ISTs",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Ulcera/adenopatia genital: tratamento SINDROMICO\ntestar HIV/sifilis/hepatites B e C", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.22, "y": 0.48, "w": 140, "h": 26, "text": "CANCRO MOLE:\ndolorosa + bubao\n-> azitro 1g DU", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 135, "h": 28, "text": "DONOVANOSE:\n'carne crua' ->\nazitro ate cicatrizar", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 145, "h": 28, "text": "LGV: adenopatia +\nsinal do sulco ->\ndoxiciclina 21 dias", "color": "purple", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL DAS ÚLCERAS GENITAIS",
+      "section_color": "navy",
+      "headers": ["Doença", "Lesão", "Adenopatia"],
+      "header_colors": ["navy", "teal", "red"],
+      "col_widths": [0.22, 0.42, 0.36],
+      "rows": [
+        ["Cancro mole (H. ducreyi)", "Úlceras MÚLTIPLAS, DOLOROSAS, fundo sujo/purulento, sangram fácil", "Bubão único, doloroso, supurativo (fistuliza)"],
+        ["Donovanose (K. granulomatis)", "Úlcera granulomatosa, vermelho-vivo ('carne crua'), INDOLOR, sangra fácil", "Ausente (pseudobubão raro)"],
+        ["LGV (C. trachomatis L1-3)", "Pápula/úlcera FUGAZ (some)", "Inguinal/femoral DOLOROSA, coalescente, SINAL DO SULCO, fístulas"],
+        ["Sífilis (T. pallidum)", "Cancro duro: ÚNICO, INDOLOR, base limpa, bordas endurecidas", "Unilateral, indolor, não supurativa"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REGRAS DE SEGURANÇA",
+      "section_color": "red",
+      "titulo": "NÃO ERRAR",
+      "items": [
+        "Tratamento SINDRÔMICO: iniciar na suspeita clínica, sem aguardar cultura/PCR; sempre cobrir as causas mais prováveis",
+        "Toda úlcera genital ou adenite com duração > 4 semanas torna a BIÓPSIA mandatória (excluir CARCINOMA espinocelular e diferenciar donovanose/LGV)",
+        "LGV é frequentemente confundido no PS com HÉRNIA inguinal encarcerada ou linfadenite — não operar sem investigar",
+        "Bubão flutuante: ASPIRAR com agulha (não incisar amplamente — risco de fístula crônica)",
+        "SEMPRE testar HIV, sífilis, hepatites B e C; vacinar hepatite B se não vacinado; notificar/tratar parceiros"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — CANCRO MOLE",
+      "section_color": "orange",
+      "titulo": "ÚLCERA DOLOROSA + BUBÃO",
+      "items": [
+        "1ª linha (escolher um): Azitromicina 1 g VO dose única; ou Ceftriaxona 500 mg IM dose única",
+        "Alternativas: Ciprofloxacino 500 mg 12/12h por 3 dias (contraindicado em gestante/lactante); Eritromicina 500 mg 6/6h por 7 dias (segura na gestação)",
+        "BUBÃO flutuante e doloroso: aspiração por agulha sob assepsia (repetir se necessário); evitar incisão ampla",
+        "Bubão complicado: drenagem cirúrgica só se falha da aspiração/abscesso extenso",
+        "PVHIV: mesmo esquema, resposta mais lenta; cuidados locais (higiene, não manipular); tratar parceiros dos últimos 10 dias; abstinência até cicatrizar"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — DONOVANOSE E LGV",
+      "section_color": "navy",
+      "titulo": "DURAÇÃO É O FATOR CRÍTICO",
+      "items": [
+        "DONOVANOSE (1ª linha): Azitromicina 1 g VO 1x/semana, MÍNIMO 3 semanas e até a CICATRIZAÇÃO COMPLETA (segura na gestação, preferencial no HIV)",
+        "  Alternativas: Doxiciclina 100 mg 12/12h (contraindicada na gestação); Eritromicina 500 mg 6/6h; Ciprofloxacino — todas até cicatrizar; grave/falha: associar Gentamicina 1 mg/kg EV 8/8h por >= 7 dias",
+        "  Não cauterizar nem desbridar agressivamente; tratar parceiros dos últimos 60 dias",
+        "LGV (1ª linha): DOXICICLINA 100 mg VO 12/12h por 21 DIAS (tratamento < 21 dias = falha)",
+        "  Alternativa: Azitromicina 1 g VO 1x/semana por 3 semanas; tratar parceiros dos últimos 60 dias",
+        "LGV: alertar sobre risco de elefantíase genital/estenose retal se o tratamento for interrompido antes do 21º dia"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO, ALTA E SEGUIMENTO",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: sepse/instabilidade; bubão volumoso com sinais sistêmicos; proctite hemorrágica grave (LGV); sangramento intenso/infecção secundária (donovanose); necessidade de drenagem cirúrgica ou ATB EV; falha ambulatorial",
+        "ALTA: estável, ATB iniciado, dor controlada, orientações compreendidas, seguimento garantido (donovanose/LGV: retorno semanal até cicatrizar)",
+        "Abstinência sexual até a cicatrização/cura; preservativo após a liberação",
+        "Convocar e tratar parceiros; rastrear/tratar outras ISTs; encaminhar ao SAE/IST",
+        "Alta suspeita de malignidade (úlcera/adenite > 4 semanas) -> biópsia mandatória"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com úlcera genital ___ (cancro mole / donovanose / LGV); início há ___; dor ___, bubão/adenopatia ___ (sinal do sulco?).",
+        "Complicação: sepse ___, proctite hemorrágica ___, sangramento ___; HIV/sífilis/hepatites: ___.",
+        "Conduta: ATB sindrômico ___ iniciado às ___; aspiração de bubão ___; parceiros notificados.",
+        "Solicito infectologia/cirurgia (drenagem) / internação se complicação; biópsia se > 4 semanas."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual úlcera genital é tipicamente DOLOROSA, múltipla, de fundo sujo, com bubão inguinal supurativo?",
+      "alternativas": [
+        "Cancro duro (sífilis)",
+        "Cancro mole (Haemophilus ducreyi)",
+        "Donovanose",
+        "Herpes",
+        "Carcinoma"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a duração mínima do tratamento do linfogranuloma venéreo (LGV) com doxiciclina?",
+      "alternativas": [
+        "7 dias",
+        "21 dias",
+        "3 dias",
+        "Dose única",
+        "5 dias"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual lesão caracteriza a donovanose (granuloma inguinal)?",
+      "alternativas": [
+        "Úlcera dolorosa purulenta",
+        "Úlcera granulomatosa vermelho-vivo ('carne crua'), indolor, que sangra fácil",
+        "Vesículas agrupadas",
+        "Cancro duro indolor de base limpa",
+        "Pápula fugaz com bubão"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "No PS, o LGV pode ser confundido com qual condição, levando a conduta cirúrgica desnecessária?",
+      "alternativas": [
+        "Apendicite",
+        "Hérnia inguinal encarcerada / linfadenite inespecífica",
+        "Cisto sebáceo",
+        "Torção testicular",
+        "Varicocele"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Quando a biópsia de uma úlcera genital torna-se mandatória?",
+      "alternativas": [
+        "Sempre, em toda úlcera",
+        "Quando a úlcera ou a adenite persiste por mais de 4 semanas (excluir carcinoma)",
+        "Apenas se houver dor",
+        "Nunca",
+        "Somente em gestantes"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O cancro mole (H. ducreyi) cursa com úlceras múltiplas, DOLOROSAS, de fundo sujo/purulento e bubão inguinal doloroso e supurativo; a sífilis (cancro duro) é única e indolor."},
+    {"resposta": "B", "comentario": "O LGV exige 21 dias de doxiciclina (100 mg 12/12h); tratamento mais curto leva a falha e a complicações como elefantíase genital e estenose retal."},
+    {"resposta": "B", "comentario": "A donovanose tem úlcera granulomatosa vermelho-vivo ('carne crua'), indolor, friável e que sangra fácil, geralmente sem adenopatia verdadeira (pseudobubão raro)."},
+    {"resposta": "B", "comentario": "O LGV é frequentemente confundido com hérnia inguinal encarcerada ou linfadenite inespecífica; a investigação evita cirurgias desnecessárias e a falha terapêutica."},
+    {"resposta": "B", "comentario": "Toda úlcera genital ou adenite com mais de 4 semanas de duração torna a biópsia mandatória, para excluir carcinoma espinocelular e diferenciar donovanose/LGV."}
+  ]
+}
