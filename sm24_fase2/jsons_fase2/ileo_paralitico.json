@@ -1,0 +1,153 @@
+{
+  "slug": "ileo_paralitico",
+  "titulo": "Íleo Paralítico",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Íleo adinâmico e síndrome de Ogilvie",
+  "chapter_bar": "ÍLEO PARALÍTICO — SUPORTE + ELETRÓLITOS",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "ÍLEO PARALÍTICO — EXCLUIR OBSTRUÇÃO -> SUPORTE",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.85, "w": 205, "h": 22, "text": "Distensao + parada de eliminacao, sem causa obstrutiva\nTC para excluir abdome agudo obstrutivo", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.5, "w": 205, "h": 24, "text": "Suporte: dieta zero +/- SNG, corrigir eletrolitos\n(K/Mg/Ca), mobilizar, poupar opioide", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.14, "w": 200, "h": 18, "text": "Ogilvie refratario: neostigmina / colono; cirurgia se ceco >10-12 cm", "color": "orange", "font_size": 5.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E DIAGNÓSTICO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Íleo adinâmico: parada funcional da motilidade intestinal SEM obstrução mecânica",
+        "Fatores: pós-operatório abdominal, paciente de UTI, restrição ao leito, distúrbios eletrolíticos, opioides",
+        "Clínica: distensão abdominal, parada de eliminação de fezes e flatos; toque retal com fezes em ampola",
+        "Diagnóstico CLÍNICO; TC de abdome para EXCLUIR obstrução mecânica (abdome agudo obstrutivo)",
+        "Sinais de alarme: febre, peritonite, piora clínica geral (reavaliar diagnóstico)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MEDIDAS DE SUPORTE",
+      "section_color": "orange",
+      "titulo": "PILAR DO TRATAMENTO",
+      "items": [
+        "Dieta zero (NPO); SNG para descompressão se vômitos persistentes/distensão importante",
+        "Corrigir distúrbios hidroeletrolíticos: potássio 4-5,5 mEq/L, magnésio > 2 mg/dL, cálcio normal",
+        "MOBILIZAÇÃO precoce (deambular) para estimular o peristaltismo",
+        "Balanço hídrico restritivo (evitar sobrecarga e edema de alças)",
+        "Tratar a causa de base"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO FARMACOLÓGICO (ERAS)",
+      "section_color": "navy",
+      "titulo": "PROCINÉTICOS E AJUSTES",
+      "items": [
+        "POUPAR OPIOIDES (retardam a motilidade): preferir AINE ou analgesia epidural",
+        "Procinéticos: Metoclopramida ou Domperidona; Bromoprida (estimula a peristalse); eritromicina em casos refratários",
+        "EVITAR ondansetrona (reduz a motilidade GI) — preferir bromoprida como antiemético",
+        "Goma de mascar (sham feeding): estimula o reflexo cefálico-vagal (ERAS)",
+        "Alimentação enteral precoce conforme tolerância (líquida -> leve)"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SÍNDROME DE OGILVIE (PSEUDO-OBSTRUÇÃO COLÔNICA)",
+      "section_color": "purple",
+      "titulo": "ESCALONAMENTO",
+      "items": [
+        "Pseudo-obstrução colônica aguda por hiperestímulo simpático: TRM, imobilidade, politrauma, narcóticos, distúrbios metabólicos, doença neurodegenerativa",
+        "Achado: dilatação do cólon SEM obstrução mecânica",
+        "1º) tratamento CLÍNICO (mesmas medidas do íleo: suporte, eletrólitos, suspender opioides, mobilizar)",
+        "2º) NEOSTIGMINA (sob monitorização cardíaca) ou colonoscopia descompressiva",
+        "3º) CIRURGIA se refratário e CECO > 10-12 cm (risco iminente de perfuração) — cecostomia/colectomia"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ (POn / UTI / restrito ao leito) com distensão + parada de eliminação; obstrução mecânica EXCLUÍDA (TC): ___.",
+        "Eletrólitos: K ___, Mg ___, Ca ___; opioides em uso ___; sinais de alarme (febre/peritonite) ___.",
+        "Conduta: dieta zero ± SNG, correção eletrolítica, mobilização, procinético, poupar opioide.",
+        "Ogilvie/refratário: neostigmina/colono; solicito cirurgia se ceco > 10-12 cm ou refratariedade."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a base do tratamento do íleo paralítico pós-operatório?",
+      "alternativas": [
+        "Cirurgia imediata",
+        "Medidas de suporte: dieta zero ± SNG, correção de eletrólitos, mobilização e poupar opioides",
+        "Antibiótico de amplo espectro",
+        "Laxativos potentes via oral",
+        "Ondansetrona em dose alta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual distúrbio eletrolítico deve ser corrigido prioritariamente no íleo paralítico?",
+      "alternativas": [
+        "Hipernatremia",
+        "Hipopotassemia (manter K 4-5,5 mEq/L), além de magnésio e cálcio",
+        "Hipercloremia",
+        "Hiperfosfatemia",
+        "Hipozincemia"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual antiemético deve ser EVITADO no íleo paralítico por reduzir a motilidade?",
+      "alternativas": [
+        "Bromoprida",
+        "Ondansetrona",
+        "Metoclopramida",
+        "Domperidona",
+        "Eritromicina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Na síndrome de Ogilvie refratária ao tratamento clínico, qual a próxima medida?",
+      "alternativas": [
+        "Cirurgia imediata em todos",
+        "Neostigmina (com monitorização cardíaca) ou colonoscopia descompressiva",
+        "Apenas observação prolongada",
+        "Laxante osmótico",
+        "Antibiótico"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Na síndrome de Ogilvie, qual diâmetro cecal indica risco iminente de perfuração e considera cirurgia?",
+      "alternativas": [
+        "> 4 cm",
+        "> 10-12 cm",
+        "> 6 cm",
+        "> 2 cm",
+        "Qualquer dilatação"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O íleo paralítico é tratado com medidas de suporte: dieta zero ± SNG, correção de eletrólitos, mobilização precoce e redução de opioides; a cirurgia não é o tratamento do íleo adinâmico simples."},
+    {"resposta": "B", "comentario": "A hipopotassemia deve ser corrigida prioritariamente (alvo 4-5,5 mEq/L), assim como magnésio (> 2 mg/dL) e cálcio, pois os distúrbios eletrolíticos perpetuam o íleo."},
+    {"resposta": "B", "comentario": "A ondansetrona deve ser evitada por reduzir a motilidade GI; prefere-se a bromoprida (procinética) como antiemético no íleo paralítico."},
+    {"resposta": "B", "comentario": "Na síndrome de Ogilvie refratária ao tratamento clínico, escalona-se para neostigmina (sob monitorização cardíaca) ou colonoscopia descompressiva."},
+    {"resposta": "B", "comentario": "Ceco > 10-12 cm na síndrome de Ogilvie indica risco iminente de perfuração, sendo critério para cirurgia (cecostomia/colectomia) quando refratário."}
+  ]
+}

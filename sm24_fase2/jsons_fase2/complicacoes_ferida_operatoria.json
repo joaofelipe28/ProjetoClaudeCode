@@ -1,0 +1,155 @@
+{
+  "slug": "complicacoes_ferida_operatoria",
+  "titulo": "Complicações de Ferida Operatória",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Complicações da ferida operatória",
+  "chapter_bar": "FERIDA OPERATÓRIA — SEROMA À EVISCERAÇÃO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "FERIDA OPERATÓRIA — DA COLEÇÃO À EVISCERAÇÃO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Complicacao da ferida: avaliar pele, conteudo\ne sinais infecciosos/sistemicos", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Seroma/hematoma/ISC:\ndrenar/curativo +/-\nATB se sistemico", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 130, "h": 24, "text": "Eventracao:\npele integra ->\neletiva/urgente", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 145, "h": 26, "text": "EVISCERACAO:\nemergencia cirurgica\n(cobrir + jejum)", "color": "red", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "COMPLICAÇÕES DA FERIDA — TIPOS",
+      "section_color": "navy",
+      "headers": ["Complicação", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Seroma", "Líquido seroso; pequeno -> observar; volumoso/sintomático -> aspiração (pode repetir); compressão previne"],
+        ["Hematoma", "Acúmulo de sangue; pequenos reabsorvem; drenar se grande/expansivo/infectado"],
+        ["Deiscência", "Abertura das camadas; pele -> limpeza + curativo; profunda sem aponeurose -> avaliar nova sutura/revisão"],
+        ["Infecção de sítio cirúrgico (ISC)", "Eritema, calor, pus, dor, febre; abrir pontos + drenar + lavar; ATB se celulite/sistêmico/profundo/cavitário"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "INFECÇÃO DE SÍTIO CIRÚRGICO (ISC) POR PROFUNDIDADE",
+      "section_color": "navy",
+      "titulo": "TRÊS NÍVEIS",
+      "items": [
+        "Superficial (pele/subcutâneo): abrir alguns pontos, drenar coleção/abscesso, irrigar; ATB só se celulite ou sinais sistêmicos",
+        "Profunda (fáscia/músculo): abrir pontos, drenar, lavar, avaliar desbridamento e PRESCREVER ATB",
+        "Órgão/cavidade: abrir pontos, ATB, drenagem externa, considerar reabordagem para limpeza da cavidade",
+        "Investigação adicional: hemograma, PCR, US de partes moles, TC do sítio",
+        "Atenção a fasciite necrotizante em feridas de evolução rápida e tóxica (emergência)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "EVENTRAÇÃO x EVISCERAÇÃO",
+      "section_color": "navy",
+      "headers": ["Característica", "Eventração", "Evisceração"],
+      "header_colors": ["gray", "orange", "red"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Pele", "Íntegra (fechada)", "Aberta/rompida"],
+        ["Vísceras", "Contidas sob a pele", "EXPOSTAS ao meio externo"],
+        ["Risco", "Moderado (hérnia incisional)", "Altíssimo (infecção/necrose)"],
+        ["Conduta", "Cirurgia eletiva/urgente", "URGÊNCIA cirúrgica imediata"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "EVISCERAÇÃO — EMERGÊNCIA",
+      "section_color": "red",
+      "titulo": "PROTEGER AS VÍSCERAS E OPERAR",
+      "items": [
+        "Emergência cirúrgica: jejum, NÃO tentar reintroduzir as vísceras",
+        "Decúbito dorsal com joelhos semifletidos (reduz a tensão da parede); ambiente calmo e aquecido",
+        "Cobrir as vísceras com COMPRESSAS ESTÉREIS embebidas em SF 0,9% MORNO, mantendo-as úmidas",
+        "NÃO aplicar antisséptico diretamente sobre as vísceras",
+        "Comunicar cirurgião imediatamente, acesso venoso, analgesia, monitorização; preparar reabordagem",
+        "Fatores de risco/prevenção: controlar infecção, suporte nutricional, evitar esforço/tosse, faixa abdominal quando indicada"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ POn de ___ (cirurgia); complicação: seroma/hematoma/deiscência/ISC/eventração/EVISCERAÇÃO.",
+        "Ferida: secreção ___, pus ___, pele ___ (íntegra/aberta), vísceras expostas ___; sinais sistêmicos/sepse ___.",
+        "Conduta: drenagem/curativo ___, ATB ___; evisceração -> compressas com SF morno + jejum + acesso.",
+        "Solicito cirurgia (URGENTE se evisceração/ISC profunda/cavitária); UTI se sepse."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a diferença essencial entre eventração e evisceração?",
+      "alternativas": [
+        "Eventração tem vísceras expostas; evisceração não",
+        "Na eventração a pele está íntegra (vísceras contidas); na evisceração a pele está aberta com vísceras EXPOSTAS",
+        "São sinônimos",
+        "Eventração é sempre emergência; evisceração é eletiva",
+        "Ambas têm pele aberta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual a conduta inicial diante de uma evisceração?",
+      "alternativas": [
+        "Reintroduzir as vísceras manualmente e suturar no leito",
+        "Emergência cirúrgica: jejum, cobrir as vísceras com compressas estéreis embebidas em SF 0,9% morno e acionar o cirurgião",
+        "Aplicar antisséptico diretamente nas vísceras",
+        "Alta com curativo seco",
+        "Aguardar 48h observando"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Infecção de sítio cirúrgico SUPERFICIAL sem sinais sistêmicos. Qual a conduta?",
+      "alternativas": [
+        "Antibiótico endovenoso prolongado para todos",
+        "Abrir alguns pontos, drenar coleção e irrigar; ATB apenas se celulite ou sinais sistêmicos",
+        "Reabordagem cirúrgica imediata da cavidade",
+        "Apenas observação sem abrir a ferida",
+        "Iniciar antifúngico"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Seroma volumoso e sintomático em ferida operatória. Qual a conduta?",
+      "alternativas": [
+        "Reabordagem cirúrgica imediata",
+        "Aspiração com agulha para drenagem (podendo repetir)",
+        "Antibiótico de amplo espectro",
+        "Observação indefinida sem intervenção",
+        "Corticoide sistêmico"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual fator de risco está associado à deiscência/evisceração de ferida operatória?",
+      "alternativas": [
+        "Boa nutrição",
+        "Infecção da ferida, tosse/vômitos/esforço, obesidade, desnutrição e uso de corticoides",
+        "Jejum pré-operatório adequado",
+        "Idade jovem",
+        "Cirurgia limpa eletiva sem complicações"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na eventração a pele está íntegra (vísceras contidas sob a pele, risco de hérnia incisional); na evisceração a pele está aberta com vísceras expostas — emergência cirúrgica."},
+    {"resposta": "B", "comentario": "A evisceração é emergência: jejum, NÃO reintroduzir as vísceras, cobri-las com compressas estéreis embebidas em SF 0,9% morno (mantendo úmidas) e acionar o cirurgião para reabordagem."},
+    {"resposta": "B", "comentario": "Na ISC superficial sem sinais sistêmicos, abre-se alguns pontos, drena-se a coleção e irriga-se; o antibiótico fica reservado a celulite associada ou sinais sistêmicos."},
+    {"resposta": "B", "comentario": "Seroma volumoso/sintomático é tratado com aspiração por agulha (podendo necessitar repetição); seromas pequenos são apenas observados."},
+    {"resposta": "B", "comentario": "Infecção da ferida, tosse/vômitos/esforço, obesidade, desnutrição, corticoides, idade avançada e técnica inadequada predispõem à deiscência e à evisceração."}
+  ]
+}

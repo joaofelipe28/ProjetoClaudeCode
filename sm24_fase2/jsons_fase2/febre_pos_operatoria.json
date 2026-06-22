@@ -1,0 +1,156 @@
+{
+  "slug": "febre_pos_operatoria",
+  "titulo": "Febre no Pós-Operatório",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Febre pós-operatória — abordagem",
+  "chapter_bar": "FEBRE PÓS-OP — TEMPO SUGERE A CAUSA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ESTÁVEL x SÉPTICO",
+      "title": "FEBRE PÓS-OP — TRIAGEM PELA ESTABILIDADE",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Febre PO (T >=38): tempo desde a cirurgia\n+ exame dirigido (ferida/pulmao/cateter/MMII)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Instavel/sepse:\nATB amplo + volume\n+ controle de fonte", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 130, "h": 24, "text": "Foco claro:\ntratar o foco\n(direcionado)", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 150, "h": 26, "text": "Estavel sem foco:\ninvestigar, NAO\niniciar ATB de rotina", "color": "green", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS POR JANELA TEMPORAL (OS 'Ws')",
+      "section_color": "navy",
+      "headers": ["Tempo", "Causas mais prováveis"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Imediata (< 24h)", "Resposta inflamatória ao trauma cirúrgico; reação transfusional; hipertermia maligna; medicamentos"],
+        ["Precoce (24-72h)", "Atelectasia/pneumonia aspirativa; ISC superficial; flebite/cateter; reação a medicamento"],
+        ["Intermediária (3-7d)", "ISC superficial/profunda; pneumonia nosocomial; ITU por sonda; TVP/tromboflebite; infecção de dreno"],
+        ["Tardia (> 7d)", "Abscesso intra-abdominal/coleção; ferida profunda/deiscência; empiema; C. difficile (pós-ATB); fungos (imunossuprimido)"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "AVALIAÇÃO E EXAMES",
+      "section_color": "navy",
+      "titulo": "FOCO DIRIGIDO",
+      "items": [
+        "Definição: T >= 38 °C (ou >= 1 °C acima do basal) no pós-operatório",
+        "Exame: pulmões, ferida operatória (secreção/eritema/calor), cateteres, abdome, MMII (TVP); checar débito/aspecto dos drenos",
+        "Exames: hemograma, PCR/procalcitonina, gaso/lactato se sepse, função renal/eletrólitos, RX de tórax",
+        "Hemoculturas x2 (antes do ATB se não atrasar) + cultura de sítio (ferida, dreno, urina de sonda)",
+        "Imagem: US/TC de abdome se suspeita de coleção; ecodoppler de MMII se suspeita de TVP"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "CONDUTA E ANTIBIÓTICO EMPÍRICO",
+      "section_color": "orange",
+      "titulo": "QUANDO E O QUE INICIAR",
+      "items": [
+        "INSTÁVEL/sepse: ATB empírico amplo IMEDIATO + ressuscitação volêmica + controle de fonte (remover cateter suspeito, drenar coleção); hemoculturas antes se não atrasar",
+        "ESTÁVEL sem foco: investigar primeiro; NÃO iniciar ATB de rotina sem evidência de infecção bacteriana",
+        "FOCO claro: tratamento direcionado (ATB dirigido, drenagem, troca de cateter)",
+        "Sepse abdominal: Piperacilina-tazobactam 4,5 g EV 6-8/8h (ou Ceftriaxona 2 g + Metronidazol; Meropenem se risco ESBL)",
+        "Pneumonia pós-op: Pipe-tazo ou Cefepime; + Vancomicina se risco de MRSA; cateter purulento: Vancomicina ± Gram-negativo + remover cateter",
+        "Ajustar à função renal; descalonar por cultura em 48-72h; duração guiada pelo foco e controle de fonte"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CAUSAS NÃO INFECCIOSAS / EMERGÊNCIAS",
+      "section_color": "red",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "Atelectasia (febre baixa precoce): fisioterapia respiratória, mobilização, CPAP — não é indicação de ATB",
+        "Reação transfusional: interromper a transfusão, suporte, notificar hemoterapia; vigiar hemólise",
+        "HIPERTERMIA MALIGNA (durante/logo após anestesia): hipertermia + rigidez + acidose/hipercapnia -> DANTROLENE 2,5 mg/kg EV + resfriamento",
+        "TEP: taquipneia, hipóxia, dor torácica -> angio-TC e anticoagulação conforme risco",
+        "'Febre' nem sempre é infecção — valorizar o contexto temporal; se instável, trate primeiro e investigue depois"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ POn de ___ (cirurgia); febre iniciada ___ (imediata/precoce/intermediária/tardia).",
+        "Foco: ferida ___, pulmão ___, urina/sonda ___, cateter ___, MMII/TVP ___; sinais de sepse ___.",
+        "Exames: leucócitos ___, PCR ___, lactato ___, RX/TC ___; hemoculturas x2 ___.",
+        "Condutas: ATB ___ às ___ (se indicado), controle de fonte ___; solicito UTI/cirurgia/radiologia intervencionista conforme foco."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente estável no 2º PO com febre baixa, opacidades basais no RX e melhora com fisioterapia respiratória. Causa mais provável?",
+      "alternativas": [
+        "Abscesso intra-abdominal",
+        "Atelectasia",
+        "Infecção urinária",
+        "Deiscência anastomótica",
+        "Empiema pleural"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Diante de febre pós-operatória em paciente ESTÁVEL e SEM foco definido, qual a conduta?",
+      "alternativas": [
+        "Iniciar antibiótico empírico de amplo espectro para todos",
+        "Investigar (hemoculturas, RX, leuco/PCR) e NÃO iniciar ATB de rotina sem evidência de infecção",
+        "Alta imediata",
+        "Reabordagem cirúrgica",
+        "Corticoide sistêmico"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Febre tardia (> 7 dias) após cirurgia abdominal, com dor e leucocitose. Qual a principal hipótese e o exame?",
+      "alternativas": [
+        "Atelectasia; RX de tórax",
+        "Abscesso/coleção intra-abdominal; TC de abdome e pelve com contraste",
+        "Reação transfusional; coombs",
+        "Hipertermia maligna; gasometria",
+        "Flebite; ecodoppler"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Hipertermia maligna no intra/pós-anestésico imediato. Qual o tratamento específico?",
+      "alternativas": [
+        "Paracetamol",
+        "Dantrolene 2,5 mg/kg EV + resfriamento ativo e suporte",
+        "Antibiótico de amplo espectro",
+        "Corticoide",
+        "Apenas observação"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual princípio é correto no manejo da febre pós-operatória com instabilidade/sepse?",
+      "alternativas": [
+        "Aguardar todas as culturas antes de qualquer medida",
+        "Tratar primeiro (suporte + ATB empírico + controle de fonte) e investigar em paralelo",
+        "Nunca remover cateteres",
+        "Evitar hemoculturas",
+        "Iniciar ATB oral ambulatorial"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Febre baixa precoce com opacidades basais que melhora com fisioterapia respiratória sugere atelectasia — não é indicação de antibiótico; trata-se com expansão pulmonar e mobilização."},
+    {"resposta": "B", "comentario": "No paciente estável sem foco, investiga-se primeiro (hemoculturas, RX, leuco/PCR) e NÃO se inicia ATB de rotina sem evidência de infecção bacteriana."},
+    {"resposta": "B", "comentario": "Febre tardia (> 7d) após cirurgia abdominal, com dor e leucocitose, sugere abscesso/coleção intra-abdominal; a TC de abdome e pelve com contraste é o exame para localizar e guiar a drenagem."},
+    {"resposta": "B", "comentario": "A hipertermia maligna é tratada com dantrolene 2,5 mg/kg EV (repetível), resfriamento ativo, correção metabólica e suporte intensivo."},
+    {"resposta": "B", "comentario": "Na presença de instabilidade/sepse, trata-se primeiro (suporte + ATB empírico + controle de fonte) e investiga-se em paralelo, colhendo hemoculturas sem atrasar a terapia."}
+  ]
+}

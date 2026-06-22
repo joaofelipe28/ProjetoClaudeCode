@@ -1,0 +1,166 @@
+{
+  "slug": "hernias_parede_abdominal",
+  "titulo": "Hérnias da Parede Abdominal",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Hérnias da parede abdominal no PS",
+  "chapter_bar": "HÉRNIAS — REDUTÍVEL x ENCARCERADA x ESTRANG.",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — A COMPLICAÇÃO GUIA A URGÊNCIA",
+      "title": "HÉRNIA — REDUTÍVEL, ENCARCERADA OU ESTRANGULADA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Abaulamento da parede + Valsalva (em pe e deitado)\navaliar redutibilidade e sinais de sofrimento", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 145, "h": 24, "text": "Redutivel:\ncirurgia ELETIVA\n(hernioplastia)", "color": "green", "font_size": 5.6},
+        {"id": "c", "x": 0.5, "y": 0.46, "w": 130, "h": 26, "text": "Encarcerada aguda\n<2h: tentar reduzir\n(Trendelenburg/gelo)", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.78, "y": 0.48, "w": 145, "h": 26, "text": "ESTRANGULADA:\ncirurgia de\nURGENCIA", "color": "red", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO, EPIDEMIOLOGIA E RISCO",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Protrusão de órgão/estrutura através de defeito da parede que o contém; prevalência 3-8%, predomínio masculino",
+        "~75% são inguinais/femorais; inguinal indireta é a mais comum (homens 9:1); femoral predomina em mulheres e encarcera mais",
+        "Fraqueza da parede: tabagismo, desnutrição, doença do colágeno, diabetes, imunossupressão",
+        "Aumento da pressão intra-abdominal: tosse crônica, obesidade, gestação, prostatismo, ascite, tumores",
+        "Anamnese: abaulamento que piora ao esforço; buscar sinais de OBSTRUÇÃO (náusea/vômito/distensão/parada de eliminação) e de sepse/choque (perfuração por estrangulamento)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO FUNCIONAL (DEFINE A CONDUTA)",
+      "section_color": "navy",
+      "headers": ["Tipo", "Definição / urgência"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Redutível", "Conteúdo entra e sai pelo orifício; crônica, sem urgência (cirurgia eletiva)"],
+        ["Encarcerada aguda", "Irredutível, SEM sofrimento (sem hiperemia/dor intensa) — URGÊNCIA"],
+        ["Encarcerada crônica ('habitada')", "Irredutível de longa data, sem sofrimento; geralmente não urgente"],
+        ["Estrangulada", "Comprometimento VASCULAR (hiperemia, calor, dor intensa, febre, obstrução) — URGÊNCIA/EMERGÊNCIA"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "CLÍNICO (EXAMES SE DÚVIDA)",
+      "items": [
+        "Diagnóstico CLÍNICO: inspeção em pé e deitado + manobra de Valsalva; examinar todos os sítios (inguinal bilateral, umbilical, incisões prévias)",
+        "Manobra de Landivar diferencia inguinal direta (abaulamento na polpa do dedo) de indireta (na ponta do dedo)",
+        "Imagem só na dúvida (obesos, hérnias gigantes, hidrocele, pubeíte): US (rápido/acessível), TC (diferencial/planejamento), RM (padrão-ouro de planos)",
+        "Laboratório: apenas se complicação ou preparo pré-operatório",
+        "Femoral tem alto risco de encarceramento — baixar o limiar para cirurgia"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO NO PS",
+      "section_color": "orange",
+      "titulo": "ANALGESIA + TENTATIVA DE REDUÇÃO",
+      "items": [
+        "Analgesia (dipirona/AINE; opioide se dor intensa), gelo local, antieméticos",
+        "Encarcerada aguda < 2h SEM sofrimento: pode tentar redução (taxe) — Trendelenburg, gelo, analgesia/opioide e compressão suave",
+        "Encarceramento > 2h ou QUALQUER sinal de estrangulamento: NÃO reduzir — avaliação da cirurgia geral",
+        "Após redução bem-sucedida: observar (risco de ter reduzido alça em sofrimento) e programar cirurgia",
+        "Watchful waiting é aceitável apenas em homens assintomáticos com altíssimo risco cirúrgico"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "DEFINITIVO / INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "Redutível / perda de domicílio: cirurgia ELETIVA (hernioplastia, geralmente com tela)",
+        "Encarcerada (irredutível) / estrangulada: cirurgia de URGÊNCIA/EMERGÊNCIA — contato com plantão de cirurgia",
+        "Estrangulada: inguinotomia/videolaparoscopia; laparotomia se comprometimento visceral/peritonite/sepse",
+        "ALTA: redutível, sintomas controlados, sem sinais de gravidade -> encaminhar ao cirurgião ambulatorialmente",
+        "Orientar retorno se dor intensa, abaulamento que não reduz, vômitos, parada de eliminação"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com hérnia ___ (inguinal/femoral/umbilical/incisional); tempo ___; redutível: ___.",
+        "Sinais de estrangulamento (dor intensa, hiperemia, febre) ___; obstrução (vômito/distensão/parada) ___; sinais vitais ___.",
+        "Conduta: analgesia, tentativa de redução (< 2h, sem sofrimento) ___; jejum se cirúrgico.",
+        "Solicito cirurgia geral: eletiva (redutível) OU urgência/emergência (encarcerada/estrangulada)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual achado caracteriza uma hérnia ESTRANGULADA?",
+      "alternativas": [
+        "Conteúdo que reduz facilmente",
+        "Irredutibilidade com comprometimento vascular (hiperemia, dor intensa, febre, sinais de obstrução)",
+        "Abaulamento indolor crônico",
+        "Redução espontânea ao deitar",
+        "Ausência de qualquer sintoma"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tratamento definitivo de uma hérnia inguinal redutível?",
+      "alternativas": [
+        "Observação por toda a vida",
+        "Hernioplastia eletiva",
+        "Antibiótico",
+        "Faixa abdominal permanente",
+        "Cirurgia de urgência sempre"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Hérnia encarcerada há 6 horas, dolorosa, com hiperemia local. Qual a conduta?",
+      "alternativas": [
+        "Tentar redução manual vigorosa",
+        "NÃO reduzir; encaminhar para cirurgia de urgência",
+        "Alta com analgésico",
+        "Aplicar calor e observar em casa",
+        "Faixa compressiva e reavaliação em 1 semana"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual tipo de hérnia tem maior risco de encarceramento, justificando indicação cirúrgica mais precoce?",
+      "alternativas": [
+        "Inguinal indireta",
+        "Femoral",
+        "Umbilical em adulto assintomático",
+        "Epigástrica pequena",
+        "Hérnia de Spiegel"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Em uma hérnia encarcerada aguda (< 2h) sem sinais de sofrimento, o que pode ser tentado no PS?",
+      "alternativas": [
+        "Redução manual delicada (taxe) com Trendelenburg, gelo e analgesia",
+        "Laparotomia imediata",
+        "Apenas alta",
+        "Antibiótico prolongado",
+        "Indução de vômito"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A hérnia estrangulada tem comprometimento vascular do conteúdo (hiperemia, calor, dor intensa, febre, obstrução) — é urgência/emergência cirúrgica pelo risco de necrose e perfuração."},
+    {"resposta": "B", "comentario": "A hérnia redutível tem tratamento cirúrgico eletivo (hernioplastia, em geral com tela), pois persiste o risco de encarceramento e a cirurgia eletiva tem menos complicações."},
+    {"resposta": "B", "comentario": "Encarceramento > 2h e/ou sinais de sofrimento (dor intensa, hiperemia) contraindicam a redução: encaminha-se para cirurgia de urgência, evitando reduzir alça já isquêmica."},
+    {"resposta": "B", "comentario": "A hérnia femoral encarcera/estrangula com mais frequência (anel estreito e rígido), justificando indicação cirúrgica mais precoce, mesmo quando pouco sintomática."},
+    {"resposta": "A", "comentario": "Na encarcerada aguda recente (< 2h) sem sinais de sofrimento, pode-se tentar a redução manual delicada (taxe) com Trendelenburg, gelo e analgesia, mantendo observação e avaliação cirúrgica."}
+  ]
+}
