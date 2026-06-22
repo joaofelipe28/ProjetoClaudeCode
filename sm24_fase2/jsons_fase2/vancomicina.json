@@ -1,0 +1,155 @@
+{
+  "slug": "vancomicina",
+  "titulo": "Protocolo de Vancomicina",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Uso e monitoramento da vancomicina",
+  "chapter_bar": "VANCOMICINA — MRSA + MONITORAR NÍVEL/RIM",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — USO RACIONAL",
+      "title": "VANCOMICINA — INDICAR -> INFUNDIR LENTO -> MONITORAR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.85, "w": 205, "h": 22, "text": "Infeccao grave por Gram+ (MRSA) ou alergia\na beta-lactamicos: indicar vancomicina", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.5, "w": 205, "h": 22, "text": "2 g/dia EV (500 mg 6/6h ou 1 g 12/12h)\nINFUSAO LENTA >= 60 min", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.15, "w": 205, "h": 20, "text": "Monitorar funcao renal + vancocinemia (pre-4a/5a dose)", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "INDICAÇÕES",
+      "section_color": "teal",
+      "titulo": "QUANDO USAR",
+      "items": [
+        "Infecções estafilocócicas GRAVES em pacientes com hipersensibilidade a penicilinas/cefalosporinas",
+        "Infecções por estafilococos RESISTENTES à meticilina/oxacilina (MRSA)",
+        "Endocardite infecciosa",
+        "Infecção de corrente sanguínea (bacteremia); osteomielite; abscesso pulmonar",
+        "Erisipela/infecções de pele e partes moles graves com suspeita de MRSA"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ADMINISTRAÇÃO",
+      "section_color": "orange",
+      "titulo": "DOSE E INFUSÃO",
+      "items": [
+        "Dose habitual: 2 g/dia EV — dividida em 500 mg 6/6h ou 1 g 12/12h",
+        "INFUSÃO LENTA: mínimo de 60 minutos por dose (reduz o risco de síndrome do homem vermelho)",
+        "Ajustar a dose à função renal (a vancomicina é nefrotóxica e eliminada por via renal)",
+        "Considerar dose de ataque (loading) em infecções graves/sepse, conforme protocolo institucional",
+        "A dose ideal moderna é guiada pela meta de AUC; na ausência, usa-se o nível de vale (trough)"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "MONITORAMENTO",
+      "section_color": "navy",
+      "titulo": "RIM + VANCOCINEMIA",
+      "items": [
+        "FUNÇÃO RENAL: monitoramento DIÁRIO, com cálculo do clearance (Cockcroft-Gault)",
+        "Cockcroft-Gault — Homens: CrCl = (140 - idade) x peso / (Cr sérica x 72)",
+        "Mulheres: CrCl = (140 - idade) x peso x 0,85 / (Cr sérica x 72)",
+        "VANCOCINEMIA (nível de vale): dosar antes da 4ª ou 5ª dose, 30-60 min ANTES da próxima dose",
+        "Ajustar a dose conforme o nível sérico e a função renal; vigiar nefrotoxicidade (sobretudo com outros nefrotóxicos)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SÍNDROME DO HOMEM VERMELHO E EFEITOS ADVERSOS",
+      "section_color": "red",
+      "titulo": "RECONHECER E MANEJAR",
+      "items": [
+        "SÍNDROME DO HOMEM VERMELHO: ocorre quando a vancomicina é infundida MUITO RÁPIDO — erupção pruriginosa e eritematosa em face, pescoço e tronco superior (± extremidades)",
+        "NÃO é alergia mediada por IgE — é reação anafilactoide (liberação de histamina)",
+        "Conduta: SUSPENDER a infusão + Difenidramina 50 mg VO/EV + antagonista H2 (ex.: cimetidina EV)",
+        "Após a resolução, reiniciar a vancomicina em infusão MAIS LENTA (ao longo de 4 horas); considerar antibiótico alternativo se disponível",
+        "Outros efeitos: nefrotoxicidade (vigiar creatinina), ototoxicidade (raro); prevenir a síndrome do homem vermelho com infusão >= 60 min"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PONTOS-CHAVE PARA O PLANTÃO",
+      "section_color": "orange",
+      "titulo": "RESUMO",
+      "items": [
+        "Reservar a vancomicina para MRSA/Gram+ grave ou alergia a beta-lactâmicos (uso racional)",
+        "Sempre infundir LENTO (>= 60 min) para prevenir a síndrome do homem vermelho",
+        "Monitorar função renal diariamente e dosar vancocinemia antes da 4ª-5ª dose",
+        "Ajustar a dose pela função renal; cuidado com associação de nefrotóxicos",
+        "Descalonar conforme cultura/antibiograma assim que possível"
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a principal indicação da vancomicina?",
+      "alternativas": [
+        "Infecções por Gram-negativos entéricos",
+        "Infecções graves por estafilococos resistentes à meticilina (MRSA) ou em alérgicos a beta-lactâmicos",
+        "Infecções fúngicas",
+        "Infecções virais",
+        "Parasitoses"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Como prevenir a síndrome do homem vermelho durante a administração de vancomicina?",
+      "alternativas": [
+        "Infundir em bolus rápido",
+        "Infundir lentamente (mínimo de 60 minutos por dose)",
+        "Associar corticoide de rotina",
+        "Usar via intramuscular",
+        "Reduzir a hidratação"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "A síndrome do homem vermelho associada à vancomicina é:",
+      "alternativas": [
+        "Uma reação alérgica IgE-mediada que contraindica novo uso",
+        "Uma reação anafilactoide por infusão rápida (liberação de histamina); manejar com suspensão + anti-histamínico e reintroduzir mais lentamente",
+        "Sinal de falha terapêutica",
+        "Uma infecção secundária",
+        "Um efeito sem manejo possível"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Quando deve ser colhida a vancocinemia (nível de vale)?",
+      "alternativas": [
+        "1 hora após a 1ª dose",
+        "Antes da 4ª ou 5ª dose, 30-60 minutos antes da próxima dose",
+        "Apenas ao final do tratamento",
+        "Durante a infusão",
+        "Não é necessário dosar"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual parâmetro deve ser monitorado diariamente durante o uso de vancomicina?",
+      "alternativas": [
+        "Função tireoidiana",
+        "Função renal (clearance de creatinina)",
+        "Glicemia",
+        "Função hepática isolada",
+        "Coagulograma"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A vancomicina é indicada em infecções graves por estafilococos resistentes (MRSA) ou em pacientes alérgicos a penicilinas/cefalosporinas, além de endocardite, bacteremia e osteomielite."},
+    {"resposta": "B", "comentario": "A síndrome do homem vermelho é prevenida com infusão lenta (mínimo de 60 minutos por dose), evitando a liberação rápida de histamina."},
+    {"resposta": "B", "comentario": "É uma reação anafilactoide por infusão rápida (liberação de histamina), não IgE-mediada; maneja-se com suspensão da infusão + difenidramina/anti-H2 e reintrodução mais lenta (em 4h)."},
+    {"resposta": "B", "comentario": "A vancocinemia (nível de vale) é colhida antes da 4ª ou 5ª dose, 30-60 minutos antes da próxima administração, para ajuste de dose."},
+    {"resposta": "B", "comentario": "A função renal (clearance de creatinina pela fórmula de Cockcroft-Gault) deve ser monitorada diariamente, pela nefrotoxicidade e eliminação renal da vancomicina."}
+  ]
+}

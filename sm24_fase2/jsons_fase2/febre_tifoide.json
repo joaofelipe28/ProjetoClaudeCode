@@ -1,0 +1,168 @@
+{
+  "slug": "febre_tifoide",
+  "titulo": "Febre Tifoide",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Febre tifoide no PS",
+  "chapter_bar": "FEBRE TIFOIDE — FEBRE EM ESCADA + FAGET",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "FEBRE TIFOIDE — HEMOCULTURA -> ATB",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Febre prolongada EM ESCADA + prostracao +\nbradicardia relativa (Faget) + area endemica/viagem", "color": "navy", "font_size": 5.0},
+        {"id": "b", "x": 0.5, "y": 0.55, "w": 205, "h": 22, "text": "HEMOCULTURA (antes do ATB) -> Ceftriaxona/Cipro/Azitro", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.26, "w": 205, "h": 22, "text": "Complicacao (perfuracao/HDA/choque) -> internar + cirurgia", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.07, "w": 200, "h": 14, "text": "Notificacao compulsoria", "color": "orange", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E QUADRO CLÍNICO",
+      "section_color": "teal",
+      "titulo": "FEBRE PROLONGADA EM FASES",
+      "items": [
+        "Doença sistêmica por Salmonella enterica sorotipo Typhi, transmissão FECAL-ORAL (água/alimentos); incubação 7-14 dias; endêmica em áreas com saneamento precário",
+        "1ª semana: febre alta em ESCADA (progressiva), cefaleia intensa, mialgia, tosse seca",
+        "2ª semana: prostração máxima, dor abdominal, diarreia 'ervilha' OU constipação, ROSÉOLAS tíficas, hepatoesplenomegalia",
+        "3ª semana: platô/declínio ou COMPLICAÇÕES (perfuração, hemorragia)",
+        "BRADICARDIA RELATIVA (sinal de FAGET): dissociação pulso-temperatura; também língua saburrosa, 'estado tífico' (confusão); notificação compulsória"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS — COMPLICAÇÕES (2ª-3ª SEMANA)",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIAS",
+      "items": [
+        "PERFURAÇÃO intestinal (íleo terminal, 1-3%): dor abdominal súbita intensa, defesa/rigidez, pneumoperitônio — cirurgia",
+        "HEMORRAGIA digestiva (10-30%): melena, hematêmese, hematoquezia, instabilidade",
+        "Choque séptico; 'ESTADO TÍFICO' (confusão, delirium, estupor, coma)",
+        "A PERDA da bradicardia relativa (taquicardia > 120) sugere complicação",
+        "Sinais de gravidade: febre > 14 dias, prostração extrema, hipotensão, oligúria, icterícia (hepatite tífica)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "HEMOCULTURA É O PADRÃO-OURO",
+      "items": [
+        "HEMOCULTURA (gold standard): melhor na 1ª semana (sens. 80-90%); coletar ANTES do antibiótico, 2-3 amostras",
+        "Coprocultura (melhor após 2ª semana, identifica portador); mielocultura (mais sensível, invasiva, positiva mesmo com ATB prévio); urocultura",
+        "Reação de WIDAL: baixa especificidade (muitos falso-positivos) — NÃO usar isoladamente; ELISA IgM mais específico",
+        "Hemograma: LEUCOPENIA com desvio à esquerda (típico) ou normal; anemia, plaquetopenia leve, EOSINOPENIA; TGO/TGP elevadas; hiponatremia (SIADH)",
+        "Imagem se complicação: RX abdome (pneumoperitônio), TC (perfuração/abscesso), USG"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "ATB APÓS COLETA DE CULTURAS",
+      "items": [
+        "1ª escolha: Ceftriaxona 2 g EV/dia por 7-14 dias (preferencial se grave/resistência); Ciprofloxacino 500 mg VO 12/12h por 7-10 dias (leve-moderado; atenção à resistência); Azitromicina 1 g D1 + 500 mg/dia por 5-7 dias",
+        "2ª escolha: Cloranfenicol (clássico, risco de aplasia medular); Ampicilina (resistência comum)",
+        "GRAVE (choque/complicações): Ceftriaxona 2 g EV 12/12h + DEXAMETASONA 3 mg/kg ataque, depois 1 mg/kg 6/6h por 48h (reduz mortalidade)",
+        "Duração 7-14 dias (mínimo 7 dias após a defervescência); ajustar ao antibiograma",
+        "Suporte: hidratação, antitérmico (Dipirona/Paracetamol; EVITAR AINE — sangramento), antiemético, dieta leve SEM resíduos (risco de perfuração), repouso",
+        "PERFURAÇÃO: cirurgia de emergência (rafia ± ressecção + lavagem) + ATB amplo + UTI"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PORTADOR CRÔNICO, INTERNAÇÃO E ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "PORTADOR CRÔNICO (1-5%): coprocultura + > 1 ano -> Ciprofloxacino 500 mg 12/12h por 28 dias (ou Ampicilina + Probenecida 6 sem); colecistectomia se cálculos (S. typhi persiste na vesícula); fonte de transmissão (manipuladores de alimentos)",
+        "INTERNAR: forma grave/'estado tífico', complicações (perfuração/HDA/choque), desidratação/intolerância oral, vômitos incoercíveis, confusão, dor abdominal intensa, < 2 anos/idoso/gestante/comorbidade",
+        "ALTA: afebril 48h sem antitérmico, melhora clínica, tolerando VO, sem complicação, estável, seguimento garantido (completar ATB VO)",
+        "Orientações: completar ATB (não interromper — risco de recidiva/portador), higiene rigorosa de mãos, NÃO manipular alimentos para terceiros até 2 coproculturas negativas, isolamento entérico domiciliar",
+        "Seguimento: coprocultura de controle (3 amostras) ~1 mês após o fim do tratamento; notificação compulsória ao SINAN"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com febre tifoide (confirmada/suspeita); febre há ___ dias (em escada); procedência/viagem ___; água/alimentos suspeitos ___.",
+        "Hemocultura ___; hemograma (leucopenia?) ___; Tax ___, FC ___ (Faget?), PA ___; roséolas ___; hepatoesplenomegalia ___.",
+        "Complicação: perfuração (defesa/pneumoperitônio) ___ / HDA ___ / choque ___ / estado tífico ___.",
+        "Conduta: hidratação, Ceftriaxona/Cipro ___ às ___, antitérmico; solicito internação enfermaria/UTI / cirurgia (perfuração); notificar SINAN."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual sinal clínico clássico (dissociação pulso-temperatura) é sugestivo de febre tifoide?",
+      "alternativas": [
+        "Sinal de Murphy",
+        "Bradicardia relativa (sinal de Faget)",
+        "Sinal de Blumberg",
+        "Sinal do sulco",
+        "Sinal de Battle"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o exame padrão-ouro para o diagnóstico de febre tifoide, e quando colhê-lo?",
+      "alternativas": [
+        "Reação de Widal isolada",
+        "Hemocultura, preferencialmente na 1ª semana e antes do antibiótico",
+        "Coprocultura na 1ª semana",
+        "Sorologia IgG",
+        "Urocultura"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é a complicação mais temida da febre tifoide, geralmente na 2ª-3ª semana?",
+      "alternativas": [
+        "Artrite reativa",
+        "Perfuração intestinal (íleo terminal)",
+        "Pancreatite",
+        "Meningite",
+        "Pneumonia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual alteração do hemograma é típica da febre tifoide?",
+      "alternativas": [
+        "Leucocitose intensa com eosinofilia",
+        "Leucopenia com desvio à esquerda e eosinopenia",
+        "Linfocitose atípica",
+        "Pancitopenia grave",
+        "Policitemia"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o antibiótico de primeira escolha para a febre tifoide grave?",
+      "alternativas": [
+        "Amoxicilina oral",
+        "Ceftriaxona endovenosa",
+        "Metronidazol",
+        "Vancomicina",
+        "Nitrofurantoína"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A bradicardia relativa (sinal de Faget) — frequência cardíaca que não acompanha a febre — é clássica da febre tifoide; sua perda (taquicardia) sugere complicação."},
+    {"resposta": "B", "comentario": "A hemocultura é o padrão-ouro, com maior sensibilidade na 1ª semana e devendo ser colhida ANTES do antibiótico; a reação de Widal tem baixa especificidade."},
+    {"resposta": "B", "comentario": "A perfuração intestinal (íleo terminal) é a complicação mais temida, ocorrendo na 2ª-3ª semana, com dor súbita, defesa/rigidez e pneumoperitônio — emergência cirúrgica."},
+    {"resposta": "B", "comentario": "A febre tifoide cursa tipicamente com leucopenia e desvio à esquerda, além de eosinopenia — diferente de outras infecções bacterianas que cursam com leucocitose."},
+    {"resposta": "B", "comentario": "A ceftriaxona endovenosa é a 1ª escolha nos casos graves/resistência; nos graves com choque, associa-se dexametasona, que reduz a mortalidade."}
+  ]
+}

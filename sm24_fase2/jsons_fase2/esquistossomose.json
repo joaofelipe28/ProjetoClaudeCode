@@ -1,0 +1,181 @@
+{
+  "slug": "esquistossomose",
+  "titulo": "Esquistossomose",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Esquistossomose mansônica no PS",
+  "chapter_bar": "ESQUISTOSSOMOSE — HP + PRAZIQUANTEL",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "ESQUISTO — FORMA HEPATOESPLÊNICA NO PS",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Area endemica + contato com agua doce\nesplenomegalia/hipertensao portal; funcao hepatica PRESERVADA", "color": "navy", "font_size": 5.0},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Infeccao ativa (EPF+):\nPRAZIQUANTEL\n50-60 mg/kg DU", "color": "green", "font_size": 5.2},
+        {"id": "c", "x": 0.75, "y": 0.46, "w": 150, "h": 28, "text": "Complicacao: HDA por\nvarizes -> ressuscitar +\nEDA + terlipressina", "color": "red", "font_size": 5.0},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "Praziquantel NAO reverte fibrose nem hipertensao portal", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E FORMAS CLÍNICAS",
+      "section_color": "teal",
+      "titulo": "S. MANSONI",
+      "items": [
+        "Parasitose crônica por Schistosoma mansoni (Brasil); contato com água doce contendo caramujos Biomphalaria; o verme adulto vive nos vasos mesentéricos e os ovos causam fibrose hepática/intestinal",
+        "Causa mais comum de HIPERTENSÃO PORTAL NÃO CIRRÓTICA no Brasil — função hepática PRESERVADA (diferente da cirrose)",
+        "Assintomática (50-60%); AGUDA (febre de Katayama, 3-8 sem pós-exposição: febre, urticária, tosse, diarreia, eosinofilia > 30%)",
+        "Intestinal (diarreia com muco/sangue); hepatointestinal; HEPATOESPLÊNICA (5-10%, mais grave): esplenomegalia volumosa + hipertensão portal (varizes/ascite)",
+        "Ectópicas (raras): NEUROesquistossomose (mielite), pulmonar, glomerulonefrite"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DA FORMA HEPATOESPLÊNICA",
+      "section_color": "navy",
+      "headers": ["Grupo", "Características"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.18, 0.82],
+      "rows": [
+        ["A — Compensada", "Hepatoesplenomegalia, sem hipertensão portal clínica, função preservada, varizes ausentes/pequenas"],
+        ["B — HP compensada", "Esplenomegalia volumosa + varizes (médio/grosso calibre), sem sangramento prévio, sem ascite"],
+        ["C — Descompensada", "História de hemorragia digestiva, ascite, encefalopatia (rara - sugere coinfecção/cirrose)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RED FLAGS",
+      "section_color": "red",
+      "titulo": "EMERGÊNCIAS",
+      "items": [
+        "HEMORRAGIA digestiva alta por VARIZES esofágicas (hematêmese/melena) — pode ser maciça, com choque",
+        "Esplenomegalia volumosa (Schuffner IV-V) — risco de ruptura; ascite tensa",
+        "Anemia grave (Hb < 7) e plaquetopenia (< 50.000) por HIPERESPLENISMO",
+        "NEUROesquistossomose: déficit motor, paraplegia, alteração esfincteriana (emergência neurológica)",
+        "ATENÇÃO: icterícia/encefalopatia importante sugere COINFECÇÃO (HBV/HCV/álcool), pois a função hepática costuma estar preservada"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "EPF + IMAGEM",
+      "items": [
+        "EPF (Kato-Katz): padrão-ouro — ovos de S. mansoni; 3 amostras em dias alternados; quantifica a carga (OPG)",
+        "Biópsia retal se EPF negativo com alta suspeita; PCR de fezes (mais sensível)",
+        "Sorologia (ELISA): útil na fase aguda (Katayama) quando EPF negativo; NÃO diferencia ativa de passada",
+        "Labs: anemia/leucopenia/PLAQUETOPENIA (hiperesplenismo), eosinofilia; função hepática PRESERVADA (albumina/bilirrubina normais)",
+        "USG abdome: fibrose PERIPORTAL ('dedos de luva'), esplenomegalia, veia porta > 13 mm, ascite; ENDOSCOPIA para rastrear varizes (todos os hepatoesplênicos)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — ESPECÍFICO E DAS COMPLICAÇÕES",
+      "section_color": "orange",
+      "titulo": "PRAZIQUANTEL + MANEJO DA HP",
+      "items": [
+        "PRAZIQUANTEL 50-60 mg/kg VO em dose única (após refeição; dividir em 2 tomadas com 4-6h se > 60 kg) — todas as formas com EPF+; eficácia 80-90%; controle de cura (EPF) em 6 meses",
+        "  Praziquantel NÃO reverte a fibrose nem trata a hipertensão portal (sequela); objetivo: eliminar o parasita e prevenir progressão/reinfecção",
+        "HDA por varizes: 2 acessos + cristaloide + transfusão (alvo Hb 7-9); TERLIPRESSINA 2 mg EV 4/4h (ou octreotide); IBP EV; CEFTRIAXONA 1 g/dia (profilaxia); EDA urgente (< 12h) com LIGADURA elástica; balão/TIPS se refratário",
+        "Profilaxia de sangramento (varizes médio/grosso): Propranolol 40-80 mg 12/12h (FC-alvo 55-60) ou ligadura elástica",
+        "Ascite: dieta hipossódica + Espironolactona ± Furosemida; paracentese (+ albumina se > 5 L)",
+        "NEUROesquistossomose: Prednisona 1-1,5 mg/kg/dia ANTES do praziquantel (4-6 sem); RM medular urgente; neurocirurgia se compressão"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO, ALTA E SEGUIMENTO",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: hemorragia digestiva, ascite tensa, anemia grave sintomática, neuroesquistossomose, abdome agudo, Katayama grave, necessidade de esplenectomia",
+        "ALTA: estável, sem sangramento ativo, Hb estável, ascite controlada, praziquantel feito/prescrito, seguimento garantido",
+        "Hiperesplenismo refratário + citopenias graves: esplenectomia (vacinar antes — pneumococo, meningococo, Hib)",
+        "Prevenção: evitar contato com água doce em área endêmica; tratar familiares/comunicantes; notificação compulsória (SINAN)",
+        "Seguimento: EPF de controle em 6 meses, endoscopia anual (se varizes), USG anual; infectologia/hepatologia"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente com esquistossomose hepatoesplênica (grupo ___); procedência endêmica; contato com água doce ___; praziquantel prévio ___.",
+        "Complicação atual: HDA por varizes ___ / ascite ___ / neuroesquistossomose ___; Hb ___, plaquetas ___ (hiperesplenismo); função hepática preservada ___.",
+        "USG: esplenomegalia ___, fibrose periportal ___, veia porta ___ mm; EDA: varizes ___.",
+        "Conduta: ressuscitação ___, terlipressina ___, EDA/ligadura ___, praziquantel ___; solicito internação enfermaria/UTI para controle de HDA/HP."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a principal causa de hipertensão portal NÃO cirrótica no Brasil?",
+      "alternativas": [
+        "Cirrose alcoólica",
+        "Esquistossomose mansônica (forma hepatoesplênica)",
+        "Trombose de veia porta isolada",
+        "Hepatite autoimune",
+        "Síndrome de Budd-Chiari"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado diferencia a esquistossomose hepatoesplênica da cirrose?",
+      "alternativas": [
+        "Esplenomegalia",
+        "Função hepática PRESERVADA (albumina e bilirrubinas normais)",
+        "Presença de varizes",
+        "Ascite",
+        "Hipertensão portal"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual é o tratamento específico da esquistossomose com infecção ativa?",
+      "alternativas": [
+        "Albendazol",
+        "Praziquantel 50-60 mg/kg VO em dose única",
+        "Ivermectina",
+        "Metronidazol",
+        "Mebendazol"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre o praziquantel na esquistossomose hepatoesplênica, é correto:",
+      "alternativas": [
+        "Reverte a fibrose periportal estabelecida",
+        "Elimina o parasita, mas NÃO reverte a fibrose nem trata a hipertensão portal (sequela)",
+        "Trata as varizes esofágicas",
+        "É contraindicado em todas as formas",
+        "Substitui a endoscopia"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Na neuroesquistossomose, qual conduta deve preceder o praziquantel?",
+      "alternativas": [
+        "Antibiótico",
+        "Corticoide (prednisona), para prevenir a reação inflamatória à morte dos parasitas",
+        "Anticoagulação",
+        "Diurético",
+        "Nenhuma"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A esquistossomose mansônica (forma hepatoesplênica) é a principal causa de hipertensão portal não cirrótica no Brasil, por fibrose periportal."},
+    {"resposta": "B", "comentario": "A função hepática preservada (albumina e bilirrubinas normais) diferencia a esquistossomose da cirrose; icterícia/encefalopatia importantes sugerem coinfecção."},
+    {"resposta": "B", "comentario": "O praziquantel 50-60 mg/kg VO em dose única é o tratamento específico para todas as formas com infecção ativa (EPF+)."},
+    {"resposta": "B", "comentario": "O praziquantel elimina o parasita e previne progressão/reinfecção, mas não reverte a fibrose nem trata a hipertensão portal, que são sequelas — estas exigem manejo próprio (betabloqueador, ligadura)."},
+    {"resposta": "B", "comentario": "Na neuroesquistossomose, inicia-se corticoide (prednisona) ANTES do praziquantel para prevenir a reação inflamatória à morte dos parasitas no SNC."}
+  ]
+}

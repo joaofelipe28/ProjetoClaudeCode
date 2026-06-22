@@ -1,0 +1,167 @@
+{
+  "slug": "exposicao_ocupacional_pep",
+  "titulo": "Exposição Ocupacional a Material Biológico (PEP)",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Acidente biológico e profilaxia pós-exposição",
+  "chapter_bar": "ACIDENTE BIOLÓGICO — PEP HIV/HBV EM 72h",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "ACIDENTE BIOLÓGICO — LAVAR -> AVALIAR -> PROFILAXIA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 20, "text": "Acidente: cuidados locais imediatos (lavar)\navaliar risco + sorologias fonte/exposto", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.25, "y": 0.55, "w": 150, "h": 26, "text": "HIV: 4 criterios +\n<72h -> TDF+3TC+DTG\nx 28 dias", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.75, "y": 0.55, "w": 150, "h": 26, "text": "HBV suscetivel +\nfonte HBsAg+: vacina\n+ IGHAHB <24h", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.2, "w": 205, "h": 18, "text": "HCV: sem profilaxia; monitorar e tratar se infectar", "color": "teal", "font_size": 5.4},
+        {"id": "e", "x": 0.5, "y": 0.05, "w": 200, "h": 12, "text": "Notificar SINAN (DRT)", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E MANEJO INICIAL",
+      "section_color": "teal",
+      "titulo": "TRÊS MEDIDAS INICIAIS",
+      "items": [
+        "Contato do profissional com fluidos corporais no trabalho; principal risco: hepatite B, hepatite C e HIV",
+        "1) CUIDADOS LOCAIS: lavar a área com água e sabão (mucosas com água/SF); NÃO ampliar a lesão (cortes/injeções) nem usar substâncias irritantes (éter/hipoclorito)",
+        "2) AVALIAR O RISCO: tipo de exposição (percutânea/mucosa/pele não íntegra), tipo de fluido (sangue, sêmen, vaginal, cavitários — sangue é o maior risco), perfil sorológico fonte e exposto",
+        "3) NOTIFICAR ao SINAN (ficha de acidente de trabalho com material biológico)",
+        "Exames de fonte e exposto: HBsAg, anti-HCV, teste rápido HIV; no exposto, também anti-HBs (suscetibilidade)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "RISCO DE TRANSMISSÃO POR PATÓGENO",
+      "section_color": "navy",
+      "headers": ["Vírus", "Risco / fatores"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.20, 0.80],
+      "rows": [
+        ["HIV", "~0,23% (perfurocortante); maior se lesão profunda, sangue visível no instrumento/inserido em vaso, fonte em fase avançada (carga viral alta)"],
+        ["Hepatite B", "23-62% (o maior!); maior se fonte HBeAg positivo"],
+        ["Hepatite C", "~2,2%; profundidade da lesão é fator de risco; SEM profilaxia disponível"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PEP PARA HIV",
+      "section_color": "red",
+      "titulo": "4 CRITÉRIOS + < 72h",
+      "items": [
+        "Indicar PEP se TODOS os 4 critérios: exposição de risco + material de risco + exposto SUSCETÍVEL (teste rápido negativo) + intervalo < 72h",
+        "Esquema preferencial: TENOFOVIR + LAMIVUDINA + DOLUTEGRAVIR (TDF + 3TC + DTG) por 28 DIAS — iniciar o mais precocemente possível",
+        "Tenofovir: evitar em doença renal; cautela na hepatite B (risco de exacerbação ao suspender)",
+        "Fonte desconhecida/indisponível: PEP geralmente recomendada (individualizar pela gravidade e probabilidade de a fonte ter HIV)",
+        "Exposto com teste rápido POSITIVO: avaliar diagnóstico de HIV (2º teste) e iniciar TARV, não PEP; se > 72h e teste negativo: NÃO indicar PEP (acompanhar sorologia em 1 e 3 meses)",
+        "Reavaliar em 4 semanas; efeitos comuns (náusea, diarreia, cefaleia, fadiga) — manejo sintomático; repetir teste HIV em 1 e 3 meses, mantendo preservativo até excluir infecção"
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PROFILAXIA — HEPATITE B E MANEJO DA HEPATITE C",
+      "section_color": "orange",
+      "titulo": "VACINA + IMUNOGLOBULINA",
+      "items": [
+        "Imune (anti-HBs >= 10 mUI/mL ou hepatite B prévia): NENHUMA medida adicional",
+        "Suscetível (anti-HBs e HBsAg não reagentes): VACINA (1ª dose preferencialmente em 24h, completar esquema) — reduz ~75% do risco; indicada se vacinação ausente/incompleta ou sem soroconversão",
+        "IGHAHB (imunoglobulina) 0,06 mL/kg IM (em membro diferente da vacina, idealmente < 24h, até 7 dias): exposto suscetível com esquema incompleto/sem resposta E fonte HBsAg+ (ou fonte desconhecida de alto risco)",
+        "Não respondedor após 2 esquemas: 2 doses de IGHAHB com 1 mês de intervalo (não revacinar)",
+        "HEPATITE C: NÃO há profilaxia; testar fonte e exposto para diagnóstico/tratamento precoce (cura > 95%); monitorar o exposto se fonte reagente/desconhecida (ou fonte negativa com exposição de risco recente — janela até ~129 dias)",
+        "Pré-exposição: vacinação contra hepatite B de todos os profissionais (3 doses + anti-HBs)"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ACOMPANHAMENTO E NOTIFICAÇÃO",
+      "titulo": "SEGUIMENTO",
+      "items": [
+        "PEP HIV: retorno em 4 semanas (ou antes se sintomas); sintomas de síndrome mono-like -> pesquisar infecção aguda pelo HIV",
+        "Repetir teste HIV em 1 e 3 meses; manter medidas preventivas (preservativo) até a exclusão definitiva",
+        "Hepatite C: monitorização sorológica/molecular conforme exposição (fonte reagente/desconhecida ou janela)",
+        "Notificação compulsória do acidente de trabalho (SINAN)",
+        "Reforçar prevenção: EPI, perfurocortantes com dispositivo de segurança, educação, vacinação contra hepatite B"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGISTRO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO DO ACIDENTE",
+      "items": [
+        "Profissional ___ ; tipo de exposição ___ (percutânea/mucosa/pele não íntegra); fluido ___; tempo desde a exposição ___ h.",
+        "Sorologias — fonte: HBsAg ___, anti-HCV ___, HIV ___; exposto: HIV ___, anti-HBs ___ (suscetível?), HBsAg/anti-HCV ___.",
+        "Conduta: lavagem local; PEP HIV (TDF+3TC+DTG) iniciada às ___ (< 72h?); HBV: vacina ___ + IGHAHB ___; HCV: monitorização.",
+        "Notificado ao SINAN; retorno agendado (4 sem; testes em 1 e 3 meses)."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o intervalo máximo para iniciar a PEP para HIV após exposição ocupacional?",
+      "alternativas": [
+        "24 horas",
+        "72 horas",
+        "1 semana",
+        "2 semanas",
+        "Não há limite"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o esquema preferencial de PEP para HIV e sua duração?",
+      "alternativas": [
+        "Zidovudina isolada por 14 dias",
+        "Tenofovir + Lamivudina + Dolutegravir por 28 dias",
+        "Dolutegravir isolado por 7 dias",
+        "Apenas observação",
+        "Aciclovir por 28 dias"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual dos três vírus tem o MAIOR risco de transmissão após acidente perfurocortante?",
+      "alternativas": [
+        "HIV (~0,23%)",
+        "Hepatite B (23-62%)",
+        "Hepatite C (~2,2%)",
+        "Todos têm o mesmo risco",
+        "Nenhum é transmissível"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Profissional suscetível (anti-HBs negativo, esquema incompleto) exposto a fonte HBsAg positivo. Qual a conduta?",
+      "alternativas": [
+        "Apenas observação",
+        "Vacina contra hepatite B + imunoglobulina anti-hepatite B (IGHAHB 0,06 mL/kg IM)",
+        "Antibiótico",
+        "Tenofovir isolado",
+        "Nenhuma medida"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre a profilaxia para hepatite C após exposição ocupacional, é correto:",
+      "alternativas": [
+        "Usar imunoglobulina específica",
+        "Não há profilaxia eficaz; faz-se testagem e monitorização para diagnóstico/tratamento precoce (cura > 95%)",
+        "Vacinar imediatamente",
+        "Iniciar antiviral profilático por 28 dias",
+        "Nenhuma testagem é necessária"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A PEP para HIV deve ser iniciada em até 72h da exposição (quanto mais precoce, melhor); após esse prazo, não é indicada pela baixa eficácia, mantendo-se o acompanhamento sorológico."},
+    {"resposta": "B", "comentario": "O esquema preferencial é Tenofovir + Lamivudina + Dolutegravir (TDF + 3TC + DTG) por 28 dias."},
+    {"resposta": "B", "comentario": "A hepatite B tem o maior risco de transmissão após perfurocortante (23-62%, maior se fonte HBeAg+); HIV ~0,23% e HCV ~2,2%."},
+    {"resposta": "B", "comentario": "Exposto suscetível com fonte HBsAg+ recebe vacina contra hepatite B + imunoglobulina anti-hepatite B (IGHAHB 0,06 mL/kg IM, idealmente < 24h)."},
+    {"resposta": "B", "comentario": "Não há profilaxia eficaz para hepatite C; testa-se fonte e exposto e monitora-se para diagnóstico e tratamento precoces, cujas taxas de cura superam 95%."}
+  ]
+}
