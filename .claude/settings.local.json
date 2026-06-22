@@ -65,7 +65,11 @@
       "Bash(sips -s format png outputs/apostila_dengue.pdf --out /tmp/dengue_p1.png)",
       "Bash(sips -s format png outputs/apostila_tuberculose.pdf --out /tmp/tb_p1.png)",
       "Bash(sips -s format png outputs/apostila_ulceras_genitais.pdf --out /tmp/ulc_p1.png)",
-      "Bash(sips -s format png outputs/apostila_exposicao_ocupacional_pep.pdf --out /tmp/pep_p1.png)"
+      "Bash(sips -s format png outputs/apostila_exposicao_ocupacional_pep.pdf --out /tmp/pep_p1.png)",
+      "Bash(python3 sm24_gerador/build_apostila.py jsons_fase2/gengivoestomatite_herpetica.json --validate-only --outdir outputs)",
+      "Bash(python3 -)",
+      "Bash(python3 sm24_gerador/build_apostila.py jsons_fase2/gengivoestomatite_herpetica.json --outdir outputs)",
+      "Bash(sips -s format png outputs/apostila_gengivoestomatite_herpetica.pdf --out /tmp/gengivo_p1.png)"
     ]
   }
 }

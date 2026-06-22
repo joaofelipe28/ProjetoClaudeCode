@@ -1,0 +1,182 @@
+{
+  "slug": "gengivoestomatite_herpetica",
+  "titulo": "Gengivoestomatite Herpética",
+  "especialidade": "ODONTOLOGIA",
+  "chapter_subject": "Gengivoestomatite herpética na criança",
+  "chapter_bar": "GENGIVOESTOMATITE — HSV-1 + HIDRATAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "GENGIVOESTOMATITE — SUPORTE + EVITAR DESIDRATAÇÃO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Crianca: febre alta + lesoes orais dolorosas +\ngengiva edemaciada/sangrante (HSV-1) - diagnostico CLINICO", "color": "navy", "font_size": 5.0},
+        {"id": "b", "x": 0.25, "y": 0.48, "w": 150, "h": 26, "text": "Suporte (todos):\nHIDRATACAO +\nanalgesia", "color": "green", "font_size": 5.6},
+        {"id": "c", "x": 0.75, "y": 0.46, "w": 150, "h": 28, "text": "Moderado/grave <72h:\naciclovir VO; nao\ningere/imunossup.: EV", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.5, "y": 0.12, "w": 200, "h": 18, "text": "DESIDRATACAO = maior risco -> hospital", "color": "red", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E TRANSMISSÃO",
+      "section_color": "teal",
+      "titulo": "PRIMOINFECÇÃO PELO HSV-1",
+      "items": [
+        "Manifestação aguda da PRIMOINFECÇÃO pelo vírus herpes simplex tipo 1 (HSV-1) em crianças — concentrada na boca",
+        "É a reação inicial e intensa ao primeiro contato com o vírus",
+        "Transmissão por contato direto com secreções infectadas (saliva/gotículas) de quem tem o vírus ativo",
+        "Comum em ambientes com muitas crianças (creches, escolas)",
+        "Faixa etária típica: lactentes e pré-escolares"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "SINAIS E SINTOMAS",
+      "section_color": "navy",
+      "titulo": "O QUE OBSERVAR",
+      "items": [
+        "FEBRE ALTA: quase universal, costuma ser o primeiro sintoma; irritabilidade/choro intenso",
+        "DOR na boca intensa e generalizada -> recusa de comer/beber (mesmo líquidos)",
+        "Lesões orais: múltiplas VESÍCULAS que evoluem para ÚLCERAS dolorosas cobertas por membrana amarelada — em gengivas, língua, palato, mucosa jugal e lábios",
+        "Gengivas: EDEMA, vermelhidão e SANGRAMENTO espontâneo ou ao toque",
+        "Halitose; LINFADENOPATIA cervical e submandibular dolorosa"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "ESSENCIALMENTE CLÍNICO",
+      "items": [
+        "Diagnóstico CLÍNICO: febre alta + lesões orais típicas + gengiva edemaciada, baseado na história e no exame",
+        "Cultura viral/PCR NÃO são de rotina — reservados a casos atípicos, muito graves ou imunossuprimidos",
+        "Diferenciar de estomatite bacteriana e de enterovírus (DOENÇA MÃO-PÉ-BOCA) para evitar antibiótico desnecessário",
+        "Antibiótico NÃO trata a gengivoestomatite (causa viral) — só se houver infecção bacteriana secundária",
+        "Diferencial: herpangina, aftas recorrentes, candidíase, eritema multiforme"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — SUPORTE É A BASE",
+      "section_color": "orange",
+      "titulo": "HIDRATAÇÃO + ANALGESIA ± ACICLOVIR",
+      "items": [
+        "HIDRATAÇÃO é a PRIORIDADE: oferecer líquidos (água, sucos diluídos, chás) em pequenas quantidades e com frequência, para prevenir a desidratação",
+        "Analgesia/antitérmico: Paracetamol e/ou Ibuprofeno — controlam febre e dor, permitindo a ingestão de líquidos",
+        "Cuidados locais (eficácia limitada, sob orientação): lidocaína viscosa ou mistura de Maalox + difenidramina — cautela em crianças pequenas (risco)",
+        "ACICLOVIR oral: mais eficaz se iniciado nas primeiras 72h, sobretudo nos quadros moderados/graves; ~15-20 mg/kg/dose, 5-10 dias (prescrição pediátrica) — reduz duração dos sintomas e risco de hospitalização",
+        "Aciclovir EV (internação) se a criança não consegue ingerir nada ou é imunossuprimida",
+        "Dieta leve/fria/pastosa, evitando alimentos ácidos/duros que pioram a dor"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE ALERTA — QUANDO PROCURAR O HOSPITAL",
+      "section_color": "red",
+      "titulo": "DESIDRATAÇÃO É O MAIOR RISCO",
+      "items": [
+        "Sinais de desidratação significativa: boca muito seca, choro SEM lágrimas, redução/escurecimento da urina",
+        "Incapacidade TOTAL de ingerir líquidos por via oral por período prolongado",
+        "Letargia/prostração excessiva (criança muito sonolenta, apática, pouco reativa)",
+        "Sinais de infecção secundária: pus nas lesões, piora súbita da febre/estado geral após melhora inicial",
+        "Criança IMUNOSSUPRIMIDA"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA E ORIENTAÇÕES",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: desidratação moderada/grave, incapacidade de ingerir líquidos, prostração, infecção secundária, imunossupressão (aciclovir EV)",
+        "ALTA: criança hidratada, aceitando líquidos, dor/febre controladas, pais orientados",
+        "Casa: hidratação fracionada rigorosa, analgesia/antitérmico, dieta leve/fria, evitar ácidos",
+        "Orientar que o quadro é autolimitado (geralmente 7-14 dias) e que o antibiótico não é necessário",
+        "Retorno IMEDIATO se: recusa total de líquidos, sinais de desidratação, prostração, piora após melhora, pus nas lesões"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / ENCAMINHAMENTO",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA ENCAMINHAMENTO",
+      "items": [
+        "Criança ___ anos com gengivoestomatite herpética; febre há ___; lesões orais (vesículas/úlceras) + gengiva edemaciada/sangrante; linfadenopatia ___.",
+        "Aceitação de líquidos ___; sinais de desidratação ___; prostração ___; infecção secundária (pus) ___; imunossupressão ___.",
+        "Conduta: hidratação ___ (VO/EV), analgesia (paracetamol/ibuprofeno), cuidados locais; aciclovir ___ (VO < 72h / EV se não ingere/imunossup.).",
+        "Solicito internação se desidratação/incapacidade de VO/imunossupressão; orientar pais sobre sinais de alarme."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é o agente da gengivoestomatite herpética da infância?",
+      "alternativas": [
+        "Coxsackievírus",
+        "Vírus herpes simplex tipo 1 (HSV-1) — primoinfecção",
+        "Candida albicans",
+        "Streptococcus pyogenes",
+        "Vírus Epstein-Barr"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a complicação mais importante e o maior risco da gengivoestomatite herpética?",
+      "alternativas": [
+        "Pneumonia",
+        "Desidratação (pela dor que impede a ingestão de líquidos)",
+        "Artrite",
+        "Otite",
+        "Convulsão febril"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Como é feito o diagnóstico da gengivoestomatite herpética?",
+      "alternativas": [
+        "Sempre por cultura viral",
+        "Essencialmente CLÍNICO; cultura/PCR só em casos atípicos, graves ou imunossuprimidos",
+        "Por hemocultura",
+        "Por biópsia obrigatória",
+        "Por sorologia de rotina"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Quando o aciclovir oral é mais eficaz na gengivoestomatite herpética?",
+      "alternativas": [
+        "Após 1 semana de sintomas",
+        "Quando iniciado nas primeiras 72h, sobretudo em quadros moderados a graves",
+        "Apenas em casos leves",
+        "Somente por via intravenosa",
+        "Não há benefício do aciclovir"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Por que não se deve prescrever antibiótico de rotina na gengivoestomatite herpética?",
+      "alternativas": [
+        "Porque a doença é bacteriana",
+        "Porque a causa é VIRAL (HSV-1); o antibiótico só se aplica a infecção bacteriana secundária",
+        "Porque o antibiótico piora a febre",
+        "Porque a doença não tem tratamento",
+        "Porque o antibiótico causa desidratação"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A gengivoestomatite herpética é a primoinfecção pelo vírus herpes simplex tipo 1 (HSV-1) na criança, com lesões orais dolorosas e gengivite."},
+    {"resposta": "B", "comentario": "A desidratação é a complicação mais importante: a dor intensa dificulta a ingestão de líquidos, por isso a hidratação é a prioridade do tratamento."},
+    {"resposta": "B", "comentario": "O diagnóstico é essencialmente clínico (febre alta + lesões orais típicas + gengivite); cultura/PCR reservam-se a casos atípicos, graves ou imunossuprimidos."},
+    {"resposta": "B", "comentario": "O aciclovir oral é mais eficaz quando iniciado nas primeiras 72h dos sintomas, especialmente nos quadros moderados a graves, reduzindo a duração e o risco de hospitalização."},
+    {"resposta": "B", "comentario": "A causa é viral (HSV-1), sobre a qual o antibiótico não tem efeito; este só é indicado se houver infecção bacteriana secundária (pus, piora após melhora)."}
+  ]
+}
