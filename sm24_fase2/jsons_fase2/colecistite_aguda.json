@@ -1,0 +1,183 @@
+{
+  "slug": "colecistite_aguda",
+  "titulo": "Colecistite Aguda",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Colecistite aguda na emergência",
+  "chapter_bar": "COLECISTITE AGUDA — TOKYO + COLECISTECTOMIA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ABORDAGEM",
+      "title": "COLECISTITE — MURPHY + US + GRAVIDADE (TOKYO)",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Dor em QSD >6h + Murphy + nauseas/febre\nUS abdominal (exame de escolha)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Tokyo (A+B+C): suporte + jejum + ATB + analgesia", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.25, "y": 0.3, "w": 150, "h": 24, "text": "Risco habitual:\ncolecistectomia VLP\nprecoce (<72h)", "color": "green", "font_size": 5.4},
+        {"id": "d", "x": 0.75, "y": 0.3, "w": 150, "h": 24, "text": "Alto risco/instavel:\ncolecistostomia\npercutanea", "color": "orange", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CLÍNICA",
+      "section_color": "teal",
+      "titulo": "QUADRO TÍPICO",
+      "items": [
+        "Inflamação aguda da vesícula por obstrução do ducto cístico por cálculo -> distensão, isquemia, infecção secundária",
+        "Dor CONTÍNUA em hipocôndrio direito/epigástrio > 6h, piora após alimentação gordurosa, náuseas/vômitos, febre (nem sempre)",
+        "SINAL DE MURPHY positivo (dor à palpação do QSD em inspiração profunda); defesa localizada",
+        "Idoso: quadro atípico, pouca dor e mais sepse — alta suspeição",
+        "Dor + Murphy = pensar fortemente em colecistite"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO (TOKYO GUIDELINES)",
+      "section_color": "navy",
+      "headers": ["Critério", "Achados"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["A — Local", "Dor em QSD + Murphy positivo"],
+        ["B — Sistêmico", "Febre, leucocitose (>12.000), PCR elevada"],
+        ["C — Imagem", "US: cálculo no colo, parede > 3 mm, vesícula distendida, líquido pericolecístico, Murphy US+"],
+        ["Definitivo / Suspeita", "A + B + C = definitivo; A + B = suspeita forte"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "EXAMES",
+      "section_color": "navy",
+      "titulo": "LABORATÓRIO + IMAGEM",
+      "items": [
+        "Hemograma (leucocitose), PCR (gravidade), AST/ALT (ALT > 150 sugere origem biliar), FA/GGT (colestase), bilirrubinas (suspeita de coledocolitíase)",
+        "Amilase/lipase (excluir pancreatite associada); função renal e lactato (gravidade/sepse)",
+        "US abdominal é o exame de ESCOLHA (sensibilidade ~85-90%): rápido e disponível",
+        "TC se US inconclusivo ou suspeita de complicação (necrose, perfuração, abscesso, gás intramural = enfisematosa)",
+        "Laboratório isolado não fecha diagnóstico — reforça"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "GRAVIDADE (TOKYO) DEFINE A CONDUTA",
+      "section_color": "navy",
+      "headers": ["Grau", "Critérios"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["I — Leve", "Sem disfunção orgânica; inflamação local discreta"],
+        ["II — Moderada", "Leucócitos > 18.000, sintomas > 72h, massa palpável, inflamação local importante"],
+        ["III — Grave", "Disfunção orgânica: hipotensão, PaO2/FiO2 < 300, creatinina elevada, rebaixamento"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "SUPORTE + ANALGESIA + ATB + CIRURGIA",
+      "items": [
+        "Suporte: jejum, acesso venoso, hidratação com cristaloide, monitorização, correção eletrolítica",
+        "Analgesia: Dipirona 1 g EV 6/6h; Tramadol 50-100 mg 6-8/8h; Morfina 2-4 mg EV se dor intensa (opioides são seguros)",
+        "ATB leve: Ceftriaxona 1-2 g EV/dia + Metronidazol 500 mg EV 8/8h (ou Amox-clav 1,2 g EV 8/8h)",
+        "ATB moderada: Piperacilina-tazobactam 4,5 g EV 6/6h (ou Cefepime 2 g 12/12h + Metronidazol)",
+        "ATB grave/sepse: Meropenem 1 g EV 8/8h (ou Imipenem); duração 4-7 dias (menor se fonte controlada)",
+        "DEFINITIVO: colecistectomia laparoscópica PRECOCE (ideal < 72h); colecistostomia percutânea se alto risco/instável"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "COMPLICAÇÕES / UTI",
+      "section_color": "red",
+      "titulo": "RECONHECER RÁPIDO",
+      "items": [
+        "Empiema, gangrena, perfuração da vesícula, peritonite biliar, sepse",
+        "Colecistite enfisematosa (gás intramural) — diabéticos, alta mortalidade",
+        "Essas situações podem exigir cirurgia ABERTA de urgência",
+        "UTI: choque, hipoxemia, IRA, lactato elevado, disfunção orgânica",
+        "Suspeita de coledocolitíase associada (bilirrubina/FA altas, via dilatada) -> investigar/CPRE"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com dor em QSD > 6h + Murphy +; febre ___; leucócitos ___; PCR ___.",
+        "US: parede ___ mm, cálculo no colo ___, líquido pericolecístico ___; Tokyo grau ___.",
+        "Condutas: jejum, hidratação, ATB ___ iniciado às ___, analgesia ___.",
+        "Solicito cirurgia geral para colecistectomia precoce (ou colecistostomia se alto risco) / UTI se grau III."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Mulher de 45 anos, obesa, com dor contínua em hipocôndrio direito há 8h após refeição gordurosa, Murphy positivo, leucocitose. Qual o exame de escolha inicial?",
+      "alternativas": [
+        "Tomografia de abdome com contraste",
+        "Ultrassonografia abdominal",
+        "Colangiorressonância (MRCP)",
+        "CPRE diagnóstica",
+        "Cintilografia hepatobiliar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tratamento definitivo de escolha na colecistite aguda de risco cirúrgico habitual?",
+      "alternativas": [
+        "Antibiótico isolado por 6 semanas",
+        "Colecistectomia laparoscópica precoce (ideal até 72h)",
+        "Colecistostomia percutânea em todos",
+        "CPRE com papilotomia",
+        "Apenas dieta sem gordura"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente idoso, alto risco cirúrgico, instável, com colecistite aguda grave. Qual a melhor opção de controle do foco?",
+      "alternativas": [
+        "Colecistectomia aberta imediata",
+        "Colecistostomia percutânea (ponte para cirurgia futura)",
+        "Observação sem intervenção",
+        "CPRE",
+        "Apenas analgesia"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a antibioticoterapia na colecistite aguda, é correto:",
+      "alternativas": [
+        "Não se usa antibiótico em nenhum caso",
+        "Indicada nos casos moderados/graves e nos leves se a cirurgia não for imediata, cobrindo Gram-negativos entéricos (± anaeróbios)",
+        "Sempre com carbapenêmico de início",
+        "Apenas via oral em todos",
+        "Por no mínimo 21 dias sempre"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual achado tomográfico indica colecistite enfisematosa?",
+      "alternativas": [
+        "Espessamento de parede isolado",
+        "Gás intramural na parede da vesícula",
+        "Cálculo no colo",
+        "Líquido pericolecístico",
+        "Dilatação da via biliar"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A ultrassonografia abdominal é o exame de escolha na suspeita de colecistite (sensibilidade ~85-90%, rápida e disponível): mostra cálculo impactado no colo, parede > 3 mm, vesícula distendida, líquido pericolecístico e Murphy ultrassonográfico."},
+    {"resposta": "B", "comentario": "A colecistectomia laparoscópica precoce (idealmente até 72h) é o padrão-ouro, reduzindo complicações e recorrência. A colecistostomia percutânea fica para alto risco cirúrgico/instabilidade."},
+    {"resposta": "B", "comentario": "Em paciente de alto risco cirúrgico/instável, a colecistostomia percutânea drena a vesícula e serve de ponte para a colecistectomia futura, com menor morbidade que a cirurgia de urgência."},
+    {"resposta": "B", "comentario": "O ATB é indicado nos casos moderados/graves e nos leves quando a cirurgia não é imediata, cobrindo Gram-negativos entéricos e anaeróbios nos quadros mais graves; a escolha escalona conforme a gravidade."},
+    {"resposta": "B", "comentario": "O gás intramural na parede da vesícula caracteriza a colecistite enfisematosa, mais comum em diabéticos, com alto risco de gangrena/perfuração e elevada mortalidade — exige cirurgia urgente."}
+  ]
+}

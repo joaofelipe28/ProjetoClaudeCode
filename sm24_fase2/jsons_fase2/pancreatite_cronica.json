@@ -1,0 +1,170 @@
+{
+  "slug": "pancreatite_cronica",
+  "titulo": "Pancreatite Crônica",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Pancreatite crônica e agudização",
+  "chapter_bar": "PANCREATITE CRÔNICA — DOR + IPE + DM 3c",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — TRÊS FRENTES",
+      "title": "PANCREATITE CRÔNICA — DOR, EXÓCRINA E ENDÓCRINA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.88, "w": 205, "h": 22, "text": "Inflamacao cronica irreversivel (fibrose)\nimagem: calcificacoes/atrofia/dilatacao ductal", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.22, "y": 0.45, "w": 135, "h": 24, "text": "DOR: escalonada\n+ neuropatica\n(amitript./pregab.)", "color": "orange", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.45, "w": 135, "h": 24, "text": "EXOCRINA:\nenzimas +\nvit. ADEK", "color": "teal", "font_size": 5.6},
+        {"id": "d", "x": 0.78, "y": 0.45, "w": 135, "h": 24, "text": "ENDOCRINA:\nDM tipo 3c\n(insulina)", "color": "purple", "font_size": 5.6},
+        {"id": "e", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Abstinencia de alcool + cessar tabagismo (obrigatorio)", "color": "red", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["b", "e"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E ETIOLOGIA (TIGAR-O)",
+      "section_color": "teal",
+      "titulo": "DOENÇA CRÔNICA IRREVERSÍVEL",
+      "items": [
+        "Inflamação persistente com fibrose irreversível -> perda estrutural e funcional, dor crônica, má digestão, desnutrição e diabetes pancreatogênico (CID K86.1)",
+        "TIGAR-O: Tóxico-metabólica (ÁLCOOL principal; tabagismo acelera independentemente), Idiopática, Genética (PRSS1/SPINK1/CFTR), Autoimune (IgG4), Recorrente, Obstrutiva",
+        "Dor: epigástrica, profunda, irradiada ao dorso, pós-prandial, alívio ao inclinar para frente; pode tornar-se neuropática centralizada",
+        "Insuficiência exócrina (IPE): esteatorreia (> 7 g/dia), diarreia, perda ponderal, deficiência de vitaminas lipossolúveis",
+        "Insuficiência endócrina: diabetes tipo 3c (alta variabilidade, hipoglicemias, má resposta a orais)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO",
+      "section_color": "navy",
+      "titulo": "IMAGEM + FUNCIONAL",
+      "items": [
+        "Imagem (base): TC contrastada (calcificações, atrofia, dilatação ductal); RM/MRCP (ductal detalhado); EUS na doença precoce (critérios de Rosemont)",
+        "Funcional exócrina: elastase fecal < 200 µg/g = insuficiência; < 100 µg/g = grave",
+        "Funcional endócrina: glicemia, HbA1c",
+        "Diferenciar dor nociceptiva x neuropática (muda o tratamento)",
+        "Rastrear complicações e risco aumentado de câncer de pâncreas"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO DA DOR — ESCALONADO",
+      "section_color": "orange",
+      "titulo": "SIMPLES -> NEUROPÁTICO -> REFRATÁRIO",
+      "items": [
+        "Simples: Dipirona 1 g VO/EV 6/6h; Paracetamol 750-1000 mg 6-8/8h",
+        "Opioides fracos: Tramadol 50-100 mg 8/8h; Codeína 30-60 mg 6/6h",
+        "Dor NEUROPÁTICA (essencial): Amitriptilina 10-25 mg à noite (até 75 mg); Gabapentina 300 mg/noite titulando até 8/8h; Pregabalina 75-150 mg 12/12h",
+        "Refratária: opioide forte (cautela); bloqueio do plexo celíaco (EUS-guiado); avaliação cirúrgica precoce",
+        "EVITAR AINE crônico; abstinência de álcool e cessação do tabagismo são OBRIGATÓRIAS"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INSUFICIÊNCIA EXÓCRINA E ENDÓCRINA",
+      "section_color": "navy",
+      "headers": ["Frente", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Exócrina (IPE)", "Reposição enzimática pancreática; dieta normocalórica/hiperproteica fracionada (5-6x); NÃO restringir gordura se enzimas adequadas; repor vit. A/D/E/K, cálcio+D, zinco/Mg"],
+        ["Endócrina (DM 3c)", "Preferir INSULINA (basal-bolus/NPH); alto risco de hipoglicemia; EVITAR sulfonilureias; metformina só se tolerada e sem desnutrição"],
+        ["Endoscopia", "Cálculos/estenoses ductais, drenagem de pseudocisto, bloqueio do plexo celíaco"],
+        ["Cirurgia", "Dor refratária, ducto dilatado, complicações: Puestow, Frey, Beger (melhora dor/qualidade de vida)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "AGUDIZAÇÃO NA EMERGÊNCIA + COMPLICAÇÕES",
+      "section_color": "red",
+      "titulo": "NO PS",
+      "items": [
+        "Agudização: analgesia EV, hidratação venosa, antieméticos, jejum relativo",
+        "EXCLUIR pancreatite aguda, pseudocisto e infecção (não atribuir tudo à dor crônica)",
+        "Complicações: pseudocistos, estenose biliar, trombose esplênica, ascite pancreática, osteopenia, CÂNCER de pâncreas",
+        "Controle glicêmico cuidadoso (risco de hipoglicemia no DM 3c)",
+        "Apoio multidisciplinar; educação sobre a cronicidade da doença"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com pancreatite crônica (etiologia ___) em agudização dolorosa / complicação ___.",
+        "Dor ___ (nociceptiva/neuropática) refratária; vômitos ___; icterícia ___; glicemia ___.",
+        "Condutas: analgesia EV ___, hidratação, antiemético; exclusão de pancreatite aguda/pseudocisto/infecção.",
+        "Solicito avaliação de gastro/cirurgia (dor refratária, possível endoscopia/cirurgia) ± UTI; transporte com monitorização e atenção a hipoglicemia."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Qual é a principal causa de pancreatite crônica, e qual fator acelera a progressão de forma independente?",
+      "alternativas": [
+        "Hipertrigliceridemia; obesidade",
+        "Álcool (principal); tabagismo (fator independente)",
+        "Litíase biliar; sedentarismo",
+        "Autoimune; dieta",
+        "Genética; cafeína"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual exame funcional confirma insuficiência pancreática exócrina?",
+      "alternativas": [
+        "Amilase sérica",
+        "Elastase fecal < 200 µg/g (< 100 = grave)",
+        "Lipase sérica",
+        "HbA1c",
+        "Bilirrubina total"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre o diabetes pancreatogênico (tipo 3c) na pancreatite crônica, é correto:",
+      "alternativas": [
+        "Tratar preferencialmente com sulfonilureias",
+        "Preferir insulina, com atenção ao alto risco de hipoglicemia e evitando sulfonilureias",
+        "Não necessita tratamento",
+        "Metformina em altas doses para todos",
+        "É idêntico ao DM tipo 1 no manejo"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "No manejo da dor neuropática da pancreatite crônica, qual classe é essencial?",
+      "alternativas": [
+        "AINEs em uso crônico",
+        "Antidepressivos tricíclicos (amitriptilina) e/ou gabapentinoides (gabapentina/pregabalina)",
+        "Corticoides orais",
+        "Antibióticos",
+        "Inibidores de bomba de prótons isolados"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Paciente com pancreatite crônica conhecida chega ao PS com agudização dolorosa. Além de analgesia e hidratação, o que é fundamental?",
+      "alternativas": [
+        "Atribuir toda a dor à doença crônica e dar alta",
+        "Excluir pancreatite aguda, pseudocisto e infecção",
+        "Iniciar antibiótico de rotina",
+        "Suspender insulina",
+        "Indicar cirurgia imediata em todos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O álcool é a principal causa de pancreatite crônica, e o tabagismo acelera a progressão de forma independente — daí a abstinência alcoólica e a cessação do tabagismo serem obrigatórias."},
+    {"resposta": "B", "comentario": "A elastase fecal < 200 µg/g confirma insuficiência pancreática exócrina (< 100 µg/g indica forma grave), orientando a reposição enzimática."},
+    {"resposta": "B", "comentario": "No DM tipo 3c prefere-se insulina, com atenção ao alto risco de hipoglicemia; evitam-se sulfonilureias e a metformina só é usada se tolerada e sem desnutrição."},
+    {"resposta": "B", "comentario": "A dor neuropática da pancreatite crônica é tratada com tricíclicos (amitriptilina) e/ou gabapentinoides (gabapentina/pregabalina); evita-se o uso crônico de AINEs."},
+    {"resposta": "B", "comentario": "Na agudização é fundamental excluir pancreatite aguda, pseudocisto e infecção — não se deve atribuir toda a dor à cronicidade sem investigar complicações."}
+  ]
+}

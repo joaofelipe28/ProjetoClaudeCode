@@ -1,0 +1,170 @@
+{
+  "slug": "colangite_aguda",
+  "titulo": "Colangite Aguda",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Colangite aguda na emergência",
+  "chapter_bar": "COLANGITE AGUDA — ATB + DRENAGEM BILIAR",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — OBSTRUÇÃO + INFECÇÃO",
+      "title": "COLANGITE — RESSUSCITAR, ATB E DRENAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Charcot (dor HD + febre + ictericia)\nABCDE + hemoculturas x2 + ATB EV IMEDIATO", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Gravidade (Tokyo): leve / moderada / grave", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.28, "y": 0.3, "w": 150, "h": 26, "text": "Grave (III):\ndrenagem biliar\nURGENTE (CPRE)", "color": "red", "font_size": 5.4},
+        {"id": "d", "x": 0.72, "y": 0.3, "w": 150, "h": 26, "text": "Leve/moderada:\nATB + reavaliar;\ndrenar se nao melhora", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CLÍNICA",
+      "section_color": "teal",
+      "titulo": "OBSTRUÇÃO + INFECÇÃO BILIAR",
+      "items": [
+        "Infecção do sistema biliar por obstrução do fluxo (coledocolitíase, estenose, neoplasia) com infecção ascendente — potencialmente grave",
+        "TRÍADE DE CHARCOT: dor em HD/epigástrio + febre/calafrios + icterícia (ausência de um componente NÃO afasta)",
+        "PÊNTADE DE REYNOLDS (grave): Charcot + hipotensão/choque + alteração do nível de consciência",
+        "Fatores: idade avançada, colelitíase, CPRE/prótese prévias, estenoses, neoplasia periampular, imunossupressão",
+        "Laboratório: leucocitose variável, colestase (BT, FA, GGT), PCR elevada"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "GRAVIDADE (TOKYO) E URGÊNCIA DA DRENAGEM",
+      "section_color": "navy",
+      "headers": ["Grau", "Critério / drenagem"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["I — Leve", "Sem critérios de gravidade -> ATB e observação; drenar se não regredir"],
+        ["II — Moderada", "Alto risco (leucocitose intensa, febre alta, BT elevada, idade) -> drenagem precoce se sem melhora em 24-48h"],
+        ["III — Grave", "Disfunção orgânica (CV, neuro, resp, renal, coagulopatia) -> drenagem URGENTE + reanimação"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONDUTA IMEDIATA NO PS",
+      "section_color": "red",
+      "titulo": "TEMPO É BILE INFECTADA",
+      "items": [
+        "ABCDE: O2 se SatO2 < 94%; monitorização; acesso calibroso + reposição volêmica (protocolo de sepse)",
+        "HEMOCULTURAS x2 antes do ATB (se não atrasar a terapia)",
+        "ATB empírico EV IMEDIATO (não aguardar imagem para iniciar)",
+        "Analgesia (Dipirona/Paracetamol; opioide com cautela hemodinâmica) + antiemético",
+        "Internar TODOS; UTI se disfunção orgânica/choque/necessidade de vasopressor"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIOTICOTERAPIA EMPÍRICA",
+      "section_color": "orange",
+      "titulo": "COBRIR GRAM-NEGATIVOS ENTÉRICOS (± ANAERÓBIOS)",
+      "items": [
+        "Opção 1 (maioria): Piperacilina-tazobactam 4,5 g EV 6-8/8h",
+        "Opção 2: Ceftriaxona 1-2 g EV/dia + Metronidazol 500 mg EV 8/8h",
+        "Opção 3 (choque/risco ESBL/nosocomial): Meropenem 1 g EV 8/8h",
+        "Alergia grave a beta-lactâmico: Ciprofloxacino 400 mg EV 12/12h + Metronidazol 500 mg EV 8/8h",
+        "Duração 4-7 dias após drenagem adequada; descalonar conforme cultura; ajustar à função renal",
+        "Pediatria: Ceftriaxona 50-75 mg/kg/dia (máx 2 g/dose); transferir para centro com CPRE pediátrica"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DRENAGEM BILIAR — DEFINITIVA",
+      "section_color": "purple",
+      "titulo": "TIMING GUIADO PELA GRAVIDADE",
+      "items": [
+        "CPRE é o método de ESCOLHA (papilotomia, extração de cálculo, stent); melhores resultados nas primeiras 24-48h",
+        "Grau III (grave): drenagem URGENTE assim que minimamente estabilizado (não adiar pela instabilidade não corrigida)",
+        "Grau II: ATB + reavaliar; drenagem precoce se sem melhora em 24-48h",
+        "Grau I: tratamento clínico e observação; drenar se não houver regressão",
+        "Drenagem percutânea trans-hepática se CPRE inviável (anatomia alterada, falha técnica, instabilidade extrema)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com Charcot (dor HD + febre + icterícia); Reynolds (choque/confusão): ___.",
+        "Sinais vitais ___; BT/FA/GGT ___; leucócitos ___; lactato ___; Tokyo grau ___.",
+        "Hemoculturas x2 ___; ATB ___ iniciado às ___; volume EV ___; vasopressor ___.",
+        "Solicito: ( ) CPRE URGENTE (Grade III) ( ) CPRE 24-48h (Grade II sem melhora) + UTI conforme disfunção orgânica."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com colangite aguda grave (disfunção orgânica/choque). Após início de ATB e ressuscitação, qual a conduta determinante para o prognóstico?",
+      "alternativas": [
+        "Aguardar 72h de antibiótico antes de qualquer intervenção",
+        "Drenagem biliar urgente (CPRE) assim que minimamente estabilizado",
+        "Colecistectomia aberta imediata",
+        "Apenas observação clínica",
+        "Repetir hemoculturas seriadas antes de drenar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual a sequência correta na conduta imediata da colangite aguda no PS?",
+      "alternativas": [
+        "Drenar primeiro, depois antibiótico",
+        "Hemoculturas + antibiótico EV imediato + ressuscitação, com drenagem biliar conforme a gravidade",
+        "Apenas analgesia e alta",
+        "Antibiótico oral ambulatorial",
+        "Aguardar colangiorressonância antes de qualquer medida"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual esquema antibiótico empírico é adequado para a maioria dos casos de colangite aguda comunitária?",
+      "alternativas": [
+        "Azitromicina oral",
+        "Piperacilina-tazobactam EV (ou ceftriaxona + metronidazol)",
+        "Vancomicina isolada",
+        "Nenhum antibiótico",
+        "Fluconazol"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "A pêntade de Reynolds (colangite grave) acrescenta à tríade de Charcot:",
+      "alternativas": [
+        "Colúria e acolia",
+        "Hipotensão/choque e alteração do nível de consciência",
+        "Prurido e emagrecimento",
+        "Vômitos e diarreia",
+        "Massa palpável"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Qual é o método de escolha para a drenagem biliar na colangite aguda?",
+      "alternativas": [
+        "Colecistectomia laparoscópica",
+        "CPRE (colangiopancreatografia endoscópica)",
+        "Drenagem percutânea de rotina",
+        "Laparotomia exploradora",
+        "Sonda nasobiliar às cegas"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na colangite grave (Grade III), a drenagem biliar urgente (CPRE) assim que o paciente esteja minimamente estabilizado é determinante — não se deve adiar pela instabilidade não corrigida. ATB e ressuscitação são adjuvantes."},
+    {"resposta": "B", "comentario": "A conduta imediata é hemoculturas x2 + antibiótico EV imediato + ressuscitação volêmica (protocolo de sepse), com a drenagem biliar programada conforme a gravidade (urgente no grau III)."},
+    {"resposta": "B", "comentario": "Piperacilina-tazobactam (ou ceftriaxona + metronidazol) cobre os Gram-negativos entéricos e anaeróbios típicos; carbapenêmico (meropenem) reserva-se a choque/risco de ESBL/infecção nosocomial."},
+    {"resposta": "B", "comentario": "A pêntade de Reynolds = tríade de Charcot (dor HD + febre + icterícia) + hipotensão/choque + alteração do nível de consciência, indicando colangite grave (Grade III)."},
+    {"resposta": "B", "comentario": "A CPRE é o método de escolha para drenagem biliar (papilotomia, extração de cálculo, stent), com melhores resultados nas primeiras 24-48h; a percutânea fica para quando a CPRE é inviável."}
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "slug": "pancreatite_aguda",
+  "titulo": "Pancreatite Aguda",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Pancreatite aguda na emergência",
+  "chapter_bar": "PANCREATITE AGUDA — ATLANTA + RINGER",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — DIAGNÓSTICO E SUPORTE",
+      "title": "PANCREATITE — 2 DE 3 + RESSUSCITAÇÃO GUIADA",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Dor epigastrica em faixa + lipase >=3x LSN\n(2 de 3: clinica / lipase / imagem)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.6, "w": 205, "h": 20, "text": "Ringer Lactato guiado por metas + analgesia + nutricao precoce", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.32, "w": 205, "h": 22, "text": "Estratificar (Atlanta/BISAP) + investigar etiologia (US)", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.5, "y": 0.1, "w": 200, "h": 16, "text": "Biliar + colangite/obstrucao -> CPRE <24h", "color": "purple", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DIAGNÓSTICO E ETIOLOGIA",
+      "section_color": "teal",
+      "titulo": "2 DE 3 CRITÉRIOS",
+      "items": [
+        "Necessário >= 2 de 3: (1) dor abdominal típica (epigástrica, súbita, intensa, contínua, irradiação dorsal); (2) lipase >= 3x LSN; (3) imagem compatível",
+        "LIPASE é o marcador padrão-ouro (amilase é secundária); TC NÃO é obrigatória se clínica + lab claros",
+        "Etiologia: BILIAR 40-50% (ALT > 150 forte preditor), ÁLCOOL 25-30%, HIPERTRIGLICERIDEMIA 5-10%, pós-CPRE, medicamentosa, idiopática",
+        "Investigação nas primeiras 24h: US abdome (obrigatório), AST/ALT, triglicerídeos, cálcio, história medicamentosa/etílica",
+        "Conceito 2025: é uma síndrome inflamatória SISTÊMICA com risco tempo-dependente"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "GRAVIDADE (ATLANTA) — DINÂMICA",
+      "section_color": "navy",
+      "headers": ["Classe", "Definição"],
+      "header_colors": ["navy", "red"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Leve", "Sem falência orgânica e sem complicações locais"],
+        ["Moderadamente grave", "Falência orgânica TRANSITÓRIA (< 48h) e/ou complicações locais (coleções)"],
+        ["Grave", "Falência orgânica PERSISTENTE (> 48h): resp (PaO2/FiO2 < 300), renal (Cr >= 1,9), CV (vasopressor)"],
+        ["Risco (24h)", "BISAP >= 3, SIRS persistente, BUN em elevação, lactato alto, hipoxemia, idade > 60, IMC > 30"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "MANEJO INICIAL — PRIMEIRAS 6h (TIME-CRITICAL)",
+      "section_color": "orange",
+      "titulo": "FLUIDO GUIADO + ANALGESIA + NUTRIÇÃO",
+      "items": [
+        "FLUIDOTERAPIA: Ringer Lactato (preferencial), ressuscitação MODERADA e guiada por METAS — NÃO agressiva indiscriminada",
+        "  Metas: PAM >= 65, FC < 120, diurese >= 0,5 mL/kg/h, lactato em queda, hematócrito 35-44%",
+        "  Excesso de fluido aumenta SDRA, edema pulmonar e síndrome compartimental abdominal",
+        "ANALGESIA: opioides EV (morfina, fentanil) + multimodal — opioides NÃO pioram desfechos",
+        "O2 se SatO2 < 94%; avaliar risco de SDRA; gasometria se desconforto respiratório",
+        "NUTRIÇÃO ENTERAL PRECOCE (< 24-48h): dieta oral se tolerada; SNG/nasojejunal se intolerância; parenteral é último recurso"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O QUE NÃO FAZER / PONTOS DE PROVA",
+      "section_color": "red",
+      "titulo": "ARMADILHAS",
+      "items": [
+        "ATB profilático NÃO é indicado; usar apenas se colangite, sepse comprovada ou NECROSE INFECTADA (PCR alta isolada ≠ ATB)",
+        "TC com contraste NÃO de rotina < 48h; melhor janela 72-96h (diagnóstico incerto, piora, suspeita de necrose)",
+        "Jejum prolongado está PROSCRITO (nutrição precoce reduz infecção, falência orgânica e mortalidade)",
+        "Necrose ESTÉRIL: conservador; INFECTADA: abordagem escalonada (ATB -> drenagem -> cirurgia), evitar cirurgia precoce",
+        "Hipertrigliceridemia (TG > 1000): insulina EV ± plasmaférese em casos selecionados"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PANCREATITE BILIAR E SEGUIMENTO",
+      "section_color": "navy",
+      "titulo": "CPRE E COLECISTECTOMIA",
+      "items": [
+        "CPRE URGENTE (< 24h) se: colangite, obstrução biliar persistente, icterícia + colestase + dilatação de via biliar",
+        "Colecistectomia: pancreatite biliar LEVE -> na MESMA internação; grave -> após estabilização",
+        "Laboratórios seriados: BUN, creatinina, hematócrito, PCR (monitorização)",
+        "Complicações locais: necrose estéril/infectada, coleções, pseudocisto; sistêmicas: SDRA, IRA, choque, coagulopatia, hiperglicemia",
+        "Reavaliar a gravidade DIARIAMENTE nas primeiras 72h (é dinâmica)"
+      ],
+      "accent": "navy"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com dor epigástrica em faixa; lipase ___x LSN; etiologia provável: ___ (biliar/álcool/TG).",
+        "Gravidade (Atlanta): ___; BISAP ___; SIRS ___; falência orgânica ___; lactato ___.",
+        "Condutas: Ringer Lactato guiado por metas (diurese ___), analgesia opioide ___, nutrição ___; ATB só se ___.",
+        "Solicito UTI se falência orgânica persistente; CPRE < 24h se colangite/obstrução; transporte com monitorização."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Sobre a fluidoterapia atual na pancreatite aguda, é correto:",
+      "alternativas": [
+        "Ressuscitação agressiva e indiscriminada com grandes volumes para todos",
+        "Ringer Lactato em ressuscitação moderada e guiada por metas (PAM, diurese, lactato, hematócrito)",
+        "Restrição hídrica desde a admissão",
+        "Soro glicosado a 5% como primeira escolha",
+        "Apenas hidratação oral em todos os casos"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o marcador laboratorial padrão-ouro para o diagnóstico de pancreatite aguda?",
+      "alternativas": [
+        "Amilase",
+        "Lipase >= 3x o limite superior da normalidade",
+        "PCR",
+        "Bilirrubina total",
+        "Lactato"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Sobre antibiótico na pancreatite aguda, é correto:",
+      "alternativas": [
+        "Profilaxia para todos desde a admissão",
+        "Não usar profilaxia; reservar para colangite, sepse comprovada ou necrose infectada",
+        "Sempre que a PCR estiver elevada",
+        "Apenas se a amilase estiver alta",
+        "Carbapenêmico de rotina em todos"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Sobre a nutrição na pancreatite aguda (paradigma atual), é correto:",
+      "alternativas": [
+        "Jejum absoluto prolongado até normalização das enzimas",
+        "Nutrição enteral precoce (< 24-48h), com dieta oral se tolerada",
+        "Nutrição parenteral total de primeira escolha",
+        "Restrição proteica rigorosa",
+        "Dieta apenas após a TC de controle"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Em qual situação a CPRE urgente (< 24h) está indicada na pancreatite biliar?",
+      "alternativas": [
+        "Toda pancreatite biliar",
+        "Pancreatite biliar com colangite ou obstrução biliar persistente",
+        "Pancreatite leve sem icterícia",
+        "Apenas quando a amilase normaliza",
+        "Nunca está indicada"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A conduta atual usa Ringer Lactato em ressuscitação MODERADA e guiada por metas (PAM >= 65, diurese >= 0,5 mL/kg/h, lactato em queda, hematócrito 35-44%); o excesso de fluido aumenta SDRA e síndrome compartimental."},
+    {"resposta": "B", "comentario": "A lipase >= 3x o LSN é o marcador padrão-ouro; a amilase é secundária. O diagnóstico exige 2 de 3: clínica típica, lipase elevada ou imagem compatível."},
+    {"resposta": "B", "comentario": "Não se faz profilaxia antibiótica; o ATB é reservado a colangite, sepse comprovada ou necrose pancreática infectada. PCR elevada isolada não indica antibiótico."},
+    {"resposta": "B", "comentario": "O paradigma atual é a nutrição enteral precoce (< 24-48h), com dieta oral se tolerada — reduz infecção, falência orgânica e mortalidade. O jejum prolongado foi abandonado."},
+    {"resposta": "B", "comentario": "A CPRE urgente (< 24h) é indicada na pancreatite biliar com colangite associada ou obstrução biliar persistente (icterícia + colestase + via dilatada), não em toda pancreatite biliar."}
+  ]
+}

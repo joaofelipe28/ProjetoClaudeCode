@@ -1,0 +1,168 @@
+{
+  "slug": "coledocolitiase",
+  "titulo": "Coledocolitíase",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Coledocolitíase na emergência",
+  "chapter_bar": "COLEDOCOLITÍASE — PROBABILIDADE + CPRE",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXOGRAMA — ESTRATIFICAR PROBABILIDADE",
+      "title": "COLEDOCOLITÍASE — PROBABILIDADE GUIA A INVESTIGAÇÃO",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.9, "w": 205, "h": 22, "text": "Suspeita: dor biliar + colestase/icterícia\nUS + bilirrubinas/FA/GGT", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.22, "y": 0.5, "w": 140, "h": 26, "text": "ALTA prob:\nictericia+via dilatada/\ncalculo/colangite\n-> CPRE", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.5, "y": 0.5, "w": 140, "h": 24, "text": "INTERMEDIARIA:\nColangioRM ou EUS\npara confirmar", "color": "orange", "font_size": 5.4},
+        {"id": "d", "x": 0.78, "y": 0.5, "w": 140, "h": 24, "text": "BAIXA:\nobservar / imagem\nnao invasiva", "color": "green", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"]]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E APRESENTAÇÃO",
+      "section_color": "teal",
+      "titulo": "CÁLCULO NO COLÉDOCO",
+      "items": [
+        "Cálculo no ducto colédoco -> obstrução biliar parcial/total; 10-20% dos portadores de colelitíase",
+        "Icterícia OBSTRUTIVA: icterícia progressiva, COLÚRIA e ACOLIA fecal",
+        "Colestase isolada: prurido, elevação de FA/GGT",
+        "Pode complicar com COLANGITE (Charcot: dor HD + febre + icterícia) ou PANCREATITE biliar",
+        "Reynolds (colangite grave): Charcot + choque + alteração do nível de consciência"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "IMAGEM",
+      "section_color": "navy",
+      "headers": ["Exame", "Papel"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.24, 0.76],
+      "rows": [
+        ["US abdominal", "1ª linha; sensível para DILATAÇÃO (> 6 mm); detecção direta do cálculo só ~50-70%"],
+        ["ColangioRM (MRCP)", "Alta sensibilidade/especificidade; não invasiva — define necessidade de terapia"],
+        ["EUS", "Altíssima sensibilidade para cálculos pequenos (< 5 mm); útil se US inconclusivo"],
+        ["CPRE", "Diagnóstica E terapêutica — indicar quando alta probabilidade/colangite (não só como exame)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ESTRATIFICAÇÃO DE PROBABILIDADE",
+      "section_color": "purple",
+      "titulo": "GUIA A CONDUTA",
+      "items": [
+        "ALTA (-> CPRE terapêutica): icterícia obstrutiva + via dilatada/cálculo visível; colangite (independe da imagem); pancreatite biliar com obstrução persistente",
+        "INTERMEDIÁRIA: enzimas alteradas sem icterícia clara, ou US com dilatação sem cálculo -> ColangioRM/EUS para confirmar",
+        "BAIXA: dor biliar isolada com exames normais e US sem dilatação -> observar / imagem não invasiva antes da CPRE",
+        "Evitar CPRE puramente diagnóstica (risco de pancreatite pós-CPRE)"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO",
+      "section_color": "orange",
+      "titulo": "CONDUTA NO PS + TERAPIA DEFINITIVA",
+      "items": [
+        "Inicial: estabilização, jejum (se previsão de endoscopia/cirurgia), analgesia e antiemético; hemoculturas se febre/colangite",
+        "Analgesia: Dipirona 1 g EV 6-8/8h; Tramadol 50-100 mg 8/8h; Ondansetrona 4 mg EV ou Metoclopramida 10 mg EV",
+        "ATB: NÃO de rotina se sem infecção; se COLANGITE -> Pipe-tazo 4,5 g 6-8/8h ou Ceftriaxona 2 g/dia + Metronidazol 500 mg 8/8h",
+        "DEFINITIVO: CPRE com papilotomia + extração (balão/cesto) ± litotripsia ± stent temporário",
+        "  CPRE urgente: colangite, obstrução com sepse, pancreatite com obstrução persistente; precoce (24-72h): icterícia obstrutiva significativa",
+        "Alternativas: exploração cirúrgica do colédoco; drenagem trans-hepática percutânea se CPRE inviável",
+        "COLECISTECTOMIA após resolução — idealmente na MESMA internação — para prevenir recorrência"
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INTERNAÇÃO x ALTA",
+      "titulo": "DECISÃO",
+      "items": [
+        "INTERNAR: icterícia obstrutiva sintomática, dor não controlada, suspeita de colangite/infecção, pancreatite associada, comorbidades",
+        "ALTA do PS apenas se: sintomas leves, sem icterícia nem alteração laboratorial, com acesso e retorno rápido",
+        "Plano de seguimento/colecistectomia sempre definido na alta",
+        "Complicações da CPRE: pancreatite pós-CPRE, sangramento pós-esfinterotomia, perfuração, cálculo residual",
+        "Diferencie de colecistite: coledocolitíase causa colestase/icterícia e pode evoluir para colangite/pancreatite"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "MODELO DE REGULAÇÃO / TRANSFERÊNCIA",
+      "section_color": "orange",
+      "titulo": "RESUMO PARA REGULAÇÃO",
+      "items": [
+        "Paciente ___ anos com dor biliar + icterícia ___; colúria/acolia ___; febre ___ (colangite?).",
+        "Bilirrubinas ___, FA/GGT ___, amilase/lipase ___; US: via biliar ___ mm, cálculo ___; probabilidade: alta/intermediária.",
+        "Hemoculturas ___; ATB (se colangite) ___ às ___; analgesia/antiemético.",
+        "Solicito: ( ) CPRE urgente (colangite/sepse) ( ) CPRE 24-72h (icterícia obstrutiva) ( ) avaliação cirúrgica / UTI."
+      ],
+      "accent": "orange"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "USP-SP / Adaptada",
+      "enunciado": "Paciente com icterícia obstrutiva, US com via biliar dilatada e cálculo visível no colédoco, sem febre. Qual a conduta definitiva de escolha?",
+      "alternativas": [
+        "Colecistectomia isolada",
+        "CPRE terapêutica (papilotomia + extração do cálculo)",
+        "Apenas antibiótico",
+        "Observação ambulatorial",
+        "Colangiorressonância seriada"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com enzimas hepáticas alteradas, sem icterícia clara, US com discreta dilatação biliar sem cálculo visível (probabilidade intermediária). Qual o próximo passo?",
+      "alternativas": [
+        "CPRE diagnóstica imediata",
+        "Colangiorressonância (MRCP) ou EUS para confirmar antes de CPRE",
+        "Cirurgia exploradora imediata",
+        "Alta sem investigação",
+        "Antibiótico empírico prolongado"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Após resolução endoscópica da coledocolitíase em paciente com vesícula calculosa, qual a conduta para prevenir recorrência?",
+      "alternativas": [
+        "Apenas dieta",
+        "Colecistectomia, idealmente na mesma internação",
+        "Repetir CPRE eletiva",
+        "Ácido ursodesoxicólico por toda a vida",
+        "Nenhuma medida adicional"
+      ]
+    },
+    {
+      "source": "UNIFESP / Adaptada",
+      "enunciado": "Qual a tríade de Charcot, que sugere colangite na coledocolitíase?",
+      "alternativas": [
+        "Dor + vômito + diarreia",
+        "Dor em hipocôndrio direito + febre + icterícia",
+        "Febre + hipotensão + confusão",
+        "Icterícia + prurido + colúria",
+        "Dor + massa + emagrecimento"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Sobre a sensibilidade do US para coledocolitíase, é correto:",
+      "alternativas": [
+        "Detecta diretamente o cálculo no colédoco em quase 100% dos casos",
+        "É sensível para a dilatação da via biliar, mas a detecção direta do cálculo é de apenas ~50-70%",
+        "É o exame definitivo, dispensando outros",
+        "Não avalia a via biliar",
+        "Substitui sempre a colangiorressonância"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Com alta probabilidade (icterícia obstrutiva + cálculo/via dilatada), a CPRE terapêutica (papilotomia + extração) é o método de escolha. A colecistectomia é feita depois, para prevenir recorrência."},
+    {"resposta": "B", "comentario": "Na probabilidade intermediária, confirma-se com ColangioRM (MRCP) ou EUS antes de submeter o paciente à CPRE, que tem risco de pancreatite pós-procedimento e não deve ser apenas diagnóstica."},
+    {"resposta": "B", "comentario": "A colecistectomia, idealmente na mesma internação após resolução da obstrução, previne a recorrência em pacientes com vesícula calculosa concomitante."},
+    {"resposta": "B", "comentario": "A tríade de Charcot é dor em hipocôndrio direito + febre + icterícia, sugestiva de colangite. A tríade de Reynolds acrescenta choque e confusão (colangite grave)."},
+    {"resposta": "B", "comentario": "O US é sensível para a dilatação da via biliar, mas a detecção direta do cálculo no colédoco é de apenas ~50-70% e operador-dependente — daí o papel da ColangioRM/EUS na confirmação."}
+  ]
+}
