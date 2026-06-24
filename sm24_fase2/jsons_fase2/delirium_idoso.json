@@ -1,0 +1,179 @@
+{
+  "slug": "delirium_idoso",
+  "titulo": "Delirium no Idoso",
+  "especialidade": "PSIQUIATRIA",
+  "chapter_subject": "Delirium no Idoso — Diagnóstico e Prevenção",
+  "chapter_bar": "DELIRIUM — CAM + TRATAR CAUSA",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E IMPACTO",
+      "section_color": "teal",
+      "titulo": "O QUE É DELIRIUM",
+      "items": [
+        "Distúrbio agudo de atenção e cognição com curso flutuante — síndrome de disfunção cerebral aguda",
+        "Características: início agudo, flutuação, déficit de atenção, desorganização do pensamento, alteração de consciência",
+        "Prevalência: 14-56% dos idosos hospitalizados; 60-80% em UTI",
+        "Desfechos: aumento de mortalidade, tempo de internação, demência acelerada, institucionalização",
+        "Subtipos: hiperativo (20% — agitação), hipoativo (25% — mais subdiagnosticado), misto (55%)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAM — CONFUSION ASSESSMENT METHOD",
+      "section_color": "navy",
+      "headers": ["Critério", "Como avaliar", "Resultado"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.50, 0.22],
+      "rows": [
+        ["1. Início agudo e flutuante", "Mudança aguda do estado mental basal, com flutuação ao longo do dia", "Presença = 1"],
+        ["2. Desatenção (OBRIGATÓRIO)", "Dificuldade de concentração: contar meses ao contrário, segurar atenção", "Presença = 1"],
+        ["3. Pensamento desorganizado", "Discurso incoerente, muda de assunto, ideias ilógicas", "Presença = 1"],
+        ["4. Alteração de consciência", "Qualquer estado além de alerta normal (hipervigilante, letárgico, estupuroso)", "Presença = 1"],
+        ["Diagnóstico CAM+", "1 + 2 (obrigatórios) + 3 OU 4", "Sensib. 94%, Especif. 89%"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS DO DELIRIUM — MNEMÔNICO I-WATCH-DEATH",
+      "section_color": "orange",
+      "headers": ["Causa", "Exemplos"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.35, 0.65],
+      "rows": [
+        ["Infecção", "Pneumonia, ITU, sepse, meningite, endocardite"],
+        ["Withdrawal (abstinência)", "Álcool (DT), benzodiazepínicos, opioides"],
+        ["Acute metabolic", "Uremia, DRC, Na, Ca, glicose, hepática, tiroidiana"],
+        ["Trauma / TCE", "Fratura de quadril, trauma craniano, pós-cirúrgico"],
+        ["CNS pathology", "AVC, meningite, encefalite, tumor cerebral"],
+        ["Hypoxia / Hipoperfusão", "PCR, IC, TEP, anemia grave, DPOC"],
+        ["Drugs / Deficiências", "Opioides, BZD, anticolinérgicos, corticoide; B12, tiamina"],
+        ["Endocrine / Environment", "Hipertireoidismo, insuf. adrenal; imobilização, sonda, cateter"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DROGAS QUE CAUSAM DELIRIUM — BEERS LIST",
+      "section_color": "red",
+      "titulo": "SUSPENDER OU REDUZIR",
+      "items": [
+        "Anticolinérgicos: prometazina, difenidramina, biperideno, escopolamina, oxibutinina",
+        "Benzodiazepínicos: diazepam, midazolam, lorazepam (especialmente em idosos)",
+        "Opioides: morfina, codeína (especialmente metabólitos em IR)",
+        "Corticosteroides sistêmicos: prednisona, hidrocortisona em altas doses",
+        "H2 bloqueadores: cimetidina (cruzam barreira hematoencefálica)",
+        "Digitálicos: intoxicação digitalica — delirium + náusea + bradiarritmia"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO — NÃO FARMACOLÓGICO É PRIMEIRO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Medidas Não-Farmacológicas (HELP)",
+        "items": [
+          "Reorientação contínua: calendário, relógio, familiar",
+          "Mobilização precoce: sentar na beira do leito, deambular",
+          "Privação do sono: ambiente tranquilo, janela aberta, não acordar desnecessariamente",
+          "Hidratação e nutrição adequadas",
+          "Órteses: óculos e aparelho auditivo",
+          "Remover cateteres, sondas e contentções desnecessárias"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Farmacológico (quando necessário)",
+        "items": [
+          "Haloperidol 0,5-1 mg VO/IM (idoso) — apenas se risco para si/outros",
+          "Quetiapina 12,5-25 mg VO (Parkinson: evitar haloperidol)",
+          "Benzodiazepínico: APENAS na abstinência alcoólica",
+          "NÃO dar BZD para delirium geral (piora e prolonga!)",
+          "Melatonina: melhora ciclo sono-vigília, possível benefício profilático",
+          "Dexmedetomidina: UTI — delirium hiperativo refratário em VM"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PREVENÇÃO — BUNDLE HOPE",
+      "titulo": "BUNDLE HOSPITALAR",
+      "items": [
+        "Hidratação adequada — avaliar diariamente; SF se via oral não funciona",
+        "Orientação — reorientar 3x ao dia; familiar à beira do leito",
+        "Prevenção de imobilidade — fisioterapia desde o 1º dia de internação",
+        "Evitar drogas deliriogênicas — revisar prescrições diariamente",
+        "Sono — não acordar para sinais vitais desnecessários entre 23h e 6h",
+        "Estimulação sensorial — óculos, aparelho auditivo, televisão durante o dia",
+        "Screening diário com CAM em todos os idosos hospitalizados"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Para o diagnóstico de delirium pelo CAM, quais critérios são OBRIGATÓRIOS?",
+      "alternativas": [
+        "Febre + agitação",
+        "Início agudo + flutuação, sem desatenção",
+        "Início agudo/flutuante + desatenção (+ pensamento desorganizado OU alteração de consciência)",
+        "Alucinações visuais + desorientação",
+        "ECG alterado + confusão mental"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual subtipo de delirium é o MAIS subdiagnosticado na prática clínica?",
+      "alternativas": [
+        "Hiperativo (agitação psicomotora intensa)",
+        "Misto (flutuação entre hiperativo e hipoativo)",
+        "Hipoativo (paciente quieto, letárgico, 'bem comportado')",
+        "Alucinatório puro",
+        "Catatônico"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Idosa de 80 anos, operada de fratura de quadril, apresenta confusão mental flutuante, piora à noite e dificuldade de atenção desde o 2º dia de pós-operatório. O quadro é mais consistente com:",
+      "alternativas": [
+        "Depressão reativa à cirurgia",
+        "Demência de início súbito",
+        "Delirium pós-operatório — início agudo, flutuante, fator precipitante (cirurgia)",
+        "Psicose por corticoide",
+        "Encefalopatia hepática"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual classe de drogas deve ser EVITADA no tratamento farmacológico do delirium em idosos (exceto na abstinência alcoólica)?",
+      "alternativas": [
+        "Antipsicóticos típicos (haloperidol) em baixas doses",
+        "Benzodiazepínicos — pioram e prolongam o delirium",
+        "Melatonina",
+        "Inibidores da colinesterase",
+        "Quetiapina em pacientes com Parkinson"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual medida NÃO farmacológica tem a maior eficácia na prevenção do delirium hospitalar em idosos?",
+      "alternativas": [
+        "Administração rotineira de melatonina",
+        "Restraint (contenção física) para segurança do paciente",
+        "Bundle multicomponente (HELP): reorientação, mobilização precoce, sono, hidratação, órteses",
+        "Profilaxia com haloperidol 0,5 mg à noite",
+        "Sedação leve com benzodiazepínico para reduzir a agitação"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "CAM: critérios obrigatórios = início agudo/flutuante + desatenção. Mais um dos seguintes: pensamento desorganizado OU alteração de consciência. Sensibilidade 94%, especificidade 89% para delirium."},
+    {"resposta": "C", "comentario": "Delirium HIPOATIVO: paciente quieto, letárgico, hipoativo, 'bonzinho' — não chama atenção da equipe. É o mais subdiagnosticado (25% dos casos) e associado ao pior prognóstico (mortalidade maior que o hiperativo)."},
+    {"resposta": "C", "comentario": "Delirium pós-operatório: início agudo após cirurgia, curso flutuante, desatenção, desorientação. Fatores: idoso, fratura de quadril, anestesia, hipotensão intraoperatória, dor, opioides, privação de sono. Tratar causa + medidas não-farmacológicas."},
+    {"resposta": "B", "comentario": "BZD em idosos com delirium (exceto abstinência alcoólica): PIORAM O DELIRIUM e prolongam a duração. Paradoxalmente aumentam a agitação em idosos. Haloperidol 0,5-1 mg é permitido apenas se risco imediato para si/outros."},
+    {"resposta": "C", "comentario": "Bundle HELP (Hospital Elder Life Program): reorientação, mobilização precoce, evitar privação do sono, hidratação, órteses sensoriais — reduz incidência de delirium em ~30%. É o padrão-ouro de prevenção multicomponente."}
+  ]
+}

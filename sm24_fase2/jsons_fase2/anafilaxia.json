@@ -1,0 +1,172 @@
+{
+  "slug": "anafilaxia",
+  "titulo": "Anafilaxia",
+  "especialidade": "CLÍNICA MÉDICA",
+  "chapter_subject": "Anafilaxia — Reconhecimento e Tratamento de Urgência",
+  "chapter_bar": "ANAFILAXIA — ADRENALINA PRIMEIRO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "ALGORITMO — ANAFILAXIA",
+      "title": "RECONHECER → ADRENALINA → SUPORTE",
+      "height": 220,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 210, "h": 22, "text": "Suspeita de anafilaxia (2+ sistemas envolvidos\ncom exposição a alérgeno ou hipotensão isolada pós-exposição)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.68, "w": 210, "h": 22, "text": "ADRENALINA 0,3-0,5 mg IM (coxa lateral anterolateral)\nImediato — sem aguardar confirmação diagnóstica", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.47, "w": 210, "h": 22, "text": "Decúbito dorsal + membros elevados (se hipotensão)\nO2 + acesso venoso + SF 1-2L bolus rápido", "color": "teal", "font_size": 5.8},
+        {"id": "d", "x": 0.27, "y": 0.24, "w": 160, "h": 20, "text": "Repetir adrenalina IM 5-15 min\nse não melhora (até 3x)", "color": "orange", "font_size": 5.5},
+        {"id": "e", "x": 0.73, "y": 0.24, "w": 160, "h": 20, "text": "Refratária: Adrenalina IV contínua\n0,1-1 mcg/kg/min; UTI", "color": "red", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"], ["c", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CRITÉRIOS DIAGNÓSTICOS DE ANAFILAXIA",
+      "section_color": "navy",
+      "headers": ["Critério", "Descrição"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Critério 1", "Início agudo com pele/mucosa (urticária, angioedema, prurido) + ao menos 1: SRA comprometida (broncospasmo, hipoxemia) OU hipotensão / colapso"],
+        ["Critério 2", "≥2 dos seguintes após exposição a alérgeno suspeito: pele/mucosa, SRA, TGI (vômitos, dor), hipotensão"],
+        ["Critério 3", "Hipotensão isolada após exposição a alérgeno conhecido (dose-dependente de veneno, AINE, etc.)"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DROGAS — DOSES E VIAS",
+      "section_color": "orange",
+      "headers": ["Droga", "Dose Adulto", "Via", "Função"],
+      "header_colors": ["gray", "navy", "teal", "orange"],
+      "col_widths": [0.24, 0.24, 0.14, 0.38],
+      "rows": [
+        ["Adrenalina (1ª linha)", "0,3-0,5 mg (=0,3-0,5 mL sol 1:1.000)", "IM — coxa lateral", "Salva a vida — broncodilatador + vasoconstritor"],
+        ["Adrenalina IV (refratária)", "0,1-1 mcg/kg/min", "IV contínuo (UTI)", "Choque anafilático refratário"],
+        ["Difenidramina (2ª linha)", "25-50 mg IV lento", "IV", "Antipruriginoso — NÃO substitui adrenalina"],
+        ["Hidrocortisona (2ª linha)", "200-500 mg IV", "IV", "Previne reação bifásica (início tardio, não agudo)"],
+        ["Salbutamol inalatório", "5 mg nebulização", "Inalatório", "Broncospasmo persistente pós-adrenalina"],
+        ["SF 0,9%", "1-2 L IV rápido", "IV", "Hipotensão / choque distributivo"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ERROS COMUNS — O QUE NÃO FAZER",
+      "section_color": "red",
+      "titulo": "ARMADILHAS NO TRATAMENTO",
+      "items": [
+        "Anti-histamínico como 1ª LINHA: anti-H1/H2 NÃO tratam broncospasmo nem hipotensão (são 2ª linha)",
+        "Adrenalina SC (subcutânea): absorção imprevisível — via IM na coxa é padrão-ouro",
+        "Corticoide como 1ª linha: início de ação lento (horas) — não são salvadores na fase aguda",
+        "Manter paciente sentado/em pé se hipotensão: decúbito dorsal com pernas elevadas",
+        "Alta precoce: monitorar 4-6h (reação bifásica ocorre em até 20%, até 72h); 24h se grave"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Simula Anafilaxia",
+        "items": [
+          "Choque séptico: febre, foco infeccioso, sem alérgeno",
+          "Síncope vasovagal: bradicardia, sem urticária",
+          "Crise asmática: sem envolvimento sistêmico",
+          "Angioedema hereditário (C1-inh): sem urticária, sem prurido",
+          "Síndrome carcinoide: rubor episódico sem urticária"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Orientação Pós-Alta",
+        "items": [
+          "Prescrever caneta de adrenalina autoaplicável (EpiPen)",
+          "Referenciar para alergologista",
+          "Evitar alérgenos suspeitos; pulseira de alerta",
+          "Anti-H1 VO por 3-5 dias; corticoide VO 3 dias",
+          "Orientar sobre reação bifásica — retornar se piora"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST — ANFILAXIA NO PS",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "Reconhecer: 2+ sistemas ou hipotensão pós-alérgeno → NÃO aguardar confirmação",
+        "Adrenalina 0,3-0,5 mg IM (coxa lateral) — imediatamente (1º passo, não o 3º!)",
+        "Chamar ajuda, decúbito dorsal, O2, acesso venoso calibroso",
+        "SF 500 mL-2L IV rápido se hipotensão",
+        "Repetir adrenalina IM a cada 5-15 min se sem melhora",
+        "Difenidramina IV + hidrocortisona IV como adjuvantes (2ª linha)",
+        "Monitorar mínimo 4-6h; internação se grave, bifásica ou sem resposta"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com urticária generalizada, broncospasmo e hipotensão após ingestão de amendoim. Qual é o tratamento de PRIMEIRA LINHA?",
+      "alternativas": [
+        "Difenidramina 50 mg IV + hidrocortisona 500 mg IV",
+        "Adrenalina 0,3-0,5 mg IM na coxa lateral",
+        "Salbutamol 5 mg nebulização",
+        "SF 1 L IV rápido como expansão volêmica",
+        "Metilprednisolona 1 g IV"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que a via intramuscular (coxa lateral) é preferida à subcutânea para a adrenalina na anafilaxia?",
+      "alternativas": [
+        "A dose SC é maior e mais difícil de calcular",
+        "Absorção mais rápida e previsível IM vs SC; pico sérico mais alto em menos tempo",
+        "A via SC causa necrose local inevitável",
+        "Não há diferença; ambas são equivalentes",
+        "A via IV é contraindicada em anafilaxia leve"
+      ]
+    },
+    {
+      "source": "SES-RJ / Adaptada",
+      "enunciado": "Qual é a principal preocupação ao liberar um paciente com anafilaxia tratada no PS?",
+      "alternativas": [
+        "Risco de reação cruzada a outros alimentos",
+        "Reação bifásica: nova fase de choque/broncospasmo horas após resolução inicial",
+        "Desenvolvimento de anafilaxia crônica",
+        "Toxicidade tardia da adrenalina",
+        "Resistência ao corticoide"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente com anafilaxia grave e hipotensão refratária a 3 doses de adrenalina IM e 2L de SF IV. Qual é a próxima conduta?",
+      "alternativas": [
+        "Triplice terapia com difenidramina, hidrocortisona e ranitidina",
+        "Adrenalina IV contínua 0,1-1 mcg/kg/min + UTI",
+        "Noradrenalina em substituição à adrenalina",
+        "Alta com prescrição de caneta autoinjetável",
+        "Plasmaférese urgente"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "Paciente com angioedema facial e urticária sem hipotensão nem broncospasmo, após picada de abelha. Qual diagnóstico e conduta?",
+      "alternativas": [
+        "Anafilaxia confirmada — adrenalina IM obrigatória",
+        "Reação alérgica leve (1 sistema envolvido sem risco vital) — anti-H1 + observação; adrenalina se piora",
+        "Angioedema hereditário — concentrado de C1-inibidor",
+        "Angioedema por IECA — adrenalina é ineficaz",
+        "Urticária crônica — corticoide VO por 10 dias"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Adrenalina IM na coxa lateral é o tratamento de PRIMEIRA LINHA e salva vidas. Anti-histamínicos e corticoides são 2ª linha — início de ação lento, não resolvem broncospasmo nem hipotensão. Nunca atrasar a adrenalina."},
+    {"resposta": "B", "comentario": "Via IM na coxa lateral (músculo vasto lateral): absorção mais rápida, pico sérico mais alto e em menos tempo que SC. Coxa > braço IM. SC tem absorção variável e mais lenta, especialmente em choque."},
+    {"resposta": "B", "comentario": "Reação bifásica ocorre em 5-20% dos casos, horas após resolução inicial (mais comum em 8-12h, pode ser até 72h). Pacientes com episódio grave devem ser observados por 24h. Indicar caneta autoinjetável na alta."},
+    {"resposta": "B", "comentario": "Anafilaxia refratária a adrenalina IM e volume → adrenalina IV contínua (0,1-1 mcg/kg/min) na UTI. Vasopressores adicionais (noradrenalina, vasopressina) podem ser necessários como adjuvantes."},
+    {"resposta": "B", "comentario": "Reação alérgica: apenas urticária/angioedema sem comprometimento de SRA, cardiovascular ou TGI = 1 sistema. Não preenche critérios de anafilaxia. Anti-H1 + observação. Adrenalina se qualquer deterioração."}
+  ]
+}

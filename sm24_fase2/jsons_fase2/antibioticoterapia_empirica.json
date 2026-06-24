@@ -1,0 +1,178 @@
+{
+  "slug": "antibioticoterapia_empirica",
+  "titulo": "Antibioticoterapia Empírica — Guia Rápido",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Antibioticoterapia Empírica por Foco Infeccioso",
+  "chapter_bar": "ATB EMPÍRICO — FOCO → DROGA → DOSE",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "PRINCÍPIOS DA ATB EMPÍRICA",
+      "section_color": "teal",
+      "titulo": "ANTES DE PRESCREVER",
+      "items": [
+        "Identificar FOCO clínico antes de prescrever (pulmonar, urinário, abdominal, pele, SNC, bacteremia)",
+        "Colher hemoculturas ANTES do ATB (2 pares de sítios diferentes) — não atrasar por coleta",
+        "Considerar risco de multirresistência: hospitalar, UTI, uso prévio de ATB, imunocomprometido",
+        "ATB de cobertura ampla + descalonamento em 48-72h conforme cultura",
+        "Ajuste por função renal (creatinina), peso, e alergias prévias"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ATB POR FOCO — COMUNITÁRIO",
+      "section_color": "navy",
+      "headers": ["Foco", "ATB 1ª escolha", "Alternativa", "Agentes esperados"],
+      "header_colors": ["gray", "navy", "teal", "orange"],
+      "col_widths": [0.20, 0.30, 0.26, 0.24],
+      "rows": [
+        ["Pneumonia (PAC leve/mod)", "Amoxicilina 1g VO 8/8h ± azitromicina", "Levofloxacino 750mg VO", "S. pneumoniae, H. flu, atípicos"],
+        ["Pneumonia (PAC grave)", "Ceftriaxona 1-2g IV + azitromicina", "Levofloxacino 750mg IV", "S. pneumoniae, Legionella"],
+        ["ITU não complicada", "Nitrofurantoína 100mg VO 12/12h x 5d", "Fosfomicina 3g dose única", "E. coli (80%)"],
+        ["Pielonefrite / Urossepse", "Ceftriaxona 1-2g IV 1x/dia", "Ciprofloxacino 400mg IV (se sensível)", "E. coli, Klebsiella"],
+        ["Celulite/erisipela", "Amoxicilina-clavulanato 875/125 VO", "Cefalexina 500mg VO 6/6h", "S. aureus, Streptococcus"],
+        ["Meningite bacteriana", "Ceftriaxona 2g IV 12/12h + Dexametasona", "+ Ampicilina se >50 anos", "S. pneumoniae, N. meningitidis"],
+        ["Amigdalite bacteriana", "Amoxicilina 500mg VO 8/8h x 10d", "Benzilpenicilina benzatina 1,2M UI IM", "Streptococcus do grupo A"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ATB POR FOCO — HOSPITALAR / GRAVE",
+      "section_color": "red",
+      "headers": ["Foco", "ATB empírico", "Duração"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.25, 0.50, 0.25],
+      "rows": [
+        ["Sepse foco abdominal", "Piperacilina-tazobactam 4,5g IV 8/8h", "7-10 dias (controle foco)"],
+        ["Sepse nosocomial / UTI", "Meropeném 1-2g IV 8/8h ± Vancomicina 15mg/kg 12/12h", "7-14 dias"],
+        ["Peritonite secundária", "Piperacilina-tazobactam OU meropeném + metronidazol 500mg IV 8/8h", "5-7 dias pós-cirurgia"],
+        ["PAVM (pneumonia VM)", "Piperacilina-tazobactam + amicacina 15mg/kg IV/dia", "8 dias (7 se boa resposta)"],
+        ["Fasciíte necrotizante", "Meropeném 1g IV 8/8h + Clindamicina 900mg IV 8/8h (+ Vancomicina se MRSA)", "Até desbridamento + 7-14d"],
+        ["Endocardite bacteriana", "Vancomicina 15-20mg/kg IV 12/12h + Gentamicina 3mg/kg/d", "4-6 semanas"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "COBERTURA ANTI-MRSA — QUANDO USAR VANCOMICINA",
+      "section_color": "orange",
+      "headers": ["Indicação", "Droga de escolha"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.55, 0.45],
+      "rows": [
+        ["Infecção hospitalar grave sem MRSA confirmado (suspeita)", "Vancomicina 15-20 mg/kg IV 12/12h"],
+        ["MRSA confirmado em cultura", "Vancomicina OU daptomicina (se bacteremia)"],
+        ["MRSA ambulatorial (pele/partes moles)", "SMX-TMP 160/800mg 12/12h VO"],
+        ["Monitorar nível: vale 15-20 mg/L (ou AUC/MIC 400-600)", "Ajuste por função renal!"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "PRINCIPAIS ATBs — ESPECTRO RESUMIDO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Gram-positivos",
+        "items": [
+          "S. aureus MSSA: oxacilina/cefazolina",
+          "S. aureus MRSA: vancomicina/daptomicina",
+          "Streptococcus: penicilina/amoxicilina",
+          "Enterococcus faecalis: ampicilina + gentamicina",
+          "Enterococcus faecium (VRE): linezolida/daptomicina",
+          "Clostridium difficile: vancomicina VO / fidaxomicina"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Gram-negativos / Anaeróbios",
+        "items": [
+          "E. coli / Klebsiella (sensível): ceftriaxona",
+          "ESBL (resistente a cef): carbapenêmicos",
+          "Pseudomonas: piperacilina-taz, cefepima, meropeném",
+          "Klebsiella KPC: polimixina B/E + meropeném (dose alta)",
+          "Anaeróbios (abdome): metronidazol / pip-taz",
+          "Atípicos (Mycoplasma, Legionella): macrolídeo/quinolona"
+        ]
+      }
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DESCALONAMENTO E DURAÇÃO DO ATB",
+      "section_color": "teal",
+      "titulo": "COMO OTIMIZAR O USO",
+      "items": [
+        "48-72h: revisar culturas e antibiograma → descalonar para o ATB mais específico",
+        "Bacteremia por S. aureus: 14 dias de ATB IV (MSSA: oxacilina; MRSA: vancomicina)",
+        "Colha controle de hemocultura em S. aureus: negativar em 48-96h confirma bacteremia simples vs complicada",
+        "ITU não complicada: 3-5 dias; pielonefrite: 7-14 dias; abscesso: até drenagem + 5-7d",
+        "Sepse sem foco identificado: mínimo 7 dias; com foco tratado: 5-7 dias",
+        "PCT (procalcitonina): guia duração; PCT <0,25 = descontinuar em muitas situações"
+      ],
+      "accent": "teal"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com pneumonia adquirida na comunidade (PAC) grave, hospitalizado em UTI, sem fatores de risco para Pseudomonas. Qual esquema empírico é MAIS adequado?",
+      "alternativas": [
+        "Amoxicilina oral + paracetamol",
+        "Ceftriaxona 2g IV + azitromicina 500mg IV",
+        "Meropeném 1g IV 8/8h + vancomicina",
+        "Piperacilina-tazobactam isolado",
+        "Azitromicina VO 500mg isolado"
+      ]
+    },
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Qual antibiótico é de PRIMEIRA ESCOLHA para MRSA em infecção hospitalar grave?",
+      "alternativas": [
+        "Oxacilina 2g IV 4/4h",
+        "Amoxicilina-clavulanato IV",
+        "Vancomicina 15-20 mg/kg IV 12/12h",
+        "Ciprofloxacino IV",
+        "Cefalexina oral"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente com sepse abdominal (foco abdominal, comunitária). Qual ATB cobre adequadamente Gram-negativos e anaeróbios?",
+      "alternativas": [
+        "Ceftriaxona isolada",
+        "Piperacilina-tazobactam 4,5g IV 8/8h",
+        "Azitromicina IV isolada",
+        "Nitrofurantoína",
+        "Ampicilina isolada"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Após receber o resultado de hemocultura mostrando E. coli sensível a ceftriaxona (sem ESBL), o paciente estava recebendo meropeném empiricamente. A conduta CORRETA é:",
+      "alternativas": [
+        "Manter meropeném pelo espectro mais amplo e segurança",
+        "Descalonar para ceftriaxona 1-2g IV — espectro adequado sem seleção de resistência",
+        "Trocar para vancomicina por segurança",
+        "Iniciar dois antibióticos para garantir cobertura",
+        "Aguardar 72h adicionais antes de qualquer mudança"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "Bactéria produtora de ESBL (beta-lactamase de espectro estendido) é resistente a qual classe de antibiótico?",
+      "alternativas": [
+        "Carbapenêmicos (meropeném, imipeném)",
+        "Cefalosporinas de 3ª e 4ª geração",
+        "Glicopeptídeos (vancomicina)",
+        "Polimixinas (colistina)",
+        "Tigeciclina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "PAC grave hospitalar sem risco de Pseudomonas: ceftriaxona 2g IV + azitromicina cobre S. pneumoniae, H. influenzae e atípicos (Legionella, Mycoplasma). Meropeném + vancomicina é excessivo sem fatores de risco específicos."},
+    {"resposta": "C", "comentario": "Vancomicina (15-20 mg/kg IV 12/12h) é o tratamento padrão para MRSA hospitalar grave. Monitorar nível de vale 15-20 mg/L ou AUC/MIC 400-600. Ajuste por função renal. Daptomicina é alternativa (não para pneumonia — inativada pelo surfactante)."},
+    {"resposta": "B", "comentario": "Piperacilina-tazobactam cobre Gram-negativos intestinais E anaeróbios — ideal para sepse abdominal. Ceftriaxona não cobre anaeróbios. Para abdome muito grave ou ESBL suspeito: meropeném."},
+    {"resposta": "B", "comentario": "Descalonamento em 48-72h após resultado de cultura é um princípio fundamental de stewardship antimicrobiano. Reduz pressão seletiva, custos e efeitos adversos. E. coli ESBL-negativa sensível à ceftriaxona = desescalar para ceftriaxona."},
+    {"resposta": "B", "comentario": "ESBL produz enzima que hidrolisa cefalosporinas de 3ª/4ª geração (ceftriaxona, cefotaxima, ceftazidima) e penicilinas. Tratamento de escolha: carbapenêmicos. Polimixinas e tigeciclina são reservadas para KPC/CRKP (carbapenemase)."}
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "slug": "dialise_urgencia",
+  "titulo": "Diálise de Urgência",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Indicações e Modalidades de Diálise na Emergência",
+  "chapter_bar": "DIÁLISE — INDICAR + MODALIDADE + ACESSO",
+  "secoes": [
+    {
+      "tipo": "highlightbox",
+      "section_title": "INDICAÇÕES DE DIÁLISE URGENTE — MNEMÔNICO AEIOU",
+      "section_color": "red",
+      "titulo": "AEIOU — INDICAÇÕES ABSOLUTAS",
+      "items": [
+        "A — Acidose metabólica grave (pH <7,1 ou HCO3 <10) refratária a tratamento clínico",
+        "E — Eletrólitos: hipercalemia >6,5 mEq/L refratária OU com alterações eletrocardiográficas",
+        "I — Intoxicações: drogas dialisáveis (metanol, etilenoglicol, lítio, salicilatos, metformina)",
+        "O — Overload hídrico: edema agudo de pulmão refratário à terapia farmacológica",
+        "U — Uremia sintomática: encefalopatia urêmica, pericardite, plaquetopenia urêmica, prurido intratável"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MODALIDADES DE TERAPIA DE SUBSTITUIÇÃO RENAL",
+      "section_color": "navy",
+      "headers": ["Modalidade", "Quando usar", "Vantagens / Limitações"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.36, 0.40],
+      "rows": [
+        ["Hemodiálise intermitente (HD)", "Paciente hemodinamicamente estável, IRA em UTI com boa PA", "Rápida e eficaz; risco de hipotensão intradialítica"],
+        ["TRRC (Terapia de substituição renal contínua)", "Instabilidade hemodinâmica, hipertensão intracraniana, sepse grave", "Mais lenta e gentil; requer anticoagulação contínua, UTI"],
+        ["Hemodiálise prolongada (SLED)", "Intermediária — estabilidade moderada, menos recursos que TRRC", "Flexível; boa remoção de solutos; menos anticoagulação"],
+        ["Diálise peritoneal (DP)", "Sem acesso venoso, criança, DRC crônica em ambulatório", "Sem acesso central; menor eficiência em IRA grave; peritonite"],
+        ["Ultrafiltração isolada", "Sobrecarga hídrica refratária sem necessidade de depuração", "Remove apenas água; sem efeito nos solutos (ureia, K+)"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ACESSOS PARA DIÁLISE DE URGÊNCIA",
+      "section_color": "orange",
+      "headers": ["Tipo", "Local de escolha", "Cuidados"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Cateter de duplo lúmen (Hickman temporário)", "1ª escolha: veia jugular interna direita; alternativa: femoral", "US-guiado; risco de infecção (3ª causa de bacteremia nosocomial)"],
+        ["Jugular interna direita", "Preferida: alinhamento direto com VCS → AD", "Menor risco de pneumotórax que subclávia"],
+        ["Subclávia", "Evitar se possível — risco de estenose de veia subclávia (comprometer FAV futura)", "Reservar para sem alternativa"],
+        ["Femoral", "Acesso rápido, sem risco de pneumotórax", "↑ Risco infecção; limita deambulação; menos eficiente"],
+        ["FAV (fístula arteriovenosa)", "Acesso definitivo na DRC — levante subcutâneo por maturação", "Tempo de maturação 6-8 semanas; preferida para HD crônica"],
+        ["Prótese (PTFE)", "Sem veias adequadas para FAV nativa", "Maior risco de infecção e trombose que FAV"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ALGORITMO — IRA NA UTI: QUANDO DIALIZAR?",
+      "title": "IRA — TEMPO E INDICAÇÃO DE DIÁLISE",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "IRA confirmada: creatinina em ascensão + oligúria\nAvaliar causa e reversibilidade — excluir pré e pós-renal", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 215, "h": 22, "text": "AEIOU presente? Acidose, hiperK, intoxicação, overload, uremia?", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.45, "w": 155, "h": 24, "text": "SIM — indicação absoluta:\nIniciar diálise sem aguardar\nEscolher modalidade pela PA", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.75, "y": 0.45, "w": 155, "h": 24, "text": "NÃO — aguardar?\nControverso: início precoce\nvs tardio (AKIKI trial: sem\ndiferença — individualizar)", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Monitorar: K, HCO3, diurese, BUN\nSe deterioração: não hesitar em indicar diálise", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "HIPERCALEMIA GRAVE — ANTES DA DIÁLISE",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Estabilizar a Membrana",
+        "items": [
+          "ECG: onda T apiculada, PR alargado, QRS alargado, onda sinusoidal → PCR iminente",
+          "Gluconato de cálcio 10%: 10-20 mL IV em 3-5 min — estabiliza MEMBRANA cardíaca (não reduz K+)",
+          "Repetir a cada 5 min se ECG persistir alterado",
+          "Duração do efeito: 30-60 min — PONTE para diálise ou outras medidas"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Redistribuição de K+ (temporário)",
+        "items": [
+          "Insulina 10 UI + glicose 50% 50 mL IV: move K+ para célula em 15-20 min (dura 4-6h)",
+          "Bicarbonato 8,4%: 50 mEq IV se acidose grave (move K+ para célula)",
+          "Salbutamol 10-20 mg nebulizado OU 0,5 mg IV: move K+ para músculo (dura 2-4h)",
+          "Resinas (Kayexalate, patiromer): eliminam K+ pelo TGI — efeito em horas",
+          "Diálise: único tratamento definitivo em hipercalemia por IRA oligúrica"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "DROGAS DIALISÁVEIS — INDICAÇÕES DE DIÁLISE POR INTOXICAÇÃO",
+      "titulo": "QUANDO DIALIZAR NA INTOXICAÇÃO",
+      "items": [
+        "Metanol/etilenoglicol: acidose grave (pH <7,1) OU nível sérico alto — hemodiálise eficaz (+ fomepizol ou etanol)",
+        "Lítio: nível >4 mEq/L OU sintomas graves (coma, convulsão) — HD urgente (redistribuição pode requerer 2ª sessão)",
+        "Salicilatos: nível >100 mg/dL OU pH <7,20 OU IRA/falência hepática → HD eficaz",
+        "Metformina: acidose lática grave (lactato >5) → HD remove metformina e melhora acidose",
+        "NÃO dialisáveis: benzodiazepínicos, tricíclicos, digoxina (alto volume de distribuição, alta ligação proteica)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com IRA oligúrica tem K+ 6,8 mEq/L, ECG com onda T apiculada, pH 7,08 e não responde a medidas clínicas. Qual é a conduta definitiva?",
+      "alternativas": [
+        "Bicarbonato IV e aguardar melhora espontânea",
+        "Gluconato de cálcio + insulina + hemodiálise urgente",
+        "Dieta hiperpotássica até normalização da função renal",
+        "Resinas trocadoras de íons orais (Kayexalate) por 48h",
+        "Furosemida em altas doses para forçar diurese"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente séptico na UTI com PA 80/50 mmHg em vasopressor. Necessita de diálise. Qual modalidade é mais adequada?",
+      "alternativas": [
+        "Hemodiálise intermitente padrão (3-4h)",
+        "Diálise peritoneal ambulatorial contínua (CAPD)",
+        "Terapia de substituição renal contínua (TRRC/CVVH)",
+        "Ultrafiltração isolada",
+        "Aguardar estabilização hemodinâmica antes de qualquer modalidade"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que a veia subclávia deve ser EVITADA para inserção de cateter de diálise de urgência?",
+      "alternativas": [
+        "Maior risco de infecção do sítio",
+        "Risco de estenose da veia subclávia, comprometendo futuras fístulas arteriovenosas para HD crônica",
+        "Maior risco de sangramento",
+        "Fluxo insuficiente para hemodiálise",
+        "Risco de pneumotórax é menor que em outros sítios"
+      ]
+    },
+    {
+      "source": "SES-MG / Adaptada",
+      "enunciado": "Paciente com suspeita de intoxicação por metanol tem pH 6,98, GAP ânion 35 e osmolal gap elevado. Além de bicarbonato, qual tratamento específico é indicado?",
+      "alternativas": [
+        "N-acetilcisteína IV",
+        "Flumazenil + naloxona",
+        "Hemodiálise + fomepizol (inibidor de álcool desidrogenase)",
+        "Carbone activado",
+        "Gluconato de cálcio"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é a ação do gluconato de cálcio na hipercalemia grave com ECG alterado?",
+      "alternativas": [
+        "Reduz o potássio sérico por redistribuição celular",
+        "Aumenta a excreção renal de potássio",
+        "Estabiliza a membrana cardíaca sem alterar o nível sérico de K+",
+        "Compete com K+ no túbulo renal",
+        "Bloqueia os canais de K+ diretamente"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Hipercalemia grave (K+ 6,8) com ECG alterado + acidose pH 7,08 = indicação absoluta de diálise (AEIOU: 'E' + 'A'). Sequência: gluconato de cálcio (estabiliza membrana) + insulina/glicose/bicarbonato (redistribuição temporária) + hemodiálise urgente (tratamento definitivo)."},
+    {"resposta": "C", "comentario": "Paciente instável hemodinamicamente (PA 80/50 + vasopressor): hemodiálise intermitente causa hipotensão intradialítica (remoção rápida de volume + vasodilatação). TRRC (CVVH/CVVHDF) remove volume e solutos de forma contínua e lenta — melhor tolerância hemodinâmica."},
+    {"resposta": "B", "comentario": "Cateter em veia subclávia: risco de estenose (cicatrização fibrótica) que pode obstruir a veia subclávia ou axilar. Isso impede futura construção de FAV (fístula arteriovenosa) no braço ipsilateral — essencial para hemodiálise crônica. Preferir jugular interna direita."},
+    {"resposta": "C", "comentario": "Metanol: tóxico convertido por álcool desidrogenase em formaldeído → ácido fórmico → acidose com GAP elevado + lesão ocular. Tratamento: fomepizol (inibidor da ADH) OU etanol (compete com ADH) + hemodiálise (remove metanol e metabólitos). Bicarbonato para acidose grave."},
+    {"resposta": "C", "comentario": "Gluconato de cálcio NÃO reduz K+ sérico — estabiliza o potencial de membrana cardíaca (aumenta o limiar de excitabilidade). Efeito em 3-5 min, dura 30-60 min. É medida ponte, não definitiva. Redução do K+ requer insulina+glicose (redistribuição) ou diálise (eliminação)."}
+  ]
+}

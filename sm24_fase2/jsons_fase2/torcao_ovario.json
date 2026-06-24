@@ -1,0 +1,175 @@
+{
+  "slug": "torcao_ovario",
+  "titulo": "Torção de Ovário",
+  "especialidade": "GINECOLOGIA/OBSTETRÍCIA",
+  "chapter_subject": "Torção Anexial — Diagnóstico e Conduta Cirúrgica",
+  "chapter_bar": "TORÇÃO ANEXIAL — CIRURGIA EM <6H",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "TORÇÃO ANEXIAL — CLÍNICA E DIAGNÓSTICO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhes"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Incidência", "2-3% das emergências ginecológicas; mais comum no menacme; gestação: maior risco (corpo lúteo aumentado)"],
+        ["Fisiopatologia", "Torção do pedículo vascular (artéria e veia ovarianas) → isquemia → necrose se não tratado em <6-8h"],
+        ["Fatores de risco", "Cisto ovariano (>5 cm), ovário policístico, massa anexial, hiperprolifer ovariana por indução de ovulação"],
+        ["Dor", "Início agudo, unilateral, em cólica ou contínua, irradiando para flanco/fossa ilíaca; pode ter nausea/vomito"],
+        ["US com Doppler", "Ovário aumentado + ausência de fluxo (Doppler), edema do estroma — mas Doppler normal NÃO exclui torção!"],
+        ["TC/RM", "Se US inconclusivo; útil em obesas; TC: ovário aumentado + edema; RM: melhor para partes moles"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ALGORITMO DE MANEJO",
+      "title": "TORÇÃO ANEXIAL — RISCO + CIRURGIA",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Dor pélvica aguda unilateral + massa anexial\nAnalgesia + laboratório + US com Doppler imediato", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 215, "h": 22, "text": "Alta suspeita clínica? Dor intensa + cisto + ausência de fluxo?\nNão aguardar exames para cirurgia se quadro típico", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "LAPAROSCOPIA urgente\n<6h do início: detorção + preservação ovariana\n>6h: decidir ao explorar", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Diagnóstico incerto:\nTC ou RM pélvica\nObservação com reavaliação\nnão >12h", "color": "teal", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Intraoperatório: ovário escurecido/cianótico — detorcer e aguardar\nSe recuperação de cor em 20 min: conservar; necrose: ooforectomia", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "OVÁRIO ESCURECIDO — CONSERVAR OU RETIRAR?",
+      "section_color": "orange",
+      "titulo": "DETORCER PRIMEIRO — DECIDIR DEPOIS",
+      "items": [
+        "Ovário cianótico/escurecido: NÃO remover imediatamente — realizar a detorção primeiro",
+        "Após detorção, aguardar 15-20 minutos: se recuperação de cor e turgência = preservar",
+        "Estudos mostram: até 75% dos ovários aparentemente necróticos recuperam função após detorção",
+        "Ooforectomia: apenas se ausência completa de sinais de viabilidade após espera",
+        "Cistoovariectomia pode ser feita no mesmo ato após confirmar viabilidade",
+        "Gestante: mesma conduta — detorção laparoscópica segura no 1o e 2o trimestres"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL",
+      "section_color": "teal",
+      "headers": ["Diagnóstico", "Diferencial chave"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Gravidez ectópica", "Beta-hCG positivo; US: sem embrião intrauterino; sangue livre na pelve"],
+        ["Apendicite aguda", "Dor em FID progressiva, febre, leucocitose; US: apêndice inflamado"],
+        ["Cisto roto", "Dor aguda súbita; US: líquido livre; sem massa sólida; resolução espontânea"],
+        ["DIP (inflamação pélvica)", "Febre, secreção, dor bilateral, leucocitose; sem massa torcida"],
+        ["Nefrolitíase", "Cólica com irradiação para virilha, hematúria; US renal"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TORÇÃO NA GESTANTE E SEGUIMENTO",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Torção na Gestante",
+        "items": [
+          "Mais comum no 1o trimestre (corpo lúteo aumentado) e 2o trimestre",
+          "Sintomas podem ser atribuídos à gestação — atraso diagnóstico",
+          "Laparoscopia segura até ~20 semanas; acima: laparotomia preferida",
+          "Anestesia: considerar aspiração de secreção gástrica, decúbito lateral esquerdo",
+          "Fetal: monitorar batimentos fetais antes e após cirurgia",
+          "Progesterona: repor se <12 semanas e corpo lúteo removido"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Prevenção de Recorrência",
+        "items": [
+          "Recorrência: 10-15% após detorção sem fixação",
+          "Ooforopexia (fixação do ovário): controversa — reservar para recidiva ou risco muito alto",
+          "Tratar cistos responsáveis: cistectomia no mesmo ato",
+          "Anticoncepcional oral: pode reduzir cistos funcionais recorrentes",
+          "Seguimento US: avaliar viabilidade ovariana em 4-8 semanas",
+          "CA-125: dosagem não diagnóstica na emergência — avaliar após resolução"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ABORDAGEM NO PS",
+      "titulo": "FLUXO DA EMERGÊNCIA",
+      "items": [
+        "Analgesia imediata: dipirona + morfina — não retardar diagnóstico por 'máscara de dor'",
+        "Beta-hCG: SEMPRE em mulher em idade fértil com dor pélvica",
+        "US transvaginal urgente: ovário contralateral como controle (comparação de tamanho/fluxo)",
+        "Doppler presente NÃO exclui torção — basear na clínica",
+        "Contatar ginecologia: não aguardar exames adicionais se alta suspeita",
+        "Jejum: preparar para cirurgia desde a triagem"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Mulher de 26 anos com dor pélvica direita intensa de início súbito há 4 horas, náuseas e vômitos. US: ovário direito 7 cm, ausência de fluxo ao Doppler. Beta-hCG negativo. Qual é a conduta?",
+      "alternativas": [
+        "Analgesia e alta com retorno em 24h",
+        "TC de abdome antes de qualquer decisão",
+        "Laparoscopia urgente com detorção do ovário",
+        "Antibiótico IV empírico para DIP",
+        "Repetir US em 6h para confirmar o diagnóstico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Intraoperatoriamente, o ovário torcionado se apresenta escurecido e cianótico. Qual a conduta correta?",
+      "alternativas": [
+        "Ooforectomia imediata — ovário inviável",
+        "Histerectomia de precaução",
+        "Detorção do ovário e aguardar 15-20 minutos para avaliar vitalidade",
+        "Biópsia e aguardar resultado anatomopatológico",
+        "Sutura do pedículo torcido sem detorsão"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "A ausência de fluxo ao Doppler no ovário:",
+      "alternativas": [
+        "Confirma o diagnóstico de torção e indica cirurgia imediata",
+        "Exclui torção — fluxo presente descarta o diagnóstico",
+        "Sugere fortemente torção, mas fluxo PRESENTE não exclui torção (Doppler tem falsos negativos)",
+        "Indica apenas cistoovariectomia sem necessidade de laparoscopia",
+        "É achado normal em ovários de mulheres na pós-menopausa"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Gestante de 10 semanas apresenta dor pélvica esquerda aguda. US: ovário esquerdo 6 cm com cisto e ausência de fluxo. Qual conduta?",
+      "alternativas": [
+        "Aguardar resolução espontânea — gestação contraindica cirurgia",
+        "Laparotomia imediata — laparoscopia é contraindicada na gestação",
+        "Laparoscopia urgente — segura no 1o trimestre, mesma conduta que na não gestante",
+        "MgSO4 IV para proteger o ovário",
+        "Betametasona + indução do parto"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o primeiro exame a ser solicitado para toda mulher em idade fértil com dor pélvica aguda?",
+      "alternativas": [
+        "US pélvico",
+        "Hemograma completo",
+        "Beta-hCG sérico ou urinário (excluir gravidez ectópica)",
+        "TC de abdome",
+        "CA-125"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Torção de ovário: ovário aumentado + ausência de fluxo ao Doppler + dor aguda = indicação de laparoscopia urgente. Cada hora de atraso aumenta o risco de necrose irreversível. Beta-hCG negativo exclui gravidez ectópica. Não aguardar TC."},
+    {"resposta": "C", "comentario": "Ovário escurecido/cianótico: NÃO remover imediatamente. Detorcer e aguardar 15-20 min — recuperação de cor indica viabilidade. Estudos mostram 60-75% dos ovários 'necróticos' recuperam função após detorção. Ooforectomia só se ausência completa de recuperação."},
+    {"resposta": "C", "comentario": "Doppler presente não exclui torção — falsos negativos em até 50% (fluxo arterial pode estar mantido mesmo com isquemia venosa). Diagnóstico de torção é CLÍNICO. Doppler ausente aumenta especificidade mas não é mandatório para indicar cirurgia."},
+    {"resposta": "C", "comentario": "Laparoscopia na gestação: segura no 1o e 2o trimestres (preferência até ~20 semanas). Mesma conduta que na não gestante: detorção + preservação ovariana. Acima de 20-24 semanas: laparotomia preferida (útero volumoso dificulta visibilização laparoscópica)."},
+    {"resposta": "C", "comentario": "Beta-hCG é OBRIGATÓRIO em toda mulher em idade fértil com dor pélvica — gravidez ectópica pode mimetizar qualquer causa de dor pélvica aguda e tem risco de ruptura com choque hemorrágico. Beta-hCG negativo permite avançar para outros diagnósticos com mais segurança."}
+  ]
+}

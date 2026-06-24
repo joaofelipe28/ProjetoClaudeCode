@@ -1,0 +1,161 @@
+{
+  "slug": "paralisia_facial_periferica",
+  "titulo": "Paralisia Facial Periférica (Bell)",
+  "especialidade": "NEUROLOGIA",
+  "chapter_subject": "Paralisia Facial Periférica — Diagnóstico e Tratamento",
+  "chapter_bar": "PARALISIA FACIAL — CENTRAL vs PERIFÉRICA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CENTRAL vs PERIFÉRICA — DISTINÇÃO FUNDAMENTAL",
+      "section_color": "navy",
+      "headers": ["Característica", "Periférica (VII)", "Central (AVC, tumor)"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.30, 0.35, 0.35],
+      "rows": [
+        ["Fronte (testa)", "PARESIA (não fecha o olho, não franzela testa)", "POUPADA (franzela a testa — inervação bilateral)"],
+        ["Localização da lesão", "Nervo facial (VII) periférico — pós-gânglio", "Via corticoespinhal — neurônio motor superior"],
+        ["Outros déficits", "Hiperarcusia, disgeusia, lacrimejamento", "Hemiplegia, afasia, disartria — HA"],
+        ["Início", "Horas, progressiva (dias), após frio / viral", "Súbito, em segundos-minutos"],
+        ["Urgência", "TC não obrigatória se diagnóstico típico", "TC/RMC urgente (AVC/tumor)"]
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "PARALISIA DE BELL — DEFINIÇÃO",
+      "section_color": "teal",
+      "titulo": "IDIOPÁTICA — DIAGNÓSTICO DE EXCLUSÃO",
+      "items": [
+        "Paralisia facial periférica IDIOPÁTICA — mais comum (70% das PFPs)",
+        "Causa provável: reativação do HSV-1 ou HZV no gânglio geniculado",
+        "Incidência: 20-30 casos/100.000/ano; pico 15-45 anos; DM, gestação = risco aumentado",
+        "Prognóstico: 71% recuperação completa espontânea; 13% sequelas leves; 4% graves",
+        "Pior prognóstico: paralisia completa, >60 anos, DM, HAS"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "DIAGNÓSTICO E CONDUTA",
+      "title": "PFP — EXCLUIR CENTRAL, TRATAR PRECOCE",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 210, "h": 22, "text": "Paralisia facial unilateral\nTesta paresiada? Envolvimento unilateral total?", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.68, "w": 210, "h": 22, "text": "Excluir causas secundárias:\nHerpes zoster (Ramsay Hunt), tumor parótida, trauma, Lyme", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.40, "w": 155, "h": 26, "text": "PARALISIA DE BELL\nPrednisona 60mg/d x 5d → redução\n+ Aciclovir/Valaciclovir 7-10d", "color": "green", "font_size": 5.5},
+        {"id": "d", "x": 0.75, "y": 0.40, "w": 155, "h": 26, "text": "RAMSAY HUNT (Zoster)\nVesículas auriculares + otalgia\nMais grave — valaciclovir x 7-10d + prednisona", "color": "red", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 210, "h": 22, "text": "Proteção ocular (colírio + tampão noturno)\nIniciar ATB em até 72h do início para máximo efeito", "color": "orange", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS DE PARALISIA FACIAL PERIFÉRICA",
+      "section_color": "orange",
+      "headers": ["Causa", "Pistas diagnósticas", "Conduta específica"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.46, 0.32],
+      "rows": [
+        ["Bell (idiopática)", "Diagnóstico de exclusão, evolução típica", "Prednisona + aciclovir em <72h"],
+        ["Ramsay Hunt (HZV)", "Vesículas auriculares/canal + otalgia + hipoacusia", "Valaciclovir 1g 3x/d x 7d + prednisona"],
+        ["Tumor de parótida", "Massa palpável, instalação progressiva", "TC/USG parótida + encaminhar Cir. C&P"],
+        ["Sarcoidose", "Uveíte, adenopatia hilar, hifadropatia", "PCA, ECA, biópsia; corticoide"],
+        ["Doença de Lyme", "Exposição à carrapato, eritema migratório", "Doxiciclina 100mg 12/12h x 21d"],
+        ["Fratura temporal", "Trauma craniano, otorragia, hemotímpano", "TC temporal; ORL urgente"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRATAMENTO DA PARALISIA DE BELL",
+      "section_color": "red",
+      "titulo": "JANELA DE 72 HORAS",
+      "items": [
+        "Prednisona 60-80 mg/d VO por 5 dias → redução gradual até 10 dias total (aumenta recuperação de 57% para 83%)",
+        "Aciclovir 400 mg 5x/d OU valaciclovir 1g 3x/d por 7-10 dias (benefício incerto, mas recomendado)",
+        "Iniciar em até 72h do início dos sintomas para máxima eficácia",
+        "PROTEÇÃO OCULAR: lágrima artificial de hora em hora + colírio noturno + tampão oclusor à noite (risco de ceratopatia por exposição)",
+        "Fisioterapia facial: iniciar após 2-3 semanas para prevenir sequelas musculares",
+        "Eletroneuromiografia (ENMG): indicada se sem melhora em 3-4 semanas para prognóstico"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "SEGUIMENTO E PROGNÓSTICO",
+      "titulo": "ORIENTAÇÕES AO PACIENTE",
+      "items": [
+        "Informar: maioria recupera completamente em 3-6 meses",
+        "Retornar se: não melhora em 3 semanas, piora, deficit contralateral, febre, dor intensa",
+        "Sincinesias (movimentos involuntários): podem surgir na recuperação (reabilitação facial)",
+        "DM e gestação: mesmo tratamento; evitar doses altas de corticoide em gestantes (<34 semanas)",
+        "Sequelas graves (<5%): contratura, sincinesias, crocodile tears (lacrimejamento ao comer)",
+        "Cirurgia de descompressão: raramente indicada (<10% das pontas de desnervação)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Qual característica distingue a paralisia facial PERIFÉRICA da CENTRAL (por AVC)?",
+      "alternativas": [
+        "Déficit apenas no terço inferior da face, com preservação da testa, na periférica",
+        "Déficit em toda a hemiface (incluindo testa) na periférica; testa poupada na central",
+        "A paralisia periférica sempre causa hemiplegia contralateral",
+        "Paralisia central envolve toda a face incluindo a testa",
+        "Não há diferença clinicamente relevante entre as duas"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tratamento de PRIMEIRA LINHA na Paralisia de Bell, iniciado em até 72 horas do início?",
+      "alternativas": [
+        "Metilprednisolona IV 1g/dia por 3 dias",
+        "Fisioterapia facial imediata + calor local",
+        "Prednisona 60-80 mg/d VO com redução gradual em 10 dias",
+        "Aciclovir isolado sem corticoide",
+        "Cirurgia de descompressão do nervo facial"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente com paralisia facial periférica, vesículas no pavilhão auricular, otalgia intensa e hipoacusia. Qual é o diagnóstico?",
+      "alternativas": [
+        "Paralisia de Bell idiopática",
+        "Síndrome de Ramsay Hunt (Herpes Zoster)",
+        "Otite média complicada",
+        "Tumor de parótida",
+        "Síndrome de Melkersson-Rosenthal"
+      ]
+    },
+    {
+      "source": "SES-RJ / Adaptada",
+      "enunciado": "Por que a proteção ocular é essencial na paralisia facial periférica?",
+      "alternativas": [
+        "O olho fica sensível à luz solar intensa",
+        "A lagoftalmia (incapacidade de fechar o olho) expõe a córnea, com risco de ceratopatia por exposição e úlcera",
+        "A paralisia causa hiperemia conjuntival irreversível",
+        "Para evitar estrabismo durante a recuperação",
+        "Para reduzir a pressão intraocular aumentada"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "Em um jovem com paralisia facial periférica e histórico de caminhada em área de mata com eritema migratório, qual diagnóstico deve ser investigado?",
+      "alternativas": [
+        "Paralisia de Bell idiopática",
+        "Sarcoidose",
+        "Doença de Lyme (Borrelia burgdorferi)",
+        "Síndrome de Guillain-Barré",
+        "Mononucleose infecciosa (EBV)"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Periférica: toda a hemiface (incluindo testa) — porque o núcleo do VII recebe inervação bilateral para a parte superior, mas a lesão periférica elimina TODA inervação ipsilateral. Central (AVC): testa POUPADA porque a inervação supranuclear é bilateral para a fronte."},
+    {"resposta": "C", "comentario": "Prednisona 60-80mg/d VO em 10 dias (redução gradual) é o tratamento de escolha com maior nível de evidência (aumenta recuperação completa de ~57% para ~83%). Deve ser iniciado em até 72h. Aciclovir é adjuvante (benefício incerto)."},
+    {"resposta": "B", "comentario": "Síndrome de Ramsay Hunt: PFP + vesículas no pavilhão auricular/canal auditivo + otalgia + hipoacusia/zumbido. É reativação do HZV no gânglio geniculado. Pior prognóstico que Bell. Trata-se com valaciclovir + corticoide."},
+    {"resposta": "B", "comentario": "Lagoftalmia = incapacidade de fechar completamente o olho. A córnea fica exposta, ressecada e sujeita a abrasão e úlcera (ceratopatia de exposição). Tratamento: lágrima artificial, colírio noturno e tampão oclusor à noite."},
+    {"resposta": "C", "comentario": "Doença de Lyme por Borrelia burgdorferi pode causar neuroborreliose com PFP (uni ou bilateral). Pesquisar: exposição a carrapatos, eritema migratório. Diagnóstico: sorologica (ELISA + Western blot). Tratamento: doxiciclina 100mg 12/12h por 21 dias."}
+  ]
+}

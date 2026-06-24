@@ -1,0 +1,178 @@
+{
+  "slug": "bloqueios_anestesicos_ps",
+  "titulo": "Bloqueios Anestésicos no PS",
+  "especialidade": "PROCEDIMENTOS",
+  "chapter_subject": "Bloqueios Anestésicos Regionais no Pronto-Socorro",
+  "chapter_bar": "BLOQUEIOS — ANATOMIA + DOSE + SEGURANÇA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANESTÉSICOS LOCAIS — PROPRIEDADES E DOSES",
+      "section_color": "navy",
+      "headers": ["Fármaco", "Início/Duração", "Dose máxima", "Indicação principal"],
+      "header_colors": ["gray", "navy", "teal", "orange"],
+      "col_widths": [0.22, 0.22, 0.24, 0.32],
+      "rows": [
+        ["Lidocaína 1-2%", "Rápido (2-5 min) / 60-90 min", "4 mg/kg sem epi; 7 mg/kg com epi", "Infiltração, bloqueio digital, WALANT"],
+        ["Bupivacaína 0,25-0,5%", "Lento (10-20 min) / 4-8 h", "2 mg/kg (máx 175 mg sem epi)", "Bloqueios de campo, nervoso, longa duração"],
+        ["Ropivacaína 0,2-0,75%", "Intermediário / 4-8 h", "3 mg/kg (máx 200 mg)", "Bloqueios guiados por US, menos cardiotóxico"],
+        ["Prilocaína 3%", "Rápido / 90-120 min", "6 mg/kg", "Procedimentos curtos, menor toxicidade sistêmica"],
+        ["Mepivacaína 1-2%", "Rápido / 90-150 min", "5 mg/kg (7 com epi)", "Bloqueios dentários, infiltração"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "BLOQUEIOS PRINCIPAIS NO PS — INDICAÇÕES",
+      "section_color": "teal",
+      "headers": ["Bloqueio", "Indicação clínica", "Nervo / Técnica"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.38, 0.34],
+      "rows": [
+        ["Digital (dedo)", "Trauma, lacerações, unhas encravadas, abscessos", "Nervo digital: base do dedo, 2 injeções laterais"],
+        ["Supraorbital/Supratroclear", "Lacerações de couro cabeludo frontal, sobrancelha", "Saída do nervo no rebordo orbital superior"],
+        ["Infraorbitário", "Laceração labial superior, bochecha, nariz", "Forame infraorbitário, 5 mm abaixo do rebordo"],
+        ["Mental", "Lacerações de lábio inferior, mento", "Forame mentual, entre PM1 e PM2"],
+        ["Femoral / FICN", "Fratura de fêmur — analgesia imediata", "Guia por US: nervos lateral a artéria femoral"],
+        ["Interescalênico/Axilar", "Procedimentos em ombro/antebraço/mão", "Guiado por US — cuidado com pneumotórax"],
+        ["TAP (Transversus Abdominis)", "Pós-laparotomia, hérnia, apendicectomia", "US: entre oblíquo interno e transverso"],
+        ["WALANT (Wide Awake)", "Cirurgia de mão/tendão sem torniquete", "Lidocaína + epi na palma — sem sedação"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "COMO REALIZAR UM BLOQUEIO DIGITAL",
+      "title": "BLOQUEIO DIGITAL — PASSO A PASSO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.92, "w": 215, "h": 22, "text": "Indicação: trauma de dedo, unhas, abscessos, lacerações\nMaterial: agulha 25-27G, lidocaína 1-2%, seringa 5 mL", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 215, "h": 22, "text": "Posição: dedo em extensão\nLimpar com álcool; aspirar antes de injetar (sempre)", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.5, "y": 0.47, "w": 215, "h": 24, "text": "Inserir agulha na base lateral do dedo (dorsal)\n1,0-1,5 mL de lidocaína em cada lado (lateral)\nTotal: 2-3 mL por dedo", "color": "green", "font_size": 5.5},
+        {"id": "d", "x": 0.5, "y": 0.20, "w": 215, "h": 22, "text": "Aguardar 3-5 min para início do efeito\nTestar analgesia antes de proceder", "color": "orange", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TOXICIDADE SISTÊMICA — RECONHECER E TRATAR",
+      "section_color": "red",
+      "titulo": "LAST (Local Anesthetic Systemic Toxicity)",
+      "items": [
+        "Causa: dose excessiva OU injeção intravascular acidental (sempre aspirar!)",
+        "Sinais precoces SNC: gosto metálico, zumbido, tontura, agitação, parestesias periorais",
+        "Sinais tardios: convulsão, coma, arritmia grave, PCR (cardiotoxicidade da bupivacaína)",
+        "Tratamento 1°: oxigênio 100%, BZD para convulsão, suporte cardiovascular",
+        "Tratamento específico: EMULSÃO LIPÍDICA 20% (Intralipid): bolus 1,5 mL/kg IV em 1 min → infusão 0,25 mL/kg/min",
+        "Bupivacaína: mais cardiotóxica — evitar concentrações >0,5%; preferir ropivacaína quando disponível"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "BLOQUEIOS FACIAIS — REFERÊNCIAS ANATÔMICAS",
+      "section_color": "orange",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Supraorbital + Supratroclear",
+        "items": [
+          "Supraorbital: forame/incisura supraorbital — linha média da pupila, rebordo orbital superior",
+          "Supratroclear: 1 cm medial ao supraorbital",
+          "Cobertura: couro cabeludo frontal, sobrancelha, pálpebra superior medial",
+          "Volume: 2-3 mL de lidocaína 1% em cada ponto",
+          "Dica: injetar subcutâneo, não intramuscular",
+          "Técnica: inserir da medial para lateral após o forame"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Infraorbitário + Mental",
+        "items": [
+          "Infraorbitário: 5-7 mm abaixo do rebordo orbital, linha da pupila",
+          "Cobertura: asa do nariz, lábio superior, bochecha, dente incisivo superior",
+          "Mental: forame mentual entre PM1/PM2, 1 cm abaixo da gengiva",
+          "Cobertura: lábio inferior, mento, dente incisivo e canino inferior",
+          "Técnica: palpar o forame + inserir lateral ao forame (não dentro)",
+          "Volume: 1,5-2 mL de lidocaína com epinefrina"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "SEGURANÇA NO BLOQUEIO — CHECKLIST",
+      "titulo": "NUNCA PULAR",
+      "items": [
+        "Calcular dose máxima antes: lidocaína sem epi = 4 mg/kg; bupivacaína = 2 mg/kg",
+        "Aspirar antes de injetar (verificar refluxo de sangue = posição intravascular)",
+        "Injetar lentamente (evitar pico de concentração sistêmica)",
+        "Monitorar por 15-20 min após: FC, PA, SNC",
+        "Ter emulsão lipídica 20% (Intralipid) disponível em procedimentos de maior volume",
+        "Evitar bupivacaína em extremidades (comprometimento vascular), pacientes com história de reações",
+        "Documentar: droga, concentração, volume, local, hora"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com trauma em dedo anular direito necessita de sutura. Qual bloqueio é mais adequado e qual é a dose máxima de lidocaína sem epinefrina para um paciente de 70 kg?",
+      "alternativas": [
+        "Bloqueio digital; 490 mg (7 mg/kg × 70 kg)",
+        "Bloqueio digital; 280 mg (4 mg/kg × 70 kg)",
+        "Infiltração local ao redor da ferida; sem dose máxima específica",
+        "Bloqueio axilar; 300 mg",
+        "Apenas EMLA tópico sem injeção"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com laceração em couro cabeludo frontal (3 cm, hemostasia controlada). Qual bloqueio permite anestesia adequada da área sem múltiplas injeções?",
+      "alternativas": [
+        "Infiltração local ao redor da ferida",
+        "Bloqueio supraorbital e supratroclear ipsilateral",
+        "Bloqueio interescalênico",
+        "Bloqueio digital",
+        "Bloqueio femoral"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Após bloqueio com bupivacaína, paciente evolui com gosto metálico, zumbido e agitação. Qual é a conduta imediata?",
+      "alternativas": [
+        "Administrar adrenalina IV imediatamente",
+        "Aguardar resolução espontânea",
+        "O2 100%, cessar injeção, emulsão lipídica 20% (Intralipid) se progressão para convulsão/PCR",
+        "Administrar bicarbonato de sódio IV",
+        "Realizar intubação orotraqueal profilática"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Por que a bupivacaína é mais perigosa em caso de toxicidade sistêmica quando comparada à lidocaína?",
+      "alternativas": [
+        "Tem maior neurotoxicidade central",
+        "Liga-se fortemente aos canais de sódio cardíacos — maior cardiotoxicidade e arritmia refratária",
+        "É absorvida mais rapidamente pelo trato gastrointestinal",
+        "Tem duração mais curta e exige mais injeções",
+        "Provoca mais alergias que a lidocaína"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "Qual é o antídoto específico para toxicidade sistêmica grave por anestésico local (convulsão + PCR)?",
+      "alternativas": [
+        "Neostigmina IV",
+        "Atropina 1 mg IV",
+        "Emulsão lipídica 20% (Intralipid) 1,5 mL/kg em bolus",
+        "Flumazenil IV",
+        "Naloxona IV"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Bloqueio digital: técnica padrão para traumas em dedos. Lidocaína SEM epinefrina = 4 mg/kg. Para 70 kg: 4 × 70 = 280 mg. Lidocaína 1% = 10 mg/mL → 28 mL máximo. O bloqueio digital usa apenas 2-3 mL, bem abaixo do limite."},
+    {"resposta": "B", "comentario": "Bloqueio supraorbital + supratroclear: nervos saem do rebordo orbital superior. Cobre couro cabeludo frontal ipsilateral. Técnica: palpar forames, injetar 2-3 mL em cada ponto. Muito mais eficaz que infiltrar ao redor de toda a ferida (menos injeções, melhor analgesia)."},
+    {"resposta": "C", "comentario": "LAST (Local Anesthetic Systemic Toxicity): sinais precoces = gosto metálico, zumbido, agitação. Conduta: cessar injeção, O2 100%, monitorar. Se progredir para convulsão/PCR: BZD + emulsão lipídica 20% (Intralipid) 1,5 mL/kg bolus → 0,25 mL/kg/min por 30-60 min."},
+    {"resposta": "B", "comentario": "Bupivacaína: ligação forte e prolongada ao canal de Na+ cardíaco (high affinity, slow dissociation). Causa arritmias refratárias (TV/FV) e PCR difícil de reverter. Por isso é contraindicada em bloqueios IV (Bier) e preferir ropivacaína em procedimentos de risco."},
+    {"resposta": "C", "comentario": "Antídoto da toxicidade grave por AL: emulsão lipídica 20% (Intralipid). Mecanismo: sink lipídico — captura o anestésico lipofílico da circulação/miocárdio. Dose: 1,5 mL/kg IV em bolus (1 min) → infusão 0,25 mL/kg/min por 30-60 min. Deve estar disponível em qualquer ambiente onde se faça bloqueio."}
+  ]
+}

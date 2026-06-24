@@ -1,0 +1,176 @@
+{
+  "slug": "colica_renal_litíase",
+  "titulo": "Cólica Renal e Litíase Urinária",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Litíase Urinária — Diagnóstico e Manejo da Cólica Renal",
+  "chapter_bar": "COLICA RENAL — ANALGESIA + IMAGEM + CONDUTA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DO CÁLCULO — TIPOS E TRATAMENTO",
+      "section_color": "navy",
+      "headers": ["Tipo de Cálculo", "Frequência", "Associado a", "Tratamento específico"],
+      "header_colors": ["gray", "navy", "teal", "orange"],
+      "col_widths": [0.24, 0.12, 0.34, 0.30],
+      "rows": [
+        ["Oxalato de cálcio", "70-80%", "Hipercalciúria, hiperoxalúria, baixa hidratação", "Tiazídico, citrato de K+, hidratação"],
+        ["Fosfato de cálcio", "5-10%", "Hipercalciúria, hiperparatireoidismo", "Tratar causa, citrato de K+"],
+        ["Ácido úrico", "5-10%", "Hiperuricemia, gota, urina ácida (pH <6)", "Alopurinol, alcalinizar urina (pH 6-7), hidratação"],
+        ["Estruvita (infecção)", "5-15%", "Proteus, Klebsiella (urease+) — persistente", "ATB + litotripsia/cirurgia (cálculo de coral)"],
+        ["Cistina", "1-2%", "Cistinúria genética — autosom. recessiva", "Hidratação intensa, D-penicilamina, alcalinização"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA COLICA RENAL AGUDA",
+      "title": "COLICA RENAL — ANALGESIA PRIMEIRO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Dor em flanco irradiando para virilha + náuseas\nHematúria (micro ou macro) em 80-90% dos casos", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Analgesia imediata: AINE (diclofenaco 75 mg IM)\n+ dipirona 2 g IV; opioide se AINE insuficiente", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 155, "h": 24, "text": "Imagem: US-renal (1a linha)\nTC sem contraste: padrao-ouro\n(>95% sensibilidade)", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 155, "h": 24, "text": "Febre? Infeccao urinária?\nNAO esperar: urgência urológica\n(cálculo + infecção = sepse!)", "color": "red", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Calculo <5 mm: expulsão espontânea 90%\nCalculo 5-10 mm: tamsulosina 0,4 mg/d — MET\nCalculo >10 mm: urologista + LECO ou cirurgia", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "INDICACOES CIRÚRGICAS DE URGÊNCIA",
+      "section_color": "red",
+      "headers": ["Indicação", "Conduta"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.50, 0.50],
+      "rows": [
+        ["Cálculo + infecção (febre + cálculo obstrutivo)", "Drenagem URGENTE: nefrostomia ou ureteroscopia + ATB IV"],
+        ["Dor refratária a opioides IV por >2h", "Urologista — pode necessitar drenagem"],
+        ["Cálculo em rim único ou transplantado", "Urgência urológica — risco de anúria"],
+        ["Anúria bilateral (cálculos bilaterais)", "Drenagem bilateral urgente — nefrostomia"],
+        ["Cálculo >10 mm sem passagem espontânea", "Litotripsia extracorpórea (LECO) ou ureteroscopia eletiva"],
+        ["Hematúria maciça com coágulos", "Cateterismo contínuo + hemostasia urológica"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "EXAMES E DIAGNÓSTICO DIFERENCIAL",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Exames na Cólica Renal",
+        "items": [
+          "EAS + urocultura: hematúria (80-90%), leucocitúria (infecção), cilindros",
+          "Ureia e creatinina: avaliar função renal (obstrução bilateral ou rim único)",
+          "Hemograma: leucocitose — infecção associada",
+          "US renal-vesical: 1a linha — identifica hidronefrose e cálculos >3 mm",
+          "TC sem contraste: padrão-ouro — sensibilidade 96%, especificidade 98%; todos os tipos de cálculo",
+          "RUB (rx urinário): apenas cálculo radio-opaco (oxalato/fosfato); ácido úrico é radiolucente"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Diagnóstico Diferencial",
+        "items": [
+          "Pielonefrite aguda: febre, disúria, ângulo costovertebral sensível; cultura +",
+          "Apendicite: dor migra para FID, sem hematúria, Blumberg positivo",
+          "Gravidez ectópica: beta-hCG positivo; dor pélvica, sem dor em flanco",
+          "Colecistite: dor em hipocôndrio direito, sem hematúria, murphy positivo",
+          "Aneurisma de aorta abdominal: >50 anos, massa pulsátil, hematúria pode ocorrer",
+          "Torção testicular: dor irradiada para escroto, testículo elevado"
+        ]
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TERAPIA EXPULSIVA MÉDICA (MET) — TAMSULOSINA",
+      "section_color": "orange",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Mecanismo", "Alfabloquador seletivo (alfa-1d) — relaxa musculatura lisa ureteral, facilita expulsão"],
+        ["Indicação", "Cálculo ureteral 5-10 mm assintomático ou com dor controlada"],
+        ["Dose", "Tamsulosina 0,4 mg/d VO até expulsão ou 4 semanas"],
+        ["Eficácia", "Reduz tempo de expulsão em 3-5 dias; aumenta taxa de expulsão em 20%"],
+        ["Efeitos adversos", "Hipotensão ortostática (tomar deitado); ejaculação retrógrada"],
+        ["Observação", "Cálculo <5 mm: expulsão espontânea >90% — MET pode ser oferecida mas não obrigatória"]
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA SEGURA DA CÓLICA RENAL",
+      "titulo": "CRITÉRIOS E ORIENTACOES",
+      "items": [
+        "Dor controlada com AINE oral ou opioide fraco",
+        "Sem febre (T <37,8oC) — se febre: internar e drenar",
+        "Sem anúria / sem rim único obstruído",
+        "Cálculo <10 mm com chance de expulsão espontânea",
+        "Orientar: hidratação 2-3 L/d, tamsulosina 0,4 mg/d, peneirar urina para análise",
+        "Retorno em <48h se: febre, anúria, dor intensa refratária, vômitos incoerciveis"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Homem de 38 anos com dor em flanco direito irradiando para virilha, hematúria. Qual é o exame de imagem padrão-ouro?",
+      "alternativas": [
+        "RUB (radiografia de rins, ureteres e bexiga)",
+        "US renal",
+        "TC de abdome e pelve SEM contraste",
+        "RM urológica",
+        "Urografia excretora"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com cólica renal e febre 38,5oC. TC confirma cálculo ureteral obstrutivo. Qual é a conduta?",
+      "alternativas": [
+        "Alta com AINE e tamsulosina — febre comum na cólica",
+        "Internação + ATB IV + drenagem urgente (nefrostomia ou JJ double-pigtail)",
+        "Litotripsia extracorpórea de emergência",
+        "Observação por 24h com analgesia e reavaliação",
+        "Aumentar dose de AINE e aguardar expulsão espontânea"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Cálculo de ácido úrico é diferente dos de oxalato porque:",
+      "alternativas": [
+        "É o mais comum (>70% dos casos)",
+        "Aparece claramente em todos os exames de imagem",
+        "É RADIOLUCENTE (invisível no RUB) — visível apenas na TC ou US",
+        "Causa hipercalciúria e hiperparatireoidismo",
+        "Não pode ser tratado clinicamente"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Qual tipo de cálculo urinário está associado a infecções por bactérias produtoras de urease (Proteus, Klebsiella)?",
+      "alternativas": [
+        "Oxalato de cálcio",
+        "Ácido úrico",
+        "Estruvita (fosfato de amônio magnesiano) — cálculo de coral",
+        "Cistina",
+        "Fosfato de cálcio"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Por que o AINE (diclofenaco, cetoprofeno) é preferido ao opioide como primeira linha na cólica renal?",
+      "alternativas": [
+        "Porque é mais barato e de administração mais fácil",
+        "Porque o AINE reduz a produção de prostaglandinas renais, diminuindo a pressão ureteral e o espasmo — além de analgesia comparable ao opioide",
+        "Porque opioides causam dependência e são contraindicados na urgência",
+        "Porque o AINE é mais eficaz em todos os tipos de dor",
+        "Porque o AINE protege o rim contra a lesão por obstrução"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "TC sem contraste: padrão-ouro para litíase urinária — sensibilidade 96-98%, especificidade 98%. Detecta todos os tipos de cálculo (inclusive ácido úrico, invisível no RUB). RUB: apenas radio-opacos. US: boa para hidronefrose, mas pode perder cálculos uretrais distais."},
+    {"resposta": "B", "comentario": "Cálculo + febre = obstrução urinária + infecção = pionefrose potencial. URGÊNCIA UROLÓGICA: risco de sepse e perda do rim. Internação + ATB IV (ceftriaxona ou piperacilina-tazobactam) + drenagem urgente (nefrostomia percutânea ou cateter JJ). Não aguardar — mortalidade alta sem drenagem."},
+    {"resposta": "C", "comentario": "Cálculo de ácido úrico: radiolucente — formado em urina ácida (pH <6), sem cálcio. Invisível no RUB mas visível na TC (hipoatenuante) e US. Tratamento diferenciado: alcalinizar urina (pH 6-7 com citrato de K+ ou bicarbonato) e alopurinol — possível dissolução sem cirurgia."},
+    {"resposta": "C", "comentario": "Estruvita (fosfato de amônio magnesiano): bactérias urease-positivas (Proteus, Klebsiella, Pseudomonas) hidrolisam ureia → amônia → alcaliniza urina → precipita estruvita + apatita. Forma cálculos de coral (preenche a pelve renal). Tratamento: ATB + litotripsia ou cirurgia (não dissolve com alcalinização)."},
+    {"resposta": "B", "comentario": "AINE na cólica: inibe prostaglandinas renais (PGE2) → reduz TFG ipsilateral → diminui produção urinária → reduz pressão ureteral proximal → alívio da cólica. Analgesia equivalente ou superior ao opioide IV para cólica ureteral (metanálises). Contraindicação: IRC, hipovolemia, uso de IECA."}
+  ]
+}

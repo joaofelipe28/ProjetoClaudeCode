@@ -1,0 +1,177 @@
+{
+  "slug": "tvp_trombose_venosa",
+  "titulo": "Trombose Venosa Profunda (TVP)",
+  "especialidade": "CIRURGIA VASCULAR",
+  "chapter_subject": "TVP — Diagnóstico, Escore de Wells e Anticoagulação",
+  "chapter_bar": "TVP — WELLS + US + ANTICOAGULAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESCORE DE WELLS — PROBABILIDADE PRÉ-TESTE",
+      "section_color": "navy",
+      "headers": ["Critério", "Pontuação", "Interpretação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.50, 0.14, 0.36],
+      "rows": [
+        ["Câncer ativo (tratamento em 6 meses ou paliativo)", "+1", "Total >=3: alta probabilidade (75%)"],
+        ["Paralisia ou imobilização recente de membro inferior", "+1", "Total 1-2: probabilidade moderada"],
+        ["Acamado >=3 dias OU grande cirurgia em 12 semanas", "+1", "Total 0: baixa probabilidade (<5%)"],
+        ["Dor localizada no trajeto venoso profundo", "+1", "D-dímero: útil apenas se probabilidade baixa/moderada"],
+        ["Edema em todo o membro inferior", "+1", "D-dímero negativo + baixa prob.: exclui TVP"],
+        ["Edema com cacifo, maior que o lado contralateral", "+1", "US: exame diagnóstico padrão (compressão venosa)"],
+        ["Circulação colateral superficial (não variz)", "+1", "Se US negativo + alta prob.: repetir US em 1 semana"],
+        ["Diagnóstico alternativo tão ou mais provável", "-2", ""]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ALGORITMO DIAGNÓSTICO TVP",
+      "title": "TVP — PROBABILIDADE + D-DÍMERO + US",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Edema unilateral de MMII + dor + calor\nCalcular Escore de Wells", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.27, "y": 0.67, "w": 150, "h": 24, "text": "BAIXA probabilidade\n(Wells <2):\nD-dímero\nSe neg.: excluir TVP", "color": "green", "font_size": 5.5},
+        {"id": "c", "x": 0.73, "y": 0.67, "w": 150, "h": 24, "text": "ALTA probabilidade\n(Wells >=2):\nUS-Doppler urgente\nNão aguardar D-dímero", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.27, "y": 0.37, "w": 150, "h": 24, "text": "D-dímero positivo:\nUS-Doppler\n(mesmo com prob. baixa)", "color": "orange", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.10, "w": 215, "h": 22, "text": "US positivo: anticoagular\nUS negativo + alta prob.: repetir US em 5-7 dias", "color": "teal", "font_size": 5.8}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTICOAGULAÇÃO NA TVP",
+      "section_color": "orange",
+      "headers": ["Cenário", "Droga de escolha", "Duração"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.36, 0.36],
+      "rows": [
+        ["TVP proximal não provocada", "DOAC (rivaroxabana 15 mg 12/12h x 21d, depois 20 mg/d)", "3-6 meses; avaliar tratamento indefinido"],
+        ["TVP proximal provocada (cirurgia, viagem)", "DOAC ou varfarina", "3 meses — fator de risco removido"],
+        ["TVP distal isolada sintomática", "DOAC ou HBPM", "3 meses; observação possível se assintomática"],
+        ["TVP + câncer", "HBPM (dalteparina) OU DOAC (apixabana, rivaroxabana)", "Indefinido enquanto câncer ativo"],
+        ["TVP na gestação", "HBPM (enoxaparina) — não DOAC", "Até pelo menos 6 semanas pós-parto"],
+        ["Síndrome antifosfolípide", "Varfarina INR 2-3 (DOACs: risco maior de recorrência)", "Indefinido"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TROMBOFLEBITE SÉPTICA — ATENÇÃO",
+      "section_color": "red",
+      "titulo": "TVP + FEBRE + SINAIS INFLAMATÓRIOS = SÉPTICA",
+      "items": [
+        "Tromboflebite séptica: infecção bacteriana associada ao trombo venoso",
+        "Causas: cateter IV, infecção pélvica, cirurgia, usuário de drogas IV",
+        "Clínica: febre alta + cordão venoso inflamado e doloroso + calafrios + bacteremia",
+        "Hemoculturas antes do ATB (S. aureus mais comum)",
+        "ATB IV: oxacilina 2g 4/4h (ou vancomicina se MRSA suspeito)",
+        "Anticoagulação: indicada em conjunto com ATB — sem benefício isolado sem ATB"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "SÍNDROME PÓS-TROMBÓTICA E PROFILAXIA",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Síndrome Pós-Trombótica",
+        "items": [
+          "Ocorre em 20-50% dos pacientes após TVP proximal",
+          "Clínica: dor, edema crônico, varizes secundárias, lipodermatoesclerose, úlcera",
+          "Prevenção: anticoagulação adequada + meia elástica 30-40 mmHg por 2 anos",
+          "Deambulação precoce: não está contraindicada na TVP — reduz risco de TEP? (não comprovado)",
+          "Filtro de veia cava inferior: apenas se contraindicação absoluta à anticoagulação"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Profilaxia de TVP",
+        "items": [
+          "Cirurgia de alto risco (ortopédica, neoplásica): enoxaparina 40 mg SC/d + meia de compressão",
+          "Imobilização prolongada: enoxaparina profilática se risco moderado-alto",
+          "Deambulação precoce: principal medida não farmacológica",
+          "Escore de Caprini: estratifica risco cirúrgico e orienta profilaxia",
+          "Anticoagulação prolongada: pós-artroplastia total de quadril/joelho por 35 dias"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "TVP EM MEMBRO SUPERIOR",
+      "titulo": "DIFERENÇAS E PARTICULARIDADES",
+      "items": [
+        "Causas: cateter venoso central (60%), esforço (Paget-Schroetter), tumor mediastinal, trombofilia",
+        "Paget-Schroetter: jovem atleta (nadador, jogador de vôlei) com TVP subclávia ou axilar por esforço",
+        "Risco de TEP: menor que MMII, mas real (~5%)",
+        "Tratamento: anticoagulação igual ao MMII; fisioterapia se Paget-Schroetter",
+        "Trombólise/trombectomia: considerar em Paget-Schroetter com sintomas graves",
+        "Retirar cateter central se for a causa e possível — anticoagular por 3 meses"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Homem de 55 anos com edema unilateral em MMII, dor no trajeto venoso, cirurgia ortopédica há 2 semanas. Escore de Wells = 3. Qual é a conduta diagnóstica?",
+      "alternativas": [
+        "D-dímero isolado — se negativo, excluir TVP",
+        "US-Doppler urgente — não aguardar D-dímero em alta probabilidade",
+        "TC de tórax para excluir TEP",
+        "Alta com meia elástica e retorno em 1 semana",
+        "Iniciar anticoagulação empírica sem nenhum exame"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Mulher de 32 anos, gestante de 20 semanas, com TVP proximal confirmada. Qual anticoagulante é o mais adequado?",
+      "alternativas": [
+        "Rivaroxabana 20 mg/dia",
+        "Varfarina INR 2-3",
+        "Enoxaparina 1 mg/kg 12/12h subcutânea",
+        "Apixabana 5 mg 12/12h",
+        "Ácido acetilsalicílico 100 mg/dia"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é a limitação do D-dímero no diagnóstico de TVP?",
+      "alternativas": [
+        "Baixa sensibilidade — muitos casos de TVP têm D-dímero normal",
+        "Alta sensibilidade mas baixa especificidade — positivo em gravidez, pós-operatório, infecção, idosos",
+        "Só detecta TVP de MMSS",
+        "Inválido em pacientes anticoagulados",
+        "Detecta apenas trombo recente (<24h)"
+      ]
+    },
+    {
+      "source": "SES-MG / Adaptada",
+      "enunciado": "Paciente com TVP proximal e diagnóstico recente de carcinoma de pulmão. Qual é o anticoagulante de escolha?",
+      "alternativas": [
+        "Varfarina INR 2-3",
+        "Rivaroxabana 20 mg/dia por 3 meses e suspender",
+        "HBPM (dalteparina) ou DOAC (apixabana/rivaroxabana) por tempo indefinido",
+        "Ácido acetilsalicílico 300 mg/dia",
+        "Heparina não fracionada IV por 5 dias e suspender"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Síndrome de Paget-Schroetter é descrita como TVP em:",
+      "alternativas": [
+        "Veia femoral superficial em paciente imobilizado",
+        "Veia poplítea em gestante",
+        "Veia subclávia ou axilar por esforço em jovem atleta",
+        "Seio venoso cerebral em usuário de anticoncepcional",
+        "Veia cava inferior em paciente com trombofilia"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Wells >=3 = alta probabilidade de TVP. Conduta: US-Doppler imediato — D-dímero é útil apenas em baixa/moderada probabilidade (se negativo, exclui). Em alta probabilidade, D-dímero tem baixo valor preditivo negativo. US-Doppler com compressão venosa: padrão-ouro."},
+    {"resposta": "C", "comentario": "TVP na gestação: HBPM (enoxaparina) é a única anticoagulante segura — não atravessa a placenta. DOACs (rivaroxabana, apixabana) são contraindicados na gestação. Varfarina é teratogênica no 1o trimestre. Dose terapêutica: enoxaparina 1 mg/kg 12/12h."},
+    {"resposta": "B", "comentario": "D-dímero: alta sensibilidade (~97%), baixa especificidade. Positivo em muitas situações (gestação, pós-op, infecção, câncer, idoso, AVC). Valor: exclusão em baixa/moderada probabilidade — D-dímero NEGATIVO + baixa probabilidade = exclui TVP. Positivo não confirma."},
+    {"resposta": "C", "comentario": "TVP + câncer: HBPM (dalteparina 200 UI/kg/d) ou DOAC (apixabana 10 mg 12/12h x 7d, depois 5 mg 12/12h) — indefinido enquanto câncer ativo. Varfarina tem interações com quimioterapia e INR instável. Risco de recorrência 3-5x maior que sem câncer."},
+    {"resposta": "C", "comentario": "Paget-Schroetter: TVP de esforço em veia subclávia ou axilar — jovens atletas (nado, vôlei, musculação intensa) com compressão do desfiladeiro torácico (primeira costela + músculo subclávio). Tratamento: anticoagulação + fisioterapia; pode precisar de descompressão cirúrgica."}
+  ]
+}

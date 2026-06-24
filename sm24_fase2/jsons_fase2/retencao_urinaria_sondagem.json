@@ -1,0 +1,175 @@
+{
+  "slug": "retencao_urinaria_sondagem",
+  "titulo": "Retenção Urinária Aguda e Sondagem Vesical",
+  "especialidade": "PROCEDIMENTOS",
+  "chapter_subject": "Retenção Urinária Aguda — Diagnóstico e Sondagem",
+  "chapter_bar": "RETENÇÃO URINÁRIA — ALIVIAR + INVESTIGAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS DE RETENÇÃO URINÁRIA AGUDA",
+      "section_color": "navy",
+      "headers": ["Categoria", "Causas", "Pistas clínicas"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.44, 0.34],
+      "rows": [
+        ["Obstrutiva (+ comum no homem)", "HBP, câncer de próstata, estenose de uretra, fimose, cálculo uretral", "Homem >50 anos, esforço miccional prévio, fluxo fraco"],
+        ["Infecciosa/Inflamatória", "Prostatite aguda, uretrite, cistite grave, abscesso periuretral", "Febre, dor pélvica, secreção uretral, PSA elevado"],
+        ["Neurogênica", "AVC, lesão medular, esclerose múltipla, DM (bexiga neurogênica)", "Déficit neurológico, DM de longa data, antecedente de trauma"],
+        ["Farmacológica", "Anticolinérgicos, antidepressivos tricíclicos, opioides, anti-histamínicos, alfas", "Medicação nova ou recente, idosos polimedicados"],
+        ["Pós-operatória", "Anestesia, opioides, imobilidade, edema local", "Cirurgia recente (sobretudo pélvica, ortopédica, abdominal)"],
+        ["Funcional (+ comum na mulher)", "Cistocele, prolapso de órgão pélvico, pós-parto", "Mulher, paridade, dificuldade com força de Valsalva"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA RETENÇÃO URINÁRIA AGUDA",
+      "title": "RETENÇÃO — ALIVIAR PRIMEIRO, DEPOIS INVESTIGAR",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Dor suprapúbica + bexiga palpável/percutível + incapacidade de urinar\nUS point-of-care: confirmar volume vesical (>300 mL = retenção)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 215, "h": 22, "text": "Alívio imediato: sondagem vesical de demora (Foley)\nSe falha: cateter suprapúbico", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "Drenagem lenta?\nControversial — evidência atual\nfavor de drenagem completa\nimediata (sem clampear)", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Investigar causa:\nUR, creatinina, urinalise, US\nPSA, urodinâmica se repetição", "color": "teal", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Tratar causa de base: alfabloquador (HBP), ATB (prostatite)\nUrologia para avaliação — internação se complicações", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SONDAGEM VESICAL — CATETER DE FOLEY",
+      "section_color": "orange",
+      "headers": ["Etapa", "Ação", "Detalhes"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.08, 0.30, 0.62],
+      "rows": [
+        ["1", "Preparação", "EPI (luvas estéreis), campo fenestrado, seringa 10 mL com água destilada, gel lubrificante com lidocaína 2%"],
+        ["2", "Antissepsia", "Clorexidina 0,5% aquosa: glande/meato (homem) ou lábios/meato (mulher), de dentro para fora"],
+        ["3", "Lubrificação", "Instilar lidocaína gel 2% (5-10 mL) na uretra com seringa → aguardar 3-5 min"],
+        ["4", "Inserção (homem)", "Pênis em 90°; inserir até o Y do cateter; insuflar cuff SOMENTE após fluxo de urina"],
+        ["5", "Inserção (mulher)", "Identificar meato uretral (anterior à vagina); inserir 5-6 cm; insuflar cuff após urina"],
+        ["6", "Fixação", "Fitar na coxa/abdome; sistema coletor fechado; monitorar diurese"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SONDAGEM DIFÍCIL E ALTERNATIVAS",
+      "section_color": "red",
+      "titulo": "QUANDO A SONDAGEM URETRAL FALHA",
+      "items": [
+        "Estenose uretral: tentar cateter mais fino (12-14 Fr) ou guia hidrofílico",
+        "Próstata muito aumentada: cateter coudé (curvo, bico angulado para cima)",
+        "Falsa via suspeita: parar, não forçar — urologista urgente",
+        "Trauma uretral (fratura de bacia, sangue no meato): NÃO sondar → cistostomia suprapúbica",
+        "Cistostomia suprapúbica: US-guiada, 2 cm acima da sínfise púbica, bexiga cheia (>250 mL)",
+        "Prostatite aguda: sondagem pode ser difícil e dolorosa — sedação local, considerar suprapúbica"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "COMPLICAÇÕES E CUIDADOS",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Complicações Imediatas",
+        "items": [
+          "Hematúria ex vacuo: sangramento após drenagem rápida de bexiga muito distendida",
+          "Hipotensão (decompressão brusca): drenagem lenta se >1 L (controverso)",
+          "Falsa via: passagem fora da uretra — dor, resistência, ausência de urina",
+          "Infecção: usar técnica estéril; sistema fechado de drenagem",
+          "Parafimose: fimose não reposicionada após sondagem — reposição imediata"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Alta e Seguimento",
+        "items": [
+          "Alfabloquador: tansulosina 0,4 mg/d antes da retirada da sonda (melhora TWOC)",
+          "TWOC (Trial Without Catheter): retirar sonda após 1-7 dias, tentativa miccional",
+          "Sucesso do TWOC: ~50-70% com alfabloquador; recorrência indica avaliação urológica",
+          "Encaminhar à urologia: HBP com sintomas, EStenose de uretra, retenção de repetição",
+          "Diário miccional: orientar paciente a registrar frequência e volume urinário"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "INDICAÇÃO DE INTERNAÇÃO OU UROLOGIA URGENTE",
+      "titulo": "NÃO DAR ALTA NESSES CASOS",
+      "items": [
+        "Insuficiência renal aguda pós-obstrutiva (creatinina elevada + anurixa)",
+        "Diurese pós-obstrução >200 mL/h (diurese osmótica) — risco de distúrbio hidroeletrolítico",
+        "Infecção urinária complicada (prostatite, urosepse) — antibiótico IV + internação",
+        "Retenção com hematúria franca — investigar tumor de bexiga ou de próstata",
+        "Trauma uretral ou pélvico — urologia urgente, evitar sondagem",
+        "Retenção em paciente com lesão medular — avaliar nível neurológico + cateterismo intermitente"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Homem de 65 anos com globo vesical e incapacidade de urinar há 8 horas. Qual é a primeira conduta?",
+      "alternativas": [
+        "Solicitar US renal e urofluxometria antes de qualquer procedimento",
+        "Sondagem vesical de alívio (Foley) imediata para aliviar a retenção",
+        "Administrar furosemida IV para estimular a diurese",
+        "Encaminhar ao urologista sem intervir no PS",
+        "Realizar cistoscopia de urgência"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Durante sondagem de Foley em homem, há resistência e o cateter retorna sem urina. Qual a conduta?",
+      "alternativas": [
+        "Forçar a passagem com maior pressão",
+        "Trocar por cateter de maior calibre (22 Fr)",
+        "Parar, suspeitar de estenose ou falsa via — tentar cateter coudé ou acionar urologia",
+        "Instilar mais gel e tentar novamente por 5 vezes",
+        "Realizar cistostomia suprapúbica imediatamente sem outras tentativas"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Em qual situação a sondagem uretral é CONTRAINDICADA e deve-se optar por cistostomia suprapúbica?",
+      "alternativas": [
+        "Próstata aumentada ao toque retal",
+        "Infecção urinária baixa",
+        "Sangue no meato uretral + fratura pélvica (suspeita de trauma uretral)",
+        "Paciente agitado ou pouco colaborativo",
+        "Retenção em mulher grávida"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Qual medicamento deve ser prescrito ao alta para homem com primeiro episódio de retenção urinária por HBP, com cateter de Foley, para melhorar a chance de micção espontânea na retirada da sonda?",
+      "alternativas": [
+        "Finasterida 5 mg/dia",
+        "Tansulosina 0,4 mg/dia (alfabloquador)",
+        "Furosemida 40 mg/dia",
+        "Ciprofloxacino 500 mg 12/12h",
+        "Betanecol colinérgico"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "O momento correto de insuflar o balão do cateter de Foley durante a sondagem masculina é:",
+      "alternativas": [
+        "Ao atingir 5 cm de inserção (metade da uretra)",
+        "Ao sentir resistência na próstata",
+        "Somente após observar fluxo livre de urina pelo cateter",
+        "Antes de inserir totalmente para fixar a posição",
+        "Após confirmar com raio-X a posição vesical"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Retenção urinária aguda: alívio imediato com sondagem vesical (Foley). Exames laboratoriais (UR, Cr) e US são complementares, mas não devem atrasar o alívio. Drenagem imediata alivia dor, previsa lesão de bexiga por distensão e avalia complicações (ex: IRA pós-obstrutiva)."},
+    {"resposta": "C", "comentario": "Resistência durante sondagem masculina: parar imediatamente. Suspeitar de estenose uretral (tentar cateter fino 12 Fr) ou falsa via (não forçar — risco de perfuração). Cateter coudé (bico curvo) útil em hiperplasia prostática. Forçar = risco de sangramento, trauma e estenose."},
+    {"resposta": "C", "comentario": "Trauma uretral: sangue no meato + fratura pélvica = CONTRAINDICAÇÃO de sondagem uretral (pode completar ruptura uretral). Conduta: cistostomia suprapúbica de alívio + urologia urgente. Radiografia/uretrografia para avaliar extensão da lesão."},
+    {"resposta": "B", "comentario": "Alfabloquadores (tansulosina, doxazosina) relaxam o músculo liso do colo vesical e prostático → melhora o fluxo urinário. TWOC (Trial Without Catheter) com alfabloquador: taxa de sucesso ~60-70% vs ~40% sem medicação. Iniciar 24-48h antes da retirada da sonda."},
+    {"resposta": "C", "comentario": "Insuflar o balão SOMENTE após urina fluir livremente — confirma que o cateter está no interior da bexiga e não na uretra. Insuflar na uretra causa dor intensa e lesão uretral. No homem, inserir até o Y do cateter antes de insuflar (uretra ~20 cm)."}
+  ]
+}

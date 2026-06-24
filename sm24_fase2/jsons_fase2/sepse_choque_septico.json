@@ -1,0 +1,191 @@
+{
+  "slug": "sepse_choque_septico",
+  "titulo": "Sepse e Choque Séptico",
+  "especialidade": "CLÍNICA MÉDICA",
+  "chapter_subject": "Sepse e Choque Séptico — Diagnóstico e Bundle 1h",
+  "chapter_bar": "SEPSE — BUNDLE 1H E ANTIBIÓTICO",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO — SEPSIS-3 (2016)",
+      "section_color": "teal",
+      "titulo": "CRITÉRIOS ATUAIS",
+      "items": [
+        "Sepse: disfunção orgânica ameaçadora à vida causada por resposta desregulada à infecção (SOFA ≥2 pontos)",
+        "Choque séptico: sepse + vasopressor para PAM ≥65 + lactato >2 mmol/L (18 mg/dL) após reposição volêmica",
+        "SOFA ≥2: PaO2/FiO2, bilirrubina, plaquetas, escala de Glasgow, creatinina, PAM",
+        "qSOFA (triagem): FR ≥22, Glasgow ≤13, PAS ≤100 — ≥2 = suspeita de sepse (alta sensibilidade)",
+        "Mortalidade: sepse 10-20%, choque séptico 30-50%"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "BUNDLE 1 HORA — SEP-1",
+      "title": "SEPSE — AGIR EM 1 HORA",
+      "height": 230,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Suspeita de sepse (qSOFA ≥2 ou disfunção orgânica)\nIdentificar foco + colher exames + LACTATO imediato", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 215, "h": 22, "text": "BUNDLE 1h: Hemoculturas (2 pares) → ATB 1h\nLactato → SF 30 mL/kg se lactato >4 ou hipotensão", "color": "red", "font_size": 5.7},
+        {"id": "c", "x": 0.25, "y": 0.43, "w": 155, "h": 28, "text": "CHOQUE SÉPTICO\nPAM <65 + vasopressor\nNoradrenalina 1ª escolha\nMonitorar lactato seriado", "color": "red", "font_size": 5.3},
+        {"id": "d", "x": 0.75, "y": 0.43, "w": 155, "h": 28, "text": "SEPSE SEM CHOQUE\nATB em 1h do diagnóstico\nReposição se lactato >2\nInternação + monitorar", "color": "orange", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 215, "h": 22, "text": "Alvo: PAM ≥65 + débito urinário >0,5 mL/kg/h\nLactato <2 mmol/L; ScvO2 >70%; controlar foco", "color": "teal", "font_size": 5.6}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIOTICOTERAPIA EMPÍRICA POR FOCO",
+      "section_color": "orange",
+      "headers": ["Foco", "ATB empírico preferido", "Cobertura-alvo"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.42, 0.34],
+      "rows": [
+        ["Pneumonia (PAC)", "Ampicilina-sulbactam + azitromicina OU ceftriaxona + azitromicina", "S. pneumoniae, H. influenzae, atípicos"],
+        ["ITU urossepse", "Ceftriaxona 1-2g IV", "E. coli, Klebsiella (ESBL: meropeném)"],
+        ["Abdominal", "Piperacilina-tazobactam 4,5g IV 8/8h", "Gram-negativos + anaeróbios"],
+        ["Pele/partes moles", "Oxacilina/Cefazolina ± Vancomicina se MRSA", "S. aureus, Streptococcus"],
+        ["Nosocomial/UTI", "Meropeném 1-2g IV 8/8h ± Vancomicina", "Gram-negativos resistentes, MRSA"],
+        ["Foco desconhecido", "Piperacilina-tazobactam OU meropeném + Vancomicina", "Cobertura ampla empiricamente"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "VASOPRESSORES E INOTRÓPICOS",
+      "section_color": "navy",
+      "headers": ["Droga", "Dose inicial", "Indicação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.26, 0.48],
+      "rows": [
+        ["Noradrenalina (1ª escolha)", "0,1-0,2 mcg/kg/min", "Vasopressor de 1ª linha no choque séptico"],
+        ["Vasopressina", "0,03-0,04 U/min fixo", "Adjuvante da norad (poupar dose); PAM persistente baixa"],
+        ["Dobutamina", "2,5-10 mcg/kg/min", "Disfunção miocárdica (baixo DC + pressão adequada)"],
+        ["Adrenalina", "0,1-0,5 mcg/kg/min", "3ª linha; choque refratário a norad + vasopressina"],
+        ["Hidrocortisona", "200 mg/dia IV contínuo", "Choque refratário (≥2 vasopressores) — não de rotina"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REPOSIÇÃO VOLÊMICA — COMO FAZER",
+      "section_color": "red",
+      "titulo": "FLUIDOS: QUANTO E QUANDO PARAR",
+      "items": [
+        "Bolus inicial: SF 0,9% ou Ringer lactato 30 mL/kg em 3h se lactato >4 ou hipotensão",
+        "Avaliação dinâmica de responsividade: elevação passiva de membros (EPC) ou variação de PP (>13%)",
+        "Não dar cegamente além do inicial — monitorar sinais de sobrecarga (crepitações, B3, PVC elevada)",
+        "Alvo: PAM ≥65, débito urinário >0,5 mL/kg/h, melhora do lactato (clearance ≥10%/2h)",
+        "Albumina 4%: adjuvante em pacientes que necessitem >3L na fase de ressuscitação (evidência moderada)",
+        "Evitar amido (HES): associado a LRA e mortalidade — contraindicado em sepse"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CONTROLE DO FOCO E SUPORTE",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Controle de Foco (essencial!)",
+        "items": [
+          "Identificar e drenar foco DENTRO DE 6-12h",
+          "Abscesso: drenagem percutânea ou cirúrgica",
+          "Colangite: CPRE + drenagem biliar urgente",
+          "Peritonite: cirurgia dentro de 12h",
+          "CVC infectado: remover o cateter",
+          "Fascite necrotizante: desbridamento emergencial"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Suporte Orgânico",
+        "items": [
+          "Glicemia: manter 140-180 mg/dL (insulina se >180)",
+          "Transfusão: Hb alvo ≥7 g/dL (≥9 se IC/isquemia)",
+          "Plaquetas: transfundir se <10k; cirurgia <50k",
+          "VNI / VM: SARA, hipoxemia refratária",
+          "TVP profilaxia: heparina SC (exceto sangramento)",
+          "Profilaxia de úlcera: IBP se em VM ou coagulopatia"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "BUNDLE 1 HORA — CHECKLIST COMPLETO",
+      "titulo": "AGIR EM 60 MINUTOS",
+      "items": [
+        "Lactato sérico: colher imediatamente (>4 = choque críptico / ressuscitação agressiva)",
+        "Hemoculturas: 2 pares de sítios diferentes ANTES do antibiótico",
+        "Antibiótico de amplo espectro: administrar em até 1h do diagnóstico",
+        "Fluidos IV: iniciar SF/RL 30 mL/kg se PAS <90 ou lactato >4",
+        "Vasopressores: se hipotensão persistente após fluidos → noradrenalina",
+        "Lactato seriado a cada 2h: alvo <2 mmol/L (clearance ≥10% = boa resposta)",
+        "Identificar e tratar foco em 6-12h: drenagem, cirurgia, remoção de dispositivo"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Segundo Sepsis-3, o que define CHOQUE SÉPTICO?",
+      "alternativas": [
+        "Febre > 38,5°C + leucocitose + hipotensão",
+        "Sepse + necessidade de vasopressor para PAM ≥65 mmHg + lactato >2 mmol/L",
+        "Sepse + lactato >4 mmol/L independentemente da PA",
+        "Sepse + PCR elevada + 2 critérios de SIRS",
+        "Infecção documentada + choque circulatório"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o vasopressor de PRIMEIRA LINHA no choque séptico?",
+      "alternativas": [
+        "Dopamina em dose vasopressora",
+        "Adrenalina",
+        "Noradrenalina",
+        "Dobutamina",
+        "Vasopressina isolada"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Um paciente com sepse e choque tem lactato de 6 mmol/L. Qual é o principal alvo de tratamento nas primeiras 6 horas?",
+      "alternativas": [
+        "Normalizar temperatura corporal com antitérmicos",
+        "Clearance de lactato ≥10% a cada 2h + PAM ≥65 + débito urinário >0,5 mL/kg/h",
+        "Manter FC <100 bpm com betabloqueador",
+        "Administrar corticoide sistêmico imediatamente",
+        "Aguardar hemoculturas antes de qualquer antibiótico"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Em paciente com choque séptico de foco abdominal (abscesso hepático), qual é o prazo máximo preconizado para controle do foco?",
+      "alternativas": [
+        "72 horas após estabilização clínica",
+        "6-12 horas do diagnóstico",
+        "Aguardar ATB por 5 dias antes de drenar",
+        "Apenas se não houver melhora em 48h",
+        "Não há indicação cirúrgica sem falência orgânica"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Por que os coloides do tipo amido (HES) são contraindicados na sepse?",
+      "alternativas": [
+        "Causam hiperpotassemia grave",
+        "São contraindicados por aumentar risco de LRA e mortalidade em sepse",
+        "Causam hipercoagulabilidade",
+        "Não são contraindicados; a evidência é favorável ao HES",
+        "São contraindicados apenas em crianças"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Sepsis-3 define choque séptico como: sepse + vasopressor necessário para PAM ≥65 + lactato >2 mmol/L após ressuscitação volêmica adequada. Não usa mais critérios de SIRS. Mortalidade 30-50%."},
+    {"resposta": "C", "comentario": "Noradrenalina é o vasopressor de 1ª linha no choque séptico (Surviving Sepsis Campaign). Possui ação α-adrenérgica predominante (vasoconstritora) com menor taquicardia que dopamina. Dopamina aumenta mortalidade em subgrupos."},
+    {"resposta": "B", "comentario": "Alvos da ressuscitação: clearance de lactato ≥10%/2h (SVRO2 >70%), PAM ≥65, débito urinário >0,5 mL/kg/h. Lactato persistentemente elevado = má perfusão tissular. Reduzir lactato em 10% nas primeiras 2h é marcador de resposta."},
+    {"resposta": "B", "comentario": "Controle de foco em 6-12h é fundamental — antibiótico sem drenagem do foco falha. Abscesso: drenagem percutânea ou cirúrgica imediata. Colangite: CPRE urgente. Peritonite: cirurgia em <12h."},
+    {"resposta": "B", "comentario": "HES (hidroxietilamido) está contraindicado em sepse por aumentar risco de LRA e mortalidade (estudos 6S e CHEST). Soluções isotônicas (SF 0,9%, Ringer lactato) são preferidas. Albumina 4% pode ser adjuvante."}
+  ]
+}

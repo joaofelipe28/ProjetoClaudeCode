@@ -1,0 +1,175 @@
+{
+  "slug": "laringite_estridor",
+  "titulo": "Laringite e Estridor na Criança",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Crupe e Causas de Estridor Agudo na Criança",
+  "chapter_bar": "ESTRIDOR — CRUPE vs EPIGLOTITE vs CE",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS DE ESTRIDOR AGUDO — DIFERENCIAÇÃO",
+      "section_color": "navy",
+      "headers": ["Causa", "Idade", "Clínica", "Conduta chave"],
+      "header_colors": ["gray", "navy", "teal", "orange"],
+      "col_widths": [0.22, 0.13, 0.37, 0.28],
+      "rows": [
+        ["Crupe viral (laringotraqueíte)", "6m-3a", "Tosse ladrante, estridor, rouquidão, febre baixa, pródromo viral", "Corticoide + nebulização adrenalina"],
+        ["Epiglotite", "2-7a", "Toxemia, sialorreia, posição tripé, disfagia, SEM tosse, febre alta", "NAO examinar garganta! Via aérea no CC"],
+        ["Traqueíte bacteriana", "3-10a", "Toxemia + estridor + secreção purulenta + febre alta", "ATB IV + via aérea"],
+        ["Corpo estranho", "1-3a", "Início SÚBITO, engasgo, sem pródromo, assimetria à ausculta", "Broncoscopia"],
+        ["Abscesso retrofaríngeo", "<6a", "Disfagia, rigidez de nuca, abaulamento de parede posterior", "TC + drenagem + ATB"],
+        ["Anafilaxia/angioedema", "Qualquer", "Início rápido, urticária, exposição a alérgeno", "Adrenalina IM"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CRUPE — ESCORE DE WESTLEY E TRATAMENTO",
+      "section_color": "orange",
+      "headers": ["Gravidade", "Características", "Tratamento"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.42, 0.38],
+      "rows": [
+        ["Leve (Westley <=2)", "Tosse ladrante, sem estridor em repouso, sem tiragem", "Dexametasona 0,15-0,6 mg/kg VO dose única + alta"],
+        ["Moderada (3-7)", "Estridor em repouso + tiragem leve-moderada", "Dexametasona + nebulização com adrenalina + observação 3-4h"],
+        ["Grave (>=8)", "Estridor em repouso + tiragem grave + agitação/letargia", "Adrenalina nebulizada + dexametasona + O2 + considerar UTI"],
+        ["Iminência de falência", "Cianose, sonolência, redução do estridor (mau sinal!)", "Via aérea avançada (IOT) + UTI"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DO CRUPE",
+      "title": "CRUPE — CORTICOIDE PARA TODOS",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Tosse ladrante + estridor + rouquidão + pródromo viral\nAvaliar gravidade pelo escore de Westley", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Dexametasona 0,15-0,6 mg/kg (VO/IM) para TODOS\n(reduz edema; efeito em 2-4h, dura 2-3 dias)", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "Leve:\nDexametasona + alta\nOrientacoes de retorno", "color": "green", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Moderado/grave:\n+ Adrenalina nebulizada\n(L-epi 5 mL ou racemica)\nObservar 3-4h (efeito rebote)", "color": "red", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Alta segura: sem estridor em repouso por 3-4h pos-adrenalina\nRetornar se: estridor em repouso, cianose, tiragem, sonolencia", "color": "orange", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "EPIGLOTITE — EMERGÊNCIA DE VIA AÉREA",
+      "section_color": "red",
+      "titulo": "NAO EXAMINAR A GARGANTA — RISCO DE OBSTRUÇÃO TOTAL",
+      "items": [
+        "Criança toxemiada, posição de tripé, sialorreia (não engole), SEM tosse, voz abafada",
+        "Causa: H. influenzae tipo B (HiB) — raro pós-vacina; considerar em não vacinados",
+        "NAO usar abaixador de língua, NAO deitar a criança, NAO causar ansiedade — risco de laringoespasmo fatal",
+        "Manter a criança calma no colo dos pais; oferecer O2 sem incomodar",
+        "Via aérea definitiva no centro cirúrgico (anestesia + ORL) — IOT eletiva com equipe preparada",
+        "Após via aérea segura: ATB IV (ceftriaxona) + UTI"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ADRENALINA E CORTICOIDE NO CRUPE",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Adrenalina Nebulizada",
+        "items": [
+          "L-adrenalina 1:1000: 0,5 mL/kg (máx 5 mL) nebulizada",
+          "Adrenalina racêmica 2,25%: 0,5 mL em 3 mL de SF",
+          "Início rápido (10-30 min); efeito dura 2 horas",
+          "Efeito rebote: observar 3-4h após (edema pode retornar)",
+          "Indicação: crupe moderado-grave com estridor em repouso",
+          "Não alterar o curso da doença — apenas alívio temporário"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Dexametasona",
+        "items": [
+          "Dose: 0,15-0,6 mg/kg VO/IM dose única (máx 16 mg)",
+          "Indicada em TODOS os graus de crupe (mesmo leve)",
+          "Reduz edema subglótico; efeito em 2-4h, dura 2-3 dias",
+          "VO tão eficaz quanto IM; budesonida inalada é alternativa",
+          "Reduz retornos, internações e necessidade de adrenalina",
+          "Dose única geralmente suficiente (meia-vida longa)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "SINAIS DE ALARME — VIA AÉREA",
+      "titulo": "INTERNAR / UTI SE...",
+      "items": [
+        "Estridor em repouso persistente após adrenalina",
+        "Tiragem grave (intercostal, subdiafragmática, fúrcula)",
+        "Cianose ou SpO2 <92% em ar ambiente",
+        "Sonolência, agitação ou rebaixamento de consciência",
+        "Redução paradoxal do estridor + piora do estado geral (obstrução iminente)",
+        "Suspeita de epiglotite, traqueíte bacteriana ou corpo estranho"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Criança de 2 anos com tosse ladrante, estridor em repouso e tiragem moderada após pródromo viral. Qual é o tratamento?",
+      "alternativas": [
+        "Antibiótico oral e alta",
+        "Dexametasona + nebulização com adrenalina + observação 3-4h",
+        "Apenas nebulização com soro fisiológico",
+        "Intubação imediata",
+        "Broncoscopia para corpo estranho"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Criança de 4 anos, toxemiada, sentada inclinada para frente, com sialorreia e SEM tosse. Febre alta. Qual conduta é CONTRAINDICADA?",
+      "alternativas": [
+        "Manter a criança calma no colo dos pais",
+        "Oferecer oxigênio sem incomodar",
+        "Examinar a orofaringe com abaixador de língua",
+        "Acionar anestesia e ORL para via aérea no centro cirúrgico",
+        "Administrar oxigênio suplementar"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é a conduta medicamentosa indicada para TODOS os graus de crupe, mesmo os leves?",
+      "alternativas": [
+        "Adrenalina nebulizada",
+        "Dexametasona (corticoide) dose única",
+        "Antibiótico oral",
+        "Broncodilatador beta-2",
+        "Anti-histamínico"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Após nebulização com adrenalina em crupe moderado, por que a criança deve ser observada por 3-4 horas antes da alta?",
+      "alternativas": [
+        "Porque a adrenalina causa taquicardia que precisa ser monitorada",
+        "Porque o efeito da adrenalina é temporário (~2h) e pode haver efeito rebote do edema",
+        "Porque a dexametasona ainda não fez efeito",
+        "Porque é necessário aguardar exames de imagem",
+        "Porque a criança precisa de antibiótico IV antes da alta"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Lactente de 18 meses, previamente hígido, apresenta início SÚBITO de estridor e tosse após episódio de engasgo enquanto brincava. Sem febre. Qual é a principal hipótese?",
+      "alternativas": [
+        "Crupe viral",
+        "Epiglotite",
+        "Aspiração de corpo estranho",
+        "Bronquiolite",
+        "Asma"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Crupe moderado (estridor em repouso + tiragem moderada): dexametasona (para todos os graus) + nebulização com adrenalina (alívio do edema subglótico) + observação 3-4h pelo efeito rebote da adrenalina. Alta se sem estridor em repouso após observação."},
+    {"resposta": "C", "comentario": "Quadro clássico de epiglotite: toxemia, posição de tripé, sialorreia, sem tosse. EXAMINAR A GARGANTA com abaixador é CONTRAINDICADO — pode desencadear laringoespasmo e obstrução total fatal. Manter a criança calma, O2, via aérea no centro cirúrgico com equipe preparada."},
+    {"resposta": "B", "comentario": "Dexametasona (0,15-0,6 mg/kg dose única) é indicada para TODOS os graus de crupe, incluindo os leves. Reduz edema subglótico, retornos, internações e uso de adrenalina. Adrenalina nebulizada fica reservada para crupe moderado-grave (estridor em repouso)."},
+    {"resposta": "B", "comentario": "Adrenalina nebulizada tem início rápido (10-30 min) mas efeito curto (~2h). Após esse período, o edema pode retornar (efeito rebote). Por isso a observação de 3-4h é necessária antes da alta, garantindo que a dexametasona já fez efeito e não há recorrência do estridor em repouso."},
+    {"resposta": "C", "comentario": "Aspiração de corpo estranho: início SÚBITO de estridor/tosse + história de engasgo durante brincadeira/alimentação + ausência de febre e pródromo viral, em lactente. Diferente do crupe (gradual, pródromo viral). Conduta: broncoscopia rígida para remoção."}
+  ]
+}

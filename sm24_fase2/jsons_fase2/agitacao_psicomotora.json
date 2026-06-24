@@ -1,0 +1,174 @@
+{
+  "slug": "agitacao_psicomotora",
+  "titulo": "Agitação Psicomotora e Contenção",
+  "especialidade": "PSIQUIATRIA",
+  "chapter_subject": "Agitação Psicomotora — Abordagem no PS",
+  "chapter_bar": "AGITAÇÃO — CAUSA + CONTENÇÃO SEGURA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM ESCALONADA — AGITAÇÃO",
+      "title": "AGITAÇÃO — VERBAL ANTES DO QUÍMICO",
+      "height": 220,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Agitação psicomotora no PS\nAvaliar segurança da equipe — chamar reforços", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 215, "h": 22, "text": "Excluir causa ORGÂNICA urgente:\nHipoglicemia, hipóxia, intoxicação, AVC, TCE", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.22, "y": 0.43, "w": 150, "h": 26, "text": "AGITAÇÃO LEVE/MODERADA\nDesescalada verbal\nOferecimento de medicação VO", "color": "green", "font_size": 5.5},
+        {"id": "d", "x": 0.78, "y": 0.43, "w": 150, "h": 26, "text": "AGITAÇÃO GRAVE / RISCO\nContenção física c/ 5 pessoas\n→ Sedação IM imediata", "color": "red", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 215, "h": 22, "text": "Tratar causa subjacente\nMonitorar: PA, SpO2, Glasgow\nContenção = temporária", "color": "orange", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSA ORGÂNICA vs PSIQUIÁTRICA",
+      "section_color": "navy",
+      "headers": ["Achado", "Sugere Orgânico", "Sugere Psiquiátrico"],
+      "header_colors": ["gray", "red", "teal"],
+      "col_widths": [0.28, 0.36, 0.36],
+      "rows": [
+        ["Início", "Súbito, sem histórico prévio", "Gradual, histórico psiquiátrico"],
+        ["Orientação", "Desorientado (delirium)", "Orientado (psicose funcional)"],
+        ["Sinais vitais", "Alterados (febre, hipóxia, taquicardia)", "Geralmente normais"],
+        ["Pupilas", "Mióticas (opioides), midriáticas (simpatico)", "Normais"],
+        ["Consciência", "Flutuante (piora à noite — 'sundowning')", "Preservada"],
+        ["Idade", "Extremos de idade (idoso, criança)", "Adulto jovem mais comum"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SEDAÇÃO FARMACOLÓGICA — OPÇÕES",
+      "section_color": "orange",
+      "headers": ["Fármaco", "Dose IM/IV", "Indicação preferencial", "Cuidados"],
+      "header_colors": ["gray", "navy", "teal", "red"],
+      "col_widths": [0.22, 0.22, 0.32, 0.24],
+      "rows": [
+        ["Haloperidol", "5 mg IM (2,5 mg idoso)", "Psicose, delirium", "Monitorar QTc; evitar em EPS"],
+        ["Olanzapina", "10 mg IM", "Psicose, mania", "Não combinar com BZD IM (apneia)"],
+        ["Midazolam", "5 mg IM / 2 mg IV", "Abstinência alcoólica, intoxicação", "Depressão respiratória"],
+        ["Lorazepam", "2-4 mg IM", "Agitação por BZD/álcool", "Sedação intensa, monitorar"],
+        ["Droperidol", "2,5-5 mg IM", "Alternativa ao haloperidol", "Monitorar QTc"],
+        ["Combinação", "Haloperidol 5mg + Prometazina 50mg IM", "Agitação intensa psiquiátrica", "Evitar em idoso/DPOC"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONTENÇÃO FÍSICA — REGRAS",
+      "section_color": "red",
+      "titulo": "COMO FAZER COM SEGURANÇA",
+      "items": [
+        "Mínimo 5 pessoas: 1 para cada membro + 1 para a cabeça + 1 líder (coordena, dá medicação)",
+        "Comunicar ao paciente antes: 'vamos te ajudar a se acalmar'",
+        "Decúbito dorsal: NUNCA em decúbito ventral (risco de asfixia posicional — mortalidade)",
+        "Monitorar a cada 15 min: circulação nos membros, respiração, SpO2, nível de consciência",
+        "Contenção é temporária: reavaliação a cada 2h; retirar o mais cedo possível",
+        "Documentar: motivo, hora de início, profissional responsável, monitoramento"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "AGITAÇÃO POR SUBSTÂNCIAS — CONDUTA ESPECÍFICA",
+      "section_color": "purple",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Álcool / Abstinência",
+        "items": [
+          "Abstinência: benzodiazepínico (diazepam 10-20mg IV/VO) — escala CIWA",
+          "Intoxicação aguda: reposição volêmica, tiamina, monitorar",
+          "Delirium tremens: BZD altas doses, UTI se convulsão",
+          "NÃO usar haloperidol como primeira escolha na abstinência"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Cocaína / Anfetamina",
+        "items": [
+          "Simpaticomimético: midriase, taquicardia, HAS, agitação",
+          "Benzodiazepínico IV/IM — não antipsicótico (abaixa limiar convulsivo)",
+          "Monitorar temperatura (hipertermia maligna possível)",
+          "Resfriamento ativo se >39°C; reposição volêmica"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST — AGITAÇÃO NO PS",
+      "titulo": "SISTEMATIZAR A ABORDAGEM",
+      "items": [
+        "Segurança: remover objetos perigosos da sala; equipe em número suficiente",
+        "Causa orgânica: glicemia, SpO2, Glasgow, PA, temperatura, toxicológico",
+        "Desescalada verbal: tom calmo, linguagem simples, oferecer escolha",
+        "Sedação VO preferível se aceita: haloperidol 5mg VO ou olanzapina 10mg VO",
+        "Sedação IM se recusa ou risco imediato: haloperidol 5mg ± prometazina 50mg",
+        "Contenção física: decúbito dorsal, mínimo 5 pessoas, monitorar, documentar",
+        "Após estabilização: avaliar psiquiatria, internação voluntária vs involuntária"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente agitado, desorientado, com febre, taquicardia e SpO2 de 88%. Qual é a conduta PRIORITÁRIA?",
+      "alternativas": [
+        "Sedação imediata com haloperidol IM",
+        "Contenção física e encaminhar à psiquiatria",
+        "Investigar causa orgânica (hipóxia, infecção, intoxicação) e tratar causa de base",
+        "Administrar diazepam 10 mg IV",
+        "Solicitar avaliação psiquiátrica antes de qualquer medida"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual posição é CONTRAINDICADA durante a contenção física de paciente agitado?",
+      "alternativas": [
+        "Decúbito dorsal com membros fixados",
+        "Decúbito lateral de segurança",
+        "Decúbito ventral (posição prona)",
+        "Semissentado (30°)",
+        "Lateral esquerdo"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente alcoolista, último drinque há 36 horas, agitação, tremor, sudorese e alucinações visuais. Qual tratamento farmacológico é de PRIMEIRA LINHA?",
+      "alternativas": [
+        "Haloperidol 5 mg IM",
+        "Olanzapina 10 mg IM",
+        "Diazepam 10-20 mg IV com titulação pela escala CIWA",
+        "Clonidina oral",
+        "Naloxona 0,4 mg IV"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual combinação intramuscular deve ser EVITADA por risco de apneia?",
+      "alternativas": [
+        "Haloperidol IM + prometazina IM",
+        "Olanzapina IM + benzodiazepínico IM",
+        "Droperidol IM + haloperidol IM",
+        "Midazolam IM + prometazina IM",
+        "Haloperidol IM + haloperidol IV"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "Em paciente com agitação por intoxicação de cocaína (simpaticomimético), qual é a classe preferida para sedação?",
+      "alternativas": [
+        "Antipsicótico típico (haloperidol)",
+        "Antipsicótico atípico (olanzapina)",
+        "Benzodiazepínico (midazolam, diazepam)",
+        "Anticonvulsivante (fenitoína)",
+        "Betabloqueador isolado"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Febre + desorientação + taquicardia + hipóxia = agitação de causa ORGÂNICA (delirium). Tratar a causa é prioridade. Sedação sem investigar pode mascarar doença grave. Descartar hipóxia, hipoglicemia, infecção, TCE."},
+    {"resposta": "C", "comentario": "Decúbito ventral (prona) durante contenção causa asfixia posicional — compressão torácica, impossibilidade de expiração, mortalidade. Sempre decúbito dorsal. Monitorar 15/15 minutos. Documentar."},
+    {"resposta": "C", "comentario": "Abstinência alcoólica: benzodiazepínico (diazepam, lorazepam) titulado pela escala CIWA-Ar é padrão-ouro. Haloperidol não previne convulsão. Delirium tremens: BZD em altas doses, UTI. Tiamina antes de qualquer glicose."},
+    {"resposta": "B", "comentario": "Olanzapina IM + BZD IM = risco de depressão respiratória/apneia grave — combinação contraindicada. Haloperidol + prometazina (IM) é combinação clássica segura para agitação psicótica intensa."},
+    {"resposta": "C", "comentario": "Cocaína = simpaticomimético. Benzodiazepínico é preferido: abaixa FC, PA, temperatura e agitação de forma segura. Antipsicóticos podem baixar o limiar convulsivo e piorar o quadro em intoxicação por estimulantes."}
+  ]
+}

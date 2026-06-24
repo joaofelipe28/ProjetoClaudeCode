@@ -1,0 +1,174 @@
+{
+  "slug": "hiv_infeccoes_oportunistas",
+  "titulo": "HIV — Infecções Oportunistas no PS",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "HIV — Manejo de Infecções Oportunistas no PS",
+  "chapter_bar": "HIV/AIDS — CD4, IO E TARV",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "CLASSIFICAÇÃO E URGÊNCIA — HIV/AIDS",
+      "section_color": "teal",
+      "titulo": "QUANDO SUSPEITAR DE IO",
+      "items": [
+        "AIDS: CD4 <200 células/mm³ OU doença definidora de AIDS (IO, neoplasias)",
+        "IO mais frequentes por CD4: >200 (TB, herpes zoster), 100-200 (PCP, toxoplasma), <100 (CMV, MAC, Cryptococcus, Histoplasma)",
+        "Sinais de alerta no PS: febre + cefaleia (criptococose/toxoplasma), dispneia progressiva (PCP), diarreia crônica",
+        "TARV: não iniciar em sepse grave/IO aguda de imediato — risco de SIRI (2-4 semanas após tratar IO)",
+        "Solicitar: CD4 + carga viral + hemograma + função renal + hepática em todos"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PRINCIPAIS IOs — DIAGNÓSTICO E TRATAMENTO",
+      "section_color": "navy",
+      "headers": ["IO", "CD4 típico", "Apresentação clínica", "Diagnóstico", "Tratamento"],
+      "header_colors": ["gray", "navy", "teal", "orange", "red"],
+      "col_widths": [0.16, 0.10, 0.28, 0.22, 0.24],
+      "rows": [
+        ["PCP (Pneumocystis jirovecii)", "<200", "Dispneia insidiosa, tosse seca, febre baixa, SpO2 baixa ao esforço", "LDH ↑, PCR, LBA", "SMX-TMP 15-20mg/kg/dia IV x 21d + prednisona se PO2 <70"],
+        ["Toxoplasmose cerebral", "<100", "Déficit focal, cefaleia, febre, lesões anulares TC", "TC/RMC: lesões múltiplas; IgG toxo; PCR LCR", "Sulfadiazina + pirimetamina + leucovorin x 6 sem"],
+        ["Criptococose meníngea", "<100", "Cefaleia subaguda, febre, meningite linfocítica", "Tinta China, AgCriptococo sérico/LCR", "Anfotericina B 0,7-1mg/kg/d + flucitosina x 2 sem → fluconazol"],
+        ["CMV", "<50", "Retinite (baixa visual), colite (diarreia com sangue), encefalite", "Fundoscopia, colono, PCR CMV", "Ganciclovir 5mg/kg IV 12/12h x 3-6 sem"],
+        ["TB pulmonar", "Qualquer", "Tosse, febre vespertina, sudorese, perda de peso", "BAAR/GeneXpert, cultura, Raio-X", "RIPE 6 meses; TARV 2-8 sem após ATB"],
+        ["Histoplasmose disem.", "<150", "Febre, adenomegalia, hepatoesplenomegalia, pele", "Antígeno urina, hemocultura fúngica", "Anfotericina B → itraconazol 200mg 2x/d"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DO HIV+ COM FEBRE NO PS",
+      "title": "HIV + FEBRE — FOCAR NO CD4",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 210, "h": 22, "text": "HIV+ com febre → CD4 atual (ou estimativa pela clínica)\nHemograma, função renal/hepática, hemocultura, Raio-X tórax", "color": "navy", "font_size": 5.5},
+        {"id": "b", "x": 0.5, "y": 0.68, "w": 210, "h": 22, "text": "CD4 <100? Sintomas neurológicos? Dispneia?\nDiarreia crônica? Lesões oculares?", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.22, "y": 0.40, "w": 155, "h": 26, "text": "Neurológico (cefaleia/déficit):\nTC → PL → AgCripto/IgGtoxo\nRMC se TC normal", "color": "purple", "font_size": 5.3},
+        {"id": "d", "x": 0.78, "y": 0.40, "w": 155, "h": 26, "text": "Respiratório (dispneia/tosse):\nLDH, gases, Raio-X, BAAR\nBronco + LBA se PCP suspeita", "color": "orange", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 210, "h": 22, "text": "Iniciar IO tratamento empírico se grave\nTARV: aguardar 2-4 sem após inicio IO\n(exceto TB: iniciar TARV em 2-8 sem)", "color": "red", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PCP — MAIS COMUM EM PS COM CD4 <200",
+      "section_color": "orange",
+      "titulo": "PNEUMOCISTOSE — DIAGNÓSTICO E TRATAMENTO",
+      "items": [
+        "Clínica: dispneia insidiosa (dias-semanas), tosse seca não produtiva, febre baixa, queda de SpO2 ao esforço",
+        "Raio-X: infiltrado intersticial bilateral difuso (padrão em 'vidro fosco'); normal em 20%",
+        "LDH: elevado >500 UI/L (marcador de dano celular — alta sensibilidade, baixa especificidade)",
+        "Diagnóstico definitivo: PCR ou imunofluorescência no LBA; raramente necessário no PS",
+        "Tratamento: SMX-TMP 15-20 mg/kg/dia IV (trimeto) em 3-4 doses por 21 dias",
+        "Corticoide: prednisona 40mg 12/12h x 5d → 40mg/d x 5d → 20mg/d x 11d se PO2 <70 mmHg"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CRIPTOCOCOSE + TOXOPLASMA — URGÊNCIAS NEUROLÓGICAS",
+      "section_color": "purple",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Criptococose Meníngea",
+        "items": [
+          "Cefaleia subaguda + febre; rigidez de nuca pode ser leve",
+          "PL: pressão abertura alta, líquor claro, tinta China +",
+          "AntígenoC neoformans sérico/LCR: sensibilidade 99%",
+          "Tratamento: Anfotericina B lipossomal 3-4mg/kg/d + flucitosina x 2 sem",
+          "Consolidação: Fluconazol 400mg/d x 8 semanas",
+          "Drenagem de PL seriada se PIC ≥25 cmH2O (não usar acetazolamida)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Toxoplasmose Cerebral",
+        "items": [
+          "Déficit focal + febre + cefaleia em HIV CD4 <100",
+          "TC: lesões anulares múltiplas com edema (75%); RMC mais sensível",
+          "IgG anti-toxoplasma positivo (95% dos casos); PL se possível",
+          "Tratamento: Sulfadiazina 1-1,5g VO 6/6h + Pirimetamina 200mg d1 → 50-75mg/d + Leucovorin 10-20mg/d",
+          "Duração: 6 semanas fase aguda → manutenção",
+          "Dexametasona: apenas se efeito de massa com herniação"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PROFILAXIA PRIMÁRIA DAS IOs",
+      "titulo": "QUANDO INICIAR",
+      "items": [
+        "CD4 <200: SMX-TMP 960mg/dia (cobre PCP + Toxoplasma + Isospora) — iniciar com TARV",
+        "CD4 <100: manter SMX-TMP (cobre toxoplasmose); fluconazol 200mg/d se candidíase recorrente",
+        "CD4 <50: Azitromicina 1200mg/semana — profilaxia de MAC (Mycobacterium avium complex)",
+        "Anti-HBV: vacinar todos HIV+ não imunes; anti-CMV: TARV reduz o risco",
+        "Suspender profilaxias: CD4 >200 por >3 meses com TARV eficaz",
+        "TARV: sempre indicada em todos os pacientes HIV+ independentemente do CD4"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente HIV+ com CD4 de 80 cels/mm³, cefaleia progressiva há 2 semanas e febre. PL com tinta China positiva. Qual é o tratamento de escolha?",
+      "alternativas": [
+        "Fluconazol 150mg dose única",
+        "Anfotericina B lipossomal 3-4 mg/kg/d + flucitosina por 2 semanas",
+        "SMX-TMP IV 15 mg/kg/dia",
+        "Sulfadiazina + pirimetamina",
+        "Aciclovir 10 mg/kg IV 8/8h"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "HIV+ com CD4 de 150 cels/mm³, dispneia progressiva há 10 dias, tosse seca, febre baixa e LDH de 620 UI/L. Raio-X com infiltrado em vidro fosco bilateral. Qual diagnóstico e tratamento?",
+      "alternativas": [
+        "Pneumonia bacteriana por S. pneumoniae — ceftriaxona + azitromicina",
+        "Pneumocistose (PCP) — SMX-TMP 15-20 mg/kg/dia IV por 21 dias + prednisona se PO2 <70",
+        "Tuberculose pulmonar — RIPE",
+        "Histoplasmose — anfotericina B",
+        "Criptococose pulmonar — fluconazol"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Quando está indicado iniciar corticoide (prednisona) no tratamento da PCP?",
+      "alternativas": [
+        "Em todos os casos de PCP confirmada",
+        "Apenas se CD4 <50",
+        "PO2 arterial <70 mmHg ou gradiente alveolo-arterial >35 mmHg",
+        "Apenas em pacientes com co-infecção com CMV",
+        "Corticoide é contraindicado em HIV+"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "HIV+ com CD4 de 60 cels/mm³ e TC mostrando múltiplas lesões cerebrais anulares com edema. IgG anti-toxoplasma positivo. Qual é o tratamento de escolha?",
+      "alternativas": [
+        "Aciclovir 10 mg/kg IV",
+        "Anfotericina B + flucitosina",
+        "Sulfadiazina 1g VO 6/6h + Pirimetamina 50 mg/d + Leucovorin",
+        "Metronidazol IV",
+        "SMX-TMP IV"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Quando deve ser iniciada a TARV em paciente com HIV recém-diagnosticado com tuberculose ativa?",
+      "alternativas": [
+        "Imediatamente junto ao RIPE",
+        "Apenas após completar 6 meses de RIPE",
+        "2-8 semanas após início do tratamento para TB",
+        "Aguardar CD4 cair abaixo de 200",
+        "Nunca em paciente com TB ativa"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Criptococose meníngea em AIDS: anfotericina B lipossomal 3-4 mg/kg/d + flucitosina 100 mg/kg/d IV por 2 semanas (indução), depois fluconazol 400mg/d por 8 semanas (consolidação). Monitorar PIC — drenagem seriada se >25 cmH2O."},
+    {"resposta": "B", "comentario": "PCP: quadro subagudo (10+ dias), dispneia progressiva, tosse seca, febre baixa, LDH elevado, infiltrado bilateral em vidro fosco no Raio-X. CD4 <200 clássico. SMX-TMP 15-20 mg/kg/d IV por 21 dias. Corticoide se PO2 <70 mmHg."},
+    {"resposta": "C", "comentario": "Prednisona na PCP: indicada quando PO2 <70 mmHg ou gradiente A-a >35 mmHg — reduz mortalidade e piora respiratória. Esquema: 40mg 2x/d x 5d → 40mg/d x 5d → 20mg/d x 11d. Dar junto ou antes do SMX-TMP."},
+    {"resposta": "C", "comentario": "Toxoplasmose cerebral: sulfadiazina 1-1,5g VO 6/6h + pirimetamina 200mg d1 → 50-75mg/d + leucovorin 10-20mg/d por 6 semanas. Aciclovir não tem atividade contra Toxoplasma. Dexametasona só se herniação por edema."},
+    {"resposta": "C", "comentario": "HIV + TB: TARV deve ser iniciada 2-8 semanas após início do RIPE (2 semanas se CD4 <50; 8 semanas se CD4 >50). Não simultaneamente — risco de SIRI (síndrome inflamatória de reconstituição imune) grave."}
+  ]
+}

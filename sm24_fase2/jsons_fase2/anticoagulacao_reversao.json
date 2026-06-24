@@ -1,0 +1,176 @@
+{
+  "slug": "anticoagulacao_reversao",
+  "titulo": "Anticoagulação e Reversão na Emergência",
+  "especialidade": "HEMATOLOGIA",
+  "chapter_subject": "Anticoagulação — Escolha, Ajuste e Reversão de Urgência",
+  "chapter_bar": "ANTICOAGULAÇÃO — DROGA + REVERSÃO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTICOAGULANTES — COMPARATIVO",
+      "section_color": "navy",
+      "headers": ["Droga", "Mecanismo/Alvo", "Monitorização", "Antídoto"],
+      "header_colors": ["gray", "navy", "teal", "red"],
+      "col_widths": [0.20, 0.28, 0.24, 0.28],
+      "rows": [
+        ["Heparina não fracionada (HNF)", "Anti-IIa + Anti-Xa (via AT-III)", "TTPA 1,5-2,5× VN", "Protamina 1 mg/100 UI HNF"],
+        ["HBPM (enoxaparina, dalteparina)", "Principalmente Anti-Xa", "Anti-Xa (obeso, renal, gestante)", "Protamina parcial (60%)"],
+        ["Fondaparinux", "Anti-Xa seletivo", "Anti-Xa (raro)", "Sem antídoto específico"],
+        ["Varfarina", "Inibe vitamina K (II, VII, IX, X, C, S)", "INR (alvo 2-3 ou 2,5-3,5)", "Vitamina K + CCP ou PFC"],
+        ["Dabigatrana (DOAC)", "Inibe trombina (fator IIa) diretamente", "Tempo de trombina diluído", "Idarucizumabe (Praxbind)"],
+        ["Rivaroxabana/Apixabana (DOAC)", "Inibe fator Xa diretamente", "Anti-Xa calibrado (opcional)", "Andexanet alfa (Ondexxya)"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "REVERSÃO DE URGÊNCIA — SANGRAMENTO GRAVE",
+      "section_color": "red",
+      "headers": ["Droga", "Antídoto / Reversão", "Dose / Observações"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.32, 0.48],
+      "rows": [
+        ["HNF IV", "Protamina sulfato IV", "1 mg por cada 100 UI HNF das ÚLTIMAS 4h (máx 50 mg) — infundir lento <5 mg/min (risco de hipotensão)"],
+        ["HBPM SC", "Protamina parcial", "1 mg por 1 mg enoxaparina — eficácia parcial (neutraliza ~60% da atividade anti-Xa)"],
+        ["Varfarina (INR>10 + sangramento)", "Vitamina K + CCP", "Vitamina K 10 mg IV + CCP 4 fatores 25-50 UI/kg (reversão em <1h)"],
+        ["Varfarina (INR 4-10 sem sangramento)", "Vitamina K oral", "Vitamina K 2,5-5 mg VO — INR normaliza em 24-48h"],
+        ["Dabigatrana", "Idarucizumabe", "5 g IV (2 frascos de 2,5 g) — reverter em <5 min; indicar em sangramento grave ou urgência cirúrgica"],
+        ["Rivaroxabana/Apixabana", "Andexanet alfa OU CCP 4f empírico", "CCP 4 fatores 25-50 UI/kg se andexanet indisponível; andexanet alfa segundo peso/dose recente"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "SANGRAMENTO EM USUÁRIO DE ANTICOAGULANTE",
+      "title": "SANGRAMENTO — GRAVIDADE + ANTÍDOTO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Identificar droga, última dose, função renal\nClassificar gravidade: leve / moderado / grave (vida/membro)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Sangramento grave/com risco de vida:\nSuspender anticoagulante + suporte + antídoto específico", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.43, "w": 155, "h": 24, "text": "VARFARINA:\nVit K IV + CCP 4 fatores\n(INR alvo <=1,5)", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.75, "y": 0.43, "w": 155, "h": 24, "text": "DOAC:\nDabigatrana: idarucizumabe\nXa-inibidor: andexanet\nou CCP empírico", "color": "teal", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Monitorar: Hb, INR, plaquetas\nReanticoagular assim que hemostasia garantida", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTICOAGULAÇÃO TERAPÊUTICA — INDICAÇÕES E ALVOS",
+      "section_color": "orange",
+      "headers": ["Indicação", "Droga de escolha", "Alvo / Duração"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.30, 0.40],
+      "rows": [
+        ["TVP/TEP não provocado", "DOAC (rivaroxabana, apixabana)", "3-6 meses; indefinido se fator persistente"],
+        ["FA não valvar", "DOAC (apixabana preferida)", "CHA2DS2-VASc >=2H/>=3M → anticoagular cronicamente"],
+        ["FA valvar / prótese mecânica", "Varfarina", "INR 2-3 (bioprótese) ou 2,5-3,5 (mecânica mitral)"],
+        ["IAM + trombo intracavitário", "Varfarina ou DOAC", "3 meses; ecocardiograma de controle"],
+        ["Trombofilia com TEV recorrente", "DOAC indefinido", "Avaliar trombofilia (antifosfolípide = varfarina)"],
+        ["Profilaxia cirúrgica", "HBPM (enoxaparina 40 mg SC/d)", "Iniciar 12h antes ou 12h após — conforme risco"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "SITUAÇÕES ESPECIAIS",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Anticoagulação na Gravidez",
+        "items": [
+          "HBPM: droga de escolha em toda a gestação (não atravessa placenta)",
+          "Varfarina: teratogênica no 1o trimestre; suspender antes do parto",
+          "DOACs: contraindicados na gestação",
+          "Dose: enoxaparina 1 mg/kg 12/12h (terapêutica) ou 40 mg/d (profilática)",
+          "Monitorar: anti-Xa 4h após dose (alvo 0,6-1,0 UI/mL terapêutico)",
+          "Parto: suspender HBPM 24h antes de anestesia regional"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Perioperatório — Bridge Therapy",
+        "items": [
+          "Varfarina: suspender 5 dias antes; bridge com HBPM se alto risco (prótese mecânica, FA + AVC recente)",
+          "DOAC de curta ação: suspender 24-48h (48-72h se ClCr <50 mL/min)",
+          "Baixo risco trombótico: não fazer bridge — aumenta sangramento sem benefício",
+          "Alto risco: HBPM profilática ou terapêutica conforme indicação",
+          "Reiniciar: HBPM profilática 12-24h após cirurgia; DOAC/varfarina quando hemostasia segura"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECAR ANTES DE ANTICOAGULAR",
+      "titulo": "NEVER SKIP",
+      "items": [
+        "Confirmar indicação: escore de risco trombótico vs hemorrágico (HAS-BLED, CHA2DS2-VASc)",
+        "Função renal: ClCr (HBPM e DOACs contraindicados se ClCr <15-30 mL/min)",
+        "Peso extremo: obeso (>120 kg) ou caquético → usar anti-Xa para ajuste de HBPM",
+        "Interações: rifampicina, carbamazepina, amiodarona, antifúngicos (varfarina/DOACs)",
+        "Alergias: heparina — checar TAHIT se histórico de plaquetopenia pós-heparina",
+        "Sinais de TAHIT: queda de PLQ >50% após 5-10 dias de heparina → parar, usar argatroban"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente em uso de varfarina com INR 12 e sangramento digestivo ativo. Qual a reverão mais rápida e eficaz?",
+      "alternativas": [
+        "Vitamina K 10 mg VO e aguardar 24-48h",
+        "Suspender varfarina e transfundir hemácias",
+        "Vitamina K 10 mg IV + CCP 4 fatores (25-50 UI/kg) — reversa em <1 hora",
+        "Plasma fresco congelado isolado 10 mL/kg",
+        "Vitamina K 10 mg IV e aguardar 6-12h"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com FA em uso de dabigatrana sofre sangramento intracraniano grave. Qual antídoto específico deve ser usado?",
+      "alternativas": [
+        "Vitamina K IV",
+        "Protamina 50 mg IV",
+        "Idarucizumabe (Praxbind) 5 g IV",
+        "Andexanet alfa",
+        "Plasma fresco congelado"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual anticoagulante é CONTRAINDICADO durante a gestação pelo risco teratogênico?",
+      "alternativas": [
+        "Enoxaparina",
+        "Heparina não fracionada",
+        "Varfarina no primeiro trimestre",
+        "Fondaparinux",
+        "Dalteparina"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Paciente anticoagulado com heparina não fracionada há 5 dias evolui com queda de plaquetas de 280k para 90k e novo trombo. Qual é a hipótese diagnóstica e conduta?",
+      "alternativas": [
+        "CIVD — transfundir plaquetas e plasma",
+        "Trombocitopenia induzida por heparina (TAHIT tipo 2) — suspender heparina e usar argatroban",
+        "Sangramento pós-heparina — reverter com protamina",
+        "Sepse — hemoculturas e antibiótico",
+        "Trombocitopenia de diluição — transfusão de plaquetas"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente com FA não valvar. CHA2DS2-VASc = 3. Qual droga é preferida para anticoagulação crônica?",
+      "alternativas": [
+        "Aspirina 100 mg/dia",
+        "Varfarina com INR alvo 2-3",
+        "DOAC (apixabana ou rivaroxabana) — melhor perfil benefício/risco que varfarina em FA não valvar",
+        "Enoxaparina subcutânea indefinidamente",
+        "Clopidogrel isolado"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "INR 12 + sangramento ativo = reversão urgente. Vitamina K IV demora 6-12h. CCP 4 fatores repõe fatores II, VII, IX, X imediatamente (em <15-30 min). Combinação vitamina K + CCP é o padrão para sangramento grave em varfarina. PFC tem grande volume e reversão mais lenta."},
+    {"resposta": "C", "comentario": "Dabigatrana (inibidor de trombina): antídoto específico = idarucizumabe (Praxbind), anticorpo monoclonal que neutraliza dabigatrana em <5 min. Dose: 5 g IV (2 frascos). Andexanet é para inibidores de fator Xa (rivaroxabana, apixabana). Vitamina K não tem papel nos DOACs."},
+    {"resposta": "C", "comentario": "Varfarina é teratogênica no 1o trimestre (embriopatia varfarínica: ossos, SNC). Contraindicada em toda a gestação preferentemente — usar HBPM (não atravessa placenta). Pode ser usada no 2o e 3o trimestres em situações específicas (prótese mecânica), mas com risco."},
+    {"resposta": "B", "comentario": "TAHIT tipo 2 (Trombocitopenia imune por heparina): queda >50% de plaquetas em 5-10 dias + novo trombo (paradoxo). Mediada por anticorpos contra complexo heparina-PF4. Conduta: suspender TODA heparina (inclusive HBPM) imediatamente + usar anticoagulante alternativo (argatroban, fondaparinux). NÃO transfundir plaquetas."},
+    {"resposta": "C", "comentario": "FA não valvar com CHA2DS2-VASc >=2 (homem) ou >=3 (mulher): anticoagulação está indicada. DOACs (apixabana, rivaroxabana, dabigatrana) são preferidos sobre varfarina por menor risco de sangramento intracraniano, sem necessidade de monitoramento regular. FA valvar (prótese mecânica, estenose mitral) = varfarina."}
+  ]
+}

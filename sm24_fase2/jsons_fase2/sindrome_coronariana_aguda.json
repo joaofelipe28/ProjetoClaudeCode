@@ -1,0 +1,182 @@
+{
+  "slug": "sindrome_coronariana_aguda",
+  "titulo": "Síndrome Coronariana Aguda",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "SCA — IAMCSST, IAMSSST e Angina Instável",
+  "chapter_bar": "SCA — IAMCSST / IAMSSST / ANGINA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXO DE ATENDIMENTO — SCA",
+      "title": "TEMPO É MIOCÁRDIO",
+      "height": 230,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.92, "w": 205, "h": 22, "text": "Dor torácica → ECG em 10 min + troponina\nAAS 200mg VO + nitroglicerina SL + O2 se SpO2<94%", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 205, "h": 22, "text": "ECG: supra ≥1mm em ≥2 derivações contíguas\nou BRE novo / suspeito?", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.22, "y": 0.43, "w": 155, "h": 28, "text": "IAMCSST\nICP primária <120 min da porta\nor trombólise se ICP >120 min\nHeparina + Ticagrelor/Clopidogrel", "color": "red", "font_size": 5.3},
+        {"id": "d", "x": 0.78, "y": 0.43, "w": 155, "h": 28, "text": "IAMSSST / Angina Instável\nTroponina (0h/1h ou 0h/3h)\nEscore GRACE/TIMI\nHeparina + antiagregação dupla", "color": "orange", "font_size": 5.3},
+        {"id": "e", "x": 0.22, "y": 0.12, "w": 155, "h": 22, "text": "ICP primária\nalvo porta-balão <90 min\n(ou transferência <120 min)", "color": "red", "font_size": 5.5},
+        {"id": "f", "x": 0.78, "y": 0.12, "w": 155, "h": 22, "text": "Alto risco → ICP precoce <24h\nRisco intermediário <72h\nBaixo risco → testes funcionais", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "f"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DAS SCAs",
+      "section_color": "navy",
+      "headers": ["Diagnóstico", "ECG", "Troponina", "Tratamento-chave"],
+      "header_colors": ["gray", "navy", "teal", "orange"],
+      "col_widths": [0.24, 0.24, 0.18, 0.34],
+      "rows": [
+        ["IAMCSST", "Supra ≥1mm ≥2 derivações ou BRE novo", "Elevada (sobe após)", "ICP primária ou trombólise; dupla antiagregação"],
+        ["IAMSSST", "Infra ST, T invertida, normal", "Elevada", "Heparina + dupla antiagregação; ICP por risco"],
+        ["Angina Instável", "Infra ST ou T invertida ou normal", "Normal", "Heparina + dupla antiagregação; ICP eletiva"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TRATAMENTO MÉDICO INICIAL — TODOS",
+      "section_color": "red",
+      "titulo": "MONA + DUPLA ANTIAGREGAÇÃO",
+      "items": [
+        "AAS 200-300 mg VO (dose de ataque) → 100 mg/dia indefinido",
+        "Ticagrelor 180 mg ataque (preferido) ou Clopidogrel 300-600 mg ataque",
+        "Heparina não-fracionada: bolus 60-70 UI/kg IV (máx 5.000 UI) + infusão; ou Enoxaparina 1 mg/kg SC 12/12h",
+        "Nitroglicerina SL 0,4 mg: até 3x para alívio da dor (contraindicada se hipotensão, uso de IPDE-5)",
+        "O2 apenas se SpO2 <94% (não dar de rotina — hiperóxia aumenta lesão)",
+        "Morfina: reservar para dor intratável (pode mascarar sintomas, associada a ↑ mortalidade)",
+        "Betabloqueador VO: nas primeiras 24h se FC>60, PA estável, sem IC/BAV (atenolol 25-50mg)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "IAMCSST — REPERFUSÃO: ICP vs TROMBÓLISE",
+      "section_color": "orange",
+      "headers": ["Estratégia", "Indicação", "Janela", "Contraindicações"],
+      "header_colors": ["gray", "navy", "teal", "red"],
+      "col_widths": [0.22, 0.28, 0.18, 0.32],
+      "rows": [
+        ["ICP Primária", "Preferida sempre que disponível; alvo porta-balão <90 min", "<12h do início da dor; até 24h se dor persistente", "Ausência de laboratório de hemodinâmica"],
+        ["Trombólise", "Quando ICP não disponível em <120 min", "Até 12h; melhor se <3h", "AVC hem. prev., cirurgia <3sem, HAS grave, sangramento ativo"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "IAMSSST — ESCORE GRACE (RISCO)",
+      "section_color": "navy",
+      "headers": ["Risco GRACE", "Score", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.25, 0.20, 0.55],
+      "rows": [
+        ["Alto", ">140", "ICP invasiva precoce <24h; UFH + dupla antiagregação"],
+        ["Intermediário", "109-140", "ICP em <72h; monitorar troponina seriada"],
+        ["Baixo", "<109", "Testes não invasivos; ICP eletiva se isquemia documentada"],
+        ["Muito alto risco", "Instabilidade", "ICP imediata (<2h): choque, IC, arritmia grave, dor refratária"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "COMPLICAÇÕES PRECOCES DO IAM",
+      "section_color": "purple",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Elétricas",
+        "items": [
+          "FV/TV: desfibrilação imediata; amiodarona",
+          "BAVT em IAM inferior: MP transcutâneo / transvenoso",
+          "BAV 2ºG tipo II em IAM anterior: alto risco, MP urgente",
+          "FA: controle de frequência + anticoagulação"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Mecânicas",
+        "items": [
+          "Choque cardiogênico: inotrópico (dobutamina), BIA, ICP urgente",
+          "Ruptura de parede livre: tamponamento → cirurgia emergência",
+          "CIV pós-IAM: sopro novo + IC aguda → eco + cirurgia",
+          "Regurgitação mitral aguda: eco + cirurgia se grave"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA E TRATAMENTO A LONGO PRAZO",
+      "titulo": "APÓS O IAM — ALTA SEGURA",
+      "items": [
+        "Dupla antiagregação: AAS indefinido + Ticagrelor/Clopidogrel por 12 meses (IAM com ICP)",
+        "Estatina de alta intensidade: atorvastatina 40-80 mg VO 1x/dia (mesmo se colesterol normal)",
+        "IECA (ou BRA): todos com FEVE <40%, DM, HAS, DRC — iniciar nas primeiras 24h",
+        "Betabloqueador: todos sem contraindicação (atenolol, carvedilol, metoprolol)",
+        "Espironolactona: se FEVE ≤40% + IC ou DM, sem IRC grave",
+        "Reabilitação cardíaca: encaminhar após alta; retornar consulta em 7-14 dias"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com dor torácica em repouso há 45 min e ECG com supradesnivelamento de ST em V1-V4. Qual conduta tem prioridade ABSOLUTA?",
+      "alternativas": [
+        "Troponina seriada e observação por 6 horas",
+        "ATC primária com alvo porta-balão <90 minutos",
+        "Trombólise com tenecteplase imediatamente, sem considerar ICP",
+        "Ecocardiograma para confirmar diagnóstico",
+        "Nitrato IV em bomba de infusão contínua"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Em que situação a trombólise é preferida à ICP primária no IAMCSST?",
+      "alternativas": [
+        "Paciente com AVC isquêmico há 1 mês",
+        "ICP não disponível e tempo estimado porta-balão >120 min",
+        "Paciente hipertenso grave com PA 200/120 mmHg",
+        "Cirurgia de grande porte há 2 semanas",
+        "Paciente com IAMCSST <3h e laboratório de hemodinâmica disponível"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Homem de 60 anos com IAMSSST e escore GRACE de 160. Qual é a conduta CORRETA?",
+      "alternativas": [
+        "Alta hospitalar com AAS + estatina e retorno ambulatorial",
+        "Testes de esforço na beira do leito antes de qualquer decisão",
+        "ICP invasiva precoce em menos de 24 horas",
+        "Trombólise com estreptoquinase",
+        "Amiodarona profilática IV"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual antiagregante é PREFERIDO ao clopidogrel na SCA, por ter início de ação mais rápido e ser mais potente?",
+      "alternativas": [
+        "Abciximabe",
+        "Prasugrel",
+        "Ticagrelor",
+        "Dipiridamol",
+        "Cilostazol"
+      ]
+    },
+    {
+      "source": "UFRJ / Adaptada",
+      "enunciado": "Surgimento de sopro sistólico em borda esternal esquerda com IC aguda no 3º dia pós-IAM. Qual complicação deve ser suspeitada?",
+      "alternativas": [
+        "Pericardite pós-IAM",
+        "Ruptura de parede livre do ventrículo",
+        "Comunicação interventricular (CIV) pós-IAM",
+        "Dissecção aórtica",
+        "Endocardite infecciosa"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "IAMCSST = emergência máxima. ICP primária com porta-balão <90 min é padrão-ouro. A trombólise fica reservada para quando ICP não está disponível em <120 min do primeiro contato médico."},
+    {"resposta": "B", "comentario": "A trombólise é preferida quando o tempo estimado para ICP (porta-balão) for >120 min. Contraindicações absolutas incluem: AVC hemorrágico prévio qualquer, AVC isquêmico <3 meses, cirurgia <3 semanas, HAS grave não controlada."},
+    {"resposta": "C", "comentario": "GRACE >140 = alto risco → ICP invasiva precoce <24h. O escore GRACE incorpora: idade, FC, PA, creatinina, Killip, parada cardíaca, alteração ST, troponina."},
+    {"resposta": "C", "comentario": "Ticagrelor é preferido ao clopidogrel nas SCA: inibição mais rápida, reversível, não dependente de ativação hepática, com maior redução de mortalidade (PLATO trial). Prasugrel é alternativa. Contraindicado se AVC/AIT prévio."},
+    {"resposta": "C", "comentario": "Sopro sistólico novo em borda esternal esquerda + IC aguda no pós-IAM = CIV pós-IAM até prova em contrário. Confirma com ecocardiograma Doppler. Mortalidade alta sem cirurgia."}
+  ]
+}

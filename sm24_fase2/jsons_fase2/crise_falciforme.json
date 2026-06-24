@@ -1,0 +1,174 @@
+{
+  "slug": "crise_falciforme",
+  "titulo": "Crise Falciforme — Manejo na Emergência",
+  "especialidade": "HEMATOLOGIA",
+  "chapter_subject": "Anemia Falciforme — Crises e Complicações Agudas",
+  "chapter_bar": "FALCIFORME — HIDRATAR + ANALGESIA + COMPLICAÇÕES",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "TIPOS DE CRISE — RECONHECER E TRATAR",
+      "section_color": "navy",
+      "headers": ["Tipo de crise", "Clínica", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Vaso-oclusiva (+ comum)", "Dor intensa em ossos, articulações, tórax; sem anemia aguda", "Hidratação + analgesia escalonada"],
+        ["Síndrome torácica aguda (STA)", "Febre + dor torácica + infiltrado pulmonar + hipóxia", "Internação, O2, ATB, transfusão de troca se grave"],
+        ["AVC isquêmico", "Déficit neurológico focal em criança/jovem", "Transfusão de troca (reduzir HbS para <30%) URGENTE"],
+        ["Sequestro esplênico", "Criança: esplenomegalia aguda + queda brusca de Hb", "Transfusão imediata + esplenectomia eletiva posterior"],
+        ["Crise aplásica", "Anemia grave + reticulócitos <1% (infecção por Parvovírus B19)", "Transfusão se sintomático; imunoglobulina se imunossuprimido"],
+        ["Priapismo", "Ereção dolorosa >4h", "Hidratação + analgesia + consulta urologia; transfusão se refratário"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA CRISE VASO-OCLUSIVA",
+      "title": "CRISE DE DOR — ESCALONAMENTO ANALGÉSICO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Avaliar: escala de dor (EVN), sinais vitais, SpO2\nHemograma + reticulócitos + LDH + bilirrubinas", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Hidratação IV: SF 0,9% ou RL 100-150 mL/h\nAnalgesia imediata em <30 min da chegada", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "Dor moderada (EVN 4-6):\nDipirona + Cetoprofeno IV\n± Tramadol 100 mg IV", "color": "green", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Dor intensa (EVN 7-10):\nMorfina 0,1 mg/kg IV\na cada 3-4h\n(titular por dor)", "color": "red", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Internar se: EVN ≥7 após 2h, STA, complicações\nInvestigar infecção: febre + falciforme = ATB empírico", "color": "orange", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SÍNDROME TORÁCICA AGUDA — EMERGÊNCIA",
+      "section_color": "red",
+      "titulo": "STA = CRISE POTENCIALMENTE FATAL",
+      "items": [
+        "Definição: novo infiltrado pulmonar + febre OU sintoma respiratório em paciente falciforme",
+        "Causa: infecção (pneumonia, Mycoplasma) + infarto pulmonar por falcização",
+        "SpO2 <95%: O2 suplementar + considerar VNI se <90%",
+        "ATB: ceftriaxona 2g IV + azitromicina 500mg (cobertura atípicos)",
+        "Transfusão simples (Hb <8) OU transfusão de troca (hipóxia refratária, deterioração)",
+        "Broncodilatador: beta-2 agonista se broncoespasmo",
+        "Não usar O2 profilaticamente se SpO2 >95% — risco de atelectasia"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRANSFUSÃO NA FALCIFORME — QUANDO E COMO",
+      "section_color": "orange",
+      "headers": ["Modalidade", "Indicação", "Meta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.38, 0.34],
+      "rows": [
+        ["Transfusão simples", "Anemia sintomática, STA leve-moderada, pré-operatório", "Hb 9-10 g/dL (não mais — risco de hiperviscosidade)"],
+        ["Transfusão de troca", "AVC, STA grave, priapismo refratário, pré-op de cirurgia maior", "HbS <30% (< 50% como meta mínima aceitável)"],
+        ["Programa de transfusão crônica", "Prevenção de AVC (duplex TCD velocidade >200 cm/s), pós-AVC", "HbS <30% mensalmente"],
+        ["Hidroxiureia", "Profilaxia de crises: ↑HbF, ↓falcização — iniciar após 9 meses de vida", "Leucócitos 2.500-4.000 = dose ideal"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "PREVENÇÃO E CUIDADOS CRÔNICOS",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Profilaxias Obrigatórias",
+        "items": [
+          "Penicilina V oral: 125 mg 12/12h (até 3 anos) → 250 mg 12/12h (3-5 anos) → até esplenectomia funcional",
+          "Vacinas: Pneumococo (conjugada + polissacarídea), Meningococo, H. influenzae, influenza anual, Hepatite B",
+          "Ácido fólico: 5 mg/dia (eritropoese acelerada)",
+          "Triagem neonatal: teste do pezinho confirmar HbSS ou HbSC"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Indicadores para Hidroxiureia",
+        "items": [
+          ">3 crises graves/ano que requeiram hospitalização",
+          "STA recorrente",
+          "Anemia grave sintomática (Hb <7 cronicamente)",
+          "Priapismo recorrente",
+          "Vasculopatia cerebral sem indicação de transfusão crônica",
+          "Dose: 15-35 mg/kg/dia; monitorar hemograma quinzenalmente no início"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "FEBRE NO PACIENTE FALCIFORME",
+      "titulo": "ATENÇÃO — INFECÇÃO PODE SER FULMINANTE",
+      "items": [
+        "Falciforme + febre = emergência até prova em contrário (asplenia funcional)",
+        "Hemoculturas + hemograma imediato antes de qualquer antibiótico",
+        "ATB empírico imediato: ceftriaxona 50-100 mg/kg/d (máx 4g) — cobrir S. pneumoniae",
+        "Adicionar vancomicina se toxemia, foco de SNC ou resistência local",
+        "Sépsis fulminante pneumocócica: mortalidade alta — não aguardar resultado de cultura",
+        "Crise aplásica por Parvovírus B19: Hb cai + reticulócitos <1% → transfundir se sintomático"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Criança de 8 anos com anemia falciforme, febre 39°C, dor torácica e SpO2 93% em ar ambiente. Raio-X: infiltrado bibasal novo. Qual diagnóstico e conduta?",
+      "alternativas": [
+        "Pneumonia bacteriana simples — amoxicilina oral e alta",
+        "Síndrome torácica aguda — internar, O2, ceftriaxona + azitromicina, transfusão se deterioração",
+        "Asma grave — broncodilatador e corticoide",
+        "Derrame pleural — toracocentese diagnóstica",
+        "Crise vaso-oclusiva simples — hidratação e morfina"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Adolescente falciforme com hemiplegia direita de início súbito. Qual é a conduta mais urgente?",
+      "alternativas": [
+        "Trombólise com rt-PA IV",
+        "Transfusão de troca para reduzir HbS abaixo de 30%",
+        "Hidratação e analgesia como na crise vaso-oclusiva",
+        "Anticoagulação plena com heparina",
+        "TC de crânio e aguardar resultado antes de qualquer intervenção"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Criança de 2 anos com anemia falciforme apresenta Hb 4 g/dL (basal = 8 g/dL) e baço 8 cm palpável. Qual diagnóstico e conduta?",
+      "alternativas": [
+        "Crise aplásica por Parvovírus — imunoglobulina IV",
+        "Sequestro esplênico — transfusão imediata de hemácias",
+        "Síndrome hemolítica — hidratação e espera",
+        "Infecção bacteriana grave — antibiótico IV",
+        "Hemólise por G6PD — suspender medicamentos oxidantes"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual é o objetivo da hidroxiureia na anemia falciforme?",
+      "alternativas": [
+        "Substituir as hemácias falciformes por hemácias normais",
+        "Aumentar a hemoglobina fetal (HbF), que não falciza, reduzindo crises",
+        "Reduzir a viscosidade sanguínea por diluição",
+        "Eliminar a infecção pelo Parvovírus B19",
+        "Prevenir a formação de anticorpos antieritrocitários"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Por que pacientes com anemia falciforme têm asplenia funcional e alto risco de sepse fulminante?",
+      "alternativas": [
+        "Por esplenectomia cirúrgica realizada na infância",
+        "Porque os infartos esplênicos repetidos levam à fibrose e perda da função (autoesplenectomia)",
+        "Porque a anemia reduz a chegada de leucócitos ao baço",
+        "Porque a eritropoese compensatória desaloja os linfócitos esplênicos",
+        "Porque a hidroxiureia suprime a imunidade esplênica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Síndrome Torácica Aguda (STA): novo infiltrado + febre ou sintoma respiratório em falciforme. SpO2 93% = hipóxia. Conduta: O2, ceftriaxona + azitromicina (cobre bacteriano e atípico), broncodilatador se broncoespasmo, transfusão simples se Hb <8 ou de troca se deterioração rápida."},
+    {"resposta": "B", "comentario": "AVC em falciforme: transfusão de troca (exsanguineotransfusão) urgente para reduzir HbS <30%. Trombólise é contraindicada (risco de hemorragia em paciente com anemia e coagulopatia). Programa de transfusão crônica para prevenção secundária."},
+    {"resposta": "B", "comentario": "Sequestro esplênico: queda abrupta da Hb + esplenomegalia aguda (baço retém hemácias falciformes). Em criança <5 anos com basal 8 → Hb 4 = emergência. Transfusão imediata. Risco de recorrência → esplenectomia eletiva após recuperação."},
+    {"resposta": "B", "comentario": "Hidroxiureia aumenta HbF (hemoglobina fetal) que não polimeriza e não causa falcização. Mecanismo: ativa gene HBG1/2 via produção de NO. Reduz crises em 50%, hospitalizações e mortalidade. Monitorar leucopenia (toxicidade)."},
+    {"resposta": "B", "comentario": "Autoesplenectomia: infartos esplênicos repetidos por falcização → fibrose progressiva → baço não funcional aos 5 anos na maioria dos HbSS. Sem baço, sem opsonização de S. pneumoniae, N. meningitidis, H. influenzae → sepse fulminante. Profilaxia: penicilina + vacinação."}
+  ]
+}

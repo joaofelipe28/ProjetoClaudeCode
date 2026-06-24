@@ -1,0 +1,176 @@
+{
+  "slug": "oclusao_arteria_veia_retina",
+  "titulo": "Oclusão Arterial e Venosa da Retina",
+  "especialidade": "OFTALMOLOGIA",
+  "chapter_subject": "OACR e OVCR — Perda Visual Súbita Vascular",
+  "chapter_bar": "OCLUSÃO RETINIANA — ARTÉRIA = AVC OCULAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "OCLUSÃO ARTERIAL vs VENOSA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "OACR (arterial)", "OVCR (venosa)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.39, 0.39],
+      "rows": [
+        ["Perda visual", "Súbita, profunda, indolor (conta dedos/PL)", "Súbita ou subaguda, variável"],
+        ["Fundo de olho", "Retina pálida edemaciada + mácula em 'cereja'", "Hemorragias em chama difusas + veias tortuosas/dilatadas"],
+        ["Mecanismo", "Embolia (carótida, cardíaca) ou trombose", "Trombose venosa (estase, hipercoagulabilidade)"],
+        ["Equivalente", "É um AVC — investigar como AVC ocular", "Estase venosa, similar a TVP"],
+        ["Fatores de risco", "Aterosclerose, FA, estenose carotídea, arterite temporal", "HAS, DM, glaucoma, hiperviscosidade, trombofilia"],
+        ["Prognóstico visual", "Reservado (janela <90-240 min para retina)", "Variável — depende de isquemia/edema macular"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "OACR — AVC OCULAR — EMERGÊNCIA TEMPO-DEPENDENTE",
+      "section_color": "red",
+      "titulo": "OCLUSÃO DE ARTÉRIA CENTRAL DA RETINA = AVC",
+      "items": [
+        "Perda visual súbita, indolor, profunda em um olho — equivalente a um AVC",
+        "Fundo: retina pálida/edemaciada + mácula em vermelho-cereja (cherry-red spot)",
+        "Janela de isquemia retiniana: ~90-240 min para sobrevida neuronal (curta!)",
+        "INVESTIGAR COMO AVC: encaminhar a centro com protocolo de AVC (neuroimagem, carótidas, ECG/eco)",
+        "Excluir ARTERITE TEMPORAL em >50 anos: VHS/PCR — corticoide imediato se suspeita (protege o outro olho)",
+        "Manobras agudas (massagem ocular, reduzir PIO) têm eficácia limitada; foco na causa e prevenção secundária"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA PERDA VISUAL SÚBITA VASCULAR",
+      "title": "OCLUSÃO RETINIANA — TRATAR COMO AVC",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Perda visual subita indolor monocular\nFundoscopia: distinguir arterial (palida) de venosa (hemorragias)", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": ">50 anos: dosar VHS/PCR — excluir arterite temporal\n(corticoide imediato se suspeita: protege o outro olho)", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "OACR (arterial):\nTratar como AVC OCULAR\nprotocolo AVC + carotidas\n+ ECG/eco (fonte embolica)", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "OVCR (venosa):\nControle de fatores (HAS, DM)\nOftalmo: anti-VEGF se edema\nmacular; laser se isquemica", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Prevencao secundaria: antiagregante, controle de fatores\nSeguimento oftalmologico — risco de neovascularizacao", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "OVCR — CLASSIFICAÇÃO E COMPLICAÇÕES",
+      "section_color": "orange",
+      "headers": ["Tipo / Complicação", "Características", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.40, 0.34],
+      "rows": [
+        ["OVCR não isquêmica", "Perda visual leve-moderada, melhor prognóstico", "Observação + controle de fatores"],
+        ["OVCR isquêmica", "Perda visual grave, áreas de não perfusão", "Risco alto de neovascularização — laser"],
+        ["Edema macular", "Principal causa de baixa visão na OVCR", "Anti-VEGF intravítreo (ranibizumabe, aflibercepte)"],
+        ["Glaucoma neovascular", "Neovasos na íris → glaucoma (90 dias - 'glaucoma dos 100 dias')", "Panfotocoagulação + controle de PIO"],
+        ["Oclusão de ramo (ORVR)", "Setorial, segue trajeto de uma veia", "Anti-VEGF se edema macular; laser focal"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "INVESTIGAÇÃO E DIFERENCIAL",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Investigação da OACR",
+        "items": [
+          "Doppler de carótidas: estenose como fonte embólica (avaliar endarterectomia)",
+          "ECG e Holter: fibrilação atrial",
+          "Ecocardiograma: trombo, vegetação, forame oval",
+          "VHS/PCR: arterite temporal (>50 anos) — urgente",
+          "Perfil de risco vascular: glicemia, lipídios, PA",
+          "Encaminhar a protocolo de AVC: risco de AVC cerebral subsequente"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Diferencial e Prevenção",
+        "items": [
+          "Arterite temporal: cefaleia, claudicação de mandíbula, VHS alto — corticoide imediato",
+          "Neuropatia óptica isquêmica: déficit pupilar aferente, edema de disco",
+          "Descolamento de retina: cortina, floaters, fotopsias",
+          "Prevenção: antiagregante, estatina, controle de PA/DM, cessar tabagismo",
+          "OACR tem mesmo risco vascular que AVC — manejo da prevenção secundária",
+          "Seguimento oftalmológico para neovascularização"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PONTOS-CHAVE NO PS",
+      "titulo": "PERDA VISUAL VASCULAR",
+      "items": [
+        "OACR é um AVC ocular — investigar e manejar como AVC (neuroimagem, carótidas, fonte embólica)",
+        "Em >50 anos com OACR/perda visual: dosar VHS/PCR e tratar arterite temporal empiricamente se suspeita",
+        "Distinção fundoscópica: arterial (retina pálida + mácula cereja) vs venosa (hemorragias em chama)",
+        "OVCR: principal causa de baixa visão é o edema macular — anti-VEGF intravítreo",
+        "OVCR isquêmica: risco de glaucoma neovascular ('glaucoma dos 100 dias') — laser",
+        "Prevenção secundária vascular: antiagregante, estatina, controle de fatores de risco"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente de 68 anos com perda visual súbita, indolor e profunda no olho direito. Fundo de olho: retina pálida com mácula em vermelho-cereja. Qual é o diagnóstico e a conduta?",
+      "alternativas": [
+        "Oclusão de veia central da retina — anti-VEGF",
+        "Oclusão de artéria central da retina (AVC ocular) — investigar e manejar como AVC + dosar VHS/PCR (arterite temporal)",
+        "Descolamento de retina — vitrectomia",
+        "Glaucoma agudo — pilocarpina",
+        "Catarata — cirurgia eletiva"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "No fundo de olho, a presença de hemorragias em chama difusas, veias tortuosas e dilatadas sugere:",
+      "alternativas": [
+        "Oclusão de artéria central da retina",
+        "Oclusão de veia central da retina (OVCR)",
+        "Arterite temporal",
+        "Descolamento de retina regmatogênico",
+        "Endoftalmite"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que a oclusão de artéria central da retina deve ser investigada como um AVC?",
+      "alternativas": [
+        "Porque sempre evolui para AVC cerebral em 24h",
+        "Porque compartilha os mesmos mecanismos (embolia/aterosclerose) e fatores de risco, indicando alto risco de AVC cerebral e necessidade de prevenção secundária",
+        "Porque a retina faz parte do tronco cerebral",
+        "Porque é causada por trombose venosa",
+        "Porque o tratamento é a trombólise sempre"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual é a principal causa de baixa acuidade visual na oclusão de veia central da retina?",
+      "alternativas": [
+        "Descolamento de retina",
+        "Edema macular (tratado com anti-VEGF intravítreo)",
+        "Catarata secundária",
+        "Atrofia óptica",
+        "Hemorragia vítrea maciça"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Em paciente >50 anos com perda visual súbita por oclusão arterial, qual exame NÃO pode faltar para excluir uma causa tratável que ameaça o outro olho?",
+      "alternativas": [
+        "Tomografia de crânio",
+        "VHS e PCR (para arterite de células gigantes / temporal) — corticoide imediato se suspeita",
+        "Campimetria",
+        "Tonometria",
+        "Eletrorretinograma"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "OACR (oclusão de artéria central da retina): perda visual súbita, indolor, profunda + retina pálida com mácula em vermelho-cereja. É um AVC ocular — investigar fonte embólica (carótidas, ECG/eco) e manejar prevenção secundária como AVC. Em >50 anos: dosar VHS/PCR para excluir arterite temporal."},
+    {"resposta": "B", "comentario": "OVCR (oclusão de veia central da retina): hemorragias retinianas em chama difusas + veias tortuosas e dilatadas + edema. Mecanismo de estase/trombose venosa. Diferente da OACR (retina pálida + mácula cereja). Fatores: HAS, DM, glaucoma, hiperviscosidade."},
+    {"resposta": "B", "comentario": "A OACR compartilha os mesmos mecanismos (embolia de carótida/coração, aterosclerose) e fatores de risco do AVC cerebral. O paciente tem alto risco de AVC subsequente. Por isso deve ser investigado e manejado como AVC (neuroimagem, carótidas, fonte cardíaca) com prevenção secundária."},
+    {"resposta": "B", "comentario": "O edema macular é a principal causa de baixa acuidade visual na OVCR. O tratamento de primeira linha é o anti-VEGF intravítreo (ranibizumabe, aflibercepte, bevacizumabe), que reduz o edema e melhora a visão. Corticoide intravítreo é alternativa."},
+    {"resposta": "B", "comentario": "Em >50 anos com oclusão arterial/perda visual, dosar VHS e PCR para excluir arterite de células gigantes (temporal) — causa tratável que ameaça o olho contralateral. Se houver suspeita (cefaleia, claudicação de mandíbula, VHS muito alto): corticoide em altas doses IMEDIATAMENTE, sem aguardar a biópsia."}
+  ]
+}

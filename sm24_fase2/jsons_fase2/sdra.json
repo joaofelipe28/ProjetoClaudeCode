@@ -1,0 +1,173 @@
+{
+  "slug": "sdra",
+  "titulo": "SDRA — Síndrome do Desconforto Respiratório Agudo",
+  "especialidade": "PNEUMOLOGIA",
+  "chapter_subject": "SDRA — Critérios de Berlim e Ventilação Protetora",
+  "chapter_bar": "SDRA — BERLIM + VM PROTETORA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CRITÉRIOS DE BERLIM — DIAGNÓSTICO E CLASSIFICAÇÃO",
+      "section_color": "navy",
+      "headers": ["Critério", "Definição", "Nota"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.54, 0.24],
+      "rows": [
+        ["Tempo", "Início em até 1 semana de agressão clínica conhecida ou nova/piora de sintomas respiratórios", "Aguda"],
+        ["Imagem", "Opacidades bilaterais não explicadas por derrame, colapso, nódulo", "Raio-X ou TC tórax"],
+        ["Origem do edema", "IR não explicada por IC ou sobrecarga de volume (eco ou BNP se necessário)", "Excluir cardiogênico"],
+        ["P/F + PEEP ≥5", "Leve: P/F 200-300 | Moderada: P/F 100-200 | Grave: P/F <100", "Com PEEP ≥5 cmH2O"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "VENTILAÇÃO MECÂNICA PROTETORA — ARDSNET",
+      "section_color": "red",
+      "titulo": "ESTRATÉGIA QUE SALVA VIDAS (redução de 22% de mortalidade)",
+      "items": [
+        "Volume corrente (VC): 6 mL/kg de PESO IDEAL (não peso real!) — usar fórmula PBW",
+        "Pressão de platô (Pplat): alvo ≤30 cmH2O — insuflação lenta, 0 fluxo por 0,5s",
+        "Driving pressure (DP = Pplat - PEEP): alvo <15 cmH2O — preditor de mortalidade",
+        "PEEP: mínimo 5 cmH2O; tabela PEEP/FiO2 ou titulação por compliance",
+        "FiO2: titular para SpO2 88-95% (evitar hiperóxia)",
+        "Hipercapnia permissiva: aceitar PaCO2 até 55-60 mmHg se pH >7,20"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO DA SDRA — ALÉM DA VM",
+      "section_color": "orange",
+      "headers": ["Intervenção", "Indicação", "Evidência"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.42, 0.30],
+      "rows": [
+        ["Posição PRONA", "P/F <150 por ≥16h/dia (sessions de 16h)", "FORTE — reduz mortalidade 50%"],
+        ["Bloqueio neuromuscular", "P/F <150, dyssinconia, Pplat >30 persistente", "Moderada (ACURASYS)"],
+        ["Corticoide", "SDRA precoce (<14d) moderada-grave ou sem resposta", "Moderada (metilprednisolona)"],
+        ["Diurético / balanço negativo", "Após estabilização hemodinâmica", "Moderada — reduz dias de VM"],
+        ["ECMO venovenosaa (VV-ECMO)", "P/F <80 refratário, hipercapnia grave", "Centros especializados"],
+        ["NO inalatório", "Hipoxemia grave refratária (ponte, sem sobrevida)","Fraca — apenas como ponte"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO EM ESCADA — SDRA GRAVE",
+      "title": "SDRA — ESCALONAMENTO PROGRESSIVO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "SDRA confirmada: IOT + VM protetora\nVC 6 mL/kg PBW, Pplat ≤30, PEEP titulado", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "P/F <150? Hipoxemia refratária?\nTentar: PEEP alto, bloqueio NM, prona", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.43, "w": 155, "h": 24, "text": "PRONA 16h/dia\nSe P/F <150 persistente\n+ Corticoide precoce", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.75, "y": 0.43, "w": 155, "h": 24, "text": "Refratário após prona\nP/F <80 por ≥3h\nVV-ECMO — avaliar centro", "color": "red", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Tratar CAUSA: antibiótico, foco, lavagem, drenagem\nBalanço hídrico negativo após estabilização", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CAUSAS E DIAGNÓSTICO DIFERENCIAL",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Causas Pulmonares (diretas)",
+        "items": [
+          "Pneumonia bacteriana, viral (influenza, COVID-19)",
+          "Aspiração de conteúdo gástrico",
+          "Contusão pulmonar (trauma)",
+          "Drowning (afogamento)",
+          "Inalação de gases tóxicos"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Causas Extrapulmonares (indiretas)",
+        "items": [
+          "Sepse (causa mais comum — 40%)",
+          "Pancreatite grave",
+          "Trauma grave multissistêmico",
+          "Transfusão maciça (TRALI)",
+          "Politransfusão, cirurgia de grande porte"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CÁLCULO DO PESO IDEAL (PBW) — VER DOSAGEM DO VC",
+      "titulo": "HOMENS vs MULHERES",
+      "items": [
+        "Homem: PBW = 50 + 0,91 × (altura em cm − 152,4)",
+        "Mulher: PBW = 45,5 + 0,91 × (altura em cm − 152,4)",
+        "Exemplo: Homem 1,70 m → PBW = 50 + 0,91 × (170-152,4) = 50 + 16 = 66 kg",
+        "VC alvo: 66 kg × 6 mL/kg = 396 mL (não usar volume pelo peso real!)",
+        "Ajuste: se Pplat >30 → reduzir VC para 5 ou até 4 mL/kg",
+        "Driving pressure: Pplat − PEEP < 15 → se ≥15 reduzir VC ou PEEP"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com SDRA moderada (P/F = 140) em VM. Qual volume corrente deve ser alvo?",
+      "alternativas": [
+        "10-12 mL/kg de peso real",
+        "6 mL/kg de PESO IDEAL (calculado pela altura)",
+        "500-600 mL fixo, independente do peso",
+        "8 mL/kg de peso real",
+        "O VC deve ser ajustado para manter PaCO2 entre 35-45 mmHg"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual intervenção não farmacológica demonstrou redução significativa de mortalidade em SDRA grave (P/F <150)?",
+      "alternativas": [
+        "Ventilação de alta frequência (HFOV)",
+        "Posição prona por ≥16h/dia",
+        "Ventilação em pressão de suporte isolada",
+        "CPAP sem intubação",
+        "Fisioterapia respiratória intensiva nas primeiras 48h"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "A pressão de platô (Pplat) na VM reflete:",
+      "alternativas": [
+        "A pressão durante o fluxo inspiratório",
+        "A pressão no final da inspiração após pausa (distensibilidade estática do sistema respiratório)",
+        "A diferença entre PEEP e pressão de pico",
+        "A resistência das vias aéreas",
+        "O trabalho respiratório do paciente"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Qual é o diagnóstico de SDRA pelo critério de Berlim para um paciente com PaO2/FiO2 = 130 com PEEP ≥5?",
+      "alternativas": [
+        "SDRA leve (P/F 200-300)",
+        "SDRA moderada (P/F 100-200)",
+        "SDRA grave (P/F <100)",
+        "Insuficiência respiratória sem critérios de SDRA",
+        "Edema pulmonar cardiogênico"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "O que é 'driving pressure' e qual seu valor alvo na SDRA?",
+      "alternativas": [
+        "A pressão pico da via aérea; alvo <40 cmH2O",
+        "A diferença entre Pplat e PEEP (DP = Pplat − PEEP); alvo <15 cmH2O",
+        "A pressão de platô isolada; alvo <20 cmH2O",
+        "O volume corrente dividido pelo PEEP; alvo <8",
+        "A diferença entre FiO2 e PEEP; sem alvo específico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Ventilação protetora (ARDSNet trial): VC = 6 mL/kg de PESO IDEAL (calculado pela altura) — não peso real. Reduz mortalidade em 22% vs VC convencional. Pplat alvo ≤30 cmH2O."},
+    {"resposta": "B", "comentario": "Posição prona por ≥16h/dia reduz mortalidade de ~46% para ~23% em SDRA grave (P/F <150) — estudo PROSEVA (Guérin 2013). Melhora homogeneidade de ventilação. Indicada quando P/F <150 após 12-24h de VM otimizada."},
+    {"resposta": "B", "comentario": "Pplat = pressão ao final da inspiração com pausa (zero fluxo, 0,5s) = reflete a pressão de distensão estática do pulmão + tórax. Alvo ≤30 cmH2O na SDRA. Pplat >30 = risco de volutrauma/barotrauma → reduzir VC."},
+    {"resposta": "B", "comentario": "P/F = 130, com PEEP ≥5 cmH2O → Berlim: MODERADA (P/F 100-200). Grave: P/F <100. Leve: 200-300. Todos com PEEP ≥5 cmH2O e imagem bilateral sem causa cardíaca."},
+    {"resposta": "B", "comentario": "Driving pressure (DP) = Pplat − PEEP. Reflete a tensão estática transferida ao pulmão por ciclo. DP ≥15 cmH2O é preditor independente de mortalidade em SDRA. Alvo: <15 cmH2O. Reduzir VC ou PEEP conforme necessário."}
+  ]
+}

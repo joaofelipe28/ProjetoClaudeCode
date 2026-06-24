@@ -1,0 +1,175 @@
+{
+  "slug": "sincope_ps",
+  "titulo": "Síncope — Abordagem no PS",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "Síncope — Diagnóstico e Estratificação no PS",
+  "chapter_bar": "SÍNCOPE — ESTRATIFICAR E DECIDIR",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E EPIDEMIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É SÍNCOPE",
+      "items": [
+        "Perda transitória de consciência (PTC) por hipoperfusão cerebral global, curta duração, resolução espontânea",
+        "Causas: reflexa/vasovagal (50%), cardíaca (15-25%), ortostática (10%), causa não identificada (~25%)",
+        "Causa cardíaca = pior prognóstico: mortalidade em 1 ano até 30% se arrítmica",
+        "Diferenciar de: convulsão epiléptica, AIT, hipoglicemia, TCE, intoxicação (não são síncope)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "AVALIAÇÃO INICIAL — DIAGNÓSTICO",
+      "title": "SÍNCOPE — ANAMNESE É FUNDAMENTAL",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 200, "h": 22, "text": "PTC confirmada → Anamnese detalhada\n+ ECG 12D imediato + glicemia capilar", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.68, "w": 200, "h": 22, "text": "ECG alterado? Bradicardia/taquicardia?\nDor torácica? Dispneia? QTc longo?", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.22, "y": 0.40, "w": 155, "h": 26, "text": "CAUSA CARDÍACA provável\nMonitorar, internação\nECG contínuo, eco, Holter", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.78, "y": 0.40, "w": 155, "h": 26, "text": "REFLEXA ou ORTOSTÁTICA\nAplicar escore ROSE/SFSR\nAlta com orientações se baixo risco", "color": "green", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 195, "h": 22, "text": "Causa não identificada → Internação se\nescore alto risco / idoso / comorbidades", "color": "orange", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL — 3 GRANDES GRUPOS",
+      "section_color": "navy",
+      "headers": ["Tipo", "Características", "ECG / Exames"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.52, 0.26],
+      "rows": [
+        ["Reflexa (vasovagal)", "Gatilho: dor, calor, ortostatismo prolongado, emoção. Pródromo: náusea, palidez, sudorese. Em pé. Jovens.", "ECG normal; sem exame específico"],
+        ["Ortostática", "Após levantar. PA cai ≥20/10 mmHg em 3 min. Idosos, desidratação, medicamentos (anti-HP).", "Medir PA deitado/em pé; hemograma"],
+        ["Cardíaca arrítmica", "Súbita, sem pródromo, em decúbito. Cardiopatia conhecida. ECG alterado. Qualquer postura.", "ECG: BSA, BAVT, QTc longo, BRE novo; Holter; ECO"],
+        ["Cardíaca estrutural", "Esforço, dispneia associada. EA, CMHO, TEP, dissecção.", "ECO, D-dímero, TC se suspeita"],
+        ["NÃO-síncope (DD)", "Convulsão: movimentos tônicos, confusão pós-ictal, mordicação. AIT: sem PTC. Hipoglicemia.", "EEG, TC crânio, glicemia"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ESCORE ROSE — ESTRATIFICAÇÃO DE RISCO",
+      "section_color": "red",
+      "titulo": "ALTO RISCO (≥1 critério = internar)",
+      "items": [
+        "BNP ≥300 pg/mL",
+        "Bradiarritmia: FC <50, BSA, BAV 2º/3º grau",
+        "Sangue oculto nas fezes positivo",
+        "Anemia: Hb <9 g/dL",
+        "Saturação <94% na admissão",
+        "ECG: onda Q (infarto antigo)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SINAIS DE ALARME CARDÍACO — INTERNAÇÃO OBRIGATÓRIA",
+      "section_color": "orange",
+      "headers": ["Achado", "Conduta"],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.45, 0.55],
+      "rows": [
+        ["BAVT/BAV 2ºG tipo II, BSA sintomático", "Monitorar, MP transcutâneo standby, cardiologia"],
+        ["Taquicardia ventricular / FV", "UTI, DAI, antiarrítmico"],
+        ["QTc >500ms (torsades)", "Suspender drogas QT-longo, MgSO4 IV"],
+        ["Dissecção aórtica, TEP, estenose aórtica grave", "TC angio, eco, cirurgia/hemodinâmica"],
+        ["Cardiopatia estrutural + síncope no esforço", "Internação + eco + Holter + avaliação de DAI"]
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "EXAMES NA SÍNCOPE — O QUE PEDIR",
+      "titulo": "AVALIAÇÃO MÍNIMA E DIRIGIDA",
+      "items": [
+        "ECG 12 derivações: OBRIGATÓRIO em TODOS (custo zero, alto rendimento)",
+        "Glicemia capilar: descartar hipoglicemia (principal pseudossíncope)",
+        "HAS ortostática: PA deitado e em pé (3 min): queda ≥20/10 mmHg = positivo",
+        "Hemograma + BNP: se escore ROSE / suspeita cardíaca / idoso",
+        "Holter 24h ou loop recorder: síncope recorrente sem diagnóstico",
+        "Eco: cardiopatia suspeita (sopro, IC, esforço). TC/RM: suspeita AVC/TCE, não de síncope pura",
+        "NÃO pedir: EEG, TC, D-dímero de rotina sem indicação específica"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CRITÉRIOS DE ALTA SEGURA",
+      "section_color": "teal",
+      "titulo": "BAIXO RISCO — PODE DISPENSAR",
+      "items": [
+        "Jovem (<40 anos), sem cardiopatia, primeiro episódio vasovagal clássico",
+        "ECG normal, sem bradicardias, sem QTc longo",
+        "Resolução espontânea, sem quedas com trauma",
+        "Orientações: evitar gatilhos, hidratação, levantar devagar, meias elásticas",
+        "Retorno se recorrência, palpitações, dor torácica ou presíncope frequente",
+        "Acompanhamento com clínico/cardiologista em 1-2 semanas"
+      ],
+      "accent": "teal"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Qual das características abaixo é mais sugestiva de síncope de etiologia CARDÍACA em vez de vasovagal?",
+      "alternativas": [
+        "Ocorre em ortostase prolongada com pródromo de náusea e palidez",
+        "Gatilho emocional, jovem, em ambiente quente",
+        "Súbita, sem pródromo, em decúbito, com cardiopatia conhecida",
+        "Após levantar-se rapidamente em paciente idoso usando anti-hipertensivo",
+        "Após doação de sangue com sudorese profusa"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com síncope e ECG mostrando QTc de 530 ms. Qual é a principal preocupação?",
+      "alternativas": [
+        "Bloqueio AV de 1º grau",
+        "Torsades de Pointes — risco de morte súbita",
+        "Fibrilação atrial",
+        "Extrassistolia atrial benigna",
+        "Bradicardia sinusal assintomática"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Segundo o escore ROSE, qual achado isolado indica alto risco e necessidade de internação?",
+      "alternativas": [
+        "Síncope ao levantar-se em paciente de 30 anos",
+        "BNP ≥ 300 pg/mL",
+        "ECG com PR de 220 ms",
+        "Primeira síncope vasovagal em jovem",
+        "Glicemia de 90 mg/dL"
+      ]
+    },
+    {
+      "source": "HCor / Adaptada",
+      "enunciado": "Quais exames são considerados obrigatórios na avaliação inicial de toda síncope no PS?",
+      "alternativas": [
+        "TC de crânio e EEG",
+        "ECG 12 derivações e glicemia capilar",
+        "Holter 24h e ecocardiograma",
+        "D-dímero e troponina de rotina",
+        "Eletroencefalograma e BNP"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente de 70 anos, síncope ao esforço, com sopro sistólico importante em foco aórtico ao exame. O diagnóstico mais provável é:",
+      "alternativas": [
+        "Síncope vasovagal clássica",
+        "Hipotensão ortostática",
+        "Estenose aórtica grave — síncope estrutural",
+        "QT longo hereditário",
+        "Síncope pós-prandial"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Síncope cardíaca arrítmica: súbita, sem pródromo, pode ocorrer em decúbito, associada a cardiopatia conhecida. Vasovagal: ortostase prolongada, gatilho, pródromo autonômico (náusea/palidez/sudorese), resolução rápida."},
+    {"resposta": "B", "comentario": "QTc ≥500 ms é marcador de risco para Torsades de Pointes (TV polimórfica em salvas), que pode causar síncope e morte súbita. Suspender drogas que prolongam QT, repor magnésio, cardiologia urgente."},
+    {"resposta": "B", "comentario": "Escore ROSE: BNP ≥300, bradicardia grave, sangue oculto +, Hb <9, SpO2 <94%, onda Q = alto risco → internação. BNP elevado sugere disfunção ventricular e síncope cardíaca."},
+    {"resposta": "B", "comentario": "ECG 12D e glicemia capilar são os dois exames iniciais obrigatórios: ECG identifica causas arrítmicas com custo zero; glicemia descarta a principal pseudossíncope. TC e EEG não são de rotina."},
+    {"resposta": "C", "comentario": "Síncope ao esforço + sopro sistólico em aorta em idoso = estenose aórtica grave até prova em contrário. A EA causa síncope de esforço por incapacidade de aumentar o DC. Eco confirma. Prognóstico grave sem cirurgia."}
+  ]
+}

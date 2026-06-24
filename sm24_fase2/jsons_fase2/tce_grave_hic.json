@@ -1,0 +1,173 @@
+{
+  "slug": "tce_grave_hic",
+  "titulo": "TCE Grave e Hipertensão Intracraniana",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "TCE Grave — Manejo de Hipertensão Intracraniana",
+  "chapter_bar": "TCE GRAVE — HIC + NEUROPROTEÇÃO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DO TCE — ESCALA DE GLASGOW",
+      "section_color": "navy",
+      "headers": ["TCE", "GCS", "Conduta mínima"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.18, 0.60],
+      "rows": [
+        ["Leve", "13-15", "Observação, raio-X/TC se critérios, alta se melhora"],
+        ["Moderado", "9-12", "Internação, TC obrigatória, monitoração neurológica seriada"],
+        ["Grave", "3-8", "UTI, IOT, TC urgente, monitoração de PIC, neurologia/neurocirurgia urgente"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "HIPERTENSÃO INTRACRANIANA — METAS E MONITORAÇÃO",
+      "section_color": "orange",
+      "headers": ["Parâmetro", "Alvo", "Consequência se não atingido"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.28, 0.42],
+      "rows": [
+        ["Pressão de perfusão cerebral (PPC)", "60-70 mmHg", "PPC <50 = isquemia cerebral"],
+        ["PPC = PAM - PIC", "PAM mínima de 80 mmHg (TCE grave)", "Hipotensão = pior desfecho neurológico"],
+        ["Pressão intracraniana (PIC)", "< 22 mmHg", "PIC >22 = hernição transtentorial iminente"],
+        ["SpO2", ">95%", "Hipóxia PaO2 <60: dobra mortalidade no TCE grave"],
+        ["PaCO2 (normocapnia)", "35-45 mmHg", "Hipercapnia: vasodilata e aumenta PIC; hipocapnia prolongada: isquemia"],
+        ["Glicemia", "140-180 mg/dL", "Hipoglicemia: pior desfecho; hiperglicemia: piora edema cerebral"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "TRATAMENTO EM ESCADA DA HIC",
+      "title": "HIC — TRATAMENTO ESCALONADO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "TCE grave (GCS <=8): IOT + cabeceira 30o\nTA: PAM >=80 mmHg; SpO2 >=95%", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "PIC >22 (monitorada) OU sinais de hernição:\nOsmoterapia + hiperventilação breve + sedoanalgesia", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "1a linha:\nManitol 0,25-1 g/kg IV em 15-20 min\nOU SF 3% (opção sem hipovolemia)\nSedação: propofol+fentanil", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "2a linha (refratário):\nBarbiturico (pentobarbital)\nCraniectomia descompressiva\nHipotermia moderada", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Hematoma: indicação neurocirúrgica urgente\nHematoma epidural: cirurgia de emergência", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "LESÕES INTRACRANIANAS — TIPOS E CIRURGIA",
+      "section_color": "teal",
+      "headers": ["Lesão", "TC", "Indicação cirúrgica"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Hematoma epidural (HED)", "Lenticular biconvexo, hiperdensa, cruza linha média", "GCS <=15 + >30 mL OU pupila midriática: cirurgia URGENTE"],
+        ["Hematoma subdural agudo (HSD)", "Côncavo-convexo, hiperdensa, segue falx", ">10 mm OU desvio >5 mm OU deterioração: cirurgia"],
+        ["Hemorragia subaracnoide (HSA)", "Hiperdensa nas cisternas/sulcos", "Clipagem/embolização se aneurisma; tratamento conservador se trauma"],
+        ["Contusão cerebral", "Hiperatenuante (sangue) + edema pericontusional", "Cirurgia se efeito de massa ou deterioração"],
+        ["Lesão axonal difusa (LAD)", "TC quase normal (microhemorragias profundas) + coma", "Conservador — prognóstico grave; monitoração de PIC"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "OSMOTERAPIA — MANITOL vs SF HIPERTÔNICO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Manitol 20%",
+        "items": [
+          "Dose: 0,25-1 g/kg IV em 15-20 min",
+          "Onset: 15-30 min; duração 4-6h",
+          "Mecanismo: gradiente osmótico (remove água cerebral) + melhora reologia sanguínea",
+          "Contraindicação: hipovolemia (agrava), osm >320 mOsm/L",
+          "Monitorar: osmolalidade sérica (alvo <320); diurese (pode causar hipovolemia)",
+          "Gap osmolar >20 = acúmulo de manitol (risco de efeito rebote)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "SF Hipertônico (NaCl 3%)",
+        "items": [
+          "Dose: 250 mL IV (ou 1-2 mL/kg) — infundir em 20-30 min",
+          "Vantagem: não causa hipovolemia (expande volume intravascular)",
+          "Preferido em TCE + hipovolemia (trauma)",
+          "Meta: Na+ 145-155 mEq/L, osmolalidade <360",
+          "Monitorar: sódio sérico a cada 4-6h; não subir >10 mEq/L/dia",
+          "Evitar: hipernatremia >160 (risco de desmielinização)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "TCE GRAVE — PRIMEIROS 60 MIN",
+      "titulo": "ABORDAGEM INICIAL",
+      "items": [
+        "IOT: GCS <=8 OU incapaz de proteger via aérea — SRI com cetamina (segura no TCE se PAM mantida)",
+        "Evitar hipotensão: PAS <90 mmHg dobra mortalidade — cristaloide, SF, vasopressor se necessário",
+        "Evitar hipóxia: SpO2 <90% dobra mortalidade — O2 100% antes da IOT",
+        "Cabeceira 30o: reduz PIC e não compromete PPC se PAM mantida",
+        "Normocapnia: capnógrafo para manter PaCO2 35-45 — hiperventilação apenas como ponte (PaCO2 30-35 por <30 min)",
+        "TC urgente: avaliação imediata para lesão cirúrgica (hematoma epidural = emergência neurocirúrgica)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com TCE grave (GCS 7) em IOT. PA 130/80, PIC 30 mmHg. Qual é a pressão de perfusão cerebral (PPC) e a conduta?",
+      "alternativas": [
+        "PPC = 50 — normal; sem necessidade de intervenção",
+        "PPC = 60 — borderline; monitorar",
+        "PPC = 57 mmHg (PAM 97 - PIC 30) — abaixo do alvo; elevar PAM e/ou reduzir PIC com manitol",
+        "PPC = 80 — ótima; manter conduta atual",
+        "PPC = 30 — crítica; administrar corticoide dexametasona"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "TC de crânio revela hematoma epidural lenticular biconvexo com 40 mL. O paciente está com GCS 12 e midríase unilateral. Qual é a conduta?",
+      "alternativas": [
+        "Observação e TC de controle em 6h",
+        "Manitol IV + dexametasona + reavaliação",
+        "Neurocirurgia urgente — evacuação do hematoma epidural",
+        "Heparina profilática para evitar expansão",
+        "VNI para evitar IOT"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que a hiperventilação é usada apenas como medida temporária de emergência na HIC?",
+      "alternativas": [
+        "Porque a hiperventilação aumenta a PaCO2",
+        "Porque a vasoconstrição cerebral pela hipocapnia reduz PIC mas também o fluxo sanguíneo cerebral, causando isquemia se mantida",
+        "Porque hiperventilação causa hiperglicemia",
+        "Porque é ineficaz em reduzir a PIC",
+        "Porque aumenta a pressão de perfusão cerebral"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Em paciente com TCE grave associado a choque hipovolêmico (PA 70/40), qual é a preferência entre manitol e SF hipertônico?",
+      "alternativas": [
+        "Manitol — mais eficaz na redução de PIC",
+        "Corticoide — reduz edema cerebral vasogênico",
+        "SF hipertônico (NaCl 3%) — não causa hipovolemia e expande o volume intravascular",
+        "Dexametasona — padrão-ouro no TCE",
+        "Ambos equivalentes — escolher por disponibilidade"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o principal efeito adverso do uso de corticosteroides (dexametasona) no TCE grave?",
+      "alternativas": [
+        "Hipertensão arterial",
+        "Corticosteroides aumentam a mortalidade no TCE grave — CONTRAINDICADOS (estudo CRASH-1)",
+        "Hiperglicemia leve",
+        "Agravam o edema cerebral a longo prazo",
+        "Causam imunossupressão sem benefício neurológico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "PPC = PAM - PIC. PAM = (PA sistólica + 2x diastólica)/3 = (130 + 160)/3 = 97 mmHg. PPC = 97 - 30 = 67 mmHg (dentro do alvo 60-70). Se PIC 30 com PAM 97 = PPC 67. Conduta: se PIC >22 persistente, iniciar manitol 0,25-1 g/kg."},
+    {"resposta": "C", "comentario": "Hematoma epidural: >30 mL OU GCS deteriorando OU midríase = cirurgia de emergência. HED por ruptura da artéria meníngea média (fratura temporal). Herniação iminente. Craniotomia urgente com evacuação — prognóstico excelente se tratado precocemente."},
+    {"resposta": "B", "comentario": "Hiperventilação (PaCO2 <35): vasoconstrição cerebral → reduz volume sanguíneo → PIC cai. Porém: isquemia cerebral se mantida >30 min (vasoconstrição excessiva). Usar apenas como ponte emergencial (crise de hernição) — PaCO2 30-35 por <30 min, depois retornar à normocapnia."},
+    {"resposta": "C", "comentario": "TCE + choque hipovolêmico: manitol causa diurese osmótica (agrava hipovolemia). SF hipertônico (NaCl 3%) não causa hipovolemia — expande volume intravascular E reduz PIC por gradiente osmótico. Preferido no paciente hipovolêmico. Monitorar Na+ sérico."},
+    {"resposta": "B", "comentario": "CORTICOSTEROIDES NO TCE: CONTRAINDICADOS. Estudo CRASH-1 (2004): 10.000 pacientes — corticoide (metilprednisolona) aumentou mortalidade em 2% absoluto no TCE grave. Mecanismo: imunossupressão + hiperglicemia + sem redução de edema pós-traumático. Não usar dexametasona ou metilprednisolona no TCE."}
+  ]
+}

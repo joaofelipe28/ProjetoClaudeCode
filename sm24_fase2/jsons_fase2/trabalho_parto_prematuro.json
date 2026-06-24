@@ -1,0 +1,177 @@
+{
+  "slug": "trabalho_parto_prematuro",
+  "titulo": "Trabalho de Parto Prematuro",
+  "especialidade": "GINECOLOGIA/OBSTETRÍCIA",
+  "chapter_subject": "TPP — Diagnóstico, Uterólise e Maturidade Fetal",
+  "chapter_bar": "TPP — TOCÓLISE + CORTICOIDE + TRANSFERÊNCIA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DEFINIÇÕES E FATORES DE RISCO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Definição / Detalhes"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Parto prematuro", "Parto entre 22 e 36+6 semanas de gestação"],
+        ["Prematuro extremo", "<28 semanas — mortalidade e morbidade neurológica severas"],
+        ["Prematuro tardio", "34-36+6 semanas — maior risco de SDR, icterícia, hipoglicemia"],
+        ["Fatores de risco", "TPP anterior (fator de risco mais importante), gemelar, colo curto (<25 mm), infecção, trauma, DPPNI, polihidrâmnio, tabagismo"],
+        ["Diagnóstico TPP", "Contrações regulares (>=4/20 min ou >=8/60 min) + modificação cervical: dilatação >=2 cm OU apagamento >=80%"],
+        ["Fibronectina fetal (fFN)", "Se negativa: VPP muito baixo para parto em 7 dias — pode evitar internação desnecessária"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DO TPP",
+      "title": "TPP — CLASSIFICAR + TOCÓLISE + CORTICOIDE",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Contrações regulares + modificação cervical entre 22-34 semanas\nExcluir: RPMO, DPPNI, feto inviável, corioamnionite", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "24-34 semanas sem contraindicações:\nCORTICOIDE (maturidade pulmonar) + TOCÓLISE (ganhar 48h)", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "Betametasona 12 mg IM\na cada 24h, 2 doses\n(24-34 semanas, 1a dose URGENTE)", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Tocólise (48h):\nNifedipino 20 mg VO 6/6h\nou atosibana IV\nou indometacina <32 sem", "color": "teal", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "MgSO4 (neuroproteção fetal) se <32 semanas + parto iminente\nTransferir para maternidade de nível III se <34 semanas", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TOCÓLISE — OPÇÕES E CONTRAINDICAÇÕES",
+      "section_color": "orange",
+      "headers": ["Droga", "Dose", "Contraindicações / Efeitos"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.28, 0.50],
+      "rows": [
+        ["Nifedipino", "20 mg VO ataque; 10-20 mg 6/6h manutenção", "Hipotensão materna; 1a escolha oral pela facilidade; bloq. Ca++"],
+        ["Atosibana", "Bolus 6,75 mg IV + infusão 18 mg/h x 3h + 6 mg/h x 45h", "Menos efeitos adversos; custo elevado; antagonista de ocitocina"],
+        ["Indometacina", "50-100 mg VO/retal ataque; 25 mg 6/6h x 48h", "Usar apenas <32 sem (risco fechamento precoce do canal arterial)"],
+        ["Terbutalina/ritodrina", "IV ou SC — betamiméticos", "Taquicardia, hiperglicemia — menor uso atualmente"],
+        ["EVITAR >34 semanas", "Tocólise contraindicada após 34 semanas", "Risco materno-fetal supera benefício; deixar evoluir o parto"],
+        ["CONTRAINDICAÇÕES ABSOLUTAS", "Corioamnionite, DPPNI, anomalia fetal letal, sofrimento fetal", "Não usar tocólise — parto deve ocorrer"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CORTICOIDE — MATURIDADE PULMONAR FETAL",
+      "section_color": "red",
+      "titulo": "BETAMETASONA — DOSE ÚNICA MAIS IMPORTANTE NA OBSTETRÍCIA",
+      "items": [
+        "Betametasona 12 mg IM + 12 mg IM com 24h de intervalo (2 doses = ciclo completo)",
+        "Indica entre 24-34 semanas + risco de parto em 7 dias",
+        "Efeito: redução de SDR, hemorragia intracraniana e enterocolite necrosante",
+        "Benefício mesmo com 1 dose: administrar imediatamente, não aguardar 2a dose para isso",
+        "34-36+6 semanas: pode considerar (dose única betametasona) — reduz SDR tardia",
+        "Repita após 2 semanas SOMENTE se <32 semanas e risco ainda presente (controverso)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CORIOAMNIONITE — CONTRAINDICAÇÃO À TOCÓLISE",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Diagnóstico de Corioamnionite",
+        "items": [
+          "Febre materna (T >=38oC) + 2 dos seguintes:",
+          "Taquicardia materna (>100 bpm)",
+          "Taquicardia fetal (>160 bpm)",
+          "Sensibilidade uterina",
+          "Líquido amniótico purulento/fétido",
+          "Leucocitose materna (>15.000/mcL)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Conduta na Corioamnionite",
+        "items": [
+          "NÃO tocólise — infecção ativa contraindica retardar parto",
+          "ATB imediato: ampicilina 2 g IV 6/6h + gentamicina 5 mg/kg/d",
+          "Adicionar metronidazol se parto por cesárea",
+          "Resolução do parto: vaginal preferível; cesárea se indicação obstétrica",
+          "Corticoide: administrar mesmo com corioamnionite se <34 semanas",
+          "Recém-nascido: risco de sepse neonatal precoce — UCI pediátrica"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ADMISSÃO NO PS — TPP",
+      "titulo": "AVALIAR AO CHEGAR",
+      "items": [
+        "Idade gestacional exata: calcular por DUM + US precoce",
+        "US obstétrico urgente: posição fetal, placenta, LA, colo (transvaginal)",
+        "RPMO: amniotest ou pool de LA no fundo de saco + US (oligo ou anidramnia)",
+        "Cardiotocografia: vitalidade fetal + padrão de contrações",
+        "Laboratorial: hemograma, PCR, urocultura, GBS (estreptococo do grupo B) + swab vaginal/anal",
+        "MgSO4 neuroprotetor: 4 g IV em 20 min + 1-2 g/h se <32 semanas e parto iminente"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Gestante de 28 semanas com contrações regulares e dilatação de 3 cm. Sem febre, LA claro, CTG reativo. Qual conduta imediata?",
+      "alternativas": [
+        "Cesárea de urgência imediata",
+        "Alta com repouso domiciliar",
+        "Betametasona 12 mg IM + tocólise (nifedipino) + MgSO4 neuroprotetor",
+        "Amniocentese para confirmar maturidade pulmonar",
+        "Ocitocina para acelerar o parto e reduzir tempo de exposição"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que a tocólise deve ser evitada em casos de corioamnionite?",
+      "alternativas": [
+        "Porque causa bradicardia fetal",
+        "Porque retardar o parto prolonga a exposição do feto e da mãe à infecção ativa",
+        "Porque nifedipino é contraindicado na gestação",
+        "Porque tocólise reduz a eficácia dos antibióticos",
+        "Porque corioamnionite causa amadurecimento cervical e a tocólise é ineficaz"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o objetivo primário da tocólise no TPP?",
+      "alternativas": [
+        "Evitar o parto prematuro definitivamente",
+        "Ganhar 48h para completar corticoide e transferir para maternidade de nível III",
+        "Tratar a causa do TPP",
+        "Prevenir ruptura prematura de membranas",
+        "Reduzir a contratilidade uterina por 30 dias"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Qual agente tocolitico deve ser evitado após 32 semanas pela possibilidade de fechamento prematuro do canal arterial?",
+      "alternativas": [
+        "Nifedipino",
+        "Atosibana",
+        "Indometacina",
+        "Terbutalina",
+        "MgSO4"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o benefício do sulfato de magnésio (MgSO4) quando administrado antes de um parto prematuro iminente <32 semanas?",
+      "alternativas": [
+        "Tocólise (retardar as contrações uterinas)",
+        "Maturidade pulmonar fetal",
+        "Neuroproteção fetal (reduz paralisia cerebral e hemorragia intracraniana)",
+        "Tratamento da corioamnionite",
+        "Prevenção de eclâmpsia neonatal"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "TPP em 28 semanas sem contraindicações: betametasona 12 mg IM (1a dose urgente — maturidade pulmonar) + tocólise (nifedipino — ganhar 48h para completar corticoide) + MgSO4 4 g IV (neuroproteção fetal <32 sem) + transferência para UTI neonatal de nível III."},
+    {"resposta": "B", "comentario": "Corioamnionite: infecção intra-amniótica ativa — retardar o parto mantém feto e mãe expostos a infecção que pode evoluir para sepse neonatal precoce e sépsis materna. Parto é o tratamento da corioamnionite. Tocólise contraindica absolutamente."},
+    {"resposta": "B", "comentario": "Tocólise: objetivo é ganhar 48h para completar 2 doses de corticoide (betametasona) e transferir para maternidade de nível III. Não impede o parto definitivamente — apenas retarda. Após 48h de corticoide completo, pode suspender tocólise."},
+    {"resposta": "C", "comentario": "Indometacina (AINE): inibe prostaglandinas → contração do canal arterial → se usado após 32 semanas, risco de fechamento prematuro do canal arterial (HIPERTENSÃO PULMONAR fetal). Usar apenas <32 semanas por 48h. Acima: nifedipino ou atosibana."},
+    {"resposta": "C", "comentario": "MgSO4 como neuroprotetor fetal: indicado <32 semanas com parto iminente. Reduz risco de paralisia cerebral em 30-40% e hemorragia intracraniana grave. Mecanismo: neuroproteção dos neurônios pelo bloqueio de receptores NMDA. Dose: 4 g IV em 20-30 min + 1-2 g/h."}
+  ]
+}

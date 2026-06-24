@@ -1,0 +1,176 @@
+{
+  "slug": "risco_suicidio_avaliacao",
+  "titulo": "Risco de Suicídio — Avaliação no PS",
+  "especialidade": "PSIQUIATRIA",
+  "chapter_subject": "Avaliação do Risco de Suicídio no PS",
+  "chapter_bar": "SUICÍDIO — AVALIAR RISCO E PLANEJAR",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "EPIDEMIOLOGIA E IMPACTO",
+      "section_color": "teal",
+      "titulo": "MAGNITUDE DO PROBLEMA",
+      "items": [
+        "Suicídio: 3ª causa de morte em jovens de 15-29 anos; 12.000 mortes/ano no Brasil",
+        "Para cada morte, 20-30 tentativas; iceberg — subnotificação significativa",
+        "Fatores de risco: depressão (50%), transtorno bipolar, esquizofrenia, álcool/drogas, dor crônica",
+        "Tentativa prévia = maior preditor isolado de suicídio consumado (risco 30-40x maior)",
+        "Janela de oportunidade: 50% dos que morrem por suicídio consultaram um médico no mês anterior"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "AVALIAÇÃO DO RISCO — ESTRATIFICAÇÃO",
+      "section_color": "navy",
+      "headers": ["Risco", "Características", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.14, 0.54, 0.32],
+      "rows": [
+        ["ALTO", "Plano concreto + meio disponível + intenção imediata. Tentativa recente grave. Psicose ativa. Agitação extrema.", "Internação involuntária, UTI se intox. grave, psychiatria urgente, retirar meios"],
+        ["MODERADO", "Ideação ativa sem plano concreto. Tentativa de baixa letalidade. Depressão grave. Alcoolismo ativo.", "Avaliação psiquiátrica imediata, observação, considerar internação voluntária"],
+        ["BAIXO", "Ideação passiva ('quero morrer' sem intenção/plano). Sem tentativa. Bom suporte social. Insight preservado.", "Alta com plano de segurança, encaminhamento urgente ao CAPS/psiquiatra, retorno em 24-48h"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "COMO PERGUNTAR — QUEBRAR O TABU",
+      "section_color": "purple",
+      "titulo": "PERGUNTAR NÃO AUMENTA O RISCO",
+      "items": [
+        "'Você teve pensamentos de se machucar ou de não querer mais estar vivo?'",
+        "'Você está pensando em suicídio?' — pergunta direta é segura e necessária",
+        "'Você tem algum plano de como faria?' — avaliar especificidade do plano",
+        "'Você tem acesso a essa forma?' — arma, medicação, local",
+        "'O que impediu você até agora?' — avaliar fatores de proteção",
+        "Escuta ativa, sem julgamento, ambiente privado, sem interrupções"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "FATORES DE RISCO E PROTEÇÃO",
+      "section_color": "orange",
+      "headers": ["Fatores de Risco", "Fatores Protetores"],
+      "header_colors": ["red", "teal"],
+      "col_widths": [0.50, 0.50],
+      "rows": [
+        ["Depressão + ansiedade severas", "Suporte familiar e social forte"],
+        ["Tentativa prévia (principal fator isolado)", "Motivação religiosa para viver"],
+        ["Acesso a meios letais (arma de fogo)", "Filhos pequenos, responsabilidade com outrem"],
+        ["Isolamento social, divorciado, viúvo", "Insight sobre o transtorno e busca de ajuda"],
+        ["Abuso de álcool/drogas", "Vínculo terapêutico estabelecido"],
+        ["Doença física grave e crônica", "Plano de segurança acordado e compreendido"],
+        ["Histórico familiar de suicídio", "Esperança de melhora com tratamento"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "PLANO DE SEGURANÇA E INTERNAÇÃO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Plano de Segurança (alta segura)",
+        "items": [
+          "1. Sinais de alerta que o paciente reconhece",
+          "2. Estratégias internas de enfrentamento",
+          "3. Pessoas para distrair (família, amigos)",
+          "4. Profissional ou serviço de saúde para contatar",
+          "5. RESTRIÇÃO DE MEIOS: retirar armas, medicamentos estocados",
+          "CVV: 188 (24h, gratuito) — passado ao paciente na alta"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Internação Involuntária (Lei 10.216)",
+        "items": [
+          "Indicada quando: risco iminente sem capacidade de contrato terapêutico",
+          "Notificar familiar e comunicar ao MP em 72h",
+          "Pode ser feita por médico não psiquiatra",
+          "Sempre preferir voluntária se possível",
+          "Documentar: avaliação, risco, conduta, responsável",
+          "Ambiente seguro: retirar objetos cortantes, cabos, medicamentos do quarto"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST — AVALIAÇÃO DE RISCO NO PS",
+      "titulo": "SISTEMATIZAR A AVALIAÇÃO",
+      "items": [
+        "Perguntar diretamente sobre ideação suicida — não esperar o paciente trazer",
+        "Avaliar plano: método, acesso ao meio, data/local — quanto mais específico, maior o risco",
+        "Identificar tentativa prévia e sua letalidade real vs percebida pelo paciente",
+        "Fatores de risco ativos: depressão, psicose, álcool, dor crônica, doença terminal",
+        "Fatores de proteção: vínculo familiar, religião, filhos, insight",
+        "Estratificação: alto (internar) / moderado (avaliar) / baixo (plano segurança + retorno)",
+        "Documentar detalhadamente — medicolegalmente essencial"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o fator de risco isolado mais importante para um novo episódio de suicídio consumado?",
+      "alternativas": [
+        "Depressão grave em tratamento",
+        "Abuso de álcool crônico",
+        "Tentativa de suicídio prévia",
+        "Divorciado sem filhos",
+        "Histórico familiar de depressão"
+      ]
+    },
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com ideação suicida, plano concreto (saltar de edifício), local identificado e intenção para 'hoje à noite'. Qual é a conduta CORRETA?",
+      "alternativas": [
+        "Alta com plano de segurança e retorno em 48h",
+        "Encaminhamento ao CAPS na semana seguinte",
+        "Internação psiquiátrica urgente, involuntária se necessário, retirando o acesso ao meio",
+        "Prescrever antidepressivo e observar 30 dias",
+        "Solicitar avaliação ambulatorial e aguardar vaga"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Perguntar diretamente sobre suicídio para um paciente em crise:",
+      "alternativas": [
+        "Aumenta o risco de suicídio — deve ser evitado",
+        "É desnecessário se o paciente não menciona o assunto",
+        "Não aumenta o risco e é essencial para a avaliação correta",
+        "Deve ser feito apenas por psiquiatra",
+        "É contraindicado em menores de 18 anos"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Qual componente do plano de segurança é considerado o mais eficaz na redução de suicídio?",
+      "alternativas": [
+        "Fornecer o número do CVV (188)",
+        "Restrição de meios letais (guardar armas, retirar medicamentos estocados)",
+        "Orientar sobre terapia cognitivo-comportamental",
+        "Prescrever antidepressivo na alta do PS",
+        "Agendar retorno em 30 dias"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "Segundo a Lei 10.216, quando é possível internar involuntariamente um paciente por risco de suicídio?",
+      "alternativas": [
+        "Apenas mediante autorização judicial prévia",
+        "Somente se há psiquiatra disponível no momento",
+        "Quando há risco iminente para si e o paciente não tem capacidade para contrato terapêutico",
+        "Nunca — toda internação psiquiátrica deve ser voluntária",
+        "Apenas se familiares solicitarem por escrito"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Tentativa de suicídio prévia é o fator de risco isolado mais forte para suicídio consumado (risco 30-40x maior). Perguntar sobre histórico de tentativas é essencial em qualquer avaliação de risco."},
+    {"resposta": "C", "comentario": "Plano concreto + meio identificado + intenção imediata = risco ALTO → internação urgente. Retirar acesso ao meio. Internação involuntária é legal e ética quando há risco iminente. Documentar toda a avaliação."},
+    {"resposta": "C", "comentario": "Estudos mostram que perguntar diretamente sobre suicídio NÃO aumenta o risco — na verdade, permite avaliação adequada e mostra ao paciente que o médico se importa. É uma das intervenções mais importantes no PS."},
+    {"resposta": "B", "comentario": "Restrição de meios (lethal means counseling): retirar armas de fogo, guardar medicamentos com familiar, remover objetos cortantes — é a intervenção com maior evidência de redução de suicídio consumado. Reduz a impulsividade-letal."},
+    {"resposta": "C", "comentario": "Lei 10.216: internação involuntária é permitida quando há risco iminente à vida e o paciente não tem capacidade para contrato terapêutico. Pode ser feita por qualquer médico. Notificar família e comunicar ao MP em 72h."}
+  ]
+}

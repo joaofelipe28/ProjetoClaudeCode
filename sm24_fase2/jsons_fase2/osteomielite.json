@@ -1,0 +1,174 @@
+{
+  "slug": "osteomielite",
+  "titulo": "Osteomielite",
+  "especialidade": "ORTOPEDIA",
+  "chapter_subject": "Osteomielite Aguda e Crônica — Diagnóstico e Tratamento",
+  "chapter_bar": "OSTEOMIELITE — HEMOCULTURA + ATB + CIRURGIA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO — AGUDA, SUBAGUDA E CRÔNICA",
+      "section_color": "navy",
+      "headers": ["Tipo", "Tempo", "Características", "Tratamento"],
+      "header_colors": ["gray", "navy", "teal", "orange"],
+      "col_widths": [0.15, 0.12, 0.42, 0.31],
+      "rows": [
+        ["Aguda", "<2 semanas", "Hematogênica (criança) ou pós-trauma/cirurgia; febre, dor, calor local", "ATB IV + cirurgia se abscesso"],
+        ["Subaguda", "2-6 semanas", "Abscesso de Brodie: lesão lítica epifisária em criança (S. aureus)", "ATB IV ou oral; curetagem se não resolve"],
+        ["Crônica", ">6 semanas", "Sequestro ósseo (osso morto), involucro, fístula — pós-osteomielite aguda mal tratada", "Desbridamento cirúrgico + ATB prolongada"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ETIOLOGIA — QUEM CAUSA EM CADA CONTEXTO",
+      "section_color": "orange",
+      "headers": ["Contexto", "Agente mais provável", "ATB empírico"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.32, 0.38],
+      "rows": [
+        ["Hematogênica em criança >5 anos", "S. aureus (70%)", "Oxacilina IV 4/4h (ou cefazolina)"],
+        ["Hematogênica em neonato (<3 meses)", "S. aureus + Enterobactérias + GBS", "Oxacilina + gentamicina ou ampicilina+cefotaxima"],
+        ["Pós-trauma / material cirúrgico", "S. aureus, S. epidermidis, bacilos Gram-neg", "Vancomicina + cefepima ou piperacilina-tazo"],
+        ["Pé diabético / isquemico", "Polimicrobiana (S. aureus + enterococos + anaeróbios)", "Piperacilina-tazobactam IV OU ertapeném"],
+        ["Falciforme / anemia hemolítica", "Salmonella sp (+ S. aureus)", "Ciprofloxacino IV ou ceftriaxona + oxacilina"],
+        ["Usuário de drogas IV", "S. aureus (MRSA frequente) + Pseudomonas", "Vancomicina + cefepima"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DIAGNÓSTICA",
+      "title": "OSTEOMIELITE — CONFIRMAR + HEMOCULTURA + ATB",
+      "height": 190,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Febre + dor óssea + calor local + limitação de movimento\nLaboratório: hemograma, PCR, VHS, hemoculturas (2 pares)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Imagem: raio-X (normal nas primeiras 2 semanas!) + RM\nRM: padrão-ouro — edema medular precoce", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "ATB empírico IV:\noxacilina 2g 4/4h\n(cobertura S. aureus)\nATB ANTES da biópsia se instável", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Biópsia óssea:\nIdealizar ANTES do ATB\nse paciente estável\nGuiada por imagem (TC)", "color": "red", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Cirurgia: abscesso (incisão e drenagem) ou não resposta em 48-72h\nDuração ATB: 4-6 semanas (aguda) ou 6+ meses (crônica)", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "OSTEOMIELITE NO PÉ DIABÉTICO",
+      "section_color": "red",
+      "titulo": "SINAL DE SONDAGEM POSITIVO = SUSPEITA OSTEOMIELITE",
+      "items": [
+        "Probe to bone test: introduzir sonda metálica na ferida — toca osso = sensibilidade 66%, especificidade 85%",
+        "Critérios: ferida >2 cm + VHS >70 + PCR elevada — alta probabilidade",
+        "RM: melhor exame — edema medular = osteomielite em atividade",
+        "Raio-X: destruição óssea aparece só após 2-3 semanas (perda de 30-50% de mineral)",
+        "Biópsia óssea: padrão-ouro para identificar agente — guia ATB",
+        "Tratamento: ATB IV prolongada (4-6 semanas) + desbridamento + revascularização se isquemia"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "OSTEOMIELITE CRÔNICA — CIRURGIA",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Critérios Cirúrgicos",
+        "items": [
+          "Sequestro ósseo (osso devascularizado) visível na imagem",
+          "Fístula cutânea persistente (drena pus)",
+          "Involucro (novo osso formado ao redor do sequestro)",
+          "Falha do ATB isolado após 6 semanas",
+          "Abscesso de Brodie sintomático sem melhora",
+          "Implante infectado: geralmente necessita remoção do material"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Técnica Cirúrgica",
+        "items": [
+          "Sequestrectomia: remoção do osso necrótico (sequestro)",
+          "Curetagem e fresagem do canal medular",
+          "Preenchimento: cimento com antibiótico (vancomicina) ou enxerto",
+          "Retalho muscular: cobertura de osso exposto em grandes defeitos",
+          "Estabilização: fixador externo se instabilidade",
+          "ATB local (esferas de PMMA): concentração local alta sem toxicidade sistêmica"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL",
+      "titulo": "OUTRAS CAUSAS DE DORDOR OSSEA + FEBRE",
+      "items": [
+        "Artrite séptica: dor articular + derrame; líquido sinovial com pus; geralmente uma articulação",
+        "Celulite/flegmão: somente partes moles; RM diferencia de osteomielite",
+        "Tumor ósseo: sem febre, VHS/PCR normais ou pouco elevados; biopsia define",
+        "Artrite reativa: após infecção GI ou STI; PCR elevada; sem envolvimento ósseo",
+        "Leucemia: criança com dor ossea + pancitopenia + esplenomegalia — mielograma diagnóstico",
+        "Síndrome de SAPHO: osteíte estéril + acne/psoríase/palmoplantar pustuloses"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Criança de 8 anos com febre, dor e edema no fêmur distal há 5 dias. Raio-X normal. PCR 120 mg/L. Qual exame confirma osteomielite nessa fase precoce?",
+      "alternativas": [
+        "Raio-X com incidência especial",
+        "TC de osso",
+        "RM (ressonância magnética) — padrão-ouro na fase precoce (edema medular antes de alteração no raio-X)",
+        "Cintilografia óssea com tecnécio",
+        "Biopsia óssea como 1a linha"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Criança com anemia falciforme apresenta osteomielite. Qual agente deve ser coberto além do S. aureus?",
+      "alternativas": [
+        "Pseudomonas aeruginosa",
+        "Candida albicans",
+        "Salmonella sp — segunda causa mais comum em falciformes",
+        "Mycobacterium tuberculosis",
+        "Streptococcus pyogenes"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o exame padrão-ouro para diagnosticar osteomielite e identificar o agente etiológico em casos duvidosos?",
+      "alternativas": [
+        "Hemoculturas periféricas",
+        "RM com contraste",
+        "Cintilografia óssea",
+        "Biópsia óssea com cultura",
+        "Tomografia computadorizada"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente diabético com ferida plantar crônica. Sondagem positiva (toca osso). PCR 85 mg/L, VHS 90 mm/h. Qual é a conduta mais adequada?",
+      "alternativas": [
+        "Alta com curativo e retorno em 2 semanas",
+        "Raio-X — se normal, sem necessidade de tratamento para osteomielite",
+        "RM + hemoculturas + ATB IV empírico (piperacilina-tazobactam) + ortopedia/infectologia",
+        "Apenas desbridamento cirúrgico sem ATB",
+        "Corticoide local para reduzir inflamação"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Sequestro ósseo na osteomielite crônica representa:",
+      "alternativas": [
+        "Novo osso formado ao redor do foco infeccioso",
+        "Abscesso intraósseo sem comunicação com exterior",
+        "Osso devascularizado e necrótico que permanece no interior do foco infeccioso — impede cura sem remoção cirúrgica",
+        "Calcificação de partes moles ao redor do foco",
+        "Reação periosteal de nova formação óssea"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "RM é o padrão-ouro na osteomielite aguda precoce: detecta edema medular (hipersinal T2) antes de qualquer alteração no raio-X. Raio-X só mostra alterações após 2-3 semanas (reabsorção de 30-50% do mineral). TC: boa para sequestro e destruição; inferior à RM na fase precoce."},
+    {"resposta": "C", "comentario": "Anemia falciforme + osteomielite: Salmonella spp é a segunda causa mais comum (após S. aureus) — associada à isquemia intestinal com translocação bacteriana. Empiricamente: ceftriaxona ou ciprofloxacino IV (cobre Salmonella) + oxacilina (cobre S. aureus)."},
+    {"resposta": "D", "comentario": "Biópsia óssea com cultura: padrão-ouro para identificação do agente. Indicada em osteomielite de difícil tratamento, sem isolamento por hemocultura, pé diabético e crônica. Idealmente realizada antes do ATB. Permite ATB dirigido — menor toxicidade e custo."},
+    {"resposta": "C", "comentario": "Pé diabético + sondagem positiva + VHS >70 + PCR elevada = alta probabilidade de osteomielite. RM para confirmar + hemoculturas antes do ATB se possível + ATB IV empírico polimicrobiano (piperacilina-tazobactam cobre S. aureus + Gram-neg + anaeróbios) + ortopedia."},
+    {"resposta": "C", "comentario": "Sequestro: fragmento de osso devascularizado, necrótico, envolvido pelo exsudato infeccioso. Serve como corpo estranho perpetuando a infecção — ATB não penetra nele adequadamente. Remoção cirúrgica obrigatória (sequestrectomia) para cura da osteomielite crônica."}
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "slug": "maus_tratos_infantil",
+  "titulo": "Maus-Tratos Infantis",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Reconhecimento e Notificação de Maus-Tratos na Infância",
+  "chapter_bar": "MAUS-TRATOS — RECONHECER + PROTEGER + NOTIFICAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "TIPOS DE MAUS-TRATOS",
+      "section_color": "navy",
+      "headers": ["Tipo", "Características"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Físico", "Lesões corporais intencionais: hematomas, fraturas, queimaduras, TCE (shaken baby)"],
+        ["Negligência", "Falha em prover necessidades básicas: alimentação, higiene, saúde, educação, supervisão"],
+        ["Psicológico", "Humilhação, rejeição, ameaças, isolamento, exposição à violência doméstica"],
+        ["Sexual", "Qualquer ato sexual com criança/adolescente; abuso, exploração, pornografia"],
+        ["Síndrome de Munchausen por procuração", "Cuidador simula/provoca doença na criança para obter atenção médica"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE ALERTA — QUANDO SUSPEITAR",
+      "section_color": "red",
+      "titulo": "RED FLAGS DE MAUS-TRATOS FÍSICOS",
+      "items": [
+        "História incompatível com a lesão ou com o estágio de desenvolvimento (ex: fratura em lactente que não anda)",
+        "História mutável, contraditória ou atraso na procura por atendimento",
+        "Lesões em estágios de cicatrização diferentes (hematomas de cores variadas)",
+        "Localização atípica: orelhas, pescoço, tronco, genitais, região posterior (vs joelhos/canelas comuns)",
+        "Lesões patognomônicas: marcas de objeto (cinto, fivela), queimadura em luva/meia (imersão), mordida humana",
+        "Fraturas suspeitas: arcos costais posteriores, metáfise (canto/alça de balde), crânio complexa, em lactente"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "CONDUTA FRENTE À SUSPEITA",
+      "title": "MAUS-TRATOS — PROTEGER + DOCUMENTAR + NOTIFICAR",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Suspeita de maus-tratos: lesao + historia incompativel\nAcolher a crianca + atendimento medico das lesoes", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Documentar detalhadamente: descricao das lesoes,\nfotos (com consentimento), historia textual, desenho corporal", "color": "teal", "font_size": 5.5},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "Investigar:\nRX de ossos longos (skeletal survey <2a)\nFundo de olho (shaken baby)\nTC cranio se TCE", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "NOTIFICACAO OBRIGATORIA:\nConselho Tutelar\n(suspeita basta — nao precisa\nde confirmacao)", "color": "red", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Garantir seguranca: internar se necessario para protecao\nEquipe multidisciplinar: assistente social, psicologo, pediatra", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "NOTIFICAÇÃO — OBRIGAÇÃO LEGAL",
+      "section_color": "orange",
+      "titulo": "ECA — ESTATUTO DA CRIANÇA E DO ADOLESCENTE",
+      "items": [
+        "Notificação é OBRIGATÓRIA para todo profissional de saúde (Art. 13 do ECA + Lei 13.010)",
+        "Basta a SUSPEITA — não é necessária confirmação do diagnóstico",
+        "Notificar ao Conselho Tutelar (e ficha de notificação SINAN ao serviço de vigilância)",
+        "A não notificação configura infração administrativa (multa) e pode haver responsabilização",
+        "Não cabe ao médico investigar a autoria — apenas reconhecer, proteger e notificar",
+        "Casos graves/risco iminente: acionar também autoridade policial e garantir internação protetiva"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "SÍNDROME DO BEBÊ SACUDIDO E ABUSO SEXUAL",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Shaken Baby Syndrome",
+        "items": [
+          "Tríade: hematoma subdural + hemorragia retiniana + edema cerebral",
+          "Mecanismo: sacudir violentamente o lactente (aceleração-desaceleração)",
+          "Frequente: lactente que chora muito; sem sinais externos de trauma",
+          "Investigação: fundo de olho + TC/RM crânio + skeletal survey",
+          "Sequelas graves: cegueira, déficit neurológico, óbito",
+          "Alta suspeita: rebaixamento/convulsão em lactente sem explicação clara"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Suspeita de Abuso Sexual",
+        "items": [
+          "Sinais: ISTs em criança, gravidez, lesões genitais/anais, comportamento sexualizado",
+          "Não revictimizar: exame por profissional capacitado, ambiente acolhedor",
+          "Profilaxias: ISTs, HIV (PEP em <72h), contracepção de emergência se púbere",
+          "Coleta forense: preservar evidências se <72h (cadeia de custódia)",
+          "Notificação obrigatória + comunicação à autoridade policial",
+          "Suporte psicológico à criança e à família protetora"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "DOCUMENTAÇÃO MÉDICA — IMPORTÂNCIA LEGAL",
+      "titulo": "REGISTRAR COM CUIDADO",
+      "items": [
+        "Descrever lesões objetivamente: tipo, tamanho, cor, localização (diagrama corporal)",
+        "Transcrever a história nas palavras do acompanhante e da criança (entre aspas)",
+        "Fotografar as lesões com escala/régua (consentimento e protocolo institucional)",
+        "Evitar termos conclusivos de autoria — descrever achados compatíveis",
+        "Skeletal survey em <2 anos com suspeita de abuso físico (fraturas ocultas)",
+        "Prontuário completo: pode ser documento legal — letra legível, datado, assinado"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Lactente de 4 meses com fratura de fêmur. A mãe relata que a criança 'rolou do sofá'. Qual conduta é correta?",
+      "alternativas": [
+        "Aceitar a história, imobilizar e dar alta",
+        "Suspeitar de maus-tratos (fratura incompatível com lactente que não se locomove) — investigar, proteger e notificar ao Conselho Tutelar",
+        "Apenas tratar a fratura sem investigação adicional",
+        "Encaminhar para ortopedia ambulatorial",
+        "Solicitar apenas exame de cálcio e vitamina D"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "A notificação de suspeita de maus-tratos infantis pelo médico:",
+      "alternativas": [
+        "Só deve ser feita após confirmação diagnóstica",
+        "É obrigatória mesmo na suspeita, ao Conselho Tutelar (ECA Art. 13)",
+        "Depende da autorização dos pais",
+        "É facultativa e fica a critério do médico",
+        "Só é necessária em casos de abuso sexual"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "A tríade da síndrome do bebê sacudido (shaken baby syndrome) inclui:",
+      "alternativas": [
+        "Fratura de fêmur + hematoma + queimadura",
+        "Hematoma subdural + hemorragia retiniana + edema cerebral",
+        "Desnutrição + atraso de desenvolvimento + anemia",
+        "Convulsão + febre + rigidez de nuca",
+        "Hematoma epidural + fratura de crânio + otorragia"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Criança de 7 anos com diagnóstico de IST (gonorreia). Qual conduta NAO pode faltar além do tratamento da infecção?",
+      "alternativas": [
+        "Apenas tratar a infecção e liberar",
+        "Notificar suspeita de abuso sexual ao Conselho Tutelar + suporte multidisciplinar + profilaxias",
+        "Prescrever antibiótico e orientar retorno em 7 dias",
+        "Solicitar apenas sorologias e aguardar",
+        "Encaminhar para ginecologia ambulatorial"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual achado de lesão é MAIS sugestivo de maus-tratos físicos?",
+      "alternativas": [
+        "Hematoma em joelho de criança que está aprendendo a andar",
+        "Escoriação em cotovelo após queda na escola",
+        "Lesões em múltiplos estágios de cicatrização em localizações atípicas (tronco, orelhas, genitais)",
+        "Hematoma único em canela de adolescente que joga futebol",
+        "Equimose periorbital após trauma esportivo testemunhado"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Fratura de fêmur em lactente de 4 meses que não se locomove é altamente suspeita de maus-tratos (história incompatível com o desenvolvimento). Conduta: tratar a lesão + investigar (skeletal survey, fundo de olho) + proteger + NOTIFICAR ao Conselho Tutelar. A suspeita basta."},
+    {"resposta": "B", "comentario": "A notificação de maus-tratos é OBRIGATÓRIA na suspeita (ECA, Art. 13 + Lei 13.010). Não é necessária confirmação diagnóstica, nem autorização dos pais. Notifica-se ao Conselho Tutelar (e ficha SINAN). A não notificação é infração administrativa."},
+    {"resposta": "B", "comentario": "Síndrome do bebê sacudido (shaken baby): tríade de hematoma subdural + hemorragia retiniana + edema cerebral, por sacudir violentamente o lactente. Frequente sem sinais externos. Investigação: fundo de olho, TC/RM, skeletal survey. Sequelas graves ou óbito."},
+    {"resposta": "B", "comentario": "IST em criança pré-púbere é forte indicador de abuso sexual. Além de tratar a infecção: notificar suspeita ao Conselho Tutelar + autoridade policial, suporte multidisciplinar (assistência social, psicologia), profilaxias (HIV/PEP se <72h, outras ISTs), e não revictimizar."},
+    {"resposta": "C", "comentario": "Lesões em múltiplos estágios de cicatrização (cores diferentes) em localizações atípicas (tronco, orelhas, pescoço, genitais) são altamente sugestivas de maus-tratos. Lesões em proeminências ósseas (joelhos, canelas, cotovelos) de crianças ativas são habituais e acidentais."}
+  ]
+}

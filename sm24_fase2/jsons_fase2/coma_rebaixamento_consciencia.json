@@ -1,0 +1,178 @@
+{
+  "slug": "coma_rebaixamento_consciencia",
+  "titulo": "Coma e Rebaixamento do Nível de Consciência",
+  "especialidade": "NEUROLOGIA",
+  "chapter_subject": "Coma e Rebaixamento do Nível de Consciência no PS",
+  "chapter_bar": "COMA — CAUSA E CONDUTA RÁPIDA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM INICIAL — COMA NO PS",
+      "title": "COMA — ABC + GLICEMIA + TC",
+      "height": 225,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.92, "w": 215, "h": 22, "text": "Via aérea (IOT se GCS ≤8), O2, acesso venoso\nGlicemia capilar IMEDIATO → tratar se <70 mg/dL", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 215, "h": 22, "text": "AEIOU-TIPS: Álcool, Epilepsia, Insulina, Opioides, Uremia\nTrauma, Infecção, Psiquiátrico, Stroke (AVC)", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.22, "y": 0.43, "w": 155, "h": 26, "text": "Sinal focal? Cefal. súbita?\nPapiledema? Febre?\n→ TC crânio urgente", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.78, "y": 0.43, "w": 155, "h": 26, "text": "Sem sinal focal, substância?\nMiose pontina?\n→ Naloxona + tiamina + glicose", "color": "orange", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 215, "h": 22, "text": "Febre + rigidez nucal → ATB imediato\nConvulsão → BZD IV, fenitoína\nTC normal + coma inexplicado → PL", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESCALA DE COMA DE GLASGOW (GCS)",
+      "section_color": "navy",
+      "headers": ["Domínio", "Resposta", "Pontos"],
+      "header_colors": ["gray", "teal", "navy"],
+      "col_widths": [0.20, 0.60, 0.20],
+      "rows": [
+        ["Ocular (E)", "Espontânea / A voz / À dor / Nenhuma", "4 / 3 / 2 / 1"],
+        ["Verbal (V)", "Orientado / Confuso / Palavras / Sons / Nenhum", "5 / 4 / 3 / 2 / 1"],
+        ["Motor (M)", "Obedece / Localiza / Flexão normal / Flexão anormal / Extensão / Nenhum", "6 / 5 / 4 / 3 / 2 / 1"],
+        ["GCS ≤8", "= Coma clínico — considerar proteção de via aérea (IOT)", "—"],
+        ["GCS ≤13", "= Rebaixamento significativo — monitorar, buscar causa", "—"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL — CAUSAS DE COMA",
+      "section_color": "navy",
+      "headers": ["Causa", "Achados-chave", "Diagnóstico / Tratamento"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.44, 0.34],
+      "rows": [
+        ["Hipoglicemia", "Diaforese, tremor, Hgt <70 mg/dL", "Glicose 50% 40-80 mL IV + tiamina 100mg IV"],
+        ["AVC (isquêmico/hemorrágico)", "Déficit focal, HAS, início súbito", "TC sem contraste → trombólise vs neurocirurgia"],
+        ["HSA (hemorragia subaracnóide)", "Cefaleia em 'trovão', rigidez nucal", "TC sem contraste → PL se TC normal"],
+        ["Meningite/Encefalite", "Febre + rigidez nucal + fotofobia", "ATB + dexametasona; aciclovir se encefalite"],
+        ["Intoxicação (opioide)", "Miose, bradipneia, cianose", "Naloxona 0,4-2 mg IV/IN; repetir"],
+        ["Estado epiléptico não-convulsivo", "Coma sem crise motora aparente", "EEG contínuo; BZD + fenitoína/levetiracetam"],
+        ["Encefalopatia hepática", "Asterixe, flapping, fator hepático", "Lactulose, tratar causa, retirar proteína excessiva"],
+        ["Hipercapnia / hipóxia", "Cianose, SpO2 baixa, paciente DPOC", "VNI ou VM; O2 controlado no DPOC"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "EXAME NEUROLÓGICO DO COMA — PUPILAS + MOTRICIDADE",
+      "section_color": "purple",
+      "titulo": "O QUE LOCALIZA A LESÃO",
+      "items": [
+        "Pupilas midriáticas fixas bilaterais: lesão mesencefálica grave, anóxia cerebral, atropina",
+        "Pupilas mióticas bilaterais (puntiformes): intoxicação por opioide, lesão pontina",
+        "Pupila unilateral dilatada e fixa: herniação uncal ipsilateral — emergência cirúrgica",
+        "Reflexo oculocefálico (olhos de boneca): tronco intacto = causa metabólica/tóxica",
+        "Postura de decorticação (flexão): lesão acima do mesencéfalo",
+        "Postura de descerebração (extensão): lesão no mesencéfalo/tronco — pior prognóstico"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRÍADE ANTÍDOTO EMPÍRICA",
+      "section_color": "orange",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Glicose + Tiamina + Naloxona",
+        "items": [
+          "Glicose 50%: 40-80 mL IV se Hgt <70 ou não dosável",
+          "Tiamina 100 mg IV SEMPRE antes da glicose (Wernicke)",
+          "Naloxona 0,4-2 mg IV/IM/IN: suspeita de opioide",
+          "Flumazenil: raramente — risco de convulsão (benzodiazepínico)",
+          "Piridoxina 5g IV: intoxicação por isoniazida"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Sinais de Herniação — Urgência Máxima",
+        "items": [
+          "Pupila unilateral dilatada + coma = herniação uncal",
+          "Postura de descerebração bilateral",
+          "Tríade de Cushing: HAS + bradicardia + respiração irregular",
+          "Conduta: cabeceira 30°, manitol 1g/kg IV rápido",
+          "Hiperventilação (PCO2 30-35) como ponte para cirurgia",
+          "Neurocirurgia urgente: hematoma evacuável"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST — COMA INEXPLICADO",
+      "titulo": "SISTEMATIZAR A INVESTIGAÇÃO",
+      "items": [
+        "GCS + pupilas + padrão motor (decorticação/descerebração?) + reflexos tronco",
+        "Glicemia IMEDIATA + tiamina + naloxona empírico se suspeita de opioides",
+        "TC crânio sem contraste urgente se déficit focal, cefaleia súbita, trauma, febre",
+        "Eletrólitos, função renal, hepática, hemograma, gasometria, NH3 (amônia), toxicológico",
+        "EEG se TC normal e coma persistente (excluir estado epiléptico não-convulsivo)",
+        "PL se TC normal, febre ou suspeita de HSA com TC negativa",
+        "Documentar causa e progredir suporte: via aérea, PA, temperatura, glicemia"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente em coma, miose bilateral intensa, bradipneia e cianose. Qual é o diagnóstico mais provável e o tratamento imediato?",
+      "alternativas": [
+        "AVC hemorrágico — TC + neurocirurgia",
+        "Intoxicação por opioide — naloxona 0,4-2 mg IV",
+        "Crise epiléptica — diazepam 10 mg IV",
+        "Hipoglicemia — glicose 50% IV",
+        "Meningite — ceftriaxona IV"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que a tiamina (vitamina B1) deve ser administrada ANTES da glicose em paciente desnutrido em coma?",
+      "alternativas": [
+        "A tiamina aumenta a absorção da glicose",
+        "Glicose sem tiamina pode precipitar encefalopatia de Wernicke em pacientes com deficiência de tiamina",
+        "A tiamina reverte o efeito tóxico da glicose",
+        "Não há necessidade — podem ser dados em qualquer ordem",
+        "A tiamina é um antídoto para hipoglicemia"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente em coma com pupila direita dilatada e fixa, hemiplegia esquerda. Qual é o mecanismo fisiopatológico?",
+      "alternativas": [
+        "Lesão no nervo óptico direito",
+        "Herniação uncal do lobo temporal direito comprimindo o III nervo craniano",
+        "AVC isquêmico em território vertebrobasilar",
+        "Hipoglicemia grave bilateral",
+        "Intoxicação por atropina"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Um paciente em coma com TC normal, febre e rigidez nucal aguarda resultado de PL. Qual a conduta CORRETA enquanto espera?",
+      "alternativas": [
+        "Aguardar o resultado da PL antes de qualquer tratamento",
+        "Iniciar ceftriaxona 2g IV + dexametasona imediatamente, sem atrasar pelo resultado",
+        "Realizar RMC antes da PL",
+        "Administrar aciclovir IV apenas após PCR positivo no LCR",
+        "Apenas observar e repetir TC em 6h"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual achado no exame do coma indica comprometimento do tronco cerebral (não de causa metabólica)?",
+      "alternativas": [
+        "Reflexo oculocefálico (olhos de boneca) preservado bilateralmente",
+        "Hipoglicemia com reversão ao glicose IV",
+        "Ausência do reflexo oculocefálico e pupilas fixas brilaterais",
+        "GCS de 10 com agitação",
+        "Asterixe bilateral"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Miose bilateral intensa (pupilas puntiformes) + bradipneia + cianose = toxidrome opiáceo. Tratamento: naloxona 0,4-2mg IV, repetir a cada 2-3 min. Efeito em 1-2 min. Infusão contínua para opioides de longa ação (metadona)."},
+    {"resposta": "B", "comentario": "Em desnutridos/alcoolistas, a glicose pode consumir o restante de tiamina (B1) e precipitar Encefalopatia de Wernicke (oftalmoplegia, ataxia, confusão). Sempre: tiamina 100mg IV ANTES ou junto da glicose."},
+    {"resposta": "B", "comentario": "Pupila dilatada unilateral + coma = herniação uncal do lobo temporal ipsilateral → compressão do nervo oculomotor (III), que tem fibras parassimpáticas externas (midríase). Emergência neurocirúrgica: manitol 1g/kg + TC urgente."},
+    {"resposta": "B", "comentario": "Suspeita de meningite bacteriana: ATB + dexametasona IMEDIATAMENTE, antes do resultado da PL. Atrasar o antibiótico aumenta mortalidade e sequelas. PL deve ser feita mas não deve atrasar o tratamento."},
+    {"resposta": "C", "comentario": "Reflexo oculocefálico (olhos de boneca) preservado = tronco intacto = causa metabólica/tóxica. Ausência do reflexo + pupilas fixas = lesão estrutural do tronco. Asterixe = encefalopatia metabólica (não focal)."}
+  ]
+}

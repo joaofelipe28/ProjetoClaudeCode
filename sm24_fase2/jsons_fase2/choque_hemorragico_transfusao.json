@@ -1,0 +1,172 @@
+{
+  "slug": "choque_hemorragico_transfusao",
+  "titulo": "Choque Hemorrágico e Transfusão Maciça",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Choque Hemorrágico — Classificação, Controle e Transfusão",
+  "chapter_bar": "CHOQUE HEM. — CONTROLAR + TRANSFUNDIR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DO CHOQUE HEMORRÁGICO (ATLS)",
+      "section_color": "navy",
+      "headers": ["Classe", "Perda estimada", "PA Sistólica", "FC", "Conduta"],
+      "header_colors": ["gray", "navy", "teal", "orange", "red"],
+      "col_widths": [0.12, 0.20, 0.18, 0.14, 0.36],
+      "rows": [
+        ["I", "<750 mL (<15%)", "Normal", "<100", "Cristaloide oral/IV — sem transfusão"],
+        ["II", "750-1500 mL (15-30%)", "Normal", "100-120", "Cristaloide IV 1-2 L; reavaliar; possível sangue"],
+        ["III", "1500-2000 mL (30-40%)", "Diminuída", "120-140", "Cristaloide + hemácias imediato; cirurgia possível"],
+        ["IV", ">2000 mL (>40%)", "Muito baixa", ">140", "Ativação transfusão maciça — sobrevida depende de controle cirúrgico"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PROTOCOLO DE TRANSFUSÃO MACIÇA (PTM)",
+      "section_color": "red",
+      "titulo": "PTM = CONTROLE DE HEMORRAGIA + COAGULOPATIA",
+      "items": [
+        "Ativação: >10 unidades de CH em 24h OU necessidade antecipada de transfusão maciça",
+        "Proporção hemostática: CH : PFC : PLQ = 1:1:1 (damage control resuscitation)",
+        "Objetivo: controlar a 'tríade mortal' — acidose + hipotermia + coagulopatia",
+        "Ácido tranexâmico: 1 g IV em 10 min dentro de 3h do trauma (CRASH-2) → + 1 g em 8h",
+        "Fibrinogênio: alvo >2 g/L — crioprecipitado 10 unidades se queda",
+        "EVITAR: cristaloide excessivo (dilui fatores, agrava acidose) — restricted fluid strategy"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "DAMAGE CONTROL RESUSCITATION",
+      "title": "CHOQUE HEM. — CONTROLAR + RESTAURAR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Trauma + choque: PA baixa + taquicardia + mecanismo\nControle de sangramento externo (curativo compressivo/torniquete)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Hipotensão permissiva: PAS 80-90 mmHg (sem TBI)\nCristaloides limitados — ativar banco de sangue", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "Sangue tipo O negativo (emergência)\nCH:PFC:PLQ = 1:1:1\nAcido tranexâmico <3h", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Cirurgia de controle de dano\n(damage control surgery):\nConter + tamponar\nreconstruir depois", "color": "orange", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Metas: T >36oC, pH >7,35, Ca++ iônico >1,1, PLQ >50k\nFibrinogênio >2 g/L, INR <1,5", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRANSFUSÃO DE HEMÁCIAS — LIMIARES",
+      "section_color": "orange",
+      "headers": ["Cenário", "Meta de Hb", "Quando transfundir"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.22, 0.48],
+      "rows": [
+        ["Jovem saudável, estável", "7-8 g/dL", "Hb <7 g/dL ou sintomático (dispneia, angina)"],
+        ["Cardiopata / coronariopata", "8-10 g/dL", "Hb <8 g/dL ou angina/isquemia em curso"],
+        ["Choque hemorrágico ativo", "Variável", "Transfundir para restaurar volemia + coagulação (não esperar Hb)"],
+        ["Pós-cirurgia estável", "7-8 g/dL", "Hb <7 g/dL sem comprometimento hemodinâmico"],
+        ["UTI sem sangramento ativo", "7 g/dL", "Transfusão liberal (>10) não melhora desfechos (TRICC trial)"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "REAÇÕES TRANSFUSIONAIS",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Reações Graves",
+        "items": [
+          "Hemolítica aguda (ABO-incompatível): febre, lombalgia, hemoglobinúria, IRA, morte",
+          "Conduta: parar transfusão imediatamente + fluidos + suporte renal",
+          "TRALI (lesão pulmonar pós-transfusão): EPA não cardiogênico em 6h",
+          "TACO (sobrecarga cardiogênica): EPA por volemia excessiva — furosemida",
+          "Sépsis: bactéria no hemocomponente — febre alta, hipotensão — ATB imediato"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Reações Leves",
+        "items": [
+          "Febril não hemolítica: febre +1oC, calafrios sem hemólise — parar e avaliar",
+          "Alérgica leve: urticária, prurido — anti-histamínico; pode reiniciar",
+          "Alérgica grave / anafilaxia: adrenalina 0,5 mg IM + parar",
+          "Hipocalcemia por citrato: tremores, parestesias (transfusão maciça) — gluconato de cálcio",
+          "Hipercalemia por hemácias vencidas: monitorar ECG na transfusão maciça"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "TORNIQUETE E CONTROLE DE SANGRAMENTO",
+      "titulo": "HEMORRAGIA EXTERNA",
+      "items": [
+        "Compressão direta: primeira medida — curativo compressivo por 10 min sem soltar",
+        "Torniquete: membro proximal ao sangramento, 5-7 cm acima da lesão, anotar hora",
+        "Indicado: sangramento arterial de membro que não para com compressão",
+        "Duração segura: até 2h; acima de 2h há risco de isquemia irreversível",
+        "Sangramento de junção (axila, virilha): curativo hemostático (gaze com quitosana/caolim)",
+        "Acesso venoso: 2 acessos periféricos calibrosos (14-16G) ou acesso intraósseo se difícil"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Vítima de trauma com FC 130 bpm, PA 90/70, taquipneia, confusão e TPC 3s. Perda estimada de 30% da volemia. Qual é a classificação do choque?",
+      "alternativas": [
+        "Choque Classe I — apenas cristaloide oral",
+        "Choque Classe II — cristaloide IV",
+        "Choque Classe III — cristaloide + hemácias + considerar cirurgia",
+        "Choque Classe IV — transfusão maciça imediata",
+        "Choque distributivo — vasopressor"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "No protocolo de transfusão maciça, qual é a proporção ideal de hemocomponentes?",
+      "alternativas": [
+        "CH:PFC:PLQ = 3:1:1",
+        "CH:PFC:PLQ = 1:1:1",
+        "CH:PFC:PLQ = 6:4:1",
+        "Apenas concentrado de hemácias — sem plasma na emergência",
+        "Albumina 20% + hemácias 2:1"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o benefício do ácido tranexâmico no trauma hemorrágico e qual é o limite de tempo para sua administração?",
+      "alternativas": [
+        "Repõe fatores de coagulação; pode ser dado até 12h do trauma",
+        "Antifibrinolítico — reduz mortalidade; deve ser dado nas primeiras 3h do trauma",
+        "Vasopressor; útil em qualquer momento",
+        "Aumenta coagulação por estimular a medula óssea",
+        "Eficaz até 24h do trauma"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Durante transfusão de hemácias, paciente desenvolve febre, lombalgia intensa e urina escura. Qual reação transfusional grave deve ser suspeitada?",
+      "alternativas": [
+        "Reação febril não hemolítica",
+        "TRALI (lesão pulmonar aguda)",
+        "Reação hemolítica aguda por incompatibilidade ABO",
+        "TACO (sobrecarga circulatória)",
+        "Reação alérgica leve por IgE"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "O conceito de 'hipotensão permissiva' no trauma hemorrágico ativo indica:",
+      "alternativas": [
+        "Aceitar PAS de 50-60 mmHg indefinidamente",
+        "Aceitar PAS 80-90 mmHg enquanto não há controle do sangramento — evitar cristaloide excessivo",
+        "Usar vasopressores para manter PA normal antes da cirurgia",
+        "Não transfundir antes da cirurgia",
+        "Reposição agressiva de cristaloides para manter PAS >120 mmHg"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Choque Classe III (ATLS): perda 30-40% (1500-2000 mL), FC 120-140, PA diminuída, confusão, TPC aumentado. Conduta: cristaloide + hemácias imediato, avaliação cirúrgica. Classe IV: >40% de perda com PA muito baixa (>140 bpm), ativação do PTM."},
+    {"resposta": "B", "comentario": "Protocolo de transfusão maciça: CH:PFC:PLQ 1:1:1 = 'damage control resuscitation'. Objetivo: tratar a tríade mortal (acidose + hipotermia + coagulopatia) desde o início. Plasma previne coagulopatia dilucional; plaquetas mantêm hemostasia."},
+    {"resposta": "B", "comentario": "Ácido tranexâmico: antifibrinolítico — inibe plasmina. CRASH-2 trial: reduz mortalidade por hemorragia em 1,5% absoluto quando dado em <3h do trauma. Após 3h: sem benefício ou potencialmente deletério (trombose). Dose: 1 g IV em 10 min + 1 g em 8h."},
+    {"resposta": "C", "comentario": "Reação hemolítica aguda: incompatibilidade ABO — anticorpos destroem hemácias do doador. Clínica: febre, lombalgia, hemoglobinúria (urina escura/port wine), IRA, CID. Conduta: parar transfusão imediatamente, fluidos IV, suporte renal. Causa mais comum: erro de identificação."},
+    {"resposta": "B", "comentario": "Hipotensão permissiva: manter PAS 80-90 mmHg no trauma sem TCE — reposição agressiva de cristaloides dilui coagulação, aumenta pressão hidrostática e 'desaloja' coágulos formados. Meta: controle cirúrgico do sangramento com mínimo de cristaloide e máximo de hemocomponentes."}
+  ]
+}

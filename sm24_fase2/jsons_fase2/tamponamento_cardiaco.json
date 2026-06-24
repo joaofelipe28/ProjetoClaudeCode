@@ -1,0 +1,189 @@
+{
+  "slug": "tamponamento_cardiaco",
+  "titulo": "Tamponamento Cardíaco",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "Tamponamento Cardíaco — Diagnóstico e Pericardiocentese",
+  "chapter_bar": "TAMPONAMENTO — TRÍADE + PERICARDIOCENTESE",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E FISIOPATOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É",
+      "items": [
+        "Acúmulo de líquido pericárdico com pressão suficiente para comprometer o enchimento cardíaco",
+        "Fisiopatologia: ↑ pressão intrapericárdica → comprime câmaras direitas (menor pressão) → ↓ DC",
+        "Velocidade de acúmulo importa: 150-200 mL rápidos causam tamponamento; 2 L lentos, não",
+        "Principal causa: neoplasia (50%), pericardite, trauma, dissecção aórtica, iatrogenia (ablação, CVC)",
+        "Emergência circulatória — drenagem imediata salva a vida"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "DIAGNÓSTICO E CONDUTA",
+      "title": "TAMPONAMENTO — TRÍADE DE BECK",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 210, "h": 22, "text": "Hipotensão + Turgência jugular + Bulhas abafadas\n(Tríade de Beck) + Pulso paradoxal >10mmHg", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.68, "w": 205, "h": 22, "text": "ECO point-of-care: colapso de AD/VD, derrame\nAlternância elétrica no ECG? (alta especificidade)", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.40, "w": 155, "h": 26, "text": "INSTÁVEL / PCR iminente\nPericardiocentese IMEDIATA\nguiada por ECO (subxifoide)", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.75, "y": 0.40, "w": 155, "h": 26, "text": "ESTÁVEL com diagnóstico confirmado\nPericardiocentese eletiva guiada por ECO\nCirurgia se hemopericárdio traumático", "color": "green", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 200, "h": 22, "text": "Pós-drenagem: etiologia (neoplasia/TBC/bactéria)\nColeta de líquido para análise citológica/bioquímica", "color": "orange", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SINAIS DIAGNÓSTICOS — TAMPONAMENTO",
+      "section_color": "navy",
+      "headers": ["Sinal", "Descrição", "Sensibilidade"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.50, 0.22],
+      "rows": [
+        ["Tríade de Beck", "Hipotensão + TJP + bulhas abafadas (mais em tamponamento agudo/trauma)", "33% (rara completa)"],
+        ["Pulso paradoxal", "Queda >10 mmHg na PAS na inspiração (↑ VD comprime VE)", "70-80%"],
+        ["Alternância elétrica", "Alternância de eixo QRS no ECG (coração 'balançando')", "Alta especificidade"],
+        ["ECO: colapso AD/VD", "Colapso diastólico de AD (precoce), VD e VE em casos graves", "Padrão-ouro"],
+        ["Variação Doppler >25%", "Variação do fluxo mitral/tricúspide na respiração", "Confirma tamponamento"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PERICARDIOCENTESE — TÉCNICA",
+      "section_color": "red",
+      "titulo": "COMO FAZER",
+      "items": [
+        "Posição: 45° (facilita acúmulo inferior). Monitorização contínua, desfibrilador à beira do leito",
+        "Acesso subxifoide: agulha 18G a 45°, 1-2 cm abaixo e à esquerda do apêndice xifoide, em direção ao ombro esquerdo",
+        "Guia de ECO: visualizar agulha ao ECO; aspirar e confirmar posição com SF agitado ('microbubbles')",
+        "Aspirar 50-100 mL melhora dramaticamente a hemodinâmica; inserir cateter pigtail para drenagem contínua",
+        "Líquido hemático: se não coagula e hematócrito < venoso = pericárdico; se coagula = ventricular",
+        "Urgência cirúrgica: trauma com hemopericárdio, dissecção aórtica, ruptura cardíaca pós-IAM"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ETIOLOGIAS — DIAGNÓSTICO DO DERRAME",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Principais Causas",
+        "items": [
+          "Neoplasia: 50% (pulmão, mama, linfoma, leucemia)",
+          "Idiopática/viral: pericardite aguda",
+          "Tuberculose: comum em áreas endêmicas",
+          "Trauma: penetrante > contuso",
+          "Dissecção aórtica: contraindicação relativa à pericardiocentese",
+          "Iatrogênica: ablação, MP, TAVI, CVC"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Análise do Líquido",
+        "items": [
+          "Exsudato (proteína >3g, LDH, ADA): TBC, neoplasia, bacteriana",
+          "Transudato: IC, hipoalbuminemia, hipotireoidismo",
+          "Hemopericárdio: trauma, dissecção, pós-IAM, anticoagulação",
+          "Citologia: células neoplásicas",
+          "ADA >40: tuberculose pericárdica",
+          "BAAR, cultura: TBC bacteriana"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CUIDADOS APÓS DRENAGEM",
+      "titulo": "PÓS-PERICARDIOCENTESE",
+      "items": [
+        "Manter cateter pigtail se produção >25 mL/h ou derrame maligno",
+        "Retirar cateter quando <25 mL/24h; ECO de controle",
+        "Neoplasia: considerar escleroterapia pericárdica (bleomicina) ou janela cirúrgica",
+        "TBC: tratamento 4 drogas + corticoide (prednisolona 1 mg/kg por 6-8 semanas)",
+        "Pericardite idiopática recorrente: colchicina 0,5 mg 2x/dia por 3-6 meses + AINEs",
+        "Síndrome pós-pericardiectomia: AINEs; se grave → corticoide"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "NÃO FAZER — ARMADILHAS",
+      "section_color": "purple",
+      "titulo": "ERROS A EVITAR",
+      "items": [
+        "NÃO diurese agressiva: o volume está enchendo câmaras — diurético piora o DC",
+        "NÃO vasodilatar: a vasoconstrição é compensatória — vasodilatador → colapso",
+        "Dissecção aórtica + tamponamento: pericardiocentese pode piorar — cirurgia direta",
+        "Falso diagnóstico: derrame pleural esquerdo pode simular no ECO — cuidado na marcação",
+        "NÃO atrasar drenagem em tamponamento confirmado com instabilidade"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente com hipotensão progressiva, turgência jugular e bulhas cardíacas abafadas após cateterismo cardíaco. Qual é a hipótese diagnóstica e conduta imediata?",
+      "alternativas": [
+        "Infarto agudo do miocárdio — iniciar trombólise",
+        "Pneumotórax hipertensivo — agulha no 2º EIC",
+        "Tamponamento cardíaco iatrogênico — pericardiocentese de urgência",
+        "Choque séptico — antibióticos e ressuscitação volêmica",
+        "Anafilaxia — adrenalina IM"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "O pulso paradoxal no tamponamento cardíaco reflete:",
+      "alternativas": [
+        "Queda de PA >10 mmHg na expiração",
+        "Queda de PA >10 mmHg na inspiração por interdependência ventricular",
+        "Alternância da frequência cardíaca",
+        "Hipotensão persistente em qualquer posição",
+        "Ausência de variação respiratória na PA"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual achado ecocardiográfico é mais específico para confirmar tamponamento cardíaco?",
+      "alternativas": [
+        "Fração de ejeção <40%",
+        "Colapso diastólico do átrio e ventrículo direito com variação Doppler >25%",
+        "Disfunção diastólica grau II",
+        "Hipertrofia ventricular esquerda",
+        "Insuficiência mitral moderada"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com tamponamento e dissecção aórtica confirmada. Qual é a conduta CORRETA?",
+      "alternativas": [
+        "Pericardiocentese imediata seguida de tomografia",
+        "Cirurgia de emergência sem pericardiocentese prévia",
+        "Trombólise com estreptoquinase",
+        "Anticoagulação plena com heparina",
+        "Betabloqueador IV isolado"
+      ]
+    },
+    {
+      "source": "HCor / Adaptada",
+      "enunciado": "Qual substância no líquido pericárdico é sugestiva de tuberculose pericárdica?",
+      "alternativas": [
+        "Glicose <60 mg/dL",
+        "ADA (adenosina deaminase) >40 UI/L",
+        "Proteína <2 g/dL",
+        "LDH >200 UI/L isolado",
+        "Presença de células mesoteliais"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Hipotensão + TJP + bulhas abafadas após cateterismo = tamponamento iatrogênico. ECO confirma em segundos. Pericardiocentese urgente é o tratamento. Pequeno volume (50-100 mL) já melhora dramaticamente a hemodinâmica."},
+    {"resposta": "B", "comentario": "Pulso paradoxal: queda >10 mmHg na PAS durante a INSPIRAÇÃO. Na inspiração, o VD expande (preenchimento por pressão negativa pleural), comprimindo o VE e reduzindo o DC. Variação >25% confirma tamponamento."},
+    {"resposta": "B", "comentario": "Colapso diastólico de AD (sinal precoce) e VD com variação Doppler mitral/tricúspide >25% são os achados ecocardiográficos específicos de tamponamento. ECO é o exame padrão-ouro no PS."},
+    {"resposta": "B", "comentario": "Dissecção aórtica + tamponamento: a pericardiocentese pode ser PERIGOSA — libera tamponamento tamponador e causa rebaixamento hemorrágico. Tratamento definitivo é cirúrgico. Excepcionalmente faz-se drenagem mínima (50mL) como ponte."},
+    {"resposta": "B", "comentario": "ADA (adenosina deaminase) >40 UI/L no líquido pericárdico tem alta sensibilidade e especificidade para tuberculose pericárdica. Tratamento: RIPE por 6 meses + prednisolona para reduzir constrição."}
+  ]
+}

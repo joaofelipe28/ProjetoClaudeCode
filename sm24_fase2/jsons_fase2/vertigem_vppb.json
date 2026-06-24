@@ -1,0 +1,176 @@
+{
+  "slug": "vertigem_vppb",
+  "titulo": "Vertigem e VPPB",
+  "especialidade": "OTORRINOLARINGOLOGIA",
+  "chapter_subject": "Vertigem Posicional — Diagnóstico e Manobra de Repositório",
+  "chapter_bar": "VERTIGEM — CENTRAL vs PERIFÉRICA — VPPB",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "PERIFÉRICA vs CENTRAL — DIFERENCIAÇÃO",
+      "section_color": "navy",
+      "headers": ["Característica", "Periférica (labirinto/nervo)", "Central (tronco/cerebelo)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Instalação", "Brusca (segundos a minutos)", "Gradual ou abrupta"],
+        ["Intensidade", "Intensa — incapacita", "Moderada — paciente consegue deambular"],
+        ["Náuseas/vômitos", "Intensos e precoces", "Menos proeminentes"],
+        ["Nistagmo", "Horizontal com componente rotatório; inibido pela fixação visual", "Vertical, puro horizontal, multidirecional; NAO inibido"],
+        ["Sinais neurológicos", "Ausentes", "Diplopia, disfagia, disartria, ataxia, paresia"],
+        ["HINTS (head impulse, nistagmo, test of skew)", "Impulso cefálico positivo (sacada de correção)", "Impulso cefálico negativo = AVC cerebelar (urgência!)"],
+        ["Head impulse test negativo", "Periférica esperada", "AVC de fossa posterior — TC/RM urgente"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "VPPB — DIAGNÓSTICO E MANOBRA",
+      "section_color": "orange",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Definição", "Vertigem desencadeada por mudança de posição da cabeca (deitar, levantar, girar no leito)"],
+        ["Causa", "Cristais de otólito (otocônias) deslocados para canal semicircular posterior (80-85% dos casos)"],
+        ["Diagnóstico", "Manobra de Dix-Hallpike: decúbito com cabeca em extensão 30o + rotacao p/ o lado afetado — nistagmo rotatório-upbeating + latência"],
+        ["Duração do nistagmo", "Geralmente <1 min; se nistagmo persistente ou muda de direção: suspeitar central"],
+        ["Tratamento", "Manobra de Epley: reposicionamento dos cristais — eficácia >90% em 1-3 sessões"],
+        ["Recorrência", "50% em 5 anos — paciente pode fazer manobra domiciliar (Brandt-Daroff)"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ALGORITMO — VERTIGEM AGUDA NO PS",
+      "title": "VERTIGEM — EXCLUIR CENTRAL PRIMEIRO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Vertigem aguda: tipo, duração, desencadeante\nExame neurológico completo + HINTS", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Sinais de alarme centrais? (HINTS negativo = AVC)\nDiplopia, disfagia, cefaleia, ataxia, alteração de consciência", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.44, "w": 155, "h": 24, "text": "CENTRAL suspeito:\nRM de encefalo urgente\n(TC pode ser normal em AVC cerabel)\nNeurologia urgente", "color": "red", "font_size": 5.3},
+        {"id": "d", "x": 0.75, "y": 0.44, "w": 155, "h": 24, "text": "PERIFÉRICA:\nVPPB: Dix-Hallpike + Epley\nNeurite: corticoide\nMénière: betahistina\nSintomático: dimenidrinato", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "TC crânio: apenas para excluir HSA ou hematoma cerebral\nNAO exclui AVC cerebelar! — RM obrigatória se suspeita", "color": "orange", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "NEURITE VESTIBULAR — DISTINGUIR DE AVC",
+      "section_color": "teal",
+      "titulo": "NEURITE VESTIBULAR (MAIS COMUM QUE AVC CEREBELAR)",
+      "items": [
+        "Definição: inflamação do nervo vestibular (geralmente viral — HSV1)",
+        "Clínica: vertigem intensa de início súbito, náuseas, sem hipoacusia (sem coclear)",
+        "Dura 3-7 dias de crise intensa, depois melhora gradual em semanas",
+        "HINTS: impulso cefálico POSITIVO (sacada de correção visível) = periférica",
+        "Tratamento: corticoide (prednisona 1 mg/kg x 5 dias) + dimenidrinato para sintomas",
+        "NAO confundir com AVC cerebelar: impulso cefálico NEGATIVO = central"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "MENIERE E TRATAMENTO SINTOMÁTICO",
+      "section_color": "orange",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Síndrome de Ménière",
+        "items": [
+          "Tríade: vertigem episódica (20 min-12h) + hipoacusia flutuante + zumbido",
+          "Fisiopatologia: hidropsia endolinfática (acúmulo de endolinfa)",
+          "Audiometria: perda neurossensorial em frequências GRAVES (diferente de PANSS)",
+          "Diagnóstico: clínico — Dix-Hallpike negativo; sem sinais centrais",
+          "Tratamento: betahistina 16-48 mg/d, diuréticos, dieta hipossódica",
+          "Refratário: injeção intratimpânica de gentamicina ou cirurgia (labintectomia)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Antivertiginosos no PS",
+        "items": [
+          "Dimenidrinato (Dramin) 50 mg IV/IM/VO: 1a escolha no PS para controle sintomático",
+          "Ondansetrona 4-8 mg IV: para náuseas refratárias",
+          "Benzodiazepínico (diazepam 5 mg VO): vertigem central com agitação",
+          "NAO usar antivertiginosos cronicamente (inibem reabilitação vestibular central)",
+          "Evitar em idosos: risco de quedas e confusão mental"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "MANOBRA DE EPLEY — PASSO A PASSO",
+      "titulo": "VPPB CANAL POSTERIOR",
+      "items": [
+        "Posição 1: sentado, cabeca girada 45o para o lado afetado (Dix-Hallpike positivo)",
+        "Posição 2: deitar com a cabeca no mesmo angulo (30o pendente fora da maca) — aguardar 30s-1 min",
+        "Posição 3: girar cabeca 90o para o lado oposto — aguardar 30s-1 min",
+        "Posição 4: girar corpo junto com a cabeca — olhar para baixo (45o) — aguardar 30s",
+        "Posição 5: sentar lentamente — cabeca voltando ao neutro",
+        "Resultado: 80-90% de melhora na 1a sessão; repetir em 2 semanas se necessário"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Mulher de 45 anos com vertigem ao deitar e ao se levantar. Dix-Hallpike positivo à direita com nistagmo rotatório com latência de 5s e duração de 30s. Diagnóstico e conduta?",
+      "alternativas": [
+        "AVC cerebelar — RM urgente",
+        "Neurite vestibular — corticoide IV",
+        "VPPB canal posterior direito — manobra de Epley",
+        "Síndrome de Ménière — betahistina",
+        "Labirintite aguda — dimenidrinato IV e internação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado no exame HINTS indica origem CENTRAL da vertigem aguda?",
+      "alternativas": [
+        "Impulso cefálico positivo (sacada de correção visível)",
+        "Nistagmo horizontal com componente rotatório inibido pela fixação visual",
+        "Head impulse test negativo (sem sacada de correção) associado a nistagmo",
+        "Tinnitus unilateral associado à vertigem",
+        "Náuseas e vômitos intensos"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que a TC de crânio NAO exclui AVC de fossa posterior em paciente com vertigem aguda?",
+      "alternativas": [
+        "Porque a TC sempre é normal em neurologia",
+        "Porque a fossa posterior tem muitos artefatos ósseos na TC — RM é obrigatória para AVC cerebelar",
+        "Porque AVC cerebelar só aparece em 48h",
+        "Porque a TC usa contraste nefrotóxico",
+        "Porque TC é suficiente se o exame neurológico for normal"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Neurite vestibular difere da síndrome de Ménière porque:",
+      "alternativas": [
+        "Neurite tem zumbido e hipoacusia, enquanto Ménière é apenas vertigem isolada",
+        "Neurite causa vertigem contínua SEM hipoacusia, enquanto Ménière tem tríade (vertigem + hipoacusia + zumbido) em episódios",
+        "Neurite é tratada com betahistina, enquanto Ménière usa corticoide",
+        "Neurite é de origem central, enquanto Ménière é periférica",
+        "Neurite tem Dix-Hallpike positivo, enquanto Ménière é negativo"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o objetivo da manobra de Epley no VPPB?",
+      "alternativas": [
+        "Inibir os canais semicirculares por compressão",
+        "Reposicionar as otocônias deslocadas de volta ao utrículo, cessando o estímulo anômalo",
+        "Reduzir a pressão endolinfática",
+        "Fortalecer a musculatura vestibular compensatória",
+        "Estimular o sistema nervoso central a compensar o desequilíbrio"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Dix-Hallpike positivo: nistagmo rotatório-upbeating com latência de 5-20s e duração <1 min = VPPB canal posterior. Tratamento: manobra de Epley (reposicionamento das otocônias). Eficácia >90% em 1-3 sessões. Não indica exames de imagem de urgência se HINTS periférico."},
+    {"resposta": "C", "comentario": "HINTS test: Head impulse + Nystagmus + Test of skew. Impulso cefálico NEGATIVO (sem sacada de correção) em paciente com vertigem aguda = sinal de alarme para causa CENTRAL (AVC cerebelar). Maior sensibilidade para AVC que RM nas primeiras 24h! Impulso positivo = periférica."},
+    {"resposta": "B", "comentario": "TC de crânio tem muitos artefatos na fossa posterior (osso temporal, base do crânio) — sensibilidade de apenas 16-20% para AVC cerebelar nas primeiras 24h. RM de encéfalo (DWI) tem sensibilidade >95%. Se HINTS negativo (central): RM urgente, mesmo com TC normal."},
+    {"resposta": "B", "comentario": "Neurite vestibular: vertigem intensa contínua (dias) + náuseas, SEM hipoacusia nem zumbido (nervo coclear preservado). Ménière: tríade episódica (vertigem + hipoacusia flutuante + zumbido). Distinção importante: hipoacusia = coclear envolvido = Ménière ou PANSS associada."},
+    {"resposta": "B", "comentario": "VPPB: otocônias (cristais de carbonato de cálcio) se desprendem do utrículo e migram para canal semicircular posterior. Estímulo gravitacional anômalo = vertigem posicional. Manobra de Epley: rotações sequenciais da cabeca para guiar cristais de volta ao utrículo. Sem cristais no canal = sem vertigem."}
+  ]
+}

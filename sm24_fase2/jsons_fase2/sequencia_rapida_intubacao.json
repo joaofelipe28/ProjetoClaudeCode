@@ -1,0 +1,181 @@
+{
+  "slug": "sequencia_rapida_intubacao",
+  "titulo": "Sequência Rápida de Intubação",
+  "especialidade": "PROCEDIMENTOS",
+  "chapter_subject": "Sequência Rápida de Intubação (SRI) no PS",
+  "chapter_bar": "SRI — 7 Ps DA INTUBAÇÃO SEGURA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "OS 7 Ps DA SRI",
+      "section_color": "navy",
+      "headers": ["Etapa", "Ação", "Tempo"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.62, 0.16],
+      "rows": [
+        ["1. Preparation", "Material: laringoscópio + lâmina, TOT cuff testado, fixador, capnógrafo, aspirador, drogas, acesso venoso, cabeceira 20-30°", "−5 min"],
+        ["2. Preoxygenation", "O2 a 100% por 3-5 min (NC 15L + máscara 15L/min); posição 'sniffing'; apneic oxygenation", "−3 min"],
+        ["3. Pretreatment", "Fentanil 3 mcg/kg se HAS/HIC; lidocaína 1,5 mg/kg se asma/HIC (evidência fraca)", "−3 min"],
+        ["4. Paralysis + sedation", "Sedativo + bloqueador NM SIMULTÂNEOS — não sedação antes do bloqueio", "0 min"],
+        ["5. Protection + positioning", "BURP (Back, Up, Right Pressure) ou compressão cricoide (controverso); Sellick se regurgitação", "0 a +30s"],
+        ["6. Placement + proof", "Laringoscopia, passagem do TOT, cuff insuflado, confirmar com capnografia waveform", "+30-60s"],
+        ["7. Post-intubation mgt", "Checar posição (Raio-X, ausculta), fixar, ajustar parâmetros, iniciar sedoanalgesia", "+1-5 min"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DROGAS DA SRI — DOSES PADRÃO",
+      "section_color": "orange",
+      "headers": ["Droga", "Classe", "Dose IV", "Início/Duração"],
+      "header_colors": ["gray", "navy", "teal", "orange"],
+      "col_widths": [0.20, 0.20, 0.26, 0.34],
+      "rows": [
+        ["Etomidato", "Sedativo", "0,3 mg/kg (20 mg para 70 kg)", "30-60s / 5-10 min — hemodin. estável, ↓cortisol"],
+        ["Cetamina", "Sedativo", "1,5 mg/kg (100 mg para 70 kg)", "30-60s / 10-15 min — broncodilatador, estável"],
+        ["Propofol", "Sedativo", "1,5-2 mg/kg", "30-60s / 5-10 min — hipotensão; evitar em choque"],
+        ["Midazolam", "Sedativo", "0,3 mg/kg", "60-90s / 30-60 min — hipotensão, uso em sedação pós"],
+        ["Succinilcolina", "BNM despolarizante", "1,5 mg/kg", "45-60s / 8-12 min — 1ª escolha geralmente"],
+        ["Rocurônio", "BNM não-despolarizante", "1,2 mg/kg (SRI) / 0,6 mg/kg (eletivo)", "60-90s / 30-60 min — se contraindicação à succinilcolina"],
+        ["Fentanil", "Adjuvante", "3 mcg/kg (pré-tratamento)", "1-2 min — atenua resposta adrenérgica à laringoscopia"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CONTRAINDICAÇÕES À SUCCINILCOLINA",
+      "section_color": "red",
+      "titulo": "USAR ROCURÔNIO 1,2 mg/kg NESTES CASOS",
+      "items": [
+        "Hiperpotassemia suspeita ou confirmada (>5,5 mEq/L) — risco de PCR por hiperpotassemia",
+        "Queimaduras extensas, crush injury, imobilização >24-48h — hiperpotassemia por upregulation de receptores",
+        "Rabdomiólise aguda em andamento",
+        "Distrofias musculares (Duchenne) — risco de rabdomiólise + hiperpotassemia maligna",
+        "Histórico familiar de hipertermia maligna",
+        "Pseudocolinesterase atípica (raro — paralisia prolongada)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "VIA AÉREA DIFÍCIL — PREDIÇÃO E PLANO",
+      "section_color": "purple",
+      "headers": ["Mnemônico LEMON", "Critério", "Significado"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.14, 0.28, 0.58],
+      "rows": [
+        ["L", "Look externally", "Trauma, obesidade, abertura oral <3 cm, pescoço curto/imóvel"],
+        ["E", "Evaluate 3-3-2", "3 dedos boca, 3 dedos mento-hioide, 2 dedos hioide-tireóide"],
+        ["M", "Mallampati III/IV", "Palato duro/mole visível — alta correlação com IHD"],
+        ["O", "Obstruction", "Angioedema, epiglotite, tumor — não tentar sem plano cirúrgico"],
+        ["N", "Neck mobility", "Artrite grave, halo, collarín cervical"
+        ]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CUIDADOS PÓS-INTUBAÇÃO",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Confirmação de Posição",
+        "items": [
+          "Capnografia waveform: padrão-ouro (capnógrafo quantitativo)",
+          "Ausculta: MV bilateral + ausência de borborigmos gástricos",
+          "Condensação na cânula durante expiração (não confiável isolado)",
+          "Raio-X de tórax: 2-3 cm acima da carina",
+          "Marca da cânula: 21-23 cm em homens, 20-22 cm em mulheres (dentes)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Parâmetros Iniciais de VM",
+        "items": [
+          "VC: 6-8 mL/kg peso ideal (6 na SDRA)",
+          "FR: 12-16/min (ajustar por PaCO2)",
+          "FiO2: 1,0 inicialmente → titular para SpO2 94-98%",
+          "PEEP: 5 cmH2O (aumentar em SDRA/EPA)",
+          "Modo: volume controlado (A/C ou SIMV)",
+          "Gasometria em 30 min para ajuste fino"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST — SRI NO PS",
+      "titulo": "NÃO IMPROVISAR",
+      "items": [
+        "Material completo: lâminas (3 e 4), TOT (7,5 mulher / 8,0 homem), seringa 10mL, fixador, aspirador",
+        "Monitorização: SpO2, ECG, PA, capnógrafo conectado",
+        "Acesso venoso periférico calibroso + flushes prontos",
+        "Pré-oxigenação 3-5 min com NC+máscara (VO2 aumenta tempo de apneia segura para 8-10 min)",
+        "Chamar ajuda: 2 profissionais no mínimo (um para drogas, um para laringoscopia)",
+        "Plano B preparado: bougie elástico, videolaringoscópio, kit cricotireoidostomia",
+        "Não deve tentar >3 vezes — declarar via aérea difícil e acionar plano B"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Qual é o bloqueador neuromuscular de PRIMEIRA ESCOLHA na SRI e por quê?",
+      "alternativas": [
+        "Rocurônio 0,6 mg/kg — maior duração e segurança",
+        "Vecurônio 0,1 mg/kg — sem efeitos cardiovasculares",
+        "Succinilcolina 1,5 mg/kg — início de ação mais rápido (45-60s) e duração curta (8-12 min)",
+        "Atracúrio — sem metabolismo hepático",
+        "Pancurônio — baixo custo"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Em paciente politraumatizado com queimaduras extensas (72h após o trauma), qual bloqueador neuromuscular deve ser EVITADO?",
+      "alternativas": [
+        "Rocurônio 1,2 mg/kg",
+        "Succinilcolina — risco de hiperpotassemia grave (upregulation de receptores nicotínicos)",
+        "Vecurônio 0,1 mg/kg",
+        "Cisatracúrio",
+        "Atracúrio"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o método padrão-ouro para confirmar a posição da cânula traqueal após intubação?",
+      "alternativas": [
+        "Ausculta bilateral do tórax",
+        "Condensação na cânula",
+        "Raio-X de tórax imediato",
+        "Capnografia waveform quantitativa (PETCO2)",
+        "Broncoscopia"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "O sedativo de escolha na SRI em paciente hipotenso/choque é:",
+      "alternativas": [
+        "Propofol 2 mg/kg — sedação profunda",
+        "Midazolam 0,3 mg/kg — benzodiazepínico",
+        "Cetamina 1,5 mg/kg — simpaticomimético, mantém PA e dilata brônquios",
+        "Etomidato 0,3 mg/kg (cuidado: supressão do cortisol)",
+        "Tiopental 5 mg/kg"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "Qual a finalidade da pré-oxigenação por 3-5 minutos antes da SRI?",
+      "alternativas": [
+        "Sedação prévia do paciente",
+        "Promover denitrogenação — criar reservatório de O2 nos pulmões, aumentando o tempo de apneia segura",
+        "Tratar a causa da insuficiência respiratória",
+        "Reduzir a frequência cardíaca antes da laringoscopia",
+        "Garantir acesso venoso antes do procedimento"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Succinilcolina (1,5 mg/kg): onset 45-60s, duração 8-12 min. Ideal para SRI por início rápido e curta duração (se intubação falhar, recupera rapidamente). Contraindicada na hiperpotassemia e outras situações (ver lista)."},
+    {"resposta": "B", "comentario": "Queimaduras extensas após 24-48h: upregulation de receptores nicotínicos extrajuncionais → succinilcolina libera K+ maciçamente → hiperpotassemia + PCR. Usar rocurônio 1,2 mg/kg (SRI). Também: rabdomiólise, imobilização prolongada, denervação."},
+    {"resposta": "D", "comentario": "Capnografia waveform quantitativa é padrão-ouro para confirmação de intubação traqueal. PETCO2 >35 mmHg com curva típica = posição traqueal confirmada. Ausculta pode ser enganosa (sons transmitidos). Raio-X confirma profundidade, não posição."},
+    {"resposta": "C", "comentario": "Cetamina: simpaticomimético indireto (libera catecolaminas) — mantém PA e FC mesmo em pacientes hipotensos. Broncodilatador (ideal em asma). Analgesia + sedação. Cuidado: aumenta PIC (evitar em HIC grave)."},
+    {"resposta": "B", "comentario": "Pré-oxigenação 3-5 min com FiO2 1,0: substitui N2 alveolar por O2 (denitrogenação) → reservatório alveolar de O2 que prolonga o tempo de apneia segura de ~1-2 min (ar ambiente) para 8-10 min. Fundamental para a SRI."}
+  ]
+}

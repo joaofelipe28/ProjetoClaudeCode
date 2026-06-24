@@ -1,0 +1,176 @@
+{
+  "slug": "crise_gota_artrite",
+  "titulo": "Crise de Gota e Artrites Microcristalinas",
+  "especialidade": "ORTOPEDIA",
+  "chapter_subject": "Artrite por Depósito de Cristais — Gota e DDPC",
+  "chapter_bar": "GOTA — ANTI-INFLAMATÓRIO + PROFILAXIA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "GOTA vs DDPC — DIFERENÇAS",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Gota (Hiperuricemia)", "DDPC (Pirofosfato)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.39, 0.39],
+      "rows": [
+        ["Cristal", "Monourato de sódio (MUS) — agulhas negativas birrefringência", "Pirofosfato de cálcio (CPP) — romboides fracamente positivos"],
+        ["Articulação", "1a MTF (podagra), tornozelo, joelho — assimétrico", "Joelho, pulso, quadril — pseudogota"],
+        ["Epidemiologia", "Homem >50 anos, hiperuricemia (>7 mg/dL)", "Idosos, associado a hiperCa, hiperPTH, hemocromatose"],
+        ["Diagnóstico", "Clínico + ácido úrico (pode ser normal na crise)", "Radiografia: condrocalcinose; liquido: CPP"],
+        ["Laboratório", "Ácido úrico elevado (mas pode ser normal na crise!)", "Cálcio, PTH, ferritina (causas secundárias)"],
+        ["Tratamento da crise", "AINE, colchicina, corticoide", "Igual à gota — mesmos anti-inflamatórios"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA CRISE AGUDA DE GOTA",
+      "title": "CRISE GOTOSA — IDENTIFICAR + ANTI-INFLAMATÓRIO",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Articulação quente, vermelha, edemaciada, dor intensa\nInício agudo (<24h), resolução espontânea em 1-2 semanas", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Confirmar: ácido úrico, leucócitos (artrite séptica = urgência!)\nPunção articular se dúvida: cristais vs bactéria", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "AINE:\nIndometacina 50 mg 8/8h VO\nOU ibuprofeno 600 mg 8/8h\nx 5-7 dias", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Colchicina 0,5 mg 8/8h VO\n(preferir em cardiopatia,\nrenal, ulceroso)\nMáx 3 mg/dia", "color": "teal", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Corticoide: prednisona 30-40 mg/d se AINE e colchicina contraindicados\nNAO iniciar alopurinol durante crise — esperar 2-4 semanas", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO HIPOURICEMIANTE — INDICAÇÕES E DOSES",
+      "section_color": "orange",
+      "headers": ["Droga", "Indicação / Mecanismo", "Dose e Alvo"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.40, 0.38],
+      "rows": [
+        ["Alopurinol", ">=2 crises/ano, tofos, urolitíase, nefropatia gotosa", "100 mg/d — aumentar 100 mg/mês até AU <6 mg/dL"],
+        ["Febuxostate", "Intolerância ao alopurinol; mais potente", "80-120 mg/d; ajuste renal menos necessário"],
+        ["Colchicina (profilaxia)", "Profilaxia de crise ao iniciar hipouricemiante", "0,5 mg/d por 3-6 meses"],
+        ["AINE (profilaxia)", "Alternativa à colchicina", "Dose baixa por 3-6 meses ao iniciar alopurinol"],
+        ["Uricosúricos (probenecida)", "Hipoexcretores (AU urinário <800 mg/24h)", "Aumenta excreção renal — evitar com litiase úrica"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ARTRITE SÉPTICA — DIAGNÓSTICO DIFERENCIAL URGENTE",
+      "section_color": "red",
+      "titulo": "PUNÇÃO ARTICULAR SE DUVIDA ENTRE GOTA E SÉPTICA",
+      "items": [
+        "Artrite séptica: leucócitos no líquido >50.000/mm3 (PMN >75%), Gram e cultura positiva",
+        "Gota: leucócitos 5.000-50.000, cristais de monourato, Gram negativo",
+        "Febre alta + articulação comprometida + fator de risco (imunossupressão): punção obrigatória",
+        "Artrite séptica NÃO excluída por hiperuricemia — podem coexistir",
+        "Tratamento séptica: ATB IV (oxacilina ou cefazolina) + drenagem articular",
+        "Não tratar como gota sem excluir infecção — atraso aumenta destruição articular"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TOFOS E GOTA CRÔNICA",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Tofos Gotosos",
+        "items": [
+          "Depósito de cristais de MUS em tecidos moles: orelha, olécrano, tendão aquileu, dedos",
+          "Indicam gota crônica não controlada (AU alto por anos)",
+          "Podem ulcerar, infectar, causar deformidade articular",
+          "Indicação de hipouricemiante: alopurinol para reduzir massa de tofos",
+          "Cirurgia: apenas tofos com infecção ou deformidade funcional grave",
+          "Alvo AU com tofos: <5 mg/dL (mais agressivo que gota sem tofos)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Hiperuricemia e Doenças Associadas",
+        "items": [
+          "Síndrome metabólica: HAS, DM, obesidade, dislipidemia — tratar a síndrome",
+          "IRC: reduz excreção de AU; ajustar alopurinol (ClCr <30: max 100 mg/d)",
+          "Diuréticos tiazídicos: aumentam AU por redução da excreção",
+          "Ciclosporina: principal causa de gota em transplantados",
+          "Dieta: evitar carnes vermelhas, frutos do mar, frutose, álcool (cerveja especialmente)",
+          "Hidratação: >2 L/dia reduz precipitação de cristais"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CRISE DE GOTA — PONTOS-CHAVE",
+      "titulo": "NAO ERRAR",
+      "items": [
+        "Ácido úrico NORMAL não exclui gota na crise aguda (AU cai durante inflamação)",
+        "NAO iniciar alopurinol durante crise aguda — piora a crise (mobilização de cristais)",
+        "NAO mudar dose de alopurinol durante crise — instabilidade de AU precipita crise",
+        "Colchicina: mais eficaz nas primeiras 12-24h da crise; após 72h: eficácia menor",
+        "Renal: colchicina reduzir dose se ClCr <50; AINE evitar se IRC",
+        "Punção articular: sempre se diagnóstico duvidoso (excluir séptica)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Homem de 58 anos com dor intensa no primeiro pododáctilo direito, edema e rubor. Ácido úrico = 6,8 mg/dL. Qual é o diagnóstico e a conduta?",
+      "alternativas": [
+        "Gota excluída — ácido úrico normal; investigar artrite séptica",
+        "Gota (podagra) provável — ácido úrico pode ser normal na crise; AINE ou colchicina + iniciar alopurinol imediatamente",
+        "Gota (podagra) provável — AINE ou colchicina na crise; adiar alopurinol para após resolução da crise (2-4 semanas)",
+        "DDPC — tratar com colchicina IV",
+        "Celulite — antibiótico oral"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a droga de escolha para profilaxia de crise ao iniciar alopurinol?",
+      "alternativas": [
+        "Prednisona 20 mg/dia",
+        "Colchicina 0,5-1 mg/dia por 3-6 meses",
+        "Alopurinol em dose baixa",
+        "Febuxostate 80 mg/dia",
+        "Probenecida"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Artrite séptica de joelho se diferencia da gota pelo líquido sinovial com:",
+      "alternativas": [
+        "Cristais romboides de birrefringência fracamente positiva",
+        "Leucócitos <1.000/mm3",
+        "Leucócitos >50.000/mm3 com predomínio de PMN + Gram/cultura positiva",
+        "Ácido úrico elevado no líquido",
+        "Glicose elevada no líquido articular"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente com IRC (ClCr 25 mL/min) e gota crônica. Qual medicamento deve ter dose REDUZIDA para profilaxia de crises?",
+      "alternativas": [
+        "Prednisona",
+        "Colchicina — ClCr <50 reduz dose; ClCr <10 contraindicada",
+        "Indometacina",
+        "Alopurinol pode ser mantido sem ajuste",
+        "Febuxostate requer ajuste renal significativo"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Por que o ácido úrico pode estar NORMAL durante uma crise aguda de gota?",
+      "alternativas": [
+        "Porque gota pode ocorrer sem hiperuricemia — são doenças diferentes",
+        "Porque a inflamação mobiliza os cristais do soro e os precipita no espaço articular, reduzindo temporariamente o AU sérico",
+        "Porque os rins excretam mais AU durante a inflamação",
+        "Porque o AU é consumido pelos leucócitos durante a crise",
+        "Porque o resultado laboratorial é impreciso durante inflamação"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Gota aguda (podagra): AINE ou colchicina na crise. Alopurinol NAO iniciar durante crise — mobiliza cristais e piora inflamação. AU normal não exclui gota (cai durante inflamação). Iniciar alopurinol 2-4 semanas após resolução com profilaxia com colchicina."},
+    {"resposta": "B", "comentario": "Profilaxia ao iniciar hipouricemiante: colchicina 0,5 mg/d por 3-6 meses. Reduz crises precipitadas pelo início do alopurinol (mobilização de cristais). Alternativa: AINE dose baixa. Sem profilaxia: 50% dos pacientes têm crise nos primeiros meses de alopurinol."},
+    {"resposta": "C", "comentario": "Artrite séptica: leucócitos >50.000/mm3 (predomínio PMN) + Gram/cultura positiva. Gota: leucócitos 5.000-50.000, cristais de MUS, Gram negativo. A punção articular é obrigatória sempre que houver dúvida entre gota e séptica — podem coexistir!"},
+    {"resposta": "B", "comentario": "Colchicina na IRC: excretada predominantemente pelos rins. ClCr 30-50: dose reduzida (0,5 mg/d máx). ClCr <30: uso com extrema cautela ou evitar. ClCr <10 ou diálise: contraindicada. AINE: evitar em IRC (nefrotóxico). Alopurinol: reduzir dose conforme ClCr (máx 100 mg/d se ClCr <30)."},
+    {"resposta": "B", "comentario": "Durante crise aguda, a inflamação e citocinas causam mobilização dos cristais de MUS do plasma para o espaço articular — reduzindo transitoriamente o AU sérico. Por isso, AU normal NAO exclui gota. Dosar AU 2-4 semanas após resolução para avaliar hiperuricemia basal."}
+  ]
+}

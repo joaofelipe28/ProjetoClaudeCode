@@ -1,0 +1,178 @@
+{
+  "slug": "magnesio_fosforo_disturbios",
+  "titulo": "Distúrbios de Magnésio e Fósforo",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Hipomagnesemia, Hipermagnesemia, Hipofosfatemia e Hiperfosfatemia",
+  "chapter_bar": "Mg E P — RECONHECER + REPOR + TRATAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "HIPOMAGNESEMIA — DIAGNÓSTICO E TRATAMENTO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhes"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Definição", "Mg sérico <1,6 mg/dL (VN 1,6-2,6 mg/dL)"],
+        ["Causas", "Diarreia crônica, alcoolismo, IRC, diuréticos (tiazídicos, furosemida), inibidores de bomba de prótons crônicos, aminoglicosídeos, cisplatina"],
+        ["Sintomas", "Tremores, fraqueza, tetania, arritmias (TV polimórfica, torsades), convulsão, hipoK e hipoCa resistentes à reposição"],
+        ["Diagnóstico", "Mg sérico (baixo sensibilidade) + excreção fracionada de Mg (FEMg <2% = perda renal)"],
+        ["Tratamento", "Leve (>1,0 mg/dL): Mg oral — cloreto/óxido 240-480 mg/d; Grave (<1,0 ou sintomático): Mg 2g IV em 15-60 min → manutenção 6g/24h"],
+        ["Atenção", "Hipomagnesemia causa hipocalemia e hipocalcemia resistentes — tratar Mg PRIMEIRO"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "HIPERMAGNESEMIA — DIAGNÓSTICO E TRATAMENTO",
+      "section_color": "orange",
+      "headers": ["Nível Mg", "Manifestações", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.40, 0.38],
+      "rows": [
+        [">4 mg/dL", "Náuseas, vômitos, fraqueza muscular, hipoTA", "Suspender Mg; hidratação IV; furosemida"],
+        [">6 mg/dL", "Hiporreflexia (sinal precoce: perda do reflexo patelar)", "Gluconato de cálcio 1 g IV (antagoniza) + diálise se grave"],
+        [">8 mg/dL", "Paralisia respiratória, bloqueio cardíaco", "Gluconato de cálcio IV urgente + ventilação + hemodiálise"],
+        [">12 mg/dL", "PCR, assistolia", "Suporte avançado + hemodiálise emergencial"],
+        ["Causas", "Excesso de Mg IV (eclâmpsia), antiácidos com Mg em IRC, rabdomiólise", "Suspender fonte + calcio + diálise"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "HIPOFOSFATEMIA — DIAGNÓSTICO E TRATAMENTO",
+      "section_color": "teal",
+      "headers": ["Aspecto", "Detalhes"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Definição", "P sérico <2,5 mg/dL; grave <1 mg/dL"],
+        ["Causas", "Realimentação (síndrome de realimentação!), álcool, antiácidos com alumínio/cálcio, hiperparatireoidismo, alcalose respiratória, cetoácidose diabética"],
+        ["Sintomas leves (1-2,5)", "Fraqueza muscular, anorexia, parestesias, disfunção eritrocitária (hemólise)"],
+        ["Sintomas graves (<1)", "Rabdomiólise, insuficiência respiratória, encefalopatia, arritmias, disfunção miocárdica"],
+        ["Síndrome de realimentação", "Hipofósforo + hipoK + hipoMg após realimentação de desnutrido grave — repor lentamente com monitoração"],
+        ["Tratamento", "Leve: dieta rica em P OU fosfato oral (sódico/potássico). Grave <1,5 com sintomas: KH2PO4 IV 0,32-0,64 mmol/kg em 6-12h"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "HIPERFOSFATEMIA — DIAGNÓSTICO E TRATAMENTO",
+      "section_color": "red",
+      "headers": ["Aspecto", "Detalhes"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Definição", "P sérico >4,5 mg/dL (adulto); grave >7 mg/dL"],
+        ["Causas", "IRC/DRC (mais comum), rabdomiólise, hipoparatireoidismo, cetoacidose grave, laxativo com fosfato"],
+        ["Consequências", "Hipocalcemia (P precipita com Ca) → tetania, convulsão, calcificação ectópica vascular"],
+        ["Tratamento agudo", "Hemodiálise se grave/sintomático; diálise peritoneal menos eficaz"],
+        ["Tratamento crônico DRC", "Quelantes de fósforo: carbonato/acetato de cálcio (com refeição), sevelamer (sem cálcio — preferido se vascular), lantânio"],
+        ["Meta DRC", "P 3,5-5,5 mg/dL; PTHi <300 pg/mL; evitar hipercalcemia com quelante cálcico"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "INTERAÇÕES CLÍNICAS IMPORTANTES",
+      "section_color": "orange",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Mg e Eclâmpsia",
+        "items": [
+          "Sulfato de magnésio (MgSO4): anticonvulsivante de escolha na eclâmpsia",
+          "Dose ataque: 4-6 g IV em 15-20 min",
+          "Manutenção: 1-2 g/h IV por 24h",
+          "Monitorar: FR >12/min, reflexo patelar presente, diurese >25 mL/h",
+          "Antídoto da toxicidade: gluconato de cálcio 1 g IV",
+          "Dosar Mg se sinais de toxicidade (reflexo patelar primeiro a desaparecer)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Síndrome de Realimentação",
+        "items": [
+          "Paciente desnutrido grave: ao realimentar, insulina libera P, K e Mg para dentro da célula",
+          "Consequência: hipofósforo grave + hipoK + hipoMg → arritmia, insuficiência cardíaca, convulsão",
+          "Grupos de risco: anorexia nervosa, alcoolismo grave, pós-cirurgia bariátrica",
+          "Prevenção: realimentar lentamente (máx 50% das necessidades inicialmente)",
+          "Repor: tiamina, P, K, Mg antes e durante realimentação",
+          "Monitorar eletrólitos a cada 12-24h nas primeiras 72h"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "QUE DOSAR NA IRA/DRC GRAVE",
+      "titulo": "ELETRÓLITOS ALÉM DO K+ E Na+",
+      "items": [
+        "Magnésio: hipoMg comum em diuréticos, IBP crônico, diarreia — causa arritmia e hipocalemia refratária",
+        "Fósforo: hiper-P na IRC (calcificação vascular, hiperparatireoidismo); hipo-P na realimentação",
+        "Cálcio total e iônico: hipo-Ca na hiper-P; hiper-Ca no hiperPTH terciário",
+        "PTH intacto: avalia osteodistrofia renal (controlar em <300 pg/mL na DRC 5)",
+        "Vitamina D (25-OH): deficiente na IRC — suplementar calcitriol (1alfa-hidroxilase renal comprometida)",
+        "Bicarbonato: acidose metabólica na IRC — tratar quando HCO3 <22 (NaHCO3 oral ou IV)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com alcoolismo crônico apresenta hipocalemia (K+ 2,9 mEq/L) refratária a reposição. Qual distúrbio associado deve ser investigado e tratado primeiro?",
+      "alternativas": [
+        "Hipernatremia",
+        "Hipofosfatemia grave",
+        "Hipomagnesemia — repor Mg antes/junto com K+ para correção efetiva",
+        "Hipercalcemia",
+        "Alcalose metabólica"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente em uso de MgSO4 por eclâmpsia perde o reflexo patelar. Qual deve ser a conduta?",
+      "alternativas": [
+        "Aumentar a dose de MgSO4",
+        "Reduzir a infusão e administrar gluconato de cálcio 1 g IV",
+        "Intubar profilaticamente",
+        "Dosar ureia e creatinina antes de qualquer ação",
+        "Considerar benzodiazepínico em substituição ao MgSO4"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente desnutrido grave reinicia alimentação hospitalar. No 3o dia evolui com arritmia cardíaca e insuficiência respiratória. Qual síndrome deve ser suspeitada?",
+      "alternativas": [
+        "Síndrome metabólica de realimentação — hipofosfatemia + hipoK + hipoMg",
+        "Sepse por cateter",
+        "Embolia pulmonar",
+        "Hipermagnesemia por antiácidos",
+        "CIVD por carência de vitamina K"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Paciente com DRC estágio 5 tem P sérico 8 mg/dL. Qual quelante de fósforo deve ser EVITADO neste caso por risco de calcificação vascular?",
+      "alternativas": [
+        "Sevelamer (Renagel)",
+        "Carbonato de lantânio",
+        "Carbonato de cálcio — excesso de cálcio favorece calcificação quando P também está elevado",
+        "Hidróxido de alumínio (apenas curto prazo)",
+        "Bicarbonato de sódio"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o primeiro sinal clínico de toxicidade por MgSO4 a desaparecer?",
+      "alternativas": [
+        "Frequência respiratória",
+        "Pressão arterial",
+        "Reflexo patelar (perde-se com Mg ~4-5 mEq/L)",
+        "Consciência",
+        "Diurese"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Hipomagnesemia causa hipocalemia refratária pois Mg é cofator da Na/K-ATPase renal — sem Mg, rim perde K+ pelo túbulo coletor mesmo com hipocalemia. Alcoolismo: perda de Mg por diurese etanólica. Repor Mg IV (2g em 15 min) resolve hipocalemia resistente."},
+    {"resposta": "B", "comentario": "Perda do reflexo patelar = sinal de toxicidade por Mg (Mg ~4-5 mEq/L). Conduta: reduzir ou suspender infusão + gluconato de cálcio 1 g IV (antagonista do Mg nos canais de Ca). Monitorar FR, reflexo, diurese. FR <12 = paralisia respiratória iminente → intubação."},
+    {"resposta": "A", "comentario": "Síndrome de realimentação: ao realimentar paciente desnutrido grave, insulina é liberada → P, K e Mg entram na célula → hipofosfatemia grave (queda deATP, hemólise, falência cardiorrespiratória) + hipoK + hipoMg. Repor eletrólitos + tiamina + realimentar lentamente."},
+    {"resposta": "C", "comentario": "Quelantes de fósforo com cálcio (carbonato de cálcio, acetato de cálcio) aumentam carga de cálcio → quando P também elevado, risco de precipitação Ca-P → calcificação vascular e tecidual. Sevelamer (sem cálcio) e lantânio são preferidos em DRC com hiperfosfatemia grave ou calcificações preexistentes."},
+    {"resposta": "C", "comentario": "Monitorar toxicidade de MgSO4 na eclâmpsia: reflexo patelar (perde com Mg ~4-5 mEq/L) → FR cai (paralisia respiratória com Mg ~5-6) → parada cardíaca (>12). O reflexo patelar é testado a cada 30-60 min. Se ausente: parar Mg + gluconato de cálcio."}
+  ]
+}

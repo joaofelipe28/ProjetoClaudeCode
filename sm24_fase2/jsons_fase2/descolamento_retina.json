@@ -1,0 +1,172 @@
+{
+  "slug": "descolamento_retina",
+  "titulo": "Descolamento de Retina",
+  "especialidade": "OFTALMOLOGIA",
+  "chapter_subject": "Descolamento de Retina — Reconhecimento e Encaminhamento",
+  "chapter_bar": "DESCOLAMENTO DE RETINA — URGÊNCIA OFTALMO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "TIPOS DE DESCOLAMENTO DE RETINA",
+      "section_color": "navy",
+      "headers": ["Tipo", "Mecanismo", "Associação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Regmatogênico (mais comum)", "Rotura/buraco na retina → líquido sub-retiniano", "Miopia alta, trauma, afacia, idade, degeneração"],
+        ["Tracional", "Tração de membranas fibrovasculares sobre a retina", "Retinopatia diabética proliferativa, retinopatia da prematuridade"],
+        ["Exsudativo (seroso)", "Acúmulo de líquido sub-retiniano sem rotura", "Tumores, inflamação, HAS maligna, pré-eclâmpsia"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINTOMAS — RECONHECER PARA ENCAMINHAR",
+      "section_color": "red",
+      "titulo": "TRÍADE CLÁSSICA DO DESCOLAMENTO REGMATOGÊNICO",
+      "items": [
+        "FOTOPSIAS (flashes de luz): tração vítrea sobre a retina — sintoma precoce",
+        "MOSCAS VOLANTES (floaters) novas e em grande quantidade: sangue/pigmento no vítreo",
+        "SOMBRA / CORTINA escura no campo visual: progressão do descolamento (perda de campo)",
+        "Perda visual: indolor; central se mácula acometida (mau prognóstico visual)",
+        "Sem dor, sem olho vermelho — diferencia de causas inflamatórias/glaucoma",
+        "Mácula 'on' (não acometida): emergência — preservar a visão central com cirurgia rápida"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM NO PS",
+      "title": "DESCOLAMENTO — RECONHECER + ENCAMINHAR JÁ",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Fotopsias + floaters + cortina/sombra no campo visual\nPerda visual indolor, sem olho vermelho", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Avaliar acuidade visual + campo por confrontacao\nFundoscopia (retina descolada: ondulada, acinzentada)", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "Macula preservada (on):\nEMERGENCIA\nOftalmo IMEDIATO\n(salvar visao central)", "color": "red", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Macula ja descolada (off):\nUrgencia (24-72h)\nOftalmo para cirurgia\n(prognostico ja afetado)", "color": "orange", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Posicionar a cabeca conforme a area descolada\nNAO retardar — encaminhamento oftalmologico urgente", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO CIRÚRGICO",
+      "section_color": "orange",
+      "headers": ["Técnica", "Indicação", "Princípio"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.36, 0.38],
+      "rows": [
+        ["Retinopexia pneumática", "Descolamento pequeno, superior, rotura única", "Injeção de gás intravítreo + posicionamento + laser/crio"],
+        ["Vitrectomia (VVPP)", "Descolamentos complexos, tracionais, hemorragia vítrea", "Remoção do vítreo + reaplicação da retina + tamponamento"],
+        ["Introflexão escleral (buckle)", "Regmatogênico, jovens, roturas periféricas", "Faixa de silicone que aproxima a parede do olho à retina"],
+        ["Laser / crioterapia", "Roturas/buracos SEM descolamento (profilaxia)", "Cria aderência ao redor da rotura — previne descolamento"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "FATORES DE RISCO E DIFERENCIAL",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Fatores de Risco",
+        "items": [
+          "Miopia alta (olho mais alongado, retina mais fina)",
+          "Idade (descolamento de vítreo posterior)",
+          "Trauma ocular",
+          "Cirurgia de catarata prévia (afacia/pseudofacia)",
+          "História de descolamento no olho contralateral",
+          "Retinopatia diabética proliferativa (tracional)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Diagnóstico Diferencial da Perda Visual Súbita",
+        "items": [
+          "Oclusão de artéria central da retina: perda súbita, indolor, total",
+          "Oclusão de veia central: perda variável, fundo com hemorragias",
+          "Neurite óptica: dor à movimentação, déficit pupilar aferente",
+          "Hemorragia vítrea: floaters, perda variável (DM proliferativa)",
+          "AVC occipital: hemianopsia, sem alteração de fundo de olho",
+          "Glaucoma agudo: dor intensa, olho vermelho, halos (diferente — sintomático)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Descolamento de retina é urgência/emergência oftalmológica — encaminhar imediatamente",
+        "Mácula preservada (mácula on) = emergência: cirurgia precoce preserva visão central",
+        "Fotopsias + floaters novos + cortina = suspeitar e investigar com fundoscopia",
+        "Perda visual indolor e sem olho vermelho diferencia de causas inflamatórias/glaucoma",
+        "Não há tratamento clínico — o tratamento é cirúrgico (vitrectomia, buckle, retinopexia)",
+        "Roturas sem descolamento podem ser tratadas com laser/crioterapia (profilaxia)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente míope de 55 anos com flashes de luz, aumento súbito de moscas volantes e sensação de cortina escura ascendente no olho direito, indolor. Qual é a principal hipótese?",
+      "alternativas": [
+        "Glaucoma agudo de ângulo fechado",
+        "Descolamento de retina regmatogênico",
+        "Neurite óptica",
+        "Conjuntivite viral",
+        "Catarata madura"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Em um descolamento de retina, qual condição configura EMERGÊNCIA com necessidade de cirurgia o mais rápido possível?",
+      "alternativas": [
+        "Mácula já descolada (mácula off)",
+        "Mácula ainda preservada (mácula on) — cirurgia precoce preserva a visão central",
+        "Descolamento exsudativo por hipertensão",
+        "Rotura sem descolamento",
+        "Floaters isolados sem perda de campo"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o tipo mais comum de descolamento de retina?",
+      "alternativas": [
+        "Tracional",
+        "Exsudativo (seroso)",
+        "Regmatogênico (por rotura/buraco retiniano)",
+        "Misto",
+        "Por tumor intraocular"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual achado clínico ajuda a diferenciar o descolamento de retina do glaucoma agudo?",
+      "alternativas": [
+        "O descolamento causa dor ocular intensa",
+        "O descolamento é indolor e sem olho vermelho, enquanto o glaucoma agudo cursa com dor intensa, olho vermelho e halos",
+        "Ambos causam olho vermelho e dor",
+        "O glaucoma cursa com fotopsias e floaters",
+        "O descolamento cursa com pupila em midríase fixa dolorosa"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o tratamento de uma rotura retiniana SEM descolamento associado (achado isolado)?",
+      "alternativas": [
+        "Vitrectomia de urgência",
+        "Introflexão escleral",
+        "Laser (fotocoagulação) ou crioterapia ao redor da rotura — profilaxia do descolamento",
+        "Apenas observação sem intervenção",
+        "Injeção de gás intravítreo"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Tríade clássica do descolamento regmatogênico: fotopsias (flashes) + floaters novos + cortina/sombra progressiva no campo visual, indolor, em míope. Diferente do glaucoma agudo (dor, olho vermelho, halos). Urgência oftalmológica — fundoscopia e encaminhamento imediato."},
+    {"resposta": "B", "comentario": "Mácula ainda preservada (mácula on) = EMERGÊNCIA: a cirurgia precoce (antes do descolamento atingir a mácula) preserva a visão central. Quando a mácula já está descolada (off), o prognóstico visual já está comprometido e a cirurgia passa a ser urgência (24-72h)."},
+    {"resposta": "C", "comentario": "O descolamento regmatogênico é o mais comum — causado por rotura/buraco na retina que permite a passagem de líquido para o espaço sub-retiniano. Associado a miopia, idade (descolamento de vítreo posterior), trauma e cirurgia de catarata prévia."},
+    {"resposta": "B", "comentario": "Descolamento de retina é INDOLOR e sem olho vermelho (perda de campo/cortina, fotopsias, floaters). O glaucoma agudo de ângulo fechado cursa com dor ocular intensa, olho vermelho, halos ao redor das luzes, náuseas e midríase média fixa. Distinção clínica importante."},
+    {"resposta": "C", "comentario": "Rotura/buraco retiniano SEM descolamento é tratado com laser (fotocoagulação) ou crioterapia ao redor da lesão — cria aderência que sela a rotura e previne a progressão para descolamento. Quando já há descolamento, o tratamento é cirúrgico (vitrectomia, buckle, retinopexia pneumática)."}
+  ]
+}

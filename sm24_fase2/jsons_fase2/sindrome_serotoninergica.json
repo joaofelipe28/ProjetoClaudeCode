@@ -1,0 +1,163 @@
+{
+  "slug": "sindrome_serotoninergica",
+  "titulo": "Síndrome Serotoninérgica",
+  "especialidade": "PSIQUIATRIA",
+  "chapter_subject": "Síndrome Serotoninérgica — Diagnóstico e Manejo",
+  "chapter_bar": "SS — TRÍADE CLÍNICA E CIPROEPTADINA",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E CAUSAS",
+      "section_color": "teal",
+      "titulo": "O QUE É SÍNDROME SEROTONINÉRGICA",
+      "items": [
+        "Excesso de serotonina no SNC e periferia — por aumento da síntese, recaptação ou agonismo",
+        "Tríade clássica: alterações neuropsiquiátricas + hiperatividade autonômica + anormalidades neuromusculares",
+        "Causa: combinação de drogas serotoninérgicas (não necessariamente overdose)",
+        "Início: horas após início/aumento de dose de serotoninérgico",
+        "Mortalidade baixa se reconhecida, mas grave se hipertermia >41°C"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DROGAS ENVOLVIDAS — INTERAÇÕES FREQUENTES",
+      "section_color": "orange",
+      "headers": ["Mecanismo", "Exemplos", "Risco de SS"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.46, 0.26],
+      "rows": [
+        ["↑ Síntese 5-HT", "Triptofano, carbidopa", "Baixo isolado"],
+        ["↓ Degradação (IMAO)", "Tranilcipromina, selegilina, linezolida, azul de metileno", "ALTO — combinação fatal"],
+        ["↑ Liberação de 5-HT", "MDMA (ecstasy), cocaína, anfetamina, tramadol", "Moderado-alto"],
+        ["Inibição recaptação (ISRS/IRSN)", "Fluoxetina, sertralina, venlafaxina, duloxetina", "Moderado (combinação)"],
+        ["Agonistas 5-HT", "Triptanos, buspirona, ergotamina, meperidina, lítio", "Moderado"],
+        ["Inibidores CYP2D6 (↑ nível ISRS)", "Fluoxetina + tramadol / metadona / fentanil (alta dose)", "Moderado-alto"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO — CRITÉRIOS DE HUNTER",
+      "section_color": "navy",
+      "headers": ["Critério Hunter", "Presente se..."],
+      "header_colors": ["navy", "teal"],
+      "col_widths": [0.35, 0.65],
+      "rows": [
+        ["Clonus espontâneo", "Tremor rítmico espontâneo do pé ou olhos (sem estimulação)"],
+        ["Clonus induzível", "Clonus ao teste do tornozelo (dorsiflexão rápida) — 3+ batidas"],
+        ["Clonus ocular", "Movimentos oculares horizontais rítmicos"],
+        ["Hipertonia + temperatura >38°C", "Rigidez muscular (sinal de chumbo) com febre"],
+        ["Agitação ou hiperreflexia + clonus", "Qualquer combinação de 2 desses"],
+        ["Diagnóstico", "Uso de serotoninérgico + ≥1 critério acima = SS confirmada"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL — SS vs SNM",
+      "section_color": "red",
+      "titulo": "SÍNDROME SEROTONINÉRGICA vs NEUROLÉPTICA MALIGNA",
+      "items": [
+        "SS: início em HORAS após serotoninérgico; hiperreflexia + CLONUS; pele úmida; resolução em <24h",
+        "SNM: início em DIAS após antipsicótico; RIGIDEZ 'chumbo' + hiporieflexia; pele seca; CPK muito elevada",
+        "SS: peristalse aumentada (diarreia, borborigmos), midriase",
+        "SNM: íleo paralítico, incontinência, sialorreia",
+        "SS: tratar com ciproeptadina + BZD + resfriamento",
+        "SNM: tratar com bromocriptina + dantrolene + suporte + IOT se grave"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO — POR GRAVIDADE",
+      "section_color": "orange",
+      "headers": ["Gravidade", "Critérios", "Tratamento"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.38, 0.42],
+      "rows": [
+        ["Leve", "Taquicardia, diaforese, hipertonia, tremor, hiperreflexia", "Suspender serotoninérgicos; BZD (diazepam 5-10mg VO)"],
+        ["Moderada", "Hipertermia <41°C + clonus + agitação", "BZD IV + ciproeptadina 12 mg VO + resfriamento ativo"],
+        ["Grave", "Temperatura >41°C, rigidez, rabdomiólise, instab. autonômica", "IOT + ventilação mecânica + resfriamento ativo + BZD IV + ciproeptadina SNG"],
+        ["Todos", "Monitorar ECG (QTc), rabdomiólise (CPK), LRA, DIC", "Suporte hídrico, monitorização contínua, UTI se grave"]
+      ]
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST — SS NO PS",
+      "titulo": "RECONHECER E AGIR RÁPIDO",
+      "items": [
+        "Anamnese: quais drogas serotoninérgicas? combinação nova? aumento de dose recente?",
+        "Exame: clonus (espontâneo/induzido), hiperreflexia, temperatura, PA, FC",
+        "Critérios de Hunter: uso de serotoninérgico + clonus = SS até prova em contrário",
+        "SUSPENDER imediatamente todos os serotoninérgicos envolvidos",
+        "BZD: diazepam ou midazolam — controla agitação, reduz temperatura",
+        "Ciproeptadina 12 mg VO/SNG (antagonista 5-HT) — única droga anti-serotoninérgica disponível",
+        "Temperatura >41°C: IOT + bloqueio neuromuscular (vecurônio) + resfriamento ativo"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Qual combinação de drogas tem o maior risco de causar síndrome serotoninérgica grave?",
+      "alternativas": [
+        "Sertralina + paracetamol",
+        "Fluoxetina + alprazolam",
+        "ISRS + IMAO (tranilcipromina ou linezolida)",
+        "Amitriptilina + haloperidol",
+        "Bupropiona + quetiapina"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual sinal neurológico distingue a síndrome serotoninérgica da síndrome neuroléptica maligna?",
+      "alternativas": [
+        "Rigidez em chumbo (lead-pipe rigidity)",
+        "Hipertermia acima de 40°C",
+        "Clonus (espontâneo ou induzível)",
+        "Alteração da consciência",
+        "Instabilidade autonômica"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente em uso de sertralina inicia tramadol para dor pós-operatória. Horas depois, apresenta agitação, diaforese, hipertermia de 39°C, clonus espontâneo e hiperreflexia. Qual é o diagnóstico?",
+      "alternativas": [
+        "Síndrome neuroléptica maligna pelo tramadol",
+        "Síndrome serotoninérgica por combinação de ISRS + tramadol",
+        "Abstinência por sertralina suspensa",
+        "Sepse pós-operatória",
+        "Hipertermia maligna por anestesia"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual droga é o antagonista serotoninérgico disponível para tratamento específico da SS moderada/grave?",
+      "alternativas": [
+        "Bromocriptina",
+        "Dantrolene",
+        "Ciproeptadina",
+        "Naloxona",
+        "Flumazenil"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "Linezolida pode precipitar síndrome serotoninérgica quando combinada com ISRS porque:",
+      "alternativas": [
+        "É um inibidor potente da recaptação de serotonina",
+        "É um inibidor da MAO (IMAO) — aumenta a degradação da serotonina",
+        "É um inibidor da MAO (IMAO) — reduz a degradação da serotonina, aumentando seus níveis",
+        "Aumenta a síntese de triptofano",
+        "Bloqueia os receptores 5-HT3"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "ISRS + IMAO = combinação de maior risco para SS grave ou fatal. IMAOs incluem: tranilcipromina, fenelzina, selegilina, linezolida (IMAO fraco), azul de metileno. Washout de 14 dias (5 semanas para fluoxetina) ao trocar."},
+    {"resposta": "C", "comentario": "Clonus (espontâneo ou induzível) é o sinal mais específico da SS — ausente na SNM. SNM tem rigidez em chumbo + hiporieflexia. SS tem hiperreflexia + clonus + diaforese + diarreia (peristalse aumentada)."},
+    {"resposta": "B", "comentario": "Sertralina (ISRS) + tramadol (inibidor de recaptação de serotonina + opioide): SS clássica. Tramadol é causa frequente de SS quando combinado com ISRS. Inicio em horas, clonus espontâneo = critério Hunter positivo."},
+    {"resposta": "C", "comentario": "Ciproeptadina: antagonista de 5-HT1A e 5-HT2A — única droga antisserotoninérgica disponível no Brasil. Dose: 12 mg VO/SNG seguida de 2 mg a cada 2h se necessário (máx 32 mg/d). Não há formulação IV."},
+    {"resposta": "C", "comentario": "Linezolida é um IMAO fraco (inibe MAO-A e MAO-B), reduzindo a degradação da serotonina. Quando combinada com ISRS, o acúmulo de serotonina pode causar SS. Evitar essa combinação; se necessária, monitorar atentamente."}
+  ]
+}

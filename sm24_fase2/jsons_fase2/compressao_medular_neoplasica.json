@@ -1,0 +1,175 @@
+{
+  "slug": "compressao_medular_neoplasica",
+  "titulo": "Compressão Medular Neoplásica",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Compressão Medular Maligna — Emergência Oncológica",
+  "chapter_bar": "COMPRESSÃO MEDULAR — CORTICOIDE + RM + TRATAR JÁ",
+  "secoes": [
+    {
+      "tipo": "highlightbox",
+      "section_title": "EMERGÊNCIA ONCOLÓGICA — TEMPO É FUNÇÃO NEUROLÓGICA",
+      "section_color": "red",
+      "titulo": "DIAGNÓSTICO E TRATAMENTO PRECOCES PRESERVAM A MARCHA",
+      "items": [
+        "O status neurológico ANTES do tratamento é o principal preditor do desfecho funcional",
+        "Paciente que chega deambulando tem chance muito maior de continuar andando se tratado a tempo",
+        "Paciente já paraplégico raramente recupera a marcha — não esperar para confirmar",
+        "Corticoide deve ser iniciado IMEDIATAMENTE à suspeita (antes mesmo da RM)",
+        "RM de toda a coluna é o exame de escolha (lesões em múltiplos níveis em 1/3 dos casos)",
+        "Atraso de horas pode significar paraplegia permanente e perda de controle esfincteriano"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ETIOLOGIA E APRESENTAÇÃO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Tumores mais comuns", "Mama, pulmão, próstata (metástases vertebrais); mieloma, linfoma"],
+        ["Nível mais afetado", "Torácico (60%), lombossacro (30%), cervical (10%)"],
+        ["Mecanismo", "Metástase no corpo vertebral → invasão epidural → compressão da medula/cauda equina"],
+        ["1o sintoma (precoce)", "DOR nas costas (>90%) — piora ao deitar, progressiva, semanas antes do déficit"],
+        ["Sinais tardios", "Fraqueza de membros, nível sensitivo, retenção/incontinência urinária e fecal"],
+        ["Síndrome da cauda equina", "Anestesia em sela, disfunção esfincteriana, fraqueza distal assimétrica"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA COMPRESSÃO MEDULAR",
+      "title": "COMPRESSÃO MEDULAR — CORTICOIDE + RM + TRATAR",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Cancer conhecido/suspeito + dor dorsal + deficit neurologico\nSUSPEITAR de compressao medular", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "CORTICOIDE IMEDIATO: dexametasona 10 mg IV bolus\n+ 4 mg 6/6h (nao aguardar a RM)", "color": "red", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "RM de TODA a coluna\n(urgente, <24h)\nlesoes em multiplos niveis\nem 1/3 dos casos", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Tratamento definitivo:\nCirurgia (descompressao) +\nradioterapia, OU RT isolada\nconforme caso", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Envolver oncologia, neurocirurgia e radioterapia\nReabilitacao + analgesia + profilaxia de TVP", "color": "green", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO DEFINITIVO — CIRURGIA vs RADIOTERAPIA",
+      "section_color": "orange",
+      "headers": ["Modalidade", "Indicação", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Cirurgia descompressiva + RT", "Compressão por osso/instabilidade, déficit recente, tumor radiorresistente, dúvida diagnóstica", "Melhor preservação da marcha (estudo Patchell) em candidatos"],
+        ["Radioterapia isolada", "Tumor radiossensível (linfoma, mieloma, mama, próstata), múltiplos níveis, mau status cirúrgico", "Mais utilizada; alívio da dor e controle local"],
+        ["Quimioterapia", "Tumores quimiossensíveis (linfoma, germinativos, mieloma)", "Adjuvante; pode ser primária em casos selecionados"],
+        ["Vertebroplastia / cimento", "Dor por fratura vertebral patológica sem compressão neural", "Alívio da dor; não trata compressão"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CORTICOIDE E SUPORTE",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Dexametasona",
+        "items": [
+          "Iniciar IMEDIATAMENTE à suspeita (não aguardar a RM)",
+          "Esquema comum: 10 mg IV em bolus + 4 mg IV/VO de 6/6h",
+          "Reduz edema vasogênico medular e a dor",
+          "Desmame gradual após o tratamento definitivo (RT/cirurgia)",
+          "Vigiar: hiperglicemia, úlcera (profilaxia gástrica), psicose, infecção",
+          "Em linfoma: pode mascarar/tratar o tumor — colher diagnóstico antes se possível"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Suporte e Reabilitação",
+        "items": [
+          "Analgesia multimodal: opioides + adjuvantes (dor neuropática)",
+          "Profilaxia de TVP (paciente imobilizado + neoplasia)",
+          "Sondagem vesical se retenção urinária",
+          "Cuidados com pele (prevenção de úlcera de pressão)",
+          "Fisioterapia e reabilitação precoces",
+          "Abordagem multidisciplinar: oncologia, neurocirurgia, RT, cuidados paliativos"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PONTOS-CHAVE NO PS",
+      "titulo": "NÃO ATRASAR",
+      "items": [
+        "Dor dorsal progressiva em paciente com câncer = compressão medular até prova em contrário",
+        "Corticoide (dexametasona) IMEDIATO à suspeita, antes da confirmação por imagem",
+        "RM de TODA a coluna é o exame de escolha (urgente)",
+        "O status neurológico pré-tratamento é o principal preditor de recuperação funcional",
+        "Acionar neurocirurgia + radioterapia + oncologia precocemente",
+        "Cirurgia + RT preserva melhor a marcha em candidatos selecionados (déficit recente, instabilidade)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com câncer de mama metastático apresenta dor dorsal progressiva há 2 semanas e, hoje, fraqueza nas pernas e dificuldade para urinar. Qual é a conduta IMEDIATA?",
+      "alternativas": [
+        "Aguardar a RM antes de iniciar qualquer tratamento",
+        "Iniciar dexametasona imediatamente + solicitar RM de toda a coluna em caráter de urgência",
+        "Analgésico e reavaliação ambulatorial em 48h",
+        "Tomografia de crânio",
+        "Iniciar quimioterapia paliativa apenas"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o exame de escolha para o diagnóstico da compressão medular neoplásica?",
+      "alternativas": [
+        "Radiografia simples de coluna",
+        "Tomografia de coluna sem contraste",
+        "RM de toda a coluna",
+        "Cintilografia óssea",
+        "Mielografia convencional"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o principal fator preditor do desfecho funcional (marcha) na compressão medular neoplásica?",
+      "alternativas": [
+        "O tipo histológico do tumor",
+        "O status neurológico do paciente ANTES do início do tratamento",
+        "A idade do paciente",
+        "O nível da coluna acometido",
+        "O valor do CA 15-3"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual é o sintoma MAIS PRECOCE e frequente da compressão medular neoplásica?",
+      "alternativas": [
+        "Incontinência urinária",
+        "Paraplegia",
+        "Dor nas costas (dorsal), progressiva, que piora ao deitar",
+        "Anestesia em sela",
+        "Febre"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Em qual situação a cirurgia descompressiva (seguida de radioterapia) é preferível à radioterapia isolada?",
+      "alternativas": [
+        "Tumor radiossensível em múltiplos níveis",
+        "Paciente paraplégico há mais de 48h",
+        "Compressão por fragmento ósseo/instabilidade vertebral, déficit neurológico recente ou tumor radiorresistente, em paciente com bom status",
+        "Mau estado geral e expectativa de vida muito curta",
+        "Linfoma com compressão difusa"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Compressão medular neoplásica é emergência oncológica. Conduta imediata: dexametasona (10 mg IV bolus + 4 mg 6/6h) ANTES da confirmação por imagem + RM de toda a coluna em urgência. O atraso pode causar paraplegia e perda esfincteriana permanentes."},
+    {"resposta": "C", "comentario": "RM de TODA a coluna é o exame de escolha — detecta a compressão epidural, o nível e múltiplas lesões (presentes em ~1/3 dos casos). A radiografia e a TC têm sensibilidade inferior. A mielografia foi substituída pela RM. Não atrasar o corticoide aguardando a RM."},
+    {"resposta": "B", "comentario": "O status neurológico ANTES do tratamento é o principal preditor do desfecho funcional. Pacientes que ainda deambulam têm grande chance de continuar andando se tratados rapidamente; pacientes já paraplégicos raramente recuperam a marcha. Por isso o reconhecimento e tratamento precoces são cruciais."},
+    {"resposta": "C", "comentario": "A dor dorsal (nas costas) é o sintoma mais precoce e frequente (>90%), surgindo semanas antes do déficit neurológico. Caracteristicamente progressiva e pior ao deitar (vs dor mecânica que melhora). Reconhecê-la em paciente oncológico permite o diagnóstico antes do déficit motor."},
+    {"resposta": "C", "comentario": "Cirurgia descompressiva + RT (estudo Patchell) é preferível quando há compressão por fragmento ósseo/instabilidade vertebral, déficit neurológico recente, tumor radiorresistente ou necessidade de diagnóstico histológico, em paciente com bom status e expectativa de vida razoável. RT isolada para tumores radiossensíveis, múltiplos níveis ou mau status."}
+  ]
+}

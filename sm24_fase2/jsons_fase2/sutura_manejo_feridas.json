@@ -1,0 +1,178 @@
+{
+  "slug": "sutura_manejo_feridas",
+  "titulo": "Sutura e Manejo de Feridas",
+  "especialidade": "PROCEDIMENTOS",
+  "chapter_subject": "Sutura e Manejo de Feridas no PS",
+  "chapter_bar": "SUTURA — LIMPAR, ANESTESIAR, FECHAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "TIPOS DE FECHAMENTO — QUANDO USAR",
+      "section_color": "navy",
+      "headers": ["Técnica", "Indicação", "Contraindicação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.42, 0.36],
+      "rows": [
+        ["Sutura primária (1ª intenção)", "Ferida limpa, <8h, sem contaminação (face: até 24h)", "Ferida infectada, contaminada, esmagamento"],
+        ["Fechamento primário tardio (3ª intenção)", "Ferida contaminada — limpar, desbridar, fechar em 3-5 dias", "Sem desbridamento adequado"],
+        ["Cicatrização por 2ª intenção", "Ferida infectada, mordidas, pé diabético, tecido desvitalizado", "Necessidade de cobertura imediata"],
+        ["Grampos cirúrgicos", "Couro cabeludo, tronco (rápido, seguro)", "Face, mãos, pés, áreas com tensão alta"],
+        ["Fitas adesivas (Steri-Strip)", "Feridas pequenas, superficiais, baixa tensão", "Feridas com tração, áreas úmidas, infectada"],
+        ["Cola tissular (Dermabond)", "Feridas superficiais, lineares <5cm, face, crianças", "Feridas profundas, sujas, mordidas, alta tensão"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM — FERIDA NO PS",
+      "title": "FERIDA — LIMPAR + ANESTESIAR + FECHAR",
+      "height": 210,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Avaliação: tamanho, profundidade, contaminação\nHemostasia + controle de hemorragia ativa", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Irrigação sob pressão: SF 200-500 mL com seringa\nDesbridamento: tecido necrótico, corpos estranhos", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.43, "w": 155, "h": 24, "text": "Anestesia local\nLidocaína 1-2% com epinefrina\n(exceto extremidades? — mito!)", "color": "green", "font_size": 5.5},
+        {"id": "d", "x": 0.75, "y": 0.43, "w": 155, "h": 24, "text": "Ferida contaminada, >8h,\nmordida, alto risco:\nATB profilático + fechamento tardio", "color": "orange", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 215, "h": 22, "text": "Suturar por planos, pontos simples separados\nCurativo, profilaxia antitetânica, orientações", "color": "red", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANESTESIA LOCAL — LIDOCAÍNA",
+      "section_color": "orange",
+      "headers": ["Parâmetro", "Sem Epinefrina", "Com Epinefrina"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.36, 0.36],
+      "rows": [
+        ["Concentração", "1% ou 2%", "1% ou 2% com epi 1:100.000"],
+        ["Dose máxima", "4-5 mg/kg (sem epi)", "7 mg/kg (com epi)"],
+        ["Duração", "30-60 min", "90-120 min (maior campo, menor sangramento)"],
+        ["Uso em extremidades", "PODE usar — mito o contrário", "PODE usar (pé, dedo, pênis) — evidência atual"],
+        ["Técnica de injeção", "Lento, intradermal (menor dor); aspirar antes", "Igual; esperar 7-10 min para vasoconstricção"],
+        ["Toxicidade (superdose)", "Zumbido, gosto metálico, convulsão, PCR", "Taquicardia, HAS, arritmia + tox. lidocaína"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PONTOS DE SUTURA — RETIRADA E ALTA",
+      "section_color": "teal",
+      "titulo": "QUANDO RETIRAR OS PONTOS",
+      "items": [
+        "Face: 5-7 dias (boa vascularização, cicatrização rápida)",
+        "Couro cabeludo: 7-10 dias",
+        "Tronco e abdome: 10-14 dias",
+        "Membros superiores: 10-12 dias",
+        "Membros inferiores: 12-14 dias (circulação mais lenta)",
+        "Sobre articulações: 14 dias (tensão maior)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "MORDEDURAS E FERIDAS ESPECIAIS",
+      "section_color": "red",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Mordidas — Animal e Humano",
+        "items": [
+          "Não fechar mordidas de animais (<8h): alto risco de infecção",
+          "Exceção: face e pescoço — fechar após limpeza (cosméticos)",
+          "ATB profilático: amoxicilina-clavulanato 875/125 mg 12/12h x 5-7d",
+          "Humana = pior que animal (flora mista + Eikenella corrodens)",
+          "Avaliar: antirábica + hepatite B + raiva segundo o animal",
+          "Profilaxia pós-exposição (PEP): mordida de morcego, cão sem vacinação"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Profilaxia Antitetânica",
+        "titulo_alternativo": "Profilaxia Antitetânica",
+        "items": [
+          "Ferida limpa pequena: vacina se >5 anos da última dose",
+          "Ferida suja (terra, feces, >6h): vacina se >5 anos + Ig antitetânica se não vacinado",
+          "Não vacinado ou esquema incompleto + ferida suja: Ig antitetânica 250 UI IM",
+          "Sítio diferente da vacina se administradas juntas",
+          "Toxoide tetânico 0,5 mL IM (deltóide)",
+          "Registrar e completar esquema (3 doses)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "TÉCNICA DE SUTURA SIMPLES INTERROMPIDA",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "Anestesia local: lidocaína + epinefrina 1:100.000, injeção lenta na derme",
+        "Irrigação: SF sob pressão com seringa de 20 mL + agulha 18G (150-200 mL/cm de ferida)",
+        "Agulha: porta-agulha + pinça anatômica; entrar perpendicular à pele; sair simétrico",
+        "Profundidade: incluir toda a derme e alguma hipoderme; evitar inverter bordas",
+        "Tensão: mínima para aproximar sem estrangular (isquemia → necrose → deiscência)",
+        "Espaçamento: 4-5 mm entre pontos na face; 8-10 mm em tronco/membros",
+        "Curativo: não-aderente (petrolato) por 24-48h; manter limpo e seco"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com ferida por mordida de cão na mão, há 4 horas. Qual conduta é CORRETA?",
+      "alternativas": [
+        "Fechar imediatamente com sutura primária",
+        "Irrigação + desbridamento + NÃO fechar (2ª intenção ou fechamento tardio) + amoxicilina-clavulanato",
+        "Fechar apenas com fitas adesivas",
+        "Aguardar 24h e fechar cirurgicamente",
+        "Antibiótico IV por 7 dias sem necessidade de limpeza"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente de 30 anos com corte linear na face de 3 cm, há 6 horas, limpo. Qual é o prazo máximo para sutura primária?",
+      "alternativas": [
+        "2 horas após o trauma",
+        "6 horas (mesmas regras do restante do corpo)",
+        "Até 24 horas na face pela rica vascularização",
+        "Não se fecha na face — apenas fitas",
+        "48 horas"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "O uso de lidocaína com epinefrina é CONTRAINDICADO em:",
+      "alternativas": [
+        "Extremidades (dedos, pé)",
+        "Face",
+        "Pacientes com arritmia grave usando IMAO",
+        "Couro cabeludo",
+        "Palma da mão"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente NÃO vacinado contra tétano com ferida suja (terra). Qual é a profilaxia correta?",
+      "alternativas": [
+        "Apenas toxoide tetânico 0,5 mL IM",
+        "Toxoide tetânico + imunoglobulina antitetânica 250 UI IM em sítio diferente",
+        "Apenas imunoglobulina antitetânica",
+        "Penicilina benzatina profilática",
+        "Não há indicação — apenas lavar bem a ferida"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Em quantos dias devem ser retirados os pontos de sutura em uma ferida no membro inferior?",
+      "alternativas": [
+        "5-7 dias (mesmo que na face)",
+        "7-10 dias",
+        "12-14 dias",
+        "21 dias",
+        "Nunca — pontos absorvíveis são preferidos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Mordida de animal na mão: NÃO fechar (alto risco infecção). Exceção: face. Lavar copiosamente, desbridar, ATB profilático (amoxicilina-clavulanato). Avaliar profilaxia rábica e antitetânica. Retornar em 48h para fechamento tardio se sem infecção."},
+    {"resposta": "C", "comentario": "Face: rica vascularização → resistência maior à infecção → pode fechar até 24h. Demais regiões: limite de 6-8h. Ferida suja: reduzir o tempo. Face é a exceção cosmética mais importante para sutura primária tardia."},
+    {"resposta": "C", "comentario": "Epinefrina é CONTRAINDICADA (relativa) quando há risco de interação com IMAO (hipertensão grave) ou em pacientes com arritmia grave ou doença coronariana severa não controlada. O uso em dedos/extremidades é SEGURO — o mito foi derrubado por estudos recentes."},
+    {"resposta": "B", "comentario": "Não vacinado + ferida suja: toxoide tetânico 0,5 mL IM + imunoglobulina antitetânica 250 UI IM em sítio contralateral. A Ig dá imunidade passiva imediata enquanto o toxoide promove imunidade ativa. Completar esquema de 3 doses."},
+    {"resposta": "C", "comentario": "Retirada de pontos: face 5-7d, couro cabeludo 7-10d, tronco 10-14d, MMSS 10-12d, MMII 12-14d, articulações 14d. Membros inferiores têm circulação mais lenta e maior tensão, exigindo mais tempo de cicatrização."}
+  ]
+}

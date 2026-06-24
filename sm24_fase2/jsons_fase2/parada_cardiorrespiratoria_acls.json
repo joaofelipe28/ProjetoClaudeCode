@@ -1,0 +1,190 @@
+{
+  "slug": "parada_cardiorrespiratoria_acls",
+  "titulo": "PCR no Adulto — ACLS",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "Parada Cardiorrespiratória no Adulto (ACLS)",
+  "chapter_bar": "PCR NO ADULTO — ACLS 2020",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "ALGORITMO ACLS — FV/TV vs AESP/ASS",
+      "title": "PCR — RECONHECER, RCP, DESFIBRILAR",
+      "height": 235,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.93, "w": 205, "h": 22, "text": "Sem pulso/sem resposta → Acionar SAMU\nRCP 30:2 | Desfibrilador (DEA) imediato", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 200, "h": 22, "text": "Análise do ritmo a cada 2 min\nFV / TV sem pulso?", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.22, "y": 0.44, "w": 160, "h": 28, "text": "DESFIBRILÁVEL — FV/TV-sp\nChoque 200J bifásico → RCP 2 min\nAdrenalina 1mg IV após 2º choque\n3º choque: Amiodarona 300mg IV", "color": "red", "font_size": 5.3},
+        {"id": "d", "x": 0.78, "y": 0.44, "w": 160, "h": 28, "text": "NÃO DESFIBRILÁVEL — AESP/ASS\nRCP 2 min → Adrenalina 1mg IV imediato\nIdentificar 5H/5T\nIOT assim que possível", "color": "green", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 210, "h": 22, "text": "ROSC? → Cuidados pós-PCR: O2 94-98%,\nTTM 32-36°C, ECG 12D, PAS ≥90 mmHg", "color": "orange", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CAUSAS REVERSÍVEIS — 5H/5T",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "5 Hs (tratar imediatamente)",
+        "items": [
+          "Hipóxia → ventilar O2 100%",
+          "Hipovolemia → SF 1-2L IV/IO rápido",
+          "Hipotermia → aquecimento externo/interno",
+          "Hipo/Hipercalemia → gasometria, correção",
+          "H+ (acidose) → HCO3 1mEq/kg se pH <7,1"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "5 Ts (tratar imediatamente)",
+        "items": [
+          "Tensão pneumotórax → agulha 2ºEIC MCL",
+          "Tamponamento → pericardiocentese",
+          "Trombose coronária → ICP emergência",
+          "Trombose pulmonar → trombolítico (alteplase)",
+          "Tóxico → carvão, antídoto específico"
+        ]
+      }
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MEDICAMENTOS — ACLS 2020",
+      "section_color": "orange",
+      "headers": ["Fármaco", "Dose", "Indicação / Timing"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.22, 0.56],
+      "rows": [
+        ["Adrenalina", "1 mg IV/IO a cada 3-5 min", "FV/TV: após 2º choque; AESP/ASS: imediatamente"],
+        ["Amiodarona", "300mg IV bolus; 2ª dose 150mg", "FV/TV refratária após 3º choque"],
+        ["Lidocaína", "1-1,5 mg/kg IV", "Alternativa à amiodarona (se indisponível)"],
+        ["MgSO4", "1-2g IV em 1-2 min", "Torsades de Pointes / hipomagnesemia"],
+        ["Bicarbonato", "1 mEq/kg IV", "Acidose grave, hipercalemia, intox. tricíclicos"],
+        ["Atropina", "REMOVIDA das diretrizes ACLS", "Não usar em PCR (sem evidência de benefício)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RCP DE ALTA QUALIDADE — SALVA VIDAS",
+      "section_color": "red",
+      "titulo": "FUNDAMENTOS INEGOCIÁVEIS",
+      "items": [
+        "Frequência: 100-120 compressões/minuto — monitor de feedback é ideal",
+        "Profundidade: ≥5 cm (não >6 cm) — permitir retorno torácico completo",
+        "Minimizar pausas: <10 segundos para análise de ritmo e choque",
+        "Pré-IOT: 30:2 | Pós-IOT: 1 ventilação a cada 6 seg (assíncrona)",
+        "Trocar compressor a cada 2 min; PETCO2 <10 mmHg = RCP ineficaz ou prog. grave",
+        "Fração de fluxo (chest compression fraction) alvo: ≥60%"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ORGANIZAÇÃO DO TIME — PAPÉIS NA PCR",
+      "titulo": "LIDERANÇA EM CÓDIGO",
+      "items": [
+        "Líder: análise de ritmo, decisão de choque, 5H/5T, comunicação em alça fechada",
+        "Compressor: qualidade, 100-120/min, ≥5cm, trocar a cada 2 min",
+        "Via aérea: máscara-bolsa → IOT após 1º ciclo; waveform capnografia",
+        "Acesso/drogas: periférico antecubital ou IO (esterno/tíbia) se falha periférica",
+        "Registrador: hora da PCR, hora das drogas, hora dos choques, duração",
+        "Causas reversíveis (5H/5T): investigar DESDE o início, não só ao final"
+      ]
+    },
+    {
+      "tipo": "infobox",
+      "section_title": "CUIDADOS PÓS-ROSC",
+      "section_color": "teal",
+      "titulo": "APÓS RETORNO À CIRCULAÇÃO ESPONTÂNEA",
+      "items": [
+        "O2: SpO2 94-98% (evitar hiperóxia — mortalidade aumenta); PETCO2 35-45 mmHg",
+        "PA: manter PAS ≥90 mmHg; noradrenalina se necessário; evitar hipotensão",
+        "ECG 12 derivações: IAMCSST → cateterismo emergencial (ICP primária)",
+        "Controle direcionado de temperatura (TTM): 32-36°C por 24h se coma pós-PCR",
+        "Glicemia: alvo 140-180 mg/dL; evitar hipoglicemia e hiperglicemia",
+        "Prognosticação neurológica: aguardar ≥72h após ROSC (ou pós-reaquecimento)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SUSPENSÃO DA RCP — CRITÉRIOS",
+      "section_color": "purple",
+      "titulo": "QUANDO ENCERRAR",
+      "items": [
+        "PCR não presenciada, sem RCP leigo, ritmo não desfibrilável por >20-30 min",
+        "PETCO2 <10 mmHg persistente após ≥20 min de RCP de alta qualidade",
+        "Doença terminal conhecida + diretivas antecipadas de vontade",
+        "Lesão incompatível com a vida (trauma com decapitação, pcr traumática sem sinais de vida)",
+        "Hipotermia grave (<28-30°C): RCP prolongada — 'not dead until warm and dead'",
+        "Pediatria: suporte mínimo de 30-60 min antes de decidir suspensão"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    }
+  ],
+  "questoes": [
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente em FV refratária após 3 choques de 200J (bifásico). Além de continuar a RCP, qual a próxima droga a ser administrada?",
+      "alternativas": [
+        "Atropina 1 mg IV",
+        "Amiodarona 300 mg IV em bolus",
+        "Adenosina 6 mg IV",
+        "Digoxina 0,5 mg IV",
+        "Verapamil 5 mg IV"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Na AESP com jugular distendida e ausência bilateral de murmúrio vesicular, qual causa reversível deve ser tratada de imediato?",
+      "alternativas": [
+        "Hipovolemia — SF rápido",
+        "Hipercalemia — bicarbonato",
+        "Pneumotórax hipertensivo — agulha 2ºEIC MCL",
+        "Acidose — bicarbonato",
+        "Hipotermia — aquecimento"
+      ]
+    },
+    {
+      "source": "SES-GO / Adaptada",
+      "enunciado": "Qual afirmativa sobre qualidade de RCP no adulto é CORRETA segundo as diretrizes ACLS 2020?",
+      "alternativas": [
+        "Frequência ideal de 60-80/min para evitar fadiga do compressor",
+        "Profundidade de 2 cm para evitar fraturas de costelas",
+        "100-120/min, profundidade ≥5 cm (não >6 cm), retorno torácico completo, pausas <10s",
+        "Após IOT, ventilações devem ser sincronizadas 30:2 com as compressões",
+        "Fracção de fluxo (CCF) alvo é ≥20%"
+      ]
+    },
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente em ROSC após PCR, em coma, com SpO2 100% em FiO2 1,0. Qual conduta é CORRETA?",
+      "alternativas": [
+        "Manter FiO2 1,0 para máxima oxigenação cerebral",
+        "Titular O2 para SpO2 94-98% e iniciar controle de temperatura 32-36°C por 24h",
+        "Iniciar heparina plena para prevenir trombose",
+        "Alta da UTI após 24h se hemodinamicamente estável",
+        "Aguardar 7 dias para prognosticação neurológica"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "O PETCO2 <10 mmHg persistente após ≥20 minutos de RCP de alta qualidade indica:",
+      "alternativas": [
+        "Boa perfusão cerebral, continuar a RCP",
+        "Hipocapnia — ventilar mais devagar",
+        "Prognóstico desfavorável — pode orientar a suspensão da reanimação",
+        "Indica intubação imediata",
+        "Necessidade de amiodarona adicional"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Amiodarona 300mg IV em bolus é indicada na FV/TV refratária após o 3º choque (2ª dose: 150mg). Lidocaína é alternativa. Atropina foi removida das diretrizes ACLS 2010 por ausência de benefício em PCR."},
+    {"resposta": "C", "comentario": "Jugular distendida + ausência bilateral de MV = pneumotórax hipertensivo (5T). Tratamento imediato: agulha de alívio no 2ºEIC linha hemiclavicular, seguida de dreno de tórax. Tamponamento também distende jugular mas sem ausência de MV bilateral."},
+    {"resposta": "C", "comentario": "Parâmetros de alta qualidade: 100-120/min, profundidade ≥5cm (não >6cm), retorno torácico completo, pausas <10s, CCF ≥60%. Após IOT: 1 ventilação a cada 6 segundos, assíncrona."},
+    {"resposta": "B", "comentario": "Hiperóxia pós-ROSC é prejudicial — titular SpO2 94-98%. TTM 32-36°C por 24h indicado em coma. Se ECG mostra IAMCSST → cateterismo emergencial. Prognosticação: aguardar ≥72h após ROSC."},
+    {"resposta": "C", "comentario": "PETCO2 reflete perfusão pulmonar e débito cardíaco. Valores <10 mmHg após ≥20 min de RCP de qualidade indicam prognóstico desfavorável e podem orientar suspensão. Valores aumentando sugerem ROSC iminente."}
+  ]
+}

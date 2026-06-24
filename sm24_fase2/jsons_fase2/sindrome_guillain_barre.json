@@ -1,0 +1,189 @@
+{
+  "slug": "sindrome_guillain_barre",
+  "titulo": "Síndrome de Guillain-Barré",
+  "especialidade": "NEUROLOGIA",
+  "chapter_subject": "Síndrome de Guillain-Barré — Diagnóstico e Manejo",
+  "chapter_bar": "GUILLAIN-BARRÉ — CVF + IVIG/PLEX",
+  "secoes": [
+    {
+      "tipo": "infobox",
+      "section_title": "DEFINIÇÃO E EPIDEMIOLOGIA",
+      "section_color": "teal",
+      "titulo": "O QUE É SGB",
+      "items": [
+        "Polineuropatia inflamatória aguda autoimune — causa mais comum de paralisia flácida aguda no adulto",
+        "Mecanismo: anticorpos contra gangliosídeos do nervo periférico (mimetismo molecular pós-infeccioso)",
+        "Gatilhos: Campylobacter jejuni (mais comum, 30%), citomegalovírus, EBV, Zika, vacinas (raro)",
+        "Incidência: 1-2/100.000/ano; pico 50-60 anos e adolescentes; 2x mais frequente em homens",
+        "Mortalidade hospitalar: 3-5% (insuficiência respiratória, disautonomia, sepse)"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "DIAGNÓSTICO E URGÊNCIA RESPIRATÓRIA",
+      "title": "SGB — CVF < 20 mL/kg = IOT URGENTE",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Fraqueza flácida ascendente simétrica\n+ arreflexia + LCR (dissociação albumino-citológica)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "CVF (capacidade vital forçada) a cada 4-6h\n+PE max, SpO2, disfagia, disfonia — Rule of 20s", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.43, "w": 150, "h": 24, "text": "CVF <20 mL/kg OU\nPImáx <30 / PEmáx <40\n→ IOT eletiva (antecipada)", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.75, "y": 0.43, "w": 150, "h": 24, "text": "CVF ≥20 mL/kg\nMonitorar a cada 4-6h\nUTI se CVF cai >50% em 24h", "color": "orange", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Imunoglobulina IV 0,4g/kg/d x 5d\nOU plasmaférese x5 (igualmente eficazes)", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CRITÉRIOS DIAGNÓSTICOS — ASBURY/BRIGHTON",
+      "section_color": "navy",
+      "headers": ["Obrigatório (ambos)", "Achados de suporte", "Contraindicam SGB"],
+      "header_colors": ["red", "teal", "orange"],
+      "col_widths": [0.35, 0.35, 0.30],
+      "rows": [
+        ["Fraqueza progressiva dos membros (MMSS e MMII)", "LCR: proteína >45 mg/dL com <10 células (dissociação)", "Nível sensitivo definido (lesão medular)"],
+        ["Hiporreflexia ou arreflexia (na maioria)", "ENMG: polirradiculoneuropatia aguda (desmielinização ou axonal)", "Assimetria marcante"],
+        ["", "Progressão por até 4 semanas", "Poliomielite, vasculite, outras neuropatias"],
+        ["", "Recuperação após platô (semanas-meses)", "Diagnóstico alternativo claro"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "VARIANTES DO GUILLAIN-BARRÉ",
+      "section_color": "orange",
+      "headers": ["Variante", "Características", "Anticorpo"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.46, 0.26],
+      "rows": [
+        ["AIDP (clássica)", "Desmielinizante; mais comum no Ocidente; fraqueza ascendente", "Anti-GM1, Anti-GM2"],
+        ["AMAN/AMSAN", "Axonal; mais comum na Ásia; pós-Campylobacter; pior prognóstico", "Anti-GM1, Anti-GD1a"],
+        ["Miller Fisher", "Oftalmoplegia + ataxia + arreflexia; prognóstico ótimo", "Anti-GQ1b (90%)"],
+        ["Faringocervicobranquial", "Disfagia + disartria + fraqueza facial; risco aspiração", "Anti-GT1a"],
+        ["Bickerstaff", "SNC + SNP: ataxia + oftalmoplegia + alteração consciência", "Anti-GQ1b, anti-GM1"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REGRA DOS 20s — INTUBAÇÃO ELETIVA",
+      "section_color": "red",
+      "titulo": "QUANDO INTUBAR (ANTES DA CRISE)",
+      "items": [
+        "CVF <20 mL/kg (valor crítico absoluto)",
+        "PImáx <30 cmH2O (pressão inspiratória máxima)",
+        "PEmáx <40 cmH2O (pressão expiratória máxima)",
+        "Queda de ≥30% da CVF em 24 horas",
+        "SpO2 <95% em ar ambiente / incapacidade de tossir",
+        "Disfagia grave com risco de aspiração",
+        "Não esperar SpO2 cair — intubar ELETIVAMENTE antes da falência"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "IMUNOGLOBULINA IV vs PLASMAFÉRESE",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "IgIV (Imunoglobulina IV)",
+        "items": [
+          "Dose: 0,4 g/kg/dia IV por 5 dias",
+          "Equivalente à plasmaférese em eficácia",
+          "Mais prático, menos invasivo",
+          "Indicar IgIV se: não deambula, cai rapidamente, VM necessária",
+          "Contraindicação: deficiência de IgA (risco de anafilaxia)",
+          "Monitorar: trombose, IRC (ajuste renal)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Plasmaférese (PLEX)",
+        "items": [
+          "5 sessões em 7-14 dias (ou 4 sessões em SGB leve)",
+          "Remove anticorpos anti-gangliosídeos",
+          "Igualmente eficaz à IgIV",
+          "Pode ser preferida em pacientes com IgA deficiência",
+          "Não combinar IgIV + plasmaférese (sem benefício adicional)",
+          "Complicação: hipotensão, hipocalcemia, infecção do acesso"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "MANEJO NA UTI — ALÉM DA RESPIRAÇÃO",
+      "titulo": "SUPORTE MULTIORGÂNICO",
+      "items": [
+        "Disautonomia (50%): monitorar PA e FC continuamente; evitar mudanças bruscas",
+        "Dor neuropática: gabapentina, pregabalina, tramadol — opioides aumentam disautonomia",
+        "TVP/TEP: heparina profilática (risco alto por imobilidade)",
+        "Nutrição: SNE se disfagia; medir resíduo gástrico (gastroparesia por disautonomia)",
+        "Reabilitação precoce: fisioterapia motora e respiratória assim que estável",
+        "Prognóstico: 85% deambulam em 6 meses; sequela em 15%; recorrência em 2-5%"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com fraqueza ascendente progressiva, arreflexia e dissociação albumino-citológica no LCR (proteína 120 mg/dL, células 3/mm³). Qual diagnóstico e qual parâmetro monitora o risco de intubação?",
+      "alternativas": [
+        "Mielite transversa — nível sensitivo",
+        "Síndrome de Guillain-Barré — CVF (capacidade vital forçada) seriada",
+        "Esclerose múltipla — potenciais evocados",
+        "Botulismo — eletromiografia",
+        "Polimiosite — CPK"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado no LCR é característico da Síndrome de Guillain-Barré?",
+      "alternativas": [
+        "Hipoglicorraquia com pleocitose neutrofílica",
+        "LCR hemorrágico xantocrômico",
+        "Dissociação albumino-citológica (proteína elevada, células normais ou discretamente elevadas)",
+        "Tinta China positiva",
+        "PCR viral positivo para HSV"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Quando está indicada a intubação orotraqueal eletiva no paciente com SGB?",
+      "alternativas": [
+        "Apenas quando SpO2 cai abaixo de 90%",
+        "Quando há febre acima de 38,5°C",
+        "CVF <20 mL/kg, PImáx <30, PEmáx <40, ou queda ≥30% da CVF em 24h",
+        "Quando o paciente não consegue deambular",
+        "Apenas em pacientes acima de 70 anos"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual variante de Guillain-Barré cursa com oftalmoplegia, ataxia e arreflexia, com anticorpo anti-GQ1b positivo?",
+      "alternativas": [
+        "AIDP clássica",
+        "AMAN axonal",
+        "Síndrome de Miller Fisher",
+        "Variante faringocervicobranquial",
+        "Síndrome de Bickerstaff"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o tratamento imunomodulador de primeira linha na SGB grave que não deambula?",
+      "alternativas": [
+        "Corticoide IV em altas doses (metilprednisolona 1g/d)",
+        "Imunoglobulina IV 0,4 g/kg/dia por 5 dias OU plasmaférese",
+        "Ciclofosfamida IV",
+        "Interferon beta",
+        "Rituximab"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "SGB: fraqueza flácida ascendente + arreflexia + dissociação albumino-citológica no LCR. A CVF (capacidade vital forçada) seriada cada 4-6h monitora o risco de falência respiratória. IOT eletiva se CVF <20 mL/kg."},
+    {"resposta": "C", "comentario": "Dissociação albumino-citológica: proteína elevada (>45 mg/dL, frequentemente >100-200) com celularidade normal ou minimamente elevada (<10 células/mm³). Patognomônica mas não presente na 1ª semana em 10-20% dos casos."},
+    {"resposta": "C", "comentario": "Regra dos 20s: CVF <20 mL/kg, PImáx <30, PEmáx <40 = intubar ELETIVAMENTE antes da crise. Não esperar SpO2 cair — hipóxia na SGB surge tardiamente (intercâmbio gasoso normal até falência muscular grave)."},
+    {"resposta": "C", "comentario": "Miller Fisher: tríade oftalmoplegia + ataxia + arreflexia. Anti-GQ1b positivo em 90%. Prognóstico excelente. Pode ter componente de Bickerstaff (SNC envolvido). Não necessariamente precisa de IgIV se leve."},
+    {"resposta": "B", "comentario": "IgIV 0,4 g/kg/d x 5 dias ou plasmaférese (5 sessões): igualmente eficazes e indicados em SGB grave (sem deambulação, VM, progressão rápida). Corticoide NÃO tem benefício em SGB (ao contrário da CIDP)."}
+  ]
+}

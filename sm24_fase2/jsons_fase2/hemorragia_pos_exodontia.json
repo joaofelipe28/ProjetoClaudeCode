@@ -1,0 +1,176 @@
+{
+  "slug": "hemorragia_pos_exodontia",
+  "titulo": "Hemorragia Pós-Exodontia",
+  "especialidade": "ODONTOLOGIA",
+  "chapter_subject": "Sangramento Pós-Extração Dentária — Hemostasia no PS",
+  "chapter_bar": "SANGRAMENTO PÓS-EXTRAÇÃO — COMPRIMIR + HEMOSTASIA LOCAL",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS DE SANGRAMENTO PÓS-EXODONTIA",
+      "section_color": "navy",
+      "headers": ["Categoria", "Causas"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Locais", "Trauma cirúrgico, remanescente de tecido de granulação, fratura óssea/alveolar, vasos lesados"],
+        ["Não remoção do coágulo", "Bochecho vigoroso, sucção, manipulação da ferida pelo paciente"],
+        ["Distúrbios de coagulação", "Hemofilia, von Willebrand, plaquetopenia, hepatopatia, doença renal"],
+        ["Medicamentos", "Anticoagulantes (varfarina, DOACs), antiagregantes (AAS, clopidogrel)"],
+        ["Sistêmicas", "Hipertensão não controlada, leucemia, CIVD"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DO SANGRAMENTO PÓS-EXTRAÇÃO",
+      "title": "SANGRAMENTO — COMPRESSÃO É A PRIMEIRA MEDIDA",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Sangramento no alveolo apos extracao\nAvaliar volume, sinais vitais, historia (anticoagulante?)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "COMPRESSAO LOCAL: gaze dobrada sobre o alveolo\nPaciente morde com forca por 20-30 min ininterruptos", "color": "red", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "Persiste apos compressao:\nHemostatico local\n(esponja de gelatina, celulose,\nacido tranexamico topico)", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Refratario:\nSutura do alveolo\n+ avaliar coagulopatia\n+ corrigir PA", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Investigar causa sistemica: coagulograma, plaquetas, INR\nReverter anticoagulante se sangramento grave", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MÉTODOS DE HEMOSTASIA LOCAL",
+      "section_color": "orange",
+      "headers": ["Método", "Como usar"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Compressão com gaze", "1a medida; morder gaze seca por 20-30 min sem interrupção"],
+        ["Ácido tranexâmico tópico", "Embeber gaze em ácido tranexâmico (solução) e morder; ou bochecho 4-7 dias"],
+        ["Esponja de gelatina (Gelfoam)", "Colocar no alvéolo; matriz para formação do coágulo"],
+        ["Celulose oxidada (Surgicel)", "Hemostático absorvível, colocado no alvéolo"],
+        ["Sutura", "Aproximação das bordas gengivais sobre o alvéolo"],
+        ["Eletrocautério/cera óssea", "Sangramento ósseo persistente (uso odontológico)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PACIENTE ANTICOAGULADO — CONDUTA",
+      "section_color": "red",
+      "titulo": "NÃO SUSPENDER ANTICOAGULANTE DE ROTINA",
+      "items": [
+        "Varfarina com INR <3,5: extração pode ser feita SEM suspender — controle local da hemostasia é suficiente",
+        "Não suspender anticoagulante de rotina para extração simples (risco trombótico > risco de sangramento)",
+        "Ácido tranexâmico tópico (bochecho) reduz sangramento em anticoagulados sem suspender a droga",
+        "Sangramento grave + varfarina: vitamina K + CCP se com risco de vida (avaliar caso a caso)",
+        "DOACs: hemostasia local geralmente eficaz; idarucizumabe/andexanet apenas em sangramento grave",
+        "Hipertensão não controlada: corrigir PA (vasoconstrição inadequada perpetua o sangramento)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ALVEOLITE — DIAGNÓSTICO DIFERENCIAL",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Alveolite Seca (Dry Socket)",
+        "items": [
+          "Perda do coágulo 2-4 dias após a extração (não é sangramento, é dor)",
+          "Dor intensa, irradiada, alvéolo vazio com osso exposto",
+          "Mais comum: terceiro molar inferior, tabagistas, anticoncepcional",
+          "Tratamento: irrigação + curativo com pasta analgésica (eugenol)",
+          "Analgesia + orientação; antibiótico não é necessário de rotina",
+          "Prevenção: evitar fumar, sucção, bochecho vigoroso pós-extração"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Orientações de Alta",
+        "items": [
+          "Morder gaze por 30 min; trocar se encharcar (sem ficar verificando)",
+          "Não cuspir, não bochechar, não fumar, não usar canudo por 24-48h",
+          "Dieta fria/morna e pastosa nas primeiras 24h",
+          "Não manipular o alvéolo com a língua ou dedos",
+          "Repouso, cabeceira elevada ao dormir",
+          "Retornar se: sangramento volumoso persistente, tontura, palidez"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ABORDAGEM NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Compressão local com gaze por 20-30 min ininterruptos é a primeira e mais eficaz medida",
+        "Ácido tranexâmico tópico é muito útil, especialmente em anticoagulados",
+        "Não suspender anticoagulante de rotina — controle local resolve a maioria dos casos",
+        "Investigar coagulopatia se sangramento desproporcional ou recorrente (INR, plaquetas, TTPA)",
+        "Corrigir hipertensão e fatores sistêmicos contribuintes",
+        "Sutura e hemostáticos absorvíveis para sangramento refratário à compressão"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente retorna ao PS com sangramento no alvéolo 2 horas após extração dentária. Qual é a PRIMEIRA medida?",
+      "alternativas": [
+        "Suturar imediatamente o alvéolo",
+        "Compressão local com gaze, mordendo por 20-30 minutos ininterruptos",
+        "Transfundir plaquetas",
+        "Suspender qualquer anticoagulante e aguardar",
+        "Cauterizar com eletrocautério de imediato"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente em uso de varfarina com INR 2,8 necessita de extração dentária simples. Qual é a conduta correta?",
+      "alternativas": [
+        "Suspender a varfarina por 5 dias antes do procedimento",
+        "Realizar a extração SEM suspender a varfarina (INR <3,5), com hemostasia local + ácido tranexâmico",
+        "Substituir varfarina por heparina (bridge) sempre",
+        "Contraindicar a extração até INR <1,5",
+        "Transfundir plasma fresco antes do procedimento"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente com dor intensa 3 dias após extração de terceiro molar, alvéolo vazio com osso exposto e SEM sangramento. Qual é o diagnóstico?",
+      "alternativas": [
+        "Hemorragia pós-exodontia",
+        "Alveolite seca (dry socket) — perda do coágulo",
+        "Abscesso periapical",
+        "Osteomielite mandibular",
+        "Fratura de mandíbula"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual agente, usado topicamente (gaze embebida ou bochecho), é eficaz para controlar sangramento pós-extração, especialmente em pacientes anticoagulados?",
+      "alternativas": [
+        "Adrenalina tópica",
+        "Ácido tranexâmico",
+        "Povidona iodada",
+        "Peróxido de hidrogênio",
+        "Soro fisiológico gelado"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Por que NÃO se deve suspender rotineiramente o anticoagulante para uma extração dentária simples?",
+      "alternativas": [
+        "Porque a suspensão não altera o sangramento",
+        "Porque o risco de evento tromboembólico pela suspensão supera o risco de sangramento, que é controlável com medidas locais",
+        "Porque os anticoagulantes não interferem na hemostasia oral",
+        "Porque a extração não causa sangramento",
+        "Porque a reintrodução do anticoagulante é difícil"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A primeira e mais eficaz medida no sangramento pós-exodontia é a compressão local: gaze dobrada sobre o alvéolo, mordida com firmeza por 20-30 min ininterruptos. Resolve a maioria dos casos. Se persistir: hemostático local, ácido tranexâmico, sutura, e investigação de coagulopatia."},
+    {"resposta": "B", "comentario": "Varfarina com INR <3,5: extração simples pode ser feita SEM suspender o anticoagulante. O risco trombótico da suspensão supera o risco de sangramento, que é controlável com medidas locais (compressão, ácido tranexâmico tópico, esponja hemostática, sutura)."},
+    {"resposta": "B", "comentario": "Alveolite seca (dry socket): dor intensa 2-4 dias após extração (mais comum em 3o molar inferior) por perda/desintegração do coágulo, com osso exposto. Não é sangramento. Tratamento: irrigação + curativo com pasta de eugenol + analgesia. Antibiótico não é necessário de rotina."},
+    {"resposta": "B", "comentario": "Ácido tranexâmico (antifibrinolítico) tópico — gaze embebida na solução ou bochecho 4x/dia por 4-7 dias — controla eficazmente o sangramento pós-extração, particularmente útil em pacientes anticoagulados, permitindo não suspender a anticoagulação sistêmica."},
+    {"resposta": "B", "comentario": "Suspender o anticoagulante para extração simples expõe o paciente a risco de evento tromboembólico (AVC, TEP), que é mais grave que o sangramento — este é previsível e controlável com hemostasia local. Por isso a conduta atual é manter a anticoagulação e otimizar o controle local."}
+  ]
+}

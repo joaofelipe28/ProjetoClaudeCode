@@ -1,0 +1,175 @@
+{
+  "slug": "pericoronarite",
+  "titulo": "Pericoronarite",
+  "especialidade": "ODONTOLOGIA",
+  "chapter_subject": "Pericoronarite — Inflamação do Terceiro Molar",
+  "chapter_bar": "PERICORONARITE — LIMPAR + ANALGESIA + ATB SE SISTÊMICO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "PERICORONARITE — CONCEITOS",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Definição", "Inflamação dos tecidos moles (opérculo gengival) ao redor de um dente parcialmente irrompido"],
+        ["Dente mais afetado", "Terceiro molar inferior (siso) semi-incluso"],
+        ["Mecanismo", "Acúmulo de placa e restos alimentares sob o opérculo → inflamação/infecção"],
+        ["Faixa etária", "Adultos jovens (17-25 anos) — período de erupção dos sisos"],
+        ["Fatores", "Trauma do dente antagonista sobre o opérculo, higiene difícil da região"],
+        ["Flora", "Mista — anaeróbios e estreptococos da cavidade oral"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO E CLÍNICA",
+      "section_color": "orange",
+      "headers": ["Forma", "Clínica", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.44, 0.36],
+      "rows": [
+        ["Aguda localizada", "Dor, edema do opérculo, mau gosto, sem sintomas sistêmicos", "Limpeza local + analgesia"],
+        ["Aguda com sintomas sistêmicos", "Dor + trismo + febre + linfadenopatia + disfagia leve", "Limpeza + ATB + analgesia"],
+        ["Crônica", "Desconforto intermitente, halitose, episódios recorrentes", "Avaliar exodontia do siso"],
+        ["Complicada", "Disseminação fascial, trismo grave, comprometimento de via aérea", "Internação + ATB IV + drenagem"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA PERICORONARITE",
+      "title": "PERICORONARITE — LIMPEZA LOCAL PRIMEIRO",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Dor + edema retromolar + siso semi-incluso\nAvaliar trismo, febre, disfagia, disseminacao", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Limpeza local: irrigacao sob o operculo\ncom SF/clorexidina + remocao de debris", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "Localizada, sem sistemico:\nLimpeza + analgesia (AINE)\nBochechos com clorexidina\nSEM antibiotico", "color": "green", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Sistemica (febre/trismo):\nLimpeza + ATB\namoxicilina ou metronidazol\n+ analgesia", "color": "orange", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Apos resolucao do quadro agudo:\nencaminhar para avaliacao de EXODONTIA do siso\n(tratamento definitivo, previne recorrencia)", "color": "red", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE ALARME — DISSEMINAÇÃO",
+      "section_color": "red",
+      "titulo": "QUANDO ENCAMINHAR COM URGÊNCIA",
+      "items": [
+        "Trismo importante (incapacidade de abrir a boca) — comprometimento do espaço mastigatório",
+        "Disfagia, odinofagia, voz abafada — comprometimento de espaços profundos do pescoço",
+        "Edema cervical, abaulamento de assoalho de boca — risco de angina de Ludwig",
+        "Febre alta, toxemia, taquicardia — infecção sistêmica/sepse",
+        "Comprometimento de via aérea — emergência (internação + via aérea + drenagem)",
+        "Conduta: internação, ATB IV (ampicilina-sulbactam), avaliação buco-maxilo + TC se necessário"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO LOCAL E MEDICAMENTOSO",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Tratamento Local",
+        "items": [
+          "Irrigação sob o opérculo com soro fisiológico ou clorexidina 0,12%",
+          "Remoção de debris alimentares e placa acumulada",
+          "Bochechos com clorexidina 0,12% 2x/dia",
+          "Ajuste oclusal/desgaste do dente antagonista se traumatiza o opérculo",
+          "Operculectomia: remoção do opérculo em casos selecionados",
+          "Higiene oral cuidadosa na região"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Medicação",
+        "items": [
+          "Analgesia: ibuprofeno 600 mg 8/8h (AINE de escolha na dor odontológica)",
+          "ATB apenas se sintomas sistêmicos: amoxicilina 500 mg 8/8h por 7 dias",
+          "Alternativa: metronidazol 400 mg 8/8h (boa cobertura de anaeróbios)",
+          "Alergia à penicilina: clindamicina 300 mg 6/6h",
+          "ATB não substitui a limpeza local nem a exodontia",
+          "Tratamento definitivo: exodontia do siso após resolução aguda"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ABORDAGEM NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Limpeza local (irrigação sob o opérculo) é a base do tratamento",
+        "Analgesia com AINE (ibuprofeno) para a dor",
+        "Antibiótico apenas se houver sintomas sistêmicos (febre, trismo, linfadenopatia, disseminação)",
+        "Avaliar sinais de alarme: trismo grave, disfagia, edema cervical (encaminhar urgente)",
+        "Bochechos com clorexidina 0,12% como adjuvante",
+        "Encaminhar para exodontia do siso após resolução — tratamento definitivo e prevenção"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente de 22 anos com dor retromolar, edema do opérculo sobre o terceiro molar inferior semi-incluso, sem febre nem trismo. Qual é a conduta?",
+      "alternativas": [
+        "Antibiótico oral por 10 dias e exodontia imediata",
+        "Limpeza local (irrigação sob o opérculo) + analgesia com AINE + bochechos com clorexidina; ATB não necessário",
+        "Internação para antibiótico IV",
+        "Exodontia de urgência durante a fase aguda",
+        "Corticoide oral isolado"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual dente é mais frequentemente associado à pericoronarite?",
+      "alternativas": [
+        "Incisivo central superior",
+        "Primeiro pré-molar",
+        "Terceiro molar inferior (siso) semi-incluso",
+        "Canino superior",
+        "Segundo molar superior"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Em qual situação a antibioticoterapia está indicada na pericoronarite?",
+      "alternativas": [
+        "Em todos os casos, sempre",
+        "Apenas quando há sintomas sistêmicos (febre, trismo, linfadenopatia, disseminação)",
+        "Nunca é indicada",
+        "Apenas em pacientes idosos",
+        "Somente após a exodontia"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual é o tratamento DEFINITIVO da pericoronarite recorrente do terceiro molar?",
+      "alternativas": [
+        "Antibioticoterapia contínua",
+        "Exodontia do terceiro molar (após resolução do quadro agudo)",
+        "Bochechos diários permanentes com clorexidina",
+        "Operculectomia repetida",
+        "Não há tratamento definitivo"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente com pericoronarite evolui com trismo grave, disfagia e edema de assoalho de boca. Qual a conduta?",
+      "alternativas": [
+        "Manter tratamento ambulatorial com bochechos",
+        "Internação + antibiótico IV + avaliação buco-maxilo + proteção de via aérea (risco de angina de Ludwig)",
+        "Apenas aumentar a dose do AINE",
+        "Exodontia ambulatorial imediata",
+        "Alta com antibiótico oral"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Pericoronarite aguda localizada (sem sintomas sistêmicos): tratamento é limpeza local (irrigação sob o opérculo, remoção de debris) + analgesia (AINE) + bochechos com clorexidina. Antibiótico NÃO é necessário sem repercussão sistêmica. Encaminhar para exodontia após resolução."},
+    {"resposta": "C", "comentario": "O terceiro molar inferior (siso) semi-incluso é o dente mais associado à pericoronarite. O opérculo gengival que recobre parcialmente o dente acumula placa e restos alimentares, favorecendo a inflamação/infecção. Comum em adultos jovens (17-25 anos)."},
+    {"resposta": "B", "comentario": "Antibiótico na pericoronarite é indicado APENAS quando há sintomas sistêmicos (febre, trismo, linfadenopatia, disseminação). Na forma localizada, a limpeza local resolve. Amoxicilina ou metronidazol são opções. ATB nunca substitui a limpeza local e o tratamento definitivo (exodontia)."},
+    {"resposta": "B", "comentario": "O tratamento definitivo da pericoronarite recorrente é a exodontia do terceiro molar, realizada após a resolução do quadro inflamatório agudo. Remove a causa (opérculo + dente semi-incluso) e previne recorrências. Operculectomia é alternativa em casos selecionados."},
+    {"resposta": "B", "comentario": "Trismo grave + disfagia + edema de assoalho de boca indicam disseminação para espaços fasciais profundos, com risco de angina de Ludwig e comprometimento de via aérea. Conduta: internação, ATB IV (ampicilina-sulbactam), avaliação buco-maxilo, TC cervical e proteção de via aérea."}
+  ]
+}

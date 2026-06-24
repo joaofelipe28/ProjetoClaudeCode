@@ -1,0 +1,174 @@
+{
+  "slug": "abscesso_dentoalveolar",
+  "titulo": "Abscesso Dentoalveolar",
+  "especialidade": "ODONTOLOGIA",
+  "chapter_subject": "Abscesso Odontogênico — Drenagem e Antibioticoterapia",
+  "chapter_bar": "ABSCESSO DENTAL — DRENAR + ATB SE SISTÊMICO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "TIPOS DE ABSCESSO ODONTOGÊNICO",
+      "section_color": "navy",
+      "headers": ["Tipo", "Origem", "Características"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.34, 0.42],
+      "rows": [
+        ["Periapical (dentoalveolar)", "Necrose pulpar (cárie profunda)", "Dor à percussão, edema localizado, dente desvitalizado"],
+        ["Periodontal", "Bolsa periodontal profunda", "Dente vital, edema gengival lateral, mobilidade dental"],
+        ["Pericoronário (pericoronarite)", "Terceiro molar semi-incluso", "Edema retromolar, trismo, mau hálito"],
+        ["Abscesso de espaço fascial", "Disseminação do abscesso primário", "Edema de face/pescoço — risco de via aérea"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DO ABSCESSO DENTOALVEOLAR",
+      "title": "ABSCESSO DENTAL — DRENAGEM É O TRATAMENTO",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Dor + edema + dente com caria/necrose\nAvaliar sinais sistemicos e de disseminacao", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "DRENAGEM e o tratamento principal:\nincisao + drenagem do abscesso OU acesso endodontico", "color": "red", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "Localizado, sem sintomas sistemicos:\nDrenagem + analgesia\nATB NAO necessario\n(controle da fonte)", "color": "green", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Sinais sistemicos\n(febre, celulite, trismo):\nDrenagem + ATB\namoxicilina (ou clinda)", "color": "orange", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Tratamento definitivo do dente: endodontia ou exodontia\nAnalgesia + encaminhar a odontologia/buco-maxilo", "color": "teal", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE GRAVIDADE — DISSEMINAÇÃO FASCIAL",
+      "section_color": "red",
+      "titulo": "QUANDO O ABSCESSO DENTAL VIRA EMERGÊNCIA",
+      "items": [
+        "Angina de Ludwig: celulite bilateral de assoalho de boca → elevação da língua → obstrução de via aérea",
+        "Trismo importante: dificuldade de abrir a boca (espaço mastigatório)",
+        "Disfagia, sialorreia, voz abafada: comprometimento de espaços profundos do pescoço",
+        "Edema periorbitário/proptose: disseminação para seio cavernoso (trombose) — risco de morte",
+        "Febre alta + toxemia + taquicardia: sepse odontogênica",
+        "Conduta: internação + ATB IV + drenagem cirúrgica + proteção de via aérea + TC cervical"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIOTICOTERAPIA — QUANDO E QUAL",
+      "section_color": "orange",
+      "headers": ["Situação", "Antibiótico", "Observações"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.34, 0.36],
+      "rows": [
+        ["Abscesso localizado drenado, sem sistêmico", "NENHUM (apenas drenagem)", "ATB não substitui a drenagem; uso desnecessário gera resistência"],
+        ["Com sinais sistêmicos / celulite", "Amoxicilina 500 mg 8/8h VO 7d", "1a linha; cobre flora oral (estrepto + anaeróbios)"],
+        ["Alergia à penicilina", "Clindamicina 300 mg 6/6h VO", "Boa penetração óssea; cobre anaeróbios"],
+        ["Refratário / grave", "Amoxicilina-clavulanato ou ampicilina-sulbactam IV", "Internação; cobertura ampliada"],
+        ["Sepse / espaço fascial profundo", "Ampicilina-sulbactam IV + drenagem", "Internação + buco-maxilo + via aérea"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "DOR DENTAL NO PS — MANEJO TEMPORÁRIO",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Analgesia",
+        "items": [
+          "AINE: ibuprofeno 600 mg 8/8h (melhor que paracetamol na dor dental)",
+          "Associação: ibuprofeno + paracetamol (sinergia, mais eficaz que opioide)",
+          "Dipirona 1 g 6/6h como alternativa",
+          "Opioide: reservar para dor intensa refratária (codeína)",
+          "Bloqueio anestésico local: alívio temporário de dor intensa no PS",
+          "Compressas: frias na fase aguda, evitar calor (acelera disseminação)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Orientações de Alta",
+        "items": [
+          "Encaminhar à odontologia para tratamento definitivo (endo ou exodontia)",
+          "Higiene oral, bochechos com clorexidina 0,12%",
+          "Retornar se: febre, edema progressivo, dificuldade de engolir/respirar, trismo",
+          "Não usar antibiótico sem drenagem como tratamento isolado",
+          "Concluir o ciclo de ATB se prescrito",
+          "Controle de fatores: diabetes, imunossupressão (pior evolução)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ABORDAGEM NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Drenagem é o tratamento principal — antibiótico é adjuvante, não substitui",
+        "ATB indicado apenas se: sinais sistêmicos, celulite, imunossupressão ou disseminação fascial",
+        "Avaliar via aérea: trismo, disfagia, elevação de língua = emergência (angina de Ludwig)",
+        "Amoxicilina é 1a linha; clindamicina se alergia à penicilina",
+        "TC cervical com contraste se suspeita de espaço fascial profundo",
+        "Encaminhamento odontológico obrigatório para tratamento definitivo do dente"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com abscesso periapical localizado, sem febre, sem celulite, em bom estado geral. Qual é o tratamento principal?",
+      "alternativas": [
+        "Antibiótico oral isolado por 7 dias",
+        "Drenagem do abscesso (incisão ou acesso endodôntico) + analgesia; ATB não é necessário",
+        "Apenas analgésico e observação",
+        "Antibiótico intravenoso e internação",
+        "Corticoide oral para reduzir inflamação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com abscesso dentário e edema bilateral de assoalho de boca, elevação da língua e dificuldade respiratória. Qual é a complicação e a conduta?",
+      "alternativas": [
+        "Pericoronarite — bochecho com clorexidina",
+        "Angina de Ludwig — emergência: internação, ATB IV, drenagem e proteção de via aérea",
+        "Abscesso periodontal simples — drenagem ambulatorial",
+        "Sinusite maxilar — descongestionante",
+        "Cárie profunda — endodontia eletiva"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o antibiótico de primeira linha para abscesso dentoalveolar com sinais sistêmicos em paciente SEM alergias?",
+      "alternativas": [
+        "Ciprofloxacino 500 mg 12/12h",
+        "Amoxicilina 500 mg 8/8h",
+        "Azitromicina 500 mg/dia",
+        "Vancomicina IV",
+        "Metronidazol isolado"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente alérgico à penicilina com abscesso dentário e celulite facial. Qual antibiótico é mais adequado?",
+      "alternativas": [
+        "Amoxicilina-clavulanato",
+        "Ampicilina",
+        "Clindamicina 300 mg 6/6h",
+        "Cefalexina",
+        "Penicilina V oral"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Por que o antibiótico isolado, sem drenagem, é uma conduta inadequada no abscesso dentoalveolar?",
+      "alternativas": [
+        "Porque os antibióticos não atingem a cavidade oral",
+        "Porque o controle da fonte (drenagem da coleção purulenta) é essencial — o ATB sozinho não resolve a coleção e favorece resistência",
+        "Porque o abscesso dentário nunca precisa de antibiótico",
+        "Porque a drenagem é mais barata",
+        "Porque os antibióticos pioram a dor dental"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Abscesso periapical localizado sem repercussão sistêmica: drenagem (incisão e drenagem ou acesso endodôntico) é o tratamento principal — controle da fonte. Antibiótico NÃO é necessário nesses casos (sem febre, sem celulite). Analgesia + encaminhamento odontológico para tratamento definitivo."},
+    {"resposta": "B", "comentario": "Angina de Ludwig: celulite bilateral dos espaços submandibular, sublingual e submentual → elevação e deslocamento posterior da língua → obstrução de via aérea. Emergência: internação, ATB IV (ampicilina-sulbactam), drenagem cirúrgica e proteção de via aérea (IOT precoce ou traqueostomia)."},
+    {"resposta": "B", "comentario": "Amoxicilina 500 mg 8/8h é a 1a linha para abscesso dentário com sinais sistêmicos — cobre a flora oral (estreptococos e anaeróbios). Sempre associada à drenagem. Em casos refratários: amoxicilina-clavulanato. ATB nunca substitui o controle da fonte."},
+    {"resposta": "C", "comentario": "Clindamicina 300 mg 6/6h é a escolha em alérgicos à penicilina — boa penetração óssea e cobertura de anaeróbios da flora oral. Cefalexina e amoxicilina-clavulanato devem ser evitadas pela reatividade cruzada/penicilina. Sempre associar à drenagem."},
+    {"resposta": "B", "comentario": "O controle da fonte (drenagem da coleção purulenta) é o pilar do tratamento de qualquer abscesso. O antibiótico isolado não penetra adequadamente na coleção avascular, não resolve o foco e seleciona resistência. Drenagem + tratamento definitivo do dente são essenciais."}
+  ]
+}

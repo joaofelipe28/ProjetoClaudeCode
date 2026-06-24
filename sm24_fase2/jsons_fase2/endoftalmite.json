@@ -1,0 +1,174 @@
+{
+  "slug": "endoftalmite",
+  "titulo": "Endoftalmite",
+  "especialidade": "OFTALMOLOGIA",
+  "chapter_subject": "Endoftalmite — Infecção Intraocular Grave",
+  "chapter_bar": "ENDOFTALMITE — EMERGÊNCIA — ATB INTRAVÍTREO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DA ENDOFTALMITE",
+      "section_color": "navy",
+      "headers": ["Tipo", "Contexto", "Agentes"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.36, 0.38],
+      "rows": [
+        ["Pós-operatória aguda", "Dias após cirurgia (catarata, mais comum) <6 semanas", "S. epidermidis (mais comum), S. aureus, estreptococos"],
+        ["Pós-operatória crônica", ">6 semanas após cirurgia, indolente", "P. acnes, fungos, S. epidermidis"],
+        ["Pós-traumática", "Trauma penetrante com corpo estranho", "Bacillus cereus (grave), S. epidermidis, fungos"],
+        ["Endógena (hematogênica)", "Disseminação de foco à distância (sepse, endocardite, abscesso)", "Candida (fungo), bactérias Gram-negativas, S. aureus"],
+        ["Associada a bolha filtrante", "Pós-trabeculectomia (glaucoma)", "Estreptococos, H. influenzae"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO — EMERGÊNCIA OFTALMOLÓGICA",
+      "section_color": "red",
+      "titulo": "DOR + PERDA VISUAL + HIPÓPIO APÓS CIRURGIA/TRAUMA",
+      "items": [
+        "Dor ocular intensa (de início ou piora) após cirurgia ou trauma ocular",
+        "Perda visual rápida e progressiva",
+        "Hipópio: nível de pus na câmara anterior (achado característico)",
+        "Olho vermelho, edema palpebral, quemose, secreção",
+        "Vitreíte: turvação do vítreo à fundoscopia (reflexo vermelho diminuído/ausente)",
+        "Tempo é crítico — ATB intravítreo IMEDIATO; atraso = perda irreversível da visão"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA ENDOFTALMITE",
+      "title": "ENDOFTALMITE — PUNÇÃO + ATB INTRAVÍTREO JÁ",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Dor + perda visual + hipopio apos cirurgia/trauma\nReconhecer: EMERGENCIA oftalmologica", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Oftalmo URGENTE: puncao vitrea (cultura) +\nATB INTRAVITREO empirico imediato", "color": "red", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "ATB intravitreo:\nvancomicina (Gram+)\n+ ceftazidima (Gram-)\nbase do tratamento", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Vitrectomia (VVPP):\nse visao = percepcao de luz\nou pior (estudo EVS)\nou nao resposta", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Endogena: tratar foco sistemico + ATB/antifungico sistemico\nEnfungica (Candida): anfotericina/voriconazol intravitreo", "color": "green", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO — ANTIBIÓTICOS INTRAVÍTREOS",
+      "section_color": "orange",
+      "headers": ["Droga", "Espectro", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.34, 0.40],
+      "rows": [
+        ["Vancomicina intravítrea", "Gram-positivos (S. epidermidis, S. aureus)", "Base do tratamento empírico"],
+        ["Ceftazidima intravítrea", "Gram-negativos (Pseudomonas)", "Associada à vancomicina"],
+        ["Amicacina (alternativa)", "Gram-negativos", "Se alergia à ceftazidima (risco de toxicidade retiniana)"],
+        ["Anfotericina B / voriconazol", "Fungos (Candida, Aspergillus)", "Endoftalmite fúngica (endógena, pós-traumática)"],
+        ["Corticoide intravítreo", "Reduz inflamação", "Uso controverso, após cobertura ATB"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "EVS (ENDOPHTHALMITIS VITRECTOMY STUDY)",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Conduta Baseada na Visão",
+        "items": [
+          "Visão = percepção de luz (PL) ou pior: VITRECTOMIA imediata + ATB intravítreo",
+          "Visão melhor que PL (conta dedos+): punção vítrea + ATB intravítreo (sem vitrectomia inicial)",
+          "ATB sistêmico não mostrou benefício adicional no EVS para endoftalmite pós-catarata",
+          "ATB intravítreo é o pilar (atinge concentração eficaz no local)",
+          "Reavaliação em 48h — repetir ATB intravítreo ou vitrectomia se piora"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Prevenção e Endógena",
+        "items": [
+          "Profilaxia em cirurgia de catarata: cefuroxima intracameral reduz endoftalmite",
+          "Antissepsia com povidona-iodo no campo cirúrgico",
+          "Endoftalmite endógena: investigar foco (hemocultura, eco, exame físico)",
+          "Candidemia: fundoscopia para rastrear envolvimento ocular",
+          "Tratar foco sistêmico + ATB/antifúngico sistêmico + intravítreo",
+          "Bacillus cereus pós-trauma: evolução fulminante — prognóstico reservado"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ABORDAGEM NO PS",
+      "titulo": "NÃO PERDER TEMPO",
+      "items": [
+        "Endoftalmite é emergência oftalmológica — encaminhamento e tratamento IMEDIATOS",
+        "Suspeitar em dor + perda visual + hipópio após cirurgia ocular (sobretudo catarata) ou trauma",
+        "Tratamento: punção vítrea para cultura + ATB intravítreo empírico (vancomicina + ceftazidima)",
+        "Vitrectomia se visão = percepção de luz ou pior (EVS)",
+        "Endoftalmite endógena: buscar e tratar o foco infeccioso sistêmico",
+        "Suspeitar de fungo (Candida) em endógena, pós-trauma e usuário de drogas IV"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente operado de catarata há 3 dias retorna com dor ocular intensa, perda visual e hipópio. Qual é o diagnóstico e a conduta?",
+      "alternativas": [
+        "Conjuntivite pós-operatória — colírio antibiótico",
+        "Endoftalmite pós-operatória aguda — emergência: punção vítrea + antibiótico intravítreo imediato",
+        "Glaucoma agudo — pilocarpina",
+        "Uveíte anterior — corticoide tópico",
+        "Edema de córnea — solução hipertônica"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o agente mais comum da endoftalmite pós-operatória aguda (pós-catarata)?",
+      "alternativas": [
+        "Pseudomonas aeruginosa",
+        "Staphylococcus epidermidis (coagulase-negativo)",
+        "Candida albicans",
+        "Bacillus cereus",
+        "Streptococcus pneumoniae"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Segundo o EVS (Endophthalmitis Vitrectomy Study), em qual situação a vitrectomia imediata está indicada?",
+      "alternativas": [
+        "Em todos os casos de endoftalmite",
+        "Quando a acuidade visual é de percepção de luz (PL) ou pior",
+        "Apenas em endoftalmite fúngica",
+        "Quando há hipópio pequeno",
+        "Somente após 7 dias de antibiótico intravítreo"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual é o esquema empírico de antibiótico INTRAVÍTREO para endoftalmite bacteriana?",
+      "alternativas": [
+        "Penicilina + gentamicina",
+        "Vancomicina + ceftazidima",
+        "Azitromicina isolada",
+        "Ciprofloxacino tópico apenas",
+        "Metronidazol + ampicilina"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente com candidemia deve ser submetido a fundoscopia porque:",
+      "alternativas": [
+        "A Candida sempre causa catarata",
+        "Pode haver endoftalmite endógena por disseminação hematogênica da Candida, exigindo tratamento específico",
+        "A fundoscopia confirma a candidemia",
+        "É necessário para liberar antibiótico sistêmico",
+        "A Candida causa descolamento de retina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Endoftalmite pós-operatória aguda: dor + perda visual + hipópio dias após cirurgia (catarata é a mais associada). Emergência oftalmológica — punção vítrea (cultura) + ATB intravítreo empírico imediato (vancomicina + ceftazidima). Vitrectomia se visão = PL ou pior. Atraso = cegueira."},
+    {"resposta": "B", "comentario": "Staphylococcus epidermidis (coagulase-negativo), da flora da própria pálpebra/conjuntiva, é o agente mais comum da endoftalmite pós-operatória aguda. Outros: S. aureus, estreptococos. A profilaxia com cefuroxima intracameral reduz a incidência."},
+    {"resposta": "B", "comentario": "EVS: vitrectomia imediata indicada quando a acuidade visual é percepção de luz (PL) ou pior — melhora os desfechos visuais nesses casos graves. Visão melhor que PL (conta dedos+): punção vítrea + ATB intravítreo sem vitrectomia inicial. ATB sistêmico sem benefício na pós-catarata."},
+    {"resposta": "B", "comentario": "O esquema empírico intravítreo combina vancomicina (cobre Gram-positivos, incluindo S. epidermidis e S. aureus) + ceftazidima (cobre Gram-negativos, incluindo Pseudomonas). Amicacina é alternativa à ceftazidima, mas tem risco de toxicidade retiniana."},
+    {"resposta": "B", "comentario": "A candidemia pode disseminar para o olho (endoftalmite endógena por Candida), com lesões coriorretinianas e vitreíte. A fundoscopia é recomendada para rastrear envolvimento ocular, que exige tratamento específico (antifúngico sistêmico +/- intravítreo) e prolongamento do tratamento."}
+  ]
+}

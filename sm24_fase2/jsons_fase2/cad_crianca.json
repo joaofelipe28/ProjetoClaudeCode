@@ -1,0 +1,173 @@
+{
+  "slug": "cad_crianca",
+  "titulo": "Cetoacidose Diabética na Criança",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "CAD Pediátrica — Manejo e Prevenção do Edema Cerebral",
+  "chapter_bar": "CAD PEDIÁTRICA — HIDRATAR DEVAGAR + INSULINA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO E CLASSIFICAÇÃO DE GRAVIDADE",
+      "section_color": "navy",
+      "headers": ["Critério", "Leve", "Moderada", "Grave"],
+      "header_colors": ["gray", "navy", "teal", "red"],
+      "col_widths": [0.28, 0.24, 0.24, 0.24],
+      "rows": [
+        ["pH venoso", "7,2-7,3", "7,1-7,2", "<7,1"],
+        ["Bicarbonato (mEq/L)", "10-15", "5-10", "<5"],
+        ["Glicemia", ">200 mg/dL", ">200 mg/dL", ">200 mg/dL"],
+        ["Cetonemia/cetonúria", "Presente", "Presente", "Presente"],
+        ["Estado de consciência", "Alerta", "Alerta/sonolento", "Sonolento/coma"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "EDEMA CEREBRAL — COMPLICAÇÃO MAIS TEMIDA",
+      "section_color": "red",
+      "titulo": "PRINCIPAL CAUSA DE MORTE NA CAD PEDIÁTRICA",
+      "items": [
+        "Incidência: 0,5-1% das CAD em crianças; mortalidade 20-25%; sequelas neurológicas em sobreviventes",
+        "Fatores de risco: <5 anos, CAD nova, hidratação rápida demais, queda rápida da osmolaridade, uso de bicarbonato",
+        "Sinais de alarme: cefaleia, bradicardia, hipertensão, alteração de consciência, vômitos, incontinência",
+        "Prevenção: reidratação LENTA (48h), não usar bicarbonato de rotina, queda gradual da glicemia",
+        "Tratamento: manitol 0,5-1 g/kg IV OU NaCl 3% 3-5 mL/kg + elevar cabeceira + reduzir taxa de fluidos",
+        "Não atrasar tratamento aguardando exame de imagem se sinais clínicos"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA CAD PEDIÁTRICA",
+      "title": "CAD CRIANÇA — HIDRATAR, INSULINA, K+",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Glicemia >200 + pH <7,3 + cetose\nMonitorar: glicemia 1/1h, eletrolitos 2-4h, neuro horária", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Expansao inicial: SF 0,9% 10-20 mL/kg em 1-2h (se choque)\nReposicao em 48h — NAO hidratar rapido (edema cerebral)", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "Insulina regular 0,05-0,1 U/kg/h IV\nINICIAR 1-2h APOS fluidos\n(nunca bolus em criança)", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Potássio: repor se K <5,5\n+ diurese presente\nAdicionar glicose ao soro\nquando glicemia <250-300", "color": "red", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Vigiar edema cerebral: cefaleia, bradicardia, HAS\nTransicao para SC quando pH >7,3 + HCO3 >15 + cetose resolvida", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "POTÁSSIO NA CAD — MANEJO CUIDADOSO",
+      "section_color": "orange",
+      "headers": ["K+ sérico", "Conduta"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["K+ <3,3 mEq/L", "REPOR K+ ANTES de iniciar insulina (insulina agrava hipocalemia → arritmia)"],
+        ["K+ 3,3-5,5 mEq/L", "Adicionar 20-40 mEq/L de K+ ao soro de manutenção (com diurese presente)"],
+        ["K+ >5,5 mEq/L", "NAO repor inicialmente; reavaliar em 2h (insulina move K+ para célula)"],
+        ["Observação", "K+ corporal total está SEMPRE depletado na CAD, mesmo com K+ sérico normal/alto"],
+        ["Monitoração", "ECG + K+ a cada 2-4h; insulina e correção da acidose reduzem K+ sérico"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ARMADILHAS E CUIDADOS",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Não Fazer",
+        "items": [
+          "NAO usar bicarbonato de rotina (associado a edema cerebral)",
+          "NAO fazer bolus de insulina em criança (queda brusca de glicemia/osmolaridade)",
+          "NAO hidratar rapidamente (déficit reposto em 48h, não em horas)",
+          "NAO reduzir glicemia >90 mg/dL/h (queda rápida = risco de edema)",
+          "NAO suspender insulina ao normalizar glicemia (manter com glicose no soro até resolver cetose)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Fazer",
+        "items": [
+          "Calcular déficit (5-10% do peso) e repor em 48h",
+          "Manter glicemia 150-250 enquanto corrige cetose (adicionar glicose ao soro)",
+          "Monitorar neurológico de hora em hora (Glasgow pediátrico)",
+          "Investigar fator desencadeante: infecção, omissão de insulina, debute",
+          "Transição IV → SC: aplicar insulina SC 30 min antes de parar a IV"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CRITÉRIOS DE RESOLUÇÃO E ALTA",
+      "titulo": "CAD RESOLVIDA",
+      "items": [
+        "pH venoso >7,3 E bicarbonato >15 mEq/L",
+        "Cetonemia/cetonúria em resolução (beta-hidroxibutirato <1 mmol/L)",
+        "Paciente alerta, tolerando dieta oral",
+        "Transição para insulina subcutânea (basal-bolus)",
+        "Educação em diabetes: contagem de carboidratos, aplicação, hipoglicemia",
+        "Acompanhamento endocrinologia pediátrica + suporte familiar"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Criança de 6 anos com CAD. Glicemia 480, pH 7,05, K+ 3,0 mEq/L. Qual é a sequência correta de tratamento?",
+      "alternativas": [
+        "Iniciar insulina em bolus imediatamente",
+        "Repor potássio antes de iniciar insulina (K+ <3,3 com risco de arritmia) + expansão volêmica",
+        "Administrar bicarbonato de sódio para corrigir a acidose",
+        "Hidratação rápida com 40 mL/kg em 1 hora",
+        "Insulina SC e dieta oral imediata"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Durante o tratamento de CAD, criança de 5 anos desenvolve cefaleia, bradicardia e rebaixamento de consciência. Qual é a complicação e a conduta?",
+      "alternativas": [
+        "Hipoglicemia — administrar glicose",
+        "Edema cerebral — manitol 0,5-1 g/kg IV (ou NaCl 3%) + reduzir taxa de fluidos + elevar cabeceira",
+        "Hipocalemia — repor potássio",
+        "Choque hipovolêmico — expandir com SF",
+        "Convulsão febril — diazepam"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que o bicarbonato de sódio NAO deve ser usado de rotina na CAD pediátrica?",
+      "alternativas": [
+        "Porque piora a acidose metabólica",
+        "Porque está associado a maior risco de edema cerebral e acidose paradoxal do SNC, sem benefício comprovado",
+        "Porque causa hipernatremia grave",
+        "Porque interfere com a ação da insulina",
+        "Porque não corrige a cetose"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Em quanto tempo o déficit hídrico deve ser reposto na CAD pediátrica para reduzir o risco de edema cerebral?",
+      "alternativas": [
+        "Em 4-6 horas",
+        "Em 12 horas",
+        "Em 48 horas (reposição lenta e gradual)",
+        "Em 24 horas com soro hipotônico",
+        "O mais rápido possível"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Em relação ao potássio na CAD, qual afirmação é correta?",
+      "alternativas": [
+        "O potássio corporal total está aumentado",
+        "O potássio sérico reflete o potássio corporal total",
+        "O potássio corporal total está SEMPRE depletado, mesmo com K+ sérico normal ou alto, e cai com a insulina",
+        "Não há necessidade de monitorar o potássio durante o tratamento",
+        "A insulina aumenta o potássio sérico"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "K+ <3,3 mEq/L: repor potássio ANTES da insulina. A insulina move K+ para dentro da célula, agravando hipocalemia → arritmia fatal. Sequência: expansão volêmica + corrigir K+ <3,3 → depois insulina (0,05-0,1 U/kg/h, sem bolus em criança)."},
+    {"resposta": "B", "comentario": "Edema cerebral: principal causa de morte na CAD pediátrica. Sinais: cefaleia, bradicardia + HAS (tríade de Cushing), rebaixamento. Conduta imediata: manitol 0,5-1 g/kg IV ou NaCl 3% 3-5 mL/kg + reduzir fluidos + elevar cabeceira. Não aguardar TC se clínica evidente."},
+    {"resposta": "B", "comentario": "Bicarbonato na CAD pediátrica: associado a maior risco de edema cerebral e acidose paradoxal do SNC (CO2 atravessa a barreira hematoencefálica). Sem benefício em desfechos. A acidose resolve com fluidos + insulina. Reservar apenas para pH <6,9 com instabilidade hemodinâmica (controverso)."},
+    {"resposta": "C", "comentario": "Reposição do déficit em 48h (lenta e gradual): a queda rápida da osmolaridade plasmática causa edema cerebral. Calcular déficit (5-10% do peso) + manutenção, dividido em 48h. Expansão inicial apenas se choque (10-20 mL/kg de SF)."},
+    {"resposta": "C", "comentario": "Na CAD, o K+ corporal total está SEMPRE depletado (perda renal e por vômitos), mesmo quando o K+ sérico está normal ou elevado (acidose desloca K+ para fora da célula). Com a insulina e correção da acidose, o K+ sérico cai — por isso a reposição cuidadosa e monitoração frequente são essenciais."}
+  ]
+}

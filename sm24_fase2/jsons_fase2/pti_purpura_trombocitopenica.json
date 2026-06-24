@@ -1,0 +1,175 @@
+{
+  "slug": "pti_purpura_trombocitopenica",
+  "titulo": "PTI — Púrpura Trombocitopênica Imune",
+  "especialidade": "HEMATOLOGIA",
+  "chapter_subject": "PTI — Diagnóstico Diferencial e Manejo da Emergência",
+  "chapter_bar": "PTI — EXCLUIR OUTRAS CAUSAS + TRATAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL DE PLAQUETOPENIA",
+      "section_color": "navy",
+      "headers": ["Causa", "Pistas", "Diferencial chave"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["PTI (imune)", "Criança: pós-viral; adulto: crônico, mulher 20-40 anos; sem anemia hemolítica", "Diagnóstico de exclusão: sem causa identificada"],
+        ["PTT (microangiopático)", "Tríade: plaquetopenia + anemia hemolítica + sinais neurológicos — DEFICIÊNCIA ADAMTS13", "Esquizócitos no esfregaço, LDH elevado, urgência"],
+        ["SHU", "Criança: diarreia + E. coli O157:H7; adulto: atípico; IRA predominante", "Esquizócitos + IRA + diarreia sanguinolenta"],
+        ["TAHIT tipo 2", "Heparina há 5-14 dias + queda PLQ >50% + trombose", "Anti-PF4 positivo, trombose paradoxal"],
+        ["Pseudoplaquetopenia", "PLQ baixo em EDTA, normal em citrato", "Repetir coleta em citrato; aglutininas"],
+        ["Drogas (quinidina, vancomicina, HBPM)", "Temporal com início do medicamento", "Suspender droga; recuperação em 7-10 dias"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PTI — CLASSIFICAÇÃO E TRATAMENTO",
+      "section_color": "orange",
+      "headers": ["Fase", "Definição", "Tratamento de escolha"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.18, 0.36, 0.46],
+      "rows": [
+        ["Aguda", "<3 meses de duração (maioria das crianças)", "Corticoide ou IGIV; maioria resolve espontaneamente"],
+        ["Persistente", "3-12 meses sem remissão espontânea", "Corticoide + 2ª linha: rituximabe ou agonista de TPO"],
+        ["Crônica", ">12 meses — maioria adultos; PLQ cronicamente <30k", "Esplenectomia OU rituximabe OU agonistas TPO (eltrombopag, romiplostim)"],
+        ["Refratária", "Sem resposta a esplenectomia + 2 outras linhas", "Fostamatinibe, avatrombopag, incluir em ensaio clínico"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA PTI AGUDA NO PS",
+      "title": "PTI — SANGRAMENTO + PLAQUETAS",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "PLQ baixa isolada + sem causa identificada\nEsfregaço: ausência de esquizócitos, aglomerados", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Sangramento com risco de vida (SNC, GI, pulmonar)\nOU PLQ <10k + sangramento mucoso", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "URGÊNCIA:\nIGIV 1 g/kg + prednisona 1-2 mg/kg\n± anti-D (se Rh+, não esplenectomizado)\nConcentrado de plaquetas se risco de vida", "color": "red", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "PLQ >30k, assintomático:\nObservação OU prednisona oral\nSem necessidade de transfusão de PLQ", "color": "green", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Excluir: H. pylori, HIV, HVC, VEB, LES, antifosfolípide\nNão usar AINE; evitar procedimentos invasivos; restrição de atividade", "color": "teal", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PTT — EMERGÊNCIA HEMATOLÓGICA",
+      "section_color": "red",
+      "titulo": "NÃO CONFUNDIR PTI COM PTT",
+      "items": [
+        "PTT: anemia hemolítica microangiopática + plaquetopenia + neurológico + renal + febre (pêntade)",
+        "Esquizócitos no esfregaço: achado mais importante para diagnóstico",
+        "Causa: deficiência de ADAMTS13 (hereditária ou anticorpo inibidor)",
+        "NÃO transfundir plaquetas — agrava trombose microvascular",
+        "TRATAMENTO: plasmaferese diária (PFC como fluido de reposição) URGENTE — início em <4h",
+        "Adicionar rituximabe se anticorpo ADAMTS13 positivo (PTT imune)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CORTICOIDE E IGIV NA PTI",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Prednisona",
+        "items": [
+          "Dose: 1-2 mg/kg/dia (máx 80 mg) VO por 2-4 semanas",
+          "Resposta em 50-75% — mas maioria recidiva ao reduzir",
+          "Dexametasona 40 mg/d × 4 dias: alternativa de pulso",
+          "Efeitos adversos: hiperglicemia, HAS, osteoporose, úlcera",
+          "Suplementar cálcio + vit D se uso >3 semanas",
+          "Não usar por >3 meses (imunossupressão prolongada)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "IGIV (Imunoglobulina IV)",
+        "items": [
+          "Dose: 1 g/kg/dia × 1-2 dias",
+          "Resposta mais rápida que corticoide (72-96h)",
+          "Mecanismo: bloqueio de receptores Fc dos macrófagos",
+          "Indicação: sangramento grave, pré-procedimento urgente, PLQ <10k com síndrome hemorrágica",
+          "Custo elevado; resposta temporária (semanas)",
+          "Alternativa: anti-D 75 µg/kg (apenas RH+ não esplenectomizado)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "WORKUP INICIAL DA PTI",
+      "titulo": "NÃO PULAR",
+      "items": [
+        "Hemograma completo com reticulócitos e esfregaço do sangue periférico",
+        "Coombs direto (excluir AIHA associada = síndrome de Evans)",
+        "Sorologias: HIV, HCV, HBV, CMV, H. pylori (Ag fecal ou IgG)",
+        "FAN/Anti-DNA: excluir LES como causa secundária",
+        "Anticoagulante lúpico + anticardiolipina (síndrome antifosfolípide)",
+        "Gravidez (beta-hCG): trombocitopenia gestacional ou PTI associada à gravidez"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Criança de 5 anos com petéquias difusas após infecção viral há 2 semanas. PLQ 8.000/µL, Hb 12 g/dL, leucócitos normais, esfregaço sem esquizócitos. Qual diagnóstico e conduta?",
+      "alternativas": [
+        "PTT — plasmaferese urgente",
+        "Leucemia — biópsia de medula óssea",
+        "PTI aguda — corticoide e/ou IGIV; monitorar sangramento",
+        "CIVD — crioprecipitado + PFC",
+        "SHU — antibiótico para E. coli O157"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Adulta de 28 anos com PLQ 12.000/µL, anemia com Hb 7 g/dL, LDH 980, bilirrubinas elevadas e esquizócitos no esfregaço. Qual diagnóstico deve ser investigado IMEDIATAMENTE?",
+      "alternativas": [
+        "PTI crônica — iniciar prednisona",
+        "Aplasia medular — biópsia de medula",
+        "PTT — plasmaferese urgente",
+        "CIVD — PFC e crioprecipitado",
+        "TAHIT — suspender heparina"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que NÃO se deve transfundir plaquetas em paciente com PTT (Púrpura Trombocitopênica Trombótica)?",
+      "alternativas": [
+        "Porque a transfusão não eleva as plaquetas nessa doença",
+        "Porque as plaquetas transfundidas pioram a trombose microvascular — 'jogar combustível no fogo'",
+        "Porque o custo é proibitivo",
+        "Porque a maioria resolve espontaneamente em <24h",
+        "Porque a transfusão de plaquetas causa aloimunização"
+      ]
+    },
+    {
+      "source": "SES-RJ / Adaptada",
+      "enunciado": "Qual é a terapia de primeira linha para PTI com PLQ <10k e sangramento oral ativo?",
+      "alternativas": [
+        "Esplenectomia de urgência",
+        "Prednisona isolada 1-2 mg/kg/dia",
+        "IGIV 1 g/kg + prednisona (resposta rápida — IGIV eleva PLQ em 72-96h)",
+        "Rituximabe 375 mg/m²",
+        "Agonista de trombopoietina (eltrombopag)"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Por que H. pylori deve ser rastreado em pacientes com PTI?",
+      "alternativas": [
+        "Porque H. pylori causa plaquetopenia por toxina direta",
+        "Porque a erradicação do H. pylori melhora as plaquetas em 50-60% dos casos (mecanismo imune)",
+        "Porque antibiótico tem efeito anti-inflamatório sobre plaquetas",
+        "Porque H. pylori causa sangramento gástrico que confunde o diagnóstico",
+        "Porque H. pylori é causa frequente de CIVD"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "PTI aguda pós-viral em criança: plaquetopenia isolada + sem causa identificada + sem esquizócitos + após infecção viral. PLQ 8.000 com petéquias = sintomático → corticoide (prednisona 1-2 mg/kg) e/ou IGIV. 80% resolvem espontaneamente em crianças. Monitorar sangramento grave."},
+    {"resposta": "C", "comentario": "PTT: anemia hemolítica microangiopática (esquizócitos + LDH elevado + Coombs negativo) + trombocitopenia. Urgência absoluta — plasmaferese em <4h reduz mortalidade de 90% para <15%. Transfusão de plaquetas é contraindicada (agrava microtrombose)."},
+    {"resposta": "B", "comentario": "PTT: plaquetas consumidas por microtrombos de multímeros de VWF (sem ADAMTS13 para clivá-los). Transfundir plaquetas fornece substrato para mais trombose. Tratamento correto: plasmaferese (remove multímeros VWF e anticorpo ADAMTS13) + PFC (repõe ADAMTS13)."},
+    {"resposta": "C", "comentario": "PTI com sangramento ativo + PLQ muito baixa: IGIV (1 g/kg) tem resposta mais rápida que prednisona (72-96h vs 5-7d). Associar prednisona para efeito mais prolongado. Transfundir PLQ somente em sangramento com risco de vida imediato (efeito temporário na PTI — destruição imune)."},
+    {"resposta": "B", "comentario": "H. pylori estimula produção de anticorpos IgG que têm reatividade cruzada com antígenos plaquetários (molecular mimicry). Erradicação com amoxicilina + claritromicina + omeprazol (14 dias) melhora plaquetas em 50-60% dos casos de PTI H. pylori-positivo — deve ser sempre rastreado e tratado."}
+  ]
+}

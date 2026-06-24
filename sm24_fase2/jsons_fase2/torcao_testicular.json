@@ -1,0 +1,176 @@
+{
+  "slug": "torcao_testicular",
+  "titulo": "Torção Testicular",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Torção de Testículo — Emergência Urológica",
+  "chapter_bar": "TORCÃO TESTICULAR — CIRURGIA EM <6H",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CARACTERÍSTICAS CLÍNICAS",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.26, 0.74],
+      "rows": [
+        ["Epidemiologia", "Bimodal: neonato (torção extravaginal) e 12-18 anos (perinatal e adolescente); rara >30 anos"],
+        ["Mecanismo", "Rotação do testículo no interior da túnica vaginal — compromete vascularização (artéria testicular)"],
+        ["Deformidade em sino (bell-clapper)", "Fixação anômala da túnica vaginal — testículo 'flutua' livremente; causa predisposição"],
+        ["Clínica clássica", "Dor testicular aguda + náuseas/vômitos + ausência de febre (inicialmente); pode ter dor abdominal baixa"],
+        ["Sinal de Prehn negativo", "Elevação do testículo NAO alivia a dor — diferente da epididimite (Prehn positivo)"],
+        ["Reflexo cremastérico", "Ausente no lado afetado — toque na coxa nao eleva o testículo (sens. 99%)"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ALGORITMO — DICA TESTICULAR AGUDA",
+      "title": "DOR TESTICULAR AGUDA — TORÇÃO ATÉ PROVA EM CONTRÁRIO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Dor testicular aguda de início súbito\nNáuseas + testículo elevado/horizontal + sem febre", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 215, "h": 22, "text": "Reflexo cremastérico: ausente = torcão provável\nUS-Doppler: ausência de fluxo (mas NAO atrasar cirurgia!)", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "Alta suspeita clínica:\nNAO aguardar US!\nCirurgia imediata\n<6h preserva testículo", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Duvida clínica:\nUS-Doppler urgente\n(fluxo ausente = torcão;\nmantido nao exclui)", "color": "orange", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Exploração cirúrgica: destorcer + orquiopexia bilateral\nOrquiectomia: testículo inviável (escuro, sem vitalidade apos destorcao)", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "JANELA DE SALVAMENTO DO TESTÍCULO",
+      "section_color": "red",
+      "titulo": "TAXA DE SALVAMENTO X TEMPO DE TORCAO",
+      "items": [
+        "<6 horas: salvamento em >90% dos casos",
+        "6-12 horas: salvamento em 50-70%",
+        "12-24 horas: salvamento em <50%",
+        ">24 horas: salvamento em <10% — quase sempre orquiectomia",
+        "NAO perder tempo com exames se suspeita forte — cirurgia imediata",
+        "Destorção manual no PS: temporária — cirurgia obrigatória mesmo se bem-sucedida"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL",
+      "section_color": "teal",
+      "headers": ["Diagnóstico", "Diferencial chave"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Epididimite aguda", "Febre + disúria + início gradual; Prehn positivo; US: fluxo aumentado; >20 anos"],
+        ["Torcão de apêndice testicular", "Dor localizada no polo superior; 'ponto azul' visível; adolescente; US: apêndice torcido"],
+        ["Hérnia inguinal encarcerada", "Massa inguinal palpável, nao redutível; dor colicky; irradiada para escroto"],
+        ["Orquite viral (caxumba)", "Parotidite associada; bilateral possível; adoles/adulto jovem nao vacinado"],
+        ["Trauma escrotal", "Histórico de trauma; US: hematoma; hematocele (sangue envolvendo testículo)"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CONDUTA CIRÚRGICA E ORQUIOPEXIA",
+      "section_color": "orange",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Exploração Cirúrgica",
+        "items": [
+          "Via: escrotal bilateral (sempre explorar contralateral)",
+          "Destorcão e avaliação de vitalidade por 5-10 min",
+          "Testículo viável (rosado após destorcão): orquiopexia com 3 pontos nao absorvíveis",
+          "Testículo inviável (escuro, sem recuperação): orquiectomia",
+          "Prótese testicular: pode ser inserida no mesmo ato ou eletivamente",
+          "Contralateral: orquiopexia bilateral SEMPRE (anatomia bell-clapper bilateral)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Manobra de Destorção Manual",
+        "items": [
+          "Indicada no PS como medida temporária enquanto aguarda cirurgia",
+          "Rotação do testículo 'como abrindo um livro' — 180o para fora",
+          "Pode precisar de 360-540o (1,5-3 voltas) para completa destorcão",
+          "Sinais de sucesso: alívio da dor, testículo desce ao polo inferior",
+          "IMPORTANTE: cirurgia obrigatória mesmo se destorcão bem-sucedida",
+          "Em 1/3 dos casos a torcão é sentido oposto — se piorar: girar para o outro lado"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "NAO ERRAR — PONTOS-CHAVE",
+      "titulo": "TESTÍCULO AGUDO",
+      "items": [
+        "Jovem + dor testicular aguda + reflexo cremastérico ausente = torcão testicular até prova em contrário",
+        "US-Doppler: pode mostrar fluxo presente mesmo com torcão (risco de falso negativo) — clínica primeiro",
+        "NAO aguardar exames se quadro típico — cirurgia imediata = testículo salvo",
+        "Orquiopexia bilateral: obrigatória — anomalia de fixação é bilateral",
+        "Febre + gradual + Prehn positivo = epididimite — mas NUNCA tratar como epididimite sem certeza",
+        "Torcão neonatal: extravaginal, frequentemente ao nascer ou intraútero — dor menos evidente"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Adolescente de 15 anos com dor testicular esquerda aguda há 3 horas, náuseas, testículo elevado e reflexo cremastérico ausente. Qual é a conduta?",
+      "alternativas": [
+        "US-Doppler urgente antes de qualquer conduta",
+        "ATB para epididimite e reavaliação em 24h",
+        "Exploração cirúrgica imediata sem aguardar US",
+        "Analgesia e observação por 2h",
+        "Beta-hCG para excluir tumor"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Intraoperatoriamente, o testículo após destorcão permanece escuro após 10 minutos. Qual é a conduta?",
+      "alternativas": [
+        "Aguardar mais 30 minutos — o testículo pode se recuperar",
+        "Orquiectomia — testículo inviável; inserir prótese se desejo do paciente",
+        "Orquiopexia assim mesmo — mesmo necrótico, preservar o testículo",
+        "Injetar solução salina intratesitcular",
+        "Fechar sem intervenção adicional"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que a orquiopexia contralateral deve ser realizada no mesmo ato cirúrgico?",
+      "alternativas": [
+        "Para prevenir atrofia testicular pós-torcão",
+        "Porque a anomalia anatômica (bell-clapper deformity) é bilateral — mesmo risco de torcão no testículo contralateral",
+        "Para colher biópsia do testículo contralateral",
+        "Para equilibrar o peso dos testículos",
+        "Porque a lei brasileira exige bilateralidade"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual é o achado clínico com maior sensibilidade para torcão testicular?",
+      "alternativas": [
+        "Dor escrotal com início abrupto",
+        "Reflexo cremastérico AUSENTE (sensibilidade ~99%)",
+        "Testículo elevado",
+        "Sinal de Prehn negativo",
+        "Ausência de febre"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Em qual faixa de tempo após o início da torcão a taxa de salvamento testicular é >90%?",
+      "alternativas": [
+        "Até 24 horas",
+        "Até 12 horas",
+        "Até 6 horas",
+        "Até 3 horas somente",
+        "A taxa e sempre a mesma independente do tempo"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Reflexo cremastérico ausente + dor aguda + testículo elevado = alta suspeita de torcão. NAO aguardar US — exploração cirúrgica imediata. Cada hora de atraso reduz drasticamente a viabilidade. US pode ser normal em 20% das torcões (fluxo diminuído mas presente)."},
+    {"resposta": "B", "comentario": "Testículo inviável após destorcão (escuro, sem recuperação de cor em 5-10 min, sem turgência): orquiectomia para evitar orquite autoimune e infecção. Prótese salina pode ser inserida no mesmo ato ou eletivamente se paciente/família aceitar. Contralateral: orquiopexia obrigatória."},
+    {"resposta": "B", "comentario": "Bell-clapper deformity é bilateral em 40-80% dos casos — testículo contralateral tem o mesmo risco anatômico de torcão futura. Orquiopexia contralateral preventiva no mesmo ato protege o testículo sadio com risco mínimo de complicação. Padrao de cuidado em todas as diretrizes."},
+    {"resposta": "B", "comentario": "Reflexo cremastérico: toque na coxa medial superior eleva o testículo (arco cremastérico). Na torcão: nervo e muscular cremástere comprometidos — reflexo ausente. Sensibilidade ~99% para torcão. Especificidade ~66% (pode estar ausente em epididimite grave). Principal sinal clínico."},
+    {"resposta": "C", "comentario": "Janela terapêutica: <6h = salvamento >90%; 6-12h = 50-70%; 12-24h = <50%; >24h = <10%. Por isso, torcão testicular é EMERGÊNCIA CIRÚRGICA. Qualquer dúvida: cirurgia — um testículo explorado desnecessariamente e um testículo salvo valem mais do que um testículo perdido por atraso."}
+  ]
+}

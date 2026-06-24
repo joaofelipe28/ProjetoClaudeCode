@@ -1,0 +1,176 @@
+{
+  "slug": "sepse_neonatal",
+  "titulo": "Sepse Neonatal",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Sepse Neonatal Precoce e Tardia — Diagnóstico e Tratamento",
+  "chapter_bar": "SEPSE NEONATAL — ATB EMPÍRICO IMEDIATO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "SEPSE PRECOCE vs TARDIA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Precoce (<72h)", "Tardia (>72h)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.39, 0.39],
+      "rows": [
+        ["Início", "<72h de vida (geralmente <24h)", ">72h de vida (até 28 dias ou mais)"],
+        ["Transmissão", "Vertical (canal de parto/intraútero)", "Horizontal (nosocomial, comunidade)"],
+        ["Agentes", "Streptococcus do grupo B (GBS), E. coli, Listeria", "Staphylococcus (coag-neg, aureus), Gram-neg, fungos"],
+        ["Fatores de risco", "RPMO >18h, febre materna, GBS+, corioamnionite, prematuridade", "Cateter central, VM prolongada, nutrição parenteral, internação"],
+        ["Foco", "Pneumonia, bacteremia, meningite", "Meningite, infecção de cateter, ITU, pele"],
+        ["ATB empírico", "Ampicilina + gentamicina", "Considerar vancomicina + cefepima/aminoglicosídeo"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUADRO CLÍNICO — SINAIS INESPECÍFICOS",
+      "section_color": "red",
+      "titulo": "NEONATO 'NÃO VAI BEM' = SEPSE ATÉ PROVA EM CONTRÁRIO",
+      "items": [
+        "Instabilidade térmica: hipotermia (mais comum que febre no RN) ou febre",
+        "Respiratório: taquipneia, gemência, retração, apneia, cianose",
+        "Cardiovascular: taquicardia, bradicardia, má perfusão, hipotensão (sinal tardio)",
+        "Neurológico: letargia, irritabilidade, hipotonia, convulsão, fontanela abaulada",
+        "Gastrointestinal: recusa alimentar, vômitos, distensão abdominal, resíduo gástrico",
+        "Outros: icterícia precoce, petéquias, hipoglicemia/hiperglicemia, acidose metabólica"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA SEPSE NEONATAL",
+      "title": "SEPSE NEONATAL — CULTURAS + ATB EM 1H",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "RN com sinais de sepse OU fatores de risco maternos\nAvaliacao imediata: sinais vitais, glicemia, perfusao", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Sepsis workup: hemocultura + hemograma + PCR\n+ liquor (meningite em 25%) + urocultura (tardia)", "color": "teal", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "ATB EMPIRICO em <1h:\nPrecoce: ampicilina + gentamicina\nNAO aguardar resultado\nde culturas", "color": "red", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Suporte:\nVentilatorio se necessario\nExpansao volemica (SF 10 mL/kg)\nGlicose, vasopressor se choque", "color": "orange", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Reavaliar em 48-72h com culturas\nDescalonar ou ajustar conforme antibiograma\nDuracao: 7-10d (bacteremia) ou 14-21d (meningite)", "color": "green", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIOTICOTERAPIA — ESQUEMAS",
+      "section_color": "orange",
+      "headers": ["Situação", "ATB empírico", "Observações"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.36, 0.38],
+      "rows": [
+        ["Sepse precoce", "Ampicilina + gentamicina", "Cobre GBS, E. coli, Listeria"],
+        ["Sepse tardia (comunidade)", "Ampicilina + gentamicina ou cefotaxima", "Considerar cobertura ampliada"],
+        ["Sepse tardia (nosocomial)", "Vancomicina + cefepima ou aminoglicosídeo", "Cobre S. aureus/coag-neg + Gram-neg resistente"],
+        ["Meningite confirmada", "Ampicilina + cefotaxima (doses meníngeas)", "Não usar ceftriaxona em RN (desloca bilirrubina)"],
+        ["Suspeita de fungo (UTIN, prematuro)", "Adicionar anfotericina B ou fluconazol", "Cândida em prematuros com cateter/NPT"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "GBS E PREVENÇÃO",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Streptococcus do Grupo B (GBS)",
+        "items": [
+          "Principal agente de sepse precoce no RN a termo",
+          "Rastreio materno: cultura vaginal/retal com 35-37 semanas",
+          "Profilaxia intraparto: penicilina G IV se GBS+ ou fatores de risco",
+          "Indicações de profilaxia: GBS+, bacteriúria por GBS, filho anterior com doença por GBS",
+          "Fatores: RPMO >18h, febre intraparto >38oC, trabalho de parto prematuro",
+          "Profilaxia adequada reduz sepse precoce por GBS em ~80%"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Cuidado com Ceftriaxona",
+        "items": [
+          "Ceftriaxona é CONTRAINDICADA no RN ictérico (<28 dias)",
+          "Desloca a bilirrubina da albumina → risco de kernicterus",
+          "Também: precipita com cálcio IV (risco de êmbolo)",
+          "Usar cefotaxima como alternativa de cefalosporina de 3a geração no RN",
+          "Gentamicina: monitorar função renal e níveis séricos",
+          "Punção lombar: indicada em RN com hemocultura positiva ou sinais neurológicos"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "EXAMES NA SUSPEITA DE SEPSE NEONATAL",
+      "titulo": "SEPSIS WORKUP",
+      "items": [
+        "Hemocultura: padrão-ouro (antes do ATB, mas não atrasar o ATB se difícil)",
+        "Hemograma completo: relação I/T (imaturos/totais) >0,2 sugere infecção; neutropenia é mau sinal",
+        "PCR e procalcitonina: seriadas (1 valor isolado tem baixo VPP; PCR sobe em 6-12h)",
+        "Punção lombar: meningite acompanha 25% das sepses; sempre se hemocultura+ ou sinais neurológicos",
+        "Urocultura: na sepse tardia (por punção suprapúbica ou cateterismo)",
+        "Glicemia, gasometria, eletrólitos: avaliar repercussão sistêmica"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "RN com 12 horas de vida, mãe com GBS positivo sem profilaxia adequada, apresenta hipotermia, gemência e recusa alimentar. Qual conduta?",
+      "alternativas": [
+        "Observação e reavaliação em 24h",
+        "Sepsis workup (culturas) + ATB empírico imediato com ampicilina + gentamicina",
+        "Apenas hemograma e aguardar resultado antes de qualquer ATB",
+        "Iniciar antibiótico oral",
+        "Aquecer e alimentar, sem necessidade de investigação"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o principal agente etiológico da sepse neonatal precoce no RN a termo?",
+      "alternativas": [
+        "Staphylococcus aureus",
+        "Streptococcus do grupo B (GBS)",
+        "Pseudomonas aeruginosa",
+        "Candida albicans",
+        "Staphylococcus coagulase-negativo"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que a ceftriaxona deve ser EVITADA no recém-nascido ictérico?",
+      "alternativas": [
+        "Porque é nefrotóxica no RN",
+        "Porque desloca a bilirrubina da albumina, aumentando o risco de kernicterus",
+        "Porque não atravessa a barreira hematoencefálica",
+        "Porque causa hipoglicemia",
+        "Porque não cobre o GBS"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual é a profilaxia intraparto recomendada para gestante com cultura positiva para GBS?",
+      "alternativas": [
+        "Azitromicina oral",
+        "Penicilina G (ou ampicilina) intravenosa durante o trabalho de parto",
+        "Ceftriaxona intramuscular dose única",
+        "Metronidazol vaginal",
+        "Nenhuma profilaxia é necessária"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Em RN com hemocultura positiva para sepse, qual exame complementar é mandatório por sua frequente associação?",
+      "alternativas": [
+        "Ecocardiograma",
+        "Punção lombar (meningite acompanha ~25% das sepses neonatais)",
+        "Tomografia de crânio",
+        "Ultrassom abdominal",
+        "Eletroencefalograma"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "RN com sinais de sepse (hipotermia, gemência, recusa) + fator de risco (GBS+ sem profilaxia adequada): emergência. Sepsis workup (hemocultura, hemograma, PCR, considerar liquor) + ATB EMPÍRICO imediato (ampicilina + gentamicina) em <1h, sem aguardar culturas. Sinais no RN são inespecíficos e a deterioração é rápida."},
+    {"resposta": "B", "comentario": "Streptococcus do grupo B (GBS) é o principal agente da sepse neonatal precoce no RN a termo. Transmissão vertical pelo canal de parto. Outros: E. coli, Listeria monocytogenes. Profilaxia intraparto com penicilina reduz a incidência em ~80%."},
+    {"resposta": "B", "comentario": "Ceftriaxona desloca a bilirrubina dos sítios de ligação da albumina → aumenta a bilirrubina livre → risco de kernicterus (encefalopatia bilirrubínica) no RN ictérico. Também precipita com cálcio IV. Usar cefotaxima como cefalosporina de 3a geração alternativa no neonato."},
+    {"resposta": "B", "comentario": "Profilaxia intraparto para GBS: penicilina G IV (ou ampicilina) durante o trabalho de parto, idealmente >=4h antes do nascimento. Indicada em GBS+, bacteriúria por GBS, filho anterior com doença invasiva por GBS, ou fatores de risco (RPMO >18h, febre, prematuridade) sem cultura."},
+    {"resposta": "B", "comentario": "Punção lombar é mandatória em RN com hemocultura positiva, pois a meningite acompanha ~25% das sepses neonatais e exige ATB em doses meníngeas por tempo prolongado (14-21 dias). Também indicada quando há sinais neurológicos ou deterioração clínica."}
+  ]
+}

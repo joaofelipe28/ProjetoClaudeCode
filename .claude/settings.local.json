@@ -69,7 +69,15 @@
       "Bash(python3 sm24_gerador/build_apostila.py jsons_fase2/gengivoestomatite_herpetica.json --validate-only --outdir outputs)",
       "Bash(python3 -)",
       "Bash(python3 sm24_gerador/build_apostila.py jsons_fase2/gengivoestomatite_herpetica.json --outdir outputs)",
-      "Bash(sips -s format png outputs/apostila_gengivoestomatite_herpetica.pdf --out /tmp/gengivo_p1.png)"
+      "Bash(sips -s format png outputs/apostila_gengivoestomatite_herpetica.pdf --out /tmp/gengivo_p1.png)",
+      "mcp__d08a11bb-f82d-470e-acaf-664c193b738a__copy_file",
+      "Bash(extract-text \"/Users/joaofelipescheidt/Downloads/SM24_Protocolos \\(1\\).xlsx\")",
+      "Bash(python3 build_apostila.py --validate ../jsons_fase2/parada_cardiorrespiratoria_acls.json ../jsons_fase2/sincope_ps.json ../jsons_fase2/sindrome_coronariana_aguda.json ../jsons_fase2/tamponamento_cardiaco.json ../jsons_fase2/anafilaxia.json ../jsons_fase2/sepse_choque_septico.json ../jsons_fase2/intoxicacoes_exogenas.json ../jsons_fase2/meningite_encefalite_adulto.json ../jsons_fase2/antibioticoterapia_empirica.json ../jsons_fase2/hiv_infeccoes_oportunistas.json)",
+      "Bash(sips -s format png /Users/joaofelipescheidt/ProjetoClaudeCode/sm24_fase2/outputs/apostila_meningite_encefalite_adulto.pdf --out /tmp/meningite_p1.png)",
+      "Bash(python3 build_apostila.py --validate-only --outdir ../outputs ../jsons_fase2/osteomielite.json)",
+      "Bash(python3 build_apostila.py --validate-only --outdir ../outputs ../jsons_fase2/torcao_testicular.json)",
+      "Bash(python3 build_apostila.py --outdir ../outputs ../jsons_fase2/endoftalmite.json)",
+      "Bash(python3 -c \"import pypdf; r=pypdf.PdfReader\\('../outputs/apostila_endoftalmite.pdf'\\); txt=''.join\\(p.extract_text\\(\\) or '' for p in r.pages\\); print\\('endoftalmite ■ =', txt.count\\(chr\\(9632\\)\\)\\)\")"
     ]
   }
 }

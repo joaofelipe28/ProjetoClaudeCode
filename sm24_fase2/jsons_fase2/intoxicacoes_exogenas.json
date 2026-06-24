@@ -1,0 +1,181 @@
+{
+  "slug": "intoxicacoes_exogenas",
+  "titulo": "Intoxicações Exógenas — Abordagem Geral",
+  "especialidade": "CLÍNICA MÉDICA",
+  "chapter_subject": "Intoxicações Exógenas — Abordagem no PS",
+  "chapter_bar": "INTOXICAÇÃO — TOXIDROME E ANTÍDOTO",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM INICIAL — INTOXICAÇÃO",
+      "title": "INTOXICAÇÃO — ABC PRIMEIRO",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 210, "h": 22, "text": "Via aérea (IOT se Glasgow ≤8), O2, acesso venoso\nGlicemia capilar, ECG 12D, monitorar", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 210, "h": 22, "text": "Identificar toxidrome clínico\n(exame físico: pupilas, FC, PA, temperatura, pele, intestino)", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.42, "w": 155, "h": 26, "text": "ANTÍDOTO ESPECÍFICO?\nVer tabela de antídotos\nAdministrar o mais precoce possível", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.75, "y": 0.42, "w": 155, "h": 26, "text": "DESCONTAMINAÇÃO?\nCarvão ativado 1g/kg se <1-2h\nLavagem gástrica: casos selecionados", "color": "orange", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 210, "h": 22, "text": "Suporte clínico: convulsão (BZD), hipertermia, PA\nCVS-ICT/Disque-Intoxicação 0800-722-6001", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TOXIDROMES — RECONHECER PELO EXAME",
+      "section_color": "navy",
+      "headers": ["Toxidrome", "Pupilas", "FC/PA/Temp", "Clínica", "Causa"],
+      "header_colors": ["gray", "navy", "teal", "orange", "red"],
+      "col_widths": [0.20, 0.12, 0.18, 0.28, 0.22],
+      "rows": [
+        ["Simpaticomimético", "Midríase", "↑FC/↑PA/↑T", "Agitação, tremor, convulsão, sudorese", "Cocaína, anfetamina, efedrina"],
+        ["Colinérgico (SLUDGE)", "Miose", "↓FC/↓PA/normal", "Sialorreia, lacrimejamento, broncoespasmo, diarreia, vômitos, bradicardia", "Organofosforados, carbamates"],
+        ["Anticolinérgico", "Midríase", "↑FC/↑PA/↑T", "Pele seca quente, bexiga retida, agitação, delírio, rubor", "Atropina, ATC, anti-H1, cogumelos"],
+        ["Opioide", "Miose intensa", "↓FC/↓PA/↓T", "Depressão respiratória, coma, pele fria, resposta à naloxona", "Morfina, heroína, codeína, metadona"],
+        ["Sedativo-hipnótico", "Midríase/normal", "↓FC/↓PA/↓T", "Sedação, ataxia, coma, sem miose, resposta parcial ao flumazenil (BZD)", "BZD, barbitúricos, GHB, álcool"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTÍDOTOS PRINCIPAIS — REFERÊNCIA RÁPIDA",
+      "section_color": "orange",
+      "headers": ["Tóxico", "Antídoto", "Dose"],
+      "header_colors": ["red", "navy", "teal"],
+      "col_widths": [0.30, 0.30, 0.40],
+      "rows": [
+        ["Opioide (morfina, heroína)", "Naloxona", "0,4-2 mg IV/IM/IN; repetir 2-3 min; infusão se metadona"],
+        ["Benzodiazepínico", "Flumazenil", "0,2 mg IV, repetir 0,1 mg até 1 mg (cuidado: convulsão)"],
+        ["Organofosforado", "Atropina (sulfato)", "2-4 mg IV a cada 5-10 min até secar secreções"],
+        ["Paracetamol", "N-acetilcisteína (NAC)", "150 mg/kg IV em 60 min, depois manutenção por 21h"],
+        ["Metanol/etilenoglicol", "Fomepizol (ou etanol IV)", "15 mg/kg IV; diálise se grave"],
+        ["Tricíclico (ATC)", "Bicarbonato de sódio", "1-2 mEq/kg IV se QRS >100ms ou arritmia"],
+        ["Intoxicação digitálica", "Anticorpos anti-digoxina (Fab)", "Dose = carga estimada / 0,5 (mg)"],
+        ["Warfarina / Anti-vit K", "Vitamina K + CCP/PFC", "Vitamina K 10 mg IV + CCP 25-50 UI/kg se sangramento grave"],
+        ["Metabissulfito, CN (CN-)", "Hidroxicobalamina (Cyanokit)", "5g IV em 15 min; indicado em intoxicação por fumaça"],
+        ["Ferro", "Deferoxamina", "15 mg/kg/h IV; se ferritina >500 + sintomas"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DESCONTAMINAÇÃO — INDICAÇÕES E LIMITES",
+      "section_color": "red",
+      "titulo": "CARVÃO ATIVADO E LAVAGEM GÁSTRICA",
+      "items": [
+        "Carvão ativado 1g/kg (máx 50-100g) VO/SNG: eficaz se ingestão <1-2h, via aérea protegida, sem íleo",
+        "NÃO para: hidrocarbonetos, metais pesados, álcoois, cáusticos, lítio, ferro (não adsorve)",
+        "Lavagem gástrica: raramente indicada (risco de aspiração); casos selecionados <1h, tóxico perigoso",
+        "Catárticos: NÃO usar (sem benefício, risco de distúrbio eletrolítico)",
+        "Irrigação intestinal (polietilenoglicol): pacotes lentos de liberação, drogas de corpo (body packer)",
+        "Diurese forçada: ácidos fracos (salicilatos) e bases fracas (anfetaminas) — alcalinizar/acidificar urina"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "INTOXICAÇÃO POR ORGANOFOSFORADO — URGÊNCIA",
+      "section_color": "purple",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "SLUDGE + Nicotínico",
+        "items": [
+          "S — Sialorreia (salivação excessiva)",
+          "L — Lacrimejamento",
+          "U — Urinary (incontinência urinária)",
+          "D — Defecação (diarreia)",
+          "G — GI (cólicas abdominais)",
+          "E — Emesis (vômitos)",
+          "+ miose + broncospasmo + bradicardia"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Tratamento Organofosforado",
+        "items": [
+          "Atropina: 2-4 mg IV a cada 5-10 min até secar secreções (não pela FC)",
+          "Pode precisar de centenas de miligramas",
+          "Pralidoxima (2-PAM): 1-2 g IV em 15-30 min (reativa AChE — dar cedo)",
+          "Benzodiazepinico: convulsões",
+          "Remover roupas, lavar pele (contaminação dérmico-inalatória)",
+          "UTI; risco de paralisia respiratória tardia (síndrome intermediária)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PARACETAMOL — MAIOR CAUSA DE FALÊNCIA HEPÁTICA",
+      "titulo": "PROTOCOLO NAC",
+      "items": [
+        "Suspeitar sempre: tentativa de suicídio em jovem, dose >150 mg/kg ou >7,5g em adulto",
+        "Nível sérico 4h após ingestão → nomograma de Rumack-Matthew",
+        "N-acetilcisteína (NAC): iniciar se <8h da ingestão ou nível acima da linha de tratamento",
+        "Protocolo 21h IV: 150 mg/kg em 60 min → 50 mg/kg em 4h → 100 mg/kg em 16h",
+        "Monitorar: transaminases, INR, creatinina, glicemia",
+        "Insuficiência hepática fulminante: critérios de King's College → transplante"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Qual toxidrome cursa com miose, bradicardia, broncoespasmo, sialorreia e incontinência urinária?",
+      "alternativas": [
+        "Simpaticomimético (cocaína)",
+        "Opioide (morfina)",
+        "Anticolinérgico (atropina)",
+        "Colinérgico (organofosforado)",
+        "Sedativo-hipnótico (benzodiazepínico)"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com intoxicação por organofosforado (pesticida). A dose de atropina deve ser titulada pelo seguinte parâmetro:",
+      "alternativas": [
+        "Frequência cardíaca >100 bpm",
+        "Ressecamento de secreções brônquicas e redução do broncoespasmo",
+        "Normalização da pressão arterial",
+        "Desaparecimento da miose",
+        "Temperatura corporal ≤37,5°C"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o antídoto para intoxicação grave por paracetamol?",
+      "alternativas": [
+        "Flumazenil",
+        "Naloxona",
+        "N-acetilcisteína (NAC)",
+        "Atropina",
+        "Fomepizol"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Em qual situação o carvão ativado é CONTRAINDICADO para descontaminação gastrointestinal?",
+      "alternativas": [
+        "Ingestão de paracetamol há 45 minutos",
+        "Ingestão de benzodiazepínico há 30 minutos",
+        "Ingestão de produtos cáusticos (ácidos/bases fortes)",
+        "Ingestão de carbamazepina há 1 hora",
+        "Ingestão de digoxina há 1 hora"
+      ]
+    },
+    {
+      "source": "UFPR / Adaptada",
+      "enunciado": "Paciente com overdose de tricíclico (amitriptilina) apresenta QRS largo >120 ms e hipotensão. Qual é a medida farmacológica de PRIMEIRA LINHA?",
+      "alternativas": [
+        "Flumazenil 0,2 mg IV",
+        "Naloxona 0,4 mg IV",
+        "Bicarbonato de sódio 1-2 mEq/kg IV",
+        "Lidocaína IV antiarrítmica",
+        "Amiodarona 300 mg IV"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "D", "comentario": "Toxidrome colinérgico (SLUDGE + muscarinico + nicotínico): miose, bradicardia, broncoespasmo, sialorreia, incontinência. Causa: organofosforados, carbamatos. Antídoto: atropina."},
+    {"resposta": "B", "comentario": "Atropina nos organofosforados é titulada pelo ressecamento das secreções brônquicas e alívio do broncoespasmo — NÃO pela FC. A taquicardia sinusal pura não é parâmetro de tratamento. Pode-se usar centenas de miligramas."},
+    {"resposta": "C", "comentario": "N-acetilcisteína (NAC) é o antídoto do paracetamol, repondo glutationa e prevenindo a formação do metabólito hepatotóxico (NAPQI). Iniciar se ingestão <8h OU nível sérico acima da linha de tratamento no nomograma."},
+    {"resposta": "C", "comentario": "Carvão ativado é contraindicado em: cáusticos (aumenta risco de perfuração + sem eficácia), hidrocarbonetos, metais pesados, lítio, ferro, álcoois. Não adsorve esses compostos e pode piorar o manejo endoscópico."},
+    {"resposta": "C", "comentario": "Bicarbonato de sódio (1-2 mEq/kg IV) é o tratamento de 1ª linha na cardiotoxicidade por tricíclico: alcaliniza o sangue e reverte o bloqueio dos canais de sódio. Alvo: pH sérico 7,50-7,55; reduz QRS e melhora hipotensão."}
+  ]
+}

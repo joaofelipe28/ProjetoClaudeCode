@@ -1,0 +1,175 @@
+{
+  "slug": "civd",
+  "titulo": "CIVD — Coagulação Intravascular Disseminada",
+  "especialidade": "HEMATOLOGIA",
+  "chapter_subject": "CIVD — Diagnóstico e Manejo",
+  "chapter_bar": "CIVD — TRATAR CAUSA + SUPORTE",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO — ESCORE ISTH",
+      "section_color": "navy",
+      "headers": ["Exame", "Resultado", "Pontuação ISTH"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.38, 0.34],
+      "rows": [
+        ["Plaquetas", ">100k | 50-100k | <50k", "0 | 1 | 2"],
+        ["D-dímero / produtos de fibrina", "Não elevado | elevado moderado | muito elevado", "0 | 2 | 3"],
+        ["Tempo de protrombina (TP)", "<3s prolongado | 3-6s | >6s", "0 | 1 | 2"],
+        ["Fibrinogênio", ">1 g/L | ≤1 g/L", "0 | 1"],
+        ["Escore ≥5 = CIVD manifesta", "Escore 4 = CIVD suspeita", "Escore <4 = não sugere CIVD"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CAUSAS DE CIVD",
+      "section_color": "orange",
+      "titulo": "CIVD É SEMPRE SECUNDÁRIA A UMA CAUSA",
+      "items": [
+        "Sepse/choque séptico — causa mais comum (especialmente Gram-negativos)",
+        "Trauma grave / TCE com exposição de tecido cerebral rico em fator tissular",
+        "Neoplasias: leucemia promielocítica aguda (LMA-M3), adenocarcinomas",
+        "Complicações obstétricas: DPPNI, embolia por líquido amniótico, retenção de feto morto",
+        "Transfusão incompatível, hemólise maciça",
+        "Mordida de cobra (peçonha com atividade pró-coagulante)"
+      ],
+      "accent": "orange"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA CIVD",
+      "title": "CIVD — CAUSA + SUPORTE HEMOSTÁTICO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "CIVD suspeita: sangramento difuso + coagulopatia\nLaboratório: plaquetas, TP, TTPA, fibrinogênio, D-dímero", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "TRATAR A CAUSA: ATB se sepse, parto se obstétrica\nSuporte hemodinâmico: cristaloides, vasopressor se necessário", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "CIVD hemorrágica\nPLQ <50k: transfundir concentrado\nFibrinogênio <1,5: crioprecipitado\nTP/TTPA >1,5×: PFC", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "CIVD trombótica\n(microtrombo, necrose)\nHeparina profilática\nSe LMA-M3: ATRA urgente", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Monitorar: plaquetas, fibrinogênio, TP a cada 4-6h\nAcido tranexâmico SOMENTE se hiperfibrinólise dominante", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRANSFUSÃO NA CIVD — LIMIARES",
+      "section_color": "teal",
+      "headers": ["Componente", "Indicação", "Dose"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.42, 0.30],
+      "rows": [
+        ["Concentrado de plaquetas (CP)", "Sangrando com PLQ <50k OU assintomático com PLQ <20k", "1 CP por 10 kg (adulto: 4-6 unidades)"],
+        ["Plasma fresco congelado (PFC)", "TP ou TTPA >1,5× VN + sangramento", "10-15 mL/kg (3-4 unidades)"],
+        ["Crioprecipitado", "Fibrinogênio <1,5 g/L + sangramento ativo", "1-1,5 unidades/10 kg (10 unidades)"],
+        ["Concentrado de hemácias", "Hb <7 g/dL (8 se coronariopata, sintomático)", "1 unidade → esperar Hb antes de repetir"],
+        ["Vitamina K", "Se TP prolongado por deficiência (hepatopatia)", "10 mg IV em 20 min"],
+        ["Ácido tranexâmico", "SOMENTE hiperfibrinólise documentada (trauma, pós-parto)", "1 g IV em 10 min dentro de 3h do evento"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "LMA-M3 E CIVD — URGÊNCIA ONCOLÓGICA",
+      "section_color": "red",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "LPA (Leucemia Promielocítica)",
+        "items": [
+          "LMA-M3: risco de CIVD fatal por grânulos promielocíticos",
+          "Diagnóstico: esfregaço + PML-RARα (t15;17)",
+          "ATRA (ácido all-trans-retinóico) 45 mg/m²/d — URGENTE",
+          "ATRA inicia hiperfibrinólise antes de melhorar — suporte hemostático intensivo",
+          "Fibrinogênio: manter >1,5 g/L com crioprecipitado",
+          "Plaquetas: manter >50k durante indução"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Monitoramento e Prognóstico",
+        "items": [
+          "Mortalidade da CIVD grave: 40-80% (depende da causa)",
+          "Melhor prognóstico: obstétrica (causa removível); pior: sepse grave",
+          "Colher: fibrinogênio, D-dímero, TP, TTPA, plaquetas a cada 4-6h",
+          "Gasometria + lactato: perfusão tissular (microtrombo)",
+          "Sem papel para heparina em doses plenas na CIVD hemorrágica",
+          "Profilaxia de TVP: heparina subcutânea quando sangramento controlado"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CIVD — PONTOS-CHAVE",
+      "titulo": "NÃO ESQUECER",
+      "items": [
+        "CIVD é SEMPRE secundária — tratar a causa é o pilar do tratamento",
+        "Escore ISTH ≥5: CIVD manifesta; repetir a cada 4-6h para monitorar",
+        "D-dímero alto + plaquetas baixas + fibrinogênio baixo = tríade da CIVD",
+        "NÃO transfundir profilaticamente sem sangramento ativo (exceto PLQ <20k)",
+        "LMA-M3: iniciar ATRA imediatamente — não esperar mielograma",
+        "Ácido tranexâmico: apenas hiperfibrinólise dominante (não usar em CIVD trombótica)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente séptico com PLQ 45k, fibrinogênio 0,8 g/L, TP alargado 2× e D-dímero muito elevado. Qual é o escore ISTH e a conduta?",
+      "alternativas": [
+        "Escore 4 — aguardar evolução sem intervenção",
+        "Escore 6 — CIVD manifesta; tratar sepse + transfundir crioprecipitado + PFC + concentrado de plaquetas",
+        "Escore 3 — apenas monitorar",
+        "Não é CIVD — pedir biópsia de medula óssea",
+        "Escore 5 — apenas antibiótico, sem transfusão"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "A causa mais comum de CIVD no adulto hospitalizado é:",
+      "alternativas": [
+        "Leucemia promielocítica aguda",
+        "Transfusão incompatível",
+        "Sepse / choque séptico",
+        "Eclâmpsia grave",
+        "Trauma hepático contuso"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente com CIVD hemorrágica ativa. Qual componente deve ser transfundido prioritariamente para repor fibrinogênio?",
+      "alternativas": [
+        "Plasma fresco congelado (PFC)",
+        "Concentrado de plaquetas",
+        "Crioprecipitado",
+        "Albumina 20%",
+        "Vitamina K IV"
+      ]
+    },
+    {
+      "source": "SES-RJ / Adaptada",
+      "enunciado": "Jovem com blastos no sangue periférico, leucócitos 80k, CIVD com sangramento oral. Qual diagnóstico deve ser investigado e qual a conduta imediata?",
+      "alternativas": [
+        "LMA-M3 (promielocítica) — ATRA imediato + suporte hemostático intensivo",
+        "LMC — iniciar imatinibe",
+        "Linfoma difuso — biópsia linfonodal urgente",
+        "Aplasia medular — transfusão e ciclosporina",
+        "Sepse fúngica — anfotericina B IV"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Por que o ácido tranexâmico (antifibrinolítico) é contraindicado na maioria dos casos de CIVD?",
+      "alternativas": [
+        "Porque é caro e não há evidência de benefício",
+        "Porque a CIVD geralmente tem componente trombótico — inibir fibrinólise agrava microtrombo e falência orgânica",
+        "Porque causa hemólise em pacientes sépticos",
+        "Porque prolonga o TP e o TTPA",
+        "Porque interage com heparina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Escore ISTH: PLQ 45k (2) + fibrinogênio ≤1 g/L (1) + TP >6s alargado ≈ se >1,5× = 2 + D-dímero muito elevado (3) = 8 → CIVD manifesta. Conduta: tratar sepse (ATB urgente) + crioprecipitado (fibrinogênio <1,5) + PFC (TP >1,5×) + PLQ se <50k com sangramento."},
+    {"resposta": "C", "comentario": "Sepse é a causa mais comum de CIVD no adulto, especialmente por Gram-negativos (LPS ativa fator tissular). Outras causas importantes: trauma grave, LMA-M3, complicações obstétricas. Tratar a causa de base é o pilar."},
+    {"resposta": "C", "comentario": "Crioprecipitado = fonte concentrada de fibrinogênio (fator I), fator VIII, fator von Willebrand e fator XIII. Indicado quando fibrinogênio <1,5 g/L com sangramento. PFC contém todos os fatores, mas em baixa concentração — menos eficiente para repor fibrinogênio isolado."},
+    {"resposta": "A", "comentario": "LMA-M3 (leucemia promielocítica aguda): t(15;17), PML-RARα. Os grânulos azurófilos dos promielócitos contêm substâncias pró-coagulantes e fibrinolíticas → CIVD fatal. ATRA (ácido all-trans-retinóico) é urgente — diferencia os blastos e controla a CIVD progressivamente."},
+    {"resposta": "B", "comentario": "CIVD é um processo simultâneo de coagulação excessiva (formação de microtrombos) e fibrinólise reativa. Inibir a fibrinólise (ácido tranexâmico) sem controlar a coagulação acelera a deposição de fibrina nos microvasos → falência orgânica. Usar apenas se hiperfibrinólise dominante (ex: LMA-M3, trauma)."}
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "slug": "mucosite_toxicidades_quimio",
+  "titulo": "Mucosite e Toxicidades da Quimioterapia",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Toxicidades Agudas da Quimioterapia no PS",
+  "chapter_bar": "TOXICIDADE QT — NEUTROPENIA FEBRIL É EMERGÊNCIA",
+  "secoes": [
+    {
+      "tipo": "highlightbox",
+      "section_title": "NEUTROPENIA FEBRIL — A EMERGÊNCIA MAIS IMPORTANTE",
+      "section_color": "red",
+      "titulo": "FEBRE + NEUTROPENIA = ATB EM <1 HORA",
+      "items": [
+        "Definição: neutrófilos <500 (ou <1000 com previsão de queda) + Tax >=38,3oC única ou >=38oC por 1h",
+        "Emergência: ATB de amplo espectro em <1 HORA (cada hora de atraso aumenta a mortalidade)",
+        "Colher hemoculturas (2 sítios, incluindo cateter) ANTES do ATB — mas não atrasar o ATB",
+        "ATB empírico: cefepima OU piperacilina-tazobactam OU meropeném (cobertura antipseudomonas)",
+        "Adicionar vancomicina se: instabilidade, infecção de cateter, mucosite grave, suspeita de MRSA",
+        "Estratificar risco (MASCC): baixo risco pode considerar ATB oral/ambulatorial; alto risco interna"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MUCOSITE — GRADUAÇÃO E MANEJO",
+      "section_color": "navy",
+      "headers": ["Grau", "Características", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.14, 0.46, 0.40],
+      "rows": [
+        ["Grau 1", "Eritema, sensibilidade, sem dor importante", "Higiene oral, bochechos com SF/bicarbonato"],
+        ["Grau 2", "Úlceras, dor, consegue se alimentar (sólidos/pastosos)", "Analgesia tópica + sistêmica, dieta adaptada"],
+        ["Grau 3", "Úlceras dolorosas, só tolera líquidos", "Analgesia opioide, hidratação IV, avaliar internação"],
+        ["Grau 4", "Não consegue se alimentar, risco de vida", "Internação, nutrição parenteral, opioide IV"],
+        ["Crioterapia", "Gelo na boca durante infusão (ex: 5-FU em bolus)", "Prevenção da mucosite"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "OUTRAS TOXICIDADES AGUDAS DA QT",
+      "section_color": "orange",
+      "headers": ["Toxicidade", "Quimioterápicos", "Manejo"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.34, 0.42],
+      "rows": [
+        ["Náuseas/vômitos", "Cisplatina, antraciclinas, ciclofosfamida", "Ondansetrona + dexametasona + aprepitanto (esquemas)"],
+        ["Diarreia grave", "Irinotecano, 5-FU, capecitabina", "Hidratação, loperamida; octreotida se grave"],
+        ["Neutropenia", "Maioria dos citotóxicos", "G-CSF (filgrastim) profilático/terapêutico; ATB se febre"],
+        ["Cardiotoxicidade", "Antraciclinas (doxorrubicina), trastuzumabe", "Monitorar FEVE; suspender se queda"],
+        ["Nefrotoxicidade", "Cisplatina, metotrexato", "Hidratação; leucovorina (resgate do MTX)"],
+        ["Extravasamento de vesicante", "Antraciclinas, vincristina", "Parar infusão, antídoto específico, gelo/calor conforme droga"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA NEUTROPENIA FEBRIL",
+      "title": "NEUTROPENIA FEBRIL — ATB EM <1H",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Paciente em QT + febre\nHemograma: neutrofilos <500 (ou <1000 caindo)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Hemoculturas (2 sitios + cateter) + exames\nATB de amplo espectro em <1 HORA (nao aguardar resultado)", "color": "red", "font_size": 5.5},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "ATB empirico:\ncefepima ou pip-tazo\nou meropenem\n(antipseudomonas)", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "+ Vancomicina se:\ninstabilidade, cateter,\nmucosite grave, MRSA\n+ G-CSF conforme risco", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Estratificar risco (MASCC) — internar alto risco\nReavaliar em 48-72h; antifungico se febre persistente", "color": "green", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "OUTRAS EMERGÊNCIAS ASSOCIADAS",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Síndrome de Lise Tumoral",
+        "items": [
+          "Tumores de alta carga/proliferação (linfoma Burkitt, leucemias) após QT",
+          "HiperK + hiperfosfatemia + hiperuricemia + hipocalcemia → IRA, arritmia",
+          "Prevenção: hidratação vigorosa + alopurinol (ou rasburicase em alto risco)",
+          "Tratamento: corrigir distúrbios, rasburicase, diálise se refratário",
+          "Monitorar eletrólitos e função renal de perto"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Cuidados Gerais no PS",
+        "items": [
+          "Náuseas/vômitos: antieméticos (ondansetrona, dexametasona)",
+          "Desidratação por diarreia/vômito: reidratação IV + correção de eletrólitos",
+          "Anemia/plaquetopenia: transfusão conforme limiares e sintomas",
+          "Sempre perguntar: qual QT, há quanto tempo, último ciclo (nadir ~7-14 dias)",
+          "Mucosite: analgesia, higiene oral, suporte nutricional",
+          "Considerar imunoterapia: toxicidades imunomediadas (colite, pneumonite) — corticoide"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PONTOS-CHAVE NO PS",
+      "titulo": "PACIENTE ONCOLÓGICO EM QT COM SINTOMAS",
+      "items": [
+        "Febre em paciente em QT = neutropenia febril até prova em contrário — hemograma urgente",
+        "Neutropenia febril: ATB de amplo espectro em <1 hora (cefepima/pip-tazo/meropeném)",
+        "Hemoculturas antes do ATB (incluindo do cateter), mas sem atrasar o antibiótico",
+        "Mucosite: graduar e tratar dor (tópico → opioide); avaliar internação se grau 3-4",
+        "Lembrar da síndrome de lise tumoral em tumores de alta carga após QT",
+        "Sempre documentar: esquema de QT, data do último ciclo e nadir esperado (7-14 dias)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente em quimioterapia há 10 dias chega com febre de 38,5oC. Hemograma: neutrófilos 300/mm3. Qual é a conduta imediata?",
+      "alternativas": [
+        "Antitérmico e observação domiciliar",
+        "Hemoculturas + antibiótico de amplo espectro (cefepima/pip-tazo) em menos de 1 hora",
+        "Aguardar o resultado da hemocultura antes de iniciar o antibiótico",
+        "Antibiótico oral e alta",
+        "Apenas G-CSF (filgrastim) sem antibiótico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual antibiótico empírico é adequado para neutropenia febril, cobrindo Pseudomonas?",
+      "alternativas": [
+        "Amoxicilina oral",
+        "Cefepima (ou piperacilina-tazobactam ou meropeném)",
+        "Azitromicina",
+        "Ceftriaxona isolada",
+        "Clindamicina"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Em qual situação deve-se ADICIONAR vancomicina ao esquema empírico da neutropenia febril?",
+      "alternativas": [
+        "Em todos os casos, sempre",
+        "Instabilidade hemodinâmica, infecção de cateter, mucosite grave ou suspeita de MRSA",
+        "Apenas quando a febre passa de 40oC",
+        "Somente em pacientes idosos",
+        "Nunca deve ser usada na neutropenia febril"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente com linfoma de alto grau, após primeiro ciclo de QT, desenvolve hipercalemia, hiperfosfatemia, hiperuricemia e insuficiência renal. Qual é o diagnóstico?",
+      "alternativas": [
+        "Neutropenia febril",
+        "Síndrome de lise tumoral",
+        "Mucosite grau 4",
+        "Cardiotoxicidade por antraciclina",
+        "Nefrotoxicidade por cisplatina isolada"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual medida é eficaz na PREVENÇÃO da síndrome de lise tumoral em paciente de alto risco?",
+      "alternativas": [
+        "Restrição hídrica",
+        "Hidratação vigorosa + alopurinol (ou rasburicase em alto risco)",
+        "Diurético tiazídico",
+        "Suplementação de potássio",
+        "Antibiótico profilático"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Neutropenia febril (neutrófilos <500 + febre) é emergência oncológica. Conduta: hemoculturas (2 sítios + cateter) + antibiótico de amplo espectro com cobertura antipseudomonas (cefepima, pip-tazo, meropeném) em <1 hora. Não aguardar resultado de cultura — cada hora de atraso aumenta a mortalidade."},
+    {"resposta": "B", "comentario": "O ATB empírico da neutropenia febril deve cobrir Pseudomonas: cefepima, piperacilina-tazobactam ou meropeném (monoterapia de amplo espectro). Adicionar vancomicina apenas em situações específicas (instabilidade, cateter, mucosite grave, MRSA)."},
+    {"resposta": "B", "comentario": "Vancomicina não é rotina na neutropenia febril. Adicionar quando: instabilidade hemodinâmica/sepse, infecção de cateter (celulite/bacteremia), mucosite grave, pneumonia, colonização/suspeita de MRSA ou de Streptococcus resistente. Reavaliar e descalonar em 48-72h se cultura negativa."},
+    {"resposta": "B", "comentario": "Síndrome de lise tumoral: liberação maciça de conteúdo celular após QT em tumores de alta carga/proliferação (Burkitt, leucemias). Tétrade: hipercalemia + hiperfosfatemia + hiperuricemia + hipocalcemia → IRA e arritmias. Prevenção: hidratação + alopurinol/rasburicase."},
+    {"resposta": "B", "comentario": "Prevenção da síndrome de lise tumoral em alto risco: hidratação vigorosa (mantém diurese e excreção) + alopurinol (reduz produção de ácido úrico) ou rasburicase (degrada ácido úrico, em alto risco). Monitorar eletrólitos e função renal. Diálise se distúrbios refratários."}
+  ]
+}

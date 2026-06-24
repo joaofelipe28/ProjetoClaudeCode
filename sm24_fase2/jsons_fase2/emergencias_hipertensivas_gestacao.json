@@ -1,0 +1,176 @@
+{
+  "slug": "emergencias_hipertensivas_gestacao",
+  "titulo": "Emergências Hipertensivas na Gestação",
+  "especialidade": "GINECOLOGIA/OBSTETRÍCIA",
+  "chapter_subject": "Pré-eclâmpsia, Eclâmpsia e HELLP — Emergência Obstétrica",
+  "chapter_bar": "PRÉ-ECLÂMPSIA — CONTROLAR PA + MgSO4",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO — HIPERTENSÃO NA GESTAÇÃO",
+      "section_color": "navy",
+      "headers": ["Diagnóstico", "Definição", "Risco"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.46, 0.28],
+      "rows": [
+        ["Hipertensão gestacional", "PA >=140/90 após 20 semanas SEM proteinúria/critérios graves", "Moderado — 25% evolui para PE"],
+        ["Pré-eclâmpsia (PE)", "PA >=140/90 após 20 sem + proteinúria >=300 mg/24h OU critérios de gravidade", "Alto — risco de eclâmpsia/HELLP"],
+        ["PE com critérios de gravidade", "PAS >=160 OU PAD >=110 OU cefaleia/escotomas/epigastria/plaquetas <100k/creatinina >1,1", "Muito alto — internar"],
+        ["Eclâmpsia", "PE + crise convulsiva (sem outra causa)", "Altíssimo — MgSO4 + resolver parto"],
+        ["Síndrome HELLP", "Hemólise + enzimas hepáticas elevadas + plaquetas baixas (<100k)", "Altíssimo — pode ser sem HAS"],
+        ["Hipertensão crônica", "HAS antes de 20 semanas ou pré-existente", "Moderado — vigiar PE superimposta"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA CRISE HIPERTENSIVA OBSTÉTRICA",
+      "title": "CRISE — CONTROLAR PA + PREVENIR CONVULSÃO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "PA >=160/110 + gestante\nEstabilizar + monitorar + decisão obstétrica imediata", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Anti-hipertensivo IV: meta PA 140-150/90-100 mmHg\n(queda brusca = sofrimento fetal)", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "Hidralazina 5 mg IV\nRepetir 5-10 mg a cada 20 min\nOu labetalol 20 mg IV", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "MgSO4: prevenir convulsão\nAtaque: 4-6 g IV em 15-20 min\nManutenção: 1-2 g/h por 24h", "color": "teal", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Decisão obstétrica: resolução do parto se >=34 sem\nCTG + avaliação de bem-estar fetal urgente", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTI-HIPERTENSIVOS NA CRISE OBSTÉTRICA",
+      "section_color": "orange",
+      "headers": ["Droga", "Dose IV", "Observações"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.32, 0.46],
+      "rows": [
+        ["Hidralazina", "5 mg IV lento; repetir 5-10 mg a cada 20 min (máx 40 mg)", "1ª escolha no Brasil; venodilatador; taquicardia reflexa possível"],
+        ["Labetalol", "20 mg IV; dobrar dose a cada 10 min (máx 300 mg) OU infusão 1-2 mg/min", "Alfa+beta bloqueador; não usar em asma; pode ser preferido em taquicardia"],
+        ["Nifedipino VO", "10-20 mg VO; repetir a cada 30 min (máx 60 mg)", "Alternativa oral; NÃO usar sublingual (queda brusca)"],
+        ["Nitroprussiato IV", "0,5-10 mcg/kg/min", "Somente se refratária; risco de intoxicação por cianeto fetal — uso brevíssimo"],
+        ["EVITAR", "IECA, ARA II (captopril, enalapril, losartan)", "Contraindicados — nefrotóxicos para o feto"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SÍNDROME HELLP — RECONHECER E AGIR",
+      "section_color": "red",
+      "titulo": "HELLP = URGÊNCIA OBSTÉTRICA",
+      "items": [
+        "H — Hemólise: esquizócitos no esfregaço, LDH >600, bilirrubina indireta elevada",
+        "EL — Elevated Liver enzymes: TGO/TGP >70 UI/L, dor epigástrica em barra",
+        "LP — Low Platelets: PLQ <100.000/mcL (grave: <50.000)",
+        "HELLP pode ocorrer SEM hipertensão em 10-20% — não excluir pelo nível de PA",
+        "Tratamento definitivo: RESOLUÇÃO DO PARTO — não existe tratamento conservador seguro após 34 semanas",
+        "Corticoide: dexametasona 10 mg IV 12/12h se <34 semanas para maturidade fetal"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ECLÂMPSIA — MANEJO DA CRISE",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Crise Convulsiva",
+        "items": [
+          "Posição lateral + proteção da via aérea",
+          "O2 100% por máscara",
+          "MgSO4 4 g IV em 5-10 min (se ainda não em uso)",
+          "Se convulsão persistir >5 min: diazepam 10 mg IV",
+          "Não usar fenitoína (ineficaz na eclâmpsia)",
+          "Após estabilização: resolução do parto"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Monitoração do MgSO4",
+        "items": [
+          "Reflexo patelar presente (perde com Mg ~4-5 mEq/L)",
+          "FR >12/min (paralisia respiratória com Mg ~5-6 mEq/L)",
+          "Diurese >25 mL/h (Mg excretado pelo rim)",
+          "Antídoto: gluconato de cálcio 1 g IV",
+          "Dosar Mg se creatinina elevada (risco de acúmulo)",
+          "Manter por 24h pós-parto"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PROFILAXIA E DIAGNÓSTICO PRECOCE",
+      "titulo": "RASTREIO E PREVENÇÃO DA PE",
+      "items": [
+        "AAS 100-150 mg/dia a partir de 12-16 semanas em gestante de alto risco (DM, HAS crônica, PE prévia, gemelar)",
+        "Doppler de artérias uterinas no 1o trimestre: IG pré-PE",
+        "Proteinúria: dipstick >=2+ em 2 amostras OU proteinúria de 24h >=300 mg",
+        "PAPP-A baixo + PlGF baixo: marcadores de placentação anômala",
+        "Internar se: critérios de gravidade, HELLP, eclâmpsia, sofrimento fetal",
+        "Corticoide antenatal: betametasona 12 mg IM 2 doses em 24h se <34 semanas e parto iminente"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Gestante de 32 semanas com PA 170/110 mmHg, cefaleia intensa e escotomas visuais. Qual é o diagnóstico e a primeira medida terapêutica?",
+      "alternativas": [
+        "Hipertensão gestacional — metildopa 250 mg VO",
+        "Pré-eclâmpsia com critérios de gravidade — hidralazina 5 mg IV + MgSO4 4 g IV",
+        "Eclâmpsia — diazepam IV imediato",
+        "Hipertensão crônica reagudizada — nifedipino sublingual",
+        "HELLP — transfusão de plaquetas"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Gestante com HELLP em 35 semanas. Qual é a conduta definitiva?",
+      "alternativas": [
+        "Corticoide + repouso + acompanhar ambulatorialmente",
+        "Resolução do parto — tratamento definitivo da síndrome HELLP",
+        "Plasma fresco congelado + plaquetas + aguardar 38 semanas",
+        "Heparina para prevenir trombose placentária",
+        "Betametasona e aguardar maturidade fetal até 37 semanas"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que o nifedipino sublingual é CONTRAINDICADO na crise hipertensiva obstétrica?",
+      "alternativas": [
+        "Porque causa bradicardia fetal",
+        "Porque reduz a PA de forma imprevisível e brusca, com risco de sofrimento fetal por hipoperfusão placentária",
+        "Porque é teratogênico",
+        "Porque bloqueia os canais de Ca2+ cardíacos do feto",
+        "Porque interage com MgSO4 causando bloqueio AV"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Gestante de 30 semanas, 1ª consulta de pré-natal, com PA 150/100. Sem proteinúria. Qual diagnóstico e qual medicamento é contraindicado para tratamento da HAS na gestação?",
+      "alternativas": [
+        "Pré-eclâmpsia — contraindicar betabloqueadores",
+        "Hipertensão gestacional — contraindicar diuréticos",
+        "Hipertensão crônica ou gestacional — contraindicar IECA/ARA-II (captopril, enalapril, losartan)",
+        "Hipertensão gestacional — contraindicar hidralazina",
+        "Crise hipertensiva — contraindicar metildopa"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Gestante de 31 semanas em eclâmpsia ativa (convulsão). Qual é a conduta imediata?",
+      "alternativas": [
+        "Fenitoína 20 mg/kg IV para cessar a convulsão",
+        "Diazepam IV + manobra de Sellick",
+        "Posição lateral + O2 + MgSO4 4 g IV em 5-10 min",
+        "Cesárea de urgência antes de controlar convulsão",
+        "TC de crânio para excluir AVC antes de tratar"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "PE com critérios de gravidade: PA >=160/110 + sintomas neurológicos (cefaleia, escotomas). Conduta: controlar PA (hidralazina 5 mg IV — meta 140-150/90-100) + MgSO4 (prevenir convulsão) + internação + decisão obstétrica (parto se >=34 semanas)."},
+    {"resposta": "B", "comentario": "HELLP: o único tratamento definitivo é a resolução do parto — interrupção da gestação resolve o processo fisiopatológico (isquemia placentária). Após 34 semanas ou com deterioração materna: parto imediato. Antes de 34 sem: corticoide para maturidade fetal + parto em 24-48h."},
+    {"resposta": "B", "comentario": "Nifedipino sublingual: absorção imprevisível e rápida → queda brusca e excessiva da PA → isquemia placentária → sofrimento fetal. Usar nifedipino VO (liberação gradual) ou hidralazina/labetalol IV. Meta é reduzir PA gradualmente (não normalizar rapidamente)."},
+    {"resposta": "C", "comentario": "IECA (captopril, enalapril) e ARA-II (losartan) são contraindicados na gestação — nefrotóxicos para o feto, causam oligohidrâmnio, hipoplasia renal, malformações. Usar: metildopa, nifedipino VO, labetalol. Diuréticos: não recomendados de rotina (reduzem volemia)."},
+    {"resposta": "C", "comentario": "Eclâmpsia em crise convulsiva: posição lateral (previne aspiração), O2 100%, MgSO4 4 g IV em 5-10 min (anticonvulsivante de escolha). Fenitoína é ineficaz na eclâmpsia. TC só se refratária ao Mg ou déficit focal persistente. Cesárea após estabilização da paciente."}
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "slug": "meningite_encefalite_adulto",
+  "titulo": "Meningite e Encefalite no Adulto",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Meningite Bacteriana e Encefalite no Adulto",
+  "chapter_bar": "MENINGITE — ATB ATÉ 1H + DEXAMETASONA",
+  "secoes": [
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM INICIAL — SUSPEITA DE MENINGITE",
+      "title": "CEFALEIA + FEBRE + RIGIDEZ — AGIR RÁPIDO",
+      "height": 225,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Tríade: cefaleia + febre + rigidez nucal\n+/- fotofobia, vômitos, rebaixamento, petéquias", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Sinais de herniação? Papiledema? Déficit focal?\nRebaixamento grave? → TC antes da PL", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.25, "y": 0.43, "w": 155, "h": 26, "text": "SEM sinal de herniação\nHemoculturas → PL imediata\nATB em <1h do suspeito", "color": "green", "font_size": 5.5},
+        {"id": "d", "x": 0.75, "y": 0.43, "w": 155, "h": 26, "text": "COM risco de herniação\nHemoculturas → ATB + DEX imediato\nTC crânio → PL se seguro", "color": "red", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 210, "h": 22, "text": "Dexametasona 0,15 mg/kg IV 6/6h 4 dias\n(antes ou junto do ATB — reduz mortalidade)", "color": "orange", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANÁLISE DO LCR — PADRÕES",
+      "section_color": "navy",
+      "headers": ["Parâmetro", "Normal", "Bacteriana", "Viral", "TBC/Fúngica"],
+      "header_colors": ["gray", "teal", "red", "orange", "purple"],
+      "col_widths": [0.22, 0.14, 0.20, 0.20, 0.24],
+      "rows": [
+        ["Pressão (mmH2O)", "<180", ">250", ">200", "↑↑ (cripto)"],
+        ["Células", "<5 (linf)", ">1.000 (PMN)", "10-500 (linf)", "10-500 (linf)"],
+        ["Proteína (mg/dL)", "15-45", ">100 (até 1.000)", "50-100", ">100"],
+        ["Glicose", "≥60% glicemia", "<40 (<45%)", "Normal", "<45%"],
+        ["Lactato LCR", "<3,5 mmol/L", ">3,5", "Normal", ">3,5"],
+        ["Gram/cultura", "—", "Positivo 60-90%", "PCR viral", "BAAR, tinta china"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIOTICOTERAPIA EMPÍRICA — ADULTO",
+      "section_color": "orange",
+      "headers": ["Cenário / Idade", "Esquema empírico", "Cobertura"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.42, 0.30],
+      "rows": [
+        ["18-50 anos, imunocompetente", "Ceftriaxona 2g IV 12/12h + Dexametasona 0,15mg/kg 6/6h", "S. pneumoniae, N. meningitidis"],
+        ["<1 mês ou >50 anos", "Ceftriaxona + Ampicilina 2g IV 4/4h + Dexametasona", "+ Listeria monocytogenes"],
+        ["Imunossuprimido / HIV", "Ceftriaxona + Ampicilina + Vancomicina + Dexametasona", "+ Listeria, Cryptococcus"],
+        ["Pós-neurocirurgia / trauma", "Meropeném 2g IV 8/8h + Vancomicina 15-20 mg/kg 12/12h", "MRSA, Gram-neg resistente"],
+        ["Herpes (encefalite)", "Aciclovir 10 mg/kg IV 8/8h por 14-21 dias", "HSV-1/2 (PCR LCR positivo)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ENCEFALITE — DIFERENCIAL DA MENINGITE",
+      "section_color": "purple",
+      "titulo": "QUANDO SUSPEITAR DE ENCEFALITE",
+      "items": [
+        "Rebaixamento de consciência (confusão, letargia, comportamento bizarro) + febre",
+        "Déficit focal, afasia, hemiplegia, crises epilépticas + febre (meningite não causa focal)",
+        "RMC-crânio: hipersinal em lobos temporais (HSV-1 — encefalite herpética mais comum)",
+        "EEG: atividade epileptiforme ou lentificação focal",
+        "LCR: pleocitose linfocítica, proteína leve, glicose normal; PCR HSV",
+        "Encefalite autoimune (Anti-NMDA): jovem, psicose + movimentos anormais + disautonomia — anti-NMDAR sérico/LCR"
+      ],
+      "accent": "purple",
+      "bg": "purple_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "MENINGOCÓCICA — EMERGÊNCIA DE SAÚDE PÚBLICA",
+      "section_color": "red",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Reconhecer Meningococcemia",
+        "items": [
+          "Petéquias (50%) + púrpura fulminante = alarme",
+          "Início súbito, evolução em horas para choque",
+          "Coagulação intravascular disseminada (CIVD)",
+          "ATB IMEDIATO (não aguardar TC/PL): ceftriaxona",
+          "Notificação compulsória imediata",
+          "Quimioprofilaxia de contatos: rifampicina 600mg 12/12h x 2 dias"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Meningite Tuberculosa",
+        "items": [
+          "Evolução subaguda (dias-semanas); imunocomprometido",
+          "LCR: glicose muito baixa, proteína alta, linf, ADA elevada",
+          "RMC: hidrocefalia, realce meníngeo basal, tuberculomas",
+          "BAAR no LCR (sensibilidade 40%); PCR TB",
+          "Tratamento: RIPE 12 meses + dexametasona obrigatória",
+          "Mortalidade alta se diagnóstico tardio"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST — MENINGITE BACTERIANA NO PS",
+      "titulo": "NÃO ATRASAR O ATB",
+      "items": [
+        "Tríade (cefaleia + febre + rigidez): suspeita ativa — agir em minutos",
+        "Hemoculturas 2 pares → PL se sem contraindicação (sem TC de espera)",
+        "ATB + Dexametasona em <1h do diagnóstico (cada hora aumenta mortalidade)",
+        "Contraindicações à PL sem TC: papiledema, déficit focal, Glasgow <13, coagulopatia",
+        "Herpes: aciclovir 10 mg/kg IV se qualquer suspeita de encefalite (esperar PCR do LCR)",
+        "UTI: choque, rebaixamento, Glasgow <13, ventilação mecânica se necessário",
+        "Notificação: meningocócica, pneumocócica, H. influenzae = compulsória"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente de 25 anos com febre, cefaleia intensa e rigidez de nuca, sem papiledema nem déficit focal. Qual é a sequência CORRETA?",
+      "alternativas": [
+        "TC crânio → PL → ATB + Dexametasona",
+        "Hemoculturas → PL → ATB + Dexametasona em até 1h",
+        "ATB → PL → Dexametasona",
+        "PL → TC → ATB se bacteriana confirmada",
+        "Anti-inflamatório oral + observação 24h"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o padrão típico do LCR na meningite bacteriana aguda?",
+      "alternativas": [
+        "Pleocitose linfocítica, glicose normal, proteína levemente elevada",
+        "Pleocitose neutrofílica >1.000 cels, glicose <45%, proteína >100 mg/dL",
+        "LCR xantocrômico com glicose normal",
+        "LCR hemorrágico com eritrócitos crenados",
+        "LCR cristalino com proteína <30 mg/dL"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que a dexametasona deve ser iniciada ANTES ou junto com o antibiótico na meningite bacteriana?",
+      "alternativas": [
+        "Para cobrir infecção fúngica associada",
+        "Para reduzir a inflamação meníngea antes da lise bacteriana, diminuindo mortalidade e sequelas (especialmente surdez)",
+        "Para diminuir a pressão intracraniana imediatamente",
+        "Para melhorar a penetração do antibiótico no SNC",
+        "Para prevenir o choque anafilático ao ATB"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente com meningococcemia: febre alta, petéquias difusas e choque. Qual é a conduta prioritária?",
+      "alternativas": [
+        "Aguardar PL antes de iniciar ATB",
+        "TC de crânio urgente para guiar a PL",
+        "Ceftriaxona IV imediatamente, antes de qualquer exame diagnóstico",
+        "Vancomicina + meropeném como primeira escolha",
+        "Corticoide isolado enquanto aguarda hemocultura"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente com rebaixamento de consciência, febre e RMC mostrando hipersinal em lobo temporal. Qual é o diagnóstico mais provável e o tratamento?",
+      "alternativas": [
+        "Meningite bacteriana — ceftriaxona 2g IV",
+        "AVC hemorrágico — reversão de anticoagulação",
+        "Encefalite herpética (HSV-1) — aciclovir 10 mg/kg IV 8/8h",
+        "Abscesso cerebral — meropeném + metronidazol",
+        "Síndrome anti-NMDA — plasmaférese"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Sem papiledema e sem déficit focal: não há contraindicação à PL imediata. Sequência: hemoculturas → PL → ATB + Dexametasona em até 1h. TC antes da PL retarda ATB e só é obrigatória se papiledema, déficit focal ou Glasgow ≤12."},
+    {"resposta": "B", "comentario": "Meningite bacteriana: pleocitose PMN >1.000 células/mm³, hipoglicorraquia (<45% da glicemia), hiperproteinorraquia >100 mg/dL, lactato >3,5 mmol/L. Gram + em 60-90% não tratados. Viral: linfocítica, glicose normal."},
+    {"resposta": "B", "comentario": "Dexametasona antes/junto do ATB reduz a liberação de citocinas inflamatórias após lise bacteriana, diminuindo mortalidade e sequelas neurológicas (especialmente surdez por S. pneumoniae). Perder o benefício se dado após ATB."},
+    {"resposta": "C", "comentario": "Meningococcemia com choque = emergência máxima. Ceftriaxona IMEDIATAMENTE, sem aguardar PL ou TC. Cada hora sem ATB aumenta mortalidade. Hemoculturas podem ser tentadas mas não devem atrasar o ATB. Notificação compulsória."},
+    {"resposta": "C", "comentario": "Hipersinal temporal no RMC + febre + confusão = encefalite herpética (HSV-1) até prova em contrário. Tratamento: aciclovir 10 mg/kg IV 8/8h por 14-21 dias. PCR HSV no LCR confirma. Iniciar aciclovir sem aguardar resultado."}
+  ]
+}

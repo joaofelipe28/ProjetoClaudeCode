@@ -1,0 +1,176 @@
+{
+  "slug": "avulsao_dentaria",
+  "titulo": "Avulsão Dentária",
+  "especialidade": "ODONTOLOGIA",
+  "chapter_subject": "Avulsão Dentária Traumática — Reimplante de Urgência",
+  "chapter_bar": "AVULSÃO — REIMPLANTAR RÁPIDO (TEMPO É DENTE)",
+  "secoes": [
+    {
+      "tipo": "highlightbox",
+      "section_title": "PRINCÍPIO FUNDAMENTAL — TEMPO É TUDO",
+      "section_color": "red",
+      "titulo": "REIMPLANTE IMEDIATO É O OBJETIVO (DENTE PERMANENTE)",
+      "items": [
+        "Avulsão = dente completamente deslocado do alvéolo (saiu da boca)",
+        "O tempo extra-alveolar é o fator prognóstico mais importante para sobrevida do ligamento periodontal",
+        "<30 min fora: melhor prognóstico; >60 min a seco: ligamento periodontal inviável",
+        "Reimplante imediato no local do acidente é a conduta ideal (se dente permanente)",
+        "Dente DECÍDUO (de leite): NÃO reimplantar — risco de dano ao germe do dente permanente",
+        "Reduzir tempo seco: colocar o dente em meio de armazenamento adequado imediatamente"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "MEIOS DE ARMAZENAMENTO — DO MELHOR AO PIOR",
+      "section_color": "navy",
+      "headers": ["Meio", "Qualidade", "Tempo de viabilidade"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.34, 0.24, 0.42],
+      "rows": [
+        ["Solução HBSS (Hank's)", "Ótimo", "Até 24h — mantém ligamento periodontal"],
+        ["Leite frio (UHT/pasteurizado)", "Bom", "Até 6h — mais disponível na prática"],
+        ["Soro fisiológico", "Razoável", "2-3h"],
+        ["Saliva (sob a língua, na bochecha)", "Razoável", "Até 2h (cuidado com deglutição/aspiração)"],
+        ["Água", "RUIM — evitar", "Hipotônica → lise celular do ligamento; só se não houver alternativa"],
+        ["A seco (sem meio)", "PÉSSIMO", ">60 min = ligamento periodontal inviável"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA AVULSÃO DE DENTE PERMANENTE",
+      "title": "AVULSÃO — REIMPLANTAR E ESTABILIZAR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Dente permanente avulsionado\nNAO tocar na raiz; segurar pela coroa", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Lavar suavemente com soro/leite (sem esfregar a raiz)\nReimplantar IMEDIATAMENTE no alveolo se possivel", "color": "red", "font_size": 5.6},
+        {"id": "c", "x": 0.27, "y": 0.43, "w": 150, "h": 24, "text": "Nao foi possivel reimplantar:\nArmazenar em leite frio\nou HBSS ou soro\nLevar ao dentista urgente", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.73, "y": 0.43, "w": 150, "h": 24, "text": "Pos-reimplante:\nContencao flexivel 2 semanas\nATB (amoxicilina/doxiciclina)\nProfilaxia antitetanica", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Acompanhamento: endodontia em 7-14 dias\n(necrose pulpar e esperada — tratamento de canal)", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DENTE PERMANENTE vs DECÍDUO",
+      "section_color": "orange",
+      "headers": ["Aspecto", "Permanente", "Decíduo (de leite)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Reimplante", "SIM — o quanto antes", "NÃO reimplantar (dano ao germe permanente)"],
+        ["Conduta", "Reimplantar + contenção + ATB + endodontia", "Limpar alvéolo, controlar sangramento, acompanhar"],
+        ["Meio de transporte", "Leite/HBSS/soro até o reimplante", "Não aplicável"],
+        ["Prognóstico", "Depende do tempo extra-alveolar", "Espaço mantido por mantenedor se necessário"],
+        ["Risco do reimplante decíduo", "—", "Anquilose, infecção, lesão do sucessor permanente"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CUIDADOS PÓS-REIMPLANTE",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Medicação e Profilaxia",
+        "items": [
+          "Antibiótico: amoxicilina (ou doxiciclina em >12 anos) por 7 dias",
+          "Profilaxia antitetânica: avaliar esquema vacinal (ferida contaminada)",
+          "Analgesia: AINE para dor",
+          "Bochechos com clorexidina 0,12% 2x/dia por 1 semana",
+          "Dieta líquida/pastosa nos primeiros dias",
+          "Higiene oral cuidadosa para evitar infecção"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Contenção e Seguimento",
+        "items": [
+          "Contenção semirrígida/flexível por ~2 semanas (permite mobilidade fisiológica)",
+          "Endodontia: tratamento de canal em 7-14 dias (necrose pulpar esperada em dente maduro)",
+          "Dente com ápice aberto (imaturo): pode revascularizar — acompanhar",
+          "Controle radiográfico: avaliar reabsorção radicular e anquilose",
+          "Complicações: reabsorção radicular externa, anquilose, perda do dente",
+          "Acompanhamento odontológico a longo prazo (meses)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PASSO A PASSO NO LOCAL DO ACIDENTE",
+      "titulo": "ORIENTAÇÃO LEIGA E PROFISSIONAL",
+      "items": [
+        "Encontrar o dente e segurá-lo pela COROA (nunca pela raiz)",
+        "Se sujo: lavar rapidamente com soro/leite/água SEM esfregar (não remover o ligamento)",
+        "Reimplantar imediatamente no alvéolo, na posição correta, e morder uma gaze",
+        "Se não puder reimplantar: armazenar em leite frio, HBSS, soro ou saliva (NUNCA água por longo tempo)",
+        "Procurar atendimento odontológico de urgência IMEDIATAMENTE",
+        "NÃO reimplantar dente decíduo (de leite) — apenas controlar sangramento e procurar dentista"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Criança de 10 anos com avulsão de incisivo central PERMANENTE há 15 minutos, dente em mãos do acompanhante. Qual é a conduta ideal?",
+      "alternativas": [
+        "Descartar o dente e encaminhar para prótese",
+        "Lavar suavemente (sem esfregar a raiz) e reimplantar imediatamente no alvéolo + contenção + ATB",
+        "Armazenar em água e aguardar atendimento eletivo",
+        "Reimplantar apenas após 24h em consultório",
+        "Colocar o dente no congelador para preservar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o melhor meio de armazenamento para um dente avulsionado quando o reimplante imediato não é possível e não há HBSS disponível?",
+      "alternativas": [
+        "Água da torneira",
+        "Leite frio",
+        "Álcool",
+        "Gaze seca",
+        "Papel toalha úmido"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Em relação à avulsão de dente DECÍDUO (de leite), qual é a conduta correta?",
+      "alternativas": [
+        "Reimplantar imediatamente como no permanente",
+        "NÃO reimplantar — risco de dano ao germe do dente permanente; controlar sangramento e acompanhar",
+        "Armazenar em leite e reimplantar em consultório",
+        "Reimplantar apenas se o tempo for menor que 30 minutos",
+        "Reimplantar e fazer endodontia imediata"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Por que NÃO se deve segurar o dente avulsionado pela raiz nem esfregá-la?",
+      "alternativas": [
+        "Porque a raiz é mais frágil e pode quebrar",
+        "Para preservar as células do ligamento periodontal aderidas à raiz, essenciais para a sobrevida do reimplante",
+        "Porque a raiz contém o esmalte dental",
+        "Para evitar contaminação da coroa",
+        "Porque a raiz transmite sensibilidade dolorosa"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o fator prognóstico MAIS importante para a sobrevida de um dente permanente reimplantado?",
+      "alternativas": [
+        "A idade do paciente",
+        "O tipo de dente avulsionado",
+        "O tempo extra-alveolar e o meio de armazenamento (quanto menor o tempo a seco, melhor)",
+        "O uso de antibiótico",
+        "A técnica de contenção utilizada"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dente permanente avulsionado há 15 min: reimplante imediato é o ideal. Segurar pela coroa, lavar suavemente sem esfregar a raiz (preserva ligamento periodontal), reimplantar no alvéolo + contenção flexível 2 semanas + ATB + profilaxia antitetânica + endodontia em 7-14 dias."},
+    {"resposta": "B", "comentario": "Leite frio é o meio de armazenamento mais prático e disponível (pH e osmolaridade compatíveis, mantém viabilidade do ligamento periodontal por até 6h). HBSS é o ideal mas raramente disponível. Água é hipotônica e causa lise celular — deve ser evitada."},
+    {"resposta": "B", "comentario": "Dente decíduo (de leite) NÃO deve ser reimplantado — o reimplante pode danificar o germe do dente permanente sucessor (anquilose, infecção, alterações de erupção). Conduta: controlar o sangramento, limpar o alvéolo e acompanhar; mantenedor de espaço se necessário."},
+    {"resposta": "B", "comentario": "As células do ligamento periodontal aderidas à superfície radicular são essenciais para a reinserção e sobrevida do dente reimplantado. Esfregar ou tocar na raiz remove/danifica essas células, comprometendo o prognóstico. Segurar pela coroa e lavar sem esfregar."},
+    {"resposta": "C", "comentario": "O tempo extra-alveolar (especialmente a seco) e o meio de armazenamento são os fatores prognósticos mais importantes. <30 min: ótimo; >60 min a seco: ligamento periodontal inviável (anquilose/reabsorção). Por isso a orientação de reimplante imediato ou armazenamento em meio adequado."}
+  ]
+}

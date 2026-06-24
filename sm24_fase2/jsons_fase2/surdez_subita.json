@@ -1,0 +1,174 @@
+{
+  "slug": "surdez_subita",
+  "titulo": "Surdez Súbita Neurossensorial",
+  "especialidade": "OTORRINOLARINGOLOGIA",
+  "chapter_subject": "Perda Auditiva Súbita — Emergência Otológica",
+  "chapter_bar": "SURDEZ SUBITA — EMERGÊNCIA — CORTICOIDE EM 72H",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DEFINIÇÃO E CRITÉRIOS DIAGNÓSTICOS",
+      "section_color": "navy",
+      "headers": ["Critério", "Definição"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Definição", "Perda auditiva neurossensorial >=30 dB em 3 frequências consecutivas em <=72h"],
+        ["Prevalência", "5-20/100.000 hab/ano; pico 50-60 anos; geralmente unilateral"],
+        ["Apresentação", "Acorda sem ouvir ou perde audição subitamente; pode ter zumbido, plenitude auricular, vertigem"],
+        ["Diagnóstico", "Audiometria tonal liminar: curva descendente ou plana, neurossensorial"],
+        ["Urgência", "Emergência otológica — iniciar corticoide em <72h (melhor chance de recuperação)"],
+        ["Prognóstico", "Recuperação espontânea 45-65%; com tratamento: melhora em 70-80%; frequências agudas pior prognóstico"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM NA EMERGÊNCIA",
+      "title": "SURDEZ SUBITA — AVALIAR + TRATAR URGENTE",
+      "height": 190,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Perda auditiva unilateral aguda\nOtoscopia: normal (exclui rolha, OMA, otite ext.)", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.70, "w": 215, "h": 22, "text": "Audiometria urgente: confirmar PANSS\nLabora.: hemograma, glicemia, lipidos, VDRL, sorologias", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "CORTICOIDE oral:\nprednisona 1 mg/kg/d (max 60 mg)\npor 10-14 dias, desmame", "color": "red", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Corticoide intratimpânico:\nalternativa se contraindicação sistêmica\nou para associar (refratários)", "color": "orange", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "RM de crânio/IAI: excluir neurinoma do acústico\nReavaliação em 7-14 dias: audiometria de controle", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL",
+      "section_color": "orange",
+      "headers": ["Diagnóstico", "Como diferenciar"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.32, 0.68],
+      "rows": [
+        ["Rolha de cerúmen/corpo estranho", "Otoscopia: rolha visível; audiometria: condutiva"],
+        ["Otite média aguda / efusão", "Timpanograma tipo B; otoscopia: hiperemia ou derrame"],
+        ["Neurinoma do acústico (schwannoma)", "RM de IAI: massa em canal auditivo interno; geralmente lenta mas pode ser subita"],
+        ["AVC de tronco (cerebelar)", "Vertigem + nistagmo + outros sinais tronco (diplopia, disfagia, ataxia)"],
+        ["Síndrome de Ménière", "Tríade: vertigem + hipoacusia + zumbido em episódios; audiometria: graves afetados primeiro"],
+        ["Doença de Lyme / sífilis (neuroSSN)", "Sorologias; exposição; tratamento específico com penicilina ou doxiciclina"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "FATORES DE PROGNÓSTICO",
+      "section_color": "teal",
+      "titulo": "PIOR PROGNÓSTICO",
+      "items": [
+        "Idade avancada (>60 anos) e DM, HAS, dislipidemia",
+        "Perda auditiva grave (>60 dB) ou profunda",
+        "Frequências agudas afetadas (configuração descendente)",
+        "Tratamento tardio (>7 dias da instalação)",
+        "Vertigem associada (acometimento vestibular simultâneo)",
+        "Ausência de resposta após 1a semana de corticoide"
+      ],
+      "accent": "teal"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CORTICOIDE — VIA ORAL vs INTRATIMPÂNICA",
+      "section_color": "orange",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Corticoide Oral (1a linha)",
+        "items": [
+          "Prednisona 1 mg/kg/d (max 60 mg) por 10-14 dias",
+          "Desmame gradual nos últimos 4-5 dias",
+          "Iniciar em <72h do início dos sintomas",
+          "Contraindicações: DM não controlado, infecção ativa, glaucoma",
+          "Metilprednisolona IV: hospitalizados ou forma grave (perda >60 dB)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Corticoide Intratimpânico",
+        "items": [
+          "Dexametasona 4-24 mg/mL: injeção transtimpânica",
+          "Indicação: contraindicação ao sistêmico OU falha parcial após oral",
+          "Vantagem: concentração coclear alta sem efeito sistêmico",
+          "Pode ser associado ao oral (melhor desfecho em estudos recentes)",
+          "Procedimento ambulatorial: anestesia local, 0,4 mL intratimpânico"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "NAO PERDER TEMPO — CHECKLIST NO PS",
+      "titulo": "AGIR EM 72H",
+      "items": [
+        "Otoscopia: excluir causa condutiva tratável (rolha, OMA) — não iniciar corticoide sem audiometria",
+        "Audiometria: confirmar PANSS e quantificar perda — urgente no mesmo dia",
+        "Solicitar RM de crânio/IAI: para excluir neurinoma — pode ser eletivo mas não atrasar o corticoide",
+        "Laboratorial: VDRL (sífilis!), hemograma, glicemia, TSH, sorologias virais",
+        "Corticoide oral: iniciar no PS se audiometria confirmada + diagnóstico diferencial descartado",
+        "Retorno em 7 dias: audiometria de controle — se refratário: acrescentar intratimpânico"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Mulher de 52 anos acorda sem ouvir do ouvido direito + zumbido. Otoscopia normal. Qual é o diagnóstico e conduta?",
+      "alternativas": [
+        "Rolha de cerúmen — irrigação e alta",
+        "Surdez súbita neurossensorial — audiometria urgente + prednisona 1 mg/kg/d em <72h",
+        "Otite média aguda — amoxicilina 500 mg 8/8h",
+        "Síndrome de Ménière — betahistina e diurético",
+        "Neurinoma do acústico — RM e encaminhar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o principal objetivo do tratamento com corticoide na surdez súbita?",
+      "alternativas": [
+        "Tratar infecção viral coclear",
+        "Reduzir o edema do nervo auditivo e estria vascular — melhorar microcirculação coclear",
+        "Prevenir neurinoma do acústico",
+        "Anular o zumbido associado",
+        "Evitar propagação para o ouvido contralateral"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual exame é imprescindível para confirmar o diagnóstico de surdez súbita neurossensorial?",
+      "alternativas": [
+        "TC de mastoides",
+        "RM de crânio",
+        "Audiometria tonal liminar — confirma perda neurossensorial >=30 dB em 3 frequências",
+        "Potencial evocado auditivo (BERA)",
+        "Timpanograma"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Em qual situação a surdez súbita tem PIOR prognóstico de recuperação?",
+      "alternativas": [
+        "Início aos 30 anos sem comorbidades",
+        "Perda auditiva leve com frequências médias afetadas",
+        "Perda auditiva profunda com vertigem associada e tratamento iniciado após 7 dias",
+        "Tratamento iniciado em <24h com prednisona oral",
+        "Perda isolada em frequências graves (250-500 Hz)"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Por que a RM de crânio/canal auditivo interno é solicitada na surdez súbita?",
+      "alternativas": [
+        "Para confirmar o diagnóstico de surdez súbita",
+        "Para guiar a aplicação de corticoide intratimpânico",
+        "Para excluir neurinoma do acústico (schwannoma vestibular), que pode se apresentar como surdez súbita em 1-2% dos casos",
+        "Para medir o volume da cóclea e ajustar a dose de corticoide",
+        "Para avaliar integridade do osso temporal"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Surdez súbita: otoscopia normal (exclui condutiva) + início agudo unilateral = PANSS até prova em contrário. Audiometria urgente para confirmar. Corticoide oral (prednisona 1 mg/kg) dentro de 72h — janela terapêutica. Além de 72h: menor chance de recuperação."},
+    {"resposta": "B", "comentario": "Mecanismo proposto da PANSS: isquemia coclear (espasmo da artéria auditiva interna, trombose), inflamação viral do nervo coclear, ruptura de membrana. Corticoide: reduz edema, melhora microcirculação coclear, efeito anti-inflamatório/imunossupressor. Melhora em 70-80% com tratamento precoce."},
+    {"resposta": "C", "comentario": "Audiometria tonal liminar: confirma PANSS (>=30 dB em 3 frequências consecutivas) e diferencia de condutiva (curvas separadas para via aérea e óssea). Sem audiometria não se confirma o diagnóstico. RM: complementar, para excluir neurinoma. TC: avalia osso temporal."},
+    {"resposta": "C", "comentario": "Pior prognóstico: perda profunda (>60-90 dB) + vertigem associada (acometimento vestibular concomitante) + tratamento tardio (>7 dias). Também: frequências agudas, idoso, DM. Melhor: início <24h, frequências graves, sem vertigem, tratamento em <72h."},
+    {"resposta": "C", "comentario": "Neurinoma do acústico (schwannoma vestibular): tumor benigno do nervo vestibulococlear. Em 1-2% pode se apresentar como surdez súbita. RM com contraste (gadolínio) é o padrão-ouro. Não retardar o corticoide esperando RM — solicitar eletivamente enquanto trata."}
+  ]
+}

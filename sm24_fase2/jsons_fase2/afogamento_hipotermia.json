@@ -1,0 +1,175 @@
+{
+  "slug": "afogamento_hipotermia",
+  "titulo": "Afogamento e Hipotermia",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Afogamento e Hipotermia — Ressuscitação e Aquecimento",
+  "chapter_bar": "AFOGAMENTO — RESSUSCITAR + AQUECER",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "AFOGAMENTO — CLASSIFICAÇÃO DE SZPILMAN",
+      "section_color": "navy",
+      "headers": ["Grau", "Apresentação", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.12, 0.42, 0.46],
+      "rows": [
+        ["Grau 1", "Tosse sem espuma — pulmão limpo", "Alta com observação 6h se evolução estável"],
+        ["Grau 2", "Estertores em bases — pequena quantidade de espuma", "Internação, O2, monitorização"],
+        ["Grau 3", "EPA moderado — estertores difusos, SpO2 <90%", "Internação em UTI, VNI ou IOT"],
+        ["Grau 4", "EPA grave com hipotensão — choque", "UTI, IOT, suporte hemodinâmico"],
+        ["Grau 5", "PCR com atividade elétrica — apneia e pulso ausente", "RCP imediata, reaquecimento"],
+        ["Grau 6", "PCR em assistolia — óbito aparente", "RCP se >=32oC; reaquecimento antes de declarar óbito em hipotermia"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REGRA DE OURO — AFOGAMENTO E HIPOTERMIA",
+      "section_color": "red",
+      "titulo": "NINGUÉM ESTÁ MORTO ATÉ QUE ESTEJA QUENTE E MORTO",
+      "items": [
+        "Hipotermia grave: ressuscitação deve continuar até núcleo >=32oC — metabolismo reduzido protege o cérebro",
+        "RCP no afogado hipotérmico pode ser prolongada por horas com recuperação neurológica",
+        "Reaquecimento externo: cobertores aquecidos, SF aquecido IV, saco de reaquecimento",
+        "Reaquecimento interno: lavagem vesical/gástrica/peritoneal com SF 42oC; circulação extracorpórea (ECMO) se grave",
+        "Colheira de K+ sérico: K+ >12 mEq/L em hipotermia = pior prognóstico (lise celular); suspender RCP",
+        "Evitar antiarrítmicos até T >30oC — fibrilação ventricular refratária ao tratamento farmacológico a frio"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "HIPOTERMIA — CLASSIFICAÇÃO E EFEITOS",
+      "section_color": "teal",
+      "headers": ["Grau", "T central (oC)", "Manifestações clínicas"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.16, 0.22, 0.62],
+      "rows": [
+        ["Leve", "32-35", "Tremores intensos, taquicardia, vasoconstricção, alteração de juízo"],
+        ["Moderada", "28-32", "Parada dos tremores (mau sinal), bradicardia, sonolência, ataxia"],
+        ["Grave", "20-28", "Coma, hipotensão, arritmias (FA lenta, FV), oligúria"],
+        ["Profunda/crítica", "<20", "Assistolia, ausência de resposta a estímulos, midríase fixa, morte aparente"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DO AFOGAMENTO NO PS",
+      "title": "AFOGAMENTO — ABC + REAQUECIMENTO",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Retirar da água — imobilizar coluna se trauma\nEvaliar nível de consciência + pulso + respiração", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Sem pulso/respiração: RCP imediata\nAquecer enquanto reanima — não interromper RCP pelo frio", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.27, "y": 0.44, "w": 150, "h": 24, "text": "Com pulso:\nO2 alto fluxo (15 L/min)\nVNI se SpO2 <90%\nIOT se grau 3-4", "color": "orange", "font_size": 5.5},
+        {"id": "d", "x": 0.73, "y": 0.44, "w": 150, "h": 24, "text": "Hipotermia associada:\nRemover roupa molhada\nAquecer ativamente:\nSF 42oC IV, cobertor", "color": "teal", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.14, "w": 215, "h": 22, "text": "Internação pelo menos 24h (graus 2-4)\nRaio-X + gasometria + eletrólitos\nEvitar hipóxia secundária (principal causa de morte)", "color": "green", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ÁGUA DOCE vs SALGADA — DIFERENÇAS",
+      "section_color": "orange",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Água Doce (hipotônica)",
+        "items": [
+          "Absorção pulmonar maior → hipervolemia leve",
+          "Dilui surfactante alveolar → atelectasia + EPA",
+          "Hipotonicidade: lise de hemácias (hemólise — minor clinicamente)",
+          "Desequilíbrio: hipocalcemia, hiponatremia",
+          "Clinicamente: diferença entre doce/salgada é IRRELEVANTE no tratamento",
+          "Tratar o EPA e hipóxia — independente do tipo de água"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Água Salgada (hipertônica)",
+        "items": [
+          "Atrai fluido para o alvéolo → EPA imediato",
+          "Hipovolemia leve (fluido sai do vascular)",
+          "Surfactante: desnaturado pela salinidade",
+          "Hipernatremia leve",
+          "Clínica: EPA mais rápido e grave que doce",
+          "Tratamento igual — O2, VNI/IOT, hidratação"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PROGNÓSTICO E ALTA DO AFOGADO",
+      "titulo": "CRITÉRIOS DE ALTA E INTERNAÇÃO",
+      "items": [
+        "Grau 1 assintomático: observar 4-6h + SpO2 estável — alta com orientações",
+        "Grau 2 ou mais: internar (risco de deterioração tardia em até 6-12h)",
+        "Síndrome pós-afogamento: EPA tardio em 4-6h (fisiopatologia similar ao SDRA)",
+        "Predicador de mau prognóstico: submersão >10 min em adultos, >5 min em água quente",
+        "Hipotermia grave: RCP prolongada — consultar ECMO se disponível",
+        "Criança afogada em água fria: maior potencial de recuperação neurológica — não desistir precocemente"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Criança resgatada de piscina com 3 minutos de submersão. Inconsciente, sem pulso, hipotérmica (T=28oC). Qual conduta?",
+      "alternativas": [
+        "Aguardar reaquecimento antes de iniciar RCP",
+        "Declarar óbito — submersão prolongada e hipotermia grave",
+        "RCP imediata + reaquecimento concomitante — não interromper RCP pelo frio",
+        "Apenas aquecimento com cobertor e observação",
+        "Desfibrilação imediata sem RCP"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Afogado resgatado consciente, com tosse intensa e estertores em bases. SpO2 88%. Classificação e conduta?",
+      "alternativas": [
+        "Grau 1 — alta com orientações",
+        "Grau 2 — O2 por cateter nasal e observação",
+        "Grau 3 — O2 alto fluxo + VNI se necessário + internação em UTI",
+        "Grau 4 — IOT imediata e vasopressores",
+        "Grau 6 — RCP imediata"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Em paciente hipotérmico em PCR, qual critério laboratorial pode ser utilizado para considerar a interrupção da ressuscitação?",
+      "alternativas": [
+        "Temperatura central <20oC",
+        "K+ sérico >12 mEq/L (hipercalemia indica lesão celular irreversível)",
+        "pH <6,5",
+        "Tempo de submersão >10 min",
+        "Pupila midriática fixa bilateral"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "No afogamento em água doce vs salgada, qual a principal diferença prática no manejo?",
+      "alternativas": [
+        "Afogamento em água salgada exige hidratação IV obrigatória enquanto o doce não",
+        "Afogamento em água doce exige broncodilatador",
+        "Não há diferença clínica relevante no tratamento — tratar hipóxia e EPA independente do tipo de água",
+        "Afogamento em água doce nunca causa EPA",
+        "Afogamento em água salgada contraindica VNI"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente hipotérmico (T=26oC) em FV refratária às três primeiras desfibrilações. Qual é a conduta correta?",
+      "alternativas": [
+        "Aumentar a energia para 400 J",
+        "Administrar amiodarona 300 mg IV e repetir choques",
+        "Continuar RCP e reaquecimento — desfibrilar novamente quando T >30oC",
+        "Declarar óbito e interromper os esforços",
+        "Administrar adrenalina 1 mg IV a cada minuto"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Ninguém está morto até que esteja quente e morto. RCP imediata + reaquecimento concomitante — metabolismo reduzido pela hipotermia protege o cérebro. Criança hipotérmica em água fria tem maior potencial de recuperação neurológica. Continuar RCP até T >=32oC ou K+ >12."},
+    {"resposta": "C", "comentario": "Szpilman grau 3: EPA moderado + SpO2 <90% + estertores difusos. Conduta: O2 alto fluxo (15L/min), VNI se SpO2 <90% ou SpO2 responde mal, IOT se não melhora. Internação em UTI. Grau 2 seria apenas estertores em bases sem hipóxia grave."},
+    {"resposta": "B", "comentario": "K+ >12 mEq/L em hipotermia indica lise celular maciça irreversível — critério para suspender RCP em hipotermia. Pupila midriática e pH não são suficientes isoladamente. Temperatura central baixa não é critério de interrupção — é indicação de continuar."},
+    {"resposta": "C", "comentario": "Água doce vs salgada: diferença fisiopatológica existente, mas clinicamente IRRELEVANTE para o tratamento. Ambas causam EPA (mecanismos diferentes), hipóxia e aspiração. Tratamento: O2, VNI/IOT, reaquecimento, internação. Não mudar conduta pelo tipo de água."},
+    {"resposta": "C", "comentario": "Hipotermia grave (T<30oC): FV é resistente à desfibrilação, antiarrítmicos são ineficazes e podem ser prejudiciais. Continuar RCP de qualidade + reaquecimento ativo. Desfibrilar novamente quando T >30oC. ECMO (circulação extracorpórea) é opção se disponível."}
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "slug": "pneumonia_pac_adulto",
+  "titulo": "Pneumonia Adquirida na Comunidade (Adulto)",
+  "especialidade": "PNEUMOLOGIA",
+  "chapter_subject": "Pneumonia Adquirida na Comunidade no Adulto",
+  "chapter_bar": "PAC — CURB-65 + ATB EM 4 HORAS",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CURB-65 — ESCORE DE GRAVIDADE",
+      "section_color": "navy",
+      "headers": ["Critério", "Pontuação", "Score → Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.35, 0.15, 0.50],
+      "rows": [
+        ["C — Confusão (nova)", "1", "0-1 pontos: baixo risco → alta com ATB oral"],
+        ["U — Ureia >45 mg/dL (>7 mmol/L)", "1", "2 pontos: risco intermediário → internar"],
+        ["R — Respiração ≥30 ipm", "1", "3-5 pontos: alto risco → UTI se ≥3"],
+        ["B — PA sistólica <90 ou diastólica ≤60", "1", "PSI/PORT: alternativa mais sensível"],
+        ["65 — Idade ≥65 anos", "1", "Critérios IDSA/ATS: UTI se ≥1 maior ou ≥3 menores"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM INICIAL — PAC",
+      "title": "PAC — TRIAR, ATB EM 4H, CULTURA",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Tosse + febre + dispneia + imagem pulmonar\nHemograma, PCR, ureia, creatinina, gases, hemocultura", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Calcular CURB-65 + PSI\nAvaliar critérios de UTI (IDSA/ATS)", "color": "teal", "font_size": 5.8},
+        {"id": "c", "x": 0.22, "y": 0.43, "w": 150, "h": 26, "text": "CURB 0-1 (leve)\nAlta com amoxicilina VO\n± azitromicina x 5-7 dias", "color": "green", "font_size": 5.5},
+        {"id": "d", "x": 0.78, "y": 0.43, "w": 150, "h": 26, "text": "CURB ≥2 (grave)\nInternar → IV: ceftriaxona\n+ azitromicina ou quinolona", "color": "red", "font_size": 5.5},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 215, "h": 22, "text": "ATB em <4h do diagnóstico\nReavaliar em 48-72h (resposta clínica)", "color": "orange", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIOTICOTERAPIA EMPÍRICA — PAC",
+      "section_color": "orange",
+      "headers": ["Cenário", "ATB de escolha", "Duração"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.28, 0.46, 0.26],
+      "rows": [
+        ["Ambulatorial, sem comorbidade", "Amoxicilina 1g VO 8/8h", "5 dias"],
+        ["Ambulatorial, comorbidade (DM, DRC, DPOC, imunossupressão)", "Amoxicilina-clavulanato OU quinolona respiratória (levofloxacino 750mg/dia)", "5-7 dias"],
+        ["Internação (CURB ≥2, sem UTI)", "Ceftriaxona 2g IV + azitromicina 500mg IV/VO", "7 dias"],
+        ["UTI, sem risco de Pseudomonas", "Ceftriaxona + azitromicina OU ceftriaxona + levofloxacino IV", "7-10 dias"],
+        ["UTI, risco de Pseudomonas*", "Piperacilina-tazobactam + levofloxacino OU cefepima + azitromicina", "7-10 dias"],
+        ["Influenza + pneumonia bacteriana", "ATB + oseltamivir 75mg 12/12h x 5 dias", "7 dias"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CRITÉRIOS DE UTI — IDSA/ATS",
+      "section_color": "red",
+      "titulo": "ADMITIR NA UTI SE...",
+      "items": [
+        "1 critério MAIOR: choque séptico (vasopressor) OU ventilação mecânica invasiva",
+        "≥3 critérios MENORES: FR ≥30, PaO2/FiO2 <250, multilobar, confusão, ureia >45, leucopenia <4.000, trombocitopenia <100k, hipotermia, hipotensão necessitando fluido",
+        "Lactato ≥4 mmol/L ou hipotensão refratária = UTI obrigatória",
+        "Monitorar bacteriemia: hemoculturas ANTES do ATB (2 pares)",
+        "Antígeno urinário Pneumococo + Legionella: em todos os casos graves"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "AGENTES ESPECIAIS — SUSPEITAR E TRATAR",
+      "section_color": "purple",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Legionella pneumophila",
+        "items": [
+          "Epidemia hídrica (torres de resfriamento, ar condicionado)",
+          "Clínica extra-pulmonar: diarreia, confusão, hiponatremia",
+          "Raio-X: infiltrado lobar ou multilobar",
+          "Diagnóstico: antígeno urinário (sorotipo 1)",
+          "Tratamento: quinolona (levofloxacino) ou azitromicina",
+          "Notificação compulsória se surto"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Pneumocistose (CD4 <200)",
+        "items": [
+          "Início insidioso, tosse seca, LDH elevado",
+          "Raio-X: vidro fosco bilateral",
+          "PCR ou imunofluorescência no LBA",
+          "Tratamento: SMX-TMP 15-20 mg/kg/d IV x 21d",
+          "Prednisona se PO2 <70 mmHg",
+          "Profilaxia: SMX-TMP se CD4 <200"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "MONITORIZAÇÃO E CRITÉRIOS DE ALTA",
+      "titulo": "RESPOSTA E DESESCALONAMENTO",
+      "items": [
+        "Reavaliação 48-72h: melhora de febre, FR, leucocitose — 'janela de avaliação'",
+        "Persistência de febre após 72h: resistência, superinfecção, derrame, abscesso, TBC",
+        "Escalonamento VO: estável, tolerando VO, FR <24, T <38, sem confusão — bioequivalente",
+        "Alta segura: afebril >24h, FC <100, PA estável, FR <24, SpO2 >90%, tolerando VO",
+        "Duração ATB: 5 dias se boa resposta (não fixar em 7-10 dias)",
+        "Profilaxia influenza anual e vacina pneumocócica em >65 anos, DM, imunossuprimido"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Homem de 72 anos com pneumonia, confusão mental aguda, FR 32 ipm, ureia 60 mg/dL e PA 95/60 mmHg. Qual é o escore CURB-65 e a conduta?",
+      "alternativas": [
+        "CURB-65 = 2 — alta com ATB oral",
+        "CURB-65 = 4 — internação e considerar UTI",
+        "CURB-65 = 3 — internação em enfermaria comum",
+        "CURB-65 = 1 — alta com azitromicina",
+        "CURB-65 = 5 — internação em UTI obrigatória"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o antibiótico de PRIMEIRA LINHA para PAC leve em paciente sem comorbidades?",
+      "alternativas": [
+        "Ceftriaxona 1g IV",
+        "Levofloxacino 750 mg VO",
+        "Amoxicilina 1g VO de 8/8h por 5 dias",
+        "Azitromicina 500 mg VO isolada",
+        "Piperacilina-tazobactam IV"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente internado com PAC grave (CURB-65 = 3), sem risco de Pseudomonas. Qual esquema antibiótico é recomendado?",
+      "alternativas": [
+        "Amoxicilina oral isolada",
+        "Ceftriaxona 2g IV + azitromicina 500 mg IV/VO",
+        "Meropeném + vancomicina",
+        "Cotrimoxazol IV",
+        "Doxiciclina VO isolada"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente com PAC grave e exame urinário positivo para antígeno de Legionella. Qual antibiótico deve ser adicionado?",
+      "alternativas": [
+        "Vancomicina IV",
+        "Metronidazol IV",
+        "Levofloxacino 750 mg IV (ou azitromicina)",
+        "Ceftriaxona isolada é suficiente",
+        "Ampicilina IV"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente com PAC internado por 48h, afebril, FR 18 ipm, FC 88, PA estável, tolerando dieta oral. Qual conduta é adequada?",
+      "alternativas": [
+        "Manter antibiótico IV por 7 dias completos",
+        "Passar para antibiótico oral equivalente (switch therapy) e considerar alta",
+        "Solicitar nova tomografia de controle antes de qualquer mudança",
+        "Manter internado por mais 5 dias para observação",
+        "Aumentar o espectro do antibiótico por segurança"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Confusão (1) + Ureia >45 (1) + FR ≥30 (1) + PA baixa (1) = CURB-65 = 4. Alto risco → internação + avaliar UTI. Se ≥3 critérios menores IDSA/ATS ou 1 maior (VM, vasopressor) = UTI."},
+    {"resposta": "C", "comentario": "PAC leve, sem comorbidades: amoxicilina 1g VO 8/8h por 5 dias é o padrão (cobre S. pneumoniae — mais prevalente). Adicionar azitromicina ou trocar por quinolona se suspeita de atípico ou comorbidade."},
+    {"resposta": "B", "comentario": "PAC grave hospitalar sem risco de Pseudomonas: ceftriaxona 2g IV (cobre pneumococo, H. influenzae) + azitromicina (cobre atípicos: Mycoplasma, Legionella, Chlamydia) — padrão das diretrizes IDSA/ATS."},
+    {"resposta": "C", "comentario": "Legionella: quinolona respiratória (levofloxacino 750mg) ou azitromicina são os antibióticos de escolha. Ceftriaxona isolada NÃO cobre Legionella (intracelular). Notificar se surto, investigar fonte hídrica."},
+    {"resposta": "B", "comentario": "Switch therapy (escalonamento oral): quando afebril por >24h, FC <100, FR <24, PA estável, SpO2 >90% e tolerando VO. Equivalência amoxicilina IV/VO. Reduz custos e riscos do acesso venoso, sem piora de desfechos."}
+  ]
+}

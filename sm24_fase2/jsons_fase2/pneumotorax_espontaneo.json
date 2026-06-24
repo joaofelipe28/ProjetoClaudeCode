@@ -1,0 +1,173 @@
+{
+  "slug": "pneumotorax_espontaneo",
+  "titulo": "Pneumotórax Espontâneo",
+  "especialidade": "PNEUMOLOGIA",
+  "chapter_subject": "Pneumotórax Espontâneo — Diagnóstico e Manejo",
+  "chapter_bar": "PNEUMOTÓRAX — CLASSIFICAR E DRENAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO — PRIMÁRIO vs SECUNDÁRIO",
+      "section_color": "navy",
+      "headers": ["Tipo", "Definição", "Tratamento preferido"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.46, 0.32],
+      "rows": [
+        ["Primário (PSP)", "Sem doença pulmonar conhecida. Jovem, alto, tabagismo. Bolha subpleural (blebs).", "Aspiração simples OU dreno se grande ou ineficaz"],
+        ["Secundário (SSP)", "Com doença pulmonar (DPOC, fibrose, infecção). Menos tolerado. Risco de falha.", "Dreno de tórax (internação); vigilância cuidadosa"],
+        ["Hipertensivo", "Pneumotórax compressivo: desvio de mediastino, instabilidade hemodinâmica", "AGULHA imediata, DEPOIS dreno"],
+        ["Traumático", "Após trauma ou procedimento (CVC, toracocentese, biópsia)", "Dreno de tórax conforme tamanho/instabilidade"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ALGORITMO — PNEUMOTÓRAX ESPONTÂNEO",
+      "title": "PNEUMOTÓRAX — TAMANHO + SINTOMAS",
+      "height": 215,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 215, "h": 22, "text": "Dor pleurítica + dispneia + MV diminuído\nRaio-X PA (expiração): confirmar", "color": "navy", "font_size": 5.8},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 215, "h": 22, "text": "Hipertensivo? (instabilidade + desvio mediastino)\nSim: agulha 2º EIC MCL agora!", "color": "red", "font_size": 5.8},
+        {"id": "c", "x": 0.22, "y": 0.42, "w": 155, "h": 26, "text": "PEQUENO (<2cm ápice-cúpula)\n+ mínimos sintomas:\nO2, observação 6h, alta se estável", "color": "green", "font_size": 5.3},
+        {"id": "d", "x": 0.78, "y": 0.42, "w": 155, "h": 26, "text": "GRANDE (≥2cm) OU sintomático\nou secundário:\nAspiração ou dreno de tórax", "color": "orange", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 215, "h": 22, "text": "Dreno: confirmar expansão com Raio-X\nSistema de selo d'água ou válvula unidirecional", "color": "teal", "font_size": 5.5}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PROCEDIMENTOS — OPÇÕES DE DRENAGEM",
+      "section_color": "orange",
+      "headers": ["Técnica", "Indicação", "Posição / Sítio"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Agulha de alívio (descompressão)", "Pneumotórax HIPERTENSIVO (instável)", "2º EIC, linha hemiclavicular (LMC), agulha 14-16G"],
+        ["Aspiração simples (cateter fino)", "PSP grande ou sintomático; 1ª linha na BTS", "2º EIC LMC ou 4º/5º EIC linha axilar anterior"],
+        ["Dreno de tórax 14-20 Fr", "PSP refratário à aspiração; SSP; hemopneumotórax", "4º/5º EIC linha axilar média (triângulo seguro)"],
+        ["Dreno 28-36 Fr", "Hemotórax, trauma, empiema, derrame espesso", "Mesmo sítio, com guia cirúrgica"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PNEUMOTÓRAX HIPERTENSIVO — EMERGÊNCIA",
+      "section_color": "red",
+      "titulo": "NÃO AGUARDAR RAIO-X",
+      "items": [
+        "Clínica: dispneia intensa + hipotensão + desvio de traqueia CONTRALATERAL + ausência de MV",
+        "Turgência jugular + hipotensão + hipóxia refratária",
+        "NÃO AGUARDAR Raio-X — diagnóstico CLÍNICO, tratar imediatamente",
+        "Descompressão com agulha: 2º EIC linha hemiclavicular, agulha 14-16G",
+        "Após agulha: dreno de tórax (a agulha é ponte, pode entupir)",
+        "Causa: trauma, IOT com pressão positiva, ruptura de blebs, procedimento"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "MANEJO PÓS-DRENO E ALTA",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Manejo do Dreno",
+        "items": [
+          "Conectar a sistema de selo d'água (Pleur-evac) ou válvula de Heimlich",
+          "Raio-X após inserção: confirmar posição e expansão",
+          "Borbulhamento persistente = fístula broncopleural (não retirar)",
+          "Retirar quando: pulmão expandido + sem borbulhamento por 24h",
+          "Clampear por 6-12h antes de retirar (observar recorrência)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Prevenção de Recorrência",
+        "items": [
+          "PSP: recorrência em 30% no 1º ano",
+          "SSP: recorrência em até 50%",
+          "Pleurodese química (talco): indicada após 2º episódio ou SSP",
+          "Cirurgia (VATS): bolhectomia + pleurectomia — PSP com recorrência",
+          "Cessação de tabagismo: reduz recorrência",
+          "Não voar por 6 semanas após resolução completa"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ALTA SEGURA — PNEUMOTÓRAX PEQUENO",
+      "titulo": "CRITÉRIOS E ORIENTAÇÕES",
+      "items": [
+        "Pneumotórax primário pequeno (<2 cm) + poucos sintomas + SpO2 >95%",
+        "Observação 4-6h + Raio-X de controle (sem aumento do tamanho)",
+        "O2 em alta vazão acelera reabsorção (acelera 4x vs ar ambiente)",
+        "Orientar: retornar se piora da dispneia, dor intensa, desmaio",
+        "Controle ambulatorial em 24-48h com Raio-X repetido",
+        "Abstinência de tabaco; evitar esportes de contato por 4-6 semanas",
+        "Não mergulhar até resolução completa documentada"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Jovem de 25 anos, alto, com dor pleurítica e dispneia após esforço. Raio-X: colapso de 30% do pulmão direito sem desvio de mediastino. Qual é o diagnóstico e conduta inicial?",
+      "alternativas": [
+        "Pneumotórax hipertensivo — agulha 2º EIC imediata",
+        "Pneumotórax espontâneo primário grande — aspiração ou dreno de tórax",
+        "Derrame pleural — toracocentese diagnóstica",
+        "Pneumotórax pequeno — alta imediata sem nenhum procedimento",
+        "TEP — anticoagulação plena"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Em qual situação o pneumotórax é tratado IMEDIATAMENTE sem aguardar confirmação radiológica?",
+      "alternativas": [
+        "PSP pequeno em jovem assintomático",
+        "SSP com SpO2 93%",
+        "Pneumotórax hipertensivo: hipotensão + ausência de MV + desvio contralateral de traqueia",
+        "Pneumotórax após CVC, estável",
+        "PSP recorrente em paciente conhecido"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o sítio de inserção correto do dreno de tórax para pneumotórax, segundo as diretrizes atuais?",
+      "alternativas": [
+        "2º espaço intercostal, linha hemiclavicular",
+        "4º/5º espaço intercostal, linha axilar média (triângulo seguro)",
+        "7º espaço intercostal, linha hemiclavicular",
+        "3º espaço intercostal, linha axilar posterior",
+        "Qualquer espaço com macicez ao percutir"
+      ]
+    },
+    {
+      "source": "SES-DF / Adaptada",
+      "enunciado": "Paciente com DPOC grave e pneumotórax espontâneo (secundário). Por que esse paciente tolera menos o pneumotórax que um jovem saudável?",
+      "alternativas": [
+        "Porque o DPOC causa maior espessamento pleural",
+        "Porque a reserva pulmonar já está comprometida, e mesmo pequeno pneumotórax causa hipóxia grave",
+        "Porque DPOC aumenta a probabilidade de pneumotórax hipertensivo",
+        "Porque não há diferença na tolerância",
+        "Porque DPOC impede a anestesia local para o dreno"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "PSP em jovem de 22 anos, 2º episódio em 1 ano. Qual conduta deve ser considerada para prevenção de novos episódios?",
+      "alternativas": [
+        "Apenas observação e orientações",
+        "Antibiótico profilático por 6 meses",
+        "Pleurodese química ou cirurgia (VATS) com bolhectomia + pleurectomia",
+        "Corticoide oral para inflamação da pleura",
+        "Broncoscopia terapêutica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "PSP com 30% de colapso (>2 cm) = pneumotórax grande → aspiração simples ou dreno de tórax. Pneumotórax hipertensivo teria hipotensão + desvio contralateral (ausente aqui). PSP pequeno <2 cm poderia ser observado."},
+    {"resposta": "C", "comentario": "Pneumotórax hipertensivo = diagnóstico CLÍNICO + tratamento imediato (sem Raio-X). Clínica: dispneia + hipotensão + ausência de MV unilateral + desvio contralateral de traqueia. Agulha 2º EIC MCL urgente, seguida de dreno."},
+    {"resposta": "B", "comentario": "Sítio de drenagem: 4º/5º EIC na linha axilar média ('triângulo seguro' — delimitado por peitoral maior, grande dorsal e linha do mamilo). Evita lesão de nervos e vasos. O 2º EIC MCL é para descompressão de emergência apenas."},
+    {"resposta": "B", "comentario": "SSP em DPOC: a reserva ventilatória já está comprometida. Mesmo pequeno pneumotórax causa hipóxia desproporcional. Dreno de tórax é preferível à aspiração simples. Internação obrigatória; alto risco de expansão e falha."},
+    {"resposta": "C", "comentario": "PSP com 2º episódio: risco de recorrência de 50-60%. Indicação de pleurodese química (talco) ou cirurgia VATS (bolhectomia + pleurectomia). Reduz recorrência para <5%. Cessar tabagismo também fundamental."}
+  ]
+}
