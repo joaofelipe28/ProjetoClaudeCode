@@ -82,7 +82,13 @@
       "Read(//Users/joaofelipescheidt/.config/rclone/**)",
       "Bash(gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/test_compress.pdf apostila_sdra.pdf)",
       "Bash(python3 -c \"from PIL import Image; print\\('PIL OK'\\)\")",
-      "Bash(python3 -c \"from PIL import Image; im=Image.open\\('sm24-apostila/assets/logo_sm24.png'\\); print\\('dimensões:', im.size, 'modo:', im.mode\\)\")"
+      "Bash(python3 -c \"from PIL import Image; im=Image.open\\('sm24-apostila/assets/logo_sm24.png'\\); print\\('dimensões:', im.size, 'modo:', im.mode\\)\")",
+      "Bash(xargs '-I{}' python3 -c ' *)",
+      "Bash(python3 build_apostila.py --validate-only --outdir ../outputs ../jsons_fase2/pneumonia_pac_pediatria.json)",
+      "Bash(python3 build_apostila.py --outdir ../outputs ../jsons_fase2/pneumonia_pac_pediatria.json)",
+      "Bash(python3 -c \"import pypdf; r=pypdf.PdfReader\\('../outputs/apostila_pneumonia_pac_pediatria.pdf'\\); txt=''.join\\(p.extract_text\\(\\) or '' for p in r.pages\\); print\\('paginas:', len\\(r.pages\\), '| ■ =', txt.count\\(chr\\(9632\\)\\)\\)\")",
+      "Bash(sips -s format png --out /tmp/pac_ped2.png apostila_pneumonia_pac_pediatria.pdf)",
+      "Bash(pdftoppm -png -r 90 -f 3 -l 4 apostila_pneumonia_pac_pediatria.pdf /tmp/pacped)"
     ]
   }
 }
