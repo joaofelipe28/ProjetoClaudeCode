@@ -77,7 +77,12 @@
       "Bash(python3 build_apostila.py --validate-only --outdir ../outputs ../jsons_fase2/osteomielite.json)",
       "Bash(python3 build_apostila.py --validate-only --outdir ../outputs ../jsons_fase2/torcao_testicular.json)",
       "Bash(python3 build_apostila.py --outdir ../outputs ../jsons_fase2/endoftalmite.json)",
-      "Bash(python3 -c \"import pypdf; r=pypdf.PdfReader\\('../outputs/apostila_endoftalmite.pdf'\\); txt=''.join\\(p.extract_text\\(\\) or '' for p in r.pages\\); print\\('endoftalmite ■ =', txt.count\\(chr\\(9632\\)\\)\\)\")"
+      "Bash(python3 -c \"import pypdf; r=pypdf.PdfReader\\('../outputs/apostila_endoftalmite.pdf'\\); txt=''.join\\(p.extract_text\\(\\) or '' for p in r.pages\\); print\\('endoftalmite ■ =', txt.count\\(chr\\(9632\\)\\)\\)\")",
+      "Bash(python3 -c \"import googleapiclient; print\\('googleapiclient OK'\\)\")",
+      "Read(//Users/joaofelipescheidt/.config/rclone/**)",
+      "Bash(gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=/tmp/test_compress.pdf apostila_sdra.pdf)",
+      "Bash(python3 -c \"from PIL import Image; print\\('PIL OK'\\)\")",
+      "Bash(python3 -c \"from PIL import Image; im=Image.open\\('sm24-apostila/assets/logo_sm24.png'\\); print\\('dimensões:', im.size, 'modo:', im.mode\\)\")"
     ]
   }
 }
