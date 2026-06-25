@@ -1,0 +1,178 @@
+{
+  "slug": "neutropenia_febril_nao_oncologica",
+  "titulo": "Neutropenia Febril Não-Oncológica",
+  "especialidade": "HEMATOLOGIA",
+  "chapter_subject": "Neutropenia Febril fora do Câncer — Causas, Risco e Antibiótico Precoce",
+  "chapter_bar": "NEUTROPENIA FEBRIL — ATB EM <1H SEMPRE",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DEFINIÇÃO E CAUSAS NÃO-ONCOLÓGICAS",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Definição", "Neutrófilos < 500/mm3 (ou < 1000 com previsão de queda) + febre (>= 38,3 C única ou >= 38 C por 1h)"],
+        ["Medicamentosa", "Metimazol/propiltiouracila, dipirona, sulfas, clozapina, anticonvulsivantes, antibióticos"],
+        ["Infecciosa", "Vírus (HIV, dengue, EBV, CMV), sepse com consumo"],
+        ["Imune/medular", "Anemia aplásica, neutropenia autoimune, síndrome mielodisplásica"],
+        ["Nutricional", "Deficiência de B12/folato"],
+        ["Outras", "Hiperesplenismo, neutropenia étnica benigna (não cursa com infecção grave)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "A REGRA É A MESMA DO PACIENTE ONCOLÓGICO",
+      "section_color": "red",
+      "titulo": "FEBRE + NEUTROPENIA = ANTIBIÓTICO DE AMPLO ESPECTRO EM ATÉ 1 HORA",
+      "items": [
+        "Independe da causa: febre + neutropenia exige antibiótico de amplo espectro com cobertura antipseudomonas em < 1 hora",
+        "Coletar hemoculturas (2 sítios, incluindo cateter se houver) ANTES do antibiótico, mas sem atrasar o ATB",
+        "ATB empírico: cefepima OU piperacilina-tazobactam OU meropeném",
+        "Adicionar vancomicina se: instabilidade, infecção de cateter, mucosite grave, pele/partes moles ou suspeita de MRSA",
+        "SUSPENDER imediatamente o fármaco suspeito de causar a neutropenia (ex.: metimazol, dipirona, clozapina)",
+        "G-CSF (filgrastim) pode acelerar a recuperação na neutropenia medicamentosa/grave",
+        "Estratificar gravidade (sepse) e definir o nível de cuidado (UTI se choque)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM",
+      "title": "FEBRE + NEUTROPENIA -> ATB JÁ + ACHAR A CAUSA",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Febre + hemograma com neutrófilos < 500\nRevisar MEDICAÇÕES em uso (gatilho frequente)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Hemoculturas + exames + ATB de amplo espectro em < 1h\n(cefepima/pip-tazo/meropeném)", "color": "red", "font_size": 5.3},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Suspender o fármaco\nsuspeito (metimazol,\ndipirona, clozapina...)\nConsiderar G-CSF", "color": "orange", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "+ Vancomicina se\ninstabilidade/cateter/\nmucosite/MRSA\nUTI se sepse/choque", "color": "teal", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Investigar a causa da neutropenia (medular/imune/infecciosa)\nReavaliar em 48-72h; antifúngico se febre persistente", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "FÁRMACOS CLASSICAMENTE ASSOCIADOS",
+      "section_color": "orange",
+      "headers": ["Classe", "Exemplos", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.40, 0.34],
+      "rows": [
+        ["Antitireoidianos", "Metimazol, propiltiouracila", "Agranulocitose; orientar o paciente a procurar o PS se febre"],
+        ["Analgésico/antitérmico", "Dipirona (metamizol)", "Agranulocitose idiossincrática"],
+        ["Antipsicótico", "Clozapina", "Exige monitorização hematológica programada"],
+        ["Antibióticos", "Sulfas, betalactâmicos, vancomicina", "Neutropenia por uso prolongado"],
+        ["Anticonvulsivantes", "Carbamazepina, fenitoína", "Discrasias sanguíneas"],
+        ["Outros", "Quimioterápicos não oncológicos (imunossupressores), tionamidas", "Sempre revisar a lista de medicamentos"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CUIDADOS E INVESTIGAÇÃO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Medidas Imediatas",
+        "items": [
+          "Antibiótico de amplo espectro em < 1 hora (cobrir Pseudomonas)",
+          "Hemoculturas antes do ATB (sem atrasar)",
+          "Suspender o fármaco potencialmente causador",
+          "Precaução de contato/isolamento protetor conforme o serviço",
+          "G-CSF na agranulocitose medicamentosa/grave (acelera recuperação)",
+          "Reavaliar e descalonar conforme cultura"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Investigar a Causa",
+        "items": [
+          "Revisar minuciosamente todos os medicamentos e o tempo de uso",
+          "Hemograma com avaliação das outras séries (pancitopenia?)",
+          "Sorologias virais (HIV, hepatites, EBV/CMV)",
+          "B12 e folato",
+          "Esfregaço de sangue periférico; mielograma se citopenia persistente/inexplicada",
+          "Encaminhar à hematologia se neutropenia mantida"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Febre + neutrófilos < 500 = emergência, qualquer que seja a causa",
+        "Hemoculturas + antibiótico de amplo espectro (antipseudomonas) em < 1 hora",
+        "Adicionar vancomicina se instabilidade, cateter, mucosite ou suspeita de MRSA",
+        "Suspender imediatamente o fármaco suspeito (metimazol, dipirona, clozapina, etc.)",
+        "Considerar G-CSF na agranulocitose medicamentosa/grave",
+        "Investigar a causa (medular, imune, infecciosa, nutricional) e encaminhar à hematologia"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente em uso de metimazol há 3 semanas chega com febre e odinofagia. Hemograma: neutrófilos 300/mm3. Qual a conduta?",
+      "alternativas": [
+        "Antitérmico e alta",
+        "Suspender o metimazol + hemoculturas + antibiótico de amplo espectro (antipseudomonas) em menos de 1 hora",
+        "Aguardar a cultura para iniciar o antibiótico",
+        "Apenas antibiótico oral domiciliar",
+        "Manter o metimazol e observar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Sobre a neutropenia febril não-oncológica, qual afirmação é correta?",
+      "alternativas": [
+        "Pode-se aguardar 24h para iniciar o antibiótico",
+        "A conduta de antibiótico precoce de amplo espectro é a mesma do paciente oncológico",
+        "Nunca usar antibiótico se a causa for medicamentosa",
+        "Não há necessidade de hemoculturas",
+        "Só tratar se houver foco evidente"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual antibiótico empírico é adequado por cobrir Pseudomonas na neutropenia febril?",
+      "alternativas": [
+        "Amoxicilina oral",
+        "Cefepima (ou piperacilina-tazobactam, ou meropeném)",
+        "Azitromicina",
+        "Ceftriaxona isolada",
+        "Nitrofurantoína"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Além do antibiótico, qual medida é essencial quando a neutropenia é atribuída a um medicamento?",
+      "alternativas": [
+        "Aumentar a dose do medicamento",
+        "Suspender imediatamente o fármaco suspeito",
+        "Trocar por outro da mesma classe",
+        "Manter e observar",
+        "Reduzir pela metade a dose"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual fármaco usado no hipertireoidismo pode causar agranulocitose, exigindo orientação para procurar o PS em caso de febre/odinofagia?",
+      "alternativas": [
+        "Levotiroxina",
+        "Metimazol (ou propiltiouracila)",
+        "Propranolol",
+        "Iodo",
+        "Prednisona"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Febre + odinofagia + neutrófilos 300 em uso de metimazol = agranulocitose medicamentosa com neutropenia febril. Conduta: suspender o metimazol, coletar hemoculturas e iniciar antibiótico de amplo espectro (antipseudomonas) em < 1 hora — mesma regra do paciente oncológico."},
+    {"resposta": "B", "comentario": "A neutropenia febril, independentemente da causa (oncológica ou não), exige antibiótico de amplo espectro precoce (< 1 hora). A abordagem é a mesma; adicionalmente, suspende-se o fármaco causador quando identificado."},
+    {"resposta": "B", "comentario": "O antibiótico empírico deve cobrir Pseudomonas: cefepima, piperacilina-tazobactam ou meropeném. Adiciona-se vancomicina em situações específicas (instabilidade, cateter, mucosite, MRSA)."},
+    {"resposta": "B", "comentario": "Quando a neutropenia é atribuída a um medicamento, é essencial suspender imediatamente o fármaco suspeito (ex.: metimazol, dipirona, clozapina), além do tratamento antibiótico. Considerar G-CSF para acelerar a recuperação."},
+    {"resposta": "B", "comentario": "O metimazol (e a propiltiouracila) pode causar agranulocitose. O paciente deve ser orientado a suspender a medicação e procurar o PS imediatamente em caso de febre ou odinofagia, para avaliação do hemograma."}
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "slug": "delirium_demencia_depressao",
+  "titulo": "Delirium vs Demência vs Depressão no Idoso",
+  "especialidade": "CLÍNICA MÉDICA",
+  "chapter_subject": "Os 3 D do Idoso — Diferenciar Delirium, Demência e Depressão",
+  "chapter_bar": "OS 3 D — DELIRIUM É EMERGÊNCIA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "OS TRÊS D — DIFERENCIAÇÃO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Delirium", "Demência", "Depressão"],
+      "header_colors": ["gray", "red", "navy", "teal"],
+      "col_widths": [0.20, 0.27, 0.27, 0.26],
+      "rows": [
+        ["Início", "Agudo (horas-dias)", "Insidioso (meses-anos)", "Subagudo (semanas)"],
+        ["Curso", "Flutuante, piora à noite", "Progressivo e estável no dia", "Persistente, pior pela manhã"],
+        ["Atenção", "Gravemente prejudicada", "Preservada (fases iniciais)", "Pode estar reduzida"],
+        ["Consciência", "Alterada (hipo ou hiperalerta)", "Normal (até fases avançadas)", "Normal"],
+        ["Reversibilidade", "Reversível (tratar a causa)", "Geralmente irreversível", "Reversível com tratamento"],
+        ["Pista-chave", "Procurar causa orgânica aguda", "Declínio cognitivo crônico", "Humor deprimido, anedonia"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DELIRIUM É UMA EMERGÊNCIA MÉDICA",
+      "section_color": "red",
+      "titulo": "MUDANÇA AGUDA DO ESTADO MENTAL = BUSCAR CAUSA",
+      "items": [
+        "Delirium = disfunção cerebral aguda secundária a uma causa orgânica (não é 'própria da idade')",
+        "Associado a maior mortalidade, internação prolongada e declínio funcional",
+        "Subtipos: hiperativo (agitado), hipoativo (sonolento — mais comum e mais subdiagnosticado) e misto",
+        "Diagnóstico com o CAM: (1) início agudo e curso flutuante + (2) desatenção + (3 OU 4) pensamento desorganizado OU alteração do nível de consciência",
+        "Sempre investigar a causa: a abordagem é tratar o gatilho, não apenas sedar",
+        "Demência é o principal fator de risco — delirium frequentemente se sobrepõe à demência"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA ALTERAÇÃO MENTAL NO IDOSO",
+      "title": "MUDOU AGUDAMENTE? PENSE EM DELIRIUM",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Idoso com alteração cognitiva/comportamental\nComparar com o estado basal (informante)", "color": "navy", "font_size": 5.5},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Mudança AGUDA + flutuante + desatenção?\nAplicar CAM", "color": "red", "font_size": 5.5},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "SIM = DELIRIUM\nBuscar causa orgânica\n(mnemônico) + tratar\n+ medidas não farmacológicas", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "NÃO agudo:\nDeclínio crônico -> demência\nHumor/anedonia -> depressão\nInvestigar ambulatorialmente", "color": "teal", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Lembrar: delirium e demência coexistem; depressão pode mimetizar\ndemência (pseudodemência) — reavaliar após tratar", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS DE DELIRIUM — MNEMÔNICO 'I WATCH DEATH'",
+      "section_color": "orange",
+      "headers": ["Letra", "Categoria", "Exemplos"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.12, 0.30, 0.58],
+      "rows": [
+        ["I", "Infeccao", "ITU, pneumonia, sepse (causas muito comuns no idoso)"],
+        ["W", "Withdrawal", "Abstinência de álcool/benzodiazepínico"],
+        ["A", "Aguda metabólica", "Distúrbios de Na/K/Ca, glicemia, acidose"],
+        ["T", "Trauma/Toxinas", "TCE, medicamentos (anticolinérgicos, opioides, BZD)"],
+        ["C/H", "SNC / Hipóxia", "AVC, HSA, meningite; hipóxia, IAM, anemia"],
+        ["D/D/E/A/TH", "Deficiências, endócrino, agudo vascular, metais pesados", "Tiamina/B12; tireoide; retenção urinária/fecaloma; intoxicações"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "MANEJO DO DELIRIUM",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Medidas Não Farmacológicas (1a linha)",
+        "items": [
+          "Tratar a causa de base é o pilar (infecção, droga, distúrbio metabólico, retenção/fecaloma)",
+          "Reorientação, relógio/calendário, presença de familiar",
+          "Restaurar ciclo sono-vigília; reduzir ruído noturno",
+          "Mobilização precoce, retirar sondas/cateteres desnecessários",
+          "Garantir óculos e aparelhos auditivos; hidratação e nutrição",
+          "Revisar e suspender fármacos deliriogênicos (anticolinérgicos, BZD)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Quando Usar Medicação",
+        "items": [
+          "Apenas se agitação com risco para o paciente/equipe e falha das medidas não farmacológicas",
+          "Haloperidol em dose baixa (0,25-0,5 mg) é a opção mais usada; cuidado com QT e sintomas extrapiramidais",
+          "Antipsicótico atípico (quetiapina) em parkinsonismo/corpos de Lewy",
+          "EVITAR benzodiazepínico (piora o delirium) — exceto na abstinência alcoólica/BZD",
+          "Reavaliar diariamente e suspender assim que possível",
+          "Contenção física é último recurso (aumenta agitação e lesão)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ABORDAGEM PRÁTICA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Estabelecer o estado mental BASAL com um informante",
+        "Aplicar o CAM; lembrar do delirium hipoativo (sonolento, passa despercebido)",
+        "Investigar causa: exame físico, glicemia, eletrólitos, função renal, urina/EAS, hemograma, ECG; imagem se indicado",
+        "Checar fármacos, retenção urinária (bexigoma) e fecaloma — causas reversíveis frequentes",
+        "Tratar a causa + medidas não farmacológicas como base",
+        "Antipsicótico em dose baixa só se agitação de risco; evitar benzodiazepínico (exceto abstinência)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Idoso com início agudo de confusão flutuante e desatenção, após internação por pneumonia. Qual o diagnóstico mais provável e a conduta principal?",
+      "alternativas": [
+        "Demência de Alzheimer — iniciar anticolinesterásico",
+        "Delirium — investigar e tratar a causa (a pneumonia/infecção) e aplicar medidas não farmacológicas",
+        "Depressão — iniciar antidepressivo",
+        "Surto psicótico — antipsicótico em dose alta",
+        "Envelhecimento normal — apenas observar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual característica diferencia melhor o delirium da demência?",
+      "alternativas": [
+        "A idade do paciente",
+        "O início agudo com curso flutuante e a desatenção marcante do delirium",
+        "A presença de déficit de memória",
+        "A ausência de alucinações",
+        "O nível de escolaridade"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual classe de medicamentos deve ser EVITADA no tratamento do delirium (exceto na abstinência alcoólica)?",
+      "alternativas": [
+        "Antipsicóticos típicos em dose baixa",
+        "Benzodiazepínicos",
+        "Antibióticos",
+        "Analgésicos simples",
+        "Antipsicóticos atípicos"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Idosa com queixa de 'perda de memória' há semanas, humor deprimido, anedonia e respostas 'não sei', com melhora cognitiva após tratamento do humor. Qual o quadro?",
+      "alternativas": [
+        "Demência avançada irreversível",
+        "Pseudodemência depressiva (depressão mimetizando demência)",
+        "Delirium hiperativo",
+        "Esquizofrenia tardia",
+        "Doença de Parkinson"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é a base do tratamento do delirium?",
+      "alternativas": [
+        "Sedação contínua com benzodiazepínico",
+        "Identificar e tratar a causa orgânica + medidas não farmacológicas",
+        "Contenção física precoce",
+        "Antipsicótico em dose alta para todos",
+        "Alta precoce para o domicílio"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Início agudo de confusão flutuante com desatenção em paciente com infecção (pneumonia) caracteriza delirium. A conduta principal é investigar e tratar a causa (infecção) e aplicar medidas não farmacológicas — não apenas sedar."},
+    {"resposta": "B", "comentario": "O delirium se distingue da demência pelo início AGUDO, curso FLUTUANTE e desatenção marcante, com alteração do nível de consciência. A demência tem início insidioso e curso crônico, com atenção preservada nas fases iniciais."},
+    {"resposta": "B", "comentario": "Os benzodiazepínicos pioram o delirium e devem ser evitados, exceto quando a causa é abstinência de álcool ou de benzodiazepínico. Quando é necessário medicar a agitação de risco, prefere-se antipsicótico em dose baixa (ex.: haloperidol)."},
+    {"resposta": "B", "comentario": "Quadro de declínio cognitivo associado a humor deprimido e anedonia, com respostas 'não sei' e melhora após tratar o humor, caracteriza pseudodemência depressiva — a depressão pode mimetizar demência no idoso e é reversível."},
+    {"resposta": "B", "comentario": "A base do tratamento do delirium é identificar e tratar a causa orgânica (infecção, droga, distúrbio metabólico, retenção/fecaloma) associada a medidas não farmacológicas (reorientação, sono, mobilização). Medicação é reservada para agitação de risco."}
+  ]
+}

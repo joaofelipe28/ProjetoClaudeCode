@@ -1,0 +1,177 @@
+{
+  "slug": "disturbios_glicemia_etilista",
+  "titulo": "Distúrbios da Glicemia no Etilista",
+  "especialidade": "CLÍNICA MÉDICA",
+  "chapter_subject": "Hipoglicemia, Cetoacidose Alcoólica e Distúrbios Metabólicos no Etilista",
+  "chapter_bar": "ETILISTA — TIAMINA ANTES DA GLICOSE",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "OS DISTÚRBIOS METABÓLICOS DO ETILISTA",
+      "section_color": "navy",
+      "headers": ["Quadro", "Mecanismo", "Achado típico"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.38, 0.36],
+      "rows": [
+        ["Hipoglicemia alcoólica", "Álcool inibe a gliconeogênese; jejum esgota o glicogênio", "Glicemia baixa, rebaixamento, pode ser fatal"],
+        ["Cetoacidose alcoólica (CAA)", "Jejum + álcool: lipólise e cetogênese, com glicemia normal/baixa", "Acidose com GAP alto, cetose, glicemia geralmente < 250"],
+        ["Encefalopatia de Wernicke", "Deficiência de tiamina", "Confusão + oftalmoplegia + ataxia"],
+        ["Acidose lática", "Hipoperfusão, tiamina baixa, sepse", "Lactato elevado"],
+        ["Distúrbios eletrolíticos", "Perdas e desnutrição", "HipoK, hipoMg, hipofosfatemia, hiponatremia"],
+        ["Hiperglicemia (DM associado)", "Etilista também pode ter diabetes/pancreatite", "Glicemia alta — distinguir de CAD"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REGRA DE OURO NO ETILISTA REBAIXADO",
+      "section_color": "red",
+      "titulo": "TIAMINA ANTES (OU JUNTO) DA GLICOSE",
+      "items": [
+        "Sempre administrar TIAMINA antes ou junto da glicose no etilista — glicose isolada pode precipitar Wernicke",
+        "Glicemia capilar imediata em todo etilista com rebaixamento (hipoglicemia é causa comum e reversível)",
+        "Hipoglicemia: corrigir com glicose IV (após/junto da tiamina) e reavaliar",
+        "Não atribuir o rebaixamento à embriaguez sem checar glicemia, eletrólitos e excluir TCE/infecção",
+        "Repor magnésio e potássio (frequentemente baixos e dificultam outras correções)",
+        "Considerar TCE oculto, hematoma subdural, intoxicações associadas e sepse"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DO ETILISTA COM ALTERAÇÃO DA CONSCIÊNCIA",
+      "title": "ETILISTA REBAIXADO — METABÓLICO ATÉ PROVA EM CONTRÁRIO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Etilista com rebaixamento / mal-estar\nGlicemia capilar imediata + sinais vitais", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "TIAMINA 100-300 mg IV ANTES/junto da glicose\nCorrigir hipoglicemia se presente", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Acidose com GAP alto +\ncetose + glicemia normal/baixa:\nCetoacidose alcoólica\n-> SG + SF + tiamina", "color": "orange", "font_size": 5.1},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Glicemia muito alta + cetose:\nCAD -> protocolo próprio\nDistinguir da CAA", "color": "teal", "font_size": 5.2},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Repor K, Mg, P; excluir TCE/infecção/intoxicação\nObservar e reavaliar a consciência", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CETOACIDOSE ALCOÓLICA vs CETOACIDOSE DIABÉTICA",
+      "section_color": "orange",
+      "headers": ["Aspecto", "Cetoacidose alcoólica", "Cetoacidose diabética"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Glicemia", "Normal ou baixa (geralmente < 250)", "Alta (> 250)"],
+        ["Contexto", "Etilista, jejum, vômitos, parada de ingestão", "Diabético, infecção, omissão de insulina"],
+        ["Tratamento base", "Soro glicosado + salina + TIAMINA", "Insulina + salina + potássio"],
+        ["Insulina", "Geralmente NÃO necessária", "Pilar do tratamento"],
+        ["Cetose", "Predomínio de beta-hidroxibutirato", "Cetose com GAP alto"],
+        ["Resposta", "Melhora rápida com glicose e volume", "Requer protocolo de insulina"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO E ARMADILHAS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Cetoacidose Alcoólica",
+        "items": [
+          "Soro glicosado 5-10% + salina 0,9% (volume) — a glicose freia a cetogênese",
+          "Tiamina antes da glicose (prevenir Wernicke)",
+          "Repor potássio, magnésio e fósforo",
+          "Insulina geralmente NÃO é necessária (glicemia normal/baixa)",
+          "Tratar causa associada (pancreatite, infecção, sangramento)",
+          "Melhora costuma ser rápida em 12-24h"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Não Esquecer no Etilista",
+        "items": [
+          "Hipoglicemia pode recorrer — reavaliar a glicemia",
+          "Magnésio baixo dificulta a correção de potássio e cálcio",
+          "Excluir TCE/hematoma subdural (queda, alteração desproporcional)",
+          "Síndrome de abstinência alcoólica pode coexistir",
+          "Intoxicação por metanol/etilenoglicol: GAP osmolar e acidose grave",
+          "Pancreatite e hepatopatia frequentemente associadas"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Glicemia capilar imediata em todo etilista sintomático",
+        "Tiamina antes/junto da glicose (prevenir Wernicke)",
+        "Diferenciar hipoglicemia, cetoacidose alcoólica e cetoacidose diabética",
+        "CAA: soro glicosado + salina + tiamina; insulina geralmente desnecessária",
+        "Repor potássio, magnésio e fósforo; vigiar recorrência de hipoglicemia",
+        "Excluir TCE, infecção, pancreatite e outras intoxicações"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Etilista crônico chega rebaixado. Qual deve ser a sequência correta de tratamento?",
+      "alternativas": [
+        "Glicose hipertônica isolada imediata",
+        "Tiamina antes (ou junto) da glicose, após checar a glicemia capilar",
+        "Apenas observação até passar o efeito do álcool",
+        "Naloxona em dose alta",
+        "Insulina regular IV"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente etilista, em jejum, com acidose metabólica de ânion-gap elevado, cetose e glicemia de 90 mg/dL. Qual o diagnóstico e o tratamento de base?",
+      "alternativas": [
+        "Cetoacidose diabética — insulina em bomba",
+        "Cetoacidose alcoólica — soro glicosado + salina + tiamina",
+        "Acidose lática isolada — bicarbonato",
+        "Insuficiência renal — diálise",
+        "Intoxicação por salicilato — alcalinização"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que o álcool causa hipoglicemia em jejum prolongado?",
+      "alternativas": [
+        "Porque aumenta a secreção de insulina",
+        "Porque inibe a gliconeogênese hepática, e o jejum já esgotou as reservas de glicogênio",
+        "Porque bloqueia a absorção intestinal de glicose",
+        "Porque estimula a captação muscular de glicose",
+        "Porque inibe o glucagon exclusivamente"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Na cetoacidose alcoólica, qual afirmação sobre a insulina é correta?",
+      "alternativas": [
+        "A insulina é o pilar do tratamento, como na CAD",
+        "A insulina geralmente NÃO é necessária, pois a glicemia costuma estar normal ou baixa",
+        "A insulina deve ser administrada em dose dobrada",
+        "A insulina deve ser dada por via oral",
+        "A insulina deve ser associada a glucagon"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual eletrólito frequentemente baixo no etilista dificulta a correção de potássio e cálcio?",
+      "alternativas": [
+        "Sódio",
+        "Magnésio",
+        "Cloro",
+        "Bicarbonato",
+        "Fósforo apenas"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No etilista rebaixado, deve-se checar a glicemia capilar e administrar TIAMINA antes (ou junto) da glicose, pois a glicose isolada pode precipitar a encefalopatia de Wernicke em paciente deficiente de tiamina."},
+    {"resposta": "B", "comentario": "Acidose com GAP elevado + cetose + glicemia normal/baixa em etilista em jejum caracteriza a cetoacidose alcoólica. O tratamento de base é soro glicosado + salina + tiamina; a insulina geralmente não é necessária."},
+    {"resposta": "B", "comentario": "O álcool inibe a gliconeogênese hepática. Em jejum prolongado, com as reservas de glicogênio já esgotadas, a manutenção da glicemia depende da gliconeogênese — daí a hipoglicemia, que pode ser grave."},
+    {"resposta": "B", "comentario": "Na cetoacidose alcoólica a glicemia costuma estar normal ou baixa, e a cetogênese é revertida com a oferta de glicose e volume. Por isso a insulina geralmente NÃO é necessária (diferente da CAD)."},
+    {"resposta": "B", "comentario": "O magnésio frequentemente está baixo no etilista (perdas e desnutrição) e a hipomagnesemia dificulta a correção de potássio e cálcio. Deve ser reposto para que as demais correções sejam efetivas."}
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "slug": "anticoagulacao_periprocedimento",
+  "titulo": "Anticoagulação Periprocedimento",
+  "especialidade": "CLÍNICA MÉDICA",
+  "chapter_subject": "Manejo de Anticoagulantes e Antiagregantes no Perioperatório",
+  "chapter_bar": "PERIPROCEDIMENTO — SUSPENDER, PONTE, REINICIAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "QUANDO SUSPENDER CADA ANTICOAGULANTE",
+      "section_color": "navy",
+      "headers": ["Fármaco", "Suspender antes", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.30, 0.44],
+      "rows": [
+        ["Varfarina", "5 dias antes", "Confirmar INR < 1,5 no dia; avaliar necessidade de ponte"],
+        ["Dabigatrana", "1-2 dias (ate 3-4 se ClCr baixo)", "Eliminação renal — ajustar conforme função renal e risco de sangramento"],
+        ["Rivaroxabana/Apixabana/Edoxabana", "1-2 dias (2-3 se alto risco de sangramento)", "Menos dependentes da função renal que dabigatrana"],
+        ["HBPM terapêutica", "Última dose 24h antes", "Profilática: 12h antes"],
+        ["HNF IV", "Suspender 4-6h antes", "Meia-vida curta; checar TTPA"],
+        ["AAS", "Geralmente MANTER em prevenção secundária de alto risco", "Suspender 5-7 dias só em cirurgias de altíssimo risco hemorrágico"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "DECISÃO PERIPROCEDIMENTO",
+      "title": "RISCO DE SANGRAMENTO x RISCO TROMBÓTICO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Procedimento eletivo em paciente anticoagulado\nDefinir risco de SANGRAMENTO do procedimento", "color": "navy", "font_size": 5.5},
+        {"id": "b", "x": 0.26, "y": 0.64, "w": 155, "h": 24, "text": "Baixo risco hemorrágico\n(ex.: extração dentária,\ncatarata, pele):\nNÃO suspender", "color": "green", "font_size": 5.2},
+        {"id": "c", "x": 0.74, "y": 0.64, "w": 155, "h": 24, "text": "Alto risco hemorrágico:\nSuspender conforme\no fármaco e a função renal", "color": "orange", "font_size": 5.3},
+        {"id": "d", "x": 0.5, "y": 0.37, "w": 220, "h": 22, "text": "Definir risco TROMBÓTICO: prótese mecânica, FA com AVC recente,\nTEV < 3 meses = ALTO -> avaliar ponte com HBPM (sobretudo na varfarina)", "color": "red", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 220, "h": 20, "text": "Reiniciar após hemostasia: profilático 12-24h; pleno 48-72h conforme sangramento", "color": "teal", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["b", "d"], ["c", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PONTE (BRIDGING) — CADA VEZ MENOS",
+      "section_color": "red",
+      "titulo": "PONTE SÓ EM ALTO RISCO TROMBÓTICO",
+      "items": [
+        "A ponte com HBPM aumenta o sangramento e raramente reduz tromboembolismo — reservar para ALTO risco",
+        "Alto risco trombótico: prótese valvar mecânica (sobretudo mitral/antiga), FA com AVC/AIT recente (< 3 meses) ou CHA2DS2-VASc muito alto, TEV recente (< 3 meses)",
+        "Baixo/moderado risco: NÃO fazer ponte (estudo BRIDGE) — suspender a varfarina e reiniciar depois",
+        "DOACs geralmente NÃO precisam de ponte (início e fim de ação rápidos) — basta suspender e reiniciar no tempo certo",
+        "Ponte (quando indicada): iniciar HBPM ~3 dias antes, última dose terapêutica 24h antes; reiniciar após hemostasia",
+        "Sempre individualizar risco hemorrágico do procedimento vs risco trombótico do paciente"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIAGREGANTES E STENT CORONÁRIO",
+      "section_color": "orange",
+      "headers": ["Situação", "Conduta", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.36, 0.34],
+      "rows": [
+        ["AAS em prevenção secundária", "Geralmente MANTER no perioperatório", "Suspender só em neurocirurgia/altíssimo risco"],
+        ["Dupla antiagregação pós-stent", "ADIAR cirurgia eletiva", "Stent farmacológico: idealmente 6-12 meses; convencional: ~1 mês"],
+        ["Clopidogrel/ticagrelor (se preciso suspender)", "Suspender 5 dias antes (ticagrelor 3-5d)", "Manter AAS quando possível"],
+        ["Cirurgia de urgência sob DAPT", "Discussão multidisciplinar; suporte transfusional", "Risco de trombose de stent x sangramento"],
+        ["Reinício pós-op", "O quanto antes após hemostasia", "Trombose de stent é catastrófica"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "URGÊNCIA E CASOS ESPECIAIS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Cirurgia de Urgência",
+        "items": [
+          "Varfarina: vitamina K + CCP de 4 fatores (reversão rápida)",
+          "Dabigatrana: idarucizumabe se sangramento/urgência",
+          "Inibidores do fator Xa: andexanet alfa ou CCP 4 fatores empírico",
+          "HNF: protamina; HBPM: protamina (reversão parcial)",
+          "Dosar função renal e tempo desde a última dose",
+          "Suporte hemostático e transfusional conforme necessidade"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Procedimentos de Baixo Risco",
+        "items": [
+          "Extração dentária simples, catarata, endoscopia diagnóstica, procedimentos de pele",
+          "Geralmente NÃO exigem suspensão da anticoagulação",
+          "Medidas hemostáticas locais (ácido tranexâmico tópico na boca)",
+          "Evita o risco trombótico da interrupção desnecessária",
+          "Punção/anestesia neuroaxial exige suspensão adequada (risco de hematoma)",
+          "Sempre alinhar com a equipe que realiza o procedimento"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PLANEJAMENTO PERIPROCEDIMENTO",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "Definir o risco de sangramento do procedimento (baixo x alto)",
+        "Definir o risco trombótico do paciente (prótese mecânica, FA, TEV recente)",
+        "Baixo risco hemorrágico: muitas vezes manter a anticoagulação",
+        "Suspender conforme o fármaco e a função renal; confirmar INR < 1,5 na varfarina",
+        "Ponte com HBPM apenas em alto risco trombótico (DOAC geralmente não precisa)",
+        "Reiniciar após hemostasia (profilático 12-24h; pleno 48-72h) e individualizar antiagregantes/stent"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente em uso de varfarina por FA não valvar (CHA2DS2-VASc 3), sem eventos recentes, fará cirurgia eletiva de alto risco hemorrágico. Qual a conduta quanto à ponte?",
+      "alternativas": [
+        "Sempre fazer ponte com HBPM",
+        "Suspender a varfarina 5 dias antes SEM ponte (baixo/moderado risco trombótico), reiniciando após hemostasia",
+        "Manter a varfarina e operar com INR terapêutico",
+        "Trocar por AAS definitivamente",
+        "Internar para heparina IV por 2 semanas"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quando a ponte (bridging) com HBPM está indicada?",
+      "alternativas": [
+        "Em todos os pacientes em uso de varfarina",
+        "Apenas em alto risco trombótico (prótese mecânica, FA com AVC/AIT recente, TEV < 3 meses)",
+        "Em pacientes em uso de DOAC de rotina",
+        "Em procedimentos de baixo risco hemorrágico",
+        "Nunca está indicada"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente fará extração dentária simples e usa rivaroxabana para FA. Qual a conduta mais adequada?",
+      "alternativas": [
+        "Suspender por 7 dias e fazer ponte",
+        "Geralmente manter o anticoagulante, com medidas hemostáticas locais (procedimento de baixo risco)",
+        "Internar para heparina IV",
+        "Substituir por varfarina antes",
+        "Suspender por 30 dias"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente com stent farmacológico há 2 meses em dupla antiagregação necessita de cirurgia eletiva. Qual a melhor conduta?",
+      "alternativas": [
+        "Operar imediatamente suspendendo os dois antiagregantes",
+        "ADIAR a cirurgia eletiva (manter a dupla antiagregação pelo tempo recomendado) pelo risco de trombose de stent",
+        "Suspender apenas o AAS",
+        "Trocar por anticoagulante oral",
+        "Realizar a cirurgia sem nenhuma precaução"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente em uso de dabigatrana precisa de cirurgia de urgência com sangramento. Qual o agente de reversão específico?",
+      "alternativas": [
+        "Vitamina K",
+        "Idarucizumabe",
+        "Protamina",
+        "Andexanet alfa",
+        "Plasma fresco congelado isolado"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "FA não valvar com risco trombótico baixo/moderado e sem eventos recentes: suspender a varfarina ~5 dias antes SEM ponte (estudo BRIDGE mostrou que a ponte aumenta sangramento sem reduzir tromboembolismo nesse perfil), reiniciando após a hemostasia."},
+    {"resposta": "B", "comentario": "A ponte com HBPM é reservada para alto risco trombótico: prótese valvar mecânica, FA com AVC/AIT recente (< 3 meses) ou escore muito alto, e TEV recente (< 3 meses). Na maioria dos demais casos, a ponte aumenta o sangramento sem benefício."},
+    {"resposta": "B", "comentario": "Extração dentária simples é procedimento de baixo risco hemorrágico: em geral mantém-se o anticoagulante (incluindo DOAC), usando medidas hemostáticas locais (ácido tranexâmico tópico). Suspender exporia o paciente a risco trombótico desnecessário."},
+    {"resposta": "B", "comentario": "Stent farmacológico recente (2 meses) sob dupla antiagregação: cirurgia eletiva deve ser ADIADA até completar o tempo mínimo recomendado de DAPT, pelo risco catastrófico de trombose de stent ao suspender precocemente."},
+    {"resposta": "B", "comentario": "O idarucizumabe é o agente de reversão específico da dabigatrana (inibidor direto da trombina). Para inibidores do fator Xa (rivaroxabana, apixabana), usa-se andexanet alfa ou CCP de 4 fatores empírico."}
+  ]
+}

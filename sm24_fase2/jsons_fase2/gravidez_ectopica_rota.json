@@ -1,0 +1,176 @@
+{
+  "slug": "gravidez_ectopica_rota",
+  "titulo": "Gravidez Ectópica Rota",
+  "especialidade": "GINECOLOGIA/OBSTETRÍCIA",
+  "chapter_subject": "Gravidez Ectópica — Diagnóstico, Rotura e Cirurgia de Emergência",
+  "chapter_bar": "ECTÓPICA ROTA — CHOQUE = CIRURGIA JÁ",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO DA GRAVIDEZ ECTÓPICA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Tríade clássica", "Atraso menstrual + dor abdominal/pélvica + sangramento vaginal"],
+        ["Localização", "Tuba uterina (95% — mais comum); cornual, ovariana, cervical, cicatriz de cesárea"],
+        ["Beta-hCG", "Positivo; em gestação tópica normal, sobe adequadamente; na ectópica costuma ser anormal"],
+        ["USG transvaginal", "Ausência de saco gestacional intrauterino com beta-hCG acima do limiar discriminatório; massa anexial"],
+        ["Fatores de risco", "Ectópica prévia, DIP/salpingite, cirurgia tubária, DIU, FIV, tabagismo"],
+        ["Beta-hCG discriminatório", "Acima do limiar (~1500-2000) sem saco intrauterino visível = suspeita forte de ectópica"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ROTURA = EMERGÊNCIA CIRÚRGICA",
+      "section_color": "red",
+      "titulo": "ABDOME AGUDO + CHOQUE EM MULHER EM IDADE FÉRTIL = ECTÓPICA ROTA ATÉ PROVA EM CONTRÁRIO",
+      "items": [
+        "Sinais de rotura: dor abdominal intensa e súbita, sinais de irritação peritoneal, instabilidade hemodinâmica (taquicardia, hipotensão), dor no ombro (irritação diafragmática)",
+        "Toda mulher em idade fértil com abdome agudo e choque deve ter beta-hCG dosado",
+        "Instabilidade hemodinâmica = CIRURGIA DE EMERGÊNCIA (laparotomia/laparoscopia) sem aguardar exames adicionais",
+        "Reanimação simultânea: 2 acessos calibrosos, hemoderivados, ativar protocolo de transfusão maciça se necessário",
+        "FAST/USG com líquido livre + beta-hCG positivo + instabilidade = ir ao centro cirúrgico",
+        "Salpingectomia geralmente na rotura; metotrexato NÃO tem papel na ectópica rota"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM",
+      "title": "DOR + ATRASO + BETA-HCG -> ESTÁVEL?",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Mulher em idade fértil com dor pélvica/abdominal\nBeta-hCG + USG transvaginal + sinais vitais", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Instável (choque) ou sinais de rotura?\n(irritação peritoneal, líquido livre)", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "SIM: CIRURGIA de EMERGÊNCIA\n(salpingectomia) +\nreanimação/transfusão\nNÃO aguardar exames", "color": "red", "font_size": 5.1},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Estável + ectópica íntegra:\nmetotrexato (critérios)\nou cirurgia (salpingostomia/\nsalpingectomia)", "color": "teal", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Imunoglobulina anti-D se Rh negativo\nSeguimento de beta-hCG após tratamento conservador", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO — CIRÚRGICO vs MEDICAMENTOSO",
+      "section_color": "orange",
+      "headers": ["Modalidade", "Indicação", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Cirurgia (emergência)", "Rotura / instabilidade hemodinâmica", "Salpingectomia; reanimação simultânea"],
+        ["Cirurgia (eletiva)", "Ectópica íntegra com falha/contraindicação ao metotrexato", "Salpingostomia (preservar a tuba) ou salpingectomia"],
+        ["Metotrexato", "Estável, íntegra, beta-hCG baixo, massa pequena, sem BCF", "Contraindicado na rotura e em algumas condições; seguir beta-hCG"],
+        ["Conduta expectante", "Casos muito selecionados, beta-hCG baixo e em queda", "Seguimento rigoroso"],
+        ["Imunoglobulina anti-D", "Paciente Rh negativo", "Prevenir aloimunização"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "REANIMAÇÃO E DIFERENCIAIS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Reanimação na Rotura",
+        "items": [
+          "2 acessos venosos calibrosos; tipagem e prova cruzada",
+          "Reposição volêmica e hemoderivados; ativar transfusão maciça se necessário",
+          "Sangue O negativo de emergência se instável e sem tipagem",
+          "Levar ao centro cirúrgico sem atraso (não postergar por exames)",
+          "Monitorização contínua",
+          "Comunicar a equipe cirúrgica e o banco de sangue"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Diferenciais",
+        "items": [
+          "Abortamento (sangramento + dor, com gestação tópica)",
+          "Cisto ovariano roto / corpo lúteo hemorrágico",
+          "Torção de ovário",
+          "Apendicite, DIP / abscesso tubo-ovariano",
+          "Sempre dosar beta-hCG em mulher em idade fértil com dor pélvica",
+          "Gravidez heterotópica (rara, mais comum pós-FIV)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Beta-hCG em toda mulher em idade fértil com dor pélvica/abdominal",
+        "Abdome agudo + choque + beta-hCG positivo = ectópica rota até prova em contrário",
+        "Instabilidade/rotura: cirurgia de emergência (salpingectomia) + reanimação simultânea, sem aguardar exames",
+        "Estável e íntegra: metotrexato (se critérios) ou cirurgia eletiva",
+        "Imunoglobulina anti-D se Rh negativo",
+        "Seguimento de beta-hCG após tratamento conservador; o metotrexato não tem papel na rotura"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Mulher em idade fértil com atraso menstrual, dor abdominal súbita intensa, hipotensão e taquicardia. Beta-hCG positivo e líquido livre na pelve. Qual a conduta?",
+      "alternativas": [
+        "Metotrexato e observação",
+        "Cirurgia de emergência (salpingectomia) com reanimação simultânea, sem aguardar exames adicionais",
+        "Alta com analgésico",
+        "Aguardar nova dosagem de beta-hCG em 48h",
+        "Antibiótico para DIP"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a localização mais comum da gravidez ectópica?",
+      "alternativas": [
+        "Ovariana",
+        "Tuba uterina",
+        "Cervical",
+        "Cornual",
+        "Cicatriz de cesárea"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Em qual situação o metotrexato é CONTRAINDICADO no tratamento da gravidez ectópica?",
+      "alternativas": [
+        "Ectópica íntegra com beta-hCG baixo",
+        "Gravidez ectópica ROTA / instabilidade hemodinâmica",
+        "Massa anexial pequena",
+        "Ausência de batimentos cardíacos fetais",
+        "Paciente estável e assintomática"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente Rh negativo tratada por gravidez ectópica. Qual conduta adicional é necessária?",
+      "alternativas": [
+        "Nenhuma",
+        "Administrar imunoglobulina anti-D para prevenir aloimunização",
+        "Transfusão de plaquetas",
+        "Anticoagulação plena",
+        "Corticoide"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual exame NÃO pode faltar diante de abdome agudo em mulher em idade fértil?",
+      "alternativas": [
+        "Beta-hCG (excluir gravidez ectópica)",
+        "Eletroencefalograma",
+        "Radiografia de tórax",
+        "Espirometria",
+        "Dosagem de amilase apenas"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Atraso menstrual + dor súbita + hipotensão/taquicardia + beta-hCG positivo + líquido livre = gravidez ectópica rota com choque hemorrágico. Conduta: cirurgia de emergência (salpingectomia) com reanimação simultânea (acessos calibrosos, hemoderivados), sem aguardar exames adicionais."},
+    {"resposta": "B", "comentario": "A tuba uterina é a localização mais comum da gravidez ectópica (cerca de 95%). Outras localizações (cornual, ovariana, cervical, cicatriz de cesárea) são menos frequentes, mas algumas têm maior risco de hemorragia grave."},
+    {"resposta": "B", "comentario": "O metotrexato é contraindicado na gravidez ectópica ROTA e na instabilidade hemodinâmica — nesses casos o tratamento é cirúrgico de emergência. O metotrexato é opção apenas na ectópica íntegra, estável e com critérios favoráveis."},
+    {"resposta": "B", "comentario": "Paciente Rh negativa deve receber imunoglobulina anti-D após gravidez ectópica (como em outros eventos com sangramento na gestação) para prevenir a aloimunização e a doença hemolítica em gestações futuras."},
+    {"resposta": "A", "comentario": "Em toda mulher em idade fértil com abdome agudo/dor pélvica, o beta-hCG é obrigatório para excluir gravidez ectópica — uma causa potencialmente fatal que pode se manifestar como abdome agudo e choque."}
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "slug": "crise_hipertensao_pulmonar",
+  "titulo": "Crise de Hipertensão Pulmonar",
+  "especialidade": "PNEUMOLOGIA",
+  "chapter_subject": "Descompensação Aguda da Hipertensão Pulmonar e Falência de VD",
+  "chapter_bar": "CRISE DE HP — PROTEGER O VD",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "GRUPOS DE HIPERTENSÃO PULMONAR (OMS)",
+      "section_color": "navy",
+      "headers": ["Grupo", "Mecanismo", "Exemplos"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.16, 0.34, 0.50],
+      "rows": [
+        ["1 - HAP", "Arteriopatia pulmonar", "HAP idiopática, hereditária, esclerodermia, HIV, esquistossomose"],
+        ["2", "Doença do coração esquerdo", "IC com FE reduzida/preservada, valvopatia mitral/aórtica"],
+        ["3", "Doença pulmonar / hipóxia", "DPOC, fibrose pulmonar, SAHOS, altitude"],
+        ["4 - HPTEC", "Tromboembólica crônica", "TEP de repetição organizado"],
+        ["5", "Multifatorial", "Doenças hematológicas, metabólicas, sarcoidose"],
+        ["Crise de HP", "Aumento agudo da pós-carga do VD", "Falência aguda do ventrículo direito (cor pulmonale agudo)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "A ESPIRAL DA MORTE DO VD",
+      "section_color": "red",
+      "titulo": "ENTENDER PARA NÃO PIORAR",
+      "items": [
+        "Aumento da pós-carga -> dilatação do VD -> desvio do septo para a esquerda -> queda do enchimento e do débito do VE",
+        "Queda do débito -> hipotensão -> reduz perfusão coronariana do VD -> isquemia do VD -> mais disfunção",
+        "Hipóxia, hipercapnia e acidose aumentam a resistência vascular pulmonar -> agravam a pós-carga",
+        "Sobrecarga de volume PIORA o VD dilatado (não tratar como o VE)",
+        "Objetivos: reduzir a pós-carga do VD, manter a perfusão coronariana (PA sistêmica) e otimizar a volemia",
+        "Intubação e ventilação com pressão positiva podem precipitar colapso (queda do retorno venoso) — alto risco"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA FALÊNCIA AGUDA DE VD",
+      "title": "CRISE DE HP — SUPORTE DO VD",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "HP conhecida/suspeita + descompensação\n(dispneia, hipotensão, congestão sistêmica, sinais de baixo débito)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Identificar e tratar o GATILHO\n(infecção, TEP, arritmia, suspensão de medicação, anemia)", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Otimizar volemia:\ncongesto -> diurético\nhipovolêmico -> volume\nCAUTELOSO (250 mL)", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Manter PA sistêmica:\nNoradrenalina (1a escolha)\nInotrópico VD: dobutamina\nou milrinona", "color": "red", "font_size": 5.2},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Reduzir pós-carga pulmonar: O2, evitar hipercapnia/acidose;\nvasodilatador pulmonar (NO inalado/epoprostenol) em centro especializado", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "SUPORTE FARMACOLÓGICO DO VD",
+      "section_color": "orange",
+      "titulo": "PRESSÃO, INOTROPISMO E VASODILATAÇÃO PULMONAR",
+      "items": [
+        "Noradrenalina: 1a escolha para manter a PA sistêmica e a perfusão coronariana do VD",
+        "Vasopressina: adjuvante; vasoconstritor sistêmico com menor efeito sobre a resistência vascular pulmonar",
+        "Dobutamina: 2-5 mcg/kg/min — inotrópico que reduz a resistência pulmonar em doses baixas (cuidado com hipotensão/taquicardia)",
+        "Milrinona: inotrópico + vasodilatador pulmonar; risco de hipotensão sistêmica (associar vasopressor)",
+        "Oxigênio: corrigir hipoxemia (vasoconstrição pulmonar hipóxica)",
+        "Óxido nítrico inalado ou epoprostenol/iloprosta inalado: vasodilatador pulmonar seletivo, em centro especializado",
+        "Manter medicação específica da HAP (NÃO suspender sildenafila/bosentana/prostanoide abruptamente)",
+        "EVITAR: vasodilatadores sistêmicos (nitroprussiato), excesso de volume e betabloqueador"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "VENTILAÇÃO E GATILHOS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Cuidado com a Intubação",
+        "items": [
+          "Indução e ventilação com pressão positiva reduzem o retorno venoso -> colapso do VD",
+          "Hipoxemia, hipercapnia e acidose durante a indução aumentam a pós-carga",
+          "Se intubar: pré-otimizar PA (vasopressor pronto), evitar hipotensão na indução (etomidato/cetamina)",
+          "Ventilação protetora, baixa PEEP, evitar hipercapnia permissiva agressiva",
+          "Preferir suporte não invasivo e otimização clínica quando possível"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Procurar o Gatilho",
+        "items": [
+          "Infecção/sepse (causa frequente de descompensação)",
+          "TEP agudo sobre HP crônica",
+          "Arritmia (FA reduz a contribuição atrial ao VD)",
+          "Suspensão/erro da medicação específica da HAP",
+          "Anemia, gravidez, cirurgia, sobrecarga de volume",
+          "Encaminhar a centro de referência em HP"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PRINCÍPIOS NO PS",
+      "titulo": "PROTEGER O VENTRÍCULO DIREITO",
+      "items": [
+        "Reconhecer a falência de VD: hipotensão + congestão sistêmica + baixo débito",
+        "Tratar o gatilho (infecção, TEP, arritmia, má adesão)",
+        "Otimizar a volemia com cautela (o VD dilatado não tolera volume)",
+        "Manter a PA sistêmica com noradrenalina; inotrópico (dobutamina/milrinona) para o VD",
+        "Corrigir hipoxemia/hipercapnia/acidose; considerar vasodilatador pulmonar inalado",
+        "Não suspender a medicação específica da HAP; intubar é de altíssimo risco — acionar UTI/centro de referência"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com HAP idiopática descompensada, hipotenso e com sinais de baixo débito. Qual vasopressor é a primeira escolha para manter a perfusão coronariana do VD?",
+      "alternativas": [
+        "Nitroprussiato de sódio",
+        "Noradrenalina",
+        "Dopamina em dose dopaminérgica",
+        "Esmolol",
+        "Furosemida em bolus"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que a sobrecarga de volume agressiva é prejudicial na falência aguda do ventrículo direito?",
+      "alternativas": [
+        "Porque o VD sempre precisa de mais volume",
+        "Porque a dilatação do VD desvia o septo, prejudica o enchimento do VE e reduz o débito",
+        "Porque aumenta a contratilidade do VE",
+        "Porque reduz a pós-carga pulmonar",
+        "Porque corrige a hipoxemia"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual conduta aumenta a resistência vascular pulmonar e deve ser evitada/corrigida na crise de HP?",
+      "alternativas": [
+        "Manter boa oxigenação",
+        "Hipoxemia, hipercapnia e acidose",
+        "Uso de noradrenalina",
+        "Tratamento do gatilho infeccioso",
+        "Manter a medicação específica da HAP"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Por que a intubação orotraqueal é considerada de altíssimo risco na crise de hipertensão pulmonar?",
+      "alternativas": [
+        "Porque a ventilação com pressão positiva reduz o retorno venoso e pode precipitar colapso do VD",
+        "Porque a sedação melhora o débito cardíaco",
+        "Porque sempre reduz a pós-carga pulmonar",
+        "Porque não há risco — é o tratamento de escolha",
+        "Porque elimina a necessidade de vasopressor"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente em uso crônico de prostanoide para HAP chega ao PS por outra queixa. Qual erro deve ser evitado?",
+      "alternativas": [
+        "Manter a medicação específica da HAP",
+        "Suspender abruptamente o prostanoide / vasodilatador pulmonar específico",
+        "Corrigir a hipoxemia",
+        "Tratar a infecção concomitante",
+        "Acionar o centro de referência em HP"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na falência de VD por HP, a noradrenalina é o vasopressor de primeira escolha: mantém a PA sistêmica e, com isso, a perfusão coronariana do VD, interrompendo a espiral isquêmica. Vasodilatadores sistêmicos (nitroprussiato) são contraindicados."},
+    {"resposta": "B", "comentario": "O VD dilatado e sobrecarregado não tolera volume: a dilatação desvia o septo interventricular para a esquerda (interdependência ventricular), prejudicando o enchimento e o débito do VE. Por isso a reposição volêmica deve ser cautelosa, e o paciente congesto se beneficia de diurético."},
+    {"resposta": "B", "comentario": "Hipoxemia, hipercapnia e acidose causam vasoconstrição pulmonar e aumentam a resistência vascular pulmonar, agravando a pós-carga do VD. Corrigi-las (O2, ventilação adequada) é parte essencial do tratamento da crise de HP."},
+    {"resposta": "A", "comentario": "A ventilação com pressão positiva (e a própria indução anestésica) reduz o retorno venoso e pode aumentar a pós-carga pulmonar, precipitando colapso do VD. Por isso a intubação é de altíssimo risco; quando inevitável, exige otimização hemodinâmica prévia e vasopressor pronto."},
+    {"resposta": "B", "comentario": "Suspender abruptamente a medicação específica da HAP (prostanoides, inibidores da PDE-5, antagonistas da endotelina) pode causar HP de rebote grave e morte. Deve-se sempre manter a terapia específica, mesmo durante internações por outras causas."}
+  ]
+}

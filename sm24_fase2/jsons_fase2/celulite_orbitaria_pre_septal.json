@@ -1,0 +1,177 @@
+{
+  "slug": "celulite_orbitaria_pre_septal",
+  "titulo": "Celulite Orbitária vs Pré-Septal",
+  "especialidade": "OFTALMOLOGIA",
+  "chapter_subject": "Infecções Periorbitárias — Diferenciar Pré-Septal de Orbitária (Pós-Septal)",
+  "chapter_bar": "OLHO VERMELHO E EDEMA — PRÉ ou PÓS-SEPTAL?",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "PRÉ-SEPTAL vs ORBITÁRIA (PÓS-SEPTAL)",
+      "section_color": "navy",
+      "headers": ["Achado", "Pré-septal", "Orbitária (pós-septal)"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.26, 0.37, 0.37],
+      "rows": [
+        ["Local", "Anterior ao septo orbitário (pálpebra)", "Posterior ao septo (conteúdo orbitário)"],
+        ["Edema/eritema palpebral", "Presente", "Presente"],
+        ["Proptose", "AUSENTE", "PRESENTE (sinal-chave)"],
+        ["Dor à motilidade ocular", "Ausente", "PRESENTE; oftalmoplegia (limitação)"],
+        ["Acuidade visual", "Normal", "Pode estar REDUZIDA (sinal de gravidade)"],
+        ["Gravidade", "Geralmente benigna", "EMERGÊNCIA: risco de abscesso, trombose de seio cavernoso, cegueira"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "OS SINAIS QUE INDICAM ORBITÁRIA (PÓS-SEPTAL)",
+      "section_color": "red",
+      "titulo": "PROPTOSE, DOR/LIMITAÇÃO À MOTILIDADE E QUEDA VISUAL = EMERGÊNCIA",
+      "items": [
+        "Proptose (exoftalmia), dor à movimentação ocular, oftalmoplegia, queda da acuidade visual e alteração da visão de cores ou do reflexo pupilar = celulite ORBITÁRIA",
+        "Causa mais comum: extensão de SINUSITE (sobretudo etmoidal) — frequente em crianças",
+        "Complicações: abscesso subperiosteal/orbitário, trombose de seio cavernoso, perda visual, extensão intracraniana",
+        "Conduta: internação + antibiótico IV de amplo espectro + TC de órbita e seios paranasais",
+        "Avaliação oftalmológica e otorrinolaringológica urgente; drenagem cirúrgica do abscesso se presente",
+        "A pré-septal, sem esses sinais, costuma ser tratada com antibiótico (muitas vezes ambulatorial), com reavaliação"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM",
+      "title": "EDEMA PALPEBRAL -> HÁ SINAL PÓS-SEPTAL?",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Edema e eritema periorbitário\nAvaliar proptose, motilidade ocular, acuidade visual e pupila", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Há proptose, dor/limitação à motilidade ou queda visual?", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "NÃO = PRÉ-SEPTAL\nAntibiótico (muitas vezes VO)\nReavaliar em 24-48h", "color": "teal", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "SIM = ORBITÁRIA\nInternar + ATB IV + TC de\nórbita/seios; oftalmo + ORL\ndrenar abscesso se houver", "color": "red", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Tratar a sinusite de base; vigiar complicações\n(abscesso, trombose de seio cavernoso, extensão intracraniana)", "color": "orange", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ETIOLOGIA E TRATAMENTO",
+      "section_color": "orange",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Agentes", "S. aureus (incluindo MRSA), Streptococcus, H. influenzae; sinusite associada na orbitária"],
+        ["Pré-septal (origem)", "Trauma/picada/lesão de pele palpebral, hordéolo, dacriocistite, conjuntivite"],
+        ["Orbitária (origem)", "Sinusite (etmoidal) na maioria; extensão de infecção dentária/facial"],
+        ["ATB pré-septal", "Amoxicilina-clavulanato (ou cobertura para MRSA conforme risco); reavaliar"],
+        ["ATB orbitária", "IV de amplo espectro (ex.: ceftriaxona + cobertura para S. aureus/MRSA + anaeróbios conforme caso)"],
+        ["Imagem", "TC de órbita e seios paranasais com contraste na suspeita de orbitária/abscesso"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "COMPLICAÇÕES E CUIDADOS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Sinais de Alarme / Complicações",
+        "items": [
+          "Queda da acuidade visual ou alteração do reflexo pupilar (defeito aferente)",
+          "Oftalmoplegia dolorosa e proptose progressiva",
+          "Abscesso subperiosteal/orbitário (TC)",
+          "Trombose de seio cavernoso: acometimento bilateral, paralisia de pares cranianos, toxemia",
+          "Cefaleia intensa, rebaixamento (extensão intracraniana)",
+          "Febre alta e toxemia"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Conduta na Orbitária",
+        "items": [
+          "Internação e antibiótico IV de amplo espectro precoce",
+          "TC de órbita e seios paranasais com contraste",
+          "Avaliação oftalmológica e otorrinolaringológica urgentes",
+          "Drenagem cirúrgica do abscesso / dos seios quando indicado",
+          "Monitorar a acuidade visual e a motilidade seriadamente",
+          "Tratar a sinusite de base"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Avaliar proptose, dor/limitação à motilidade ocular, acuidade visual e pupila em todo edema periorbitário",
+        "Pré-septal (sem esses sinais): antibiótico, frequentemente ambulatorial, com reavaliação",
+        "Orbitária (proptose/oftalmoplegia/queda visual): EMERGÊNCIA",
+        "Orbitária: internar + ATB IV + TC de órbita/seios + oftalmo e ORL urgentes",
+        "Drenar abscesso quando presente; tratar a sinusite de base",
+        "Vigiar complicações: abscesso, trombose de seio cavernoso, perda visual, extensão intracraniana"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Criança com edema palpebral, proptose, dor à movimentação ocular e queda da acuidade visual. Qual o diagnóstico e a conduta?",
+      "alternativas": [
+        "Celulite pré-septal — antibiótico oral e alta",
+        "Celulite orbitária (pós-septal) — internação, antibiótico IV e TC de órbita/seios, com oftalmo e ORL",
+        "Conjuntivite — colírio antibiótico",
+        "Hordéolo — compressas mornas",
+        "Alergia — anti-histamínico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado diferencia a celulite orbitária da pré-septal?",
+      "alternativas": [
+        "Edema palpebral",
+        "Proptose, dor à motilidade ocular e/ou queda da acuidade visual",
+        "Eritema da pálpebra",
+        "Febre baixa",
+        "Secreção conjuntival"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é a causa mais comum de celulite orbitária, especialmente em crianças?",
+      "alternativas": [
+        "Conjuntivite",
+        "Extensão de sinusite (sobretudo etmoidal)",
+        "Trauma palpebral",
+        "Hordéolo",
+        "Dacriocistite"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual exame de imagem é indicado na suspeita de celulite orbitária/abscesso?",
+      "alternativas": [
+        "Radiografia simples de crânio",
+        "TC de órbita e seios paranasais com contraste",
+        "Ultrassonografia abdominal",
+        "Eletroencefalograma",
+        "Cintilografia"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual complicação grave deve ser temida na celulite orbitária?",
+      "alternativas": [
+        "Conjuntivite alérgica",
+        "Trombose de seio cavernoso e perda visual",
+        "Catarata",
+        "Glaucoma crônico",
+        "Pterígio"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Proptose + dor à motilidade ocular + queda da acuidade visual indicam celulite ORBITÁRIA (pós-septal), uma emergência. Conduta: internação, antibiótico IV de amplo espectro, TC de órbita e seios paranasais e avaliação urgente de oftalmologia e otorrinolaringologia."},
+    {"resposta": "B", "comentario": "A celulite orbitária se diferencia da pré-septal pela presença de proptose, dor/limitação à motilidade ocular (oftalmoplegia) e/ou queda da acuidade visual — sinais de acometimento do conteúdo orbitário (posterior ao septo)."},
+    {"resposta": "B", "comentario": "A causa mais comum de celulite orbitária é a extensão de uma sinusite, particularmente a etmoidal (separada da órbita por uma lâmina óssea fina), especialmente em crianças."},
+    {"resposta": "B", "comentario": "A TC de órbita e seios paranasais com contraste é o exame indicado na suspeita de celulite orbitária — avalia a extensão pós-septal, identifica abscesso subperiosteal/orbitário e a sinusite de base."},
+    {"resposta": "B", "comentario": "A celulite orbitária pode evoluir com complicações graves como trombose de seio cavernoso, abscesso, perda visual e extensão intracraniana — por isso é uma emergência que exige tratamento e investigação imediatos."}
+  ]
+}

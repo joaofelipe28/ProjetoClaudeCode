@@ -1,0 +1,176 @@
+{
+  "slug": "profilaxia_antirrabica",
+  "titulo": "Profilaxia Antirrábica Pós-Exposição",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Raiva — Conduta Pós-Exposição, Vacina e Imunoglobulina",
+  "chapter_bar": "RAIVA — LAVAR, CLASSIFICAR, VACINAR/SORO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO DA EXPOSIÇÃO E CONDUTA",
+      "section_color": "navy",
+      "headers": ["Tipo de contato", "Exemplo", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.40, 0.38],
+      "rows": [
+        ["Sem exposição", "Tocar/alimentar animal, lambedura em pele íntegra", "Lavar; NÃO indicar profilaxia"],
+        ["Leve (acidente leve)", "Arranhão/mordedura superficial em tronco/membros; lambedura em pele com lesão", "Lavar + vacina (esquema) conforme avaliação do animal"],
+        ["Grave (acidente grave)", "Mordedura em cabeça/face/pescoço/mãos/pés, múltiplas/profundas, lambedura de mucosa, morcego", "Lavar + vacina + IMUNOGLOBULINA antirrábica"],
+        ["Morcego (qualquer contato)", "Qualquer contato com morcego, mesmo sem ferida evidente", "Sempre considerar exposição GRAVE -> vacina + soro"],
+        ["Animal de risco", "Cão/gato com sinais, animais silvestres, raposa, sagui", "Tratar como potencial transmissor"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PRIMEIRA MEDIDA SEMPRE: LAVAR A FERIDA",
+      "section_color": "red",
+      "titulo": "RAIVA TEM LETALIDADE PRÓXIMA DE 100% — A PROFILAXIA É QUASE SEMPRE EFICAZ",
+      "items": [
+        "Lavar a ferida imediatamente com água e sabão em abundância (reduz a carga viral) — medida mais importante no local",
+        "Não suturar a ferida se possível; se necessário, fazer pontos amplos após infiltrar a imunoglobulina",
+        "Classificar a exposição (leve x grave) e avaliar o animal agressor e a região",
+        "A raiva, instalada a doença, é praticamente sempre fatal — por isso a profilaxia é uma urgência",
+        "Atualizar a profilaxia antitetânica e avaliar antibiótico para a ferida (mordedura)",
+        "Notificação compulsória do acidente por animal potencialmente transmissor"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "DECISÃO PÓS-EXPOSIÇÃO",
+      "title": "MORDEDURA/CONTATO -> LAVAR -> CLASSIFICAR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Contato com animal potencialmente raivoso\nLAVAR a ferida com água e sabão", "color": "navy", "font_size": 5.5},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Classificar: tipo de contato, local, espécie e estado do animal", "color": "teal", "font_size": 5.5},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Acidente LEVE:\nVacina (esquema)\nObservar o cão/gato\npor 10 dias se possível", "color": "orange", "font_size": 5.1},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Acidente GRAVE / morcego:\nVacina + IMUNOGLOBULINA\nantirrábica (infiltrar na ferida)", "color": "red", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Antitetânica + cuidados da ferida (mordedura) + notificação\nSeguir o esquema vacinal completo", "color": "green", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "VACINA, IMUNOGLOBULINA E OBSERVAÇÃO DO ANIMAL",
+      "section_color": "orange",
+      "headers": ["Componente", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Vacina (cultura celular)", "Esquema de pós-exposição em múltiplas doses (D0, D3, D7 e D14, conforme protocolo do serviço/Ministério da Saúde)"],
+        ["Imunoglobulina antirrábica", "Nos acidentes graves: infiltrar o máximo possível ao redor da ferida; o restante IM em local distante da vacina"],
+        ["Soro heterólogo x imunoglobulina humana", "Usar a disponível conforme o serviço; atenção a reações no soro heterólogo (equino)"],
+        ["Observação do cão/gato", "Animal sadio observável por 10 dias: pode-se individualizar/interromper o esquema se permanecer sadio"],
+        ["Animais silvestres/morcego", "Não há observação confiável -> profilaxia completa (grave)"],
+        ["Pré-exposição", "Para profissionais de risco (veterinários, espeleólogos) — esquema diferente"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "SITUAÇÕES ESPECIAIS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Animal e Região",
+        "items": [
+          "Cabeça, face, pescoço, mãos e pés: maior risco (rica inervação) = acidente grave",
+          "Morcego: qualquer contato é grave (mordida pode passar despercebida)",
+          "Cão/gato observável e sadio: permite individualizar a conduta",
+          "Animais silvestres (sagui, raposa, guaxinim): tratar como grave",
+          "Lambedura de mucosa ou pele lesada: exposição relevante",
+          "Roedores urbanos (rato, camundongo): risco muito baixo"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Cuidados da Ferida por Mordedura",
+        "items": [
+          "Lavar abundantemente; evitar sutura primária quando possível",
+          "Avaliar antibiótico (amoxicilina-clavulanato) para mordeduras de risco",
+          "Atualizar a profilaxia antitetânica",
+          "Imunoglobulina antirrábica infiltrada na ferida nos casos graves",
+          "Orientar sinais de infecção e retorno",
+          "Notificar o acidente"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Lavar a ferida imediatamente com água e sabão — primeira e principal medida local",
+        "Classificar a exposição (leve x grave) considerando local, espécie e estado do animal",
+        "Acidente grave / qualquer contato com morcego: vacina + imunoglobulina antirrábica",
+        "Imunoglobulina infiltrada ao redor da ferida; restante IM distante da vacina",
+        "Cão/gato sadio observável por 10 dias permite individualizar o esquema",
+        "Atualizar antitetânica, avaliar antibiótico da mordedura e notificar"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com mordedura profunda em mão por cão desconhecido. Qual a conduta de profilaxia antirrábica?",
+      "alternativas": [
+        "Apenas lavar a ferida",
+        "Lavar + vacina + imunoglobulina antirrábica (acidente grave, em região de risco)",
+        "Apenas vacina, sem imunoglobulina",
+        "Observação domiciliar sem profilaxia",
+        "Antibiótico isolado"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual a primeira e mais importante medida LOCAL após uma mordedura de risco para raiva?",
+      "alternativas": [
+        "Suturar a ferida imediatamente",
+        "Lavar abundantemente com água e sabão",
+        "Aplicar apenas antisséptico alcoólico",
+        "Cauterizar a ferida",
+        "Imobilizar o membro"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente relata contato com morcego dentro de casa, sem ferida evidente. Qual a conduta?",
+      "alternativas": [
+        "Nenhuma profilaxia, pois não há ferida visível",
+        "Considerar exposição GRAVE e indicar vacina + imunoglobulina antirrábica",
+        "Apenas observar o paciente",
+        "Somente atualizar a antitetânica",
+        "Vacina apenas se surgirem sintomas"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Sobre a imunoglobulina antirrábica, qual afirmação é correta?",
+      "alternativas": [
+        "Deve ser administrada apenas por via oral",
+        "Deve-se infiltrar o máximo possível ao redor da ferida, aplicando o restante IM em local distante da vacina",
+        "Substitui a vacina nos acidentes graves",
+        "É indicada em todos os acidentes leves",
+        "Deve ser aplicada no mesmo local da vacina"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Mordedura por cão domiciliado, aparentemente sadio, que pode ser observado. Qual a conduta possível?",
+      "alternativas": [
+        "Profilaxia completa obrigatória sempre, sem observação",
+        "Iniciar a conduta conforme a gravidade e individualizar/observar o animal por 10 dias, podendo ajustar o esquema se permanecer sadio",
+        "Nenhuma conduta é necessária",
+        "Apenas antibiótico",
+        "Imunoglobulina isolada sem vacina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Mordedura profunda em mão (região de risco) por cão desconhecido é acidente GRAVE: requer lavagem abundante + vacina + imunoglobulina antirrábica (infiltrada ao redor da ferida). Atualizar antitetânica e avaliar antibiótico para a mordedura."},
+    {"resposta": "B", "comentario": "A lavagem imediata e abundante da ferida com água e sabão é a primeira e mais importante medida local — reduz a carga viral no sítio da inoculação e diminui o risco de raiva."},
+    {"resposta": "B", "comentario": "Qualquer contato com morcego deve ser considerado exposição GRAVE (a mordida pode ser imperceptível), indicando vacina + imunoglobulina antirrábica, mesmo sem ferida evidente."},
+    {"resposta": "B", "comentario": "A imunoglobulina antirrábica deve ser infiltrada o máximo possível ao redor/dentro da ferida, e o restante aplicado por via IM em local distante da vacina (para não neutralizar a resposta vacinal). Ela complementa, não substitui, a vacina."},
+    {"resposta": "B", "comentario": "Quando o cão/gato é domiciliado e pode ser observado por 10 dias, é possível individualizar a conduta: inicia-se conforme a gravidade e, se o animal permanecer sadio durante a observação, o esquema pode ser ajustado/interrompido conforme o protocolo."}
+  ]
+}

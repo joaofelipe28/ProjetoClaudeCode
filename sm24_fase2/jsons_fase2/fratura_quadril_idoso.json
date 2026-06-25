@@ -1,0 +1,177 @@
+{
+  "slug": "fratura_quadril_idoso",
+  "titulo": "Fratura de Quadril no Idoso",
+  "especialidade": "ORTOPEDIA",
+  "chapter_subject": "Fratura de Quadril no Idoso — Classificação, Cirurgia Precoce e Cuidados",
+  "chapter_bar": "QUADRIL DO IDOSO — OPERAR EM ATÉ 48H",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO E TRATAMENTO",
+      "section_color": "navy",
+      "headers": ["Tipo", "Localização", "Tratamento usual"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.34, 0.40],
+      "rows": [
+        ["Colo do fêmur (intracapsular)", "Entre cabeça e trocânteres", "Desviada: artroplastia (risco de necrose avascular)"],
+        ["Colo sem desvio / jovem", "Intracapsular", "Fixação interna (parafusos) se viável"],
+        ["Transtrocantérica (extracapsular)", "Entre os trocânteres", "Fixação: haste cefalomedular ou DHS"],
+        ["Subtrocantérica", "Abaixo dos trocânteres", "Haste intramedular"],
+        ["Clínica", "Dor + encurtamento + rotação externa do membro", "Membro encurtado e rodado externamente"],
+        ["Imagem", "Radiografia (AP de bacia + perfil); RM/TC se oculta", "Fratura oculta: RM se dor persistente e RX normal"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CIRURGIA PRECOCE SALVA VIDAS",
+      "section_color": "red",
+      "titulo": "OPERAR EM ATÉ 24-48H REDUZ MORTALIDADE E COMPLICAÇÕES",
+      "items": [
+        "A cirurgia precoce (idealmente em 24-48h) reduz mortalidade, delirium, TVP, úlcera de pressão e tempo de internação",
+        "Não atrasar a cirurgia por exames desnecessários — otimizar rapidamente as comorbidades",
+        "Analgesia eficaz desde a admissão: bloqueio do nervo femoral / iliofascial é muito eficaz e reduz opioides",
+        "Mobilização precoce no pós-operatório (sentar/andar) previne complicações do imobilismo",
+        "A fratura de quadril no idoso tem alta mortalidade em 1 ano — é um marcador de fragilidade",
+        "Abordagem multidisciplinar (ortogeriatria) melhora desfechos"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM NO PS",
+      "title": "QUADRIL — ANALGESIA + OTIMIZAR + OPERAR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Idoso com queda + dor no quadril + membro encurtado e rodado\nRadiografia de bacia (AP) e perfil do quadril", "color": "navy", "font_size": 5.3},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Analgesia precoce: bloqueio iliofascial/femoral + analgésico\nRX normal mas dor persistente -> RM (fratura oculta)", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Otimizar comorbidades\nRAPIDAMENTE\n(sem atrasar a cirurgia)\nprofilaxia de TVP", "color": "orange", "font_size": 5.1},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Cirurgia em 24-48h:\nartroplastia (colo desviado)\nou fixação (trans/subtroc)", "color": "red", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Pós-op: mobilização precoce, prevenção de delirium e úlcera,\nreabilitação e investigação/tratamento de osteoporose", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PREVENÇÃO DE COMPLICAÇÕES",
+      "section_color": "orange",
+      "headers": ["Complicação", "Prevenção"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.32, 0.68],
+      "rows": [
+        ["Tromboembolismo (TVP/TEP)", "Profilaxia com HBPM + mobilização precoce"],
+        ["Delirium", "Cirurgia/analgesia precoces, evitar BZD, reorientação, sono, hidratação"],
+        ["Úlcera de pressão", "Mobilização, mudança de decúbito, colchão adequado"],
+        ["Infecção respiratória/urinária", "Mobilização, retirar sondas precocemente, fisioterapia"],
+        ["Anemia/descompensação", "Avaliar transfusão e otimizar comorbidades sem atrasar a cirurgia"],
+        ["Nova fratura", "Tratar osteoporose (cálcio, vitamina D, bifosfonato) e prevenir quedas"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ANALGESIA E ORTOGERIATRIA",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Analgesia no PS",
+        "items": [
+          "Bloqueio do nervo femoral ou iliofascial: muito eficaz, reduz a necessidade de opioides",
+          "Analgesia multimodal: dipirona/paracetamol + opioide titulado",
+          "Cuidado com opioides em altas doses no idoso (delirium, depressão respiratória)",
+          "Evitar AINE em idoso frágil/nefropata",
+          "Imobilização e posicionamento confortável",
+          "Reavaliar a dor com escala apropriada"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Cuidado Multidisciplinar",
+        "items": [
+          "Ortogeriatria: ortopedia + geriatria + anestesia + fisioterapia",
+          "Avaliação rápida de comorbidades para liberar a cirurgia",
+          "Plano de reabilitação desde a admissão",
+          "Avaliar causa da queda (síncope, arritmia, hipotensão, medicações)",
+          "Prevenção secundária de quedas e tratamento da osteoporose",
+          "Suporte nutricional e cognitivo"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Reconhecer: idoso com queda + dor no quadril + membro encurtado e rodado externamente",
+        "Radiografia (AP de bacia + perfil); RM se RX normal com dor persistente (fratura oculta)",
+        "Analgesia precoce com bloqueio iliofascial/femoral + multimodal",
+        "Otimizar comorbidades rapidamente, SEM atrasar a cirurgia",
+        "Cirurgia em 24-48h (artroplastia no colo desviado; fixação nas extracapsulares)",
+        "Profilaxia de TVP, prevenção de delirium/úlcera, mobilização precoce e tratamento da osteoporose"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Idosa de 82 anos com fratura de quadril após queda. Qual conduta reduz a mortalidade e as complicações?",
+      "alternativas": [
+        "Tratamento conservador com repouso prolongado no leito",
+        "Cirurgia precoce (em 24-48h), com analgesia e otimização rápida das comorbidades",
+        "Aguardar 2 semanas para operar",
+        "Imobilização gessada",
+        "Tração cutânea por tempo indefinido"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com fratura desviada do colo do fêmur. Qual o tratamento usual e por quê?",
+      "alternativas": [
+        "Fixação com parafusos sempre",
+        "Artroplastia, pelo alto risco de necrose avascular da cabeça femoral",
+        "Tratamento conservador",
+        "Apenas fisioterapia",
+        "Haste intramedular"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual técnica de analgesia é muito eficaz e reduz o uso de opioides na fratura de quadril?",
+      "alternativas": [
+        "AINE em alta dose",
+        "Bloqueio do nervo femoral ou iliofascial",
+        "Apenas paracetamol oral",
+        "Sedação profunda",
+        "Corticoide IV"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Idoso com queda e dor no quadril, radiografia inicial normal, mas com dor persistente e incapacidade de deambular. Qual a conduta?",
+      "alternativas": [
+        "Alta com analgésico",
+        "RM do quadril para investigar fratura oculta",
+        "Repetir a mesma radiografia em 30 dias",
+        "Imobilização e observação domiciliar",
+        "Cintilografia imediata como primeira escolha"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Além do tratamento cirúrgico, qual medida é fundamental na prevenção secundária após fratura de quadril por fragilidade?",
+      "alternativas": [
+        "Restringir a deambulação permanentemente",
+        "Tratar a osteoporose (cálcio, vitamina D, bifosfonato) e prevenir novas quedas",
+        "Suspender toda atividade física",
+        "Iniciar anticoagulação oral por toda a vida",
+        "Repouso absoluto no leito"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A cirurgia precoce (em 24-48h), com analgesia eficaz e otimização rápida das comorbidades, reduz mortalidade, delirium, TVP, úlcera de pressão e tempo de internação. O tratamento conservador com imobilismo prolongado aumenta as complicações."},
+    {"resposta": "B", "comentario": "A fratura desviada do colo do fêmur (intracapsular) compromete a vascularização da cabeça femoral, com alto risco de necrose avascular e pseudoartrose. Por isso, no idoso, o tratamento usual é a artroplastia (substituição), e não a fixação."},
+    {"resposta": "B", "comentario": "O bloqueio do nervo femoral ou iliofascial é uma técnica de analgesia muito eficaz na fratura de quadril, reduzindo a dor e a necessidade de opioides — o que diminui o risco de delirium e depressão respiratória no idoso."},
+    {"resposta": "B", "comentario": "Dor persistente e incapacidade de deambular após queda, com radiografia normal, levantam a suspeita de fratura oculta. A RM do quadril é o exame de escolha para detectá-la (mais sensível que a radiografia e a TC)."},
+    {"resposta": "B", "comentario": "A fratura de quadril por fragilidade indica osteoporose. A prevenção secundária inclui tratar a osteoporose (cálcio, vitamina D, bifosfonato/outros) e prevenir novas quedas — fundamental para evitar nova fratura."}
+  ]
+}

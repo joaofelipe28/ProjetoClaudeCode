@@ -1,0 +1,178 @@
+{
+  "slug": "intoxicacao_acidental_crianca",
+  "titulo": "Intoxicação Acidental na Criança",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "Intoxicações Exógenas na Infância — Abordagem, Descontaminação e Antídotos",
+  "chapter_bar": "INTOX. PEDIÁTRICA — ABC + ANTÍDOTO + CEATOX",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "ABORDAGEM GERAL",
+      "section_color": "navy",
+      "headers": ["Etapa", "Conduta"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Estabilizar (ABC)", "Via aérea, ventilação e circulação primeiro; glicemia capilar em todo rebaixamento"],
+        ["Identificar o agente", "O que, quanto, quando e via; trazer a embalagem; contatar o CEATOX/centro de toxicologia"],
+        ["Descontaminação", "Carvão ativado em casos selecionados (ver abaixo); NÃO induzir vômito"],
+        ["Antídoto", "Quando disponível e indicado (ver tabela de antídotos)"],
+        ["Eliminação", "Alcalinização urinária, hemodiálise em toxinas específicas"],
+        ["Observação/segurança", "Avaliar tempo de observação; sempre considerar maus-tratos/negligência e prevenir recorrência"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "DESCONTAMINAÇÃO — O QUE MUDOU",
+      "section_color": "red",
+      "titulo": "NÃO INDUZIR VÔMITO; CARVÃO ATIVADO É SELETIVO",
+      "items": [
+        "NÃO induzir vômito (xarope de ipeca está abandonado) — risco de aspiração e sem benefício",
+        "Carvão ativado: 1 g/kg VO, mais útil na PRIMEIRA HORA pós-ingestão de dose tóxica de substância que ele adsorve",
+        "Carvão NÃO adsorve: metais (ferro, lítio), álcoois, hidrocarbonetos, cáusticos — não usar nesses casos",
+        "Contraindicações ao carvão: via aérea desprotegida (rebaixamento sem IOT), íleo/obstrução, ingestão de cáustico",
+        "Lavagem gástrica: raramente indicada (apenas situações muito selecionadas e precoces)",
+        "Cáusticos e hidrocarbonetos: NÃO induzir vômito, NÃO dar carvão, NÃO neutralizar — suporte e avaliação especializada",
+        "Contatar sempre o centro de toxicologia (CEATOX) para orientação específica"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTÍDOTOS PRINCIPAIS",
+      "section_color": "orange",
+      "headers": ["Tóxico", "Antídoto", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.30, 0.40],
+      "rows": [
+        ["Paracetamol", "N-acetilcisteína", "Guiar pelo nomograma; eficaz se precoce"],
+        ["Opioides", "Naloxona", "Reverter depressão respiratória"],
+        ["Benzodiazepínicos", "Flumazenil", "Cautela: risco de convulsão (uso crônico/coingestão)"],
+        ["Organofosforados", "Atropina + pralidoxima", "Síndrome colinérgica (SLUDGE), broncorreia"],
+        ["Ferro", "Desferroxamina", "Carvão NÃO adsorve ferro"],
+        ["Metanol/etilenoglicol", "Fomepizol (ou etanol) + diálise", "Acidose com GAP/osmolar elevado"],
+        ["Betabloqueador/BCC", "Glucagon / cálcio / insulina em dose alta", "Bradicardia e hipotensão"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA CRIANÇA INTOXICADA",
+      "title": "INTOX. PEDIÁTRICA — ABC + IDENTIFICAR + ANTÍDOTO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Estabilizar ABC + glicemia capilar\nIdentificar agente, dose, tempo e via", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Contatar CEATOX; reconhecer síndromes tóxicas (toxidromes)\ncolinérgica, anticolinérgica, opioide, simpaticomimética", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Descontaminação seletiva:\ncarvão ativado na 1a hora\n(se indicado; via aérea protegida)\nNÃO induzir vômito", "color": "orange", "font_size": 4.9},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Antídoto específico\nquando indicado\n+ suporte e eliminação\n(diálise em toxinas selecionadas)", "color": "red", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Observar pelo tempo adequado; considerar maus-tratos/negligência\nOrientar prevenção (guarda segura de medicamentos/produtos)", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TOXIDROMES E AGENTES COMUNS NA INFÂNCIA",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Síndromes Tóxicas (Toxidromes)",
+        "items": [
+          "Colinérgica (organofosforado): miose, salivação, lacrimejamento, diarreia, broncorreia, bradicardia",
+          "Anticolinérgica (antihistamínico, atropínicos): midríase, pele seca e quente, taquicardia, delirium, retenção urinária",
+          "Opioide: miose, depressão respiratória, rebaixamento",
+          "Simpaticomimética (cocaína, anfetamina): midríase, taquicardia, HAS, agitação, hipertermia",
+          "Sedativo-hipnótica (BZD, álcool): rebaixamento, fala arrastada"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Agentes Frequentes em Casa",
+        "items": [
+          "Medicamentos dos pais/avós (anti-hipertensivos, hipoglicemiantes, psicotrópicos)",
+          "Paracetamol e outros analgésicos",
+          "Produtos de limpeza/cáusticos (soda, desinfetantes)",
+          "Hidrocarbonetos (querosene, gasolina) — risco de pneumonite",
+          "Raticidas, pesticidas (organofosforados)",
+          "Plantas e cosméticos"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Estabilizar ABC e checar glicemia em todo rebaixamento",
+        "Identificar agente, dose, tempo e via; contatar o CEATOX",
+        "Reconhecer toxidromes para guiar a conduta e o antídoto",
+        "Carvão ativado seletivo (1a hora, via aérea protegida); NÃO induzir vômito; sem carvão em cáustico/hidrocarboneto/metais/álcoois",
+        "Antídoto específico quando indicado (N-acetilcisteína, naloxona, atropina+pralidoxima, etc.)",
+        "Observar pelo tempo adequado, considerar maus-tratos/negligência e orientar prevenção"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "SBP / Adaptada",
+      "enunciado": "Criança ingeriu soda cáustica há 30 minutos. Qual conduta é CORRETA?",
+      "alternativas": [
+        "Induzir o vômito imediatamente",
+        "Administrar carvão ativado",
+        "NÃO induzir vômito, NÃO dar carvão nem neutralizar; suporte e avaliação especializada (risco de lesão esofágica)",
+        "Neutralizar com vinagre",
+        "Lavagem gástrica imediata"
+      ]
+    },
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Sobre o carvão ativado na intoxicação pediátrica, qual afirmação é correta?",
+      "alternativas": [
+        "Adsorve ferro, lítio e álcoois com eficácia",
+        "É mais útil na primeira hora, em dose tóxica de substância adsorvível, com via aérea protegida",
+        "Deve ser dado a toda criança intoxicada",
+        "É indicado mesmo com rebaixamento e via aérea desprotegida",
+        "Substitui o antídoto específico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Criança com miose, salivação intensa, broncorreia, diarreia e bradicardia após contato com pesticida. Qual a toxidrome e o antídoto?",
+      "alternativas": [
+        "Anticolinérgica — fisostigmina",
+        "Colinérgica (organofosforado) — atropina + pralidoxima",
+        "Opioide — naloxona",
+        "Simpaticomimética — betabloqueador",
+        "Sedativa — flumazenil"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual é o antídoto da intoxicação por paracetamol?",
+      "alternativas": [
+        "Naloxona",
+        "N-acetilcisteína",
+        "Flumazenil",
+        "Atropina",
+        "Desferroxamina"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Sobre a indução de vômito (ex.: xarope de ipeca) na criança intoxicada, qual afirmação é correta?",
+      "alternativas": [
+        "Deve ser feita de rotina em todas as ingestões",
+        "Está abandonada — não se induz vômito (risco de aspiração e sem benefício comprovado)",
+        "É indicada em ingestão de cáusticos",
+        "Substitui o carvão ativado",
+        "É o método de escolha para hidrocarbonetos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "Na ingestão de cáustico, NÃO se induz vômito (reexpõe o esôfago ao agente), NÃO se dá carvão (não adsorve e atrapalha a endoscopia) e NÃO se neutraliza (reação exotérmica). A conduta é suporte, analgesia e avaliação especializada (endoscopia) pelo risco de lesão esofágica."},
+    {"resposta": "B", "comentario": "O carvão ativado é mais útil na primeira hora após a ingestão de dose tóxica de uma substância que ele adsorve, com a via aérea protegida. Não adsorve metais (ferro, lítio), álcoois, hidrocarbonetos nem cáusticos, e é contraindicado com via aérea desprotegida."},
+    {"resposta": "B", "comentario": "Miose, salivação, broncorreia, diarreia e bradicardia (síndrome colinérgica, mnemônico SLUDGE) após pesticida indicam intoxicação por organofosforado. O tratamento é atropina (antagoniza o efeito muscarínico) + pralidoxima (reativa a acetilcolinesterase)."},
+    {"resposta": "B", "comentario": "O antídoto da intoxicação por paracetamol é a N-acetilcisteína, guiada pelo nomograma e mais eficaz quanto mais precocemente administrada, prevenindo a hepatotoxicidade."},
+    {"resposta": "B", "comentario": "A indução de vômito (xarope de ipeca) está abandonada: não há benefício comprovado e há risco de aspiração. É especialmente perigosa em cáusticos e hidrocarbonetos. A descontaminação atual se baseia no carvão ativado seletivo."}
+  ]
+}

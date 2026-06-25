@@ -1,0 +1,191 @@
+{
+  "slug": "crise_hipertensiva",
+  "titulo": "Crise Hipertensiva — Urgência vs Emergência",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "Crise Hipertensiva — Diferenciar Urgência de Emergência e Tratar",
+  "chapter_bar": "CRISE HIPERTENSIVA — LOA DEFINE A CONDUTA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "URGÊNCIA vs EMERGÊNCIA HIPERTENSIVA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Urgência", "Emergência"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Definição", "PA muito elevada (geralmente >180/120) SEM lesão aguda de órgão-alvo", "PA muito elevada COM lesão aguda de órgão-alvo (LOA) em curso"],
+        ["Sintomas", "Assintomático ou sintomas inespecíficos (cefaleia leve)", "Sintomas de LOA: dor torácica, dispneia, déficit neurológico, oligúria"],
+        ["Via de tratamento", "Anti-hipertensivo ORAL, reduzir em 24-48h", "Anti-hipertensivo IV em ambiente monitorado (UTI)"],
+        ["Meta de PA", "Reduzir gradualmente; não normalizar rapidamente", "Reduzir 20-25% na 1a hora (exceto AVC/dissecção — regras próprias)"],
+        ["Local", "Observação no PS, alta com ajuste e reavaliação ambulatorial", "Internação / UTI"],
+        ["Risco da queda rápida", "Hipoperfusão (AVC, isquemia) se reduzir demais", "Mesma regra: queda abrupta agrava isquemia de órgão"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "LESÕES AGUDAS DE ÓRGÃO-ALVO (LOA) — DEFINEM EMERGÊNCIA",
+      "section_color": "red",
+      "headers": ["Órgão", "Emergência hipertensiva", "Pista clínica"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.42, 0.38],
+      "rows": [
+        ["SNC", "Encefalopatia hipertensiva, AVC isquêmico/hemorrágico, HSA", "Cefaleia intensa, confusão, déficit focal, convulsão, papiledema"],
+        ["Coração", "SCA, edema agudo de pulmão, IC aguda", "Dor torácica, dispneia, estertores, B3"],
+        ["Aorta", "Dissecção aórtica aguda", "Dor torácica/dorsal lancinante, assimetria de pulsos/PA"],
+        ["Rim", "Lesão renal aguda, hematúria, proteinúria nova", "Oligúria, creatinina em ascensão"],
+        ["Olho", "Retinopatia grau III/IV (hemorragias, exsudatos, papiledema)", "Borramento visual, fundoscopia alterada"],
+        ["Gestação", "Pré-eclâmpsia grave / eclâmpsia (> 20 semanas)", "Cefaleia, escotomas, epigastralgia, plaquetopenia"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA PA MUITO ELEVADA NO PS",
+      "title": "PA >180/120 — TEM LOA?",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "PA >= 180/120 mmHg\nConfirmar medida + buscar sintomas e sinais de LOA", "color": "navy", "font_size": 5.6},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Lesão aguda de órgão-alvo presente?\n(neuro, cardíaco, aórtico, renal, ocular, gestacional)", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "NÃO = URGÊNCIA\nRepouso + anti-HAS oral\nReduzir em 24-48h\nAlta + reavaliação", "color": "green", "font_size": 5.3},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "SIM = EMERGÊNCIA\nAnti-HAS IV em UTI\nMeta conforme órgão\nReduzir 20-25% na 1a hora", "color": "red", "font_size": 5.2},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Excluir PSEUDOCRISE: PA alta por dor, ansiedade, retenção urinária,\nabstinência. Tratar a causa antes de anti-hipertensivo agressivo", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "DROGAS IV NA EMERGÊNCIA HIPERTENSIVA",
+      "section_color": "orange",
+      "titulo": "ESCOLHER PELA SITUAÇÃO CLÍNICA",
+      "items": [
+        "Nitroprussiato de sódio: 0,3-10 mcg/kg/min IV — potente e titulável; cuidado com intoxicação por cianeto/tiocianato em uso prolongado ou renal",
+        "Nitroglicerina: 5-200 mcg/min IV — preferida em SCA e edema agudo de pulmão (venodilatação, reduz pré-carga)",
+        "Esmolol: 0,5 mg/kg bolus + 50-300 mcg/kg/min — betabloqueador de ação ultracurta; ideal na dissecção (associado a vasodilatador)",
+        "Metoprolol: 5 mg IV lento, repetir até 15 mg — controle de FC na dissecção/SCA",
+        "Labetalol: 10-20 mg IV bolus, repetir; ou 0,5-2 mg/min — alfa+beta; útil em emergência neurológica e gestação",
+        "Hidralazina: 5-10 mg IV — opção na gestante (eclâmpsia); evitar isolada na dissecção (taquicardia reflexa)",
+        "Nicardipina/Clevidipina: BCC IV tituláveis — boa opção em emergência neurológica",
+        "Dissecção aórtica: PRIMEIRO betabloqueador (FC alvo <60), DEPOIS vasodilatador; PAS alvo 100-120 mmHg"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "METAS POR SITUAÇÃO — NÃO É IGUAL PARA TODOS",
+      "section_color": "red",
+      "titulo": "ALVO DE PA DEPENDE DO ÓRGÃO ACOMETIDO",
+      "items": [
+        "Dissecção aórtica: PAS 100-120 mmHg e FC <60 em <20 min (a mais agressiva) — betabloqueador antes do vasodilatador",
+        "AVC isquêmico SEM trombólise: só tratar se PA >220/120; com trombólise: manter <185/110",
+        "AVC hemorrágico: reduzir PAS para ~140 mmHg de forma controlada",
+        "Edema agudo de pulmão / SCA: nitroglicerina + reduzir pós-carga; cuidado com betabloqueador no EAP descompensado",
+        "Eclâmpsia/pré-eclâmpsia grave: hidralazina ou labetalol + sulfato de magnésio; meta 140-150/90-100",
+        "Encefalopatia hipertensiva: reduzir 20-25% na 1a hora, reversível com a queda da PA"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "PSEUDOCRISE E ERROS COMUNS",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Pseudocrise Hipertensiva",
+        "items": [
+          "PA muito elevada secundária a um gatilho, sem LOA",
+          "Causas: dor, ansiedade/pânico, retenção urinária, abstinência, sono ruim",
+          "Conduta: tratar a causa (analgesia, sondagem, ansiolítico) e reavaliar",
+          "Anti-hipertensivo agressivo é desnecessário e pode causar hipotensão",
+          "Repouso 30-60 min muitas vezes normaliza a PA"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Erros a Evitar",
+        "items": [
+          "Nifedipino sublingual: PROSCRITO — queda abrupta e imprevisível, risco de AVC/IAM",
+          "Tratar 'número' de PA sem buscar LOA nem sintomas",
+          "Normalizar a PA rapidamente na urgência (risco de hipoperfusão)",
+          "Alta sem ajuste de medicação e sem reavaliação programada",
+          "Não investigar causa secundária em jovem ou crise recorrente"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA E SEGUIMENTO",
+      "titulo": "FECHAMENTO DO CASO",
+      "items": [
+        "Confirmar PA em ambos os braços, manguito adequado, paciente em repouso",
+        "Buscar ativamente LOA: ECG, troponina se dor torácica, fundo de olho, creatinina/EAS, exame neurológico",
+        "Emergência: IV em ambiente monitorado (UTI); urgência: oral e observação",
+        "Reduzir gradualmente (exceto dissecção) — evitar hipoperfusão",
+        "Alta da urgência: retomar/ajustar anti-hipertensivo, orientar sinais de alarme, reavaliação em 24-72h",
+        "Investigar HAS secundária se jovem, refratária ou crises recorrentes"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com PA 210/130 mmHg, assintomático, sem sinais de lesão de órgão-alvo. Qual a conduta correta?",
+      "alternativas": [
+        "Nifedipino 10 mg sublingual imediato",
+        "Nitroprussiato IV em UTI para normalizar a PA",
+        "Urgência hipertensiva — anti-hipertensivo oral, repouso e redução gradual em 24-48h, com reavaliação",
+        "Internar para reduzir a PA a menos de 120/80 em 1 hora",
+        "Alta imediata sem qualquer ajuste"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Homem com dor torácica lancinante irradiando para o dorso, PA 200/120 no braço direito e 150/90 no esquerdo. Qual o alvo e a sequência terapêutica?",
+      "alternativas": [
+        "Vasodilatador isolado (nitroprussiato) para normalizar a PA",
+        "Betabloqueador (FC <60) primeiro, depois vasodilatador; PAS alvo 100-120 mmHg",
+        "Hidralazina IV para reduzir a pós-carga",
+        "Reduzir a PA apenas se ultrapassar 220/120",
+        "Nifedipino sublingual"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que o nifedipino sublingual é proscrito no manejo da crise hipertensiva?",
+      "alternativas": [
+        "Porque não reduz a pressão arterial",
+        "Porque causa queda abrupta e imprevisível da PA, com risco de AVC e isquemia miocárdica",
+        "Porque eleva a frequência cardíaca de forma benéfica",
+        "Porque só age após 24 horas",
+        "Porque é contraindicado apenas em idosos"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente com PA 195/115, agitado, com retenção urinária e bexigoma. Qual a conduta inicial mais adequada?",
+      "alternativas": [
+        "Nitroprussiato IV imediato",
+        "Reconhecer pseudocrise — aliviar a retenção (sondagem) e reavaliar a PA",
+        "Internar em UTI para controle pressórico",
+        "Captopril 25 mg e alta imediata",
+        "Furosemida IV em bolus"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Em uma emergência hipertensiva por encefalopatia hipertensiva, qual a meta de redução da PA na primeira hora?",
+      "alternativas": [
+        "Normalizar a PA (menos de 120/80)",
+        "Reduzir 20-25% da PA na primeira hora",
+        "Reduzir 50% da PA na primeira hora",
+        "Não reduzir até realizar tomografia",
+        "Reduzir apenas a diastólica para menos de 60"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "C", "comentario": "PA muito elevada SEM lesão de órgão-alvo = urgência hipertensiva. Tratamento com anti-hipertensivo oral, repouso e redução gradual em 24-48h, com reavaliação ambulatorial. Reduzir rapidamente (IV) é desnecessário e arriscado (hipoperfusão)."},
+    {"resposta": "B", "comentario": "Quadro de dissecção aórtica (dor lancinante para o dorso + assimetria de PA). Meta mais agressiva: PAS 100-120 mmHg e FC <60. Sequência: betabloqueador PRIMEIRO (reduz dP/dt e a força de cisalhamento) e depois vasodilatador — evita taquicardia reflexa que propaga a dissecção."},
+    {"resposta": "B", "comentario": "O nifedipino sublingual causa queda abrupta, intensa e imprevisível da PA, com risco de hipoperfusão cerebral (AVC) e coronariana (IAM). Por isso está proscrito. Prefere-se redução controlada com drogas tituláveis."},
+    {"resposta": "B", "comentario": "Trata-se de pseudocrise hipertensiva: a PA está elevada por um gatilho (retenção urinária com bexigoma). A conduta é tratar a causa (sondagem vesical) e reavaliar — a PA costuma normalizar sem necessidade de anti-hipertensivo agressivo."},
+    {"resposta": "B", "comentario": "Na maioria das emergências hipertensivas (incluindo encefalopatia hipertensiva), a meta é reduzir 20-25% da PA na primeira hora, de forma controlada. Exceções com regras próprias: dissecção aórtica (mais agressiva) e AVC (limiares específicos)."}
+  ]
+}

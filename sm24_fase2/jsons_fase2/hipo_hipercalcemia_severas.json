@@ -1,0 +1,178 @@
+{
+  "slug": "hipo_hipercalcemia_severas",
+  "titulo": "Hipo e Hipercalcemia Severas",
+  "especialidade": "ENDOCRINOLOGIA",
+  "chapter_subject": "Distúrbios Agudos do Cálcio — Reconhecimento e Manejo de Emergência",
+  "chapter_bar": "CÁLCIO — CORRIGIR PELA ALBUMINA, TRATAR O GRAVE",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "PRINCÍPIOS GERAIS DO CÁLCIO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Cálcio total vs iônico", "O cálcio iônico é a fração ativa; preferir dosá-lo em estados críticos"],
+        ["Correção pela albumina", "Ca corrigido = Ca total + 0,8 x (4 - albumina) — hipoalbuminemia reduz o Ca total sem reduzir o iônico"],
+        ["pH", "Alcalose reduz o cálcio iônico (mais ligado à albumina); acidose aumenta"],
+        ["Magnésio", "Hipomagnesemia causa hipocalcemia resistente — repor Mg"],
+        ["Avaliação", "PTH é o primeiro exame para diferenciar as causas"],
+        ["Gravidade", "Sintomas e a velocidade de instalação importam mais que o número isolado"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "HIPERCALCEMIA — CAUSAS E CLÍNICA",
+      "section_color": "orange",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Causas (90%)", "Hiperparatireoidismo primário (ambulatorial) e malignidade (internado, mais grave)"],
+        ["Outras", "Intoxicação por vitamina D, sarcoidose, imobilização, tiazídicos, lítio"],
+        ["Clínica", "'Stones, bones, groans, moans': cálculo renal, dor óssea, dor abdominal/constipação, alteração do humor/letargia"],
+        ["Renal/neuro", "Poliúria, desidratação, lesão renal, fraqueza, confusão, coma"],
+        ["ECG", "Encurtamento do intervalo QT"],
+        ["Grave", "Ca corrigido > 14 mg/dL ou sintomático = emergência"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO DA HIPERCALCEMIA GRAVE",
+      "section_color": "red",
+      "titulo": "HIDRATAR, BIFOSFONATO, CALCITONINA",
+      "items": [
+        "Salina 0,9%: 200-300 mL/h (1a medida) — corrige a desidratação e aumenta a excreção renal de cálcio",
+        "Calcitonina: 4 UI/kg SC/IM 12/12h — ação rápida (horas), mas curta (taquifilaxia em 48h)",
+        "Bifosfonato IV: ácido zoledrônico 4 mg OU pamidronato 60-90 mg — efeito em 2-4 dias, sustentado (essencial na malignidade)",
+        "Diurético de alça (furosemida): SOMENTE após hidratação plena e se sobrecarga/IC (não usar de rotina)",
+        "Corticoide: útil em hipercalcemia por linfoma, mieloma, sarcoidose, intoxicação por vitamina D",
+        "Denosumabe: opção em hipercalcemia refratária da malignidade",
+        "Hemodiálise: hipercalcemia com risco de vida ou insuficiência renal"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "HIPOCALCEMIA — CAUSAS E CLÍNICA",
+      "section_color": "teal",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Causas", "Pós-tireoidectomia/paratireoidectomia (hipoparatireoidismo), hipomagnesemia, DRC, deficiência de vitamina D, pancreatite, sepse, rabdomiólise"],
+        ["Clínica leve", "Parestesias periorais e de extremidades, cãibras"],
+        ["Clínica grave", "Tetania, laringoespasmo, convulsão, broncoespasmo, arritmia"],
+        ["Sinais", "Chvostek (percussão do facial) e Trousseau (espasmo carpal com o manguito)"],
+        ["ECG", "Prolongamento do intervalo QT (risco de arritmia)"],
+        ["Lembrar", "Corrigir o magnésio: hipocalcemia não corrige sem normalizar o Mg"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO DA HIPOCALCEMIA",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Hipocalcemia Sintomática/Grave",
+        "items": [
+          "Gluconato de cálcio 10%: 1-2 ampolas (10-20 mL) IV lento em 10-20 min, diluído",
+          "Seguir com infusão contínua de cálcio se sintomas persistentes/QT longo",
+          "Monitorização de ECG durante a reposição IV",
+          "Repor magnésio simultaneamente se baixo (caso contrário não corrige)",
+          "Tetania, laringoespasmo, convulsão ou QT longo = reposição IV imediata",
+          "Cuidado com extravasamento (necrose); preferir cloreto de cálcio por acesso central se disponível"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Hipocalcemia Leve / Crônica",
+        "items": [
+          "Cálcio oral (carbonato/citrato) + vitamina D (calcitriol no hipoparatireoidismo/DRC)",
+          "Tratar a causa de base (vitamina D, magnésio, DRC)",
+          "Pós-tireoidectomia: vigiar hipocalcemia nas primeiras 24-72h",
+          "Ajustar conforme cálcio iônico e sintomas",
+          "Evitar alcalose (reduz o cálcio iônico)",
+          "Seguimento ambulatorial com dosagens seriadas"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "ABORDAGEM PRÁTICA",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Sempre corrigir o cálcio pela albumina (ou dosar o iônico no paciente crítico)",
+        "Hipercalcemia grave: hidratar com salina + calcitonina (rápida) + bifosfonato (sustentado)",
+        "Diurético de alça só após hidratação plena; furosemida não é primeira linha",
+        "Hipocalcemia sintomática/QT longo: gluconato de cálcio IV com monitorização de ECG",
+        "Repor magnésio em ambos quando baixo (hipocalcemia e arritmias resistentes)",
+        "Dosar PTH para definir a causa e tratar a doença de base"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente oncológico com cálcio corrigido de 15 mg/dL, desidratado e letárgico. Qual a sequência terapêutica inicial?",
+      "alternativas": [
+        "Furosemida isolada",
+        "Hidratação com salina 0,9% + calcitonina (rápida) + bifosfonato IV (sustentado)",
+        "Gluconato de cálcio IV",
+        "Restrição hídrica",
+        "Apenas corticoide"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com albumina de 2,0 g/dL e cálcio total 'baixo'. Qual a interpretação correta?",
+      "alternativas": [
+        "Hipocalcemia verdadeira sempre",
+        "Necessário corrigir o cálcio pela albumina (ou dosar o iônico), pois a hipoalbuminemia reduz o cálcio total sem reduzir o iônico",
+        "O cálcio iônico está obrigatoriamente baixo",
+        "Deve-se repor cálcio IV imediatamente",
+        "A albumina não influencia o cálcio"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente com hipocalcemia que não corrige apesar da reposição de cálcio. Qual eletrólito deve ser verificado e corrigido?",
+      "alternativas": [
+        "Sódio",
+        "Magnésio",
+        "Cloro",
+        "Fósforo",
+        "Potássio"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente no pós-operatório de tireoidectomia com parestesias periorais e sinal de Trousseau positivo. Qual a conduta?",
+      "alternativas": [
+        "Apenas observar",
+        "Reposição de cálcio (gluconato de cálcio IV se sintomático), com monitorização de ECG",
+        "Bifosfonato IV",
+        "Furosemida",
+        "Restrição de cálcio na dieta"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual o papel do diurético de alça (furosemida) no tratamento da hipercalcemia?",
+      "alternativas": [
+        "É a primeira medida, antes da hidratação",
+        "Reservado para após a hidratação plena, em caso de sobrecarga de volume/IC — não é primeira linha",
+        "Deve ser usado em todos os pacientes",
+        "Reduz o cálcio independentemente da volemia",
+        "É contraindicado em qualquer situação"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Hipercalcemia grave da malignidade (Ca > 14 e sintomática): hidratação vigorosa com salina 0,9% (1a medida) + calcitonina (ação rápida em horas) + bifosfonato IV (ácido zoledrônico/pamidronato, efeito sustentado em 2-4 dias). Corticoide e denosumabe em casos selecionados."},
+    {"resposta": "B", "comentario": "Com hipoalbuminemia, o cálcio total cai sem que o cálcio iônico (a fração ativa) esteja realmente baixo. Por isso corrige-se pela albumina (Ca + 0,8 x [4 - albumina]) ou dosa-se o cálcio iônico antes de diagnosticar hipocalcemia."},
+    {"resposta": "B", "comentario": "A hipomagnesemia causa hipocalcemia resistente (prejudica a secreção e a ação do PTH). Sem corrigir o magnésio, a reposição de cálcio não normaliza a calcemia. Sempre verificar e repor o magnésio."},
+    {"resposta": "B", "comentario": "Hipocalcemia sintomática pós-tireoidectomia (parestesias, Trousseau positivo) deve ser tratada com reposição de cálcio — gluconato de cálcio IV se sintomática/grave, com monitorização de ECG, e cálcio oral + vitamina D na sequência."},
+    {"resposta": "B", "comentario": "O diurético de alça NÃO é primeira linha na hipercalcemia. Deve ser reservado para após a hidratação plena, quando há sobrecarga de volume ou IC. Usado precocemente em paciente desidratado, agrava a desidratação e a própria hipercalcemia."}
+  ]
+}

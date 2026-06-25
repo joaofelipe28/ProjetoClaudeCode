@@ -1,0 +1,176 @@
+{
+  "slug": "encefalopatia_hepatica",
+  "titulo": "Encefalopatia Hepática",
+  "especialidade": "GASTROENTEROLOGIA",
+  "chapter_subject": "Encefalopatia Hepática — Reconhecimento, Fatores Precipitantes e Tratamento",
+  "chapter_bar": "EH — TRATAR O FATOR + LACTULOSE",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "GRADUAÇÃO (CRITÉRIOS DE WEST HAVEN)",
+      "section_color": "navy",
+      "headers": ["Grau", "Consciência / Cognição", "Achados"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.14, 0.42, 0.44],
+      "rows": [
+        ["Mínima", "Sem alteração clínica evidente", "Déficit apenas em testes psicométricos"],
+        ["I", "Leve: inversão do sono, euforia/ansiedade, déficit de atenção", "Tremor fino, incoordenação leve"],
+        ["II", "Letargia, desorientação no tempo, comportamento alterado", "Asterixis (flapping) evidente, fala arrastada"],
+        ["III", "Sonolência/estupor, confusão acentuada, desorientação no espaço", "Asterixis pode estar presente, hiperreflexia"],
+        ["IV", "Coma", "Sem resposta a estímulos; proteger via aérea"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O MAIS IMPORTANTE: ACHAR O FATOR PRECIPITANTE",
+      "section_color": "red",
+      "titulo": "A EH QUASE SEMPRE TEM UM GATILHO",
+      "items": [
+        "Infecção (incluindo PBE — peritonite bacteriana espontânea): pesquisar SEMPRE com paracentese se ascite",
+        "Constipação e sangramento digestivo (carga de nitrogênio no intestino)",
+        "Distúrbios hidroeletrolíticos (hipopotassemia, alcalose, desidratação por diurético)",
+        "Uso de sedativos/benzodiazepínicos e opioides",
+        "Lesão renal aguda, desidratação, excesso de diurético, paracentese de grande volume sem albumina",
+        "Tratar o fator precipitante é tão importante quanto a lactulose — buscar ativamente",
+        "Hiperamonemia apoia o quadro, mas o nível de amônia NÃO se correlaciona bem com a gravidade nem guia o tratamento"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA EH",
+      "title": "EH — EXCLUIR OUTRAS CAUSAS + TRATAR O GATILHO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Hepatopata com alteração do estado mental\nAsterixis, inversão do sono, confusão", "color": "navy", "font_size": 5.5},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Excluir outras causas de encefalopatia\n(glicemia, eletrólitos, infecção do SNC, TCE, intoxicação)", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Buscar o GATILHO:\ninfecção/PBE (paracentese),\nsangramento, constipação,\neletrólitos, sedativos", "color": "red", "font_size": 5.1},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Tratamento:\nLactulose (2-3 evacuações/dia)\n+ corrigir o fator\n+ Rifaximina se recorrente", "color": "orange", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Proteger via aérea se grau III-IV; manter nutrição (não restringir proteína)\nProfilaxia secundária e encaminhar para avaliação de transplante", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO FARMACOLÓGICO",
+      "section_color": "orange",
+      "titulo": "LACTULOSE, RIFAXIMINA E SUPORTE",
+      "items": [
+        "Lactulose: 25 mL VO 1-2/2h até evacuar, depois titular para 2-3 evacuações pastosas/dia (primeira linha)",
+        "Lactulose por enema (300 mL em 700 mL de água) se o paciente não tolera VO ou está rebaixado",
+        "Rifaximina 550 mg VO 12/12h: associada à lactulose na EH recorrente (reduz recidivas)",
+        "Tratar o fator precipitante: antibiótico para infecção/PBE, repor potássio, suspender sedativos, tratar sangramento",
+        "Manter aporte proteico adequado (NÃO restringir proteína — piora a desnutrição); preferir proteína vegetal/laticínios",
+        "Proteger a via aérea (IOT) no grau III-IV com risco de aspiração",
+        "Evitar/retirar benzodiazepínicos; usar flumazenil apenas se EH precipitada por benzodiazepínico"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "DIAGNÓSTICO DIFERENCIAL E MITOS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Diferenciais",
+        "items": [
+          "Hipoglicemia (sempre checar a glicemia)",
+          "Distúrbios eletrolíticos e uremia",
+          "Hematoma subdural (etilista, queda) e AVC",
+          "Intoxicação por álcool/drogas e abstinência",
+          "Encefalopatia de Wernicke (repor tiamina no etilista)",
+          "Sepse e infecção do SNC"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Mitos a Evitar",
+        "items": [
+          "NÃO restringir proteína de forma prolongada (agrava a desnutrição/sarcopenia)",
+          "Amônia sérica NÃO deve guiar o tratamento isoladamente",
+          "Flumazenil de rotina não é indicado (só se gatilho por BZD)",
+          "Não atribuir todo rebaixamento à EH sem excluir outras causas",
+          "Lactulose em excesso pode causar desidratação e hipernatremia",
+          "Não esquecer a paracentese diagnóstica no ascítico"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Reconhecer a EH no hepatopata (asterixis, inversão do sono, confusão) e graduar por West Haven",
+        "Excluir outras causas de alteração mental (glicemia, eletrólitos, infecção do SNC, TCE)",
+        "Buscar ATIVAMENTE o fator precipitante — paracentese se ascite (excluir PBE)",
+        "Lactulose titulada para 2-3 evacuações/dia; rifaximina na EH recorrente",
+        "Não restringir proteína; proteger a via aérea no grau III-IV",
+        "Tratar o gatilho, instituir profilaxia secundária e avaliar transplante"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Cirrótico com ascite chega confuso e com asterixis. Além de iniciar lactulose, qual investigação NÃO pode faltar?",
+      "alternativas": [
+        "Tomografia de crânio para todos",
+        "Paracentese diagnóstica para excluir peritonite bacteriana espontânea e buscar o fator precipitante",
+        "Dosagem isolada de amônia para guiar a conduta",
+        "Endoscopia imediata em todos",
+        "Restrição proteica rigorosa"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tratamento de primeira linha da encefalopatia hepática?",
+      "alternativas": [
+        "Rifaximina isolada",
+        "Lactulose titulada para 2-3 evacuações pastosas por dia",
+        "Restrição proteica permanente",
+        "Flumazenil de rotina",
+        "Neomicina oral em altas doses"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Sobre a restrição proteica na EH, qual afirmação é correta?",
+      "alternativas": [
+        "Deve ser rigorosa e prolongada em todos os pacientes",
+        "Não deve ser restrição prolongada, pois agrava a desnutrição/sarcopenia; manter aporte proteico adequado",
+        "A proteína deve ser totalmente suspensa por 1 semana",
+        "Apenas proteína animal melhora a EH",
+        "A dieta não influencia em nada"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Por que a dosagem de amônia sérica não deve guiar isoladamente o tratamento da EH?",
+      "alternativas": [
+        "Porque a amônia nunca está elevada na EH",
+        "Porque o nível de amônia não se correlaciona bem com a gravidade nem com a resposta ao tratamento",
+        "Porque a amônia só se eleva no coma",
+        "Porque a amônia é um marcador de infecção",
+        "Porque a amônia é normal em todos os cirróticos"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual medicação é associada à lactulose para reduzir recorrências da encefalopatia hepática?",
+      "alternativas": [
+        "Rifaximina",
+        "Omeprazol",
+        "Espironolactona",
+        "Propranolol",
+        "Furosemida"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Em todo cirrótico ascítico com EH, a paracentese diagnóstica é mandatória para excluir PBE (causa frequente e tratável de descompensação). Buscar o fator precipitante é tão importante quanto iniciar a lactulose."},
+    {"resposta": "B", "comentario": "A lactulose é o tratamento de primeira linha da EH, titulada para 2-3 evacuações pastosas por dia (reduz a produção e a absorção de amônia no cólon). A rifaximina é associada na EH recorrente."},
+    {"resposta": "B", "comentario": "A restrição proteica prolongada agrava a desnutrição e a sarcopenia do cirrótico e NÃO melhora a EH. Deve-se manter aporte proteico adequado, preferindo proteína vegetal e laticínios, e tratar o fator precipitante."},
+    {"resposta": "B", "comentario": "O nível de amônia sérica não se correlaciona bem com a gravidade clínica da EH nem com a resposta ao tratamento. O diagnóstico e o manejo são clínicos (graduar, tratar o gatilho, lactulose) — a amônia não deve guiar a conduta isoladamente."},
+    {"resposta": "A", "comentario": "A rifaximina (antibiótico de ação intestinal) é associada à lactulose na EH recorrente, reduzindo a produção de amônia pela flora intestinal e diminuindo as recidivas e internações."}
+  ]
+}

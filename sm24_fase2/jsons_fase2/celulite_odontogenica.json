@@ -1,0 +1,175 @@
+{
+  "slug": "celulite_odontogenica",
+  "titulo": "Celulite Odontogênica com Repercussão Sistêmica",
+  "especialidade": "ODONTOLOGIA",
+  "chapter_subject": "Infecção Odontogênica Grave — Espaços Fasciais, Via Aérea e Sepse",
+  "chapter_bar": "INFECÇÃO DENTAL GRAVE — VIA AÉREA + DRENAR + ATB",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DA INFECÇÃO LOCAL À DISSEMINAÇÃO FASCIAL",
+      "section_color": "navy",
+      "headers": ["Estágio", "Características", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Local (periapical)", "Dor, edema localizado, dente comprometido", "Drenagem/tratamento do dente; ATB se sistêmico"],
+        ["Celulite facial", "Edema difuso, dor, calor, eritema da face", "ATB + drenagem da fonte; avaliar gravidade"],
+        ["Disseminação para espaços fasciais", "Submandibular, sublingual, submentual, mastigatório, cervical", "Internação + ATB IV + drenagem cirúrgica"],
+        ["Angina de Ludwig", "Celulite bilateral de assoalho de boca, elevação da língua", "EMERGÊNCIA de via aérea + ATB IV + drenagem"],
+        ["Repercussão sistêmica/sepse", "Febre alta, taquicardia, prostração, sinais de sepse", "Ressuscitação + ATB IV precoce + controle da fonte"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SINAIS DE GRAVIDADE — VIA AÉREA EM PRIMEIRO LUGAR",
+      "section_color": "red",
+      "titulo": "A INFECÇÃO DENTAL PODE MATAR PELA VIA AÉREA E PELA SEPSE",
+      "items": [
+        "Sinais de alarme: trismo, disfagia, sialorreia, elevação/deslocamento da língua, voz abafada, edema cervical, estridor",
+        "Angina de Ludwig: celulite bilateral de assoalho de boca com risco de obstrução de via aérea — emergência",
+        "Disseminação para o espaço cervical profundo / mediastinite: dor torácica, alargamento do mediastino — alta mortalidade",
+        "Trombose do seio cavernoso: extensão de infecção da face/órbita",
+        "Conduta: proteger a VIA AÉREA precocemente + antibiótico IV + DRENAGEM cirúrgica da coleção + tratar/remover o dente",
+        "TC cervical com contraste para definir a extensão e localizar abscessos"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA INFECÇÃO ODONTOGÊNICA GRAVE",
+      "title": "INFECÇÃO DENTAL -> AVALIAR VIA AÉREA E SEPSE",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Edema facial/cervical de origem dental\nAvaliar via aérea (trismo, disfagia, língua, voz) e sepse", "color": "navy", "font_size": 5.3},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Sinais de obstrução de via aérea ou sepse?\n(angina de Ludwig, estridor, instabilidade)", "color": "red", "font_size": 5.3},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "GRAVE: internar\nproteger via aérea (precoce)\nATB IV + ressuscitação\nTC cervical", "color": "red", "font_size": 5.1},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Controle da FONTE:\ndrenagem cirúrgica da coleção\n+ tratar/remover o dente\nbuco-maxilo", "color": "orange", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Sem sinais de gravidade: ATB + drenagem da fonte, reavaliação\nVigiar progressão (retorno se piora/disfagia/dispneia)", "color": "green", "font_size": 5.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIOTICOTERAPIA E SUPORTE",
+      "section_color": "orange",
+      "titulo": "COBRIR FLORA ORAL (ESTREPTO + ANAERÓBIOS)",
+      "items": [
+        "Leve/moderada (ambulatorial, sem sistêmico): amoxicilina-clavulanato VO; alergia a penicilina: clindamicina VO",
+        "Grave / internado: ampicilina-sulbactam IV OU ceftriaxona + metronidazol; clindamicina IV se alergia",
+        "Ajustar conforme a gravidade e a resposta; descalonar com a evolução",
+        "Antibiótico NUNCA substitui o controle da fonte: drenagem da coleção + tratamento/remoção do dente",
+        "Analgesia (dipirona/AINE +/- opioide) e hidratação",
+        "Ressuscitação volêmica e cuidados de sepse se repercussão sistêmica",
+        "TC cervical com contraste para mapear abscessos e a extensão fascial"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "COMPLICAÇÕES E VIA AÉREA",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Complicações Graves",
+        "items": [
+          "Angina de Ludwig (obstrução de via aérea)",
+          "Mediastinite descendente (alta mortalidade)",
+          "Trombose de seio cavernoso",
+          "Abscesso cervical profundo / fasciíte cervical",
+          "Sepse e choque séptico",
+          "Trombose de veia jugular (síndrome de Lemierre)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Manejo da Via Aérea",
+        "items": [
+          "Antecipar a dificuldade (trismo, edema, distorção anatômica)",
+          "Proteger a via aérea precocemente — não esperar a obstrução total",
+          "Intubação idealmente em centro cirúrgico, com equipe e plano para via cirúrgica",
+          "Manter o paciente sentado/confortável; O2",
+          "Acionar anestesia + buco-maxilo/cirurgia de cabeça e pescoço",
+          "Cricotireoidostomia/traqueostomia se necessário"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Avaliar a via aérea (trismo, disfagia, elevação da língua, voz, estridor) e os sinais de sepse",
+        "Angina de Ludwig / obstrução iminente: emergência — proteger a via aérea precocemente",
+        "Antibiótico IV de amplo espectro cobrindo flora oral (estrepto + anaeróbios) e ressuscitação na sepse",
+        "Controle da FONTE: drenagem cirúrgica da coleção + tratamento/remoção do dente (o ATB não basta)",
+        "TC cervical com contraste para mapear a extensão e abscessos",
+        "Acionar buco-maxilo/cirurgia de cabeça e pescoço e anestesia; vigiar mediastinite"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com infecção dentária evolui com edema bilateral de assoalho de boca, elevação da língua e dificuldade para respirar. Qual o diagnóstico e a prioridade?",
+      "alternativas": [
+        "Celulite pré-septal — antibiótico oral",
+        "Angina de Ludwig — emergência: proteger a via aérea precocemente, ATB IV e drenagem",
+        "Sinusite — descongestionante",
+        "Faringite viral — sintomáticos",
+        "Abscesso periapical simples — alta com analgésico"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual a base do tratamento da infecção odontogênica com coleção purulenta, além do antibiótico?",
+      "alternativas": [
+        "Apenas observação",
+        "Controle da fonte: drenagem cirúrgica da coleção e tratamento/remoção do dente",
+        "Corticoide isolado",
+        "Antitérmico",
+        "Bochechos apenas"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual antibiótico empírico é adequado para infecção odontogênica grave (internado)?",
+      "alternativas": [
+        "Ciprofloxacino isolado",
+        "Ampicilina-sulbactam IV (ou ceftriaxona + metronidazol); clindamicina se alergia a penicilina",
+        "Azitromicina oral",
+        "Nitrofurantoína",
+        "Vancomicina isolada"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual complicação de alta mortalidade pode resultar da disseminação cervical profunda de uma infecção odontogênica?",
+      "alternativas": [
+        "Conjuntivite",
+        "Mediastinite descendente",
+        "Otite externa",
+        "Gengivite",
+        "Cárie dentária"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual exame de imagem é indicado para mapear a extensão e localizar abscessos na infecção odontogênica grave?",
+      "alternativas": [
+        "Radiografia panorâmica isolada",
+        "TC cervical com contraste",
+        "Ultrassonografia abdominal",
+        "Eletroencefalograma",
+        "Radiografia de tórax apenas"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Edema bilateral de assoalho de boca + elevação da língua + dispneia de origem dental caracteriza a angina de Ludwig — emergência de via aérea. A prioridade é proteger a via aérea precocemente, com antibiótico IV e drenagem cirúrgica, em ambiente preparado."},
+    {"resposta": "B", "comentario": "O controle da fonte é a base: drenagem cirúrgica da coleção purulenta e tratamento/remoção do dente causador. O antibiótico é adjuvante e nunca substitui a drenagem e a eliminação do foco."},
+    {"resposta": "B", "comentario": "Na infecção odontogênica grave, o esquema empírico deve cobrir a flora oral (estreptococos e anaeróbios): ampicilina-sulbactam IV ou ceftriaxona + metronidazol; clindamicina IV é alternativa em alérgicos à penicilina."},
+    {"resposta": "B", "comentario": "A disseminação para o espaço cervical profundo pode descer pelo mediastino e causar mediastinite descendente, complicação de alta mortalidade. Por isso a infecção odontogênica grave exige controle precoce da fonte e vigilância."},
+    {"resposta": "B", "comentario": "A TC cervical com contraste é o exame indicado para mapear a extensão da infecção pelos espaços fasciais, localizar abscessos drenáveis e avaliar o comprometimento da via aérea e do mediastino."}
+  ]
+}

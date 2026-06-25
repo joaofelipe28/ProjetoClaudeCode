@@ -1,0 +1,176 @@
+{
+  "slug": "dor_aguda_escada_analgesica",
+  "titulo": "Dor Aguda no PS — Escada Analgésica",
+  "especialidade": "CLÍNICA MÉDICA",
+  "chapter_subject": "Manejo da Dor Aguda no Pronto-Socorro — Escada Analgésica e Multimodal",
+  "chapter_bar": "DOR AGUDA — AVALIAR, ESCALONAR, REAVALIAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESCADA ANALGÉSICA DA OMS ADAPTADA AO PS",
+      "section_color": "navy",
+      "headers": ["Degrau", "Intensidade (EVN)", "Fármacos"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.16, 0.28, 0.56],
+      "rows": [
+        ["1", "Leve (1-3)", "Não opioides: dipirona, paracetamol, AINE +/- adjuvantes"],
+        ["2", "Moderada (4-6)", "Opioide fraco (codeína, tramadol) + não opioide +/- adjuvante"],
+        ["3", "Intensa (7-10)", "Opioide forte (morfina) + não opioide +/- adjuvante"],
+        ["Multimodal", "Qualquer", "Combinar classes com mecanismos diferentes para reduzir dose e efeitos adversos"],
+        ["Via", "Conforme gravidade", "VO se possível; IV titulada na dor intensa/instável"],
+        ["Adjuvantes", "Dor neuropática/específica", "Anticonvulsivante (gabapentina), antidepressivo, corticoide, antiespasmódico"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANALGÉSICOS — DOSES NO ADULTO",
+      "section_color": "orange",
+      "titulo": "NÃO OPIOIDES, OPIOIDES E ADJUVANTES",
+      "items": [
+        "Dipirona: 1 g (até 2 g) IV/VO a cada 6h — bom antitérmico e antiespasmódico",
+        "Paracetamol: 500-1000 mg VO 6/6h (máx 3-4 g/dia) — cuidado em hepatopatas",
+        "Cetoprofeno: 100 mg IV 12/12h; Ibuprofeno 400-600 mg VO 8/8h — AINE (evitar em IRA, sangramento, idoso frágil)",
+        "Tramadol: 50-100 mg IV/VO 6-8h (máx 400 mg/dia) — opioide fraco; cuidado com serotoninérgicos (risco de síndrome serotoninérgica) e limiar convulsivo",
+        "Codeína: 30-60 mg VO 6/6h, frequentemente associada ao paracetamol",
+        "Morfina: 0,05-0,1 mg/kg IV, titular 2-4 mg a cada 5-10 min até analgesia — opioide forte de escolha na dor intensa",
+        "Antídoto opioide: Naloxona 0,04-0,4 mg IV em caso de depressão respiratória",
+        "Adjuvantes: gabapentina/pregabalina e amitriptilina (dor neuropática); hioscina (cólica); dexametasona (componente inflamatório)"
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA DOR AGUDA",
+      "title": "DOR — MEDIR, TRATAR, REAVALIAR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Avaliar a dor: escala (EVN 0-10), tipo, causa\nNÃO retardar analgesia por medo de 'mascarar' o diagnóstico", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.26, "y": 0.66, "w": 155, "h": 24, "text": "Leve (1-3):\nDipirona/paracetamol\n+/- AINE", "color": "green", "font_size": 5.4},
+        {"id": "c", "x": 0.5, "y": 0.66, "w": 150, "h": 24, "text": "Moderada (4-6):\nOpioide fraco (tramadol/\ncodeína) + não opioide", "color": "teal", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.66, "w": 155, "h": 24, "text": "Intensa (7-10):\nMorfina IV titulada\n+ não opioide", "color": "red", "font_size": 5.4},
+        {"id": "e", "x": 0.5, "y": 0.34, "w": 220, "h": 22, "text": "Analgesia MULTIMODAL: combinar classes diferentes\nAdicionar adjuvante conforme o tipo de dor", "color": "orange", "font_size": 5.4},
+        {"id": "f", "x": 0.5, "y": 0.11, "w": 220, "h": 20, "text": "REAVALIAR em 15-30 min e titular; tratar a causa de base", "color": "navy", "font_size": 5.4}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["a", "d"], ["b", "e"], ["c", "e"], ["d", "e"], ["e", "f"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SEGURANÇA E POPULAÇÕES ESPECIAIS",
+      "section_color": "red",
+      "titulo": "CUIDADOS QUE EVITAM IATROGENIA",
+      "items": [
+        "AINE: evitar em lesão renal aguda, hipovolemia, sangramento digestivo, IC descompensada, idoso frágil e gestante (3o trimestre)",
+        "Paracetamol: reduzir dose em hepatopatia; atenção a apresentações combinadas (risco de superdose)",
+        "Opioides: monitorar nível de consciência e frequência respiratória; ter naloxona disponível",
+        "Idoso: começar com doses menores; risco de delirium e queda; preferir multimodal",
+        "Gestante: paracetamol é o mais seguro; evitar AINE no 3o trimestre; opioides com cautela",
+        "Tramadol: risco de síndrome serotoninérgica (com ISRS/IMAO) e de convulsão"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "DOR POR TIPO — ESCOLHA DIRECIONADA",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Dor Nociceptiva / Visceral",
+        "items": [
+          "Cólica renal/biliar: AINE (cetoprofeno) é muito eficaz + antiespasmódico",
+          "Dor óssea/inflamatória: AINE + dipirona/paracetamol",
+          "Dor pós-trauma intensa: morfina IV titulada",
+          "Cefaleia: dipirona/AINE; evitar opioide de rotina",
+          "Cólica abdominal: hioscina + dipirona"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Dor Neuropática",
+        "items": [
+          "Caracteristicas: queimação, choque, formigamento, alodínia",
+          "Primeira linha: gabapentina/pregabalina ou amitriptilina/duloxetina",
+          "Opioides têm resposta limitada isoladamente",
+          "Bloqueios anestésicos podem ser úteis (ex.: neuralgia)",
+          "Tratar a causa (herpes zoster, radiculopatia, neuropatia)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "BOAS PRÁTICAS NO PS",
+      "titulo": "ANALGESIA DE QUALIDADE",
+      "items": [
+        "Medir a dor com escala validada (EVN) na admissão e após cada intervenção",
+        "Analgesia precoce não atrapalha o diagnóstico do abdome agudo (evidência consolidada)",
+        "Escalonar pela intensidade e usar abordagem multimodal",
+        "Titular opioide IV na dor intensa e reavaliar em 15-30 min",
+        "Ajustar para idoso, hepatopata, nefropata e gestante",
+        "Registrar a resposta analgésica e tratar a causa de base"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com dor abdominal intensa (EVN 9). Qual a conduta analgésica inicial mais adequada?",
+      "alternativas": [
+        "Aguardar a avaliação cirúrgica antes de qualquer analgesia para não mascarar o diagnóstico",
+        "Morfina IV titulada associada a analgésico não opioide, com reavaliação em 15-30 min",
+        "Apenas paracetamol oral",
+        "Tramadol oral em dose única e alta",
+        "AINE em dose máxima isolada"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Em qual situação o uso de AINE deve ser evitado?",
+      "alternativas": [
+        "Cólica renal em jovem hígido",
+        "Lesão renal aguda, hipovolemia, sangramento digestivo ou IC descompensada",
+        "Dor osteomuscular leve",
+        "Febre com mialgia",
+        "Entorse de tornozelo em adulto saudável"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual a primeira linha para dor NEUROPÁTICA?",
+      "alternativas": [
+        "Morfina isolada",
+        "Anticonvulsivante (gabapentina/pregabalina) ou antidepressivo (amitriptilina/duloxetina)",
+        "AINE em dose máxima",
+        "Paracetamol isolado",
+        "Corticoide em pulso"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente recebeu opioide para dor intensa e evolui com sonolência e FR de 8 irpm. Qual a conduta?",
+      "alternativas": [
+        "Aumentar a dose do opioide",
+        "Administrar naloxona e suporte ventilatório",
+        "Administrar flumazenil",
+        "Apenas observar",
+        "Iniciar AINE"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "O que significa analgesia MULTIMODAL?",
+      "alternativas": [
+        "Usar a maior dose possível de um único fármaco",
+        "Combinar fármacos de classes/mecanismos diferentes para potencializar a analgesia e reduzir efeitos adversos",
+        "Usar apenas opioides em todas as etapas",
+        "Alternar a via oral e venosa do mesmo fármaco",
+        "Tratar a dor somente com medidas não farmacológicas"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor intensa (EVN 9) deve ser tratada com opioide forte (morfina IV titulada) associado a não opioide, com reavaliação em 15-30 min. A analgesia precoce NÃO mascara o diagnóstico do abdome agudo — evidências mostram que melhora a avaliação e o conforto."},
+    {"resposta": "B", "comentario": "AINE deve ser evitado em lesão renal aguda, hipovolemia, sangramento digestivo, IC descompensada, idoso frágil e gestante no 3o trimestre, pelo risco de agravar a função renal, sangramento e descompensação. Nesses casos, preferir dipirona/paracetamol e opioides conforme a intensidade."},
+    {"resposta": "B", "comentario": "A dor neuropática (queimação, choque, alodínia) responde mal a opioides isolados. A primeira linha são anticonvulsivantes (gabapentina/pregabalina) e antidepressivos (amitriptilina, duloxetina), além de tratar a causa."},
+    {"resposta": "B", "comentario": "Depressão respiratória por opioide (sonolência + FR baixa) é tratada com naloxona (0,04-0,4 mg IV, titulada) e suporte ventilatório. Flumazenil é antídoto de benzodiazepínico, não de opioide."},
+    {"resposta": "B", "comentario": "Analgesia multimodal consiste em combinar fármacos de classes e mecanismos diferentes (ex.: dipirona + AINE + opioide + adjuvante), potencializando o efeito analgésico e permitindo doses menores de cada um, com menos efeitos adversos."}
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "slug": "pancreatite_biliar",
+  "titulo": "Pancreatite Biliar — Manejo Integrado",
+  "especialidade": "GASTROENTEROLOGIA",
+  "chapter_subject": "Pancreatite Aguda Biliar — Diagnóstico, Gravidade, CPRE e Colecistectomia",
+  "chapter_bar": "PANCREATITE BILIAR — VOLUME, GRAVIDADE, VESÍCULA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DIAGNÓSTICO E ETIOLOGIA BILIAR",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Diagnóstico (2 de 3)", "Dor abdominal típica + amilase/lipase > 3x o limite + imagem compatível"],
+        ["Causa biliar", "Cálculo biliar é a causa mais comum no Brasil (junto com álcool)"],
+        ["Pistas de origem biliar", "TGP/ALT elevada (> 3x), bilirrubina/FA elevadas, USG com colelitíase"],
+        ["Exame inicial", "USG de abdome (cálculos, via biliar) em todo paciente com pancreatite"],
+        ["Lipase", "Mais específica e sensível que a amilase; o valor NÃO indica gravidade"],
+        ["Colangite associada", "Febre + icterícia + dor (tríade de Charcot) = urgência de drenagem biliar"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O QUE MAIS IMPORTA NAS PRIMEIRAS HORAS",
+      "section_color": "red",
+      "titulo": "HIDRATAÇÃO E AVALIAÇÃO DE GRAVIDADE",
+      "items": [
+        "Hidratação com cristaloide (Ringer lactato preferido) guiada por metas — evitar tanto a hipovolemia quanto a hiper-hidratação",
+        "Analgesia adequada (opioide se necessário) e controle de náuseas",
+        "Dieta: reiniciar precocemente VO conforme tolerância na pancreatite leve (não manter jejum prolongado)",
+        "Avaliar gravidade: SIRS persistente, BISAP, ureia/creatinina em ascensão, hematócrito alto",
+        "Antibiótico NÃO é profilático de rotina — apenas se infecção documentada (colangite, necrose infectada)",
+        "A maioria das pancreatites é leve e autolimitada; identificar precocemente a forma grave"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO INTEGRADO DA PANCREATITE BILIAR",
+      "title": "PANCREATITE BILIAR — CPRE? COLECISTECTOMIA QUANDO?",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Pancreatite aguda + sinais de origem biliar (USG, enzimas hepáticas)\nHidratação + analgesia + avaliar gravidade", "color": "navy", "font_size": 5.3},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Há COLANGITE ou obstrução biliar persistente?\n(febre + icterícia + colédoco dilatado/cálculo impactado)", "color": "red", "font_size": 5.3},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "SIM: CPRE urgente\n(< 24-48h)\npara desobstrução\n+/- papilotomia", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "NÃO: tratamento clínico\nCPRE não é rotina\nse não há obstrução/colangite", "color": "teal", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "COLECISTECTOMIA na pancreatite biliar LEVE: na MESMA internação\n(previne recorrência). Grave/necrose: adiar até resolução", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "GRAVIDADE (CLASSIFICAÇÃO DE ATLANTA REVISADA)",
+      "section_color": "orange",
+      "headers": ["Forma", "Definição", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.42, 0.36],
+      "rows": [
+        ["Leve", "Sem falência orgânica nem complicações locais", "Suporte, dieta precoce, colecistectomia na mesma internação"],
+        ["Moderadamente grave", "Falência orgânica transitória (< 48h) ou complicação local", "Internação, suporte, vigiar complicações"],
+        ["Grave", "Falência orgânica PERSISTENTE (> 48h)", "UTI, suporte intensivo; manejar necrose conforme evolução"],
+        ["Necrose infectada", "Suspeita por piora/gás na imagem após 1a semana", "Antibiótico + drenagem/necrosectomia (step-up), de preferência tardia"],
+        ["BISAP", "Ureia, alteração mental, SIRS, idade, derrame pleural", "Escore prognóstico simples à beira-leito"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CPRE E COLECISTECTOMIA",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "CPRE — Indicações",
+        "items": [
+          "Colangite associada (urgente, < 24-48h)",
+          "Obstrução biliar persistente / cálculo impactado no colédoco",
+          "CPRE NÃO é rotina na pancreatite biliar sem obstrução/colangite",
+          "Colangiorressonância ou USG endoscópica para avaliar o colédoco em risco intermediário",
+          "CPRE precoce não melhora desfecho se não há obstrução",
+          "Papilotomia trata e previne novos episódios obstrutivos"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Colecistectomia",
+        "items": [
+          "Pancreatite biliar LEVE: colecistectomia na MESMA internação (reduz recorrência)",
+          "Adiar não é seguro — risco alto de recidiva enquanto a vesícula está presente",
+          "Pancreatite grave/com necrose ou coleções: adiar até a resolução do quadro",
+          "Se não operar de imediato (alto risco cirúrgico): considerar papilotomia endoscópica",
+          "Sempre confirmar via biliar livre antes/durante a cirurgia",
+          "Orientar quanto à recorrência se a colecistectomia for postergada"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Confirmar o diagnóstico (2 de 3) e investigar origem biliar com USG + enzimas hepáticas",
+        "Hidratação guiada por metas (Ringer lactato), analgesia e dieta precoce na forma leve",
+        "Avaliar gravidade (SIRS, BISAP, ureia/creatinina) e definir o nível de cuidado",
+        "Antibiótico apenas se infecção documentada (colangite, necrose infectada) — não profilático",
+        "CPRE urgente se colangite/obstrução biliar persistente",
+        "Colecistectomia na mesma internação na pancreatite biliar leve; adiar na grave/necrose"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com pancreatite aguda biliar LEVE, sem colangite. Qual a conduta quanto à colecistectomia?",
+      "alternativas": [
+        "Adiar por 6 semanas após a alta",
+        "Realizar a colecistectomia na MESMA internação para prevenir recorrência",
+        "Nunca operar, apenas dieta",
+        "Operar somente se houver novo episódio",
+        "Indicar CPRE em vez de colecistectomia para todos"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Quando a CPRE de urgência está indicada na pancreatite biliar?",
+      "alternativas": [
+        "Em todos os pacientes com pancreatite biliar",
+        "Apenas quando há colangite associada ou obstrução biliar persistente",
+        "Somente na pancreatite grave sem obstrução",
+        "Quando a lipase está muito elevada",
+        "Nunca está indicada"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Sobre o uso de antibiótico na pancreatite aguda, qual afirmação é correta?",
+      "alternativas": [
+        "Deve ser profilático em todos os casos",
+        "É indicado apenas quando há infecção documentada (colangite, necrose infectada), não como profilaxia de rotina",
+        "Deve ser usado se a amilase estiver muito elevada",
+        "Reduz a mortalidade quando dado a todos profilaticamente",
+        "É contraindicado em qualquer situação"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual fluido é preferido para a ressuscitação volêmica inicial na pancreatite aguda?",
+      "alternativas": [
+        "Soro glicosado 5%",
+        "Ringer lactato (cristaloide), guiado por metas",
+        "Albumina humana",
+        "Solução salina hipertônica",
+        "Manitol"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente com pancreatite biliar evolui com febre alta, icterícia e dor (tríade de Charcot). O que isso indica?",
+      "alternativas": [
+        "Necrose pancreática estéril",
+        "Colangite aguda associada — indicação de drenagem biliar (CPRE) urgente",
+        "Pseudocisto pancreático",
+        "Resolução do quadro",
+        "Pancreatite alcoólica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na pancreatite biliar LEVE, a colecistectomia deve ser realizada na MESMA internação. Adiar aumenta o risco de recorrência (novo episódio de pancreatite, colangite ou cólica) enquanto a vesícula litiásica permanece."},
+    {"resposta": "B", "comentario": "A CPRE de urgência está indicada quando há colangite associada ou obstrução biliar persistente (cálculo impactado). Na pancreatite biliar sem obstrução/colangite, a CPRE não é rotina e não melhora o desfecho."},
+    {"resposta": "B", "comentario": "O antibiótico NÃO deve ser profilático na pancreatite aguda. É indicado apenas quando há infecção documentada — colangite associada ou necrose pancreática infectada. O uso profilático de rotina não reduz a mortalidade."},
+    {"resposta": "B", "comentario": "O Ringer lactato (cristaloide) é o fluido preferido para a ressuscitação inicial da pancreatite aguda, com reposição guiada por metas para evitar tanto a hipovolemia quanto a hiper-hidratação."},
+    {"resposta": "B", "comentario": "A tríade de Charcot (febre + icterícia + dor) indica colangite aguda associada, que é uma urgência: requer antibiótico e drenagem biliar (CPRE) precoce para desobstruir a via biliar e controlar a sepse."}
+  ]
+}

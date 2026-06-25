@@ -1,0 +1,176 @@
+{
+  "slug": "tetano_profilaxia_manejo",
+  "titulo": "Tétano — Profilaxia e Manejo",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Tétano — Profilaxia em Ferimentos e Tratamento do Tétano Acidental",
+  "chapter_bar": "TÉTANO — VACINA +/- SORO CONFORME A FERIDA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "PROFILAXIA NO FERIMENTO — VACINA E IMUNOGLOBULINA",
+      "section_color": "navy",
+      "headers": ["Situação vacinal", "Ferida limpa/superficial", "Ferida suja/de risco"],
+      "header_colors": ["gray", "teal", "red"],
+      "col_widths": [0.34, 0.33, 0.33],
+      "rows": [
+        ["Incerta ou < 3 doses", "Vacina (dT)", "Vacina (dT) + imunoglobulina/soro antitetânico"],
+        [">= 3 doses, última < 5 anos", "Nada", "Nada"],
+        [">= 3 doses, última 5-10 anos", "Nada", "Vacina (dT)"],
+        [">= 3 doses, última > 10 anos", "Vacina (dT)", "Vacina (dT) +/- imunoglobulina conforme risco"],
+        ["Imunossuprimido / ferida de alto risco", "Avaliar reforço", "Vacina + imunoglobulina (mesmo se bem vacinado)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O QUE TORNA A FERIDA 'DE RISCO' (TETANOGÊNICA)",
+      "section_color": "red",
+      "titulo": "AVALIAR A FERIDA + O ESTADO VACINAL",
+      "items": [
+        "Feridas de risco: contaminadas com terra/fezes/saliva, profundas, com tecido desvitalizado, por esmagamento, queimaduras, mordeduras, perfurações",
+        "Feridas com corpo estranho, feridas puntiformes e ferimentos por arma de fogo",
+        "Ferida limpa e superficial tem baixo risco",
+        "A decisão de profilaxia combina o TIPO de ferida e o ESTADO VACINAL do paciente",
+        "Imunoglobulina antitetânica é para os não/mal vacinados com ferida de risco (e imunossuprimidos)",
+        "Limpeza e desbridamento da ferida são parte essencial da prevenção"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "DOSES DA PROFILAXIA",
+      "section_color": "orange",
+      "titulo": "VACINA E IMUNOGLOBULINA/SORO",
+      "items": [
+        "Vacina dT (dupla adulto): IM; completar o esquema de 3 doses se incompleto, com reforço a cada 10 anos",
+        "Imunoglobulina antitetânica humana (TIG): 250-500 UI IM, em local diferente da vacina",
+        "Soro antitetânico (SAT) heterólogo: 5.000 UI IM quando a imunoglobulina humana não estiver disponível (testar/observar reação)",
+        "Aplicar vacina e imunoglobulina em locais e seringas diferentes",
+        "Gestante: dTpa indicada conforme calendário; a profilaxia do ferimento segue as mesmas regras",
+        "Sempre limpar e desbridar a ferida (reduz o ambiente anaeróbio do C. tetani)"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TÉTANO INSTALADO — RECONHECIMENTO",
+      "section_color": "teal",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Agente/toxina", "Clostridium tetani; a tetanospasmina bloqueia a inibição neuronal -> espasmos"],
+        ["Trismo", "Rigidez de masseteres (dificuldade de abrir a boca) — sinal precoce"],
+        ["Riso sardônico", "Contratura da face"],
+        ["Opistótono", "Hiperextensão do tronco por espasmo da musculatura paravertebral"],
+        ["Espasmos generalizados", "Desencadeados por estímulos (luz, som, toque); disfunção autonômica"],
+        ["Consciência", "Preservada (o paciente está lúcido durante os espasmos)"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO DO TÉTANO ACIDENTAL",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Pilares do Tratamento",
+        "items": [
+          "Ambiente calmo, escuro e silencioso (reduzir estímulos que desencadeiam espasmos)",
+          "Neutralizar a toxina circulante: imunoglobulina antitetânica humana",
+          "Eliminar o agente: limpeza/desbridamento + antibiótico (metronidazol é o de escolha)",
+          "Controle dos espasmos: benzodiazepínico (diazepam/midazolam) em dose alta; sulfato de magnésio adjuvante",
+          "Casos graves: bloqueio neuromuscular + ventilação mecânica em UTI",
+          "Disautonomia: manejo hemodinâmico em UTI"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Não Esquecer",
+        "items": [
+          "O tétano NÃO confere imunidade — vacinar durante/após a doença",
+          "Metronidazol é preferido à penicilina (que pode ter efeito pró-convulsivante)",
+          "Sedação e analgesia adequadas; profilaxia de TVP e cuidados de UTI",
+          "Suporte nutricional (gasto energético alto pelos espasmos)",
+          "Notificação compulsória",
+          "Prevenção é a melhor estratégia: vacinação e cuidado correto das feridas"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Avaliar TIPO de ferida (limpa x de risco) e ESTADO vacinal para decidir a profilaxia",
+        "Ferida de risco em não/mal vacinado: vacina + imunoglobulina antitetânica",
+        "Aplicar vacina e imunoglobulina em locais diferentes; limpar e desbridar a ferida",
+        "Reconhecer o tétano instalado: trismo, riso sardônico, opistótono, espasmos com consciência preservada",
+        "Tratar: ambiente calmo + imunoglobulina + metronidazol + benzodiazepínico; UTI nos graves",
+        "Vacinar mesmo após a doença (não imuniza) e notificar"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com ferimento perfurante contaminado com terra, esquema vacinal desconhecido. Qual a profilaxia?",
+      "alternativas": [
+        "Apenas limpeza da ferida",
+        "Vacina (dT) + imunoglobulina antitetânica",
+        "Apenas vacina, sem imunoglobulina",
+        "Apenas antibiótico",
+        "Nenhuma medida é necessária"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente com ferida limpa e superficial, com 3 doses de vacina e última dose há 3 anos. Qual a conduta?",
+      "alternativas": [
+        "Vacina + imunoglobulina",
+        "Apenas vacina",
+        "Nenhuma profilaxia adicional é necessária",
+        "Imunoglobulina isolada",
+        "Antibiótico profilático"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual antibiótico é o de escolha no tratamento do tétano acidental?",
+      "alternativas": [
+        "Penicilina cristalina",
+        "Metronidazol",
+        "Ceftriaxona",
+        "Azitromicina",
+        "Vancomicina"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual achado é típico do tétano e ajuda a diferenciá-lo de outras causas de rebaixamento?",
+      "alternativas": [
+        "Coma profundo desde o início",
+        "Espasmos musculares (trismo, opistótono) com consciência PRESERVADA",
+        "Febre alta com rigidez de nuca isolada",
+        "Paralisia flácida ascendente",
+        "Movimentos coreicos"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Após um episódio de tétano, qual conduta sobre a vacinação é correta?",
+      "alternativas": [
+        "Não é necessário vacinar, pois a doença confere imunidade",
+        "Deve-se vacinar, pois o tétano NÃO confere imunidade",
+        "A vacina é contraindicada após a doença",
+        "Basta a imunoglobulina ao longo da vida",
+        "A vacinação só é necessária se houver novo ferimento"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Ferida de risco (perfurante, contaminada com terra) em paciente com estado vacinal desconhecido/incompleto exige vacina (dT) + imunoglobulina antitetânica, além de limpeza e desbridamento da ferida."},
+    {"resposta": "C", "comentario": "Ferida limpa e superficial em paciente com 3 doses e última dose há menos de 5 anos NÃO requer profilaxia adicional. A decisão sempre combina o tipo de ferida e o tempo desde a última dose."},
+    {"resposta": "B", "comentario": "O metronidazol é o antibiótico de escolha no tétano, preferido à penicilina (que tem efeito antagonista do GABA e pode favorecer convulsões/espasmos). Associa-se à limpeza/desbridamento da ferida (eliminar o C. tetani)."},
+    {"resposta": "B", "comentario": "O tétano cursa com espasmos musculares intensos (trismo, riso sardônico, opistótono) desencadeados por estímulos, com a CONSCIÊNCIA PRESERVADA — o paciente está lúcido durante os espasmos, o que ajuda a diferenciá-lo de outras causas."},
+    {"resposta": "B", "comentario": "O tétano NÃO confere imunidade (a quantidade de toxina que causa a doença é mínima e não estimula resposta imune protetora). Por isso o paciente deve ser vacinado durante/após a doença para prevenir novos episódios."}
+  ]
+}

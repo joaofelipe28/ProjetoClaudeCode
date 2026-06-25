@@ -1,0 +1,176 @@
+{
+  "slug": "nefropatia_contraste",
+  "titulo": "Nefropatia Induzida por Contraste",
+  "especialidade": "NEFROLOGIA",
+  "chapter_subject": "Lesão Renal Associada ao Contraste — Risco, Prevenção e Decisão no PS",
+  "chapter_bar": "CONTRASTE — HIDRATAR O DE RISCO, NÃO ATRASAR O EXAME VITAL",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONCEITO E DEFINIÇÃO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.32, 0.68],
+      "rows": [
+        ["Definição", "Aumento da creatinina >= 0,3 mg/dL (ou >= 50%) em 48-72h após o contraste, sem outra causa"],
+        ["Terminologia atual", "Distinguir 'associada' (temporal) de 'induzida' (causal) pelo contraste — o risco real é menor do que se pensava"],
+        ["Via", "Risco maior com contraste intra-arterial e em grande volume"],
+        ["Curso", "Geralmente transitória, com pico em 3-5 dias e recuperação em 1-2 semanas"],
+        ["Tipo de contraste", "Iodado (TC, angiografia). Gadolínio (RM) tem outro risco (fibrose sistêmica nefrogênica na DRC avançada)"],
+        ["Mensagem-chave", "NUNCA atrasar um exame com contraste essencial (ex.: AVC, dissecção, TEP) por medo da nefropatia"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "FATORES DE RISCO",
+      "section_color": "orange",
+      "headers": ["Categoria", "Fatores"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Renal (principal)", "DRC prévia (TFG < 30-45), lesão renal aguda em curso"],
+        ["Comorbidades", "Diabetes (sobretudo com nefropatia), IC, idade avançada"],
+        ["Hemodinâmico", "Hipovolemia, hipotensão, uso de drogas nefrotóxicas (AINE, aminoglicosídeo)"],
+        ["Relacionado ao exame", "Grande volume de contraste, via intra-arterial, exames repetidos em curto intervalo"],
+        ["Baixo risco", "Função renal normal e paciente euvolêmico — risco muito baixo, sem necessidade de profilaxia agressiva"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "DECISÃO ANTES DO CONTRASTE",
+      "title": "EXAME COM CONTRASTE — RISCO x BENEFÍCIO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Exame com contraste indicado\nO exame é essencial/emergencial?", "color": "navy", "font_size": 5.5},
+        {"id": "b", "x": 0.26, "y": 0.64, "w": 155, "h": 24, "text": "Emergência (AVC, dissecção,\nTEP, trauma): NÃO atrasar\nFazer o exame; hidratar\nse possível", "color": "red", "font_size": 5.1},
+        {"id": "c", "x": 0.74, "y": 0.64, "w": 155, "h": 24, "text": "Eletivo: estimar TFG\ne avaliar fatores de risco", "color": "teal", "font_size": 5.3},
+        {"id": "d", "x": 0.5, "y": 0.37, "w": 220, "h": 22, "text": "Alto risco (TFG baixa, DM, hipovolemia): HIDRATAR com salina 0,9%\nsuspender nefrotóxicos, usar menor volume de contraste", "color": "orange", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.12, "w": 220, "h": 20, "text": "Reavaliar a creatinina em 48-72h nos pacientes de risco", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["a", "c"], ["c", "d"], ["b", "d"], ["d", "e"]]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PREVENÇÃO — O QUE FUNCIONA E O QUE NÃO",
+      "section_color": "red",
+      "titulo": "HIDRATAÇÃO É A MEDIDA CENTRAL",
+      "items": [
+        "Hidratação com salina 0,9% é a principal e mais comprovada medida de prevenção no paciente de risco",
+        "Esquema comum: salina 0,9% 1 mL/kg/h por 6-12h antes e após (ou bolus peri-procedimento em emergências)",
+        "Usar o MENOR volume de contraste possível e evitar exames repetidos em curto intervalo",
+        "Suspender nefrotóxicos (AINE, aminoglicosídeo) e evitar hipovolemia/hipotensão",
+        "N-acetilcisteína e bicarbonato de sódio: NÃO recomendados de rotina (sem benefício consistente)",
+        "Metformina: não causa a nefropatia, mas suspender se houver lesão renal (risco de acidose lática); reavaliar a função renal antes de reintroduzir",
+        "Diálise profilática para 'remover o contraste' NÃO é indicada"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ARMADILHAS E CONTEXTO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Não Fazer",
+        "items": [
+          "Atrasar TC de crânio/angio-TC em emergência por causa da creatinina",
+          "N-acetilcisteína ou bicarbonato de rotina (sem evidência sólida)",
+          "Diálise apenas para retirar o contraste",
+          "Restrição hídrica antes do exame",
+          "Suspender uma medicação vital sem avaliar o contexto"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Boas Práticas",
+        "items": [
+          "Identificar o paciente de risco (TFG baixa, DM, hipovolemia)",
+          "Hidratar com salina 0,9% antes e depois quando possível",
+          "Menor volume de contraste e contraste de baixa osmolaridade/isosmolar",
+          "Suspender nefrotóxicos no período",
+          "Reavaliar a creatinina em 48-72h nos pacientes de risco",
+          "Documentar a relação risco-benefício na decisão"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA PRÁTICA",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Nunca atrasar um exame com contraste essencial/emergencial por medo da nefropatia",
+        "Estimar a TFG e identificar os fatores de risco antes do exame eletivo",
+        "Hidratação com salina 0,9% é a medida central de prevenção no paciente de risco",
+        "Usar o menor volume de contraste e suspender nefrotóxicos",
+        "Não usar N-acetilcisteína/bicarbonato de rotina nem diálise profilática",
+        "Suspender metformina se houver lesão renal e reavaliar a creatinina em 48-72h"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com suspeita de AVC isquêmico em janela para trombólise precisa de neuroimagem com contraste, mas tem DRC. Qual a conduta?",
+      "alternativas": [
+        "Adiar o exame até melhorar a função renal",
+        "Realizar o exame (emergência tempo-dependente) sem atraso, hidratando quando possível",
+        "Substituir por exame sem nenhuma utilidade diagnóstica",
+        "Indicar diálise profilática antes do exame",
+        "Administrar N-acetilcisteína e aguardar 12h"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a principal medida comprovada de prevenção da nefropatia induzida por contraste no paciente de risco?",
+      "alternativas": [
+        "N-acetilcisteína oral",
+        "Hidratação com salina 0,9%",
+        "Bicarbonato de sódio IV",
+        "Diálise profilática",
+        "Restrição hídrica"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Sobre a metformina e o contraste iodado, qual afirmação é correta?",
+      "alternativas": [
+        "A metformina causa diretamente a nefropatia por contraste",
+        "A metformina não causa a nefropatia, mas deve ser suspensa se houver lesão renal (risco de acidose lática), reavaliando a função renal antes de reintroduzir",
+        "A metformina deve ser mantida mesmo na lesão renal aguda",
+        "A metformina deve ser suspensa por 30 dias em todos os pacientes",
+        "A metformina protege contra a nefropatia por contraste"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual conduta NÃO é recomendada de rotina para prevenção da nefropatia por contraste?",
+      "alternativas": [
+        "Hidratação com salina 0,9%",
+        "Uso do menor volume possível de contraste",
+        "N-acetilcisteína e bicarbonato de sódio de rotina",
+        "Suspensão de nefrotóxicos",
+        "Reavaliação da creatinina em 48-72h"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual paciente tem o MAIOR risco de nefropatia induzida por contraste?",
+      "alternativas": [
+        "Jovem com função renal normal e euvolêmico",
+        "Paciente com DRC avançada, diabético e hipovolêmico",
+        "Paciente hipertenso controlado sem outras comorbidades",
+        "Gestante saudável",
+        "Paciente com função renal normal em uso de IECA"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Em emergências tempo-dependentes (AVC em janela, dissecção, TEP), o exame com contraste NÃO deve ser atrasado por medo da nefropatia — o benefício diagnóstico supera amplamente o risco renal. Hidratar quando possível, sem postergar."},
+    {"resposta": "B", "comentario": "A hidratação com salina 0,9% é a medida central e mais comprovada de prevenção no paciente de risco. N-acetilcisteína, bicarbonato e diálise profilática não têm benefício consistente e não são recomendados de rotina."},
+    {"resposta": "B", "comentario": "A metformina não causa a nefropatia por contraste. Porém, se houver lesão renal, deve ser suspensa pelo risco de acúmulo e acidose lática, reavaliando-se a função renal antes da reintrodução."},
+    {"resposta": "C", "comentario": "N-acetilcisteína e bicarbonato de sódio NÃO são recomendados de rotina (sem evidência de benefício consistente). As medidas eficazes são hidratação com salina, menor volume de contraste, suspensão de nefrotóxicos e reavaliação da creatinina."},
+    {"resposta": "B", "comentario": "O maior risco está no paciente com DRC avançada (TFG baixa), diabético e hipovolêmico — a combinação de comprometimento renal prévio, microangiopatia e baixa perfusão renal. Esses pacientes se beneficiam de hidratação e menor volume de contraste."}
+  ]
+}

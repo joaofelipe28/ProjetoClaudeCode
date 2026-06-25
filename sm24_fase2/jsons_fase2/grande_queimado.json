@@ -1,0 +1,178 @@
+{
+  "slug": "grande_queimado",
+  "titulo": "Manejo do Grande Queimado",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "Grande Queimado — Via Aérea, Reposição de Parkland e Critérios de Transferência",
+  "chapter_bar": "QUEIMADO — VIA AÉREA, PARKLAND, TRANSFERIR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "PROFUNDIDADE E EXTENSÃO (SCQ)",
+      "section_color": "navy",
+      "headers": ["Grau", "Características", "Conta na SCQ?"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.46, 0.28],
+      "rows": [
+        ["1o grau (superficial)", "Eritema, dor, sem bolha (ex.: sol)", "NÃO entra no cálculo"],
+        ["2o grau superficial", "Bolhas, muito dolorosa, úmida, branqueia", "Sim"],
+        ["2o grau profundo", "Menos dolorosa, mais pálida, enchimento lento", "Sim"],
+        ["3o grau (total)", "Indolor, seca, branca/marrom/carbonizada, sem branqueamento", "Sim"],
+        ["Regra dos 9 (adulto)", "Cabeça 9, cada braço 9, tronco anterior 18, posterior 18, cada perna 18, períneo 1", "Estima a SCQ"],
+        ["Palma da mão", "Palma + dedos do paciente = ~1% da SCQ", "Útil em áreas irregulares"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PRIORIDADE: VIA AÉREA E LESÃO INALATÓRIA",
+      "section_color": "red",
+      "titulo": "INTUBAR PRECOCEMENTE SE SINAIS DE LESÃO INALATÓRIA",
+      "items": [
+        "Sinais de lesão inalatória: queimadura em ambiente fechado, fuligem em narinas/orofaringe, rouquidão, estridor, queima de vibrissas, escarro carbonáceo, edema de face/pescoço",
+        "A via aérea pode fechar rapidamente pelo edema — intubar PRECOCEMENTE (antes do edema progredir)",
+        "Ofertar O2 a 100% (suspeita de intoxicação por monóxido de carbono — a oximetria pode ser falsamente normal)",
+        "Intoxicação por cianeto (incêndios): acidose lática grave, considerar hidroxicobalamina",
+        "Queimadura circunferencial de tórax/membro: escarotomia se restrição ventilatória ou isquemia",
+        "Analgesia adequada (opioide IV) desde o início"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "REPOSIÇÃO VOLÊMICA — FÓRMULA DE PARKLAND",
+      "section_color": "orange",
+      "titulo": "RINGER LACTATO GUIADO PELA DIURESE",
+      "items": [
+        "Parkland: 4 mL x peso (kg) x %SCQ de Ringer lactato nas primeiras 24h (apenas 2o e 3o graus)",
+        "Administrar METADE do volume nas primeiras 8h (contadas a partir da hora da QUEIMADURA, não da chegada) e a outra metade nas 16h seguintes",
+        "Ajustar pela DIURESE: alvo 0,5-1 mL/kg/h no adulto (1-1,5 mL/kg/h na criança)",
+        "A fórmula é apenas um ponto de partida — titular pela resposta (evitar sub e hiper-ressuscitação)",
+        "Criança: associar a manutenção com solução glicosada; usar superfície corporal",
+        "Analgesia: opioide IV (morfina/fentanil); profilaxia antitetânica",
+        "NÃO usar antibiótico profilático sistêmico de rotina (apenas se infecção)"
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CRITÉRIOS DE ENCAMINHAMENTO A CENTRO DE QUEIMADOS",
+      "section_color": "teal",
+      "headers": ["Critério", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Extensão", "SCQ > 10% (2o/3o grau); 3o grau extenso"],
+        ["Áreas especiais", "Face, mãos, pés, genitália, períneo e grandes articulações"],
+        ["Queimaduras especiais", "Elétricas (incluindo raio), químicas, circunferenciais"],
+        ["Lesão associada", "Lesão inalatória, politrauma associado"],
+        ["Extremos de idade", "Crianças e idosos, comorbidades significativas"],
+        ["Suporte", "Necessidade de reabilitação especializada ou suspeita de maus-tratos"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "QUEIMADURAS ESPECIAIS E CUIDADOS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Elétrica e Química",
+        "items": [
+          "Elétrica: lesão profunda maior que a aparente; risco de rabdomiólise e arritmia (monitorar ECG)",
+          "Rabdomiólise: hidratação para diurese alvo maior (~1-2 mL/kg/h); vigiar mioglobinúria",
+          "Química: remover a roupa e IRRIGAR abundantemente com água (não neutralizar)",
+          "Ácido fluorídrico: tratar com gluconato de cálcio (tópico/IV)",
+          "Avaliar lesão de córnea em queimadura química ocular (irrigar muito)",
+          "Raio: pode causar PCR — suporte avançado"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Cuidados Locais e Gerais",
+        "items": [
+          "Resfriar a queimadura com água em temperatura ambiente (não gelada) e por tempo limitado",
+          "Cobrir com curativo limpo; não romper bolhas no atendimento inicial",
+          "Aquecer o paciente (risco de hipotermia)",
+          "Profilaxia antitetânica conforme estado vacinal",
+          "Sonda vesical para monitorar a diurese nos grandes queimados",
+          "Suporte nutricional precoce (hipermetabolismo)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Via aérea: intubar precocemente se sinais de lesão inalatória (antes do edema fechar a via aérea)",
+        "O2 100% (monóxido de carbono); considerar cianeto em incêndio com acidose lática grave",
+        "Calcular SCQ (regra dos 9 / palma) considerando apenas 2o e 3o graus",
+        "Parkland: 4 mL x peso x %SCQ de Ringer lactato, metade nas primeiras 8h, ajustado pela diurese",
+        "Escarotomia em queimadura circunferencial com restrição ventilatória ou isquemia",
+        "Analgesia, antitetânica, aquecimento e transferência a centro de queimados conforme critérios"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Homem de 70 kg com 40% de SCQ (2o e 3o graus). Qual o volume estimado pela fórmula de Parkland nas primeiras 24h e como distribuí-lo?",
+      "alternativas": [
+        "4 L, todo nas primeiras 8h",
+        "11,2 L de Ringer lactato (4 x 70 x 40), metade nas primeiras 8h e metade nas 16h seguintes, ajustando pela diurese",
+        "2 L em 24h",
+        "Apenas soro glicosado conforme a sede",
+        "Volume fixo de 6 L independente do peso"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Vítima de incêndio em ambiente fechado, com fuligem nas narinas, rouquidão e estridor. Qual a conduta prioritária?",
+      "alternativas": [
+        "Aguardar a evolução do edema",
+        "Intubação orotraqueal precoce (antes de a via aérea fechar pelo edema)",
+        "Apenas oxigênio por cateter nasal",
+        "Corticoide inalatório",
+        "Traqueostomia eletiva ambulatorial"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual parâmetro deve guiar o ajuste da reposição volêmica no grande queimado?",
+      "alternativas": [
+        "A pressão arterial isolada",
+        "A diurese (alvo 0,5-1 mL/kg/h no adulto)",
+        "A frequência cardíaca apenas",
+        "O valor fixo da fórmula, sem ajustes",
+        "A saturação de oxigênio"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Sobre a superfície corporal queimada (SCQ), qual afirmação é correta?",
+      "alternativas": [
+        "A queimadura de 1o grau (eritema) entra no cálculo",
+        "Apenas as queimaduras de 2o e 3o graus entram no cálculo da SCQ",
+        "Toda a superfície corporal deve ser contada",
+        "A SCQ não influencia a reposição volêmica",
+        "A palma da mão equivale a 10% da SCQ"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual conduta é correta diante de uma queimadura QUÍMICA cutânea?",
+      "alternativas": [
+        "Neutralizar o ácido com base (e vice-versa)",
+        "Remover a roupa e irrigar abundantemente com água",
+        "Cobrir sem lavar",
+        "Aplicar pomada e aguardar",
+        "Friccionar a área com gaze"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Parkland: 4 mL x peso x %SCQ = 4 x 70 x 40 = 11.200 mL (11,2 L) de Ringer lactato nas primeiras 24h. Metade (5,6 L) nas primeiras 8h (a contar da hora da queimadura) e a outra metade nas 16h seguintes, sempre ajustando pela diurese."},
+    {"resposta": "B", "comentario": "Sinais de lesão inalatória (ambiente fechado, fuligem, rouquidão, estridor) indicam intubação orotraqueal PRECOCE, antes de o edema progredir e fechar a via aérea — depois pode ser tecnicamente impossível intubar."},
+    {"resposta": "B", "comentario": "A reposição volêmica deve ser titulada pela DIURESE (alvo 0,5-1 mL/kg/h no adulto), pois a fórmula de Parkland é apenas um ponto de partida. Tanto a sub quanto a hiper-ressuscitação são deletérias."},
+    {"resposta": "B", "comentario": "Apenas as queimaduras de 2o e 3o graus entram no cálculo da SCQ; a de 1o grau (eritema simples, como sol) não conta. A palma da mão do paciente equivale a cerca de 1% da SCQ."},
+    {"resposta": "B", "comentario": "Na queimadura química, a conduta é remover imediatamente as roupas contaminadas e irrigar abundantemente com água corrente. NÃO se deve tentar neutralizar (a reação pode liberar calor e agravar a lesão)."}
+  ]
+}

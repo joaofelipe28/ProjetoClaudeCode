@@ -1,0 +1,177 @@
+{
+  "slug": "tunel_carpo_agudo",
+  "titulo": "Síndrome do Túnel do Carpo Agudo",
+  "especialidade": "ORTOPEDIA",
+  "chapter_subject": "Síndrome do Túnel do Carpo — Crônica e a Forma Aguda (Emergência da Mão)",
+  "chapter_bar": "TÚNEL DO CARPO — AGUDO É EMERGÊNCIA CIRÚRGICA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "TÚNEL DO CARPO — CRÔNICA vs AGUDA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Crônica (comum)", "Aguda (rara, emergência)"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.22, 0.39, 0.39],
+      "rows": [
+        ["Instalação", "Meses-anos, progressiva", "Horas, dor intensa e crescente"],
+        ["Causa", "Compressão repetitiva, idiopática, gravidez, hipotireoidismo, DM", "Fratura/luxação do punho, hematoma, infecção, injeção, queimadura"],
+        ["Dor", "Parestesia noturna, melhora ao sacudir a mão", "Dor intensa, desproporcional, contínua"],
+        ["Déficit", "Hipoestesia dos 3,5 dedos radiais; atrofia tenar tardia", "Déficit sensitivo-motor PROGRESSIVO e rápido"],
+        ["Conduta", "Conservador (órtese, infiltração) ou cirurgia eletiva", "Descompressão cirúrgica de URGÊNCIA"],
+        ["Risco", "Lesão lenta, geralmente reversível", "Lesão isquêmica irreversível do nervo mediano"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "A FORMA AGUDA É UMA EMERGÊNCIA DA MÃO",
+      "section_color": "red",
+      "titulo": "DOR DESPROPORCIONAL + DÉFICIT PROGRESSIVO = DESCOMPRIMIR JÁ",
+      "items": [
+        "A síndrome do túnel do carpo AGUDA é uma compressão de instalação rápida com risco de lesão isquêmica permanente do nervo mediano",
+        "Causas: fratura/luxação do punho (ex.: fratura de rádio distal), hematoma (anticoagulado), infecção, injeção, queimadura, esforço extremo",
+        "Quadro: dor intensa e desproporcional + parestesia/déficit motor PROGRESSIVOS no território do mediano",
+        "Conduta: descompressão cirúrgica de urgência (liberação do túnel do carpo) — não aguardar eletrofisiologia",
+        "Em fraturas, reduzir/estabilizar e reavaliar o nervo; se piora, descomprimir",
+        "Diferenciar de síndrome compartimental do antebraço/mão (também emergência)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM",
+      "title": "TÚNEL DO CARPO — AGUDO ou CRÔNICO?",
+      "height": 195,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Parestesia/dor no território do nervo mediano\n(polegar, indicador, médio e metade do anular)", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Instalação AGUDA com dor desproporcional e déficit progressivo?\n(trauma de punho, anticoagulado, infecção)", "color": "red", "font_size": 5.3},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "SIM (aguda):\nDESCOMPRESSÃO\ncirúrgica de URGÊNCIA\nestabilizar fratura", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "NÃO (crônica):\nÓrtese noturna,\ninfiltração de corticoide,\ncirurgia eletiva se refratária", "color": "teal", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Eletroneuromiografia confirma e gradua a crônica\n(NÃO atrasar a cirurgia na forma aguda por causa dela)", "color": "orange", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "EXAME FÍSICO E TESTES",
+      "section_color": "orange",
+      "headers": ["Teste/Sinal", "Como fazer / significado"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Território do mediano", "Polegar, indicador, médio e metade radial do anular (poupa o quinto dedo)"],
+        ["Sinal de Tinel", "Percussão sobre o túnel do carpo reproduz a parestesia"],
+        ["Teste de Phalen", "Flexão dos punhos por 60s reproduz os sintomas"],
+        ["Atrofia tenar", "Sinal tardio de compressão crônica (fraqueza de abdução do polegar)"],
+        ["Pesquisar a causa aguda", "Trauma do punho, uso de anticoagulante, sinais de infecção, injeção recente"],
+        ["Sinais de gravidade", "Déficit motor progressivo, dor desproporcional = forma aguda"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Forma Crônica",
+        "items": [
+          "Órtese noturna em posição neutra do punho",
+          "Modificar atividades repetitivas / ergonomia",
+          "Infiltração de corticoide no túnel do carpo",
+          "Tratar a causa de base (hipotireoidismo, DM, gravidez tende a resolver pós-parto)",
+          "Cirurgia eletiva (liberação) se refratária ou com déficit motor/atrofia",
+          "Eletroneuromiografia confirma e gradua"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Forma Aguda",
+        "items": [
+          "Reconhecer dor desproporcional + déficit progressivo = emergência",
+          "Descompressão cirúrgica de urgência do túnel do carpo",
+          "Estabilizar fratura/luxação associada do punho",
+          "Drenar hematoma; reverter anticoagulação se for a causa",
+          "Não aguardar eletroneuromiografia para operar",
+          "Monitorar evolução neurológica"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Identificar o território do nervo mediano e testar Tinel/Phalen",
+        "Distinguir a forma crônica (progressiva, comum) da AGUDA (dor desproporcional + déficit rápido)",
+        "Forma aguda (trauma de punho, anticoagulado, infecção): emergência cirúrgica",
+        "Descompressão de urgência na forma aguda; não atrasar por eletroneuromiografia",
+        "Forma crônica: órtese, infiltração e cirurgia eletiva se refratária",
+        "Tratar a causa de base e estabilizar fraturas associadas"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com fratura de rádio distal evolui em horas com dor intensa e desproporcional e parestesia progressiva no polegar, indicador e médio. Qual a conduta?",
+      "alternativas": [
+        "Órtese noturna e reavaliação ambulatorial",
+        "Síndrome do túnel do carpo aguda — descompressão cirúrgica de urgência",
+        "Apenas analgésico e gelo",
+        "Infiltração de corticoide no consultório",
+        "Eletroneuromiografia antes de qualquer conduta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual território sensitivo é afetado na síndrome do túnel do carpo?",
+      "alternativas": [
+        "Quinto dedo e metade do anular",
+        "Polegar, indicador, médio e metade radial do anular (nervo mediano)",
+        "Dorso da mão",
+        "Todo o membro superior",
+        "Apenas o polegar"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual o tratamento inicial da síndrome do túnel do carpo CRÔNICA leve a moderada?",
+      "alternativas": [
+        "Cirurgia de urgência",
+        "Órtese noturna e/ou infiltração de corticoide, com cirurgia eletiva se refratária",
+        "Amputação",
+        "Antibiótico",
+        "Imobilização gessada por 3 meses"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "O que diferencia a forma AGUDA da síndrome do túnel do carpo e exige conduta de emergência?",
+      "alternativas": [
+        "Parestesia noturna que melhora ao sacudir a mão",
+        "Dor desproporcional com déficit sensitivo-motor rapidamente progressivo",
+        "Atrofia tenar de longa data",
+        "Sintomas apenas durante atividades repetitivas",
+        "Melhora espontânea em semanas"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Na forma aguda da síndrome do túnel do carpo, qual conduta é INCORRETA?",
+      "alternativas": [
+        "Realizar a descompressão cirúrgica de urgência",
+        "Aguardar a eletroneuromiografia antes de operar, mesmo com déficit progressivo",
+        "Estabilizar a fratura associada do punho",
+        "Reverter a anticoagulação se o hematoma for a causa",
+        "Monitorar a evolução neurológica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Dor intensa e desproporcional + parestesia progressiva no território do mediano após fratura de rádio distal caracteriza a síndrome do túnel do carpo AGUDA, uma emergência: requer descompressão cirúrgica de urgência para evitar lesão isquêmica permanente do nervo."},
+    {"resposta": "B", "comentario": "O nervo mediano inerva o polegar, indicador, médio e a metade radial do anular (poupa o quinto dedo e a metade ulnar do anular, que são do nervo ulnar). Esse é o território de parestesia da síndrome do túnel do carpo."},
+    {"resposta": "B", "comentario": "Na forma crônica leve a moderada, o tratamento inicial é conservador: órtese noturna em posição neutra e/ou infiltração de corticoide no túnel do carpo, reservando a cirurgia eletiva (liberação) para casos refratários ou com déficit motor/atrofia."},
+    {"resposta": "B", "comentario": "A forma aguda se caracteriza por dor desproporcional e déficit sensitivo-motor rapidamente progressivo (geralmente após trauma de punho, em anticoagulado ou infecção), exigindo descompressão de urgência — diferente da crônica, de instalação lenta."},
+    {"resposta": "B", "comentario": "É INCORRETO aguardar a eletroneuromiografia para operar a forma aguda com déficit progressivo — isso atrasaria a descompressão e poderia causar lesão irreversível do nervo. A cirurgia de urgência não deve ser postergada por exames eletrofisiológicos."}
+  ]
+}

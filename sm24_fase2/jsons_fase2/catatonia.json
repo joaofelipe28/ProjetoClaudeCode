@@ -1,0 +1,177 @@
+{
+  "slug": "catatonia",
+  "titulo": "Catatonia — Reconhecimento e Manejo",
+  "especialidade": "PSIQUIATRIA",
+  "chapter_subject": "Catatonia — Diagnóstico, Teste do Lorazepam e Diferencial com SNM",
+  "chapter_bar": "CATATONIA — RECONHECER + LORAZEPAM",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "SINAIS CARDINAIS DA CATATONIA",
+      "section_color": "navy",
+      "headers": ["Sinal", "Descrição"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Estupor / mutismo", "Ausência de resposta e de fala, com vigília"],
+        ["Catalepsia / flexibilidade cérea", "Manutenção de posturas impostas; resistência plástica ('cera')"],
+        ["Negativismo", "Resistência ou oposição a comandos/estímulos"],
+        ["Posturas/maneirismos/estereotipias", "Posturas bizarras mantidas, movimentos repetitivos"],
+        ["Ecolalia / ecopraxia", "Repetir falas / imitar movimentos do examinador"],
+        ["Agitação catatônica", "Agitação intensa e sem propósito (forma excitada)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "CATATONIA NÃO É SÓ PSIQUIÁTRICA",
+      "section_color": "red",
+      "titulo": "PROCURAR CAUSA ORGÂNICA E A FORMA MALIGNA",
+      "items": [
+        "Causas: transtornos do humor (a mais comum), esquizofrenia, mas também CAUSAS ORGÂNICAS (encefalite — inclusive anti-NMDA, distúrbios metabólicos, infecções, drogas)",
+        "Sempre investigar causa clínica/neurológica — não assumir que é apenas psiquiátrica",
+        "Teste diagnóstico-terapêutico: LORAZEPAM (resposta rápida confirma e trata a catatonia)",
+        "Catatonia MALIGNA: febre, instabilidade autonômica e rigidez — emergência com risco de vida (semelhante à síndrome neuroléptica maligna)",
+        "EVITAR antipsicóticos na catatonia (podem piorar e precipitar a forma maligna/SNM)",
+        "Complicações do imobilismo: TVP/TEP, desidratação, broncoaspiração, úlcera, rabdomiólise"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA CATATONIA",
+      "title": "CATATONIA — INVESTIGAR + LORAZEPAM",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Estupor/mutismo, posturas, negativismo, flexibilidade cérea\nReconhecer a síndrome catatônica", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Investigar CAUSA: clínica, neurológica (encefalite),\nmetabólica, infecciosa, drogas; suspender antipsicótico", "color": "teal", "font_size": 5.2},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Teste do LORAZEPAM\n(1-2 mg IV/IM)\nMelhora = confirma e trata\nrepetir/titular", "color": "orange", "font_size": 5.1},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Refratária ou catatonia MALIGNA:\nELETROCONVULSOTERAPIA (ECT)\nsuporte intensivo", "color": "red", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Suporte: hidratação, profilaxia de TVP, nutrição, prevenir aspiração\nTratar a doença de base", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CATATONIA MALIGNA vs SÍNDROME NEUROLÉPTICA MALIGNA",
+      "section_color": "orange",
+      "headers": ["Aspecto", "Catatonia maligna", "SNM"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.37, 0.37],
+      "rows": [
+        ["Gatilho", "Catatonia que evolui com febre/disautonomia", "Início/aumento de antipsicótico (bloqueio dopaminérgico)"],
+        ["Quadro", "Rigidez, febre, instabilidade autonômica, alteração da consciência", "Rigidez 'em cano de chumbo', febre, disautonomia, CK elevada"],
+        ["Sobreposição", "Compartilham muitos sinais — podem ser um continuum", "Considerada por alguns uma forma de catatonia maligna induzida por droga"],
+        ["Antipsicótico", "Evitar / suspender", "Suspender imediatamente"],
+        ["Tratamento", "Benzodiazepínico e ECT; suporte", "Suspender o agente + suporte; dantroleno/bromocriptina; ECT se refratária"],
+        ["Comum a ambas", "Emergência com risco de vida; suporte intensivo", "Emergência com risco de vida; suporte intensivo"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "TRATAMENTO E SUPORTE",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Lorazepam e ECT",
+        "items": [
+          "Lorazepam 1-2 mg IV/IM como teste; melhora dramática confirma e trata",
+          "Manter/titular o benzodiazepínico conforme a resposta",
+          "Eletroconvulsoterapia (ECT): tratamento de escolha na catatonia refratária e na maligna",
+          "Evitar antipsicóticos (risco de piora e de SNM)",
+          "Tratar a doença de base (humor, psicose, causa orgânica)",
+          "Resposta ao lorazepam costuma ser rápida"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Cuidados de Suporte",
+        "items": [
+          "Hidratação e nutrição (risco de desidratação e desnutrição pelo imobilismo)",
+          "Profilaxia de TVP/TEP",
+          "Prevenção de broncoaspiração e úlcera de pressão",
+          "Monitorar CK (rabdomiólise) e função renal na forma maligna",
+          "Vigilância de sinais autonômicos (febre, PA, FC)",
+          "Investigar e tratar a causa orgânica quando presente"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Reconhecer os sinais cardinais (estupor, mutismo, catalepsia, negativismo, flexibilidade cérea)",
+        "Investigar causa clínica/neurológica (encefalite, metabólica, infecção, drogas) — não assumir só psiquiátrica",
+        "Teste do lorazepam (1-2 mg): melhora confirma e trata a catatonia",
+        "EVITAR antipsicóticos (risco de piora e de catatonia maligna/SNM)",
+        "Catatonia maligna (febre + disautonomia + rigidez) ou refratária: ECT + suporte intensivo",
+        "Suporte: hidratação, profilaxia de TVP, nutrição, prevenção de aspiração; tratar a doença de base"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com mutismo, imobilidade e flexibilidade cérea (mantém posturas impostas). Qual teste diagnóstico-terapêutico deve ser realizado?",
+      "alternativas": [
+        "Teste com haloperidol",
+        "Teste com lorazepam (melhora confirma e trata a catatonia)",
+        "Teste com naloxona",
+        "Teste com flumazenil",
+        "Teste com cetamina"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que se deve EVITAR antipsicóticos no manejo da catatonia?",
+      "alternativas": [
+        "Porque não têm efeito sedativo",
+        "Porque podem piorar a catatonia e precipitar a forma maligna / síndrome neuroléptica maligna",
+        "Porque causam hipertensão",
+        "Porque aceleram a recuperação",
+        "Porque são contraindicados apenas em idosos"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é o tratamento de escolha para a catatonia refratária ao benzodiazepínico ou para a catatonia maligna?",
+      "alternativas": [
+        "Antipsicótico em alta dose",
+        "Eletroconvulsoterapia (ECT)",
+        "Lítio",
+        "Antidepressivo tricíclico",
+        "Contenção mecânica isolada"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Além das causas psiquiátricas, o que sempre deve ser investigado na catatonia?",
+      "alternativas": [
+        "Apenas o histórico familiar",
+        "Causas orgânicas (encefalite, distúrbios metabólicos, infecções, drogas)",
+        "Somente o uso de cafeína",
+        "Apenas o sono",
+        "Nada, é sempre psiquiátrica"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente catatônico evolui com febre alta, rigidez e instabilidade autonômica. Qual quadro deve ser reconhecido?",
+      "alternativas": [
+        "Catatonia maligna — emergência com risco de vida",
+        "Resfriado comum",
+        "Crise de ansiedade",
+        "Enxaqueca",
+        "Intoxicação por cafeína"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O teste do lorazepam (1-2 mg IV/IM) é diagnóstico-terapêutico na catatonia: a melhora, frequentemente dramática, confirma o diagnóstico e trata. Os benzodiazepínicos são a primeira linha de tratamento."},
+    {"resposta": "B", "comentario": "Os antipsicóticos devem ser evitados na catatonia porque podem piorar o quadro e precipitar a catatonia maligna / síndrome neuroléptica maligna (pelo bloqueio dopaminérgico). Prefere-se benzodiazepínico e, se necessário, ECT."},
+    {"resposta": "B", "comentario": "A eletroconvulsoterapia (ECT) é o tratamento de escolha para a catatonia refratária ao benzodiazepínico e para a catatonia maligna, com resposta frequentemente rápida e segura."},
+    {"resposta": "B", "comentario": "Embora as causas psiquiátricas (transtornos do humor, esquizofrenia) sejam comuns, deve-se sempre investigar causas orgânicas — encefalite (incluindo anti-NMDA), distúrbios metabólicos, infecções e drogas — que também causam catatonia."},
+    {"resposta": "A", "comentario": "Catatonia com febre, rigidez e instabilidade autonômica caracteriza a catatonia maligna — emergência com risco de vida (semelhante à síndrome neuroléptica maligna), que exige suporte intensivo, benzodiazepínico e ECT."}
+  ]
+}

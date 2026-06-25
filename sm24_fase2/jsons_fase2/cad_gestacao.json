@@ -1,0 +1,176 @@
+{
+  "slug": "cad_gestacao",
+  "titulo": "Cetoacidose Diabética na Gestação",
+  "especialidade": "GINECOLOGIA/OBSTETRÍCIA",
+  "chapter_subject": "CAD na Gestante — Particularidades, Tratamento e Bem-Estar Fetal",
+  "chapter_bar": "CAD NA GESTANTE — TRATAR A MÃE SALVA O FETO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "PARTICULARIDADES DA CAD NA GESTAÇÃO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.32, 0.68],
+      "rows": [
+        ["CAD euglicêmica", "Pode ocorrer com glicemia NORMAL ou pouco elevada (< 200) — não excluir CAD pela glicemia"],
+        ["Instala-se mais rápido", "A gestação favorece a cetose (jejum acelerado, resistência insulínica) — CAD em níveis glicêmicos menores"],
+        ["Risco fetal", "Alta mortalidade fetal; a acidose materna reduz a perfusão e oxigenação placentária"],
+        ["Gatilhos", "Infecção, vômitos (hiperêmese), corticoide (maturação pulmonar), beta-agonista (tocólise), má adesão"],
+        ["Diagnóstico", "Acidose metabólica com GAP elevado + cetose + hiperglicemia (que pode ser leve)"],
+        ["Princípio", "TRATAR A MÃE é a melhor forma de proteger o feto — corrigir a acidose materna"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PRINCÍPIO CENTRAL: ESTABILIZAR A MÃE",
+      "section_color": "red",
+      "titulo": "NÃO INDICAR PARTO DE EMERGÊNCIA SÓ PELO SOFRIMENTO FETAL DA CAD",
+      "items": [
+        "A CAD materna causa sofrimento fetal (cardiotocografia alterada) que costuma MELHORAR com a correção da acidose materna",
+        "Não interromper a gestação precipitadamente por traçado fetal não tranquilizador durante a CAD — primeiro estabilizar a mãe",
+        "Operar uma gestante acidótica e instável aumenta o risco materno e fetal",
+        "Monitorização fetal contínua (se viável) durante o tratamento; decúbito lateral esquerdo",
+        "Tratar agressivamente o gatilho (infecção, vômitos) e corrigir fluidos/insulina/potássio",
+        "Equipe multidisciplinar (obstetrícia + clínica/endócrino + UTI)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA CAD NA GESTANTE",
+      "title": "CAD GESTANTE — FLUIDO, INSULINA, K, FETO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Gestante com acidose + cetose (glicemia pode ser normal!)\nReconhecer CAD euglicêmica; buscar o gatilho", "color": "navy", "font_size": 5.3},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Hidratação com salina + insulina IV + reposição de potássio\n(mesmos pilares da CAD, com vigilância materno-fetal)", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Adicionar glicose ao soro\nmais cedo (glicemia pode\nser baixa) para manter a\ninfusão de insulina", "color": "orange", "font_size": 4.9},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Monitorização fetal +\ndecúbito lateral esquerdo\nNÃO precipitar o parto\npela CAD", "color": "teal", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Corrigida a acidose materna, o traçado fetal tende a melhorar\nEquipe multidisciplinar; tratar a infecção/gatilho", "color": "green", "font_size": 5.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "TRATAMENTO — PILARES (ADAPTADOS À GESTAÇÃO)",
+      "section_color": "orange",
+      "titulo": "FLUIDO, INSULINA, POTÁSSIO, GLICOSE",
+      "items": [
+        "Hidratação: salina 0,9% vigorosa (corrigir a desidratação, que é importante na gestante)",
+        "Insulina regular IV em infusão contínua (0,1 U/kg/h), após checar e corrigir o potássio",
+        "Potássio: repor para manter 4-5 mEq/L; se K < 3,3 repor ANTES da insulina",
+        "Glicose: associar soro glicosado mais precocemente (a glicemia pode ser baixa - CAD euglicêmica) para manter a insulina até resolver a cetose",
+        "Tratar o gatilho: antibiótico se infecção; controlar os vômitos da hiperêmese",
+        "Cuidado com corticoide (maturação fetal) e beta-agonista (tocólise) — podem precipitar/agravar a CAD",
+        "Bicarbonato apenas em acidose muito grave (pH < 6,9), como na CAD não gestante"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "GATILHOS E BEM-ESTAR FETAL",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Gatilhos na Gestação",
+        "items": [
+          "Infecção (ITU, pielonefrite — comum na gestante)",
+          "Hiperêmese gravídica (vômitos, jejum)",
+          "Corticoide para maturação pulmonar fetal (betametasona)",
+          "Beta-agonista para tocólise",
+          "Má adesão/omissão de insulina",
+          "Diabetes gestacional descompensado ou DM prévio"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Cuidados com o Feto",
+        "items": [
+          "Monitorização fetal contínua quando viável (idade gestacional)",
+          "Decúbito lateral esquerdo (melhora o retorno venoso e a perfusão uteroplacentária)",
+          "Otimizar oxigenação e volemia maternas",
+          "Traçado não tranquilizador costuma melhorar com a correção da acidose",
+          "Decisão de parto: individualizada, após estabilização materna",
+          "Equipe obstétrica + UTI"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Suspeitar de CAD na gestante mesmo com glicemia normal (CAD euglicêmica)",
+        "Pilares: hidratação + insulina IV + reposição de potássio (corrigir K < 3,3 antes da insulina)",
+        "Associar glicose ao soro mais precocemente (glicemia pode ser baixa)",
+        "Tratar o gatilho (infecção, vômitos) e rever corticoide/beta-agonista",
+        "Monitorização fetal + decúbito lateral esquerdo; NÃO precipitar o parto pela CAD",
+        "Estabilizar a mãe corrige a acidose e melhora o feto; equipe multidisciplinar"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Gestante diabética com vômitos, acidose metabólica com GAP elevado e cetose, mas glicemia de 180 mg/dL. Qual a interpretação?",
+      "alternativas": [
+        "CAD está excluída pela glicemia normal",
+        "Pode ser CAD euglicêmica — a gestação favorece cetoacidose com glicemia normal ou pouco elevada",
+        "É apenas hiperêmese sem repercussão",
+        "É cetoacidose alcoólica",
+        "É EHH"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Durante o tratamento da CAD em gestante, a cardiotocografia mostra traçado não tranquilizador. Qual a conduta?",
+      "alternativas": [
+        "Cesárea de emergência imediata",
+        "Estabilizar a mãe (corrigir a acidose, fluidos, insulina); o traçado fetal tende a melhorar com a correção materna",
+        "Suspender a insulina",
+        "Administrar tocolítico beta-agonista",
+        "Interromper a hidratação"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que se deve associar glicose ao soro mais precocemente na CAD da gestante?",
+      "alternativas": [
+        "Para elevar a glicemia rapidamente",
+        "Porque a glicemia pode estar baixa (CAD euglicêmica) e a insulina precisa ser mantida até resolver a cetose",
+        "Para suspender a insulina",
+        "Para tratar a infecção",
+        "Para reduzir o potássio"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Quais intervenções obstétricas podem PRECIPITAR ou agravar a CAD na gestante?",
+      "alternativas": [
+        "Repouso e hidratação",
+        "Corticoide para maturação pulmonar fetal e beta-agonista para tocólise",
+        "Decúbito lateral esquerdo",
+        "Monitorização fetal",
+        "Antibiótico para ITU"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o princípio central do manejo da CAD na gestação em relação ao feto?",
+      "alternativas": [
+        "Interromper a gestação assim que houver sofrimento fetal",
+        "Tratar e estabilizar a mãe (corrigir a acidose) é a melhor forma de proteger o feto",
+        "Priorizar o parto sobre a correção metabólica",
+        "Manter a mãe em jejum prolongado",
+        "Evitar a insulina pelo risco fetal"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na gestação pode ocorrer CAD euglicêmica — acidose com GAP elevado e cetose mesmo com glicemia normal ou pouco elevada. Não se deve excluir CAD pela glicemia; a gestação favorece a cetose por jejum acelerado e resistência insulínica."},
+    {"resposta": "B", "comentario": "O sofrimento fetal na CAD materna decorre da acidose e da redução da perfusão placentária e tende a MELHORAR com a estabilização materna. Não se deve indicar cesárea de emergência precipitada — primeiro corrigir a acidose, fluidos e insulina da mãe."},
+    {"resposta": "B", "comentario": "Como a glicemia pode estar baixa (CAD euglicêmica), associa-se glicose ao soro mais precocemente para permitir a manutenção da infusão de insulina (necessária para resolver a cetose) sem causar hipoglicemia."},
+    {"resposta": "B", "comentario": "O corticoide para maturação pulmonar fetal (betametasona) e os beta-agonistas usados na tocólise elevam a glicemia e a resistência insulínica, podendo precipitar ou agravar a CAD na gestante diabética — exigem monitorização rigorosa."},
+    {"resposta": "B", "comentario": "O princípio central é que tratar e estabilizar a MÃE (corrigir a acidose, a desidratação e os distúrbios) é a melhor forma de proteger o feto. A interrupção precipitada da gestação durante a CAD aumenta os riscos materno e fetal."}
+  ]
+}

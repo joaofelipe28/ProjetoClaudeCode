@@ -1,0 +1,178 @@
+{
+  "slug": "emergencias_imunoterapia_irae",
+  "titulo": "Emergências de Imunoterapia (irAEs)",
+  "especialidade": "ONCOLOGIA",
+  "chapter_subject": "Eventos Adversos Imunomediados dos Inibidores de Checkpoint — Reconhecer e Tratar",
+  "chapter_bar": "irAEs — PENSAR, GRADUAR, CORTICOIDE",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "O QUE SÃO E QUANDO SUSPEITAR",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Mecanismo", "Inibidores de checkpoint (anti-PD-1/PD-L1, anti-CTLA-4) desinibem o sistema imune -> inflamação autoimune em qualquer órgão"],
+        ["Exemplos de drogas", "Nivolumabe, pembrolizumabe (anti-PD-1); atezolizumabe (anti-PD-L1); ipilimumabe (anti-CTLA-4)"],
+        ["Quando suspeitar", "Qualquer sintoma novo em paciente em imunoterapia (atual ou recente) = irAE até prova em contrário"],
+        ["Tempo", "Pode surgir a qualquer momento, inclusive SEMANAS a MESES após a última dose"],
+        ["Diferente da quimio", "Não é toxicidade citotóxica clássica — é inflamação imunomediada (tratada com imunossupressão)"],
+        ["Princípio", "Reconhecer cedo, graduar e tratar com corticoide; excluir outras causas (infecção, progressão)"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "irAEs POR ÓRGÃO — PRINCIPAIS",
+      "section_color": "orange",
+      "headers": ["Órgão", "Manifestação", "Atenção"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.42, 0.36],
+      "rows": [
+        ["Cólon", "Colite/diarreia (frequente e potencialmente grave)", "Risco de perfuração; excluir C. difficile"],
+        ["Pulmão", "Pneumonite (dispneia, tosse, hipoxemia)", "Pode ser fatal; excluir infecção/progressão"],
+        ["Fígado", "Hepatite (elevação de transaminases)", "Geralmente assintomática inicialmente"],
+        ["Endócrino", "Hipofisite, tireoidite, insuficiência adrenal, diabetes (CAD)", "Insuficiência adrenal pode ser fatal"],
+        ["Pele", "Rash, prurido; raramente Stevens-Johnson", "Forma grave exige suspensão e corticoide"],
+        ["Outros (raros e graves)", "Miocardite, miastenia/miosite, encefalite, nefrite", "Miocardite tem alta letalidade — alto índice de suspeita"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PRINCÍPIO DO TRATAMENTO: CORTICOIDE CONFORME O GRAU",
+      "section_color": "red",
+      "titulo": "GRADUAR (CTCAE) E IMUNOSSUPRIMIR; EXCLUIR INFECÇÃO",
+      "items": [
+        "Grau 1 (leve): geralmente manter a imunoterapia com vigilância e tratamento sintomático",
+        "Grau 2 (moderado): suspender temporariamente o checkpoint + corticoide (prednisona ~0,5-1 mg/kg/dia)",
+        "Grau 3-4 (grave): SUSPENDER (muitas vezes em definitivo) + corticoide em ALTA dose (metilprednisolona 1-2 mg/kg/dia) + internação",
+        "Refratário ao corticoide em 48-72h: imunossupressor de segunda linha (ex.: infliximabe na colite; NÃO usar infliximabe na hepatite)",
+        "Insuficiência adrenal / crise adrenal: corticoide em dose de estresse — NÃO confundir com outras irAEs (pode ser fatal se não tratada)",
+        "Miocardite por checkpoint: rara, mas com alta letalidade — corticoide em alta dose precoce, suporte e monitorização",
+        "Sempre EXCLUIR infecção e progressão da doença antes/junto de assumir irAE"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA SUSPEITA DE irAE",
+      "title": "SINTOMA NOVO EM IMUNOTERAPIA -> irAE?",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Paciente em imunoterapia (atual ou recente) com sintoma novo\nQualquer órgão pode estar acometido", "color": "navy", "font_size": 5.3},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Excluir infecção e progressão; identificar o órgão e GRADUAR (CTCAE)\nDosar função tireoidiana/adrenal, hepática, renal conforme o quadro", "color": "teal", "font_size": 5.1},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Leve (G1):\nmanter + sintomático\nvigilância", "color": "green", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Moderado/grave (G2-4):\nsuspender + CORTICOIDE\n(alta dose se grave)\n2a linha se refratário", "color": "red", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Crise adrenal: corticoide de estresse; miocardite: alta dose precoce\nDiscutir com a oncologia antes de retomar a imunoterapia", "color": "orange", "font_size": 5.0}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ARMADILHAS E CASOS GRAVES",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Não Errar",
+        "items": [
+          "Atribuir o sintoma à 'quimio' e não pensar em irAE",
+          "Esquecer a insuficiência adrenal/hipofisite (fadiga, hipotensão, hiponatremia) — risco de crise adrenal",
+          "Não excluir infecção antes de imunossuprimir (sobretudo na pneumonite/colite)",
+          "Subestimar a colite (risco de perfuração) e a pneumonite (risco de insuficiência respiratória)",
+          "Usar infliximabe na hepatite imunomediada (contraindicado — hepatotóxico)",
+          "Demorar para iniciar corticoide nas formas graves"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "irAEs de Alta Gravidade",
+        "items": [
+          "Miocardite: dor torácica, dispneia, troponina/ECG alterados — alta letalidade",
+          "Pneumonite grave: hipoxemia — corticoide em alta dose + suporte",
+          "Colite grave: diarreia intensa, dor, risco de perfuração",
+          "Crise adrenal: hipotensão, hiponatremia, hipoglicemia — corticoide de estresse imediato",
+          "Encefalite/miastenia/Guillain-Barré-like: avaliação neurológica urgente",
+          "CAD por diabetes autoimune induzido — tratar a CAD + insulina"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Sintoma novo em paciente em imunoterapia (mesmo semanas-meses após) = irAE até prova em contrário",
+        "Identificar o órgão acometido e GRADUAR (CTCAE); excluir infecção e progressão",
+        "Grau 1: manter + sintomático; Grau 2: suspender + corticoide; Grau 3-4: suspender + corticoide em alta dose + internar",
+        "Refratário em 48-72h: 2a linha (ex.: infliximabe na colite — NÃO na hepatite)",
+        "Pensar e tratar insuficiência adrenal/hipofisite (corticoide de estresse) e miocardite (alta letalidade)",
+        "Discutir com a oncologia a suspensão/retomada da imunoterapia"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente em uso de pembrolizumabe há 2 meses chega com diarreia intensa e dor abdominal. Qual a principal hipótese e a conduta?",
+      "alternativas": [
+        "Gastroenterite viral — apenas hidratação",
+        "Colite imunomediada (irAE) — excluir infecção (C. difficile), suspender o checkpoint e iniciar corticoide conforme a gravidade",
+        "Progressão tumoral — sem tratamento",
+        "Constipação — laxativo",
+        "Síndrome do intestino irritável"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é o tratamento de base da maioria dos eventos adversos imunomediados moderados a graves?",
+      "alternativas": [
+        "Antibiótico de amplo espectro",
+        "Corticoide (imunossupressão), conforme o grau, suspendendo o checkpoint",
+        "Quimioterapia citotóxica",
+        "Anti-histamínico",
+        "Apenas observação"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Por que a fadiga intensa com hipotensão e hiponatremia em paciente em imunoterapia não pode ser negligenciada?",
+      "alternativas": [
+        "Porque indica progressão tumoral apenas",
+        "Porque pode ser insuficiência adrenal/hipofisite (irAE endócrina), com risco de crise adrenal fatal — exige corticoide de estresse",
+        "Porque é um efeito esperado e benigno",
+        "Porque indica boa resposta ao tratamento",
+        "Porque é sempre desidratação simples"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente em imunoterapia com dispneia e hipoxemia novas. Qual irAE grave deve ser considerada e o que excluir?",
+      "alternativas": [
+        "Pneumonite imunomediada — excluir infecção e progressão; corticoide em alta dose se grave",
+        "Rinite alérgica — anti-histamínico",
+        "Ansiedade — ansiolítico",
+        "Asma leve — broncodilatador apenas",
+        "Refluxo — inibidor de bomba"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Quando deve-se suspeitar de irAE em um paciente que recebeu imunoterapia?",
+      "alternativas": [
+        "Apenas durante a infusão",
+        "Diante de qualquer sintoma novo, mesmo semanas a meses após a última dose",
+        "Somente nas primeiras 24 horas",
+        "Apenas se houver febre",
+        "Nunca, pois a imunoterapia não causa toxicidade"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Diarreia/dor abdominal em paciente em anti-PD-1 sugere colite imunomediada (irAE), potencialmente grave (risco de perfuração). Conduta: excluir infecção (C. difficile), suspender o checkpoint e iniciar corticoide conforme a gravidade; infliximabe se refratária."},
+    {"resposta": "B", "comentario": "O tratamento de base da maioria dos irAEs moderados a graves é a imunossupressão com corticoide, conforme o grau (CTCAE), suspendendo temporária ou definitivamente o inibidor de checkpoint. Casos refratários usam segunda linha (ex.: infliximabe)."},
+    {"resposta": "B", "comentario": "Fadiga + hipotensão + hiponatremia em imunoterapia pode indicar insuficiência adrenal/hipofisite (irAE endócrina), com risco de crise adrenal fatal. Exige reconhecimento precoce e corticoide em dose de estresse, além de avaliação endócrina."},
+    {"resposta": "A", "comentario": "Dispneia e hipoxemia novas em paciente em imunoterapia devem levantar a suspeita de pneumonite imunomediada (potencialmente fatal). Deve-se excluir infecção e progressão e, nas formas graves, iniciar corticoide em alta dose com suporte."},
+    {"resposta": "B", "comentario": "Deve-se suspeitar de irAE diante de QUALQUER sintoma novo em paciente que recebeu imunoterapia, inclusive semanas a meses após a última dose, pois os eventos imunomediados podem surgir de forma tardia e em qualquer órgão."}
+  ]
+}

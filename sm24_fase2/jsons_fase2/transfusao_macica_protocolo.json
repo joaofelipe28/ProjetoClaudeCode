@@ -1,0 +1,178 @@
+{
+  "slug": "transfusao_macica_protocolo",
+  "titulo": "Transfusão Maciça — Protocolo",
+  "especialidade": "HEMATOLOGIA",
+  "chapter_subject": "Protocolo de Transfusão Maciça — Proporção 1:1:1 e Controle de Dano",
+  "chapter_bar": "TRANSFUSÃO MACIÇA — 1:1:1 + CONTROLE DE DANO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DEFINIÇÃO E ATIVAÇÃO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.32, 0.68],
+      "rows": [
+        ["Transfusão maciça", "> 10 unidades de concentrado de hemácias em 24h OU > 4 unidades em 1h com sangramento contínuo"],
+        ["Quando ativar", "Hemorragia grave com previsão de necessidade maciça (trauma, HPP, sangramento digestivo, cirúrgico)"],
+        ["Escore ABC (trauma)", "Trauma penetrante, PAS <= 90, FC >= 120, FAST positivo: prediz necessidade de transfusão maciça"],
+        ["Objetivo", "Repor de forma equilibrada e tratar a coagulopatia desde o início (ressuscitação de controle de dano)"],
+        ["Sangue de emergência", "O negativo (ou O positivo em homens/sem risco) até a tipagem ficar pronta"],
+        ["Comunicação", "Acionar o banco de sangue precocemente (libera os pacotes do protocolo)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PROPORÇÃO 1:1:1 E A TRÍADE MORTAL",
+      "section_color": "red",
+      "titulo": "REPOR EQUILIBRADO + COMBATER ACIDOSE, HIPOTERMIA E COAGULOPATIA",
+      "items": [
+        "Proporção hemostática: hemácias : plasma fresco : plaquetas = 1:1:1 (ressuscitação de controle de dano)",
+        "Tríade mortal: ACIDOSE + HIPOTERMIA + COAGULOPATIA — uma agrava a outra; preveni-las é essencial",
+        "Aquecer o paciente e os fluidos/hemocomponentes (a hipotermia piora a coagulação)",
+        "Hipotensão permissiva no trauma sem TCE (PAS alvo ~80-90) até o controle do sangramento; minimizar cristaloide",
+        "Ácido tranexâmico: 1 g IV em 10 min + 1 g em 8h, dentro de 3h do trauma (CRASH-2)",
+        "CONTROLE DA FONTE de sangramento é prioridade (cirurgia/embolização) — a transfusão é suporte",
+        "Monitorar e repor cálcio (o citrato dos hemocomponentes quela o cálcio -> hipocalcemia)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXO DA TRANSFUSÃO MACIÇA",
+      "title": "HEMORRAGIA GRAVE -> ATIVAR PROTOCOLO",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Hemorragia grave / choque hemorrágico\nAtivar o protocolo + acionar o banco de sangue + controle da fonte", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Sangue O negativo de emergência;\ntransfundir hemácias : plasma : plaquetas = 1:1:1", "color": "red", "font_size": 5.3},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Combater a tríade mortal:\naquecer paciente/fluidos,\ncorrigir acidose,\nrepor cálcio", "color": "orange", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Ácido tranexâmico\n(< 3h do trauma)\nMonitorar coagulação\n(idealmente tromboelastografia)", "color": "teal", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Controle definitivo da fonte (cirurgia/embolização)\nDesativar o protocolo quando o sangramento estiver controlado", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "COMPLICAÇÕES DA TRANSFUSÃO MACIÇA",
+      "section_color": "orange",
+      "headers": ["Complicação", "Mecanismo", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.40, 0.34],
+      "rows": [
+        ["Hipocalcemia", "Citrato quela o cálcio", "Monitorar e repor cálcio (gluconato/cloreto de cálcio)"],
+        ["Hipotermia", "Hemocomponentes frios + exposição", "Aquecer fluidos e o paciente"],
+        ["Coagulopatia dilucional", "Diluição de fatores e plaquetas", "Manter 1:1:1; repor fibrinogênio (crioprecipitado) se baixo"],
+        ["Hipercalemia", "Hemácias estocadas liberam K+", "Monitorar ECG e potássio"],
+        ["Acidose", "Hipoperfusão + carga de citrato/lactato", "Controle da fonte + perfusão; evitar excesso de cristaloide"],
+        ["Reação transfusional / TRALI / TACO", "Imunológica / sobrecarga", "Vigilância; tratar conforme o tipo"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "METAS E SITUAÇÕES ESPECIAIS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Metas Laboratoriais",
+        "items": [
+          "Plaquetas > 50.000 (>100.000 se TCE/sangramento de SNC)",
+          "Fibrinogênio > 1,5-2 g/L (repor com crioprecipitado)",
+          "Cálcio iônico normal (repor pela carga de citrato)",
+          "Temperatura > 36 C, pH adequado",
+          "Hemoglobina alvo individualizada (não perseguir valor alto durante o sangramento ativo)",
+          "Tromboelastografia/ROTEM guia a reposição quando disponível"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Contextos",
+        "items": [
+          "Trauma: hipotensão permissiva (sem TCE) + ácido tranexâmico precoce",
+          "Hemorragia pós-parto: protocolo + uterotônicos + ácido tranexâmico",
+          "Sangramento digestivo maciço: controle endoscópico/cirúrgico da fonte",
+          "Paciente anticoagulado: reverter o anticoagulante (ver protocolo específico)",
+          "Comunicar e trabalhar em equipe com o banco de sangue",
+          "Reavaliar e desativar o protocolo ao controlar o sangramento"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Reconhecer a hemorragia grave e ativar o protocolo precocemente (acionar o banco de sangue)",
+        "Sangue O negativo de emergência; transfundir na proporção 1:1:1",
+        "Ácido tranexâmico em < 3h do trauma (1 g + 1 g em 8h)",
+        "Combater a tríade mortal: aquecer, corrigir acidose e repor cálcio (citrato)",
+        "Controle definitivo da fonte do sangramento (cirurgia/embolização) é prioridade",
+        "Monitorar metas (plaquetas, fibrinogênio, cálcio, temperatura) e desativar o protocolo ao controlar o sangramento"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Qual é a proporção de hemocomponentes recomendada na ressuscitação de controle de dano da transfusão maciça?",
+      "alternativas": [
+        "Apenas concentrado de hemácias",
+        "Hemácias : plasma fresco : plaquetas = 1:1:1",
+        "Hemácias : plasma = 4:1",
+        "Apenas plasma e crioprecipitado",
+        "Albumina + hemácias"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "A 'tríade mortal' que agrava o sangramento na transfusão maciça é composta por:",
+      "alternativas": [
+        "Febre, taquicardia e hipertensão",
+        "Acidose, hipotermia e coagulopatia",
+        "Hipernatremia, hipocalemia e alcalose",
+        "Hiperglicemia, hipóxia e hipertensão",
+        "Anemia, leucocitose e plaquetose"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual eletrólito deve ser monitorado e reposto na transfusão maciça devido ao citrato dos hemocomponentes?",
+      "alternativas": [
+        "Sódio",
+        "Cálcio",
+        "Cloro",
+        "Magnésio apenas",
+        "Bicarbonato"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual medicação antifibrinolítica reduz a mortalidade no trauma hemorrágico quando administrada nas primeiras 3 horas?",
+      "alternativas": [
+        "Heparina",
+        "Ácido tranexâmico",
+        "Vitamina K",
+        "Protamina",
+        "Desmopressina"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Apesar de toda a reposição, qual é a medida PRIORITÁRIA para deter a hemorragia na transfusão maciça?",
+      "alternativas": [
+        "Aumentar indefinidamente a velocidade da transfusão",
+        "Controle definitivo da fonte de sangramento (cirurgia/embolização)",
+        "Administrar grande volume de cristaloide",
+        "Manter a PA em níveis normais altos",
+        "Adiar a cirurgia até estabilizar completamente"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A ressuscitação de controle de dano usa a proporção hemostática 1:1:1 (hemácias : plasma fresco congelado : plaquetas), reproduzindo a composição do sangue total e prevenindo a coagulopatia dilucional."},
+    {"resposta": "B", "comentario": "A tríade mortal do trauma/transfusão maciça é acidose + hipotermia + coagulopatia. As três se retroalimentam e agravam o sangramento; preveni-las (aquecer, perfundir, repor de forma equilibrada) é parte central do tratamento."},
+    {"resposta": "B", "comentario": "O citrato presente nos hemocomponentes quela o cálcio, causando hipocalcemia, que prejudica a coagulação e a função cardíaca. Por isso o cálcio deve ser monitorado e reposto (gluconato/cloreto de cálcio) durante a transfusão maciça."},
+    {"resposta": "B", "comentario": "O ácido tranexâmico (antifibrinolítico) reduz a mortalidade por hemorragia no trauma quando administrado nas primeiras 3 horas (CRASH-2): 1 g IV em 10 min + 1 g em 8h. Após 3h, o benefício se perde."},
+    {"resposta": "B", "comentario": "A medida prioritária é o controle definitivo da fonte do sangramento (cirurgia/embolização). A transfusão é suporte enquanto se controla a hemorragia — sem deter a fonte, nenhuma reposição é suficiente."}
+  ]
+}

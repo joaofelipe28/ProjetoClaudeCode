@@ -1,0 +1,174 @@
+{
+  "slug": "sindrome_realimentacao",
+  "titulo": "Síndrome de Realimentação",
+  "especialidade": "CLÍNICA MÉDICA",
+  "chapter_subject": "Síndrome de Realimentação — Prevenção e Manejo no Paciente de Risco",
+  "chapter_bar": "REALIMENTAÇÃO — DEVAGAR + TIAMINA + ELETRÓLITOS",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "O QUE É E POR QUE ACONTECE",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Definição", "Distúrbios hidroeletrolíticos graves ao reintroduzir nutrição em paciente desnutrido/jejum prolongado"],
+        ["Gatilho", "Carboidrato -> pico de insulina -> entrada de fósforo, potássio e magnésio para dentro da célula"],
+        ["Marcador-chave", "HIPOFOSFATEMIA (geralmente em 12-72h do início da dieta)"],
+        ["Outros distúrbios", "Hipopotassemia, hipomagnesemia, retenção de sódio/água, deficiência de tiamina"],
+        ["Consequências", "Arritmia, IC, insuficiência respiratória, rabdomiólise, convulsão, encefalopatia de Wernicke, morte"],
+        ["Início dos sintomas", "Tipicamente nos primeiros 2-5 dias da realimentação"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "QUEM ESTÁ EM RISCO (CRITÉRIOS NICE)",
+      "section_color": "red",
+      "titulo": "IDENTIFICAR ANTES DE ALIMENTAR",
+      "items": [
+        "ALTO RISCO (1 critério maior): IMC < 16; perda de peso > 15% em 3-6 meses; ingestão alimentar mínima > 10 dias; K, P ou Mg baixos antes de alimentar",
+        "ALTO RISCO (2 critérios menores): IMC < 18,5; perda de peso > 10%; ingestão mínima > 5 dias; história de álcool ou drogas (incluindo insulina, quimioterapia, antiácidos, diuréticos)",
+        "Grupos clássicos: anorexia nervosa, alcoolismo crônico, desnutrição grave, pós-bariátrica, neoplasia, greve de fome, idoso negligenciado",
+        "Reconhecer o risco é o passo mais importante — a síndrome é PREVENÍVEL",
+        "Dosar P, K, Mg, Na, glicemia e função renal ANTES de iniciar a dieta",
+        "Repor tiamina ANTES de qualquer aporte de glicose (prevenir Wernicke)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "PREVENÇÃO E MANEJO",
+      "title": "REALIMENTAR COM SEGURANÇA",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Identificar paciente de risco + dosar P, K, Mg, Na, glicemia\nAvaliar função renal e estado volêmico", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "TIAMINA 200-300 mg antes/junto da dieta\nCorrigir eletrólitos antes de iniciar (se possível)", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Iniciar dieta LENTA:\n10 kcal/kg/dia\n(5 kcal/kg se risco extremo)\navançar em 4-7 dias", "color": "orange", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Monitorar eletrólitos\na cada 12-24h e REPOR\nP, K, Mg conforme necessário\nNÃO precisa parar a dieta", "color": "teal", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Balanço hídrico cuidadoso (evitar sobrecarga); monitorar ECG\nProgressão calórica conforme estabilidade dos eletrólitos", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "REPOSIÇÃO E SUPORTE",
+      "section_color": "orange",
+      "titulo": "TIAMINA, FÓSFORO, POTÁSSIO E MAGNÉSIO",
+      "items": [
+        "Tiamina: 200-300 mg/dia IV/VO antes de iniciar a dieta e por pelo menos 3 dias (mais se etilista) — previne Wernicke",
+        "Fósforo: repor se P baixo; grave/sintomático -> fosfato IV (ex.: fosfato de potássio 0,3-0,6 mmol/kg em 6-12h)",
+        "Potássio: repor conforme nível; monitorar ECG; cuidado em disfunção renal",
+        "Magnésio: sulfato de magnésio IV se hipomagnesemia (também facilita a correção de K+)",
+        "Complexo B e multivitamínico/oligoelementos durante a realimentação",
+        "Dieta: iniciar 10 kcal/kg/dia (5 kcal/kg em risco extremo) e avançar gradualmente em 4-7 dias",
+        "NÃO administrar grande carga de glicose/soro glicosado sem tiamina prévia"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ERROS COMUNS E WERNICKE",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Erros que Matam",
+        "items": [
+          "Alimentar/soro glicosado em desnutrido sem repor tiamina antes",
+          "Iniciar dieta plena (alvo calórico total) no primeiro dia",
+          "Não dosar P, K e Mg antes e durante a realimentação",
+          "Confundir a fraqueza/dispneia da síndrome com a doença de base",
+          "Sobrecarga de volume em paciente com função cardíaca comprometida"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Encefalopatia de Wernicke",
+        "items": [
+          "Tríade: confusão + oftalmoplegia/nistagmo + ataxia (raramente completa)",
+          "Precipitada por glicose sem tiamina em paciente de risco",
+          "Tratamento: tiamina IV em dose alta (ex.: 500 mg 8/8h por 2-3 dias)",
+          "Prevenção é prioridade no etilista e desnutrido",
+          "Não aguardar exames para repor tiamina"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "PROTOCOLO PRÁTICO",
+      "titulo": "PASSO A PASSO",
+      "items": [
+        "Rastrear risco (critérios NICE) em todo desnutrido/jejum prolongado/etilista",
+        "Dosar P, K, Mg, Na, glicemia e função renal antes de iniciar a dieta",
+        "Tiamina 200-300 mg antes de qualquer aporte calórico/glicose",
+        "Iniciar dieta lenta (10 kcal/kg/dia; 5 se risco extremo) e progredir em 4-7 dias",
+        "Monitorar e repor eletrólitos a cada 12-24h (não é necessário suspender a dieta para repor)",
+        "Vigiar balanço hídrico e ECG; suporte multivitamínico durante a realimentação"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Qual é o distúrbio eletrolítico MARCADOR da síndrome de realimentação?",
+      "alternativas": [
+        "Hipernatremia",
+        "Hipofosfatemia",
+        "Hipercalcemia",
+        "Hipercalemia",
+        "Hipocloremia"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente etilista desnutrido será internado. Qual conduta deve preceder a administração de soro glicosado?",
+      "alternativas": [
+        "Administrar insulina",
+        "Repor tiamina",
+        "Iniciar dieta plena imediatamente",
+        "Administrar grande volume de glicose hipertônica",
+        "Repor sódio em bolus"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual a velocidade adequada para iniciar a oferta calórica em paciente de alto risco para síndrome de realimentação?",
+      "alternativas": [
+        "Alvo calórico total no primeiro dia",
+        "Iniciar com cerca de 10 kcal/kg/dia (5 kcal/kg em risco extremo) e progredir em 4-7 dias",
+        "Jejum prolongado até normalizar os eletrólitos",
+        "30 kcal/kg/dia desde o início",
+        "Apenas nutrição parenteral plena"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Durante a realimentação, o fósforo sérico cai e o paciente apresenta fraqueza muscular. Qual a conduta?",
+      "alternativas": [
+        "Suspender definitivamente a dieta",
+        "Repor fósforo (e demais eletrólitos) e manter a dieta em velocidade reduzida, com monitoração",
+        "Aumentar rapidamente a oferta calórica",
+        "Administrar apenas potássio",
+        "Iniciar diurético"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "A administração de glicose sem reposição de tiamina em paciente de risco pode precipitar qual complicação?",
+      "alternativas": [
+        "Encefalopatia de Wernicke",
+        "Hipertireoidismo",
+        "Pancreatite",
+        "Cetoacidose diabética",
+        "Insuficiência adrenal"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A hipofosfatemia é o marcador-chave da síndrome de realimentação. Com a reintrodução de carboidratos, a insulina desloca fósforo (e potássio e magnésio) para o intracelular, podendo causar arritmia, insuficiência respiratória e rabdomiólise."},
+    {"resposta": "B", "comentario": "Em paciente etilista/desnutrido, a tiamina deve ser reposta ANTES de qualquer aporte de glicose, para prevenir a encefalopatia de Wernicke, que pode ser precipitada pela glicose em paciente deficiente."},
+    {"resposta": "B", "comentario": "Em alto risco, iniciar a oferta calórica de forma lenta (cerca de 10 kcal/kg/dia, ou 5 kcal/kg em risco extremo) e progredir gradualmente em 4-7 dias, com monitoração e reposição de eletrólitos, previne a síndrome de realimentação."},
+    {"resposta": "B", "comentario": "Na queda do fósforo com sintomas, deve-se repor o fósforo e os demais eletrólitos e manter a dieta em velocidade reduzida com monitoração frequente — não é necessário suspender a nutrição, apenas ajustá-la enquanto se corrigem os distúrbios."},
+    {"resposta": "A", "comentario": "Glicose sem tiamina em paciente de risco (etilista, desnutrido) pode precipitar a encefalopatia de Wernicke (confusão, oftalmoplegia, ataxia). Por isso a tiamina deve sempre preceder o aporte de glicose nesses pacientes."}
+  ]
+}

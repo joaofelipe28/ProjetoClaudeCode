@@ -1,0 +1,192 @@
+{
+  "slug": "fibrilacao_atrial_ps",
+  "titulo": "Fibrilação Atrial no PS — Ritmo vs Frequência",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "Fibrilação Atrial na Emergência — Controle de Ritmo, Frequência e Anticoagulação",
+  "chapter_bar": "FA — ESTABILIDADE, RITMO/FREQUÊNCIA, ANTICOAGULAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CLASSIFICAÇÃO E RECONHECIMENTO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["ECG", "Ritmo irregularmente irregular, ausência de onda P, ondas f, RR variável"],
+        ["Paroxística", "Reverte espontaneamente ou em até 7 dias"],
+        ["Persistente", "Dura > 7 dias ou exige cardioversão"],
+        ["Permanente", "FA aceita, sem nova tentativa de reversão"],
+        ["FA de início recente", "< 48h — janela que influencia a decisão de cardioversão"],
+        ["Gatilhos no PS", "Sepse, TEP, hipertireoidismo, IAM, distúrbio eletrolítico, álcool (holiday heart), pós-operatório"]
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ALGORITMO — FA NO PRONTO-SOCORRO",
+      "title": "FA — INSTÁVEL? CARDIOVERTER JÁ",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "FA confirmada no ECG + avaliar repercussão\nTratar o gatilho (sepse, TEP, tireoide, eletrólitos)", "color": "navy", "font_size": 5.5},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "INSTÁVEL? Hipotensão, dor torácica isquêmica,\nEAP, rebaixamento por causa da FA", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "SIM (instável):\nCARDIOVERSÃO ELÉTRICA\nsincronizada imediata\n(sedação)", "color": "red", "font_size": 5.3},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "NÃO (estável):\nControle de FREQUÊNCIA\nou de RITMO conforme\ntempo de FA e perfil", "color": "teal", "font_size": 5.3},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Sempre avaliar ANTICOAGULAÇÃO (CHA2DS2-VASc)\ne a regra das 48h antes de cardioverter eletivamente", "color": "orange", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CONTROLE DE FREQUÊNCIA vs RITMO",
+      "section_color": "teal",
+      "headers": ["Estratégia", "Quando preferir", "Drogas"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.40, 0.38],
+      "rows": [
+        ["Controle de FREQUÊNCIA", "Idoso, FA crônica/assintomática, FC alta sem instabilidade", "Betabloqueador OU BCC não-diidro (diltiazem/verapamil)"],
+        ["Controle de RITMO", "FA recente (<48h), 1o episódio, jovem, muito sintomático", "Cardioversão elétrica OU química (amiodarona, propafenona)"],
+        ["FA com IC / FEVE baixa", "Evitar BCC não-diidro e propafenona", "Betabloqueador com cautela; amiodarona; digoxina adjuvante"],
+        ["Meta de FC", "FC < 110 bpm em repouso (controle leniente) na maioria", "Titular a droga conforme resposta"],
+        ["Digoxina", "Adjuvante em IC ou hipotensão (não reduz FC no esforço)", "0,25 mg IV, repetir; início de ação lento"]
+      ]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "DOSES — CONTROLE DE FA",
+      "section_color": "orange",
+      "titulo": "FREQUÊNCIA, RITMO E CARDIOVERSÃO",
+      "items": [
+        "Metoprolol (tartarato): 2,5-5 mg IV em 2 min, repetir até 15 mg — controle de FC",
+        "Diltiazem: 0,25 mg/kg IV em 2 min (cerca de 15-20 mg), repetir 0,35 mg/kg; manutenção 5-15 mg/h",
+        "Verapamil: 2,5-5 mg IV — evitar em IC/FEVE reduzida",
+        "Digoxina: 0,25 mg IV, repetir até 1-1,5 mg em 24h — adjuvante em IC/hipotensão",
+        "Amiodarona: 150 mg IV em 10 min + 1 mg/min por 6h — controle de FC e reversão; preferida em IC/instabilidade limítrofe",
+        "Propafenona (pill-in-the-pocket): 450-600 mg VO em FA recente sem cardiopatia estrutural",
+        "Cardioversão elétrica sincronizada: 120-200 J (bifásico) com sedação — 1a escolha no instável"
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ANTICOAGULAÇÃO E A REGRA DAS 48 HORAS",
+      "section_color": "red",
+      "titulo": "CARDIOVERSÃO TEM RISCO DE EMBOLIA",
+      "items": [
+        "CHA2DS2-VASc: anticoagular se >= 2 (homem) ou >= 3 (mulher); considerar se 1 (homem)/2 (mulher)",
+        "FA < 48h: pode cardioverter; anticoagular conforme risco embólico após o procedimento",
+        "FA >= 48h ou tempo indeterminado: anticoagular por 3 semanas antes OU ecocardiograma transesofágico para excluir trombo antes de cardioverter",
+        "Após cardioversão: anticoagular por pelo menos 4 semanas (atordoamento atrial = risco de trombo)",
+        "DOAC (apixabana, rivaroxabana) são preferidos sobre varfarina na FA não valvar",
+        "FA valvar (estenose mitral, prótese mecânica): varfarina",
+        "Paciente instável: cardioverter imediatamente, mesmo sem anticoagulação prévia (risco de vida supera o embólico)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "SITUAÇÕES ESPECIAIS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "FA + Pré-excitação (WPW)",
+        "items": [
+          "ECG: FA com QRS largo, bizarro e muito rápido (irregular)",
+          "EVITAR bloqueadores do nó AV: betabloqueador, BCC, digoxina e adenosina",
+          "Esses fármacos favorecem condução pela via acessória -> FV",
+          "Tratamento: cardioversão elétrica se instável",
+          "Estável: procainamida ou amiodarona (com cautela)",
+          "Encaminhar para ablação da via acessória"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "FA Secundária / Reversível",
+        "items": [
+          "Tratar a causa de base muitas vezes reverte a FA",
+          "Sepse, TEP, IAM, hipertireoidismo, distúrbio eletrolítico (K+, Mg++)",
+          "Repor potássio e magnésio (alvo K+ >4, Mg >2)",
+          "Holiday heart: FA após libação alcoólica em jovem sem cardiopatia",
+          "Pós-operatório: controle de FC + corrigir distúrbios",
+          "Evitar cardioversão de FA crônica disfarçada de aguda sem anticoagulação"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA E ALTA",
+      "titulo": "FECHAMENTO DO CASO",
+      "items": [
+        "ECG de 12 derivações + monitorização; tratar gatilho reversível",
+        "Decidir ritmo vs frequência pelo tempo de FA, sintomas e cardiopatia",
+        "Instável: cardioversão elétrica sincronizada imediata",
+        "Calcular CHA2DS2-VASc e HAS-BLED; iniciar anticoagulação quando indicado",
+        "Respeitar a regra das 48h antes de cardioversão eletiva (ou ECO transesofágico)",
+        "Alta: anticoagulação definida, controle de FC, encaminhar à cardiologia e investigar etiologia"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com FA de alta resposta ventricular, PA 70/40, dor torácica e rebaixamento. Qual a conduta imediata?",
+      "alternativas": [
+        "Metoprolol IV para controle de frequência",
+        "Cardioversão elétrica sincronizada imediata com sedação",
+        "Amiodarona em bomba de infusão por 24h",
+        "Digoxina IV e observação",
+        "Adenosina 6 mg IV"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente estável com FA de início há 5 dias, CHA2DS2-VASc 4, deseja-se cardioverter. Qual a conduta correta quanto à anticoagulação?",
+      "alternativas": [
+        "Cardioverter imediatamente sem anticoagulação",
+        "Anticoagular por 3 semanas antes (ou ECO transesofágico excluindo trombo) e manter por pelo menos 4 semanas após",
+        "Cardioverter e anticoagular apenas se houver embolia",
+        "Apenas AAS antes do procedimento",
+        "Heparina em bolus único no momento da cardioversão é suficiente"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente jovem com FA, QRS largo, muito rápido e irregular, com padrão de pré-excitação (WPW). Qual fármaco deve ser EVITADO?",
+      "alternativas": [
+        "Procainamida",
+        "Amiodarona",
+        "Cardioversão elétrica",
+        "Diltiazem (bloqueador do nó AV)",
+        "Sedação para cardioversão"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Idoso de 80 anos com FA permanente, assintomático, FC 95 bpm em repouso. Qual a melhor estratégia?",
+      "alternativas": [
+        "Cardioversão elétrica eletiva",
+        "Controle de frequência (betabloqueador ou BCC) com meta de FC < 110 bpm",
+        "Amiodarona para reverter ao ritmo sinusal",
+        "Propafenona pill-in-the-pocket",
+        "Ablação imediata"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente com FA aguda e fração de ejeção reduzida (IC). Qual droga de controle de frequência deve ser EVITADA?",
+      "alternativas": [
+        "Verapamil ou diltiazem (BCC não-diidropiridínicos)",
+        "Betabloqueador",
+        "Digoxina",
+        "Amiodarona",
+        "Sulfato de magnésio"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "FA com instabilidade (hipotensão, dor torácica isquêmica, EAP ou rebaixamento atribuíveis à arritmia) exige cardioversão elétrica sincronizada imediata, sob sedação. Drogas de controle de frequência ou ritmo são para o paciente estável."},
+    {"resposta": "B", "comentario": "FA >= 48h (aqui 5 dias) com desejo de cardioversão: anticoagular por 3 semanas antes OU realizar ECO transesofágico para excluir trombo atrial, e manter anticoagulação por pelo menos 4 semanas após (atordoamento atrial pós-cardioversão favorece trombo). CHA2DS2-VASc 4 também indica anticoagulação de longo prazo."},
+    {"resposta": "D", "comentario": "Na FA pré-excitada (WPW), os bloqueadores do nó AV (betabloqueador, BCC como diltiazem/verapamil, digoxina e adenosina) são contraindicados: favorecem a condução pela via acessória, podendo degenerar em fibrilação ventricular. Usar cardioversão (instável) ou procainamida/amiodarona (estável)."},
+    {"resposta": "B", "comentario": "Idoso com FA permanente assintomático: a estratégia de controle de frequência é preferida, com meta leniente de FC < 110 bpm em repouso (betabloqueador ou BCC não-diidro). Controle de ritmo não traz benefício nesse perfil e expõe a riscos."},
+    {"resposta": "A", "comentario": "Na FA com IC e FEVE reduzida, os BCC não-diidropiridínicos (verapamil, diltiazem) devem ser evitados pelo efeito inotrópico negativo, que pode descompensar a IC. Preferir betabloqueador (com cautela), digoxina (adjuvante) ou amiodarona."}
+  ]
+}

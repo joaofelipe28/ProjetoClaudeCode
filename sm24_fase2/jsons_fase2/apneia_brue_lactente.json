@@ -1,0 +1,177 @@
+{
+  "slug": "apneia_brue_lactente",
+  "titulo": "Apneia e BRUE no Lactente",
+  "especialidade": "PEDIATRIA",
+  "chapter_subject": "BRUE (Evento Breve Resolvido Inexplicado) e Apneia no Lactente",
+  "chapter_bar": "BRUE — ESTRATIFICAR BAIXO vs ALTO RISCO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "DEFINIÇÃO DE BRUE",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Detalhe"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["O que é BRUE", "Brief Resolved Unexplained Event: episódio breve (< 1 min), já resolvido, em lactente < 1 ano, sem explicação após anamnese e exame"],
+        ["Componentes", "Um ou mais: cianose/palidez; ausência/irregularidade ou diminuição da respiração; alteração do tônus (hiper ou hipotonia); alteração da responsividade"],
+        ["Substitui o termo", "Antigo ALTE (apparent life-threatening event)"],
+        ["Pré-requisito", "O lactente está ASSINTOMÁTICO e com exame NORMAL no momento da avaliação"],
+        ["Se há explicação", "NÃO é BRUE — investigar/tratar a causa (refluxo, infecção, convulsão, etc.)"],
+        ["Apneia patológica", "Pausa > 20s OU pausa mais curta com cianose/bradicardia/hipotonia"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "ESTRATIFICAÇÃO DE RISCO (BAIXO vs ALTO)",
+      "section_color": "red",
+      "titulo": "BRUE DE BAIXO RISCO PODE TER ALTA — ALTO RISCO INVESTIGA",
+      "items": [
+        "BAIXO RISCO (todos): idade > 60 dias; nascido >= 32 semanas e idade gestacional corrigida >= 45 semanas; primeiro evento; duração < 1 min; sem RCP por profissional; sem achados preocupantes na anamnese/exame",
+        "BRUE de baixo risco: não exige exames extensos nem internação de rotina — orientar, observação breve, considerar oximetria/ECG e compartilhar a decisão com a família",
+        "ALTO RISCO: idade < 60 dias, prematuridade, evento prolongado/recorrente, necessidade de RCP, ou achados anormais",
+        "BRUE de alto risco: internar e investigar conforme a suspeita",
+        "Sempre considerar e afastar MAUS-TRATOS (trauma não acidental) — sinais incompatíveis, eventos repetidos",
+        "Não 'medicalizar' o BRUE de baixo risco com exames desnecessários"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DO EVENTO NO LACTENTE",
+      "title": "EVENTO RESOLVIDO -> É BRUE? RISCO?",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Lactente < 1 ano com episódio súbito já resolvido\nAnamnese detalhada + exame físico completo", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Há causa explicável? (refluxo, infecção, convulsão, etc.)\nSIM -> investigar/tratar a causa (NÃO é BRUE)", "color": "teal", "font_size": 5.3},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "BRUE de BAIXO risco:\norientar, observação breve\noximetria/ECG opcionais\nalta com retorno", "color": "green", "font_size": 5.1},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "BRUE de ALTO risco:\ninternar + investigar\nconforme a suspeita\nmonitorização", "color": "red", "font_size": 5.2},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Sempre considerar maus-tratos; orientar os pais\n(treino de RCP básica, sinais de alerta)", "color": "orange", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS A CONSIDERAR (QUANDO HÁ EXPLICAÇÃO)",
+      "section_color": "orange",
+      "headers": ["Sistema", "Causas"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.28, 0.72],
+      "rows": [
+        ["Gastrointestinal", "Refluxo gastroesofágico (causa frequente), engasgo"],
+        ["Respiratório", "Infecção (VSR, coqueluche), aspiração, obstrução de via aérea"],
+        ["Neurológico", "Convulsão, apneia central"],
+        ["Cardíaco", "Arritmia (QT longo), cardiopatia"],
+        ["Infeccioso/metabólico", "Sepse, distúrbios metabólicos, hipoglicemia"],
+        ["Não acidental", "Maus-tratos (sufocação) — investigar sinais incompatíveis"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "INVESTIGAÇÃO E ORIENTAÇÕES",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Alto Risco — Investigar",
+        "items": [
+          "Monitorização cardiorrespiratória e oximetria",
+          "ECG (excluir QT longo / arritmia)",
+          "Exames direcionados pela suspeita (glicemia, eletrólitos, hemograma, infecção)",
+          "Considerar coqueluche (lactente jovem), VSR e sepse",
+          "Avaliar convulsão (EEG/imagem) se indicado",
+          "Investigar maus-tratos quando houver suspeita"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Baixo Risco — Orientar",
+        "items": [
+          "Compartilhar a decisão com a família (incerteza e baixo risco de recorrência grave)",
+          "Observação breve no serviço (oximetria seriada)",
+          "Não internar nem fazer bateria de exames de rotina",
+          "Orientar sinais de alerta para retorno",
+          "Oferecer treinamento de RCP básica aos pais",
+          "Posição supina para dormir (prevenção de morte súbita)"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Anamnese detalhada + exame completo: o lactente deve estar assintomático e normal para ser BRUE",
+        "Se há causa explicável, NÃO é BRUE — investigar e tratar a causa",
+        "Estratificar baixo vs alto risco (idade, prematuridade, duração, RCP, achados)",
+        "Baixo risco: orientar, observação breve, sem exames/internação de rotina",
+        "Alto risco: internar, monitorizar e investigar conforme a suspeita",
+        "Sempre considerar maus-tratos e orientar os pais (RCP, posição supina, sinais de alerta)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "SBP / Adaptada",
+      "enunciado": "Lactente de 4 meses, nascido a termo, com episódio único de cianose de 20 segundos que resolveu espontaneamente, agora assintomático e com exame normal. Sem RCP. Qual a conduta?",
+      "alternativas": [
+        "Internação e bateria completa de exames",
+        "BRUE de baixo risco — orientar, observação breve, exames de rotina não são necessários, alta com retorno",
+        "Iniciar anticonvulsivante empírico",
+        "Antibiótico de amplo espectro",
+        "Cirurgia antirrefluxo"
+      ]
+    },
+    {
+      "source": "SBP / Adaptada",
+      "enunciado": "Qual característica classifica um BRUE como de ALTO risco?",
+      "alternativas": [
+        "Idade maior que 60 dias",
+        "Idade menor que 60 dias, prematuridade, evento prolongado/recorrente ou necessidade de RCP",
+        "Primeiro episódio breve",
+        "Exame físico normal",
+        "Nascimento a termo"
+      ]
+    },
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Durante a avaliação de um possível BRUE, identifica-se que o evento foi causado por refluxo gastroesofágico evidente. Qual a implicação?",
+      "alternativas": [
+        "Continua sendo classificado como BRUE",
+        "NÃO é BRUE (há causa explicável) — deve-se investigar/tratar a causa identificada",
+        "Indica internação em UTI obrigatória",
+        "Exige RCP imediata",
+        "Define maus-tratos"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "O que NÃO deve faltar na avaliação de um evento no lactente, mesmo sem sinais evidentes?",
+      "alternativas": [
+        "Tomografia de crânio de rotina",
+        "Considerar a possibilidade de maus-tratos (trauma não acidental)",
+        "Antibiótico empírico para todos",
+        "Internação obrigatória de todos",
+        "Eletroencefalograma de rotina"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual orientação de prevenção deve ser dada aos pais de um lactente após um BRUE de baixo risco?",
+      "alternativas": [
+        "Colocar o bebê para dormir em decúbito ventral",
+        "Posição supina para dormir e oferecer treinamento de RCP básica, com sinais de alerta para retorno",
+        "Suspender o aleitamento materno",
+        "Manter o bebê monitorizado em casa com aparelho hospitalar",
+        "Restringir as vacinas"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Lactente > 60 dias, a termo, primeiro evento breve (< 1 min), sem RCP, assintomático e com exame normal = BRUE de BAIXO risco. A conduta é orientar e fazer observação breve, sem internação nem exames extensos de rotina, compartilhando a decisão com a família."},
+    {"resposta": "B", "comentario": "BRUE de alto risco: idade < 60 dias, prematuridade (< 32 semanas / idade corrigida < 45 semanas), evento prolongado ou recorrente, necessidade de RCP por profissional, ou achados anormais na anamnese/exame. Esses exigem internação e investigação."},
+    {"resposta": "B", "comentario": "Por definição, BRUE é um evento INEXPLICADO. Se há uma causa identificável (como refluxo evidente), NÃO se trata de BRUE — deve-se investigar e tratar a causa específica encontrada."},
+    {"resposta": "B", "comentario": "Em todo evento no lactente, deve-se sempre considerar a possibilidade de maus-tratos (trauma não acidental/sufocação), especialmente quando a história é incompatível ou há eventos repetidos. Exames de rotina como TC/EEG não são indicados para todos."},
+    {"resposta": "B", "comentario": "Após BRUE de baixo risco, orienta-se a posição supina para dormir (prevenção de morte súbita do lactente) e oferece-se treinamento de RCP básica aos pais, com orientação dos sinais de alerta para retorno ao serviço."}
+  ]
+}

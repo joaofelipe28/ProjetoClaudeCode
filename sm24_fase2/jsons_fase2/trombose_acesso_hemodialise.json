@@ -1,0 +1,175 @@
+{
+  "slug": "trombose_acesso_hemodialise",
+  "titulo": "Trombose de Acesso para Hemodiálise",
+  "especialidade": "CIRURGIA VASCULAR",
+  "chapter_subject": "Disfunção e Trombose de Fístula/Prótese de Hemodiálise — Conduta de Urgência",
+  "chapter_bar": "ACESSO DE HD — SALVAR A FÍSTULA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "TIPOS DE ACESSO E PROBLEMAS",
+      "section_color": "navy",
+      "headers": ["Acesso", "Características", "Complicações"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["FAV nativa", "Anastomose artéria-veia; melhor patência e menor infecção", "Estenose, trombose, baixo desenvolvimento, aneurisma"],
+        ["Prótese (enxerto PTFE)", "Quando não há veias nativas adequadas", "Maior risco de trombose e infecção que a FAV"],
+        ["Cateter venoso central", "Acesso temporário/permanente", "Infecção (a mais grave), trombose, estenose venosa central"],
+        ["Disfunção (sem trombose)", "Estenose: queda do fluxo, dificuldade de punção, pressões venosas altas", "Tratar (angioplastia) para prevenir trombose"],
+        ["Trombose", "Ausência de frêmito/sopro, cordão endurecido", "Urgência para salvar o acesso"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "TROMBOSE DO ACESSO — JANELA PARA SALVAR",
+      "section_color": "red",
+      "titulo": "FRÊMITO E SOPRO AUSENTES = TROMBOSE",
+      "items": [
+        "Trombose: desaparecimento do frêmito (thrill) e do sopro, com cordão endurecido e doloroso no trajeto do acesso",
+        "É uma urgência: quanto antes a desobstrução (trombectomia ou trombólise + tratar a estenose subjacente), maior a chance de salvar o acesso",
+        "A maioria das tromboses ocorre sobre uma ESTENOSE — corrigir a estenose (angioplastia) é essencial para não retrombosar",
+        "Encaminhar à cirurgia vascular / radiologia intervencionista com urgência",
+        "Avaliar a necessidade de diálise imediata (hipercalemia, sobrecarga, uremia) — pode exigir cateter temporário",
+        "Não puncionar repetidamente um acesso trombosado/infectado"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DO ACESSO DISFUNCIONAL/TROMBOSADO",
+      "title": "ACESSO DE HD — AVALIAR + INTERVIR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Paciente em HD com problema no acesso\nPalpar FRÊMITO e auscultar SOPRO; inspecionar", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Frêmito/sopro ausentes + cordão endurecido = TROMBOSE\nSinais flogísticos/febre = avaliar infecção", "color": "red", "font_size": 5.3},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Trombose:\nurgência vascular/intervencionista\n(trombectomia/trombólise)\n+ tratar a estenose", "color": "orange", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Avaliar necessidade de\nDIÁLISE imediata\n(K+, sobrecarga, uremia)\n-> cateter temporário se preciso", "color": "teal", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Infecção do acesso: hemoculturas + antibiótico (cobrir S. aureus)\nInfecção de prótese/cateter pode exigir remoção", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "OUTRAS COMPLICAÇÕES DO ACESSO",
+      "section_color": "orange",
+      "headers": ["Complicação", "Quadro", "Conduta"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Sangramento", "Pós-punção ou ruptura de pseudoaneurisma", "Compressão digital (não ocluir totalmente); cirurgia se ruptura"],
+        ["Infecção", "Calor, rubor, secreção, febre; bacteremia (cateter)", "Hemoculturas + antibiótico anti-S. aureus; remover cateter/prótese se necessário"],
+        ["Isquemia da mão (roubo)", "Dor, palidez, frialdade distais ao acesso", "Avaliação vascular; pode exigir correção cirúrgica"],
+        ["Pseudoaneurisma/aneurisma", "Dilatação pulsátil; risco de ruptura se pele fina", "Avaliação cirúrgica; risco de sangramento"],
+        ["Estenose venosa central", "Edema do membro/face (cateter prévio)", "Angioplastia; evitar punções que agravem"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "URGÊNCIAS ASSOCIADAS E CUIDADOS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Sangramento do Acesso",
+        "items": [
+          "Compressão digital firme, mas SEM ocluir totalmente o acesso (preservar o fluxo)",
+          "Elevar o membro; manter a compressão por tempo suficiente",
+          "Ruptura de aneurisma/pseudoaneurisma com sangramento ativo = emergência cirúrgica",
+          "Torniquete proximal apenas como medida temporária extrema se hemorragia incontrolável",
+          "Corrigir distúrbios de coagulação se presentes",
+          "Encaminhar à cirurgia vascular"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Diálise de Urgência (se preciso)",
+        "items": [
+          "Indicações (AEIOU): acidose, hipercalemia, intoxicação, sobrecarga, uremia",
+          "Acesso trombosado/infectado pode exigir cateter temporário",
+          "Hipercalemia com ECG alterado: gluconato de cálcio + medidas + diálise",
+          "Evitar puncionar acesso infectado",
+          "Comunicar a nefrologia e a vascular",
+          "Planejar a recuperação do acesso definitivo"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Examinar o acesso: frêmito, sopro, cordão, sinais flogísticos e isquemia da mão",
+        "Frêmito/sopro ausentes = trombose: urgência para tentar salvar o acesso",
+        "Encaminhar à cirurgia vascular / radiologia intervencionista precocemente",
+        "Tratar a estenose subjacente (angioplastia) para evitar retrombose",
+        "Avaliar necessidade de diálise imediata (hipercalemia, sobrecarga, uremia)",
+        "Infecção: hemoculturas + antibiótico anti-S. aureus; sangramento: compressão digital sem ocluir totalmente"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente em hemodiálise nota que o frêmito da fístula desapareceu, com cordão endurecido e doloroso. Qual a conduta?",
+      "alternativas": [
+        "Observar e retornar para a próxima sessão de diálise",
+        "Urgência: encaminhar à cirurgia vascular/intervencionista para desobstrução, tratando a estenose subjacente",
+        "Apenas analgesia",
+        "Puncionar o acesso repetidamente para testar",
+        "Antibiótico oral e alta"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "A maioria das tromboses de fístula arteriovenosa ocorre sobre qual lesão de base, que precisa ser tratada para evitar retrombose?",
+      "alternativas": [
+        "Aneurisma",
+        "Estenose",
+        "Infecção",
+        "Isquemia da mão",
+        "Edema do membro"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Diante de sangramento no local de punção da fístula, qual a conduta correta?",
+      "alternativas": [
+        "Ocluir totalmente o acesso com torniquete apertado de rotina",
+        "Compressão digital firme SEM ocluir totalmente o acesso (preservando o fluxo)",
+        "Não comprimir e elevar apenas",
+        "Suturar imediatamente no PS sem avaliação",
+        "Aplicar calor local"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente em HD com acesso trombosado e hipercalemia com alteração no ECG. Qual a prioridade?",
+      "alternativas": [
+        "Aguardar a recuperação do acesso",
+        "Tratar a hipercalemia (gluconato de cálcio + medidas) e providenciar diálise de urgência, com cateter temporário se necessário",
+        "Apenas dieta pobre em potássio",
+        "Antibiótico empírico",
+        "Repetir o ECG em 6 horas"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual a complicação mais grave associada ao cateter venoso central para hemodiálise?",
+      "alternativas": [
+        "Edema do membro",
+        "Infecção/bacteremia (com risco de sepse)",
+        "Hematoma leve",
+        "Dor local transitória",
+        "Frêmito aumentado"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "O desaparecimento do frêmito com cordão endurecido indica trombose da fístula — uma urgência. Deve-se encaminhar prontamente à cirurgia vascular/radiologia intervencionista para desobstrução (trombectomia/trombólise) e tratamento da estenose subjacente, a fim de salvar o acesso."},
+    {"resposta": "B", "comentario": "A maioria das tromboses de FAV/prótese ocorre sobre uma estenose preexistente (geralmente na anastomose ou no trajeto venoso). Corrigir a estenose (angioplastia) é essencial para evitar a retrombose precoce."},
+    {"resposta": "B", "comentario": "No sangramento do acesso, faz-se compressão digital firme SEM ocluir totalmente o fluxo (para não trombosar a fístula). Ruptura de aneurisma com sangramento ativo é emergência cirúrgica; o torniquete proximal é medida extrema temporária."},
+    {"resposta": "B", "comentario": "A hipercalemia com alteração no ECG é a prioridade imediata (risco de arritmia fatal): gluconato de cálcio + medidas de redistribuição, seguida de diálise de urgência. Com o acesso trombosado, pode ser necessário um cateter temporário."},
+    {"resposta": "B", "comentario": "A complicação mais grave do cateter venoso central para HD é a infecção/bacteremia, que pode evoluir para sepse. Por isso a FAV nativa é preferida (menor risco infeccioso) e o cateter infectado frequentemente precisa ser removido."}
+  ]
+}

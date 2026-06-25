@@ -1,0 +1,177 @@
+{
+  "slug": "estado_hiperglicemico_hiperosmolar",
+  "titulo": "Estado Hiperglicêmico Hiperosmolar (EHH)",
+  "especialidade": "ENDOCRINOLOGIA",
+  "chapter_subject": "EHH — Diagnóstico, Hidratação, Insulina e Diferença para a CAD",
+  "chapter_bar": "EHH — HIDRATAR MUITO, INSULINA DEPOIS",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "EHH vs CETOACIDOSE DIABÉTICA (CAD)",
+      "section_color": "navy",
+      "headers": ["Aspecto", "EHH", "CAD"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Glicemia", "Muito alta (> 600 mg/dL)", "> 250 mg/dL"],
+        ["Osmolaridade", "Alta (> 320 mOsm/kg)", "Variável"],
+        ["pH / bicarbonato", "pH > 7,3 e HCO3 > 18 (sem acidose significativa)", "pH < 7,3 e HCO3 baixo (acidose)"],
+        ["Cetose", "Ausente ou mínima", "Importante"],
+        ["Perfil", "Idoso, DM2, instalação em dias", "Mais jovem, DM1, instalação em horas"],
+        ["Desidratação", "Profunda (déficit de 8-12 L)", "Importante, mas menor"],
+        ["Mortalidade", "Maior (idoso, comorbidades)", "Menor"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PILAR DO TRATAMENTO: HIDRATAÇÃO",
+      "section_color": "red",
+      "titulo": "VOLUME PRIMEIRO — INSULINA DEPOIS",
+      "items": [
+        "O déficit de volume no EHH é enorme (8-12 L) — a reposição vigorosa de fluidos é o tratamento mais importante",
+        "Só a hidratação já reduz substancialmente a glicemia (diluição + melhora da perfusão renal e excreção)",
+        "Iniciar com salina 0,9%; trocar para 0,45% se sódio corrigido alto",
+        "Adicionar glicose ao soro quando a glicemia chegar a ~250-300 mg/dL (evitar queda abrupta da osmolaridade)",
+        "Insulina em dose menor que na CAD; NÃO iniciar insulina antes de repor volume e checar o potássio",
+        "Corrigir a osmolaridade LENTAMENTE (risco de edema cerebral se queda rápida)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DO EHH",
+      "title": "EHH — FLUIDO, K+, INSULINA, GATILHO",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Glicemia > 600 + osmolaridade > 320 + sem acidose/cetose\nIdoso com rebaixamento e desidratação grave", "color": "navy", "font_size": 5.3},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "HIDRATAÇÃO vigorosa: salina 0,9% 1-1,5 L na 1a hora\nReavaliar volemia, sódio corrigido e diurese", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Potássio:\nK < 3,3 -> repor ANTES da insulina\nK 3,3-5 -> repor no soro\nK > 5 -> aguardar", "color": "orange", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Insulina regular IV\n0,05-0,1 U/kg/h\napós volume + K adequado\nGlicose no soro se < 300", "color": "teal", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Buscar e tratar o GATILHO (infecção, IAM, AVC, má adesão)\nProfilaxia de TEV; reduzir osmolaridade lentamente", "color": "green", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "PRESCRIÇÃO — EHH",
+      "section_color": "orange",
+      "titulo": "FLUIDOS, POTÁSSIO E INSULINA",
+      "items": [
+        "Salina 0,9%: 15-20 mL/kg (cerca de 1-1,5 L) na 1a hora; depois 250-500 mL/h conforme volemia",
+        "Trocar para salina 0,45% se o sódio corrigido estiver normal/alto",
+        "Quando glicemia ~250-300 mg/dL: associar soro glicosado 5% e reduzir a velocidade de queda",
+        "Potássio: repor para manter 4-5 mEq/L; se K < 3,3 repor ANTES da insulina (risco de arritmia)",
+        "Insulina regular: 0,05-0,1 U/kg/h IV em bomba, após reposição de volume e potássio (sem bolus de rotina)",
+        "Meta: reduzir glicemia ~50-75 mg/dL/h; evitar queda abrupta da osmolaridade",
+        "Profilaxia de TEV (hiperviscosidade) e monitorização contínua de eletrólitos"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "GATILHOS E COMPLICAÇÕES",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Fatores Precipitantes",
+        "items": [
+          "Infecção (pneumonia, ITU, sepse) — a mais comum",
+          "Evento agudo: IAM, AVC, TEP",
+          "Má adesão ou suspensão da medicação do diabetes",
+          "Medicamentos: corticoide, diuréticos tiazídicos",
+          "Diabetes recém-diagnosticado no idoso",
+          "Restrição de acesso à água (acamado, demência)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Complicações e Cuidados",
+        "items": [
+          "Edema cerebral se a osmolaridade cair rápido demais",
+          "Tromboembolismo por hiperviscosidade (fazer profilaxia)",
+          "Hipopotassemia com a insulina (monitorar e repor)",
+          "Hipoglicemia se não associar glicose ao atingir 250-300",
+          "Lesão renal aguda pré-renal (corrigir com volume)",
+          "Mortalidade elevada — tratar comorbidades e o gatilho"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Reconhecer: glicemia > 600 + osmolaridade > 320 + sem acidose/cetose significativa, idoso desidratado",
+        "Hidratação vigorosa é o pilar (déficit de 8-12 L) — começar pela salina 0,9%",
+        "Potássio: repor antes da insulina se K < 3,3; manter 4-5 mEq/L",
+        "Insulina IV em dose menor que na CAD, após volume e potássio",
+        "Associar glicose ao soro quando a glicemia chegar a ~250-300 mg/dL",
+        "Buscar e tratar o gatilho; profilaxia de TEV; reduzir a osmolaridade lentamente"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Idoso com DM2, glicemia 820 mg/dL, osmolaridade 350 mOsm/kg, pH 7,35, sem cetose, muito desidratado e sonolento. Qual o pilar do tratamento?",
+      "alternativas": [
+        "Insulina IV em bolus alto imediato",
+        "Hidratação vigorosa com salina 0,9% (reposição do grande déficit de volume)",
+        "Bicarbonato de sódio IV",
+        "Glicose hipertônica",
+        "Diurético para reduzir a osmolaridade"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual achado diferencia o EHH da cetoacidose diabética?",
+      "alternativas": [
+        "Glicemia elevada",
+        "Ausência de acidose e de cetose significativas, com osmolaridade muito alta",
+        "Presença de desidratação",
+        "Necessidade de insulina",
+        "Ocorrência apenas em jovens"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Antes de iniciar a insulina no EHH, qual eletrólito deve ser verificado e, se baixo, corrigido?",
+      "alternativas": [
+        "Sódio",
+        "Potássio (repor se < 3,3 antes da insulina)",
+        "Cloro",
+        "Cálcio",
+        "Fósforo apenas"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Por que a osmolaridade deve ser reduzida lentamente no EHH?",
+      "alternativas": [
+        "Para evitar hiperglicemia de rebote",
+        "Para evitar edema cerebral causado pela queda abrupta da osmolaridade",
+        "Para acelerar a recuperação renal",
+        "Porque a insulina não age em osmolaridade alta",
+        "Para reduzir a necessidade de potássio"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o fator precipitante mais comum do EHH?",
+      "alternativas": [
+        "Infecção",
+        "Exercício físico",
+        "Hipotireoidismo",
+        "Excesso de insulina",
+        "Hipertensão arterial"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "No EHH o déficit de volume é enorme (8-12 L). A hidratação vigorosa com salina 0,9% é o pilar do tratamento — só ela já reduz bastante a glicemia. A insulina entra depois, em dose menor que na CAD, após repor volume e checar o potássio."},
+    {"resposta": "B", "comentario": "O EHH se caracteriza por glicemia muito alta e osmolaridade muito elevada SEM acidose nem cetose significativas (pH > 7,3, HCO3 > 18). Na CAD há acidose metabólica e cetose importantes."},
+    {"resposta": "B", "comentario": "O potássio deve ser verificado antes da insulina: se K < 3,3 mEq/L, repor ANTES de iniciar a insulina, pois a insulina desloca o potássio para o intracelular e pode causar hipopotassemia grave com arritmia."},
+    {"resposta": "B", "comentario": "A redução rápida da osmolaridade pode causar edema cerebral. Por isso a correção deve ser lenta (glicemia caindo ~50-75 mg/dL/h, com glicose associada ao soro ao atingir 250-300 mg/dL e atenção ao sódio)."},
+    {"resposta": "A", "comentario": "A infecção (pneumonia, ITU, sepse) é o fator precipitante mais comum do EHH. Outros: IAM, AVC, má adesão à medicação e fármacos como corticoides e tiazídicos. Buscar e tratar o gatilho é essencial."}
+  ]
+}

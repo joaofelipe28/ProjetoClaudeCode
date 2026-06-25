@@ -1,0 +1,175 @@
+{
+  "slug": "sepse_foco_urinario_pielonefrite",
+  "titulo": "Sepse de Foco Urinário e Pielonefrite",
+  "especialidade": "INFECTOLOGIA",
+  "chapter_subject": "Pielonefrite Aguda e Urosepse — Diagnóstico, Antibiótico e Desobstrução",
+  "chapter_bar": "UROSEPSE — ATB PRECOCE + DESOBSTRUIR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "ESPECTRO DA INFECÇÃO URINÁRIA ALTA",
+      "section_color": "navy",
+      "headers": ["Quadro", "Características", "Manejo"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.42, 0.34],
+      "rows": [
+        ["Pielonefrite não complicada", "Mulher hígida, não gestante, trato urinário normal", "Frequentemente ambulatorial (VO)"],
+        ["Pielonefrite complicada", "Homem, gestante, DM, obstrução, cateter, anomalia, imunossupressão", "Internação e ATB IV em muitos casos"],
+        ["Urosepse", "Pielonefrite + disfunção orgânica (sepse)", "ATB IV precoce + ressuscitação + buscar obstrução"],
+        ["Pielonefrite obstrutiva", "Cálculo/obstrução + infecção (pionefrose)", "EMERGÊNCIA: desobstrução urgente (nefrostomia/cateter)"],
+        ["Abscesso renal/perinéfrico", "Febre persistente apesar de ATB", "Imagem (TC) + drenagem"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O QUE NÃO PODE FALHAR NA UROSEPSE",
+      "section_color": "red",
+      "titulo": "ANTIBIÓTICO PRECOCE + DESCARTAR OBSTRUÇÃO",
+      "items": [
+        "Sepse com foco urinário: antibiótico de amplo espectro na 1a hora + ressuscitação volêmica guiada por metas + lactato",
+        "Hemoculturas e urocultura ANTES do antibiótico (mas sem atrasar o ATB)",
+        "Cálculo/obstrução + infecção = pionefrose: DRENAGEM URGENTE (nefrostomia percutânea ou cateter duplo J) — o antibiótico isolado não resolve",
+        "Não atrasar a desobstrução em paciente séptico com obstrução (risco de morte e perda do rim)",
+        "Avaliar gravidade (qSOFA/SOFA) e o nível de cuidado (UTI se choque/lactato alto)",
+        "Reavaliar e descalonar o antibiótico conforme a cultura e o antibiograma"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA PIELONEFRITE/UROSEPSE",
+      "title": "FOCO URINÁRIO — TRATAR + DESOBSTRUIR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Febre + dor lombar + sintomas urinários +/- Giordano +\nsinais de sepse? Coletar culturas + lactato", "color": "navy", "font_size": 5.3},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Antibiótico de amplo espectro PRECOCE\n+ ressuscitação volêmica se sepse", "color": "red", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Imagem (USG/TC):\nhá obstrução/cálculo?\nSIM -> DRENAGEM URGENTE\n(nefrostomia/duplo J)", "color": "orange", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Sem obstrução:\ntratamento clínico\nInternar se complicada/sepse\nVO se não complicada", "color": "teal", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Reavaliar em 48-72h; descalonar pela cultura\nFebre persistente -> pensar em abscesso (TC)", "color": "green", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTIBIOTICOTERAPIA EMPÍRICA",
+      "section_color": "orange",
+      "titulo": "AJUSTAR PELO RISCO E PELA CULTURA",
+      "items": [
+        "Pielonefrite não complicada (ambulatorial): ciprofloxacino VO OU ceftriaxona dose inicial e depois VO — conforme perfil de resistência local",
+        "Pielonefrite complicada / internação: ceftriaxona 1-2 g IV/dia OU ciprofloxacino IV",
+        "Urosepse / grave: piperacilina-tazobactam OU cefepima; carbapenêmico se risco de ESBL",
+        "Risco de Pseudomonas (cateter, internação, manipulação): cefepima ou piperacilina-tazobactam",
+        "Suspeita de enterococo (idoso, cateter): considerar ampicilina associada",
+        "Gestante: ceftriaxona IV (evitar quinolona); internar pela maior taxa de complicação",
+        "Duração: 7 dias (quinolona) a 10-14 dias conforme gravidade; descalonar pela cultura"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "POPULAÇÕES E COMPLICAÇÕES",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Quando Internar",
+        "items": [
+          "Sepse/instabilidade hemodinâmica",
+          "Vômitos/incapacidade de VO, desidratação",
+          "Gestante com pielonefrite",
+          "Obstrução do trato urinário",
+          "Imunossupressão, DM descompensado, comorbidade grave",
+          "Falha do tratamento ambulatorial em 48-72h"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Sinais de Complicação",
+        "items": [
+          "Febre persistente > 72h apesar de antibiótico adequado -> abscesso (TC)",
+          "Pionefrose: rim obstruído e infectado (drenagem urgente)",
+          "Pielonefrite enfisematosa (DM): gás no parênquima — grave",
+          "Lesão renal aguda, choque séptico",
+          "Bacteremia persistente (rever foco/drenagem)",
+          "Recidiva precoce: investigar fator estrutural"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Coletar hemoculturas e urocultura antes do antibiótico (sem atrasar o ATB)",
+        "Antibiótico de amplo espectro precoce; ressuscitação volêmica e lactato na sepse",
+        "Imagem (USG/TC) para descartar obstrução em sépticos e em casos complicados",
+        "Obstrução + infecção = drenagem urgente (nefrostomia/duplo J) — o ATB isolado não basta",
+        "Internar gestante, séptico, obstruído, imunossuprimido ou com falha ambulatorial",
+        "Reavaliar em 48-72h, descalonar pela cultura e investigar abscesso se febre persistente"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com pielonefrite, cálculo obstruindo o ureter e quadro de sepse. Além do antibiótico, qual a conduta essencial?",
+      "alternativas": [
+        "Aguardar a resposta ao antibiótico por 72h",
+        "Drenagem urgente da via urinária obstruída (nefrostomia percutânea ou cateter duplo J)",
+        "Apenas hidratação",
+        "Litotripsia eletiva ambulatorial",
+        "Suspender o antibiótico e observar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Gestante com pielonefrite aguda. Qual a conduta mais adequada?",
+      "alternativas": [
+        "Tratamento ambulatorial com ciprofloxacino VO",
+        "Internação e antibiótico IV (ex.: ceftriaxona), evitando quinolona",
+        "Apenas sintomáticos",
+        "Nitrofurantoína por 3 dias",
+        "Aguardar a urocultura antes de qualquer tratamento"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Na urosepse, qual a janela ideal para o início do antibiótico de amplo espectro?",
+      "alternativas": [
+        "Após o resultado da urocultura",
+        "Na primeira hora, após coletar as culturas",
+        "Somente se a febre persistir por 24h",
+        "Apenas após a tomografia",
+        "Não é necessário antibiótico precoce"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente com pielonefrite mantém febre alta após 72h de antibiótico adequado. Qual a principal hipótese e o exame?",
+      "alternativas": [
+        "Resistência viral — sorologia",
+        "Abscesso renal/perinéfrico — tomografia de abdome",
+        "Alergia ao antibiótico — suspender tudo",
+        "Cistite simples — urocultura",
+        "Pneumonia — radiografia de tórax"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual paciente caracteriza pielonefrite COMPLICADA?",
+      "alternativas": [
+        "Mulher jovem, hígida, com trato urinário normal",
+        "Homem, gestante, diabético, com obstrução ou cateter urinário",
+        "Adolescente sem comorbidades",
+        "Paciente com cistite não complicada",
+        "Mulher com infecção urinária baixa de repetição sem febre"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Pielonefrite obstrutiva com sepse (pionefrose) exige DRENAGEM URGENTE da via urinária (nefrostomia percutânea ou cateter duplo J) além do antibiótico — o ATB isolado não resolve a coleção infectada sob pressão, e o atraso aumenta a mortalidade e o risco de perda do rim."},
+    {"resposta": "B", "comentario": "A gestante com pielonefrite deve ser internada (maior taxa de complicações, incluindo parto prematuro e sepse) e tratada com antibiótico IV, como ceftriaxona, evitando-se as quinolonas na gestação."},
+    {"resposta": "B", "comentario": "Na urosepse, o antibiótico de amplo espectro deve ser iniciado na primeira hora, após a coleta de hemoculturas e urocultura, junto com a ressuscitação volêmica — o atraso aumenta a mortalidade."},
+    {"resposta": "B", "comentario": "Febre persistente após 72h de antibiótico adequado na pielonefrite sugere abscesso renal ou perinéfrico (ou obstrução não resolvida). A tomografia de abdome é o exame para identificar a coleção, que pode requerer drenagem."},
+    {"resposta": "B", "comentario": "Pielonefrite complicada é a que ocorre em homem, gestante, diabético, imunossuprimido ou em paciente com alteração estrutural/funcional do trato urinário (obstrução, cateter, anomalia). Esses casos frequentemente exigem internação e antibiótico IV."}
+  ]
+}

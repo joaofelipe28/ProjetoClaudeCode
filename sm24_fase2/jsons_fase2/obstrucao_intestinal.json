@@ -1,0 +1,176 @@
+{
+  "slug": "obstrucao_intestinal",
+  "titulo": "Obstrução Intestinal — Bridas vs Tumor",
+  "especialidade": "CIRURGIA GERAL",
+  "chapter_subject": "Obstrução Intestinal Mecânica — Diagnóstico, Causas e Decisão Cirúrgica",
+  "chapter_bar": "OBSTRUÇÃO — DESCOMPRIMIR, RESSUSCITAR, OPERAR O ESTRANGULADO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "ALTA vs BAIXA E CAUSAS PRINCIPAIS",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Delgado (alta)", "Cólon (baixa)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Causas mais comuns", "Bridas/aderências (1a), hérnias, tumor de delgado", "Câncer colorretal (1a), volvo, diverticulite"],
+        ["Vômitos", "Precoces e biliosos", "Tardios, podem ser fecaloides"],
+        ["Distensão", "Menos intensa", "Mais intensa"],
+        ["Dor", "Cólica periumbilical", "Cólica em abdome inferior"],
+        ["Imagem", "Alças delgadas dilatadas, níveis hidroaéreos centrais", "Cólon dilatado periférico, 'grão de café' no volvo"],
+        ["Parada de eliminação", "Pode ser tardia", "Precoce (gases e fezes)"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O QUE NÃO PODE PASSAR DESPERCEBIDO",
+      "section_color": "red",
+      "titulo": "ESTRANGULAMENTO = CIRURGIA URGENTE",
+      "items": [
+        "Sinais de estrangulamento/isquemia: dor contínua e intensa (não mais em cólica), febre, taquicardia, leucocitose, acidose/lactato elevado, irritação peritoneal",
+        "Hérnia encarcerada irredutível e dolorosa = explorar com urgência",
+        "Volvo de sigmoide/ceco: risco de isquemia — desvolvulação endoscópica (sigmoide) ou cirurgia",
+        "Obstrução em alça fechada: alto risco de isquemia rápida",
+        "Pneumatose, gás portal ou pneumoperitônio na imagem = emergência cirúrgica",
+        "Na dúvida entre tratamento conservador e cirurgia, os sinais de sofrimento de alça inclinam para operar"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA OBSTRUÇÃO INTESTINAL",
+      "title": "OBSTRUÇÃO — RESSUSCITAR + DECIDIR CIRURGIA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Dor em cólica + distensão + vômitos + parada de eliminação\nExame + TC de abdome com contraste (define nível/causa/isquemia)", "color": "navy", "font_size": 5.2},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Suporte: jejum, SNG (descompressão), hidratação,\ncorrigir eletrólitos, analgesia", "color": "teal", "font_size": 5.4},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Sinais de estrangulamento/\nperfuração, hérnia encarcerada,\nalça fechada: CIRURGIA URGENTE", "color": "red", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Sem isquemia (ex.: brida parcial):\ntratamento CONSERVADOR\n+ reavaliar; teste com contraste\nhidrossolúvel pode ajudar", "color": "orange", "font_size": 4.9},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Tumor de cólon: cirurgia (ressecção/estoma) ou stent como ponte\nFalha do conservador em 24-48h -> operar", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "BRIDAS vs TUMOR — DECISÃO",
+      "section_color": "orange",
+      "headers": ["Aspecto", "Bridas/aderências", "Tumor (cólon)"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Contexto", "Cirurgia abdominal prévia (causa mais comum no delgado)", "Idoso, perda de peso, alteração do hábito intestinal, anemia"],
+        ["Conduta inicial", "Muitas resolvem com tratamento CONSERVADOR (SNG, hidratação)", "Geralmente exige tratamento cirúrgico/endoscópico"],
+        ["Tempo de observação", "24-48h; teste com contraste hidrossolúvel (gastrografina)", "Não retardar se obstrução completa/sofrimento"],
+        ["Cirurgia", "Indicada se estrangulamento, alça fechada ou falha do conservador", "Ressecção; estoma ou stent como ponte conforme o caso"],
+        ["Sinal de alarme comum", "Piora da dor, febre, leucocitose, lactato = operar", "Mesmos sinais de isquemia indicam urgência"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "SUPORTE E SITUAÇÕES ESPECIAIS",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Medidas de Suporte",
+        "items": [
+          "Jejum + sonda nasogástrica (descompressão e alívio de vômitos)",
+          "Hidratação vigorosa e correção de distúrbios (hipoK, alcalose por vômitos)",
+          "Analgesia e antiemético",
+          "Sondagem vesical para controle de diurese",
+          "Antibiótico se suspeita de isquemia/perfuração/sepse",
+          "Reavaliação clínica seriada (a evolução guia a decisão)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Diferenciais e Pseudo-obstrução",
+        "items": [
+          "Íleo paralítico (adinâmico): sem ponto de obstrução mecânica; tratar a causa",
+          "Pseudo-obstrução colônica (Ogilvie): dilatação maciça sem obstrução mecânica",
+          "Volvo de sigmoide: desvolvulação endoscópica se sem isquemia",
+          "Hérnia encarcerada: examinar todos os orifícios herniários",
+          "Bezoar, intussuscepção, corpo estranho",
+          "Sempre examinar cicatrizes e regiões herniárias"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Diagnóstico clínico + TC de abdome com contraste (nível, causa e sinais de isquemia)",
+        "Suporte: jejum, SNG, hidratação, correção de eletrólitos, analgesia",
+        "Buscar sinais de estrangulamento (dor contínua, febre, leucocitose, lactato, peritonite)",
+        "Estrangulamento/alça fechada/hérnia encarcerada/perfuração = cirurgia urgente",
+        "Bridas sem isquemia: tratamento conservador 24-48h (teste com contraste hidrossolúvel)",
+        "Tumor de cólon: cirurgia ou stent como ponte; operar se falha do conservador"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com cirurgia abdominal prévia, dor em cólica, distensão e vômitos, sem febre, leucocitose ou sinais de isquemia. TC sugere obstrução parcial por brida. Qual a conduta inicial?",
+      "alternativas": [
+        "Laparotomia imediata",
+        "Tratamento conservador (jejum, SNG, hidratação) com reavaliação em 24-48h",
+        "Colonoscopia de urgência",
+        "Alta com analgésico",
+        "Antibiótico oral e dieta livre"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual é a causa mais comum de obstrução do intestino DELGADO?",
+      "alternativas": [
+        "Câncer colorretal",
+        "Bridas/aderências (pós-operatórias)",
+        "Volvo de sigmoide",
+        "Diverticulite",
+        "Hérnia de hiato"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual achado indica estrangulamento e necessidade de cirurgia urgente na obstrução intestinal?",
+      "alternativas": [
+        "Dor em cólica intermitente que alivia",
+        "Dor contínua e intensa, febre, taquicardia, leucocitose e lactato elevado (sinais de isquemia/peritonite)",
+        "Vômitos isolados",
+        "Distensão leve sem outros sinais",
+        "Eliminação de gases preservada"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Idoso com obstrução baixa, perda de peso, anemia e alteração do hábito intestinal. Qual a causa mais provável?",
+      "alternativas": [
+        "Bridas",
+        "Câncer colorretal",
+        "Íleo paralítico",
+        "Hérnia inguinal",
+        "Bezoar"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente com volvo de sigmoide sem sinais de isquemia. Qual a conduta inicial preferida?",
+      "alternativas": [
+        "Ressecção cirúrgica imediata para todos",
+        "Desvolvulação endoscópica (descompressão), reservando a cirurgia para isquemia/recorrência",
+        "Apenas observação",
+        "Antibiótico isolado",
+        "Enema opaco terapêutico repetido"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Obstrução parcial por brida, sem sinais de isquemia, em paciente com cirurgia prévia: a maioria resolve com tratamento conservador (jejum, SNG, hidratação, correção de eletrólitos) e reavaliação em 24-48h. O teste com contraste hidrossolúvel pode predizer a resolução. Operar se surgirem sinais de sofrimento ou falha."},
+    {"resposta": "B", "comentario": "As bridas/aderências (geralmente pós-operatórias) são a causa mais comum de obstrução do intestino delgado. Por isso é fundamental investigar o antecedente de cirurgia abdominal."},
+    {"resposta": "B", "comentario": "Sinais de estrangulamento/isquemia — dor contínua e intensa (não mais em cólica), febre, taquicardia, leucocitose, lactato elevado e irritação peritoneal — indicam sofrimento de alça e necessidade de cirurgia urgente."},
+    {"resposta": "B", "comentario": "Idoso com obstrução baixa associada a perda de peso, anemia e alteração do hábito intestinal tem como causa mais provável o câncer colorretal, que é a principal causa de obstrução do cólon."},
+    {"resposta": "B", "comentario": "No volvo de sigmoide sem sinais de isquemia, a conduta inicial preferida é a desvolvulação endoscópica (descompressão), que resolve o quadro agudo. A cirurgia fica reservada para casos com isquemia, falha da desvolvulação ou recorrência (sigmoidectomia eletiva)."}
+  ]
+}

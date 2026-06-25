@@ -1,0 +1,177 @@
+{
+  "slug": "trauma_raquimedular_choque_neurogenico",
+  "titulo": "Trauma Raquimedular e Choque Neurogênico",
+  "especialidade": "TRAUMA",
+  "chapter_subject": "TRM — Imobilização, Choque Neurogênico e Manejo Inicial",
+  "chapter_bar": "TRM — IMOBILIZAR + DISTINGUIR CHOQUE",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CHOQUE NEUROGÊNICO vs CHOQUE MEDULAR vs HEMORRÁGICO",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Choque neurogênico", "Choque hemorrágico"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Mecanismo", "Perda do tônus simpático (lesão cervical/torácica alta)", "Perda de volume (sangramento)"],
+        ["Pressão", "Hipotensão", "Hipotensão"],
+        ["Frequência cardíaca", "BRADICARDIA (paradoxal)", "Taquicardia"],
+        ["Pele", "Quente e seca (vasodilatação)", "Fria e pegajosa"],
+        ["Tratamento", "Volume + VASOPRESSOR (noradrenalina), atropina se bradicardia", "Controle do sangramento + reposição"],
+        ["Choque medular", "Termo neurológico: arreflexia/flacidez transitória pós-trauma (não é hemodinâmico)", "—"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "REGRA DE OURO NO TRAUMA",
+      "section_color": "red",
+      "titulo": "HIPOTENSÃO NO TRAUMA É HEMORRÁGICA ATÉ PROVA EM CONTRÁRIO",
+      "items": [
+        "Mesmo com suspeita de lesão medular, EXCLUIR hemorragia primeiro (FAST, exame, fontes de sangramento) — o choque hemorrágico mata mais rápido",
+        "Choque neurogênico é diagnóstico de exclusão: hipotensão + bradicardia + pele quente, em lesão cervical/torácica alta",
+        "Imobilização da coluna (colar cervical + prancha/maca a vácuo) desde o atendimento pré-hospitalar",
+        "Manter a PA adequada para perfundir a medula lesada (evitar a lesão secundária por hipotensão e hipóxia)",
+        "Corticoide (metilprednisolona) NÃO é recomendado de rotina no TRM (mais risco que benefício)",
+        "Atenção à lesão cervical alta (C3-C5): risco de insuficiência respiratória (nervo frênico)"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ATENDIMENTO INICIAL (ABCDE) NO TRM",
+      "title": "TRM — VIA AÉREA COM CONTROLE CERVICAL",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "A: via aérea com CONTROLE CERVICAL manual + colar\nB: ventilação (lesão alta = risco respiratório)", "color": "navy", "font_size": 5.3},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "C: hipotensão? Excluir HEMORRAGIA (FAST, fontes)\nantes de assumir choque neurogênico", "color": "red", "font_size": 5.3},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Choque neurogênico:\nvolume + noradrenalina\natropina se bradicardia\nmanter perfusão medular", "color": "orange", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "D: exame neurológico (ASIA)\nnível, motor, sensitivo, reflexos\nE: exposição + imobilização", "color": "teal", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Imagem: TC de coluna; RM para medula/ligamentos\nAcionar neurocirurgia/ortopedia; evitar lesão secundária", "color": "green", "font_size": 5.2}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "SÍNDROMES MEDULARES E NÍVEIS",
+      "section_color": "orange",
+      "headers": ["Síndrome/Nível", "Características"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Lesão completa", "Ausência de função motora e sensitiva abaixo do nível (pior prognóstico)"],
+        ["Cordão anterior", "Perda motora e de dor/temperatura; propriocepção preservada"],
+        ["Centromedular", "Fraqueza maior em membros superiores que inferiores (idoso, hiperextensão)"],
+        ["Brown-Sequard", "Hemissecção: motor/propriocepção ipsilateral, dor/temperatura contralateral"],
+        ["C3-C5", "Risco de insuficiência respiratória (frênico) — vigiar ventilação"],
+        ["Acima de T6", "Risco de choque neurogênico e, depois, disreflexia autonômica"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "CUIDADOS E COMPLICAÇÕES",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Evitar a Lesão Secundária",
+        "items": [
+          "Manter PA média adequada (perfusão medular) e oxigenação",
+          "Evitar hipotensão e hipóxia (agravam a lesão)",
+          "Imobilização adequada até excluir lesão instável",
+          "Vigiar a ventilação nas lesões cervicais altas",
+          "Sondagem vesical (retenção/bexiga neurogênica)",
+          "Prevenir hipotermia, úlcera de pressão e TVP"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Pontos Importantes",
+        "items": [
+          "Corticoide de rotina NÃO é recomendado no TRM",
+          "Choque medular (arreflexia) é fenômeno neurológico transitório, distinto do choque neurogênico (hemodinâmico)",
+          "Priapismo e flacidez podem indicar lesão medular",
+          "Disreflexia autonômica: complicação tardia em lesões altas (HAS paroxística)",
+          "Documentar o exame neurológico (escala ASIA) na admissão",
+          "Reabilitação precoce melhora desfechos"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Imobilização da coluna desde o pré-hospitalar (colar + prancha/maca a vácuo)",
+        "ABCDE com controle cervical; vigiar a ventilação nas lesões cervicais altas",
+        "Hipotensão no trauma: excluir hemorragia ANTES de assumir choque neurogênico",
+        "Choque neurogênico (hipotensão + bradicardia + pele quente): volume + noradrenalina (+ atropina se bradicardia)",
+        "Manter perfusão e oxigenação para evitar a lesão secundária; corticoide não é rotina",
+        "Exame neurológico (ASIA) + TC/RM de coluna; acionar neurocirurgia/ortopedia e cuidados de suporte"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Vítima de trauma cervical com hipotensão e BRADICARDIA, pele quente e seca, após exclusão de sangramento. Qual o diagnóstico e o tratamento?",
+      "alternativas": [
+        "Choque hemorrágico — reposição volêmica isolada",
+        "Choque neurogênico — volume + vasopressor (noradrenalina) e atropina se bradicardia",
+        "Choque séptico — antibiótico",
+        "Choque cardiogênico — dobutamina",
+        "Tamponamento cardíaco — pericardiocentese"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Diante de hipotensão em um politraumatizado, mesmo com suspeita de lesão medular, qual deve ser a primeira preocupação?",
+      "alternativas": [
+        "Assumir choque neurogênico e iniciar vasopressor",
+        "Excluir hemorragia (choque hemorrágico é a causa mais comum e mais letal)",
+        "Administrar corticoide",
+        "Aguardar a tomografia",
+        "Iniciar antibiótico"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Sobre o corticoide (metilprednisolona) no trauma raquimedular, qual afirmação é correta?",
+      "alternativas": [
+        "Deve ser administrado em altas doses para todos",
+        "NÃO é recomendado de rotina (mais risco que benefício)",
+        "É o principal tratamento do TRM",
+        "Reverte completamente a lesão medular",
+        "Substitui a imobilização"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual lesão medular tem MAIOR risco de insuficiência respiratória por comprometimento do nervo frênico?",
+      "alternativas": [
+        "Lesão lombar baixa",
+        "Lesão cervical alta (C3-C5)",
+        "Lesão sacral",
+        "Lesão torácica baixa",
+        "Lesão de cauda equina"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Idoso com hiperextensão cervical evolui com fraqueza maior nos membros superiores que nos inferiores. Qual síndrome medular?",
+      "alternativas": [
+        "Síndrome do cordão anterior",
+        "Síndrome centromedular",
+        "Síndrome de Brown-Sequard",
+        "Lesão completa",
+        "Síndrome da cauda equina"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Hipotensão + bradicardia + pele quente e seca, após excluir sangramento, caracteriza o choque neurogênico (perda do tônus simpático em lesão cervical/torácica alta). O tratamento é volume + vasopressor (noradrenalina), com atropina se bradicardia significativa, mantendo a perfusão medular."},
+    {"resposta": "B", "comentario": "No politraumatizado, a hipotensão é hemorrágica até prova em contrário. Mesmo com suspeita de lesão medular, deve-se excluir o sangramento primeiro (FAST, fontes), pois o choque hemorrágico é a causa mais comum e mais rapidamente letal."},
+    {"resposta": "B", "comentario": "O corticoide (metilprednisolona) NÃO é recomendado de rotina no TRM, pois os estudos mostraram mais riscos (infecção, complicações) do que benefício neurológico consistente. O foco é a imobilização e a prevenção da lesão secundária."},
+    {"resposta": "B", "comentario": "As lesões cervicais altas (C3-C5) comprometem a inervação do diafragma (nervo frênico, raízes C3-C5), com alto risco de insuficiência respiratória — exigindo vigilância da ventilação e, muitas vezes, suporte ventilatório."},
+    {"resposta": "B", "comentario": "A síndrome centromedular é típica de idoso com hiperextensão cervical (espondilose prévia): cursa com fraqueza desproporcionalmente maior nos membros superiores em relação aos inferiores, com graus variáveis de disfunção sensitiva e esfincteriana."}
+  ]
+}

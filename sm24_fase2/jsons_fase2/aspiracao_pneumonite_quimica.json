@@ -1,0 +1,175 @@
+{
+  "slug": "aspiracao_pneumonite_quimica",
+  "titulo": "Aspiração e Pneumonite Química",
+  "especialidade": "PNEUMOLOGIA",
+  "chapter_subject": "Síndromes Aspirativas — Pneumonite Química vs Pneumonia Aspirativa",
+  "chapter_bar": "ASPIRAÇÃO — QUÍMICA ou BACTERIANA?",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "PNEUMONITE QUÍMICA vs PNEUMONIA ASPIRATIVA",
+      "section_color": "navy",
+      "headers": ["Aspecto", "Pneumonite química (Mendelson)", "Pneumonia aspirativa"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.20, 0.40, 0.40],
+      "rows": [
+        ["Mecanismo", "Lesão química do ácido gástrico aspirado", "Infecção por aspiração de flora orofaríngea"],
+        ["Início", "Agudo (minutos a horas após a aspiração)", "Insidioso (dias)"],
+        ["Conteúdo", "Estéril e ácido (pH baixo)", "Colonizado por bactérias da boca"],
+        ["Febre/leucocitose", "Pode haver inicialmente (inflamação), tende a regredir", "Febre e leucocitose persistentes"],
+        ["Antibiótico", "NÃO de rotina — observar 48-72h", "SIM — cobertura de flora oral/anaeróbios"],
+        ["Evolução", "Muitas vezes melhora espontânea ou progride para SDRA", "Pode evoluir com abscesso/empiema"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "O ERRO MAIS COMUM",
+      "section_color": "red",
+      "titulo": "NEM TODA ASPIRAÇÃO PRECISA DE ANTIBIÓTICO",
+      "items": [
+        "A pneumonite química (Mendelson) é uma lesão inflamatória ESTÉRIL pelo ácido — não é infecção",
+        "Antibiótico de rotina na pneumonite química seleciona resistência sem benefício",
+        "Conduta inicial: suporte (O2, aspiração de via aérea, ventilação se necessário) e OBSERVAÇÃO por 48-72h",
+        "Iniciar antibiótico se: não melhora ou piora em 48h, febre/leucocitose persistentes, ou aspiração de conteúdo claramente contaminado (obstrução intestinal, conteúdo fecaloide)",
+        "Corticoide NÃO é recomendado de rotina",
+        "Aspiração de grande volume e baixo pH pode evoluir para SDRA — vigiar a oxigenação"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA ASPIRAÇÃO TESTEMUNHADA",
+      "title": "ASPIROU — SUPORTE + OBSERVAR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Evento de aspiração (rebaixamento, disfagia, vômito)\nVia aérea: aspirar secreções; O2; SpO2", "color": "navy", "font_size": 5.5},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Suporte respiratório conforme gravidade\n(O2, VNI, IOT se insuficiência respiratória)", "color": "teal", "font_size": 5.5},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Pneumonite química:\nNAO antibiótico de rotina\nObservar 48-72h\nSuporte e reavaliar", "color": "green", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Antibiótico SE:\npiora/sem melhora em 48h,\nfebre/leucocitose persistente,\nconteúdo contaminado", "color": "orange", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Vigiar evolução para SDRA; tratar a causa de base\ne instituir medidas de prevenção de nova aspiração", "color": "red", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "ANTIBIÓTICO QUANDO INDICADO",
+      "section_color": "orange",
+      "headers": ["Cenário", "Esquema", "Observação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.30, 0.38, 0.32],
+      "rows": [
+        ["Pneumonia aspirativa comunitária", "Amoxicilina-clavulanato OU ampicilina-sulbactam", "Cobre flora oral e anaeróbios"],
+        ["Alergia a betalactâmico", "Clindamicina (+/- quinolona respiratória)", "Boa cobertura de anaeróbios"],
+        ["Aspiração hospitalar / grave", "Piperacilina-tazobactam OU carbapenêmico", "Considerar Gram-negativos e MRSA conforme risco"],
+        ["Abscesso pulmonar", "Amoxicilina-clavulanato ou clindamicina prolongados", "Drenagem se necessário"],
+        ["Cobertura anaeróbia rotineira", "Reservar para periodontite grave, abscesso, empiema, conteúdo necrótico", "Nem toda aspiração precisa de anaerobicida"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "FATORES DE RISCO E PREVENÇÃO",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Fatores de Risco",
+        "items": [
+          "Rebaixamento do nível de consciência (AVC, intoxicação, pós-ictal, anestesia)",
+          "Disfagia (doença neurológica, idoso, demência)",
+          "Doença do refluxo, obstrução intestinal, sonda nasogástrica",
+          "Vômitos, intubação/extubação, endoscopia",
+          "Má higiene oral e periodontite (maior carga bacteriana)"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Prevenção",
+        "items": [
+          "Cabeceira elevada (30-45 graus) em acamados e em ventilação mecânica",
+          "Avaliação fonoaudiológica da deglutição em risco de disfagia",
+          "Higiene oral rigorosa (reduz a carga bacteriana)",
+          "Cuidados com a dieta (consistência, posicionamento)",
+          "Manejo do refluxo e revisão de sedação excessiva",
+          "Técnica adequada de intubação/sonda e jejum pré-procedimento"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Diferenciar pneumonite química (estéril, aguda) de pneumonia aspirativa (infecciosa, tardia)",
+        "Suporte respiratório imediato: aspirar via aérea, O2, ventilação conforme gravidade",
+        "Pneumonite química: NÃO antibiótico de rotina — observar 48-72h",
+        "Antibiótico se piora/sem melhora em 48h, febre/leucocitose persistente ou conteúdo contaminado",
+        "Vigiar evolução para SDRA (aspiração volumosa e muito ácida)",
+        "Tratar a causa de base e implementar prevenção (cabeceira elevada, avaliação da deglutição, higiene oral)"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com rebaixamento por intoxicação alcoólica aspira conteúdo gástrico. Apresenta hipoxemia, mas sem febre nem leucocitose. Qual a conduta inicial?",
+      "alternativas": [
+        "Antibiótico de amplo espectro imediato",
+        "Suporte respiratório e observação por 48-72h, sem antibiótico de rotina (pneumonite química)",
+        "Corticoide em altas doses",
+        "Lavagem brônquica com antibiótico",
+        "Alta imediata"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Qual a principal diferença entre pneumonite química e pneumonia aspirativa?",
+      "alternativas": [
+        "A pneumonite química é infecciosa e a aspirativa é estéril",
+        "A pneumonite química é uma lesão estéril aguda pelo ácido, e a pneumonia aspirativa é uma infecção por flora oral de início mais tardio",
+        "Ambas são tratadas igualmente com antibiótico de rotina",
+        "A pneumonia aspirativa nunca causa abscesso",
+        "A pneumonite química exige sempre corticoide"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Em qual situação a aspiração JUSTIFICA antibiótico precoce?",
+      "alternativas": [
+        "Toda aspiração testemunhada",
+        "Aspiração de conteúdo claramente contaminado (ex.: obstrução intestinal/fecaloide) ou ausência de melhora em 48h com febre/leucocitose persistentes",
+        "Apenas quando a SpO2 está normal",
+        "Somente em pacientes jovens",
+        "Nunca se deve usar antibiótico na aspiração"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual medida é eficaz na PREVENÇÃO de aspiração em pacientes acamados e em ventilação mecânica?",
+      "alternativas": [
+        "Manter o paciente em decúbito horizontal",
+        "Elevar a cabeceira a 30-45 graus",
+        "Suspender a higiene oral",
+        "Sedação profunda contínua",
+        "Aumentar o volume da dieta enteral em bolus"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Paciente idoso com disfagia evolui em 3 dias com febre, tosse produtiva e leucocitose após episódios de engasgo. Qual o diagnóstico e o antibiótico de escolha?",
+      "alternativas": [
+        "Pneumonite química — sem antibiótico",
+        "Pneumonia aspirativa — amoxicilina-clavulanato (ou ampicilina-sulbactam)",
+        "Tuberculose — esquema RIPE",
+        "Embolia pulmonar — anticoagulação",
+        "Asma — broncodilatador"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Aspiração de conteúdo gástrico em paciente rebaixado, com hipoxemia mas sem febre/leucocitose, caracteriza pneumonite química (Mendelson) — lesão estéril. Conduta: suporte respiratório e observação por 48-72h, SEM antibiótico de rotina. Reavaliar e tratar se houver sinais de infecção."},
+    {"resposta": "B", "comentario": "A pneumonite química é uma lesão inflamatória ESTÉRIL e aguda causada pelo ácido gástrico aspirado; a pneumonia aspirativa é uma INFECÇÃO por flora orofaríngea, de instalação mais tardia. A distinção define a necessidade de antibiótico."},
+    {"resposta": "B", "comentario": "Antibiótico precoce na aspiração se justifica quando o conteúdo aspirado é claramente contaminado (obstrução intestinal, conteúdo fecaloide) ou quando não há melhora em 48h com febre e leucocitose persistentes, sugerindo infecção (pneumonia aspirativa)."},
+    {"resposta": "B", "comentario": "Elevar a cabeceira a 30-45 graus reduz o refluxo e a microaspiração, sendo medida eficaz de prevenção em acamados e pacientes em ventilação mecânica. Higiene oral rigorosa e avaliação da deglutição também são fundamentais."},
+    {"resposta": "B", "comentario": "Evolução em dias com febre, tosse produtiva e leucocitose após engasgos em idoso disfágico caracteriza pneumonia aspirativa (infecção por flora oral/anaeróbios). O tratamento de escolha é amoxicilina-clavulanato ou ampicilina-sulbactam (clindamicina se alergia a betalactâmico)."}
+  ]
+}

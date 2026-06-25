@@ -1,0 +1,173 @@
+{
+  "slug": "valvopatias_agudas",
+  "titulo": "Valvopatias Agudas no PS",
+  "especialidade": "CARDIOLOGIA",
+  "chapter_subject": "Valvopatias Agudas — Reconhecimento e Manejo da Emergência",
+  "chapter_bar": "VALVOPATIA AGUDA — RECONHECER + ESTABILIZAR + CIRURGIA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "AS TRÊS VALVOPATIAS AGUDAS CRÍTICAS",
+      "section_color": "navy",
+      "headers": ["Lesão", "Causas agudas", "Apresentação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.36, 0.40],
+      "rows": [
+        ["Insuficiência mitral aguda", "Ruptura de músculo papilar (IAM), endocardite, ruptura de cordoalha", "Edema agudo de pulmão súbito, choque, sopro pode ser discreto"],
+        ["Insuficiência aórtica aguda", "Endocardite, dissecção de aorta tipo A, trauma", "EAP, choque, taquicardia; sopro diastólico curto, pulso pode não ser amplo"],
+        ["Estenose aórtica crítica", "Descompensação de EAo grave preexistente", "Síncope, angina, IC; sopro sistólico ejetivo em foco aórtico"],
+        ["Trombose de prótese", "Anticoagulação inadequada", "IC aguda, abafamento das bulhas protéticas, fenômeno embólico"],
+        ["Disfunção de prótese", "Deiscência, leak paravalvar, endocardite de prótese", "IC aguda, hemólise, sopro novo"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "PORQUE A FORMA AGUDA É TÃO GRAVE",
+      "section_color": "red",
+      "titulo": "SEM TEMPO DE ADAPTAÇÃO = COLAPSO HEMODINÂMICO",
+      "items": [
+        "Na regurgitação aguda, o ventrículo e o átrio NÃO tiveram tempo de dilatar/remodelar",
+        "Pequeno volume regurgitante gera pressões muito altas -> edema pulmonar súbito",
+        "O sopro pode ser pouco audível justamente por equalização rápida de pressões (não subestimar)",
+        "Frequentemente cursa com choque cardiogênico de instalação rápida",
+        "Ecocardiograma à beira-leito é decisivo para o diagnóstico",
+        "Tratamento definitivo costuma ser CIRÚRGICO de urgência — estabilizar é ponte, não cura"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA SUSPEITA DE VALVOPATIA AGUDA",
+      "title": "IC AGUDA + SOPRO NOVO -> PENSAR EM VALVA",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "EAP/choque de início súbito + sopro novo\nou contexto (IAM recente, febre, dor torácica)", "color": "navy", "font_size": 5.5},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Ecocardiograma URGENTE (transtorácico/transesofágico)\nidentificar a lesão e a causa", "color": "teal", "font_size": 5.5},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Regurgitação aguda (IM/IAo):\nreduzir pós-carga\n(vasodilatador), suporte\nde VE; cirurgia de urgência", "color": "red", "font_size": 5.2},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Estenose aórtica crítica:\nCUIDADO com vasodilatador\ne hipovolemia; manter pré-carga;\navaliar troca/TAVI", "color": "orange", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Acionar cirurgia cardíaca / hemodinâmica precocemente\nIdentificar e tratar a causa (endocardite, IAM, dissecção)", "color": "green", "font_size": 5.3}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PRINCÍPIOS DE ESTABILIZAÇÃO",
+      "section_color": "orange",
+      "headers": ["Lesão", "Fazer", "Evitar"],
+      "header_colors": ["gray", "navy", "red"],
+      "col_widths": [0.24, 0.40, 0.36],
+      "rows": [
+        ["Insuf. mitral aguda", "Reduzir pós-carga (nitroprussiato), diurético, balão intra-aórtico como ponte", "Não retardar a cirurgia"],
+        ["Insuf. aórtica aguda", "Reduzir pós-carga; inotrópico se choque; cirurgia urgente", "Betabloqueador isolado (bloqueia a taquicardia compensatória); balão intra-aórtico (contraindicado)"],
+        ["Estenose aórtica crítica", "Manter pré-carga e RVS; cuidado com volume; vasopressor (noradrenalina/fenilefrina) se hipotensão", "Vasodilatadores e hipovolemia (queda abrupta do débito)"],
+        ["Trombose de prótese", "Anticoagulação plena; fibrinólise ou cirurgia conforme caso", "Atraso na avaliação cirúrgica"],
+        ["Endocardite com valvopatia", "ATB precoce + hemoculturas; avaliar cirurgia", "Manipular sem cobertura antibiótica"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "PISTAS DIAGNÓSTICAS",
+      "section_color": "teal",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Sopros e Achados",
+        "items": [
+          "IM aguda: sopro sistólico, pode ser breve/pouco audível; B3, EAP",
+          "IAo aguda: sopro diastólico curto, ausculta de fechamento mitral precoce",
+          "EAo crítica: sopro sistólico ejetivo rude, irradiação para carótidas, pulso parvus et tardus",
+          "Endocardite: febre + sopro novo + fenômenos embólicos/imunológicos",
+          "Ecocardiograma define a gravidade e a causa em todos"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Não Esquecer",
+        "items": [
+          "IM aguda pós-IAM (ruptura de papilar): 2-7 dias após o infarto, deterioração súbita",
+          "IAo aguda + dor torácica/dorsal: pensar em dissecção de aorta tipo A",
+          "Endocardite: 3 hemoculturas antes do ATB; ecocardiograma transesofágico",
+          "EAo grave: evitar nitrato/vasodilatador na dor torácica sem confirmar a anatomia",
+          "Hemólise + prótese: suspeitar de leak paravalvar"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Suspeitar de valvopatia aguda em todo EAP/choque súbito com sopro novo",
+        "Ecocardiograma urgente é o exame decisivo",
+        "Regurgitação aguda: reduzir pós-carga e acionar cirurgia precocemente",
+        "Estenose aórtica crítica: manter pré-carga/RVS, cuidado com vasodilatadores",
+        "Tratar a causa: endocardite (ATB), IAM (reperfusão), dissecção (cirurgia)",
+        "Acionar cirurgia cardíaca/hemodinâmica desde o início — a estabilização é ponte"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente no 4o dia pós-IAM evolui com edema agudo de pulmão súbito, choque e novo sopro sistólico. Qual a principal hipótese?",
+      "alternativas": [
+        "Reinfarto sem complicação mecânica",
+        "Insuficiência mitral aguda por ruptura de músculo papilar",
+        "Pericardite pós-infarto",
+        "Estenose aórtica crônica descompensada",
+        "Embolia pulmonar"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que, na regurgitação valvar AGUDA, o sopro pode ser discreto apesar da gravidade do quadro?",
+      "alternativas": [
+        "Porque a valva ainda está competente",
+        "Porque a equalização rápida de pressões entre as câmaras reduz o gradiente e a intensidade do sopro",
+        "Porque o débito cardíaco está aumentado",
+        "Porque a ausculta é sempre normal nessas situações",
+        "Porque o sopro só aparece na forma crônica"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente com estenose aórtica crítica e hipotensão. Qual conduta é mais segura?",
+      "alternativas": [
+        "Nitroprussiato para reduzir a pós-carga",
+        "Manter pré-carga e resistência vascular; usar vasopressor (noradrenalina/fenilefrina) se necessário e avaliar troca valvar/TAVI",
+        "Diurético agressivo",
+        "Betabloqueador em altas doses",
+        "Vasodilatador venoso para aliviar a congestão"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente com insuficiência aórtica aguda e dor torácica intensa irradiando para o dorso. Qual causa deve ser investigada com urgência?",
+      "alternativas": [
+        "Pericardite viral",
+        "Dissecção de aorta tipo A",
+        "Espasmo esofágico",
+        "Pneumonia",
+        "Costocondrite"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual é o exame decisivo à beira-leito para o diagnóstico de uma valvopatia aguda no PS?",
+      "alternativas": [
+        "Radiografia de tórax",
+        "Ecocardiograma (transtorácico/transesofágico)",
+        "Dosagem de BNP isolada",
+        "Eletrocardiograma",
+        "Cateterismo direito"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Deterioração súbita com EAP, choque e sopro novo entre 2 e 7 dias pós-IAM sugere complicação mecânica: insuficiência mitral aguda por ruptura/disfunção de músculo papilar. É emergência cirúrgica; estabilizar com redução de pós-carga e suporte (balão intra-aórtico) como ponte."},
+    {"resposta": "B", "comentario": "Na regurgitação aguda, não há tempo de remodelamento; as pressões se equalizam rapidamente entre as câmaras, reduzindo o gradiente e tornando o sopro breve e pouco intenso, apesar de grave repercussão hemodinâmica. Não subestimar pela ausculta discreta."},
+    {"resposta": "B", "comentario": "Na estenose aórtica crítica, o débito é fixo e dependente de pré-carga e pós-carga. Vasodilatadores e hipovolemia causam queda abrupta do débito e colapso. Conduta: manter pré-carga/RVS, usar vasopressor se hipotenso e avaliar troca valvar cirúrgica ou TAVI."},
+    {"resposta": "B", "comentario": "Insuficiência aórtica aguda com dor torácica/dorsal lancinante deve levantar a suspeita de dissecção de aorta tipo A (que compromete a valva aórtica). É emergência cirúrgica; confirmar com imagem (ECO transesofágico/angio-TC) e acionar cirurgia cardíaca."},
+    {"resposta": "B", "comentario": "O ecocardiograma (transtorácico e, quando necessário, transesofágico) é o exame decisivo à beira-leito: identifica a lesão valvar, a gravidade da regurgitação/estenose e a causa (endocardite, ruptura, dissecção), guiando o tratamento."}
+  ]
+}

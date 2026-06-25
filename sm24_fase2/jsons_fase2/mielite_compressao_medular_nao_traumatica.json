@@ -1,0 +1,177 @@
+{
+  "slug": "mielite_compressao_medular_nao_traumatica",
+  "titulo": "Mielite e Compressão Medular Não-Traumática",
+  "especialidade": "NEUROLOGIA",
+  "chapter_subject": "Síndromes Medulares Agudas Não-Traumáticas — Reconhecer e Agir Rápido",
+  "chapter_bar": "MEDULA AGUDA — RM URGENTE, TEMPO É FUNÇÃO",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "SINDROME MEDULAR — RECONHECIMENTO",
+      "section_color": "navy",
+      "headers": ["Achado", "Significado"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.34, 0.66],
+      "rows": [
+        ["Nível sensitivo", "Hipoestesia abaixo de um dermátomo (marca do nível da lesão)"],
+        ["Paraparesia/tetraparesia", "Fraqueza simétrica abaixo da lesão; cervical = membros superiores e inferiores"],
+        ["Disfunção esfincteriana", "Retenção/incontinência urinária e fecal — sinal de alarme"],
+        ["Dor", "Dorsal/cervical, piora ao deitar (compressão neoplásica)"],
+        ["Padrão", "Lesão completa vs incompleta; síndrome de Brown-Sequard, centromedular, cordão anterior"],
+        ["Choque medular", "Fase inicial com arreflexia e flacidez, depois espasticidade"]
+      ]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "PRINCIPAIS CAUSAS NÃO-TRAUMÁTICAS",
+      "section_color": "orange",
+      "headers": ["Grupo", "Causas", "Pista"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.42, 0.36],
+      "rows": [
+        ["Compressiva", "Metástase epidural, abscesso epidural, hematoma, hérnia discal, espondilodiscite", "Dor + déficit progressivo; emergência cirúrgica"],
+        ["Inflamatória (mielite)", "Esclerose múltipla, neuromielite óptica, ADEM, pós-infecciosa", "Instalação em horas-dias, RM com hipersinal"],
+        ["Infecciosa", "Abscesso epidural (S. aureus), HIV, HTLV, herpes, esquistossomose", "Febre, dor, fatores de risco (usuário de drogas IV, imunossupressão)"],
+        ["Vascular", "Infarto medular (artéria espinhal anterior)", "Início súbito, dor, preservação da propriocepção"],
+        ["Neoplásica", "Compressão por tumor vertebral/epidural; tumor intramedular", "Câncer conhecido; dor que piora deitado"],
+        ["Cauda equina", "Hérnia discal volumosa, tumor", "Anestesia em sela, retenção urinária, déficit assimétrico"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "EMERGÊNCIA TEMPO-DEPENDENTE",
+      "section_color": "red",
+      "titulo": "RM URGENTE DE TODA A COLUNA + STATUS NEUROLÓGICO PRÉ-TRATAMENTO É O QUE DEFINE O PROGNÓSTICO",
+      "items": [
+        "Déficit medular agudo = emergência: o status neurológico ANTES do tratamento é o principal preditor de recuperação",
+        "RM de TODA a coluna com contraste é o exame de escolha (urgente)",
+        "Compressão por neoplasia: dexametasona IMEDIATA + RT/cirurgia (ver protocolo de compressão medular neoplásica)",
+        "Abscesso epidural: antibiótico + drenagem cirúrgica urgente; hemoculturas antes do ATB",
+        "Cauda equina (anestesia em sela + retenção): cirurgia descompressiva de urgência",
+        "Não aguardar para confirmar o diagnóstico exato se há déficit progressivo — agir e acionar a especialidade"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DA SÍNDROME MEDULAR AGUDA",
+      "title": "DÉFICIT MEDULAR — RM JÁ",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Fraqueza + nível sensitivo + disfunção esfincteriana\nDefinir o nível e a velocidade de instalação", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "RM de toda a coluna com contraste URGENTE\nLaboratório + hemoculturas se febre", "color": "teal", "font_size": 5.5},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "COMPRESSIVA:\nNeoplasia -> dexametasona + RT/cirurgia\nAbscesso -> ATB + drenagem\nCauda equina -> cirurgia", "color": "red", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "INFLAMATÓRIA (mielite):\nLiquor + sorologias\nCorticoide em pulso\n(metilprednisolona)", "color": "orange", "font_size": 5.1},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Suporte: sondagem vesical, profilaxia de TVP, prevenção de úlcera\nReabilitação precoce; acionar neuro/neurocirurgia/onco", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "MIELITE E ABSCESSO EPIDURAL",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Mielite Transversa",
+        "items": [
+          "Inflamação medular: déficit motor/sensitivo + disfunção autonômica em horas-dias",
+          "Investigar: RM com gadolínio, liquor (células, proteína, bandas oligoclonais), aquaporina-4 e anti-MOG",
+          "Causas: esclerose múltipla, neuromielite óptica, pós-infecciosa, ADEM, lúpus",
+          "Tratamento: corticoide em pulso (metilprednisolona 1 g/dia 3-5 dias)",
+          "Plasmaférese se refratária ao corticoide",
+          "Excluir compressão antes de assumir causa inflamatória"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Abscesso Epidural Espinhal",
+        "items": [
+          "Tríade: dor nas costas + febre + déficit neurológico (nem sempre completa)",
+          "Fatores de risco: usuário de drogas IV, diabetes, bacteremia, procedimento espinhal",
+          "Agente mais comum: Staphylococcus aureus",
+          "RM com contraste é o exame de escolha; hemoculturas antes do ATB",
+          "Tratamento: antibiótico + drenagem/descompressão cirúrgica urgente",
+          "Atraso = paraplegia irreversível"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Reconhecer a síndrome medular: nível sensitivo + fraqueza + disfunção esfincteriana",
+        "RM de toda a coluna com contraste em caráter de urgência",
+        "Compressão neoplásica: dexametasona imediata + RT/cirurgia",
+        "Abscesso epidural: hemoculturas + antibiótico + drenagem cirúrgica urgente",
+        "Cauda equina (anestesia em sela + retenção): descompressão de urgência",
+        "Mielite (após excluir compressão): corticoide em pulso; suporte vesical, TVP e reabilitação para todos"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com câncer de próstata e dor dorsal progressiva evolui com paraparesia e retenção urinária. Qual a conduta imediata?",
+      "alternativas": [
+        "Aguardar RM eletiva e analgesia",
+        "Dexametasona imediata + RM de toda a coluna em urgência + acionar RT/neurocirurgia",
+        "Fisioterapia e reavaliação ambulatorial",
+        "Antibiótico empírico",
+        "Punção lombar imediata antes de qualquer imagem"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Usuário de drogas IV com febre, dor lombar intensa e déficit motor progressivo em membros inferiores. Qual a principal hipótese e o exame de escolha?",
+      "alternativas": [
+        "Hérnia discal — radiografia",
+        "Abscesso epidural espinhal — RM com contraste",
+        "Lombalgia mecânica — repouso",
+        "Esclerose múltipla — potencial evocado",
+        "Infarto medular — angiografia"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Paciente com anestesia em sela, retenção urinária e fraqueza assimétrica de membros inferiores. Qual a síndrome e a conduta?",
+      "alternativas": [
+        "Síndrome da cauda equina — descompressão cirúrgica de urgência",
+        "AVC — trombólise",
+        "Mielite leve — alta com corticoide oral",
+        "Polineuropatia — observação",
+        "Lombalgia — analgesia e alta"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual é o principal preditor de recuperação funcional nas síndromes medulares compressivas agudas?",
+      "alternativas": [
+        "A idade do paciente",
+        "O status neurológico ANTES do início do tratamento e a precocidade da intervenção",
+        "O tipo de tumor",
+        "O nível da lesão",
+        "O valor da proteína no liquor"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Antes de assumir uma causa inflamatória (mielite) para um déficit medular agudo, o que deve ser obrigatoriamente excluído?",
+      "alternativas": [
+        "Enxaqueca",
+        "Compressão medular (com RM urgente)",
+        "Crise convulsiva",
+        "Hipoglicemia",
+        "Neuropatia periférica"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Câncer + dor dorsal progressiva + paraparesia + retenção urinária = compressão medular neoplásica. Conduta imediata: dexametasona (antes mesmo da confirmação) + RM de toda a coluna em urgência + acionar radioterapia/neurocirurgia. O atraso causa paraplegia irreversível."},
+    {"resposta": "B", "comentario": "Usuário de drogas IV com febre + dor lombar + déficit progressivo sugere abscesso epidural espinhal (S. aureus o agente mais comum). O exame de escolha é a RM com contraste; hemoculturas antes do antibiótico, seguido de drenagem cirúrgica urgente."},
+    {"resposta": "A", "comentario": "Anestesia em sela + retenção urinária + déficit assimétrico de membros inferiores caracteriza a síndrome da cauda equina, que é emergência: requer RM urgente e descompressão cirúrgica precoce para evitar sequelas esfincterianas e motoras permanentes."},
+    {"resposta": "B", "comentario": "Nas síndromes medulares compressivas, o status neurológico ANTES do tratamento e a rapidez da intervenção são os principais determinantes do prognóstico funcional. Quem chega deambulando tem muito mais chance de manter a marcha se tratado a tempo."},
+    {"resposta": "B", "comentario": "Sempre se deve excluir compressão medular (com RM urgente) antes de assumir uma causa inflamatória (mielite). A compressão é uma emergência cirúrgica tempo-dependente, e tratar como mielite uma compressão retardaria a descompressão."}
+  ]
+}

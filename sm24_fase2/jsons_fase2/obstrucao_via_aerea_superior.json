@@ -1,0 +1,178 @@
+{
+  "slug": "obstrucao_via_aerea_superior",
+  "titulo": "Obstrução de Via Aérea Superior no Adulto",
+  "especialidade": "OTORRINOLARINGOLOGIA",
+  "chapter_subject": "Obstrução de Via Aérea Superior — Causas, Estridor e Manejo de Emergência",
+  "chapter_bar": "VAS OBSTRUÍDA — NÃO AGITAR, PREPARAR VIA CIRÚRGICA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "CAUSAS DE OBSTRUÇÃO DE VIA AÉREA SUPERIOR",
+      "section_color": "navy",
+      "headers": ["Grupo", "Causas", "Pista"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.22, 0.42, 0.36],
+      "rows": [
+        ["Infecciosa", "Epiglotite, abscesso retrofaríngeo/periamigdaliano, angina de Ludwig", "Febre, disfagia, sialorreia, toxemia"],
+        ["Alérgica", "Angioedema (anafilaxia, IECA), edema de glote", "Início rápido, edema de lábios/língua, urticária"],
+        ["Corpo estranho", "Bolo alimentar, prótese, objeto", "Engasgo súbito durante a alimentação"],
+        ["Tumoral", "Câncer de laringe/faringe, massa cervical", "Estridor progressivo, rouquidão, perda de peso"],
+        ["Traumática", "Trauma cervical, queimadura/inalação, pós-extubação", "Histórico de trauma/incêndio; edema"],
+        ["Neuromuscular/funcional", "Paralisia bilateral de cordas vocais, laringoespasmo", "Estridor, voz alterada"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "RECONHECER A GRAVIDADE E NÃO PIORAR",
+      "section_color": "red",
+      "titulo": "ESTRIDOR EM REPOUSO = OBSTRUÇÃO IMPORTANTE",
+      "items": [
+        "Estridor inspiratório, tiragem, uso de musculatura acessória, voz abafada, sialorreia e posição de tripé indicam obstrução significativa",
+        "NÃO agitar o paciente nem examinar a garganta agressivamente (sobretudo na suspeita de epiglotite) — pode precipitar a obstrução total",
+        "Manter o paciente sentado/confortável; oferecer O2; ambiente calmo",
+        "Chamar precocemente a equipe de via aérea difícil (anestesia + ORL/cirurgia) e PREPARAR via aérea cirúrgica (cricotireoidostomia)",
+        "Anafilaxia/angioedema: adrenalina IM imediata; via aérea precoce se progressão",
+        "Corpo estranho com obstrução completa (não fala, não tosse): manobra de Heimlich",
+        "Plano A-B-C-D de via aérea difícil: se 'não intubo, não ventilo' -> via aérea cirúrgica"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "MANEJO DA OBSTRUÇÃO DE VAS",
+      "title": "VAS — ESTÁVEL? CAUSA? PREPARAR VIA AÉREA",
+      "height": 205,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Estridor, dispneia, voz abafada, sialorreia\nManter calmo + O2 + posição confortável", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Obstrução COMPLETA / iminente (não ventila, exaustão)?\nChamar via aérea difícil (anestesia + ORL)", "color": "red", "font_size": 5.2},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Tratar a causa:\nanafilaxia -> adrenalina IM\nCE -> Heimlich\ninfecção -> ATB + drenar", "color": "orange", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Via aérea definitiva:\nIOT (idealmente em CC,\nacordado/videolaringoscopia)\nCricotireoidostomia se falha", "color": "red", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Imagem (TC/nasofibroscopia) APENAS se estável e seguro\nUTI; tratar a causa de base", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "comparison_table",
+      "section_title": "TRATAMENTO POR CAUSA",
+      "section_color": "orange",
+      "headers": ["Causa", "Tratamento específico"],
+      "header_colors": ["gray", "navy"],
+      "col_widths": [0.30, 0.70],
+      "rows": [
+        ["Anafilaxia / angioedema alérgico", "Adrenalina IM (1a linha) + corticoide + anti-histamínico; via aérea precoce se progressão"],
+        ["Angioedema por IECA (bradicinina)", "Suspender IECA; suporte de via aérea (responde mal a adrenalina/corticoide)"],
+        ["Epiglotite", "Não examinar a garganta; via aérea no centro cirúrgico + ATB IV (ceftriaxona)"],
+        ["Abscesso (peritonsilar/retrofaríngeo)", "Drenagem + antibiótico; proteger a via aérea"],
+        ["Corpo estranho", "Obstrução completa: Heimlich; remoção (laringoscopia/broncoscopia)"],
+        ["Tumor de laringe", "Via aérea (traqueostomia se necessário) + avaliação oncológica"]
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "VIA AÉREA DIFÍCIL E ANGIOEDEMA",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Princípios da Via Aérea Difícil",
+        "items": [
+          "Antecipar a dificuldade e chamar ajuda (anestesia/ORL) precocemente",
+          "Preferir intubação no centro cirúrgico, com paciente acordado/videolaringoscopia quando possível",
+          "Ter o material e a equipe para via aérea cirúrgica (cricotireoidostomia) prontos",
+          "Cenário 'não intubo, não ventilo': cricotireoidostomia de emergência",
+          "Evitar sedação que abula o esforço respiratório antes de garantir a via aérea",
+          "Pré-oxigenar"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Angioedema: Alérgico x IECA",
+        "items": [
+          "Alérgico (histaminérgico): urticária, prurido, início rápido; responde a adrenalina/corticoide/anti-histamínico",
+          "Por IECA (bradicinérgico): edema de língua/lábios/glote, sem urticária; responde MAL às medidas alérgicas",
+          "IECA: suspender o fármaco; o foco é proteger a via aérea",
+          "Pode haver edema progressivo e tardio — observar",
+          "Considerar agentes específicos (icatibanto) no angioedema hereditário/por IECA conforme disponibilidade",
+          "Via aérea precoce se progressão do edema"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "Reconhecer a gravidade: estridor em repouso, tiragem, voz abafada, sialorreia, exaustão",
+        "Manter o paciente calmo, sentado e com O2; NÃO agitar nem examinar a garganta agressivamente",
+        "Chamar precocemente a equipe de via aérea difícil (anestesia + ORL) e preparar via cirúrgica",
+        "Tratar a causa: adrenalina IM na anafilaxia; Heimlich no corpo estranho; ATB/drenagem na infecção",
+        "Via aérea definitiva (idealmente em CC); cricotireoidostomia se 'não intubo, não ventilo'",
+        "Imagem/nasofibroscopia só se o paciente estiver estável e seguro"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com estridor, voz abafada, sialorreia e posição de tripé, com suspeita de epiglotite. Qual conduta é CONTRAINDICADA?",
+      "alternativas": [
+        "Manter o paciente calmo e sentado",
+        "Examinar agressivamente a orofaringe com abaixador de língua",
+        "Oferecer oxigênio",
+        "Acionar a equipe de via aérea difícil (anestesia + ORL)",
+        "Preparar material para via aérea cirúrgica"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Paciente em uso de IECA apresenta edema de língua e lábios, sem urticária, com dispneia progressiva. Qual a característica do tratamento?",
+      "alternativas": [
+        "Responde muito bem à adrenalina e ao corticoide, como o alérgico",
+        "É bradicinérgico, responde MAL às medidas alérgicas; suspender o IECA e priorizar a proteção da via aérea",
+        "Não há risco de obstrução",
+        "Deve-se manter o IECA",
+        "Trata-se apenas com anti-histamínico oral"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Diante do cenário 'não intubo, não ventilo' em obstrução de via aérea superior, qual a conduta?",
+      "alternativas": [
+        "Insistir indefinidamente na intubação orotraqueal",
+        "Cricotireoidostomia de emergência (via aérea cirúrgica)",
+        "Sedar profundamente e aguardar",
+        "Apenas oxigênio por máscara",
+        "Traqueostomia eletiva no dia seguinte"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Qual sinal indica obstrução significativa da via aérea superior?",
+      "alternativas": [
+        "Tosse produtiva leve",
+        "Estridor inspiratório em repouso com tiragem e uso de musculatura acessória",
+        "Coriza",
+        "Febre baixa isolada",
+        "Espirros"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Adulto engasga durante a refeição e fica subitamente incapaz de falar ou tossir, com sinais de asfixia. Qual a conduta imediata?",
+      "alternativas": [
+        "Oferecer água",
+        "Manobra de Heimlich (compressões abdominais)",
+        "Aguardar a tosse espontânea",
+        "Tomografia de tórax",
+        "Corticoide oral"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Na suspeita de epiglotite/obstrução grave, examinar agressivamente a orofaringe com abaixador de língua é CONTRAINDICADO — pode desencadear laringoespasmo e obstrução total. Mantém-se o paciente calmo, com O2, e prepara-se a via aérea com a equipe especializada."},
+    {"resposta": "B", "comentario": "O angioedema por IECA é mediado por bradicinina (não histaminérgico): cursa com edema de língua/lábios/glote sem urticária e responde MAL à adrenalina/corticoide/anti-histamínico. A conduta é suspender o IECA e priorizar a proteção da via aérea."},
+    {"resposta": "B", "comentario": "No cenário 'não intubo, não ventilo', a conduta é a via aérea cirúrgica de emergência — a cricotireoidostomia — para garantir a oxigenação. Insistir na intubação ou apenas oferecer O2 leva ao desfecho fatal."},
+    {"resposta": "B", "comentario": "O estridor inspiratório em repouso, associado a tiragem e uso de musculatura acessória, indica obstrução significativa da via aérea superior e exige reconhecimento e preparo imediato para o manejo da via aérea."},
+    {"resposta": "B", "comentario": "Engasgo súbito com incapacidade de falar ou tossir e sinais de asfixia indica obstrução COMPLETA por corpo estranho — a conduta imediata é a manobra de Heimlich (compressões abdominais) para desobstruir a via aérea."}
+  ]
+}

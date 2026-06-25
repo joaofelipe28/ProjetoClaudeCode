@@ -1,0 +1,176 @@
+{
+  "slug": "intoxicacao_benzo_opioides",
+  "titulo": "Intoxicação por Benzodiazepínicos e Opioides",
+  "especialidade": "PSIQUIATRIA",
+  "chapter_subject": "Intoxicação por Sedativos e Opioides — Toxidrome, Antídotos e Suporte",
+  "chapter_bar": "REBAIXADO + MIOSE = OPIOIDE? NALOXONA",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "TOXIDROMES — OPIOIDE vs SEDATIVO-HIPNÓTICA",
+      "section_color": "navy",
+      "headers": ["Achado", "Opioide", "Benzodiazepínico"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.26, 0.37, 0.37],
+      "rows": [
+        ["Consciência", "Rebaixamento / coma", "Sedação, sonolência"],
+        ["Pupilas", "MIOSE (puntiforme)", "Geralmente normais"],
+        ["Respiração", "DEPRESSÃO RESPIRATÓRIA marcante (bradipneia)", "Depressão respiratória leve (pior se associado a álcool/opioide)"],
+        ["Sinal-chave", "Tríade: rebaixamento + miose + bradipneia", "Sedação com sinais vitais relativamente preservados"],
+        ["Antídoto", "Naloxona", "Flumazenil (uso restrito)"],
+        ["Risco principal", "Parada respiratória", "Depressão respiratória se coingestão"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "A PRIORIDADE É A VIA AÉREA E A VENTILAÇÃO",
+      "section_color": "red",
+      "titulo": "SUPORTE PRIMEIRO; ANTÍDOTO É ADJUVANTE",
+      "items": [
+        "O que mata na intoxicação por sedativos/opioides é a depressão respiratória — garantir via aérea, ventilação e oxigenação é a prioridade",
+        "Opioide: naloxona titulada (0,04-0,4 mg IV, repetir) para reverter a depressão respiratória — não necessariamente acordar totalmente o paciente",
+        "Atenção à meia-vida: a naloxona é curta; opioides de ação longa (metadona) podem exigir doses repetidas ou infusão (re-sedação)",
+        "Flumazenil: uso RESTRITO — risco de convulsão em usuário crônico de benzodiazepínico ou em coingestão (ex.: tricíclico). NÃO usar de rotina",
+        "Coingestões são comuns (álcool, tricíclicos, paracetamol) — checar glicemia, ECG e considerar paracetamol",
+        "Observação prolongada se substância de ação longa ou liberação controlada"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "ABORDAGEM DO PACIENTE REBAIXADO POR SEDATIVOS",
+      "title": "REBAIXADO -> ABC + GLICEMIA + TOXIDROME",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Rebaixamento do nível de consciência\nABC + glicemia capilar + sinais vitais + pupilas", "color": "navy", "font_size": 5.4},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Garantir VIA AÉREA, ventilação e oxigenação\n(o suporte é a prioridade)", "color": "red", "font_size": 5.3},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Miose + bradipneia (opioide):\nNALOXONA titulada\n(0,04-0,4 mg IV, repetir)\ncuidado com re-sedação", "color": "orange", "font_size": 5.0},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Sedação por benzodiazepínico:\nSUPORTE; flumazenil\ncom muita cautela\n(risco de convulsão)", "color": "teal", "font_size": 5.0},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Investigar COINGESTÃO (álcool, tricíclico, paracetamol)\nECG, glicemia; observar conforme a meia-vida da droga", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["b", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "ANTÍDOTOS E SUPORTE",
+      "section_color": "orange",
+      "titulo": "NALOXONA E FLUMAZENIL",
+      "items": [
+        "Naloxona: 0,04-0,4 mg IV, repetir a cada 2-3 min até FR/ventilação adequadas (alvo: respirar, não necessariamente acordar)",
+        "Naloxona em infusão contínua: se opioide de ação longa (metadona) e re-sedação recorrente",
+        "Via alternativa: naloxona IM/intranasal se sem acesso venoso (contexto pré-hospitalar/overdose comunitária)",
+        "Abstinência por naloxona: agitação, dor, sudorese, taquicardia — titular para evitar (não dar bolus alto desnecessário)",
+        "Flumazenil: 0,2 mg IV (RESTRITO); EVITAR em usuário crônico de BZD, na coingestão de tricíclico/proconvulsivante e na dependência",
+        "Suporte ventilatório (O2, ventilação com bolsa-máscara, IOT se necessário) é a base do tratamento",
+        "Checar glicemia, ECG (QRS/QT) e dosar paracetamol em intoxicação intencional"
+      ]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ARMADILHAS E CONTEXTO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Opioides — Cuidados",
+        "items": [
+          "Reverter a ventilação, não necessariamente acordar o paciente",
+          "Meia-vida curta da naloxona x opioide de ação longa = risco de re-sedação",
+          "Observação prolongada para metadona, oxicodona de liberação controlada, fentanil",
+          "Edema pulmonar não cardiogênico pode ocorrer após reversão",
+          "Considerar overdose acidental e tentativa de suicídio",
+          "Encaminhar para suporte/tratamento da dependência"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Benzodiazepínicos — Cuidados",
+        "items": [
+          "Isoladamente, raramente causam depressão respiratória grave em adulto",
+          "Grave se associado a álcool, opioide ou outros depressores",
+          "Flumazenil pode precipitar convulsão (abstinência) e arritmia (coingestão de tricíclico)",
+          "Preferir o suporte clínico ao antídoto na maioria dos casos",
+          "Avaliar risco de suicídio e coingestões",
+          "Observar até a melhora do nível de consciência"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CONDUTA NO PS",
+      "titulo": "PONTOS-CHAVE",
+      "items": [
+        "ABC + glicemia em todo rebaixamento; garantir via aérea e ventilação (prioridade)",
+        "Reconhecer a toxidrome opioide: rebaixamento + MIOSE + bradipneia",
+        "Naloxona titulada para reverter a depressão respiratória (cuidado com re-sedação em opioide de ação longa)",
+        "Flumazenil de uso RESTRITO (risco de convulsão); na maioria dos BZD, o suporte basta",
+        "Investigar coingestões (álcool, tricíclico, paracetamol); ECG e glicemia",
+        "Observar conforme a meia-vida da substância; avaliar risco de suicídio e encaminhamento"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Paciente com rebaixamento, pupilas puntiformes (miose) e FR de 6 irpm. Qual o diagnóstico e o antídoto?",
+      "alternativas": [
+        "Intoxicação por benzodiazepínico — flumazenil",
+        "Intoxicação por opioide — naloxona titulada, com suporte ventilatório",
+        "Intoxicação por anfetamina — betabloqueador",
+        "Intoxicação por organofosforado — atropina",
+        "Intoxicação por álcool — tiamina"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Por que o flumazenil deve ser usado com muita cautela na intoxicação por benzodiazepínicos?",
+      "alternativas": [
+        "Porque não reverte a sedação",
+        "Porque pode precipitar convulsões (em usuário crônico) e é perigoso na coingestão de tricíclicos",
+        "Porque causa miose",
+        "Porque eleva a pressão arterial",
+        "Porque é um opioide"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é a prioridade no manejo da intoxicação por opioides/sedativos?",
+      "alternativas": [
+        "Administrar o antídoto antes de qualquer medida",
+        "Garantir via aérea, ventilação e oxigenação (suporte)",
+        "Realizar lavagem gástrica de rotina",
+        "Induzir o vômito",
+        "Aguardar a eliminação espontânea"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Paciente respondeu à naloxona mas voltou a apresentar depressão respiratória após 40 minutos. Qual a explicação e a conduta?",
+      "alternativas": [
+        "Falha do diagnóstico; suspender a naloxona",
+        "A naloxona tem meia-vida curta e o opioide é de ação longa — repetir doses ou iniciar infusão contínua",
+        "Administrar flumazenil",
+        "Dar alta imediata",
+        "Iniciar antibiótico"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Em uma intoxicação intencional por benzodiazepínico, qual coingestão NÃO pode deixar de ser investigada?",
+      "alternativas": [
+        "Paracetamol (e outras, como álcool e tricíclicos)",
+        "Vitamina C",
+        "Ferro apenas",
+        "Antiácidos",
+        "Probióticos"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "Rebaixamento + miose puntiforme + bradipneia é a toxidrome opioide. O antídoto é a naloxona, titulada para reverter a depressão respiratória, sempre com suporte ventilatório — que é a verdadeira prioridade."},
+    {"resposta": "B", "comentario": "O flumazenil pode precipitar convulsões em usuários crônicos de benzodiazepínicos (abstinência aguda) e é especialmente perigoso na coingestão de tricíclicos (remove o efeito anticonvulsivante do BZD). Por isso seu uso é restrito; o suporte clínico costuma ser suficiente."},
+    {"resposta": "B", "comentario": "A prioridade é o suporte: garantir via aérea, ventilação e oxigenação — pois é a depressão respiratória que mata. O antídoto (naloxona) é adjuvante. Lavagem gástrica e indução de vômito não são condutas de rotina."},
+    {"resposta": "B", "comentario": "A naloxona tem meia-vida curta; opioides de ação longa (ex.: metadona) podem causar re-sedação quando o efeito do antídoto termina. A conduta é repetir doses ou iniciar infusão contínua, com observação prolongada."},
+    {"resposta": "A", "comentario": "Em intoxicação intencional, deve-se sempre investigar coingestões — especialmente paracetamol (hepatotoxicidade tardia e tratável com N-acetilcisteína), além de álcool e antidepressivos tricíclicos. Checar também glicemia e ECG."}
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "slug": "sedacao_analgesia_procedimentos",
+  "titulo": "Sedação e Analgesia para Procedimentos no PS",
+  "especialidade": "PROCEDIMENTOS",
+  "chapter_subject": "Sedação Procedural — Níveis, Drogas, Monitorização e Segurança",
+  "chapter_bar": "SEDAÇÃO PROCEDURAL — PREPARO + MONITORIZAR",
+  "secoes": [
+    {
+      "tipo": "comparison_table",
+      "section_title": "NÍVEIS DE SEDAÇÃO",
+      "section_color": "navy",
+      "headers": ["Nível", "Resposta", "Via aérea / ventilação"],
+      "header_colors": ["gray", "navy", "teal"],
+      "col_widths": [0.24, 0.38, 0.38],
+      "rows": [
+        ["Mínima (ansiólise)", "Responde normalmente ao comando verbal", "Preservadas"],
+        ["Moderada (consciente)", "Responde a comando/estímulo tátil", "Mantém via aérea e ventilação espontânea"],
+        ["Profunda", "Responde a estímulo doloroso repetido", "Pode precisar de suporte de via aérea/ventilação"],
+        ["Anestesia geral", "Não responde nem ao estímulo doloroso", "Frequentemente requer suporte ventilatório"],
+        ["Conceito-chave", "A sedação é um continuum — o paciente pode ir além do nível pretendido", "Estar preparado para resgatar um nível mais profundo que o planejado"]
+      ]
+    },
+    {
+      "tipo": "highlightbox",
+      "section_title": "SEGURANÇA: PREPARO ANTES DA DROGA",
+      "section_color": "red",
+      "titulo": "MONITORIZAÇÃO, MATERIAL E PESSOAL DEDICADO",
+      "items": [
+        "Avaliar via aérea (Mallampati, mobilidade cervical, abertura oral) e risco (ASA, comorbidades)",
+        "Monitorização: oximetria CONTÍNUA, PA, ECG e CAPNOGRAFIA (detecta hipoventilação antes da dessaturação)",
+        "Material pronto: O2, aspirador, bolsa-válvula-máscara, material de via aérea e drogas de reanimação; acesso venoso",
+        "Pessoal: um profissional dedicado a monitorar a sedação, separado de quem realiza o procedimento",
+        "Pré-oxigenar; ter os antídotos disponíveis (naloxona para opioide, flumazenil para benzodiazepínico)",
+        "Jejum: considerar, mas NÃO deve atrasar procedimentos de emergência (individualizar risco-benefício)",
+        "A complicação mais comum e temida é a depressão respiratória/hipoventilação"
+      ],
+      "accent": "red",
+      "bg": "red_light"
+    },
+    {
+      "tipo": "rxbox",
+      "section_title": "DROGAS PARA SEDAÇÃO E ANALGESIA",
+      "section_color": "orange",
+      "titulo": "ESCOLHER PELO PROCEDIMENTO E PELO PACIENTE",
+      "items": [
+        "Cetamina: 1-2 mg/kg IV (sedação dissociativa); mantém o drive respiratório e a PA; broncodilatador; ideal em crianças e em procedimentos dolorosos",
+        "Propofol: 0,5-1 mg/kg IV, titular; início e recuperação rápidos; causa hipotensão e depressão respiratória (não tem antídoto)",
+        "Midazolam: 0,02-0,05 mg/kg IV; ansiólise/amnésia; antídoto flumazenil (cautela)",
+        "Fentanil: 1 mcg/kg IV; analgésico potente e de ação rápida; antídoto naloxona",
+        "Cetofol (cetamina + propofol): combinação que reduz a hipotensão e a depressão respiratória",
+        "Etomidato: 0,1-0,15 mg/kg; hemodinamicamente estável; pode causar mioclonias",
+        "Óxido nitroso: ansiólise/analgesia leve para procedimentos menores",
+        "Titular sempre a menor dose eficaz e reavaliar"
+      ]
+    },
+    {
+      "tipo": "flowchart",
+      "section_title": "FLUXO DA SEDAÇÃO PROCEDURAL",
+      "title": "SEDAÇÃO — AVALIAR, PREPARAR, MONITORAR, RECUPERAR",
+      "height": 200,
+      "nodes": [
+        {"id": "a", "x": 0.5, "y": 0.91, "w": 220, "h": 22, "text": "Avaliar via aérea, ASA, jejum e o nível de sedação necessário\nConsentimento e plano de resgate", "color": "navy", "font_size": 5.3},
+        {"id": "b", "x": 0.5, "y": 0.69, "w": 220, "h": 22, "text": "Preparar: monitor (oximetria/capnografia/PA/ECG), O2,\nmaterial de via aérea, antídotos, acesso e PESSOAL dedicado", "color": "red", "font_size": 5.1},
+        {"id": "c", "x": 0.26, "y": 0.42, "w": 155, "h": 24, "text": "Titular a droga escolhida\nà menor dose eficaz\nmonitorizar continuamente", "color": "orange", "font_size": 5.1},
+        {"id": "d", "x": 0.74, "y": 0.42, "w": 155, "h": 24, "text": "Complicação (hipoventilação/\ndessaturação): estimular, O2,\nvia aérea, ventilar, antídoto\nse indicado", "color": "teal", "font_size": 4.9},
+        {"id": "e", "x": 0.5, "y": 0.13, "w": 220, "h": 22, "text": "Recuperação monitorizada até critérios de alta\n(consciência basal, sinais vitais estáveis, sem dor/náusea)", "color": "green", "font_size": 5.1}
+      ],
+      "arrows": [["a", "b"], ["b", "c"], ["c", "d"], ["c", "e"], ["d", "e"]]
+    },
+    {
+      "tipo": "twocols",
+      "section_title": "ESCOLHA POR CENÁRIO E RECUPERAÇÃO",
+      "section_color": "navy",
+      "left": {
+        "tipo": "infobox",
+        "titulo": "Qual Droga Quando",
+        "items": [
+          "Redução de fratura/luxação dolorosa: cetamina ou propofol+fentanil (cetofol)",
+          "Cardioversão elétrica: propofol ou etomidato (curta duração)",
+          "Criança em procedimento doloroso: cetamina (mantém drive respiratório e PA)",
+          "Paciente hipotenso/instável: etomidato ou cetamina (evitar propofol)",
+          "Procedimento curto e pouco doloroso: midazolam +/- fentanil",
+          "Sempre associar analgesia adequada à sedação em procedimentos dolorosos"
+        ]
+      },
+      "right": {
+        "tipo": "infobox",
+        "titulo": "Critérios de Alta",
+        "items": [
+          "Retorno ao nível de consciência basal",
+          "Sinais vitais estáveis e via aérea segura",
+          "Dor e náusea controladas",
+          "Capaz de deambular conforme o basal; sem sinais de re-sedação",
+          "Orientações por escrito; acompanhante para o domicílio",
+          "Observar mais tempo se usou droga de ação longa ou houve complicação"
+        ]
+      }
+    },
+    {
+      "tipo": "checklist",
+      "section_title": "CHECKLIST DE SEGURANÇA",
+      "titulo": "ANTES, DURANTE E DEPOIS",
+      "items": [
+        "ANTES: avaliar via aérea/ASA/jejum, consentir, preparar monitor (incl. capnografia), O2, material e antídotos",
+        "PESSOAL dedicado à monitorização, separado de quem faz o procedimento",
+        "DURANTE: titular a menor dose eficaz; vigiar oximetria, capnografia e nível de consciência",
+        "Complicação mais comum: depressão respiratória/hipoventilação — estimular, O2, ventilar, antídoto se indicado",
+        "Escolher a droga pelo procedimento e pelo paciente (cetamina/etomidato se instável)",
+        "DEPOIS: recuperação monitorizada até critérios de alta; orientações e acompanhante"
+      ]
+    }
+  ],
+  "questoes": [
+    {
+      "source": "FMUSP / Adaptada",
+      "enunciado": "Qual método de monitorização detecta precocemente a hipoventilação durante a sedação, ANTES da queda da saturação?",
+      "alternativas": [
+        "Pressão arterial não invasiva",
+        "Capnografia (PETCO2)",
+        "Temperatura",
+        "Glicemia capilar",
+        "Diurese"
+      ]
+    },
+    {
+      "source": "AMRIGS / Adaptada",
+      "enunciado": "Em paciente hipotenso/instável que necessita de sedação para cardioversão, qual agente é preferível?",
+      "alternativas": [
+        "Propofol em dose alta",
+        "Etomidato (ou cetamina), por maior estabilidade hemodinâmica",
+        "Midazolam em bolus alto",
+        "Tiopental",
+        "Fentanil isolado em dose alta"
+      ]
+    },
+    {
+      "source": "CFM / Adaptada",
+      "enunciado": "Qual é a complicação mais comum e temida da sedação procedural?",
+      "alternativas": [
+        "Reação alérgica cutânea",
+        "Depressão respiratória / hipoventilação",
+        "Hipertensão",
+        "Hiperglicemia",
+        "Retenção urinária"
+      ]
+    },
+    {
+      "source": "SES-SP / Adaptada",
+      "enunciado": "Sobre a equipe durante a sedação procedural, qual afirmação é correta?",
+      "alternativas": [
+        "O mesmo profissional pode realizar o procedimento e monitorar a sedação simultaneamente",
+        "Deve haver um profissional dedicado a monitorar a sedação, separado de quem realiza o procedimento",
+        "Não é necessária monitorização contínua",
+        "Os antídotos não precisam estar disponíveis",
+        "A oximetria é dispensável"
+      ]
+    },
+    {
+      "source": "UFMG / Adaptada",
+      "enunciado": "Qual agente sedativo/analgésico mantém o drive respiratório e a pressão arterial, sendo útil em crianças e em procedimentos dolorosos?",
+      "alternativas": [
+        "Propofol",
+        "Cetamina",
+        "Midazolam",
+        "Tiopental",
+        "Óxido nitroso isolado"
+      ]
+    }
+  ],
+  "gabarito": [
+    {"resposta": "B", "comentario": "A capnografia (PETCO2) detecta a hipoventilação precocemente, antes da queda da saturação na oximetria (que tem atraso, sobretudo com O2 suplementar). Por isso é recomendada na monitorização da sedação procedural."},
+    {"resposta": "B", "comentario": "No paciente hipotenso/instável, prefere-se etomidato (hemodinamicamente estável) ou cetamina (simpaticomimético) para sedação/cardioversão, evitando o propofol, que causa hipotensão."},
+    {"resposta": "B", "comentario": "A complicação mais comum e temida da sedação procedural é a depressão respiratória/hipoventilação. Por isso a monitorização (oximetria + capnografia), o material de via aérea e os antídotos devem estar prontos."},
+    {"resposta": "B", "comentario": "Deve haver um profissional dedicado exclusivamente a monitorar a sedação e o paciente, separado de quem executa o procedimento, garantindo a vigilância contínua e a capacidade de resgate."},
+    {"resposta": "B", "comentario": "A cetamina (sedação dissociativa) mantém o drive respiratório e a pressão arterial, além de ser analgésica e broncodilatadora — útil em crianças e em procedimentos dolorosos, e segura no paciente hipotenso."}
+  ]
+}
