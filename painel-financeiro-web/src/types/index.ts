@@ -78,6 +78,7 @@ export const DEFAULT_CATEGORIAS: string[] = [
   'iFood',
   'Combustível',
   'Transporte',
+  'Uber',
   'Moradia',
   'Saúde',
   'Saúde mental',

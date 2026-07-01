@@ -57,7 +57,7 @@ export function Mensal() {
   const {
     config, tomadores, parcelamentos, pontuais, fixos, investimentos, aportes, receitasPontuais, customCategorias,
     upsertIncomeRecord, initMonthFromTomadores, setMesAtual,
-    addPontual, deletePontual, addCategoria,
+    addPontual, updatePontual, deletePontual, addCategoria,
     addAporte, deleteAporte,
     addReceitaPontual, updateReceitaPontual, deleteReceitaPontual,
     toggleDebitPago, skipDebit, unskipDebit, getDebitRecord,
@@ -69,6 +69,7 @@ export function Mensal() {
   const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 12))
   const [selectedMes, setSelectedMes] = useState(config.mesAtual)
   const [showAddPontual, setShowAddPontual] = useState(false)
+  const [editandoCatId, setEditandoCatId] = useState<string | null>(null)
   const [newPontual, setNewPontual] = useState<Partial<GastoPontual>>({
     mesAno: selectedMes, categoria: 'Outros', status: 'Confirmado',
   })
@@ -650,7 +651,25 @@ export function Mensal() {
                       <div className={`text-sm font-medium ${pago || pulado ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                         {p.descricao}
                       </div>
-                      <div className="text-xs text-gray-400">{p.categoria}</div>
+                      {editandoCatId === p.id ? (
+                        <div onClick={e => e.stopPropagation()} className="mt-1">
+                          <CategoriaSelect
+                            value={p.categoria}
+                            categorias={categorias}
+                            onCreate={addCategoria}
+                            onChange={v => { updatePontual(p.id, { categoria: v }); setEditandoCatId(null) }}
+                            className="text-xs"
+                          />
+                        </div>
+                      ) : (
+                        <button
+                          onClick={e => { e.stopPropagation(); setEditandoCatId(p.id) }}
+                          title="Clique para mudar a categoria"
+                          className="text-xs text-gray-400 hover:text-saldo inline-flex items-center gap-1 mt-0.5"
+                        >
+                          {p.categoria} <span className="opacity-50">✎</span>
+                        </button>
+                      )}
                     </div>
                     <div className={`text-sm font-medium ${pago || pulado ? 'text-gray-400 line-through' : 'text-pontual'}`}>
                       {brl(p.valor)}
