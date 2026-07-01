@@ -2,6 +2,7 @@ import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import { immer } from 'zustand/middleware/immer'
 import { saveStatus } from '@/lib/saveStatus'
+import { DEFAULT_CATEGORIAS } from '@/types'
 import type {
   AppConfig, TaxConfig, Tomador, MonthlyIncomeRecord, GastoFixo,
   GastoPontual, Parcelamento, InvestimentoPosition, InvestimentoHistorico,
@@ -138,6 +139,7 @@ interface AppStore {
   investimentoHistorico: InvestimentoHistorico[]
   aportes: AporteInvestimento[]
   receitasPontuais: ReceitaPontual[]
+  customCategorias: string[]
 
   // Config actions
   updateConfig: (updates: Partial<AppConfig>) => void
@@ -164,6 +166,10 @@ interface AppStore {
   addPontual: (p: Omit<GastoPontual, 'id'>) => void
   updatePontual: (id: string, updates: Partial<GastoPontual>) => void
   deletePontual: (id: string) => void
+
+  // Categorias actions
+  addCategoria: (nome: string) => void
+  deleteCategoria: (nome: string) => void
 
   // Parcelamentos actions
   addParcelamento: (p: Omit<Parcelamento, 'id'>) => void
@@ -217,6 +223,7 @@ function getDefaultState() {
     investimentoHistorico: [] as InvestimentoHistorico[],
     aportes: [] as AporteInvestimento[],
     receitasPontuais: [] as ReceitaPontual[],
+    customCategorias: [] as string[],
   }
 }
 
@@ -286,6 +293,17 @@ export const useStore = create<AppStore>()(
         if (idx !== -1) Object.assign(s.pontuais[idx], updates)
       }),
       deletePontual: (id) => set(s => { s.pontuais = s.pontuais.filter(p => p.id !== id) }),
+
+      addCategoria: (nome) => set(s => {
+        const limpo = nome.trim()
+        if (!limpo) return
+        const jaExiste = [...DEFAULT_CATEGORIAS, ...s.customCategorias]
+          .some(c => c.toLowerCase() === limpo.toLowerCase())
+        if (!jaExiste) s.customCategorias.push(limpo)
+      }),
+      deleteCategoria: (nome) => set(s => {
+        s.customCategorias = s.customCategorias.filter(c => c !== nome)
+      }),
 
       addParcelamento: (p) => set(s => { s.parcelamentos.push({ ...p, id: crypto.randomUUID() }) }),
       updateParcelamento: (id, updates) => set(s => {
@@ -373,8 +391,8 @@ export const useStore = create<AppStore>()(
       deleteReceitaPontual: (id) => set(s => { s.receitasPontuais = s.receitasPontuais.filter(r => r.id !== id) }),
 
       exportData: () => {
-        const { config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes, receitasPontuais } = get()
-        return JSON.stringify({ config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes, receitasPontuais }, null, 2)
+        const { config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes, receitasPontuais, customCategorias } = get()
+        return JSON.stringify({ config, tomadores, incomeRecords, monthlyDebits, fixos, pontuais, parcelamentos, investimentos, investimentoHistorico, aportes, receitasPontuais, customCategorias }, null, 2)
       },
       importData: (json) => set(s => {
         try {
@@ -454,7 +472,7 @@ export const useStore = create<AppStore>()(
           },
         }
       }),
-      version: 4,
+      version: 5,
       // REGRA FUTURA: nunca mude o `name` acima. Para adicionar dados novos,
       // incremente `version` e escreva uma migração que só ADICIONA itens
       // ausentes por ID — nunca sobrescreva dados do usuário.
@@ -482,6 +500,11 @@ export const useStore = create<AppStore>()(
         // v3 → v4: adiciona receitas pontuais
         if (fromVersion < 4) {
           if (!(s as any).receitasPontuais) (s as any).receitasPontuais = []
+        }
+
+        // v4 → v5: adiciona categorias customizadas
+        if (fromVersion < 5) {
+          if (!(s as any).customCategorias) (s as any).customCategorias = []
         }
 
         return s

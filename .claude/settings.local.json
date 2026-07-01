@@ -89,7 +89,11 @@
       "Bash(python3 -c \"import pypdf; r=pypdf.PdfReader\\('../outputs/apostila_pneumonia_pac_pediatria.pdf'\\); txt=''.join\\(p.extract_text\\(\\) or '' for p in r.pages\\); print\\('paginas:', len\\(r.pages\\), '| ■ =', txt.count\\(chr\\(9632\\)\\)\\)\")",
       "Bash(sips -s format png --out /tmp/pac_ped2.png apostila_pneumonia_pac_pediatria.pdf)",
       "Bash(pdftoppm -png -r 90 -f 3 -l 4 apostila_pneumonia_pac_pediatria.pdf /tmp/pacped)",
-      "Bash(python3 build_apostila.py --validate-only --outdir ../outputs ../jsons_fase2/nefropatia_contraste.json)"
+      "Bash(python3 build_apostila.py --validate-only --outdir ../outputs ../jsons_fase2/nefropatia_contraste.json)",
+      "Bash(python3 -c \"import openpyxl; print\\('openpyxl', openpyxl.__version__\\)\")",
+      "Bash(python3 build_inventario.py)",
+      "Bash(echo \"--- base64 size ---\")",
+      "Bash(base64 -i SM24_Inventario_Protocolos_atualizado.xlsx)"
     ]
   }
 }

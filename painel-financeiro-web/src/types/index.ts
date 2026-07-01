@@ -68,22 +68,30 @@ export interface MonthlyDebitRecord {
 
 // ── Gastos Fixos ──────────────────────────────────────────────────────────────
 
-export type FixoCategoria =
-  | 'Transporte'
-  | 'Saúde'
-  | 'Saúde mental'
-  | 'Família'
-  | 'PJ operacional'
-  | 'Moradia'
-  | 'Comunicação'
-  | 'Trabalho/estudo'
-  | 'Bem-estar'
-  | 'Pet'
-  | 'Lazer'
-  | 'Alimentação'
-  | 'Cartão'
-  | 'Dívidas'
-  | 'Outros'
+// Categoria é livre (string) — o usuário pode criar novas.
+// DEFAULT_CATEGORIAS são apenas as sugestões pré-preenchidas no seletor.
+export type FixoCategoria = string
+
+export const DEFAULT_CATEGORIAS: string[] = [
+  'Alimentação',
+  'Mercado',
+  'iFood',
+  'Combustível',
+  'Transporte',
+  'Moradia',
+  'Saúde',
+  'Saúde mental',
+  'Bem-estar',
+  'Família',
+  'Pet',
+  'Lazer',
+  'Comunicação',
+  'Trabalho/estudo',
+  'PJ operacional',
+  'Cartão',
+  'Dívidas',
+  'Outros',
+]
 
 export type FixoStatus = 'Ativo' | 'Pausado' | 'Cancelado'
 

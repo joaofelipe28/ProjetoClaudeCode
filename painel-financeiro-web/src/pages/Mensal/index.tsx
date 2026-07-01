@@ -4,9 +4,11 @@ import { useMonthlyCalculations } from '@/hooks/useMonthlyCalculations'
 import { KpiCard } from '@/components/ui/KpiCard'
 import { CurrencyInput } from '@/components/ui/CurrencyInput'
 import { Select } from '@/components/ui/Select'
+import { CategoriaSelect } from '@/components/ui/CategoriaSelect'
 import { Modal } from '@/components/ui/Modal'
 import { brl, mesLabel, monthRange, addMonths } from '@/lib/formatters'
 import { getParcelamentoValue } from '@/lib/calculations'
+import { DEFAULT_CATEGORIAS } from '@/types'
 import type { IncomeStatus, GastoPontual, FixoCategoria, DebitType, AporteInvestimento, ReceitaPontual } from '@/types'
 
 const STATUS_OPTIONS = [
@@ -16,11 +18,16 @@ const STATUS_OPTIONS = [
   { value: 'Cancelado', label: 'Cancelado' },
 ]
 
-const CATEGORIA_OPTIONS: FixoCategoria[] = [
-  'Alimentação', 'Bem-estar', 'Cartão', 'Comunicação', 'Dívidas', 'Família', 'Lazer',
-  'Moradia', 'Outros', 'Pet', 'PJ operacional', 'Saúde', 'Saúde mental',
-  'Trabalho/estudo', 'Transporte',
+// Paleta estável para categorias no dashboard de gastos
+const CAT_COLORS = [
+  '#16a34a', '#dc2626', '#ea580c', '#7c3aed', '#2563eb', '#0891b2',
+  '#d97706', '#db2777', '#f97316', '#65a30d', '#0d9488', '#9333ea',
+  '#e11d48', '#ca8a04', '#64748b',
 ]
+function catColor(cat: string, all: string[]): string {
+  const i = all.indexOf(cat)
+  return CAT_COLORS[(i < 0 ? 0 : i) % CAT_COLORS.length]
+}
 
 const TYPE_COLOR: Record<DebitType, string> = {
   Fixo: 'bg-despesa/15 text-despesa',
@@ -48,13 +55,16 @@ function CheckCircle({ checked }: { checked: boolean }) {
 
 export function Mensal() {
   const {
-    config, tomadores, parcelamentos, pontuais, fixos, investimentos, aportes, receitasPontuais,
+    config, tomadores, parcelamentos, pontuais, fixos, investimentos, aportes, receitasPontuais, customCategorias,
     upsertIncomeRecord, initMonthFromTomadores, setMesAtual,
-    addPontual, deletePontual,
+    addPontual, deletePontual, addCategoria,
     addAporte, deleteAporte,
     addReceitaPontual, updateReceitaPontual, deleteReceitaPontual,
     toggleDebitPago, skipDebit, unskipDebit, getDebitRecord,
   } = useStore()
+
+  // Categorias disponíveis = padrão + criadas pelo usuário (sem duplicar)
+  const categorias = [...DEFAULT_CATEGORIAS, ...customCategorias.filter(c => !DEFAULT_CATEGORIAS.includes(c))]
 
   const meses = monthRange(config.mesInicio, addMonths(config.mesInicio, 12))
   const [selectedMes, setSelectedMes] = useState(config.mesAtual)
@@ -222,6 +232,25 @@ export function Mensal() {
     setNewAporte({ mesAno: selectedMes, status: 'Confirmado', valor: 0 })
     setShowAddAporte(false)
   }
+
+  // ── Gastos por categoria (mês selecionado) ────────────────────────────────
+  // Agrega fixos ativos + parcelamentos do mês + pontuais, excluindo pulados.
+  const gastosCat: Record<string, number> = {}
+  function addCat(cat: string, valor: number) {
+    const c = cat || 'Outros'
+    gastosCat[c] = (gastosCat[c] ?? 0) + valor
+  }
+  activeFixos.forEach(f => { if (!isDebitPulado(f.id)) addCat(f.categoria, f.valor) })
+  activeParcelamentos.forEach(p => {
+    if (!isDebitPulado(p.id)) addCat(p.categoria ?? `Parcela ${p.tipo}`, getParcelamentoValue(p, selectedMes))
+  })
+  monthPontuais.forEach(p => { if (!isDebitPulado(p.id)) addCat(p.categoria, p.valor) })
+
+  const catEntries = Object.entries(gastosCat)
+    .map(([cat, valor]) => ({ cat, valor }))
+    .sort((a, b) => b.valor - a.valor)
+  const totalGastosCat = catEntries.reduce((s, e) => s + e.valor, 0)
+  const catMax = catEntries[0]?.valor ?? 0
 
   return (
     <div className="space-y-6">
@@ -719,6 +748,49 @@ export function Mensal() {
         </div>
       </div>
 
+      {/* ── Gastos por categoria (dashboard do mês) ──────────────────────── */}
+      <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+        <div className="px-4 py-3 border-b border-gray-100 flex items-center justify-between">
+          <div>
+            <h2 className="text-sm font-semibold text-gray-700">📊 Gastos por categoria — {mesLabel(selectedMes)}</h2>
+            <p className="text-xs text-gray-400 mt-0.5">Onde seu dinheiro está indo neste mês</p>
+          </div>
+          <div className="text-right">
+            <div className="text-xs text-gray-400 uppercase font-semibold tracking-wide">Total</div>
+            <div className="text-base font-bold text-despesa">{brl(totalGastosCat)}</div>
+          </div>
+        </div>
+
+        {catEntries.length === 0 ? (
+          <div className="px-4 py-8 text-center text-sm text-gray-400">
+            Nenhum gasto registrado em {mesLabel(selectedMes)} ainda.
+          </div>
+        ) : (
+          <div className="p-4 space-y-3">
+            {catEntries.map(({ cat, valor }) => {
+              const pctTotal = totalGastosCat > 0 ? (valor / totalGastosCat) * 100 : 0
+              const barW = catMax > 0 ? (valor / catMax) * 100 : 0
+              const cor = catColor(cat, catEntries.map(e => e.cat))
+              return (
+                <div key={cat} className="flex items-center gap-3">
+                  <div className="w-32 shrink-0 flex items-center gap-2 min-w-0">
+                    <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: cor }} />
+                    <span className="text-sm text-gray-700 truncate" title={cat}>{cat}</span>
+                  </div>
+                  <div className="flex-1 bg-gray-100 rounded-full h-5 overflow-hidden relative">
+                    <div className="h-full rounded-full transition-all duration-500 flex items-center justify-end pr-2"
+                      style={{ width: `${Math.max(barW, 8)}%`, background: cor }}>
+                      <span className="text-[10px] font-semibold text-white whitespace-nowrap">{pctTotal.toFixed(0)}%</span>
+                    </div>
+                  </div>
+                  <div className="w-24 shrink-0 text-right text-sm font-semibold text-gray-800">{brl(valor)}</div>
+                </div>
+              )
+            })}
+          </div>
+        )}
+      </div>
+
       {/* Add aporte modal */}
       <Modal open={showAddAporte} onClose={() => setShowAddAporte(false)} title="Registrar Aporte de Investimento">
         <div className="space-y-4">
@@ -805,12 +877,14 @@ export function Mensal() {
           </div>
           <div>
             <label className="block text-xs text-gray-600 mb-1 font-medium">Categoria</label>
-            <Select
+            <CategoriaSelect
               value={newPontual.categoria ?? 'Outros'}
               onChange={v => setNewPontual(p => ({ ...p, categoria: v as FixoCategoria }))}
-              options={CATEGORIA_OPTIONS.map(c => ({ value: c, label: c }))}
+              categorias={categorias}
+              onCreate={addCategoria}
               className="w-full"
             />
+            <p className="text-xs text-gray-400 mt-1">Selecione ou crie uma nova (ex: iFood, Combustível, Mercado)</p>
           </div>
           <div>
             <label className="block text-xs text-gray-600 mb-1 font-medium">Valor</label>

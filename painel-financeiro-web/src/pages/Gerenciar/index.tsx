@@ -3,18 +3,14 @@ import { useStore } from '@/store'
 import { Modal } from '@/components/ui/Modal'
 import { CurrencyInput } from '@/components/ui/CurrencyInput'
 import { Select } from '@/components/ui/Select'
+import { CategoriaSelect } from '@/components/ui/CategoriaSelect'
 import { StatusBadge } from '@/components/ui/StatusBadge'
 import { brl, mesLabel, addMonths } from '@/lib/formatters'
 import { getParcelamentoMesFinal, getParcelamentoSaldoRestante, computeFixosTotal } from '@/lib/calculations'
+import { DEFAULT_CATEGORIAS } from '@/types'
 import type { Tomador, GastoFixo, Parcelamento, FixoCategoria, FixoStatus, ParcelamentoStatus } from '@/types'
 
 type SubTab = 'tomadores' | 'fixos' | 'parcelamentos' | 'config'
-
-const CATEGORIA_OPTS: FixoCategoria[] = [
-  'Alimentação', 'Bem-estar', 'Comunicação', 'Família', 'Lazer',
-  'Moradia', 'Outros', 'Pet', 'PJ operacional', 'Saúde', 'Saúde mental',
-  'Trabalho/estudo', 'Transporte',
-]
 
 const INPUT_CLS = 'w-full bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:border-saldo/60 focus:ring-1 focus:ring-saldo/20'
 
@@ -120,11 +116,12 @@ function TomadoresTab() {
 // ── Fixos Tab ─────────────────────────────────────────────────────────────────
 
 function FixosTab() {
-  const { fixos, addFixo, updateFixo, deleteFixo } = useStore()
+  const { fixos, addFixo, updateFixo, deleteFixo, customCategorias, addCategoria } = useStore()
   const [showForm, setShowForm] = useState(false)
   const [editId, setEditId] = useState<string | null>(null)
   const EMPTY: Omit<GastoFixo, 'id'> = { descricao: '', categoria: 'Outros', valor: 0, status: 'Ativo' }
   const [form, setForm] = useState<Omit<GastoFixo, 'id'>>(EMPTY)
+  const categorias = [...DEFAULT_CATEGORIAS, ...customCategorias.filter(c => !DEFAULT_CATEGORIAS.includes(c))]
 
   const total = computeFixosTotal(fixos)
 
@@ -179,8 +176,8 @@ function FixosTab() {
           </div>
           <div>
             <label className="block text-xs text-gray-600 mb-1 font-medium">Categoria</label>
-            <Select value={form.categoria} onChange={v => setForm(f => ({ ...f, categoria: v as FixoCategoria }))}
-              options={CATEGORIA_OPTS.map(c => ({ value: c, label: c }))} className="w-full" />
+            <CategoriaSelect value={form.categoria} onChange={v => setForm(f => ({ ...f, categoria: v as FixoCategoria }))}
+              categorias={categorias} onCreate={addCategoria} className="w-full" />
           </div>
           <div>
             <label className="block text-xs text-gray-600 mb-1 font-medium">Valor</label>
