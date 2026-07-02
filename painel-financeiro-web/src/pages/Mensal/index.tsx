@@ -7,6 +7,7 @@ import { Select } from '@/components/ui/Select'
 import { CategoriaSelect } from '@/components/ui/CategoriaSelect'
 import { CategoriaChip } from '@/components/ui/CategoriaChip'
 import { ValorInline } from '@/components/ui/ValorInline'
+import { TextoInline } from '@/components/ui/TextoInline'
 import { Modal } from '@/components/ui/Modal'
 import { brl, mesLabel, monthRange, addMonths } from '@/lib/formatters'
 import { getParcelamentoValue } from '@/lib/calculations'
@@ -649,10 +650,12 @@ export function Mensal() {
                       <CheckCircle checked={pago} />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className={`text-sm font-medium ${pago || pulado ? 'line-through text-gray-400' : 'text-gray-800'}`}>
-                        {p.descricao}
-                      </div>
-                      <CategoriaChip value={p.categoria} categorias={categorias} onCreate={addCategoria} onChange={v => updatePontual(p.id, { categoria: v })} />
+                      <TextoInline
+                        value={p.descricao}
+                        onChange={v => updatePontual(p.id, { descricao: v })}
+                        displayClassName={`text-sm font-medium ${pago || pulado ? 'line-through text-gray-400' : 'text-gray-800'}`}
+                      />
+                      <div><CategoriaChip value={p.categoria} categorias={categorias} onCreate={addCategoria} onChange={v => updatePontual(p.id, { categoria: v })} /></div>
                     </div>
                     <div className="text-sm font-medium">
                       <ValorInline
