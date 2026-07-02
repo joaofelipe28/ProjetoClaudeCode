@@ -5,9 +5,12 @@ interface CurrencyInputProps {
   onChange: (value: number) => void
   className?: string
   placeholder?: string
+  autoFocus?: boolean
+  onBlur?: () => void
+  onEnter?: () => void
 }
 
-export function CurrencyInput({ value, onChange, className = '', placeholder = 'R$ 0,00' }: CurrencyInputProps) {
+export function CurrencyInput({ value, onChange, className = '', placeholder = 'R$ 0,00', autoFocus, onBlur, onEnter }: CurrencyInputProps) {
   const [display, setDisplay] = useState('')
   const internalChange = useRef(false)
 
@@ -35,6 +38,9 @@ export function CurrencyInput({ value, onChange, className = '', placeholder = '
       value={display}
       onChange={handleChange}
       placeholder={placeholder}
+      autoFocus={autoFocus}
+      onBlur={onBlur}
+      onKeyDown={e => { if (e.key === 'Enter') onEnter?.(); if (e.key === 'Escape') onBlur?.() }}
       className={`bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-700 focus:outline-none focus:border-saldo/60 transition-colors ${className}`}
     />
   )

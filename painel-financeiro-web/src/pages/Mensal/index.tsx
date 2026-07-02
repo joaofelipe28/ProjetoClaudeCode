@@ -6,6 +6,7 @@ import { CurrencyInput } from '@/components/ui/CurrencyInput'
 import { Select } from '@/components/ui/Select'
 import { CategoriaSelect } from '@/components/ui/CategoriaSelect'
 import { CategoriaChip } from '@/components/ui/CategoriaChip'
+import { ValorInline } from '@/components/ui/ValorInline'
 import { Modal } from '@/components/ui/Modal'
 import { brl, mesLabel, monthRange, addMonths } from '@/lib/formatters'
 import { getParcelamentoValue } from '@/lib/calculations'
@@ -653,8 +654,12 @@ export function Mensal() {
                       </div>
                       <CategoriaChip value={p.categoria} categorias={categorias} onCreate={addCategoria} onChange={v => updatePontual(p.id, { categoria: v })} />
                     </div>
-                    <div className={`text-sm font-medium ${pago || pulado ? 'text-gray-400 line-through' : 'text-pontual'}`}>
-                      {brl(p.valor)}
+                    <div className="text-sm font-medium">
+                      <ValorInline
+                        value={p.valor}
+                        onChange={v => updatePontual(p.id, { valor: v })}
+                        displayClassName={pago || pulado ? 'text-gray-400 line-through' : 'text-pontual'}
+                      />
                     </div>
                     {pulado
                       ? <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-400">→ Pendentes</span>
